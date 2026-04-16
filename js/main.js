@@ -10,20 +10,24 @@
   const navToggle = document.getElementById('navToggle');
   const mobileMenu = document.getElementById('mobileMenu');
 
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('nav--scrolled', window.scrollY > 40);
-  }, { passive: true });
+  if (nav) {
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav--scrolled', window.scrollY > 40);
+    }, { passive: true });
+  }
 
-  navToggle.addEventListener('click', () => {
-    const open = mobileMenu.classList.toggle('open');
-    navToggle.classList.toggle('open', open);
-  });
-  mobileMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
-      navToggle.classList.remove('open');
+  if (navToggle && mobileMenu) {
+    navToggle.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('open');
+      navToggle.classList.toggle('open', open);
     });
-  });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        navToggle.classList.remove('open');
+      });
+    });
+  }
 
   /* ---- SMOOTH SCROLL ---- */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
@@ -37,7 +41,15 @@
     });
   });
 
-  /* ---- GSAP SETUP ---- */
+  /* ---- SAFETY FALLBACK — force in-view after 2.5s if observers haven't fired ---- */
+  setTimeout(() => {
+    document.querySelectorAll('[data-slide], .dot-card, .faq__item, .closing__line, .cs-card').forEach(el => {
+      el.classList.add('in-view');
+    });
+  }, 2500);
+
+  /* ---- GSAP SETUP — wait for full load so layout is stable ---- */
+  window.addEventListener('load', () => {
   gsap.registerPlugin(ScrollTrigger);
   const ease = 'power3.out';
 
@@ -70,7 +82,7 @@
 
   // Each transition = 1 unit. Total timeline = transitions units.
   // Section scroll height: extra room to read first + last line.
-  narrativeSection.style.height = ((transitions * 100) + 200) + 'vh';
+  if (narrativeSection) narrativeSection.style.height = ((transitions * 100) + 200) + 'vh';
 
   const tl = gsap.timeline({
     scrollTrigger: {
@@ -345,7 +357,8 @@
       closingObserver.unobserve(entry.target);
     });
   }, { threshold: 0.3 });
-  closingObserver.observe(document.querySelector('.closing-footer'));
+  const closingFooter = document.querySelector('.closing-footer');
+  if (closingFooter) closingObserver.observe(closingFooter);
 
   gsap.from('.closing__btn-wrap', {
     scrollTrigger: {
@@ -534,5 +547,10 @@
     }, { threshold: 0.05 });
     entropyObserver.observe(canvas);
   })();
+
+  /* Refresh ScrollTrigger after load to recalculate positions */
+  ScrollTrigger.refresh();
+
+  }); // end window load
 
 })();
