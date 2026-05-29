@@ -1917,6 +1917,9 @@ img, svg { display: block; max-width: 100%; }
   font-style: italic;
 }
 
+/* Outline buttons (hero, closing CTA) — blue border for clarity on light bg */
+.btn { border-color: var(--accent); }
+
 /* ---- Logos are monochrome art — force black on light bg ---- */
 .nav__logomark,
 .process__logo,
