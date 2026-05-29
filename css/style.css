@@ -3,22 +3,23 @@
    ============================================ */
 
 :root {
-  --bg:         #02040f;   /* near-black with blue undertone */
-  --bg-alt:     #040810;   /* slightly deeper for section contrast */
-  --bg-card:    #080d1a;   /* card surfaces */
-  --accent:     #0055ff;
-  --accent-hi:  #3385ff;   /* lighter blue for icons/highlights */
-  --accent-glow:rgba(0,85,255,0.18);
+  --bg:         #f7f8fc;   /* off-white */
+  --bg-alt:     #eef1f8;   /* slightly deeper for section contrast */
+  --bg-card:    #ffffff;   /* card surfaces */
+  --accent:     #0033cc;
+  --accent-hi:  #0044ee;   /* brighter blue for icons/highlights */
+  --accent-glow:rgba(0,51,204,0.10);
 
-  /* Text — WCAG AA compliant levels */
-  --text-primary:   #f0f2ff;        /* near-white with blue tint — 16.5:1 on bg */
-  --text-secondary: rgba(220,225,255,0.72); /* readable body text — 7:1+ */
-  --text-muted:     rgba(180,190,230,0.45); /* labels/small info — 4.5:1+ */
+  /* Text — dark on light, WCAG AA compliant */
+  --text-primary:   #1a1d2e;                  /* near-black with blue tint */
+  --text-secondary: rgba(26,29,46,0.62);      /* readable body text */
+  --text-muted:     rgba(26,29,46,0.38);      /* labels/small info */
 
-  --border:     rgba(255,255,255,0.08);
-  --border-hover: rgba(0,85,255,0.45);
+  --border:     rgba(0,51,204,0.10);
+  --border-hover: rgba(0,51,204,0.32);
 
-  --font: 'DM Sans', 'Inter', -apple-system, sans-serif;
+  --font:      'Instrument Sans', -apple-system, sans-serif;
+  --font-head: 'Instrument Serif', Georgia, serif;
   --max:  1100px;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -1885,3 +1886,117 @@ img, svg { display: block; max-width: 100%; }
 .legal-page a:hover {
   text-decoration: underline;
 }
+
+/* ============================================================
+   SWISS LIGHT THEME
+   Serif headlines (Instrument Serif) + light palette.
+   The :root variables above drive ~80% of the look; the rules
+   below override base rules that hardcode dark-mode colours.
+   ============================================================ */
+
+/* ---- Serif headlines ---- */
+.hero__h1,
+.solution__h2,
+.process__header h2,
+.process__text h3,
+.case-studies-section__header h2,
+.testimonials__header h2,
+.entropy__tagline,
+.closing__h2,
+.faq__header h2,
+.cs-card__title {
+  font-family: var(--font-head);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+/* Italic blue accent inside headlines */
+.accent {
+  color: var(--accent) !important;
+  -webkit-text-fill-color: var(--accent) !important;
+  font-style: italic;
+}
+
+/* ---- Logos are monochrome art — force black on light bg ---- */
+.nav__logomark,
+.process__logo,
+.footer__logo { filter: brightness(0); }
+.process__logo { opacity: 0.15; }
+.footer__logo  { opacity: 0.5; }
+
+/* ---- Nav / mobile menu backgrounds (base hardcodes dark) ---- */
+.nav--scrolled { background: rgba(247,248,252,0.92); }
+.mobile-menu   { background: rgba(247,248,252,0.98); }
+
+/* ---- Hero waves — dark line art on light bg ---- */
+.hero__waves { opacity: 0.07; filter: invert(1); }
+
+/* ---- Trusted logos — dark on light ---- */
+.trusted__track img { filter: brightness(0); opacity: 0.22; }
+
+/* ---- Narrative progress ---- */
+.narrative__progress-fill {
+  background: linear-gradient(90deg, var(--accent) 0%, rgba(0,51,204,0.05) 100%);
+}
+
+/* ---- Solution glow ---- */
+.solution__glow {
+  background: radial-gradient(ellipse, rgba(0,51,204,0.08) 0%, transparent 65%);
+}
+
+/* ---- Process numbers + morph ---- */
+.process__num { color: var(--accent); opacity: 0.18; }
+#morph1, #morph2, #morph3 { color: var(--accent); opacity: 0.6; }
+
+/* ---- Testimonials ---- */
+.testimonials__dots {
+  background-image: radial-gradient(rgba(0,51,204,0.2) 1.2px, transparent 1.2px);
+}
+.tst__mark { color: rgba(0,51,204,0.08); }
+.tst__avatar-btn:hover { background: rgba(0,51,204,0.06); }
+
+/* ---- Dot cards (stats) ---- */
+.dot-card__inner::before {
+  background: linear-gradient(135deg, rgba(0,51,204,0.04) 0%, transparent 55%);
+}
+.dot-card__dot {
+  background: var(--accent);
+  box-shadow:
+    0 0 6px 2px rgba(0,51,204,0.5),
+    0 0 20px 8px rgba(0,51,204,0.2),
+    0 0 40px 16px rgba(0,51,204,0.06);
+}
+.dot-card__line--top,
+.dot-card__line--bottom,
+.dot-card__line--left,
+.dot-card__line--right { background: rgba(0,51,204,0.08); }
+.dot-card__value {
+  background: linear-gradient(180deg, var(--accent) 0%, #0055ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dot-card__unit { -webkit-text-fill-color: var(--text-muted); }
+
+/* ---- FAQ chat bubbles ---- */
+.faq__bubble--q {
+  background: rgba(0,51,204,0.05);
+  border-color: rgba(0,51,204,0.12);
+}
+.faq__item.open .faq__bubble--q {
+  background: rgba(0,51,204,0.08);
+  border-color: rgba(0,51,204,0.2);
+}
+.faq__q:hover .faq__bubble--q { background: rgba(0,51,204,0.07); }
+.faq__bubble--a {
+  background: var(--bg-alt);
+  color: var(--text-primary);
+  border-color: var(--border);
+}
+.faq__item.open .faq__toggle { color: var(--accent); }
+
+/* ---- Footer glow + closing circle ---- */
+.footer__glow {
+  background: radial-gradient(ellipse at center bottom, rgba(0,51,204,0.10) 0%, rgba(0,51,204,0.03) 50%, transparent 75%);
+}
+.closing__circle { color: var(--accent); opacity: 0.4; }
