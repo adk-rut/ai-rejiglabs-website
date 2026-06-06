@@ -371,6 +371,68 @@ body{
 .cta-btn:hover{background:var(--accent-hi);transform:translateY(-3px)}
 .cta-contact{font-family:var(--mono);font-size:var(--small-size);color:var(--text3);letter-spacing:1px;text-transform:uppercase}
 
+/* ===== PLATFORM MOCKS (feature showcase slides) ===== */
+/* kanban / pipeline board */
+.kanban{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(.4rem,1vw,.7rem);width:100%;max-width:1140px;margin:0 auto}
+@media (max-width:860px){.kanban{grid-template-columns:repeat(2,1fr)}.kanban .kcol:nth-child(n+5){display:none}}
+@media (max-width:560px){.kanban{grid-template-columns:1fr}.kanban .kcol:nth-child(n+3){display:none}}
+.kcol{background:var(--bg-alt);border:1px solid var(--line2);border-radius:10px;padding:clamp(.4rem,1vw,.6rem);display:flex;flex-direction:column;gap:.45rem;min-height:clamp(150px,26vh,260px)}
+.kcol .kh{display:flex;align-items:center;justify-content:space-between;font-family:var(--mono);font-size:clamp(.54rem,.95vw,.66rem);letter-spacing:.5px;color:var(--text3);border-bottom:1px solid var(--line2);padding:0 .2rem .4rem}
+.kcol .kh b{color:var(--ink);font-weight:600}
+.kcol .kn{background:var(--accent);color:#fff;border-radius:999px;padding:0 6px;font-size:.92em}
+.kcard{background:var(--card-bg);border:1px solid var(--line2);border-radius:8px;padding:.45rem .55rem;display:flex;flex-direction:column;gap:.3rem;transition:.25s var(--ease)}
+.kcard:hover{border-color:var(--accent);box-shadow:0 6px 20px var(--glow)}
+.kcard .kname{font-family:var(--serif);color:var(--ink);font-weight:600;font-size:clamp(.7rem,1.2vw,.86rem)}
+.kcard .kmeta{font-size:clamp(.56rem,.95vw,.66rem);color:var(--text3);line-height:1.35}
+.kcard .ktags{display:flex;flex-wrap:wrap;gap:.25rem}
+.ktag{font-family:var(--mono);font-size:clamp(.5rem,.85vw,.6rem);padding:1px 6px;border-radius:999px;background:var(--bg-alt);color:var(--accent);border:1px solid var(--line2)}
+.ktag.win{background:var(--accent);color:#fff;border-color:var(--accent)}
+.kcard .kval{font-family:var(--serif);font-weight:700;color:var(--accent);font-size:clamp(.7rem,1.2vw,.9rem)}
+
+/* webchat widget */
+.wchat{width:100%;max-width:300px;border:1px solid var(--line);border-radius:14px;background:var(--card-bg);box-shadow:0 16px 50px var(--glow);overflow:hidden}
+.wchat .wtop{background:var(--accent);color:#fff;padding:.7rem .9rem;display:flex;align-items:center;gap:9px;font-family:var(--serif);font-weight:600;font-size:clamp(.8rem,1.4vw,1rem)}
+.wchat .wtop .wav{width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.25);display:grid;place-items:center;font-size:.85em}
+.wchat .wbody{padding:.8rem .9rem;display:flex;flex-direction:column;gap:.5rem}
+.wchat .wq{background:var(--bg-alt);border-radius:10px;padding:.5rem .7rem;font-size:clamp(.66rem,1.1vw,.8rem);color:var(--text2);line-height:1.45}
+.wfield{border:1px solid var(--line);border-radius:8px;padding:.5rem .7rem;font-size:clamp(.62rem,1vw,.74rem);color:var(--text3)}
+.wsend{background:var(--accent);color:#fff;text-align:center;border-radius:8px;padding:.5rem;font-size:clamp(.66rem,1.1vw,.8rem);font-weight:600}
+
+/* review / GMB card */
+.gcard{width:100%;max-width:320px;border:1px solid var(--line);border-radius:12px;background:var(--card-bg);box-shadow:0 16px 50px var(--glow);overflow:hidden}
+.gcard .gimg{height:clamp(70px,12vh,100px);background:linear-gradient(120deg,var(--bg-alt),var(--glow));display:grid;place-items:center;color:var(--text3);font-size:1.6rem;border-bottom:1px solid var(--line2)}
+.gcard .gbody{padding:.8rem .9rem;display:flex;flex-direction:column;gap:.45rem}
+.gcard .gname{font-family:var(--serif);color:var(--ink);font-weight:700;font-size:clamp(.9rem,1.6vw,1.15rem)}
+.gcard .gstars{display:flex;align-items:center;gap:8px;font-size:clamp(.7rem,1.2vw,.86rem);color:var(--text2)}
+.gcard .gstars .st{color:#f5a623;letter-spacing:1px}
+.gcard .gstars .sc{font-family:var(--serif);font-weight:700;color:var(--ink)}
+.gcard .gbtns{display:flex;gap:.4rem;margin-top:.2rem}
+.gcard .gbtn{flex:1;text-align:center;border:1px solid var(--line);border-radius:7px;padding:.35rem;font-size:clamp(.56rem,.95vw,.66rem);color:var(--text2)}
+
+/* phone frame (sms / voicemail) */
+.phone-fr{width:100%;max-width:230px;border:1px solid var(--line);border-radius:22px;background:var(--card-bg);box-shadow:0 18px 55px var(--glow);overflow:hidden;margin:0 auto}
+.phone-fr .pfh{background:var(--bg-alt);padding:.55rem .8rem;text-align:center;font-family:var(--mono);font-size:clamp(.56rem,.95vw,.66rem);color:var(--text3);border-bottom:1px solid var(--line2)}
+.phone-fr .pfb{padding:.7rem .8rem;display:flex;flex-direction:column;gap:.45rem;min-height:clamp(150px,24vh,220px)}
+
+/* auto-followup timeline */
+.tline{display:flex;flex-direction:column;gap:.55rem}
+.tstep{display:flex;align-items:flex-start;gap:10px;font-size:var(--small-size);color:var(--text2);line-height:1.4}
+.tstep .td{font-family:var(--mono);color:var(--accent);font-size:clamp(.58rem,.95vw,.7rem);min-width:54px;flex:none}
+.tstep .tt{flex:1}
+.statbig{font-family:var(--serif);font-weight:700;color:var(--accent);font-size:clamp(2.2rem,6vw,3.6rem);line-height:1}
+
+/* value stack */
+.vstack{width:100%;max-width:760px;margin:0 auto;border:1px solid var(--line);border-radius:14px;background:var(--card-bg);box-shadow:0 18px 55px var(--glow);overflow:hidden}
+.vstack .vi{display:flex;align-items:center;gap:12px;padding:clamp(.36rem,.85vw,.62rem) clamp(.8rem,2vw,1.3rem);border-top:1px solid var(--line2);font-size:var(--body-size)}
+.vstack .vi:first-child{border-top:none}
+.vstack .vi .vic{font-size:clamp(1rem,2vw,1.4rem);flex:none}
+.vstack .vi .vt{flex:1;color:var(--ink);font-weight:500;line-height:1.35}
+.vstack .vi .vv{font-family:var(--mono);color:var(--text2);font-size:clamp(.64rem,1.1vw,.8rem);white-space:nowrap}
+.vstack .vtot{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:clamp(.7rem,1.6vw,1.1rem) clamp(.8rem,2vw,1.3rem);background:var(--bg-alt);border-top:2px solid var(--accent);flex-wrap:wrap}
+.vstack .vtot .vtl{font-family:var(--serif);font-weight:600;color:var(--ink);font-size:clamp(1rem,1.8vw,1.3rem)}
+.vstack .vtot .vtv{font-family:var(--serif);font-weight:700;color:var(--accent);font-size:clamp(1.3rem,3.2vw,2.2rem);line-height:1.1;text-align:right}
+.vstack .vtot .vtv s{color:var(--text3);font-weight:400;font-size:.58em;margin-right:.45em}
+
 /* ============ NAV DOTS + HINT + PROGRESS ============ */
 .nav-dots{position:fixed;right:clamp(10px,1.6vw,22px);top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:9px;z-index:90}
 .nav-dots button{width:9px;height:9px;border-radius:50%;border:1px solid var(--text3);background:transparent;cursor:pointer;padding:0;transition:.25s}
@@ -599,12 +661,129 @@ body{
   </div>
 </section>
 
+<!-- ================= SLIDE · PIPELINE / CRM BOARD ================= -->
+<section class="slide" id="s10b">
+  <div class="meta"><span class="wm">DuckyCutz</span><span>09 · ไปป์ไลน์ลูกค้า</span></div>
+  <div class="slide-content">
+    <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.5rem,1.3vw,.9rem);margin-bottom:clamp(.5rem,1.4vw,1rem)">
+      <span class="eyebrow reveal"><b>09</b> ไปป์ไลน์ลูกค้า</span>
+      <h2 class="shead reveal d1" style="font-size:clamp(1.6rem,4.6vw,3.2rem)">ทุกลูกค้า อยู่ใน <span class="accent">ไปป์ไลน์เดียว</span></h2>
+      <p class="sub reveal d2" style="max-width:64ch">เห็นทุกสายตั้งแต่เข้ามา จนจองคิว มาที่ร้าน และติดตามต่อ ไม่มีลูกค้าตกหล่น ไม่ต้องเดาว่าใครอยู่ขั้นไหน</p>
+    </div>
+    <div class="kanban reveal d3">
+      <div class="kcol">
+        <div class="kh"><b>ลูกค้าใหม่</b><span class="kn">3</span></div>
+        <div class="kcard"><span class="kname">คุณเอก</span><span class="kmeta">โทรเข้า · ภูเก็ตทาวน์</span><div class="ktags"><span class="ktag">สายใหม่</span></div></div>
+        <div class="kcard"><span class="kname">John</span><span class="kmeta">เว็บแชต · EN</span><div class="ktags"><span class="ktag">เว็บไซต์</span></div></div>
+      </div>
+      <div class="kcol">
+        <div class="kh"><b>ติดต่อแล้ว</b><span class="kn">2</span></div>
+        <div class="kcard"><span class="kname">คุณต้น</span><span class="kmeta">ตอบ SMS แล้ว</span><div class="ktags"><span class="ktag">รอเลือกเวลา</span></div></div>
+      </div>
+      <div class="kcol">
+        <div class="kh"><b>จองคิวแล้ว</b><span class="kn">4</span></div>
+        <div class="kcard"><span class="kname">คุณบอย</span><span class="kmeta">เสาร์ 14:00 · กะทู้</span><div class="ktags"><span class="ktag win">จองแล้ว</span></div></div>
+        <div class="kcard"><span class="kname">Mike</span><span class="kmeta">อา. 11:00 · ฉลอง</span><div class="ktags"><span class="ktag win">จองแล้ว</span></div></div>
+      </div>
+      <div class="kcol">
+        <div class="kh"><b>มาแล้ว</b><span class="kn">2</span></div>
+        <div class="kcard"><span class="kname">คุณเอก</span><span class="kmeta">เฟด + โกนหนวด</span><span class="kval">฿350</span></div>
+      </div>
+      <div class="kcol">
+        <div class="kh"><b>ติดตาม</b><span class="kn">3</span></div>
+        <div class="kcard"><span class="kname">คุณวุฒิ</span><span class="kmeta">ครบ 3 สัปดาห์</span><div class="ktags"><span class="ktag">ชวนกลับ</span></div></div>
+      </div>
+    </div>
+    <div class="taglist reveal d4" style="margin-top:clamp(.7rem,1.6vw,1.1rem)">
+      <span class="tag now">ใช้ได้เลย · ไปป์ไลน์</span>
+      <span class="tag now">ใช้ได้เลย · แท็กอัตโนมัติ</span>
+      <span class="tag addon">ส่วนเสริม · รายงานแหล่งที่มา</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SLIDE · WEBCHAT + REVIEWS ================= -->
+<section class="slide" id="s10c">
+  <div class="meta"><span class="wm">DuckyCutz</span><span>10 · เว็บแชต + รีวิว</span></div>
+  <div class="slide-content">
+    <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.4rem,1.2vw,.8rem);margin-bottom:clamp(.5rem,1.4vw,1rem)">
+      <span class="eyebrow reveal"><b>10</b> จับลูกค้าหน้าเว็บ + สร้างรีวิว</span>
+      <h2 class="shead reveal d1" style="font-size:clamp(1.5rem,4.4vw,3rem)">เปลี่ยนคนเข้าเว็บ เป็น <span class="accent">ลูกค้า</span></h2>
+    </div>
+    <div class="two" style="align-items:center">
+      <div style="display:flex;gap:clamp(.8rem,2.5vw,1.6rem);justify-content:center;flex-wrap:wrap" class="reveal d2">
+        <div class="wchat">
+          <div class="wtop"><span class="wav">🦆</span> DuckyCutz</div>
+          <div class="wbody">
+            <div class="wq">สวัสดีครับ มีคำถามไหม? ทักได้เลย เดี๋ยวทีมงานตอบกลับทันที</div>
+            <div class="wfield">ชื่อ</div>
+            <div class="wfield">เบอร์โทร</div>
+            <div class="wsend">ส่งข้อความ</div>
+          </div>
+        </div>
+        <div class="gcard">
+          <div class="gimg">🗺️</div>
+          <div class="gbody">
+            <div class="gname">DuckyCutz · ภูเก็ต</div>
+            <div class="gstars"><span class="sc">4.9</span><span class="st">★★★★★</span><span>· 253 รีวิว</span></div>
+            <div class="gbtns"><span class="gbtn">เว็บไซต์</span><span class="gbtn">บันทึก</span><span class="gbtn">โทร</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="vlist">
+        <div class="vrow reveal d3"><span class="vc">✓</span><div><b>คนเข้าเว็บไม่หลุดมือ</b><p>เริ่มแชตกับคนที่เข้ามาดู เก็บเบอร์ไว้ใน CRM ทันที ก่อนเขาปิดหน้าจอ</p></div></div>
+        <div class="vrow reveal d4"><span class="vc">✓</span><div><b>รีวิว Google อัตโนมัติ</b><p>ตัดเสร็จ ระบบส่งลิงก์ขอรีวิวให้เอง ดาวเยอะขึ้น ลูกค้าใหม่เจอคุณก่อนคู่แข่ง</p></div></div>
+        <div class="vrow reveal d5"><span class="vc">✓</span><div><b>90% ดูรีวิวก่อนโทร</b><p>คนส่วนใหญ่เช็กดาวและรูปงานบน Google ก่อนตัดสินใจ รีวิวดี = สายเข้ามากขึ้น</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SLIDE · 2-WAY TEXTING + VOICEMAIL ================= -->
+<section class="slide" id="s10d">
+  <div class="meta"><span class="wm">DuckyCutz</span><span>11 · ตอบไว ติดตามอัตโนมัติ</span></div>
+  <div class="slide-content">
+    <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.4rem,1.2vw,.8rem);margin-bottom:clamp(.5rem,1.4vw,1rem)">
+      <span class="eyebrow reveal"><b>11</b> ตอบไว ติดตามอัตโนมัติ</span>
+      <h2 class="shead reveal d1" style="font-size:clamp(1.5rem,4.4vw,3rem)">ตอบไวที่สุด <span class="accent">ชนะดีล</span></h2>
+      <p class="sub reveal d2" style="max-width:60ch">ลูกค้าเลือกร้านที่ตอบก่อน ระบบทักกลับใน 5 นาทีอัตโนมัติ แล้วตามต่อให้เองทุกระยะ จนกว่าจะจอง</p>
+    </div>
+    <div class="two" style="align-items:center">
+      <div class="phone-fr reveal d3">
+        <div class="pfh">SMS · DuckyCutz</div>
+        <div class="pfb">
+          <div class="dbubble me">สวัสดีค่ะคุณบอย ขอบคุณที่สนใจ DuckyCutz 🦆 สะดวกให้จองวันไหนดีคะ?</div>
+          <div class="dbubble">เสาร์นี้ว่างไหมครับ</div>
+          <div class="dbubble me">ว่าง 14:00 ที่สาขากะทู้ค่ะ ยืนยันเลยไหมคะ?</div>
+          <div class="dbubble">โอเคครับ</div>
+        </div>
+      </div>
+      <div>
+        <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap" class="reveal d3">
+          <span class="statbig">75%</span>
+          <p class="sub" style="max-width:28ch">ของลูกค้า เลือกร้านที่ <b style="color:var(--ink)">ตอบกลับก่อน</b></p>
+        </div>
+        <div class="tline reveal d4" style="margin-top:clamp(.8rem,2vw,1.3rem)">
+          <div class="tstep"><span class="td">5 นาที</span><span class="tt">ทักกลับอัตโนมัติทันทีที่ลูกค้าติดต่อ</span></div>
+          <div class="tstep"><span class="td">ไม่รับสาย</span><span class="tt">ฝากข้อความเสียงอัตโนมัติ ชวนโทรกลับ</span></div>
+          <div class="tstep"><span class="td">1 สัปดาห์</span><span class="tt">ตามต่อถ้ายังไม่จอง</span></div>
+          <div class="tstep"><span class="td">1–3 เดือน</span><span class="tt">ดูแลต่อเนื่อง ไม่ปล่อยให้ลืม</span></div>
+        </div>
+        <div class="taglist reveal d5" style="justify-content:flex-start;margin-top:clamp(.6rem,1.5vw,1rem)">
+          <span class="tag now">ใช้ได้เลย · ทักกลับ 5 นาที</span>
+          <span class="tag addon">ส่วนเสริม · ข้อความเสียง</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= SLIDE 11 · RETENTION ENGINE ================= -->
 <section class="slide" id="s11">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>09 · รักษาลูกค้า</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>12 · รักษาลูกค้า</span></div>
   <div class="slide-content">
     <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.5rem,1.3vw,.9rem);margin-bottom:clamp(.6rem,1.5vw,1.1rem)">
-      <span class="eyebrow reveal"><b>09</b> รักษาลูกค้า</span>
+      <span class="eyebrow reveal"><b>12</b> รักษาลูกค้า</span>
       <h2 class="shead reveal d1" style="font-size:clamp(1.6rem,4.6vw,3.2rem)">ทำให้ลูกค้า <span class="accent">กลับมาซ้ำ</span> เอง</h2>
       <p class="sub reveal d2" style="max-width:60ch">ลูกค้าหนึ่งคนที่กลับมาทุก 3 สัปดาห์ มีค่ามากกว่าลูกค้าใหม่ที่มาครั้งเดียว ระบบดูแลให้อัตโนมัติทุกขั้นตอน</p>
     </div>
@@ -620,10 +799,10 @@ body{
 
 <!-- ================= SLIDE 12 · MARKETING & PROMOTIONS ================= -->
 <section class="slide" id="s12">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>10 · การตลาด</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>13 · การตลาด</span></div>
   <div class="slide-content">
     <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.5rem,1.3vw,.9rem);margin-bottom:clamp(.6rem,1.5vw,1.1rem)">
-      <span class="eyebrow reveal"><b>10</b> การตลาดและโปรโมชัน</span>
+      <span class="eyebrow reveal"><b>13</b> การตลาดและโปรโมชัน</span>
       <h2 class="shead reveal d1" style="font-size:clamp(1.6rem,4.6vw,3.2rem)">สร้างมาเพื่อ <span class="accent">การตลาด</span></h2>
       <p class="sub reveal d2" style="max-width:62ch">เพราะลูกค้าทุกคนอยู่ในระบบแล้ว คุณส่งโปรที่ใช่ ให้คนที่ใช่ ได้ในไม่กี่คลิก <span class="tag addon" style="vertical-align:middle">ส่วนเสริม</span></p>
     </div>
@@ -637,10 +816,10 @@ body{
 
 <!-- ================= SLIDE 13 · OBJECTION · vs LINE OA ================= -->
 <section class="slide" id="s12b">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>11 · ทำไมไม่ใช้แค่ LINE</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>14 · ทำไมไม่ใช้แค่ LINE</span></div>
   <div class="slide-content">
     <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.5rem,1.3vw,.9rem);margin-bottom:clamp(.6rem,1.5vw,1.1rem)">
-      <span class="eyebrow reveal"><b>11</b> มี LINE อยู่แล้ว ทำไมต้องใช้?</span>
+      <span class="eyebrow reveal"><b>14</b> มี LINE อยู่แล้ว ทำไมต้องใช้?</span>
       <h2 class="shead reveal d1" style="font-size:clamp(1.6rem,4.6vw,3.2rem)">แล้ว LINE OA <span class="accent">ไม่พอเหรอ?</span></h2>
       <p class="sub reveal d2" style="max-width:64ch">LINE คือช่องแชตที่ดี แต่เป็นแค่ประตูเดียว ระบบนี้ดูแลทั้งร้าน และที่สำคัญ ทำงานร่วมกับ LINE ได้</p>
     </div>
@@ -658,9 +837,9 @@ body{
 
 <!-- ================= SLIDE 14 · PILOT ================= -->
 <section class="slide" id="s13">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>12 · เริ่มจากเล็ก</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>15 · เริ่มจากเล็ก</span></div>
   <div class="slide-content">
-    <span class="eyebrow reveal"><b>12</b> เริ่มจากเล็ก</span>
+    <span class="eyebrow reveal"><b>15</b> เริ่มจากเล็ก</span>
     <h2 class="giant reveal d1" style="font-size:clamp(2.4rem,8.5vw,6rem)">1 สาขา <span class="accent">30 วัน</span></h2>
     <div class="glowline reveal d1" style="margin:0 auto"></div>
     <p class="cover-sub reveal d2" style="max-width:44ch">พิสูจน์ที่สาขาเดียวก่อน วัดผล <b style="color:var(--ink)">จริง</b> จากร้านคุณ ไม่ใช่ตัวเลขในกระดาษ ก่อนจ่ายเพิ่มแม้แต่บาทเดียว</p>
@@ -672,12 +851,38 @@ body{
   </div>
 </section>
 
+<!-- ================= SLIDE · VALUE STACK ================= -->
+<section class="slide" id="s13b">
+  <div class="meta"><span class="wm">DuckyCutz</span><span>16 · คุณได้อะไรบ้าง</span></div>
+  <div class="slide-content">
+    <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.4rem,1.2vw,.8rem);margin-bottom:clamp(.5rem,1.4vw,1rem)">
+      <span class="eyebrow reveal"><b>16</b> คุณได้อะไรบ้าง</span>
+      <h2 class="shead reveal d1" style="font-size:clamp(1.6rem,4.6vw,3.2rem)">รวมทุกอย่าง ใน <span class="accent">ระบบเดียว</span></h2>
+    </div>
+    <div class="vstack reveal d2">
+      <div class="vi"><span class="vic">🎙️</span><span class="vt">พนักงานต้อนรับ AI รับสาย 24/7 ไทย/อังกฤษ</span><span class="vv">≈ ฿15,000/เดือน</span></div>
+      <div class="vi"><span class="vic">📅</span><span class="vt">ระบบจองคิว + ปฏิทินรายสาขา/รายช่าง</span><span class="vv">≈ ฿3,000</span></div>
+      <div class="vi"><span class="vic">🗂️</span><span class="vt">ระบบ CRM รวมลูกค้าทุกสาขา</span><span class="vv">≈ ฿4,000</span></div>
+      <div class="vi"><span class="vic">💬</span><span class="vt">ตอบแชต + ทักกลับอัตโนมัติ (SMS/WhatsApp)</span><span class="vv">≈ ฿2,500</span></div>
+      <div class="vi"><span class="vic">🖥️</span><span class="vt">เว็บแชตจับลูกค้าหน้าเว็บ</span><span class="vv">≈ ฿2,000</span></div>
+      <div class="vi"><span class="vic">⭐</span><span class="vt">ระบบรีวิว Google อัตโนมัติ</span><span class="vv">≈ ฿2,500</span></div>
+      <div class="vi"><span class="vic">📲</span><span class="vt">ระบบติดตาม + ดึงลูกค้ากลับ</span><span class="vv">≈ ฿3,000</span></div>
+      <div class="vi"><span class="vic">📊</span><span class="vt">แดชบอร์ดรวมทั้งร้าน</span><span class="vv">≈ ฿2,000</span></div>
+      <div class="vtot">
+        <span class="vtl">มูลค่ารวม</span>
+        <span class="vtv"><s>฿34,000+/เดือน</s>เริ่มต้น ฿7,900</span>
+      </div>
+    </div>
+    <p class="illus reveal d4" style="max-width:74ch;margin:clamp(.7rem,1.6vw,1rem) auto 0;text-align:center">มูลค่าเป็นค่าประมาณ เทียบกับการจ้างคนและซื้อเครื่องมือแยกชิ้น · ราคาจริงดูสไลด์ถัดไป</p>
+  </div>
+</section>
+
 <!-- ================= SLIDE 14 · INVESTMENT ================= -->
 <section class="slide" id="s14">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>13 · ค่าใช้จ่าย</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>17 · ค่าใช้จ่าย</span></div>
   <div class="slide-content">
     <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.6rem,1.5vw,1rem);margin-bottom:clamp(.6rem,1.6vw,1.1rem)">
-      <span class="eyebrow reveal"><b>13</b> ค่าใช้จ่าย</span>
+      <span class="eyebrow reveal"><b>17</b> ค่าใช้จ่าย</span>
       <h2 class="shead reveal d1" style="font-size:clamp(1.7rem,5vw,3.4rem)">หนึ่งแพ็กเกจ<br>ไม่มี <span class="accent">บิลเซอร์ไพรส์</span></h2>
     </div>
     <div class="price-grid">
@@ -704,10 +909,10 @@ body{
 
 <!-- ================= SLIDE 15 · ROI ================= -->
 <section class="slide" id="s15">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>14 · ความคุ้มค่า</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>18 · ความคุ้มค่า</span></div>
   <div class="slide-content">
     <div class="head-block" style="max-width:1100px;margin:0 auto 0;width:100%;text-align:center;align-items:center;gap:clamp(.5rem,1.4vw,.9rem);margin-bottom:clamp(.6rem,1.6vw,1.2rem)">
-      <span class="eyebrow reveal"><b>14</b> ความคุ้มค่า</span>
+      <span class="eyebrow reveal"><b>18</b> ความคุ้มค่า</span>
       <h2 class="shead reveal d1" style="font-size:clamp(1.6rem,4.6vw,3.2rem)">คุ้มกว่าที่จ่าย<br>ตั้งแต่ <span class="accent">เดือนแรก</span></h2>
     </div>
     <div class="roi-wrap">
@@ -739,11 +944,11 @@ body{
 
 <!-- ================= SLIDE 16 · SCALE + ROADMAP + INTEGRATIONS ================= -->
 <section class="slide" id="s16">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>15 · ขยายผล</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>19 · ขยายผล</span></div>
   <div class="slide-content">
     <div class="scale-wrap">
       <div class="head-block">
-        <span class="eyebrow reveal"><b>15</b> ขยายผล และอนาคต</span>
+        <span class="eyebrow reveal"><b>19</b> ขยายผล และอนาคต</span>
         <h2 class="shead reveal d1">หนึ่งสาขาพิสูจน์<br><span class="accent">หกสาขา</span> ขยายผล</h2>
         <p class="sub reveal d2">ระบบสร้างไว้ครบทั้ง 6 สาขาแล้ว พิสูจน์สาขาแรก แล้วเปิดที่เหลือได้เลย เรทเดิม ไม่มีค่าติดตั้งใหม่ และเติบโตต่อได้เรื่อยๆ</p>
         <div class="addons reveal d3">
@@ -769,11 +974,11 @@ body{
 
 <!-- ================= SLIDE 17 · NEXT STEPS ================= -->
 <section class="slide" id="s17">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>16 · ขั้นต่อไป</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>20 · ขั้นต่อไป</span></div>
   <img class="ghost decorative" src="/proposal-ducky-cutz/ducky-head.png" alt="" />
   <div class="slide-content">
     <div class="chip cover-chip reveal" style="width:clamp(58px,8vw,88px);height:clamp(58px,8vw,88px)"><img src="/proposal-ducky-cutz/ducky-head.png" style="height:clamp(42px,6vw,64px)" alt=""/></div>
-    <span class="eyebrow reveal d1"><b>16</b> ขั้นต่อไป</span>
+    <span class="eyebrow reveal d1"><b>20</b> ขั้นต่อไป</span>
     <h2 class="giant reveal d1" style="font-size:clamp(2.2rem,7.5vw,5rem)">เปิด <span class="accent">สาขาแรก</span> กันเลย</h2>
     <div class="cta-steps reveal d3">
       <div class="cstep"><span class="cn">1</span><b>เลือกสาขานำร่อง</b><span>เลือกสาขาที่ยุ่งที่สุด</span></div>
