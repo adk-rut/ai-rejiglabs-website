@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ai.rejiglabs.com/sitemap.xml
+Sitemap: https://rejiglabs.com/sitemap.xml
