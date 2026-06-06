@@ -41,7 +41,7 @@
 
   <!-- HERO -->
   <section class="hero">
-    <video class="hero__bg-video" autoplay muted loop playsinline src="assets/hero-bg.mp4"></video>
+    <video class="hero__bg-video" autoplay muted loop playsinline preload="auto" poster="assets/hero-bg-poster.jpg" src="assets/hero-bg.mp4"></video>
     <div class="hero__bg"></div>
     <div class="container">
       <div class="hero__content-wrap">
@@ -66,8 +66,9 @@
     </div>
 
     <!-- Partner Ticker (inside hero, below content) -->
-    <div class="ticker">
-      <div class="ticker__track">
+    <div class="container ticker-row">
+      <div class="ticker">
+        <div class="ticker__track">
         <img src="assets/partner-1.png" alt="Partner">
         <img src="assets/partner-2.png" alt="Partner">
         <img src="assets/partner-3.png" alt="Partner">
@@ -84,6 +85,7 @@
         <img src="assets/partner-2.png" alt="Partner">
         <img src="assets/partner-3.png" alt="Partner">
         <img src="assets/partner-4.webp" alt="Partner">
+        </div>
       </div>
     </div>
   </section>
