@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Rejig Labs · 24/7 Booking Conversion with AI</title>
+<link rel="icon" type="image/png" href="/deck/rejig-deck-assets/favicon.png" />
+<link rel="apple-touch-icon" href="/deck/rejig-deck-assets/favicon.png" />
+
+<!-- ===========================================
+     FONTS - actual rejiglabs.com brand:
+     Instrument Serif (display) + Instrument Sans (body/labels)
+     =========================================== -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+<style>
+/* ===========================================
+   THEME TOKENS - pulled from rejiglabs.com
+   (light scheme, royal blue, ink text, serif display)
+   =========================================== */
+:root {
+    --bg: #F7F8FC;
+    --bg-2: #FFFFFF;
+    --surface: #FFFFFF;
+    --surface-2: #F1F3FA;
+    --primary: #0033CC;
+    --primary-hi: #0040ff;
+    --primary-soft: rgba(0, 51, 204, 0.08);
+    --primary-glow: rgba(0, 85, 255, 0.25);
+    --ink: #1A1D2E;
+    --ink-2: rgba(26, 29, 46, 0.62);
+    --ink-3: rgba(26, 29, 46, 0.40);
+    --border: rgba(26, 29, 46, 0.10);
+    --border-hi: rgba(0, 51, 204, 0.40);
+    --success: #0a8f5b;
+    --warning: #b8860b;
+    --error: #d6453d;
+    --radius: 8px;
+    --radius-pill: 999px;
+    --shadow: 0 4px 28px rgba(26, 29, 46, 0.07);
+    --shadow-hi: 0 10px 40px rgba(0, 51, 204, 0.12);
+
+    --font-display: "Instrument Serif", Georgia, serif;
+    --font-body: "Instrument Sans", -apple-system, sans-serif;
+
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --duration-normal: 0.6s;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: var(--font-body);
+    background: var(--bg);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- viewport-base.css (MANDATORY, included in full) --- */
+html, body { height: 100%; overflow-x: hidden; }
+html { scroll-snap-type: y mandatory; scroll-behavior: smooth; }
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.slide-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 100%;
+    overflow: hidden;
+    padding: var(--slide-padding);
+}
+:root {
+    --title-size: clamp(2rem, 6vw, 5rem);
+    --h2-size: clamp(1.6rem, 4.2vw, 3.2rem);
+    --h3-size: clamp(1rem, 2.5vw, 1.75rem);
+    --body-size: clamp(0.78rem, 1.5vw, 1.1rem);
+    --small-size: clamp(0.65rem, 1vw, 0.875rem);
+    --slide-padding: clamp(1rem, 4vw, 4rem);
+    --content-gap: clamp(0.5rem, 2vw, 2rem);
+    --element-gap: clamp(0.25rem, 1vw, 1rem);
+}
+.card, .container, .content-box { max-width: min(90vw, 1000px); max-height: min(80vh, 700px); }
+.feature-list, .bullet-list { gap: clamp(0.4rem, 1vh, 1rem); }
+.feature-list li, .bullet-list li { font-size: var(--body-size); line-height: 1.4; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: clamp(0.5rem, 1.5vw, 1rem); }
+img, .image-container { max-width: 100%; max-height: min(50vh, 400px); object-fit: contain; }
+
+@media (max-height: 700px) {
+    :root { --slide-padding: clamp(0.75rem, 3vw, 2rem); --content-gap: clamp(0.4rem, 1.5vw, 1rem); --title-size: clamp(1.6rem, 5vw, 3rem); --h2-size: clamp(1.3rem, 3.4vw, 2.2rem); }
+}
+@media (max-height: 600px) {
+    :root { --slide-padding: clamp(0.5rem, 2.5vw, 1.5rem); --content-gap: clamp(0.3rem, 1vw, 0.75rem); --title-size: clamp(1.4rem, 4.5vw, 2.4rem); --body-size: clamp(0.72rem, 1.2vw, 0.95rem); }
+    .nav-dots, .keyboard-hint, .decorative { display: none; }
+}
+@media (max-height: 500px) {
+    :root { --slide-padding: clamp(0.4rem, 2vw, 1rem); --title-size: clamp(1.2rem, 4vw, 1.8rem); --h2-size: clamp(1.1rem, 3vw, 1.6rem); --body-size: clamp(0.66rem, 1vw, 0.85rem); }
+}
+@media (max-width: 600px) {
+    :root { --title-size: clamp(1.6rem, 9vw, 3rem); }
+    .grid { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.2s !important; }
+    html { scroll-behavior: auto; }
+}
+
+/* ===========================================
+   SHARED BRAND CHROME (light)
+   =========================================== */
+/* Faint contour-wave texture + dot grid, echoing the site */
+.slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        radial-gradient(circle, rgba(26,29,46,0.045) 1px, transparent 1px);
+    background-size: 26px 26px;
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: 0;
+}
+.slide::after { /* soft wavy lines, like the hero background */
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'%3E%3Cg fill='none' stroke='%231A1D2E' stroke-opacity='0.035' stroke-width='1.2'%3E%3Cpath d='M-50 120 C 200 60, 400 180, 650 120 S 1050 60, 1300 130'/%3E%3Cpath d='M-50 220 C 200 160, 400 280, 650 220 S 1050 160, 1300 230'/%3E%3Cpath d='M-50 340 C 220 280, 420 400, 660 340 S 1060 280, 1300 350'/%3E%3Cpath d='M-50 470 C 220 410, 420 530, 660 470 S 1060 410, 1300 480'/%3E%3Cpath d='M-50 600 C 220 540, 420 660, 660 600 S 1060 540, 1300 610'/%3E%3Cpath d='M-50 720 C 220 660, 420 780, 660 720 S 1060 660, 1300 730'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    pointer-events: none;
+    z-index: 0;
+}
+.glow-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    background: rgba(0, 51, 204, 0.10);
+    pointer-events: none;
+    z-index: 0;
+}
+.slide-content > * { position: relative; z-index: 1; }
+
+/* Logo mark - white-on-transparent asset shown inside a blue brand badge */
+.logo-mark {
+    display: inline-block;
+    background-color: var(--primary);
+    background-image: url("/deck/rejig-deck-assets/logo.png");
+    background-size: 66% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+.logo-mark.blue { background-color: var(--primary); }
+
+/* Slide number - top-left meta */
+.slide-num {
+    position: absolute;
+    top: clamp(1rem, 3vh, 2rem);
+    left: clamp(1rem, 4vw, 3rem);
+    font-family: var(--font-body);
+    font-size: clamp(0.58rem, 0.95vw, 0.72rem);
+    color: var(--ink-3);
+    letter-spacing: 3px;
+    font-weight: 500;
+    z-index: 2;
+}
+/* Eyebrow - Instrument Sans uppercase tracked, with "/" separators like the site */
+.eyebrow {
+    font-family: var(--font-body);
+    font-size: clamp(0.6rem, 1vw, 0.72rem);
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--ink-3);
+    margin-bottom: clamp(0.7rem, 1.6vh, 1.3rem);
+}
+.eyebrow .b { color: var(--primary); }
+
+/* Display headings - serif, with italic-blue accent treatment */
+h1, h2 { font-family: var(--font-display); font-weight: 400; line-height: 1.02; letter-spacing: -0.005em; }
+h2 { font-size: var(--h2-size); margin-bottom: clamp(0.9rem, 2vh, 1.6rem); }
+.accent { font-style: italic; color: var(--primary); }
+
+/* Brand lockup */
+.brand-lockup { display: inline-flex; align-items: center; gap: 0.55em; }
+.brand-lockup .logo-mark { width: 1.5em; height: 1.5em; }
+.brand-lockup .name { font-family: var(--font-body); font-weight: 700; letter-spacing: -0.01em; }
+.brand-lockup .name .ai { color: var(--primary); }
+
+/* Glow accent line */
+.glow-line {
+    height: 3px;
+    width: clamp(60px, 8vw, 120px);
+    background: var(--primary);
+    border-radius: 2px;
+    box-shadow: 0 4px 24px rgba(0,51,204,0.45);
+}
+
+/* Badge pill */
+.pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    background: var(--primary-soft);
+    color: var(--primary);
+    border: 1px solid rgba(0,51,204,0.18);
+    border-radius: var(--radius-pill);
+    padding: 0.45em 1.05em;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: clamp(0.62rem, 1vw, 0.8rem);
+    letter-spacing: 0.5px;
+}
+
+/* ===========================================
+   REVEAL ANIMATIONS (triggered by .visible)
+   =========================================== */
+.reveal {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity var(--duration-normal) var(--ease-out-expo),
+                transform var(--duration-normal) var(--ease-out-expo);
+}
+.slide.visible .reveal { opacity: 1; transform: translateY(0); }
+.slide.visible .reveal:nth-child(1) { transition-delay: 0.05s; }
+.slide.visible .reveal:nth-child(2) { transition-delay: 0.15s; }
+.slide.visible .reveal:nth-child(3) { transition-delay: 0.25s; }
+.slide.visible .reveal:nth-child(4) { transition-delay: 0.35s; }
+.slide.visible .reveal:nth-child(5) { transition-delay: 0.45s; }
+.slide.visible .reveal:nth-child(6) { transition-delay: 0.55s; }
+
+/* ===========================================
+   PROGRESS BAR + NAV DOTS
+   =========================================== */
+.progress-bar {
+    position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+    background: var(--primary); box-shadow: 0 0 12px rgba(0,51,204,0.5);
+    z-index: 100; transition: width 0.2s ease;
+}
+.nav-dots {
+    position: fixed; right: clamp(0.8rem, 2vw, 1.8rem); top: 50%;
+    transform: translateY(-50%); display: flex; flex-direction: column;
+    gap: 0.7rem; z-index: 100;
+}
+.nav-dots button {
+    width: 9px; height: 9px; border-radius: 50%; border: 1px solid var(--border-hi);
+    background: transparent; cursor: pointer; padding: 0; transition: all 0.3s ease;
+}
+.nav-dots button.active { background: var(--primary); box-shadow: 0 0 10px rgba(0,51,204,0.5); transform: scale(1.3); }
+
+.keyboard-hint {
+    position: fixed; bottom: clamp(0.6rem, 2vh, 1.2rem); right: clamp(1rem, 3vw, 2rem);
+    font-family: var(--font-body); font-size: 0.62rem; color: var(--ink-3);
+    letter-spacing: 2px; font-weight: 500; z-index: 100;
+}
+
+/* ===========================================
+   SLIDE 1 - TITLE
+   =========================================== */
+.title-slide .slide-content { align-items: flex-start; }
+.title-slide h1 { font-size: var(--title-size); max-width: 15ch; margin: clamp(0.9rem,2.2vh,1.6rem) 0; }
+.title-slide .tagline {
+    font-family: var(--font-body); font-size: clamp(0.66rem,1.1vw,0.85rem);
+    letter-spacing: 2px; text-transform: uppercase; font-weight: 600; color: var(--ink-2); margin-top: 1.2rem;
+}
+.status-pill { margin-top: clamp(1.2rem, 3vh, 2rem); }
+.live-dot {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--success);
+    box-shadow: 0 0 0 0 rgba(10,143,91,0.5); animation: livePulse 1.8s infinite;
+}
+@keyframes livePulse {
+    0% { box-shadow: 0 0 0 0 rgba(10,143,91,0.45); }
+    70% { box-shadow: 0 0 0 9px rgba(10,143,91,0); }
+    100% { box-shadow: 0 0 0 0 rgba(10,143,91,0); }
+}
+
+/* ===========================================
+   SLIDE 2 - CHALLENGE
+   =========================================== */
+.challenge-list { list-style: none; display: flex; flex-direction: column; gap: clamp(0.6rem,1.6vh,1.1rem); max-width: 62ch; }
+.challenge-list li { font-size: var(--body-size); color: var(--ink-2); padding-left: 1.6em; position: relative; line-height: 1.45; }
+.challenge-list li::before { content: "→"; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
+.challenge-list strong { color: var(--ink); font-weight: 600; }
+.uline { position: relative; white-space: nowrap; }
+.uline::after {
+    content: ""; position: absolute; left: 0; bottom: -2px; height: 2px; width: 100%;
+    background: var(--primary); transform: scaleX(0); transform-origin: left;
+    transition: transform 0.8s var(--ease-out-expo) 0.6s;
+}
+.slide.visible .uline::after { transform: scaleX(1); }
+.big-claim {
+    margin-top: clamp(1.2rem,3vh,2.4rem); font-family: var(--font-display); font-weight: 400;
+    font-size: clamp(1.4rem,3.4vw,2.6rem); line-height: 1.12; max-width: 22ch; letter-spacing: -0.01em;
+}
+
+/* ===========================================
+   SLIDE 3 - SOLUTION + FLOW COMPARISON
+   =========================================== */
+.feat-row { display: grid; grid-template-columns: repeat(3,1fr); gap: clamp(0.6rem,1.4vw,1rem); margin-bottom: clamp(1rem,2.5vh,1.8rem); }
+.feat {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: clamp(0.8rem,1.7vw,1.2rem); box-shadow: var(--shadow); transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feat:hover { border-color: var(--border-hi); transform: translateY(-3px); box-shadow: var(--shadow-hi); }
+.feat h3 { font-family: var(--font-display); font-size: clamp(1rem,1.7vw,1.3rem); font-weight: 400; margin-bottom: 0.25em; }
+.feat p { font-size: clamp(0.68rem,1.1vw,0.86rem); color: var(--ink-2); line-height: 1.45; }
+.feat .ico { font-family: var(--font-body); font-weight: 700; color: var(--primary); font-size: 0.66rem; letter-spacing: 2px; margin-bottom: 0.7em; display: block; }
+
+/* Flow pipeline */
+.flow { display: flex; flex-direction: column; gap: clamp(0.5rem,1.4vh,0.9rem); }
+.flow-row { display: flex; align-items: center; gap: clamp(0.4rem,1vw,0.8rem); flex-wrap: wrap; }
+.flow-label { font-family: var(--font-body); font-weight: 600; font-size: clamp(0.62rem,1vw,0.78rem); letter-spacing: 1px; text-transform: uppercase; width: clamp(70px,9vw,120px); flex-shrink: 0; }
+.flow-old .flow-label { color: var(--ink-3); }
+.flow-new .flow-label { color: var(--primary); }
+.chip {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 7px;
+    padding: 0.42em 0.85em; font-size: clamp(0.64rem,1vw,0.84rem); white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(26,29,46,0.04);
+    opacity: 0; transform: translateX(-10px); transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.slide.visible .chip { opacity: 1; transform: translateX(0); }
+.flow-old .chip { color: var(--ink-2); }
+.flow-new .chip { border-color: var(--border-hi); background: var(--primary-soft); color: var(--primary); font-weight: 600; }
+.arrow { color: var(--ink-3); }
+.flow-new .arrow { color: var(--primary); }
+.waste-tag {
+    font-family: var(--font-body); color: var(--error); font-weight: 700; margin-left: 0.4em;
+    font-size: clamp(0.68rem,1.1vw,0.88rem); letter-spacing: 0.5px;
+}
+.flow-old .chip:nth-of-type(1){transition-delay:.2s}.flow-old .chip:nth-of-type(2){transition-delay:.35s}
+.flow-old .chip:nth-of-type(3){transition-delay:.5s}.flow-old .chip:nth-of-type(4){transition-delay:.65s}
+.flow-old .chip:nth-of-type(5){transition-delay:.8s}
+.flow-new .chip:nth-of-type(1){transition-delay:1.0s}.flow-new .chip:nth-of-type(2){transition-delay:1.15s}
+.flow-new .chip:nth-of-type(3){transition-delay:1.3s}
+.slide.visible .flow-new .chip { animation: chipGlow 2.6s ease-in-out 1.5s infinite; }
+@keyframes chipGlow { 0%,100%{box-shadow:0 0 0 0 rgba(0,51,204,0)} 50%{box-shadow:0 0 22px 0 rgba(0,51,204,0.30)} }
+
+/* ===========================================
+   SLIDE 4 - CONVERSION ENGINE + CHAT SIM
+   =========================================== */
+.engine { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(1rem,3vw,2.4rem); align-items: center; }
+.capture-col { display: flex; flex-direction: column; gap: clamp(0.7rem,1.8vh,1.2rem); }
+.cap-step { display: flex; align-items: center; gap: 0.7rem; }
+.cap-badge { font-family: var(--font-body); font-weight: 700; font-size: 0.62rem; letter-spacing: 2px; color: var(--primary); }
+.cap-node {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 7px; box-shadow: var(--shadow);
+    padding: 0.5em 0.9em; font-size: clamp(0.72rem,1.2vw,0.94rem); font-weight: 500;
+}
+.platform-row { display: flex; gap: clamp(0.5rem,1.4vw,1rem); margin-top: clamp(0.8rem,2vh,1.2rem); flex-wrap: wrap; }
+.plat {
+    width: clamp(30px,3.4vw,42px); height: clamp(30px,3.4vw,42px); border-radius: 9px;
+    background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow); display: grid; place-items: center;
+    font-size: clamp(0.85rem,1.6vw,1.1rem);
+}
+/* chat window */
+.chat-window {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: clamp(0.7rem,1.5vw,1.1rem); display: flex; flex-direction: column;
+    gap: 0.6rem; max-height: min(56vh, 420px); min-height: clamp(180px,30vh,260px);
+    box-shadow: 0 24px 60px rgba(26,29,46,0.12);
+}
+.chat-head { display: flex; align-items: center; gap: 0.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+.chat-avatar { width: 28px; height: 28px; border-radius: 50%; background: var(--primary); display: grid; place-items: center; font-size: 0.66rem; font-weight: 700; color: #fff; }
+.chat-title { font-size: 0.82rem; font-weight: 700; }
+.chat-sub { font-family: var(--font-body); font-size: 0.6rem; color: var(--success); letter-spacing: 0.5px; font-weight: 600; }
+.chat-body { display: flex; flex-direction: column; gap: 0.5rem; overflow: hidden; }
+.bubble {
+    max-width: 78%; padding: 0.5em 0.8em; border-radius: 13px; font-size: clamp(0.68rem,1.1vw,0.88rem);
+    line-height: 1.4; opacity: 0; transform: translateY(8px); transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.bubble.show { opacity: 1; transform: translateY(0); }
+.bubble.lead { align-self: flex-start; background: var(--surface-2); color: var(--ink); border-bottom-left-radius: 3px; }
+.bubble.ai { align-self: flex-end; background: var(--primary); color: #fff; border-bottom-right-radius: 3px; }
+.typing { display: inline-flex; gap: 3px; }
+.typing span { width: 5px; height: 5px; border-radius: 50%; background: rgba(255,255,255,0.8); animation: typing 1.2s infinite; }
+.typing span:nth-child(2){animation-delay:.2s}.typing span:nth-child(3){animation-delay:.4s}
+@keyframes typing { 0%,60%,100%{opacity:.4;transform:translateY(0)} 30%{opacity:1;transform:translateY(-3px)} }
+
+/* ===========================================
+   SLIDE 5 - CONVERSION STEPPER
+   =========================================== */
+.stepper { position: relative; display: grid; grid-template-columns: repeat(5,1fr); gap: clamp(0.4rem,1vw,0.8rem); margin-top: clamp(1rem,3vh,2rem); }
+.stepper::before { content: ""; position: absolute; top: 16px; left: 6%; right: 6%; height: 2px; background: var(--border); }
+.stepper::after {
+    content: ""; position: absolute; top: 16px; left: 6%; height: 2px; background: var(--primary);
+    box-shadow: 0 0 12px rgba(0,51,204,0.5); width: 0; transition: width 1.6s var(--ease-out-expo) 0.3s;
+}
+.slide.visible .stepper::after { width: 88%; }
+.step { position: relative; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+.step-node {
+    width: 34px; height: 34px; border-radius: 50%; background: var(--bg); border: 2px solid var(--border);
+    display: grid; place-items: center; font-family: var(--font-body); font-size: 0.82rem; font-weight: 700;
+    color: var(--ink-3); z-index: 2; transition: all 0.4s ease;
+}
+.slide.visible .step-node { border-color: var(--primary); color: var(--primary); background: var(--bg-2); box-shadow: 0 0 18px rgba(0,51,204,0.30); }
+.slide.visible .step:nth-child(1) .step-node { transition-delay: 0.3s; }
+.slide.visible .step:nth-child(2) .step-node { transition-delay: 0.6s; }
+.slide.visible .step:nth-child(3) .step-node { transition-delay: 0.9s; }
+.slide.visible .step:nth-child(4) .step-node { transition-delay: 1.2s; }
+.slide.visible .step:nth-child(5) .step-node { transition-delay: 1.5s; }
+.step h4 { font-family: var(--font-display); font-size: clamp(0.86rem,1.5vw,1.15rem); font-weight: 400; }
+.step p { font-size: clamp(0.62rem,1vw,0.8rem); color: var(--ink-2); line-height: 1.4; }
+.step .when { font-family: var(--font-body); font-size: 0.56rem; color: var(--primary); letter-spacing: 1.5px; font-weight: 700; }
+
+/* ===========================================
+   SLIDE 6 - RESULTS / COUNTERS
+   =========================================== */
+.results-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: clamp(0.5rem,1.4vw,1rem); margin: clamp(0.8rem,2vh,1.4rem) 0; }
+.res-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: clamp(0.8rem,1.7vw,1.2rem); box-shadow: var(--shadow); transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.res-card:hover { border-color: var(--border-hi); transform: translateY(-3px); box-shadow: var(--shadow-hi); }
+.res-card .sector { font-family: var(--font-body); font-weight: 700; font-size: 0.6rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--primary); margin-bottom: 0.8em; }
+.res-stat { margin-bottom: 0.55em; }
+.res-num { font-family: var(--font-display); font-size: clamp(1.3rem,2.6vw,2.1rem); font-weight: 400; letter-spacing: -0.01em; line-height: 1; }
+.res-label { font-size: clamp(0.6rem,0.95vw,0.76rem); color: var(--ink-2); line-height: 1.3; margin-top: 0.15em; }
+.res-roi { font-family: var(--font-body); font-weight: 700; font-size: clamp(0.64rem,1vw,0.8rem); color: var(--success); margin-top: 0.4em; }
+.results-foot { font-size: clamp(0.68rem,1.1vw,0.86rem); color: var(--ink-2); line-height: 1.5; max-width: 82ch; }
+.results-foot strong { color: var(--ink); font-weight: 600; }
+
+/* ===========================================
+   SLIDE 7 - PRICING / ROI
+   =========================================== */
+.roi-top { display: flex; gap: clamp(1rem,3vw,2.6rem); margin-bottom: clamp(1rem,2.5vh,1.6rem); flex-wrap: wrap; }
+.roi-stat .num { font-family: var(--font-display); font-size: clamp(1.7rem,3.8vw,3rem); font-weight: 400; color: var(--primary); letter-spacing: -0.01em; line-height: 1; }
+.roi-stat .lbl { font-size: clamp(0.64rem,1vw,0.82rem); color: var(--ink-2); margin-top: 0.35em; max-width: 22ch; }
+.price-table { width: 100%; max-width: 740px; border-collapse: collapse; font-size: clamp(0.7rem,1.15vw,0.95rem); background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+.price-table td { padding: clamp(0.42em,0.95vh,0.65em) 1em; border-bottom: 1px solid var(--border); }
+.price-table td:last-child { text-align: right; font-weight: 600; color: var(--ink); }
+.price-table tr td:first-child { color: var(--ink-2); }
+.price-table tr.hi td { background: var(--primary-soft); color: var(--primary); font-weight: 700; }
+.price-table tr.profit td { color: var(--success); font-weight: 700; }
+.price-table tr:last-child td { border-bottom: none; }
+
+/* ===========================================
+   SLIDE 8 - NEXT STEPS TIMELINE
+   =========================================== */
+.weeks { display: grid; grid-template-columns: repeat(4,1fr); gap: clamp(0.5rem,1.4vw,1rem); margin: clamp(0.8rem,2.5vh,1.6rem) 0; position: relative; }
+.week {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow);
+    padding: clamp(0.8rem,1.7vw,1.2rem); position: relative; overflow: hidden;
+}
+.week::before {
+    content: ""; position: absolute; top: 0; left: 0; height: 3px; width: 100%;
+    background: var(--primary); transform: scaleX(0); transform-origin: left; transition: transform 0.6s var(--ease-out-expo);
+}
+.slide.visible .week::before { transform: scaleX(1); }
+.slide.visible .week:nth-child(1)::before { transition-delay: 0.3s; }
+.slide.visible .week:nth-child(2)::before { transition-delay: 0.6s; }
+.slide.visible .week:nth-child(3)::before { transition-delay: 0.9s; }
+.slide.visible .week:nth-child(4)::before { transition-delay: 1.2s; }
+.week .wk { font-family: var(--font-body); font-weight: 700; font-size: 0.62rem; letter-spacing: 2px; color: var(--primary); margin-bottom: 0.6em; }
+.week p { font-size: clamp(0.7rem,1.15vw,0.92rem); line-height: 1.4; color: var(--ink-2); }
+.week p b { color: var(--ink); font-weight: 600; }
+.included { display: flex; gap: clamp(0.6rem,2vw,1.6rem); flex-wrap: wrap; margin-top: clamp(0.6rem,1.5vh,1rem); }
+.inc { display: flex; align-items: center; gap: 0.5rem; font-size: clamp(0.68rem,1.1vw,0.86rem); color: var(--ink-2); }
+.inc .ck { color: var(--success); font-weight: 700; }
+
+/* ===========================================
+   SLIDE 9 - CONTACT
+   =========================================== */
+.contact-slide .slide-content { align-items: flex-start; }
+.contact-slide .big-brand { display: inline-flex; align-items: center; gap: 0.4em; font-size: clamp(2rem,7vw,5rem); font-weight: 400; font-family: var(--font-display); letter-spacing: -0.01em; margin-bottom: clamp(1rem,3vh,2rem); }
+.contact-slide .big-brand .logo-mark { width: 1em; height: 1em; }
+.contact-slide .big-brand .ai { color: var(--primary); font-style: italic; }
+.contact-info { font-family: var(--font-body); font-size: clamp(0.74rem,1.2vw,0.98rem); color: var(--ink-2); line-height: 1.85; }
+.contact-info .site { color: var(--primary); font-weight: 600; }
+.cta {
+    display: inline-flex; align-items: center; gap: 0.6em; margin-top: clamp(1.2rem,3vh,2rem);
+    background: var(--primary); color: #fff; border: none; border-radius: var(--radius-pill);
+    padding: 0.75em 1.7em; font-family: var(--font-body); font-weight: 600; font-size: clamp(0.8rem,1.3vw,1rem);
+    cursor: pointer; box-shadow: rgba(0,85,255,0.30) 0px 8px 32px 0px; transition: transform 0.25s ease, box-shadow 0.25s ease;
+    text-decoration: none;
+}
+.cta:hover { transform: translateY(-2px); box-shadow: rgba(0,85,255,0.45) 0px 12px 44px 0px; }
+
+/* ===========================================
+   CENTERED LAYOUT + EXTRA PADDING (global override)
+   Centers every slide's content column and adds
+   generous breathing room around it.
+   =========================================== */
+:root { --slide-padding: clamp(1.5rem, 6vw, 6rem); }
+@media (max-height: 700px) { :root { --slide-padding: clamp(1rem, 4vw, 3.5rem); } }
+@media (max-height: 600px) { :root { --slide-padding: clamp(0.75rem, 3vw, 2.5rem); } }
+
+.slide-content { align-items: center; text-align: center; gap: clamp(0.4rem, 1.4vh, 1.1rem); }
+.title-slide .slide-content,
+.contact-slide .slide-content { align-items: center; }
+
+/* center the major content blocks and cap their width */
+.challenge-list, .feat-row, .flow, .engine, .stepper, .results-grid,
+.roi-top, .price-table, .weeks, .included, .results-foot, .contact-info,
+.big-claim, .glow-line, .title-slide h1, .brand-lockup {
+    margin-left: auto; margin-right: auto;
+}
+.feat-row, .results-grid, .weeks, .stepper, .flow, .engine, .roi-top {
+    max-width: min(95vw, 1120px); width: 100%;
+}
+
+/* tidy up components for centered reading */
+.challenge-list { align-items: center; max-width: 60ch; }
+.challenge-list li { padding-left: 0; }
+.challenge-list li::before { content: ""; }
+.flow-row { justify-content: center; }
+.flow-label { width: auto; }
+.capture-col { align-items: center; }
+.cap-step { justify-content: center; }
+.roi-top { justify-content: center; }
+.included { justify-content: center; }
+
+/* ===========================================
+   LARGER TEXT (global bump)
+   =========================================== */
+:root {
+    --h2-size: clamp(1.9rem, 4.9vw, 3.8rem);
+    --body-size: clamp(0.92rem, 1.7vw, 1.28rem);
+    --small-size: clamp(0.74rem, 1.2vw, 0.96rem);
+}
+.eyebrow { font-size: clamp(0.7rem, 1.2vw, 0.86rem); }
+.tagline { font-size: clamp(0.76rem, 1.25vw, 0.98rem); }
+.pill { font-size: clamp(0.74rem, 1.15vw, 0.92rem); }
+.feat h3 { font-size: clamp(1.15rem, 2vw, 1.55rem); }
+.feat p { font-size: clamp(0.84rem, 1.3vw, 1.02rem); }
+.feat .ico { font-size: clamp(0.72rem, 1.05vw, 0.84rem); }
+.chip { font-size: clamp(0.82rem, 1.25vw, 1.02rem); padding: 0.5em 1em; }
+.arrow { font-size: 1.1em; }
+.step h4 { font-size: clamp(1.05rem, 1.8vw, 1.4rem); }
+.step p { font-size: clamp(0.76rem, 1.2vw, 0.96rem); }
+.step .when { font-size: clamp(0.62rem, 0.98vw, 0.76rem); }
+.res-num { font-size: clamp(1.5rem, 3vw, 2.45rem); }
+.res-label { font-size: clamp(0.72rem, 1.15vw, 0.9rem); }
+.res-roi { font-size: clamp(0.76rem, 1.15vw, 0.94rem); }
+.res-card .sector { font-size: clamp(0.66rem, 1vw, 0.78rem); }
+.results-foot { font-size: clamp(0.82rem, 1.3vw, 1.02rem); }
+.roi-stat .num { font-size: clamp(2rem, 4.3vw, 3.5rem); }
+.roi-stat .lbl { font-size: clamp(0.76rem, 1.15vw, 0.94rem); }
+.price-table { font-size: clamp(0.84rem, 1.35vw, 1.1rem); }
+.inc { font-size: clamp(0.82rem, 1.3vw, 1.02rem); }
+.cap-node { font-size: clamp(0.86rem, 1.35vw, 1.08rem); }
+.cap-badge { font-size: clamp(0.66rem, 1vw, 0.78rem); }
+.bubble { font-size: clamp(0.82rem, 1.25vw, 1.02rem); }
+.chat-title { font-size: clamp(0.86rem, 1.3vw, 1rem); }
+.chat-sub { font-size: clamp(0.62rem, 1vw, 0.74rem); }
+.contact-info { font-size: clamp(0.86rem, 1.35vw, 1.12rem); }
+.big-claim { font-size: clamp(1.55rem, 3.7vw, 2.8rem); }
+
+/* ===========================================
+   FLOW COMPARISON - OLD vs NEW lanes (slide 3)
+   Two contrasting lanes; old ends in a red "wasted"
+   stamp, new ends in a green success badge.
+   =========================================== */
+.compare { display: flex; flex-direction: column; gap: clamp(0.6rem,1.6vh,1.05rem); width: 100%; max-width: min(96vw, 1040px); margin: 0 auto; }
+.lane {
+    display: flex; align-items: center; flex-wrap: wrap; gap: clamp(0.4rem,1vw,0.7rem);
+    padding: clamp(0.65rem,1.5vw,1.05rem) clamp(0.85rem,1.7vw,1.25rem);
+    border-radius: 12px; border: 1px solid var(--border); background: var(--surface);
+    box-shadow: var(--shadow); position: relative; text-align: left;
+}
+.lane.old { border-left: 4px solid var(--error); }
+.lane.new { border-left: 4px solid var(--primary); background: linear-gradient(90deg, rgba(0,51,204,0.07), var(--surface) 60%); }
+.slide.visible .lane.new { animation: laneGlow 3s ease-in-out 2.2s infinite; }
+@keyframes laneGlow { 0%,100%{box-shadow: var(--shadow)} 50%{box-shadow: 0 10px 44px rgba(0,51,204,0.22)} }
+.lane-tag {
+    font-family: var(--font-body); font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    font-size: clamp(0.68rem,1.05vw,0.86rem); width: clamp(80px,8vw,116px); flex-shrink: 0;
+}
+.lane.old .lane-tag { color: var(--ink-3); }
+.lane.new .lane-tag { color: var(--primary); }
+.lane-flow { display: flex; align-items: center; gap: clamp(0.35rem,0.9vw,0.6rem); flex-wrap: wrap; }
+.lane.old .chip { color: var(--ink-2); }
+.lane.new .chip { border-color: var(--border-hi); background: var(--primary-soft); color: var(--primary); font-weight: 600; }
+/* sequential chip reveal (chips sit at odd child indices among chip/arrow spans) */
+.lane.old .lane-flow > .chip:nth-child(1){transition-delay:.20s}
+.lane.old .lane-flow > .chip:nth-child(3){transition-delay:.38s}
+.lane.old .lane-flow > .chip:nth-child(5){transition-delay:.56s}
+.lane.old .lane-flow > .chip:nth-child(7){transition-delay:.74s}
+.lane.old .lane-flow > .chip:nth-child(9){transition-delay:.92s}
+.lane.new .lane-flow > .chip:nth-child(1){transition-delay:1.55s}
+.lane.new .lane-flow > .chip:nth-child(3){transition-delay:1.73s}
+.lane.new .lane-flow > .chip:nth-child(5){transition-delay:1.91s}
+.lane-end {
+    margin-left: auto; font-weight: 700; border-radius: var(--radius-pill);
+    padding: 0.42em 1.05em; font-size: clamp(0.82rem,1.3vw,1.05rem); white-space: nowrap;
+    opacity: 0; transform: scale(0.6);
+}
+.lane.old .lane-end.bad { background: rgba(214,69,61,0.12); color: var(--error); border: 1px solid rgba(214,69,61,0.38); }
+.lane.new .lane-end.good { background: rgba(10,143,91,0.13); color: var(--success); border: 1px solid rgba(10,143,91,0.38); }
+.slide.visible .lane-end { animation: stampIn 0.55s var(--ease-out-expo) forwards; }
+.slide.visible .lane.old .lane-end { animation-delay: 1.15s; }
+.slide.visible .lane.new .lane-end { animation-delay: 2.15s; }
+@keyframes stampIn {
+    0% { opacity: 0; transform: scale(0.5) rotate(-5deg); }
+    60% { opacity: 1; transform: scale(1.14) rotate(2deg); }
+    100% { opacity: 1; transform: scale(1) rotate(0); }
+}
+
+/* ===========================================
+   CLIMB TO LIFT-OFF - ascending launch visual (slide 8)
+   Risers grow week-over-week (momentum), dashed flight
+   path arcs up behind, rocket ignites + hovers at GO LIVE.
+   =========================================== */
+.climb { position: relative; width: 100%; max-width: min(96vw, 1180px); margin: clamp(1rem,3.5vh,2.2rem) auto 0; padding: clamp(2.4rem,6vh,4rem) 1% 0; }
+/* dashed flight path behind the steps (wrapper gives a definite box; svg fills it) */
+.climb-path { position: absolute; top: clamp(2.4rem,6vh,4rem); left: 1%; right: 1%; bottom: 16px; z-index: 0; pointer-events: none; }
+.climb-path svg { width: 100%; height: 100%; display: block; overflow: visible; }
+.climb-path path {
+    fill: none; stroke: var(--primary); stroke-width: 2.5; stroke-linecap: round;
+    stroke-dasharray: 5 9; vector-effect: non-scaling-stroke; opacity: 0;
+}
+.slide.visible .climb-path path { animation: pathIn 1.4s ease 0.4s forwards; }
+@keyframes pathIn { from { opacity: 0; } to { opacity: 0.42; } }
+
+.climb-row { position: relative; z-index: 1; display: flex; align-items: flex-end; justify-content: space-between; gap: clamp(0.4rem,1vw,1.1rem); }
+.cstep { flex: 1; display: flex; flex-direction: column; align-items: center; }
+
+/* step card */
+.cs-card {
+    background: var(--surface); border: 1px solid var(--border); border-top: 2px solid rgba(0,51,204,0.32);
+    border-radius: 10px; box-shadow: var(--shadow); text-align: center;
+    padding: clamp(0.55rem,1.2vw,0.92rem) clamp(0.45rem,1vw,0.8rem);
+    width: 100%; max-width: clamp(120px,15vw,215px);
+    opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s var(--ease-out-expo);
+}
+.cs-card.go { border-top-color: var(--success); box-shadow: 0 8px 32px rgba(10,143,91,0.18); }
+.slide.visible .cs-card { opacity: 1; transform: translateY(0); }
+.cstep:nth-child(1) .cs-card{transition-delay:.55s}.cstep:nth-child(2) .cs-card{transition-delay:.85s}
+.cstep:nth-child(3) .cs-card{transition-delay:1.15s}.cstep:nth-child(4) .cs-card{transition-delay:1.45s}
+.cstep:nth-child(5) .cs-card{transition-delay:1.75s}
+.cs-wk {
+    display: inline-block; font-family: var(--font-body); font-weight: 700; letter-spacing: 1.2px;
+    font-size: clamp(0.62rem,0.95vw,0.76rem); color: var(--primary); margin-bottom: 0.5em;
+    background: var(--primary-soft); border: 1px solid rgba(0,51,204,0.22); border-radius: var(--radius-pill); padding: 0.16em 0.72em;
+}
+.cs-wk.go { color: var(--success); background: rgba(10,143,91,0.12); border-color: rgba(10,143,91,0.35); }
+.cs-card b { display: block; color: var(--ink); font-weight: 600; font-size: clamp(0.88rem,1.4vw,1.12rem); margin-bottom: 0.15em; }
+.cs-desc { font-size: clamp(0.72rem,1.12vw,0.92rem); color: var(--ink-2); line-height: 1.35; }
+
+/* riser (grows week-over-week) + foot dot on the baseline */
+.cs-riser {
+    width: 2px; height: var(--h); margin-top: clamp(6px,1.2vh,12px);
+    background: linear-gradient(var(--primary), rgba(0,51,204,0.12));
+    transform-origin: bottom; transform: scaleY(0); transition: transform 0.6s var(--ease-out-expo);
+}
+.slide.visible .cs-riser { transform: scaleY(1); }
+.cstep:nth-child(1) .cs-riser{transition-delay:.45s}.cstep:nth-child(2) .cs-riser{transition-delay:.75s}
+.cstep:nth-child(3) .cs-riser{transition-delay:1.05s}.cstep:nth-child(4) .cs-riser{transition-delay:1.35s}
+.cstep:nth-child(5) .cs-riser{transition-delay:1.65s}
+.cs-foot { width: 9px; height: 9px; border-radius: 50%; background: var(--primary); box-shadow: 0 0 10px rgba(0,51,204,0.5); }
+.cs-foot.go { background: var(--success); box-shadow: 0 0 12px rgba(10,143,91,0.55); }
+
+/* rocket - ignites then hovers at GO LIVE */
+.cs-rocket {
+    font-size: clamp(1.6rem,3.2vw,2.6rem); line-height: 1; margin-bottom: clamp(0.3rem,0.8vh,0.6rem);
+    opacity: 0; filter: drop-shadow(0 6px 10px rgba(10,143,91,0.35));
+}
+.slide.visible .end .cs-rocket {
+    animation: rocketLaunch 0.9s var(--ease-out-expo) 2.0s both, rocketHover 1.9s ease-in-out 2.9s infinite;
+}
+@keyframes rocketLaunch {
+    0% { opacity: 0; transform: translateY(26px) scale(0.55); }
+    55% { opacity: 1; transform: translateY(-8px) scale(1.08); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes rocketHover { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+</style>
+</head>
+<body>
+
+<!-- Progress + nav -->
+<div class="progress-bar"></div>
+<nav class="nav-dots" aria-label="Slide navigation"></nav>
+<div class="keyboard-hint decorative">← → / SPACE / SCROLL</div>
+
+<!-- ===========================================
+     SLIDE 1 - TITLE
+     =========================================== -->
+<section class="slide title-slide">
+    <span class="slide-num">01 / 09</span>
+    <div class="glow-blob" style="width:48vw;height:48vw;right:-14vw;top:-12vw;"></div>
+    <div class="slide-content">
+        <div class="reveal eyebrow">AI Consultancy <span class="b">/</span> Phuket, Thailand <span class="b">/</span> 2025</div>
+        <div class="reveal brand-lockup"><span class="logo-mark"></span><span class="name"><span class="ai">AI</span> Rejig Labs</span></div>
+        <h1 class="reveal">Unlocking 24/7 booking conversion <span class="accent">with AI automation.</span></h1>
+        <div class="reveal glow-line"></div>
+        <div class="reveal tagline">Strategy · Systems · AI · Scale</div>
+        <div class="reveal status-pill pill"><span class="live-dot"></span> AI agent online · answering &amp; booking 24/7</div>
+    </div>
+</section>
+
+<!-- ===========================================
+     SLIDE 2 - THE CHALLENGE
+     =========================================== -->
+<section class="slide">
+    <span class="slide-num">02 / 09</span>
+    <div class="glow-blob" style="width:40vw;height:40vw;left:-12vw;bottom:-15vw;"></div>
+    <div class="slide-content">
+        <div class="reveal eyebrow">01 <span class="b">/</span> The Challenge</div>
+        <h2 class="reveal">Inconsistent <span class="accent">lead conversion</span></h2>
+        <ul class="challenge-list">
+            <li class="reveal"><strong>Manual follow-ups lose hot leads</strong>, especially outside core office hours.</li>
+            <li class="reveal"><strong class="uline">Speed to Lead</strong> is critical when the market is competitive and customers decide quickly.</li>
+            <li class="reveal"><strong>Wasteful enquiries &amp; inconsistent follow-up</strong>: real conversations missed, low conversion rates.</li>
+        </ul>
+        <p class="reveal big-claim">AI-driven automation scales new business <span class="accent">without increasing manual workload.</span></p>
+    </div>
+</section>
+
+<!-- ===========================================
+     SLIDE 3 - THE SOLUTION + FLOW COMPARISON
+     =========================================== -->
+<section class="slide">
+    <span class="slide-num">03 / 09</span>
+    <div class="glow-blob" style="width:42vw;height:42vw;right:-14vw;top:-8vw;"></div>
+    <div class="slide-content">
+        <div class="reveal eyebrow">02 <span class="b">/</span> The Solution</div>
+        <h2 class="reveal">AI that <span class="accent">qualifies &amp; books</span></h2>
+        <div class="feat-row">
+            <div class="reveal feat">
+                <span class="ico">24/7</span>
+                <h3>Qualification &amp; appointments</h3>
+                <p>Qualify, engage and book constantly, capturing top-of-funnel intent.</p>
+            </div>
+            <div class="reveal feat">
+                <span class="ico">INSTANT</span>
+                <h3>Nurture &amp; auto-book</h3>
+                <p>Follows up instantly so warm leads become scheduled consults ASAP.</p>
+            </div>
+            <div class="reveal feat">
+                <span class="ico">OMNICHANNEL</span>
+                <h3>Every channel + CRM</h3>
+                <p>Web, WhatsApp, Meta, social &amp; email, all captured in CRM (included).</p>
+            </div>
+        </div>
+        <!-- Animated OLD vs NEW comparison -->
+        <div class="reveal compare">
+            <div class="lane old">
+                <span class="lane-tag">Old, slow</span>
+                <div class="lane-flow">
+                    <span class="chip">Ad</span><span class="arrow">›</span>
+                    <span class="chip">Form</span><span class="arrow">›</span>
+                    <span class="chip">Manual reply</span><span class="arrow">›</span>
+                    <span class="chip">Chat</span><span class="arrow">›</span>
+                    <span class="chip">Calendar</span>
+                </div>
+                <span class="lane-end bad">98% wasted</span>
+            </div>
+            <div class="lane new">
+                <span class="lane-tag">New · AI</span>
+                <div class="lane-flow">
+                    <span class="chip">Ad</span><span class="arrow">›</span>
+                    <span class="chip">AI agent</span><span class="arrow">›</span>
+                    <span class="chip">Booked</span>
+                </div>
+                <span class="lane-end good">✓ in &lt; 5 min</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===========================================
+     SLIDE 4 - CONVERSION ENGINE + LIVE CHAT SIM
+     =========================================== -->
+<section class="slide" id="slide-chat">
+    <span class="slide-num">04 / 09</span>
+    <div class="glow-blob" style="width:44vw;height:44vw;left:-14vw;top:-10vw;"></div>
+    <div class="slide-content">
+        <div class="reveal eyebrow">03 <span class="b">/</span> Conversion Engine</div>
+        <h2 class="reveal">Attention → <span class="accent">confirmed appointment</span></h2>
+        <div class="engine">
+            <div class="capture-col">
+                <div class="reveal cap-step"><span class="cap-badge">CAPTURE</span><span class="cap-node">Ad / marketing</span></div>
+                <div class="reveal cap-step"><span class="arrow">↓</span><span class="cap-node">AI agent ⇄ conversation</span></div>
+                <div class="reveal cap-step"><span class="cap-badge">CONVERT</span><span class="cap-node">Qualified &amp; booked</span></div>
+                <div class="reveal platform-row">
+                    <span class="plat">📱</span><span class="plat">✉️</span><span class="plat">🟢</span>
+                    <span class="plat">💬</span><span class="plat">🖥️</span><span class="plat">🤝</span>
+                </div>
+            </div>
+            <!-- Animated chat - bubbles populate when slide is visible -->
+            <div class="reveal chat-window">
+                <div class="chat-head">
+                    <div class="chat-avatar">RL</div>
+                    <div>
+                        <div class="chat-title">Rejig AI Agent</div>
+                        <div class="chat-sub">● typically replies in &lt; 1 min</div>
+                    </div>
+                </div>
+                <div class="chat-body" id="chatBody"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===========================================
+     SLIDE 5 - THE NEW CONVERSION (STEPPER)
+     =========================================== -->
+<section class="slide">
+    <span class="slide-num">05 / 09</span>
+    <div class="glow-blob" style="width:40vw;height:40vw;right:-12vw;bottom:-14vw;"></div>
+    <div class="slide-content">
+        <div class="reveal eyebrow">04 <span class="b">/</span> The New Conversion</div>
+        <h2 class="reveal">Repeatable, <span class="accent">scalable business flow</span></h2>
+        <div class="stepper">
+            <div class="step"><div class="step-node">1</div><span class="when">CAPTURE</span><h4>Attention</h4><p>Capture name, email, WhatsApp &amp; phone via ad.</p></div>
+            <div class="step"><div class="step-node">2</div><span class="when">&lt; 5 MIN</span><h4>Qualify</h4><p>Intent &amp; interest, in their preferred channel.</p></div>
+            <div class="step"><div class="step-node">3</div><span class="when">AUTO</span><h4>Booked</h4><p>Meetings pushed to calendars + reminders.</p></div>
+            <div class="step"><div class="step-node">4</div><span class="when">HUMAN</span><h4>Connect</h4><p>Your team takes over with full context.</p></div>
+            <div class="step"><div class="step-node">5</div><span class="when">ROI</span><h4>Sell</h4><p>Predictable ROI, guaranteed within 6 months.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ===========================================
+     SLIDE 6 - RESULTS / COUNT-UP STATS
+     =========================================== -->
+<section class="slide" id="slide-results">
+    <span class="slide-num">06 / 09</span>
+    <div class="glow-blob" style="width:42vw;height:42vw;left:-13vw;top:-9vw;"></div>
+    <div class="slide-content">
+        <div class="reveal eyebrow">05 <span class="b">/</span> References &amp; Results</div>
+        <h2 class="reveal">Targets hit in <span class="accent">90 days</span></h2>
+        <div class="results-grid">
+            <div class="reveal res-card">
+                <div class="sector">Insurance</div>
+                <div class="res-stat"><div class="res-num"><span class="count" data-count="162" data-prefix="+" data-suffix="%">+0%</span></div><div class="res-label">Meetings increase</div></div>
+                <div class="res-stat"><div class="res-num"><span class="count" data-count="86" data-prefix="+" data-suffix="%">+0%</span></div><div class="res-label">Pipeline increase</div></div>
+                <div class="res-roi">Hit ROI · 2 months</div>
+            </div>
+            <div class="reveal res-card">
+                <div class="sector">B2C Hospitality</div>
+                <div class="res-stat"><div class="res-num"><span class="count" data-count="1000" data-prefix="+">+0</span></div><div class="res-label">New customers</div></div>
+                <div class="res-stat"><div class="res-num">No training</div><div class="res-label">Zero staff onboarding</div></div>
+                <div class="res-roi">Hit ROI · <span class="count" data-count="5780" data-suffix="%">0%</span></div>
+            </div>
+            <div class="reveal res-card">
+                <div class="sector">Property</div>
+                <div class="res-stat"><div class="res-num"><span class="count" data-count="192" data-prefix="+" data-suffix="%">+0%</span></div><div class="res-label">Meetings increase</div></div>
+                <div class="res-stat"><div class="res-num"><span class="count" data-count="97" data-prefix="−" data-suffix="%">−0%</span></div><div class="res-label">Manual replies (automated Q&amp;A)</div></div>
+                <div class="res-roi">Hit ROI · 3 months</div>
+            </div>
+            <div class="reveal res-card">
+                <div class="sector">VIP Travel</div>
+                <div class="res-stat"><div class="res-num">฿<span class="count" data-count="50000">0</span></div><div class="res-label">Staff cost saved / month</div></div>
+                <div class="res-stat"><div class="res-num"><span class="count" data-count="99" data-prefix="+" data-suffix="%">+0%</span></div><div class="res-label">Faster response</div></div>
+                <div class="res-roi">Hit ROI · 2 months</div>
+            </div>
+        </div>
+        <p class="reveal results-foot">Across <strong>Property, Hospitality, Insurance, Business Services, Tourism &amp; Construction.</strong> International Travel Tours (192% more meetings, 4mo ROI) · Property Developer (72% lower cost, 44% better conversion) · Health/Wellness (67% better booking rate, 32% less admin).</p>
+    </div>
+</section>
+
+<!-- ===========================================
+     SLIDE 7 - PRICING / ROI
+     =========================================== -->
+<section class="slide" id="slide-pricing">
+    <span class="slide-num">07 / 09</span>
+    <div class="glow-blob" style="width:40vw;height:40vw;right:-12vw;top:-10vw;"></div>
+    <div class="slide-content">
+        <div class="reveal eyebrow">06 <span class="b">/</span> Pricing &amp; ROI</div>
+        <h2 class="reveal">ROI in <span class="accent">under 6 months</span> <span style="color:var(--ink-3);font-size:0.55em">(est. 3)</span></h2>
+        <div class="roi-top">
+            <div class="reveal roi-stat"><div class="num"><span class="count" data-count="390" data-prefix="+" data-suffix="%">+0%</span></div><div class="lbl">Conversion lift from &lt;5-min Speed to Lead</div></div>
+            <div class="reveal roi-stat"><div class="num">24/7</div><div class="lbl">Ad clicks → qualified, verified, booked meetings</div></div>
+            <div class="reveal roi-stat"><div class="num"><span class="count" data-count="3" data-suffix=" mo">0 mo</span></div><div class="lbl">Typical payback period</div></div>
+        </div>
+        <table class="price-table reveal">
+            <tr><td>Fixed fee setup (one-time)</td><td>฿50,000</td></tr>
+            <tr><td>Monthly investment (ongoing)</td><td>฿30,000</td></tr>
+            <tr><td>Total invested in Month 1</td><td>฿80,000 + ad spend</td></tr>
+            <tr class="hi"><td>Month 2, 3, 4 … recurring</td><td>฿30,000 + ad spend</td></tr>
+            <tr class="profit"><td>Expected net monthly profit</td><td>฿120,000</td></tr>
+            <tr><td>Payback period</td><td>3.0 months</td></tr>
+        </table>
+    </div>
+</section>
+
+<!-- ===========================================
+     SLIDE 8 - NEXT STEPS TIMELINE
+     =========================================== -->
+<section class="slide">
+    <span class="slide-num">08 / 09</span>
+    <div class="glow-blob" style="width:42vw;height:42vw;left:-13vw;bottom:-14vw;"></div>
+    <div class="slide-content">
+        <div class="reveal eyebrow">07 <span class="b">/</span> Suggested Next Steps</div>
+        <h2 class="reveal">From sign-off to launch in <span class="accent">4 weeks</span></h2>
+        <!-- Creative: ascending climb to lift-off - risers grow week-over-week,
+             dashed flight-path arcs up behind, rocket ignites at GO LIVE -->
+        <div class="reveal climb">
+            <div class="climb-path"><svg viewBox="0 0 100 60" preserveAspectRatio="none" aria-hidden="true"><path d="M 4 55 C 26 51, 32 44, 50 33 S 80 13, 96 5" /></svg></div>
+            <div class="climb-row">
+                <div class="cstep" style="--h: clamp(8px,1.6vh,20px)">
+                    <div class="cs-card"><span class="cs-wk">WEEK 1</span><b>Sign-off</b><span class="cs-desc">Agreement &amp; onboarding</span></div>
+                    <div class="cs-riser"></div><div class="cs-foot"></div>
+                </div>
+                <div class="cstep" style="--h: clamp(26px,4.5vh,54px)">
+                    <div class="cs-card"><span class="cs-wk">WEEK 2</span><b>Build</b><span class="cs-desc">AI agent &amp; workflows</span></div>
+                    <div class="cs-riser"></div><div class="cs-foot"></div>
+                </div>
+                <div class="cstep" style="--h: clamp(46px,7.5vh,90px)">
+                    <div class="cs-card"><span class="cs-wk">WEEK 3</span><b>Approve</b><span class="cs-desc">Customer review &amp; refine</span></div>
+                    <div class="cs-riser"></div><div class="cs-foot"></div>
+                </div>
+                <div class="cstep" style="--h: clamp(66px,10.5vh,126px)">
+                    <div class="cs-card"><span class="cs-wk">WEEK 4</span><b>Launch prep</b><span class="cs-desc">Final review</span></div>
+                    <div class="cs-riser"></div><div class="cs-foot"></div>
+                </div>
+                <div class="cstep end" style="--h: clamp(88px,13.5vh,162px)">
+                    <div class="cs-rocket">🚀</div>
+                    <div class="cs-card go"><span class="cs-wk go">GO LIVE</span><b>You're live</b><span class="cs-desc">Booking 24/7</span></div>
+                    <div class="cs-riser"></div><div class="cs-foot go"></div>
+                </div>
+            </div>
+        </div>
+        <div class="included">
+            <span class="reveal inc"><span class="ck">✓</span> Thai &amp; English account management</span>
+            <span class="reveal inc"><span class="ck">✓</span> Partner discount on any media</span>
+            <span class="reveal inc"><span class="ck">✓</span> Complimentary media publishing</span>
+        </div>
+    </div>
+</section>
+
+<!-- ===========================================
+     SLIDE 9 - CONTACT
+     =========================================== -->
+<section class="slide contact-slide">
+    <span class="slide-num">09 / 09</span>
+    <div class="glow-blob" style="width:55vw;height:55vw;right:-18vw;bottom:-20vw;"></div>
+    <div class="slide-content">
+        <div class="reveal big-brand"><span class="logo-mark blue"></span><span><span class="ai">AI</span> Rejig Labs</span></div>
+        <div class="reveal glow-line" style="margin-bottom:clamp(1rem,3vh,2rem)"></div>
+        <div class="reveal contact-info">
+            Rejig Labs HQ<br />
+            98/49 Patak Road, Karon<br />
+            Amphoe Muang Phuket, 83100, Thailand<br />
+            Phone: +66 99-141-4896<br />
+            <span class="site">rejiglabs.com</span>
+        </div>
+        <a class="reveal cta" href="https://rejiglabs.com" target="_blank" rel="noopener">Book a discovery call →</a>
+    </div>
+</section>
+
+<script>
+/* ===========================================
+   SLIDE PRESENTATION CONTROLLER
+   Nav (keys / wheel / touch / dots), progress bar,
+   scroll-triggered .visible class, and one-shot animated
+   components (count-up stats + chat simulation).
+   =========================================== */
+class SlidePresentation {
+    constructor() {
+        this.slides = Array.from(document.querySelectorAll('.slide'));
+        this.current = 0;
+        this.navDots = document.querySelector('.nav-dots');
+        this.progress = document.querySelector('.progress-bar');
+        this.fired = new Set();
+        this.setupObserver();
+        this.setupNavDots();
+        this.setupKeyboard();
+        this.setupWheel();
+        this.setupTouch();
+        this.updateProgress();
+    }
+
+    setupObserver() {
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach((e) => {
+                if (e.isIntersecting && e.intersectionRatio > 0.5) {
+                    e.target.classList.add('visible');
+                    this.current = this.slides.indexOf(e.target);
+                    this.updateProgress();
+                    this.updateDots();
+                    this.fireComponents(e.target);
+                }
+            });
+        }, { threshold: [0.5] });
+        this.slides.forEach((s) => obs.observe(s));
+    }
+
+    fireComponents(slide) {
+        if (this.fired.has(slide)) return;
+        this.fired.add(slide);
+        if (slide.id === 'slide-results' || slide.id === 'slide-pricing') this.animateCounters(slide);
+        if (slide.id === 'slide-chat') this.runChat();
+    }
+
+    /* Count-up with prefix/suffix + thousands separators */
+    animateCounters(slide) {
+        slide.querySelectorAll('.count').forEach((el) => {
+            const target = parseFloat(el.dataset.count);
+            const prefix = el.dataset.prefix || '';
+            const suffix = el.dataset.suffix || '';
+            const dur = 1400;
+            const start = performance.now();
+            const tick = (now) => {
+                const p = Math.min((now - start) / dur, 1);
+                const eased = 1 - Math.pow(1 - p, 3);
+                const val = Math.round(target * eased);
+                el.textContent = prefix + val.toLocaleString('en-US') + suffix;
+                if (p < 1) requestAnimationFrame(tick);
+            };
+            requestAnimationFrame(tick);
+        });
+    }
+
+    /* Live chat simulation - lead asks, AI agent replies + books */
+    runChat() {
+        const body = document.getElementById('chatBody');
+        if (!body) return;
+        body.innerHTML = '';
+        const script = [
+            { who: 'lead', text: "Hi, do you have availability this week?" },
+            { who: 'ai',   text: "Hi! Yes 👋 I can book you in. What service are you after?" },
+            { who: 'lead', text: "A consultation, ideally Thursday." },
+            { who: 'ai',   text: "Perfect, Thu 2:00pm is open. Shall I lock it in?" },
+            { who: 'lead', text: "Yes please." },
+            { who: 'ai',   text: "✅ Booked! Confirmation + reminder sent. See you Thursday." },
+        ];
+        let delay = 400;
+        script.forEach((msg) => {
+            if (msg.who === 'ai') {
+                delay += 500;
+                setTimeout(() => {
+                    const ind = document.createElement('div');
+                    ind.className = 'bubble ai show';
+                    ind.innerHTML = '<span class="typing"><span></span><span></span><span></span></span>';
+                    body.appendChild(ind);
+                    body.scrollTop = body.scrollHeight;
+                    setTimeout(() => ind.remove(), 700);
+                }, delay);
+                delay += 700;
+            }
+            setTimeout(() => {
+                const b = document.createElement('div');
+                b.className = 'bubble ' + msg.who;
+                b.textContent = msg.text;
+                body.appendChild(b);
+                requestAnimationFrame(() => b.classList.add('show'));
+                body.scrollTop = body.scrollHeight;
+            }, delay);
+            delay += 850;
+        });
+    }
+
+    setupNavDots() {
+        this.navDots.innerHTML = '';
+        this.slides.forEach((_, i) => {
+            const b = document.createElement('button');
+            b.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+            if (i === 0) b.classList.add('active');
+            b.addEventListener('click', () => this.goTo(i));
+            this.navDots.appendChild(b);
+        });
+    }
+    updateDots() {
+        this.navDots.querySelectorAll('button').forEach((b, i) => b.classList.toggle('active', i === this.current));
+    }
+    updateProgress() {
+        this.progress.style.width = (this.current / (this.slides.length - 1)) * 100 + '%';
+    }
+
+    goTo(i) {
+        i = Math.max(0, Math.min(this.slides.length - 1, i));
+        this.slides[i].scrollIntoView({ behavior: 'smooth' });
+    }
+    next() { this.goTo(this.current + 1); }
+    prev() { this.goTo(this.current - 1); }
+
+    setupKeyboard() {
+        document.addEventListener('keydown', (e) => {
+            if (['ArrowDown', 'ArrowRight', ' ', 'PageDown'].includes(e.key)) { e.preventDefault(); this.next(); }
+            else if (['ArrowUp', 'ArrowLeft', 'PageUp'].includes(e.key)) { e.preventDefault(); this.prev(); }
+            else if (e.key === 'Home') this.goTo(0);
+            else if (e.key === 'End') this.goTo(this.slides.length - 1);
+        });
+    }
+    setupWheel() {
+        let lock = false;
+        window.addEventListener('wheel', (e) => {
+            if (lock) return;
+            if (Math.abs(e.deltaY) < 25) return;
+            lock = true;
+            e.deltaY > 0 ? this.next() : this.prev();
+            setTimeout(() => (lock = false), 700);
+        }, { passive: true });
+    }
+    setupTouch() {
+        let y0 = null;
+        window.addEventListener('touchstart', (e) => (y0 = e.touches[0].clientY), { passive: true });
+        window.addEventListener('touchend', (e) => {
+            if (y0 === null) return;
+            const dy = y0 - e.changedTouches[0].clientY;
+            if (Math.abs(dy) > 50) dy > 0 ? this.next() : this.prev();
+            y0 = null;
+        }, { passive: true });
+    }
+}
+
+new SlidePresentation();
+document.querySelector('.slide').classList.add('visible');
+</script>
+</body>
+</html>
