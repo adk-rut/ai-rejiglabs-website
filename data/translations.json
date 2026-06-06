@@ -1,5 +1,6 @@
 {
   "nav_services": { "en": "Services", "th": "บริการ", "ru": "Услуги" },
+  "nav_blockchain": { "en": "Blockchain", "th": "บล็อกเชน", "ru": "Блокчейн" },
   "nav_process": { "en": "Process", "th": "ขั้นตอน", "ru": "Процесс" },
   "nav_case_studies": { "en": "Case Studies", "th": "ผลงาน", "ru": "Кейсы" },
   "nav_cta": { "en": "Get In Touch", "th": "ติดต่อเรา", "ru": "Связаться" },

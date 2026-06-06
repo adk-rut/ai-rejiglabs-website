@@ -239,6 +239,50 @@ img, svg { display: block; max-width: 100%; }
 }
 .nav__link:hover { color: var(--text-primary); }
 
+/* Services dropdown */
+.nav__dropdown { position: relative; display: inline-flex; align-items: center; }
+.nav__dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  min-width: 160px;
+  padding: 0.4rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  box-shadow: 0 12px 28px rgba(26,29,46,0.12);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.18s, transform 0.18s, visibility 0.18s;
+  z-index: 100;
+}
+.nav__dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -12px; left: 0; right: 0;
+  height: 12px;
+}
+.nav__dropdown:hover .nav__dropdown-menu,
+.nav__dropdown:focus-within .nav__dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(10px);
+}
+.nav__dropdown-item {
+  display: block;
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 400;
+  transition: background 0.18s, color 0.18s;
+}
+.nav__dropdown-item:hover { background: var(--bg-alt); color: var(--accent); }
+
 /* Language toggle */
 .nav__lang {
   display: inline-flex;
@@ -426,7 +470,7 @@ img, svg { display: block; max-width: 100%; }
 /* ============ NARRATIVE ============ */
 .narrative {
   background: var(--bg);
-  /* total height set by JS */
+  height: 500vh; /* (3 transitions × 100) + 200 — matches JS calculation, prevents CLS */
 }
 .narrative__sticky {
   position: sticky;
@@ -1331,16 +1375,21 @@ img, svg { display: block; max-width: 100%; }
   font-size: 0.8rem;
   color: var(--text-secondary);
 }
-.footer a,
-.closing-footer .footer__inner a {
+.footer a {
   font-size: 0.8rem;
   color: rgba(180,200,255,0.55);
   text-decoration: none;
   transition: color 0.2s;
 }
+.closing-footer .footer__inner a {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
 .footer a:hover,
 .closing-footer .footer__inner a:hover {
-  color: #99bbff;
+  color: var(--accent);
 }
 .footer a:visited,
 .closing-footer .footer__inner a:visited {
@@ -1358,7 +1407,7 @@ img, svg { display: block; max-width: 100%; }
   gap: 0.25rem;
   padding: 6px;
   border-radius: 14px;
-  background: rgba(255,255,255,0.04);
+  background: rgba(0,0,0,0.04);
   border: 1px solid var(--border);
 }
 .footer__social-link {
@@ -1368,7 +1417,7 @@ img, svg { display: block; max-width: 100%; }
   width: 36px;
   height: 36px;
   border-radius: 10px;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   transition: color 0.25s, background 0.25s, transform 0.25s;
   font-size: 0.8rem;
 }
@@ -1460,8 +1509,8 @@ img, svg { display: block; max-width: 100%; }
 .cs-card {
   display: flex;
   flex-direction: column;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+  background: #dde3f0;
+  border: 1px solid rgba(0,51,204,0.18);
   border-radius: 12px;
   overflow: hidden;
   text-decoration: none;
@@ -1924,7 +1973,7 @@ img, svg { display: block; max-width: 100%; }
 .nav__logomark,
 .process__logo,
 .footer__logo { filter: brightness(0); }
-.process__logo { opacity: 0.15; }
+.process__logo { opacity: 0.65; }
 .footer__logo  { opacity: 0.5; }
 
 /* ---- Nav / mobile menu backgrounds (base hardcodes dark) ---- */
@@ -1974,12 +2023,13 @@ img, svg { display: block; max-width: 100%; }
 .dot-card__line--left,
 .dot-card__line--right { background: rgba(0,51,204,0.08); }
 .dot-card__value {
-  background: linear-gradient(180deg, var(--accent) 0%, #0055ff 100%);
+  background: linear-gradient(180deg, #4d84ff 0%, #3366ee 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .dot-card__unit { -webkit-text-fill-color: var(--text-muted); }
+.dot-card__label { color: rgba(255,255,255,0.55); }
 
 /* ---- FAQ chat bubbles ---- */
 .faq__bubble--q {
