@@ -2,3 +2,7 @@
 .DS_Store
 node_modules/
 .vercel
+
+# Drawbridge annotation tooling — never deploy (lives at outputs/drawbridge-website/)
+drawbridge/
+.moat/
