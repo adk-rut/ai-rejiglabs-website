@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    { "source": "/case-studies/:slug", "destination": "/case-study.html" }
+  ],
+  "redirects": [
+    {
+      "source": "/case-study.html",
+      "has": [{ "type": "query", "key": "slug", "value": "(?<slug>[^&]+)" }],
+      "destination": "/case-studies/:slug",
+      "permanent": true
+    }
+  ]
+}

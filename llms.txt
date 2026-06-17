@@ -1,0 +1,33 @@
+# Rejig Labs
+
+> We don't just talk AI. We deliver it. Rejig Labs finds where AI saves your business real time and real money, then builds it, implements it, and trains your team to run it.
+
+Rejig Labs is an AI implementation consultancy based in Thailand (Bangkok / Phuket, working remotely worldwide). Unlike strategy-only consultants, we audit your workflows, build the custom AI systems ourselves, deploy them into your existing tools, and train your team to run them. Available in English, Thai, and Russian.
+
+## Services
+
+- [Identify](https://rejiglabs.com/#process): We map your acquisition, delivery, and support workflows to find where time is bleeding out and where AI makes the biggest impact. Output: a full AI roadmap in 2–4 weeks.
+- [Develop](https://rejiglabs.com/#process): We build custom AI workflows around your existing tools. No rip-and-replace. Value from the first week.
+- [Adopt](https://rejiglabs.com/#process): We embed with your team, run training, and refine until the systems feel like second nature.
+- [Web3 / Blockchain growth](https://rejiglabs.com/blockchain): Founder-led, execution-obsessed growth marketing for Web3, DeFi, NFT, and AI projects.
+
+## Case Studies
+
+- [BoBe — AI trading platform](https://rejiglabs.com/case-studies/bobe): Replaced a $2–3K/month, 1–2-day content team with an autonomous system producing 14 pieces in seconds for under $30/month.
+- [GreenLine Logistics](https://rejiglabs.com/case-studies/greenline-logistics): AI-powered dispatch cut response times 52% and reclaimed 18 hours/week, in a 3-week build.
+- [Nova Creative — marketing agency](https://rejiglabs.com/case-studies/nova-creative): Tripled content output with no new hires and saved 30+ hours/week for a 12-person team.
+- [Atlas Health — 6 clinics](https://rejiglabs.com/case-studies/atlas-health): Automated patient intake and follow-ups, cutting admin time 60% and reclaiming 35 hours/week.
+
+## Key Pages
+
+- [Homepage](https://rejiglabs.com/): Offer, process, case studies, and FAQ.
+- [Blockchain / Web3 services](https://rejiglabs.com/blockchain)
+- [Expanded facts for AI](https://rejiglabs.com/llms-full.txt): Full service detail, all case-study metrics, and FAQs inline.
+
+## Contact
+
+- Email: hello@rejiglabs.com
+- Book a discovery call: https://cal.com/rejiglabs/discovery
+- X/Twitter: https://x.com/rejiglabs
+- LinkedIn: https://linkedin.com/company/rejiglabs
+- YouTube: https://youtube.com/@rejiglabs

@@ -1,5 +1,5 @@
 /**
- * AI Rejig Labs — Case Studies Module
+ * Rejig Labs — Case Studies Module
  * Renders card grids and full case study pages from data/case-studies.json
  *
  * Usage:
@@ -92,11 +92,11 @@
       return '<div class="cs-card__stat"><span class="cs-card__stat-val">' + s.value + '</span><span class="cs-card__stat-label">' + tStat(s) + '</span></div>';
     }).join('');
 
-    return '<a href="case-study.html?slug=' + cs.slug + '" class="cs-card" data-cs-card>' +
+    return '<a href="/case-studies/' + cs.slug + '" class="cs-card" data-cs-card>' +
       '<div class="ev-card">' +
         '<div class="ev-card__chars"></div>' +
         '<div class="ev-card__reveal"></div>' +
-        '<div class="ev-card__logo"><img src="' + basePath + 'assets/logo.png" alt="AI Rejig Labs"></div>' +
+        '<div class="ev-card__logo"><img src="' + basePath + 'assets/logo.png" alt="Rejig Labs"></div>' +
       '</div>' +
       '<div class="cs-card__body">' +
         '<span class="cs-card__tag">' + (t(cs, 'industry') || cs.industry) + '</span>' +
@@ -138,9 +138,67 @@
 
   // ---- Full Page ----
 
+  // Resolve case-study slug from the pretty path (/case-studies/<slug>) first,
+  // falling back to the legacy ?slug= query param.
+  function resolveSlug() {
+    var m = window.location.pathname.match(/\/case-studies\/([^\/?#]+)/);
+    if (m && m[1]) return decodeURIComponent(m[1]);
+    return new URLSearchParams(window.location.search).get('slug');
+  }
+
+  // Inject/replace a <head> tag (meta or link) by a CSS selector.
+  function setHeadTag(selector, tag, attrs) {
+    var el = document.head.querySelector(selector);
+    if (!el) { el = document.createElement(tag); document.head.appendChild(el); }
+    for (var k in attrs) { el.setAttribute(k, attrs[k]); }
+    return el;
+  }
+
+  // Populate canonical, Open Graph, Twitter, and Article JSON-LD for one case study.
+  function injectCaseStudyMeta(cs) {
+    var url = 'https://rejiglabs.com/case-studies/' + cs.slug;
+    var title = cs.client + ' | Case Study | Rejig Labs';
+    var desc = (cs.summary || '').replace(/\s+/g, ' ').trim();
+    var img = 'https://rejiglabs.com/assets/og/default.png';
+
+    setHeadTag('link[rel="canonical"]', 'link', { rel: 'canonical', href: url });
+    setHeadTag('meta[property="og:url"]', 'meta', { property: 'og:url', content: url });
+    setHeadTag('meta[property="og:title"]', 'meta', { property: 'og:title', content: title });
+    setHeadTag('meta[property="og:description"]', 'meta', { property: 'og:description', content: desc });
+    setHeadTag('meta[property="og:image"]', 'meta', { property: 'og:image', content: img });
+    setHeadTag('meta[name="twitter:card"]', 'meta', { name: 'twitter:card', content: 'summary_large_image' });
+    setHeadTag('meta[name="twitter:title"]', 'meta', { name: 'twitter:title', content: title });
+    setHeadTag('meta[name="twitter:description"]', 'meta', { name: 'twitter:description', content: desc });
+    setHeadTag('meta[name="twitter:image"]', 'meta', { name: 'twitter:image', content: img });
+
+    var ld = {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      'headline': cs.client + ': ' + (cs.headline || ''),
+      'description': desc,
+      'url': url,
+      'inLanguage': 'en',
+      'image': img,
+      'about': { '@type': 'Thing', 'name': cs.client + ' (' + (cs.industry || '') + ')' },
+      'author': { '@type': 'Organization', 'name': 'Rejig Labs', 'url': 'https://rejiglabs.com' },
+      'publisher': {
+        '@type': 'Organization',
+        'name': 'Rejig Labs',
+        'logo': { '@type': 'ImageObject', 'url': 'https://rejiglabs.com/assets/logo.png' }
+      },
+      'mainEntityOfPage': { '@type': 'WebPage', '@id': url }
+    };
+    var prev = document.getElementById('cs-jsonld');
+    if (prev) prev.remove();
+    var s = document.createElement('script');
+    s.type = 'application/ld+json';
+    s.id = 'cs-jsonld';
+    s.textContent = JSON.stringify(ld);
+    document.head.appendChild(s);
+  }
+
   function renderFullPage(container) {
-    var params = new URLSearchParams(window.location.search);
-    var slug = params.get('slug');
+    var slug = resolveSlug();
 
     if (!slug) {
       container.innerHTML = '<div class="cs-page__not-found"><h2>Case study not found</h2><p>No case study specified.</p><a href="index.html#case-studies" class="btn"><span class="btn__text">Back to Home</span><span class="btn__hover">Back to Home</span><span class="btn__fill"></span></a></div>';
@@ -159,8 +217,9 @@
         return;
       }
 
-      // Update page title
-      document.title = cs.client + ' | Case Study | AI Rejig Labs';
+      // Update page title + SEO/AI metadata (canonical, OG, Twitter, JSON-LD)
+      document.title = cs.client + ' | Case Study | Rejig Labs';
+      injectCaseStudyMeta(cs);
 
       var l = lang();
       var statsHtml = cs.stats.map(function (s) {

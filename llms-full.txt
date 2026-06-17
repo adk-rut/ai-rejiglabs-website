@@ -1,0 +1,80 @@
+# Rejig Labs — Full Reference
+
+> We don't just talk AI. We deliver it. Rejig Labs finds where AI saves your business real time and real money, then builds it, implements it, and trains your team to run it.
+
+**What we are:** An AI implementation consultancy. Most consultants hand over a strategy deck and leave; we stay and build it. We only recommend what we can actually build and deploy ourselves.
+
+**Location:** Thailand (Bangkok / Phuket), working remotely worldwide.
+**Languages:** English, Thai (ไทย), Russian (Русский).
+**Contact:** hello@rejiglabs.com · Book a call: https://cal.com/rejiglabs/discovery
+**Social:** https://x.com/rejiglabs · https://linkedin.com/company/rejiglabs · https://youtube.com/@rejiglabs
+
+---
+
+## How We Work — Three Steps
+
+**1. Identify.** We get under the hood of your business. We map your acquisition, delivery, and support workflows to find where time is bleeding out, where bottlenecks hide, and where AI can make the biggest impact. No guesswork, just the opportunities actually worth building. Output: a full AI roadmap (90-day plan, prioritised integrations, tool recommendations, ROI estimates) in 2–4 weeks. Three core flows are audited: acquisition, delivery, and support.
+
+**2. Develop.** With the roadmap locked, we build fast. Custom AI workflows designed around your existing tools and processes. No rip-and-replace. Everything integrates into how your team already works, so it delivers value from the first week.
+
+**3. Adopt.** AI only works if your team actually uses it. We embed alongside your people, running training, refining workflows, and adjusting until the new systems feel like second nature. When we step back, it's not a project anymore. It's just how things run.
+
+**Headline numbers:** 40%+ average time saved on manual workflows · 2–4 weeks to a full AI roadmap · 100% implementation-first (we build, not just advise).
+
+---
+
+## Web3 / Blockchain Growth (specialty service)
+
+A full-stack growth consultancy for Web3, DeFi, NFT, AI, and blockchain projects with product-market fit. Founder-led, execution-obsessed, Web3-native. We build custom frameworks, not templates. Offerings: founder-led marketing, project partnerships, event explorations, advertisement strategy, brand strategy & positioning, a Web3 ads engine, paid + organic SEO, KOL & thought-leader campaigns, and AI-powered workflows. Success is tracked on tangible KPIs: user acquisition, conversion rates, TVL growth, community size, and ROI on ad spend, with live dashboards and weekly reports.
+
+---
+
+## Case Studies (real client results)
+
+### BoBe — AI Trading Platform
+**Headline:** From a $3K/month content team to a fully autonomous system.
+BoBe's content team cost $2,000–3,000/month and took 1–2 days per batch. We built an autonomous system that generates 14 pieces of content in seconds for under $30/month, each piece costing less than $1 to generate.
+- Running cost: under $30/month · 14 posts per run · 3 days build time.
+- Testimonial: "Working with RT gave us something we didn't expect: actual clarity on where AI could help us. Not theory. A real plan we could execute. The implementation saved us hours every week from day one." — Denis Kurilchik, CEO, BoBe.
+
+### GreenLine Logistics
+**Headline:** AI-powered dispatch that cut response times in half.
+Manual dispatch coordination via spreadsheets was causing delays. Dispatch response times dropped 52%, the operations team reclaimed 18 hours per week, and the system paid for itself within the first month.
+- 52% faster dispatch · 18 hours saved per week · 3-week implementation.
+
+### Nova Creative — Marketing Agency (12 people)
+**Headline:** Scaling a 12-person agency without scaling headcount.
+The team was maxed out on repetitive production and admin. Nova tripled content output without a single new hire and saved 30+ hours/week; the founder estimates the efficiency gains are worth two full-time salaries annually.
+- 3x output · 30 hours saved per week · 6-week implementation.
+- Testimonial: "RT didn't just give us a strategy. He built the thing. We're producing three times the work with the same team, and our margins have never been better." — Founder, Nova Creative.
+
+### Atlas Health — Healthcare (6 clinics)
+**Headline:** Automating patient intake and follow-ups across 6 clinics.
+Paper-heavy intake and manual follow-ups across six locations. Admin time dropped 60%, the team reclaimed 35 hours/week, and patient no-show rates fell 28% thanks to automated reminders.
+- 60% admin time cut · 35 hours saved per week · 5-week implementation.
+- Testimonial: "We'd been talking about going digital for years but never found someone who understood healthcare workflows. RT mapped our mess, built something that actually fit, and had it running in five weeks. Our staff love it." — Operations Manager, Atlas Health.
+
+---
+
+## FAQ
+
+**How is Rejig Labs different from other AI consultants?**
+Most consultants give you a strategy deck and leave. We stay and build it. RT has hands-on implementation experience across real business workflows, not just conceptual knowledge. We only recommend what we can actually build and deploy ourselves.
+
+**How do I know if we're ready for AI?**
+If your team is doing repetitive manual work like data entry, follow-ups, reporting, scheduling, or content, you're ready. The audit will tell you exactly where. You don't need clean data or a tech team. That's what the audit is for.
+
+**What happens after the audit?**
+You receive a full AI transformation plan: a 90-day roadmap, prioritised integrations, tool recommendations, and ROI estimates. From there you can implement it yourself or engage us for Phase 2 (full execution).
+
+**How much internal time will this take?**
+Minimal. We do the heavy lifting. The audit phase requires a few hours of your team's time for discovery calls and process walkthroughs. Implementation is handled by us. Your team only needs to be available for handoff and training.
+
+**We've already tried AI and it didn't work. Why would this be different?**
+Because most AI attempts fail at integration, not technology. The tools work. The problem is mapping them to your specific workflows, getting buy-in, and building systems your team will actually use. That's exactly what we diagnose in the audit phase.
+
+**We don't have a big tech team. Can we still do this?**
+Yes, this is built for exactly that situation. Most of our clients have little to no technical team. We handle everything technical. Your job is to understand your own business; our job is to translate that into working AI systems.
+
+**Why "Rejig" Labs?**
+"Rejig" means to reorganize or rethink. We take your existing strategies and systems and reorganize them for maximum performance and growth.
