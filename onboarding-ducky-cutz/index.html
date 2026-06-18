@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ducky Cutz × Rejig Labs - พนักงานรับสายอัจฉริยะ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Trirong = Thai serif that echoes Playfair (display); Sarabun = clean Thai body -->
+<link href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ===========================================
+   THEME - Vintage Barber Poster (mono, cream paper)
+   Change these to retune the whole deck.
+   =========================================== */
+:root{
+  --paper:#f4f1ea;          /* cream background */
+  --ink:#141210;            /* near-black ink */
+  --ink-soft:#54504a;       /* muted ink for secondary text */
+  --line:#141210;           /* rule/border color */
+  --accent:#b3331f;         /* barbershop red, used VERY sparingly */
+  --accent-blue:#1f57c3;    /* tiny blue nod from the crest */
+
+  --font-display:'Trirong', serif;
+  --font-body:'Sarabun', sans-serif;
+
+  --slide-padding:clamp(1.1rem, 4vw, 3.5rem);
+  --content-gap:clamp(0.5rem, 2vh, 1.4rem);
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+/* === MANDATORY VIEWPORT BASE (from viewport-base.css) === */
+html,body{height:100%;overflow-x:hidden;}
+html{scroll-snap-type:y mandatory;scroll-behavior:smooth;}
+body{background:var(--paper);color:var(--ink);font-family:var(--font-body);}
+.slide{
+  width:100vw;height:100vh;height:100dvh;overflow:hidden;
+  scroll-snap-align:start;display:flex;flex-direction:column;position:relative;
+}
+.slide-content{flex:1;display:flex;flex-direction:column;justify-content:center;
+  max-height:100%;overflow:hidden;padding:var(--slide-padding);}
+img,.image-container{max-width:100%;max-height:min(50vh,400px);object-fit:contain;}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.2s!important;}
+  html{scroll-behavior:auto;}
+}
+
+/* === SHARED POSTER FURNITURE === */
+/* paper grain */
+.slide::before{content:'';position:absolute;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(circle at 18% 15%, rgba(0,0,0,.025) 0, transparent 38%),
+    radial-gradient(circle at 82% 85%, rgba(0,0,0,.025) 0, transparent 38%);}
+/* double-ruled frame on every slide */
+.frame{position:absolute;inset:clamp(12px,2vw,28px);border:2px solid var(--line);z-index:1;pointer-events:none;}
+.frame::after{content:'';position:absolute;inset:5px;border:1px solid var(--line);}
+.slide-content{position:relative;z-index:2;}
+
+/* eyebrow / kicker */
+.kicker{font-family:var(--font-display);font-style:italic;color:var(--ink-soft);
+  font-size:clamp(15px,2.3vw,24px);}
+/* section number tag, top-center */
+.tag{position:absolute;top:clamp(24px,3.6vw,46px);left:50%;transform:translateX(-50%);z-index:2;
+  font-family:var(--font-display);letter-spacing:.45em;font-size:clamp(8px,1.2vw,12px);
+  text-transform:uppercase;color:var(--ink);}
+/* footer brand line */
+.foot{position:absolute;bottom:clamp(22px,3.4vw,42px);left:50%;transform:translateX(-50%);z-index:2;
+  letter-spacing:.32em;font-size:clamp(8px,1.1vw,11px);text-transform:uppercase;color:var(--ink-soft);font-weight:600;}
+
+h2{font-family:var(--font-display);font-weight:800;line-height:1.05;
+  font-size:clamp(28px,5.2vw,58px);letter-spacing:-.005em;}
+.rule{width:clamp(90px,14vw,170px);height:2px;background:var(--line);margin:clamp(8px,1.6vh,16px) 0;
+  transform-origin:left;}
+.lead{font-size:clamp(15px,2vw,22px);color:var(--ink-soft);max-width:30ch;line-height:1.5;}
+
+/* bullet list with star markers */
+ul.points{list-style:none;display:flex;flex-direction:column;gap:clamp(.5rem,1.7vh,1.1rem);
+  margin-top:clamp(.6rem,2vh,1.4rem);max-width:32ch;}
+ul.points li{position:relative;padding-left:1.8em;font-size:clamp(14px,1.85vw,21px);line-height:1.4;}
+ul.points li::before{content:'✦';position:absolute;left:0;top:.02em;color:var(--accent);font-size:.9em;}
+
+/* punch line strip */
+.punch{margin-top:clamp(.8rem,2.4vh,1.6rem);font-family:var(--font-display);font-weight:600;
+  font-size:clamp(17px,2.6vw,30px);line-height:1.2;}
+.punch em{font-style:normal;border-bottom:3px solid var(--accent);padding-bottom:.05em;}
+
+/* ===========================================
+   ENTRANCE ANIMATIONS - triggered by .visible
+   =========================================== */
+.reveal{opacity:0;transform:translateY(26px);
+  transition:opacity .7s var(--ease),transform .7s var(--ease);}
+.slide.visible .reveal{opacity:1;transform:none;}
+.slide.visible .reveal:nth-child(1){transition-delay:.05s;}
+.slide.visible .reveal:nth-child(2){transition-delay:.15s;}
+.slide.visible .reveal:nth-child(3){transition-delay:.25s;}
+.slide.visible .reveal:nth-child(4){transition-delay:.35s;}
+.slide.visible .reveal:nth-child(5){transition-delay:.45s;}
+.slide.visible .reveal:nth-child(6){transition-delay:.55s;}
+.slide.visible .rule.reveal{transition:opacity .5s var(--ease),transform .6s var(--ease) .3s;transform:scaleX(0);}
+.slide.visible .rule.reveal{transform:scaleX(1);opacity:1;}
+
+/* ===========================================
+   SLIDE 1 - TITLE
+   =========================================== */
+.title-slide .slide-content{align-items:center;text-align:center;}
+.title-slide .mascot{width:clamp(130px,21vh,220px);
+  filter:drop-shadow(0 6px 0 rgba(0,0,0,.07));
+  animation:rise 1s var(--ease) both;}
+@keyframes rise{from{opacity:0;transform:translateY(26px) scale(.95);}to{opacity:1;transform:none;}}
+.title-slide h1{font-family:var(--font-display);font-weight:900;line-height:1.0;
+  font-size:clamp(38px,8vw,90px);margin:clamp(4px,1vh,10px) 0;}
+.brandline{letter-spacing:.4em;text-transform:uppercase;font-weight:600;
+  font-size:clamp(10px,1.5vw,16px);}
+.brandline .x{color:var(--accent);margin:0 .5em;}
+.title-tag{font-family:var(--font-display);font-style:italic;font-size:clamp(13px,1.9vw,20px);color:var(--ink-soft);}
+
+/* ===========================================
+   SLIDE 4 & 7 - 3-STEP / 3-CARD GRID
+   =========================================== */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.7rem,1.6vw,1.4rem);
+  margin-top:clamp(.8rem,2.4vh,1.6rem);width:100%;max-width:min(92vw,1040px);}
+.card{border:2px solid var(--line);background:rgba(255,255,255,.35);
+  padding:clamp(.9rem,2vw,1.6rem);display:flex;flex-direction:column;gap:.5em;position:relative;}
+.card .step-no{font-family:var(--font-display);font-weight:900;font-size:clamp(28px,4.5vw,52px);
+  line-height:1;color:var(--accent);}
+.card h3{font-family:var(--font-display);font-weight:700;font-size:clamp(16px,2vw,24px);line-height:1.15;}
+.card p{font-size:clamp(12px,1.4vw,16px);color:var(--ink-soft);line-height:1.4;}
+.card .ico{font-size:clamp(24px,3.4vw,40px);line-height:1;}
+@media (max-width:760px){.cards{grid-template-columns:1fr;max-width:60ch;}
+  .card{flex-direction:row;align-items:center;gap:1em;}}
+
+/* two-column slides: text left, mascot/visual right */
+.split{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(1rem,3vw,3rem);align-items:center;width:100%;}
+.split .ghost{justify-self:center;width:clamp(150px,30vh,320px);opacity:.9;}
+@media (max-width:820px){.split{grid-template-columns:1fr;} .split .ghost{display:none;}}
+
+/* ===========================================
+   SLIDE 5 - LIVE DEMO frame
+   =========================================== */
+.demo .slide-content{align-items:center;text-align:center;}
+.live-badge{display:inline-flex;align-items:center;gap:.5em;font-weight:700;letter-spacing:.2em;
+  text-transform:uppercase;font-size:clamp(11px,1.5vw,15px);color:var(--accent);}
+.live-badge .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);
+  animation:blink 1.2s steps(1) infinite;}
+@keyframes blink{50%{opacity:.2;}}
+.demo-frame{margin-top:clamp(.8rem,2.4vh,1.6rem);border:3px dashed var(--line);
+  padding:clamp(1.4rem,4vw,3rem) clamp(1.2rem,5vw,4rem);max-width:min(86vw,760px);
+  display:flex;flex-direction:column;gap:.6em;align-items:center;background:rgba(255,255,255,.3);}
+.demo-frame .big{font-family:var(--font-display);font-weight:800;font-size:clamp(24px,4.5vw,46px);}
+.demo-frame .sub{font-size:clamp(14px,1.8vw,20px);color:var(--ink-soft);max-width:26ch;line-height:1.4;}
+
+/* ===========================================
+   SLIDE 9 - NOT CHANGING (split good)
+   SLIDE 10 - timeline
+   =========================================== */
+.timeline{display:flex;flex-direction:column;gap:clamp(.5rem,1.6vh,1rem);margin-top:clamp(.8rem,2.4vh,1.4rem);
+  max-width:40ch;}
+.timeline .step{display:flex;gap:1em;align-items:flex-start;}
+.timeline .when{font-family:var(--font-display);font-weight:800;font-size:clamp(14px,1.7vw,20px);
+  white-space:nowrap;min-width:8.5em;}
+.timeline .when.now{color:var(--accent);}
+.timeline .what{font-size:clamp(13px,1.6vw,19px);color:var(--ink-soft);line-height:1.35;}
+
+/* slide 11 - feedback prompts as numbered questions */
+.qs{display:flex;flex-direction:column;gap:clamp(.6rem,2vh,1.2rem);margin-top:clamp(.8rem,2.4vh,1.4rem);max-width:38ch;}
+.qs .q{display:flex;gap:.8em;align-items:baseline;font-size:clamp(15px,1.9vw,22px);line-height:1.35;}
+.qs .q .n{font-family:var(--font-display);font-weight:900;color:var(--accent);font-size:clamp(20px,2.6vw,32px);}
+
+/* closing */
+.close-slide .slide-content{align-items:center;text-align:center;}
+.close-slide .mascot{width:clamp(96px,15vh,150px);animation:rise 1s var(--ease) both;}
+.close-slide h2{font-size:clamp(30px,6vw,68px);max-width:18ch;}
+
+/* ===========================================
+   NAV - progress bar + dots
+   =========================================== */
+.progress-bar{position:fixed;top:0;left:0;height:4px;width:0;background:var(--accent);z-index:9000;transition:width .25s ease;}
+.nav-dots{position:fixed;right:clamp(10px,1.6vw,22px);top:50%;transform:translateY(-50%);
+  display:flex;flex-direction:column;gap:10px;z-index:9000;}
+.nav-dots button{width:9px;height:9px;border-radius:50%;border:1.5px solid var(--ink);background:transparent;
+  padding:0;cursor:pointer;transition:all .25s ease;}
+.nav-dots button.active{background:var(--ink);transform:scale(1.35);}
+.hint{position:fixed;bottom:10px;right:14px;font-size:11px;color:var(--ink-soft);z-index:9000;letter-spacing:.05em;}
+@media (max-height:600px){.nav-dots,.hint{display:none;}}
+
+/* ===========================================
+   INLINE EDITING
+   =========================================== */
+.edit-hotzone{position:fixed;top:0;left:0;width:80px;height:80px;z-index:10000;cursor:pointer;}
+.edit-toggle{position:fixed;top:14px;left:14px;width:42px;height:42px;border-radius:50%;
+  border:2px solid var(--ink);background:var(--paper);font-size:18px;cursor:pointer;z-index:10001;
+  opacity:0;pointer-events:none;transition:opacity .3s ease;}
+.edit-toggle.show,.edit-toggle.active{opacity:1;pointer-events:auto;}
+.edit-toggle.active{background:var(--ink);}
+.edit-banner{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:10001;
+  background:var(--ink);color:var(--paper);padding:8px 16px;border-radius:20px;font-size:13px;
+  opacity:0;pointer-events:none;transition:opacity .3s ease;}
+.edit-banner.active{opacity:1;}
+body.edit-active [contenteditable]{outline:1.5px dashed var(--accent);outline-offset:3px;border-radius:2px;}
+body.edit-active [contenteditable]:focus{outline:2px solid var(--accent);background:rgba(179,51,31,.05);}
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+<nav class="nav-dots" id="navDots" aria-label="Slide navigation"></nav>
+<div class="hint">↓ / Space</div>
+
+<!-- inline editing controls -->
+<div class="edit-hotzone" aria-hidden="true"></div>
+<button class="edit-toggle" id="editToggle" title="แก้ข้อความ (กด E)">✏️</button>
+<div class="edit-banner" id="editBanner">โหมดแก้ข้อความ - คลิกข้อความเพื่อแก้ · Ctrl+S เพื่อบันทึก</div>
+
+<!-- ===========================================
+     SLIDE 1 - TITLE
+     =========================================== -->
+<section class="slide title-slide" id="s1">
+  <div class="frame"></div>
+  <div class="tag">★ Ducky Cutz · Phuket ★</div>
+  <div class="slide-content">
+    <img class="mascot" src="assets/mascot.png" alt="Ducky Cutz mascot">
+    <p class="kicker reveal">ทำความรู้จักกับ</p>
+    <h1 class="reveal">พนักงานรับสาย<br>อัจฉริยะ</h1>
+    <div class="rule reveal" style="margin-left:auto;margin-right:auto;"></div>
+    <p class="brandline reveal">Ducky&nbsp;Cutz <span class="x">✕</span> Rejig&nbsp;Labs</p>
+    <p class="title-tag reveal" style="margin-top:1em;">"รับสายแทนคุณ ทุกสาย ทุกเวลา"</p>
+  </div>
+</section>
+
+<!-- ===========================================
+     SLIDE 2 - THE PROBLEM
+     =========================================== -->
+<section class="slide" id="s2">
+  <div class="frame"></div>
+  <div class="tag">02 · ปัญหา</div>
+  <div class="slide-content">
+    <p class="kicker reveal">เรื่องที่เจอกันทุกวัน</p>
+    <h2 class="reveal">โทรศัพท์ไม่เคยหยุดดัง</h2>
+    <div class="rule reveal"></div>
+    <ul class="points reveal">
+      <li>กำลังตัดผมอยู่ โทรศัพท์ดัง ต้องหยุดมือไปรับ</li>
+      <li>ลูกค้าโทรมานอกเวลา ไม่มีคนรับ = เสียลูกค้า</li>
+      <li>จองซ้ำ จดคิวผิด เพราะทำหลายอย่างพร้อมกัน</li>
+      <li>บางสายรับไม่ทัน ลูกค้าก็ไปร้านอื่น</li>
+    </ul>
+    <p class="punch reveal">ทุกสายที่พลาด <em>คือเงินที่หายไป</em></p>
+  </div>
+  <div class="foot">Ducky Cutz × Rejig Labs</div>
+</section>
+
+<!-- ===========================================
+     SLIDE 3 - THE FIX IN ONE LINE
+     =========================================== -->
+<section class="slide" id="s3">
+  <div class="frame"></div>
+  <div class="tag">03 · ทางออก</div>
+  <div class="slide-content" style="align-items:center;text-align:center;">
+    <p class="kicker reveal">ทางออกง่ายๆ</p>
+    <h2 class="reveal" style="max-width:16ch;">ให้ผู้ช่วยอัจฉริยะ<br>รับสายแทน</h2>
+    <div class="rule reveal" style="margin-left:auto;margin-right:auto;"></div>
+    <p class="lead reveal" style="max-width:32ch;">รับทุกสาย 24 ชั่วโมง · พูดภาษาไทยได้ · จองคิวให้อัตโนมัติ</p>
+    <p class="punch reveal" style="font-size:clamp(20px,3.2vw,38px);">มันรับสาย <em>ส่วนคุณตัดผมต่อได้เลย</em></p>
+  </div>
+  <div class="foot">Ducky Cutz × Rejig Labs</div>
+</section>
+
+<!-- ===========================================
+     SLIDE 4 - HOW IT WORKS (3 STEPS)
+     =========================================== -->
+<section class="slide" id="s4">
+  <div class="frame"></div>
+  <div class="tag">04 · ทำงานยังไง</div>
+  <div class="slide-content" style="align-items:center;text-align:center;">
+    <p class="kicker reveal">ง่ายๆ แค่ 3 ขั้น</p>
+    <h2 class="reveal">ทำงานยังไง</h2>
+    <div class="cards">
+      <div class="card reveal">
+        <span class="step-no">1</span>
+        <h3>ลูกค้าโทรเข้า</h3>
+        <p>ผู้ช่วยรับสายและคุยกับลูกค้าเป็นภาษาไทย</p>
+      </div>
+      <div class="card reveal">
+        <span class="step-no">2</span>
+        <h3>จองคิวให้ทันที</h3>
+        <p>เลือกช่าง เลือกวันเวลา ยืนยันให้เสร็จในสายเดียว</p>
+      </div>
+      <div class="card reveal">
+        <span class="step-no">3</span>
+        <h3>เด้งขึ้นให้คุณ</h3>
+        <p>คิวขึ้นปฏิทินของคุณ และแจ้งเข้ากลุ่ม LINE ทันที</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot">Ducky Cutz × Rejig Labs</div>
+</section>
+
+<!-- ===========================================
+     SLIDE 5 - LIVE DEMO (placeholder frame for RT)
+     =========================================== -->
+<section class="slide demo" id="s5">
+  <div class="frame"></div>
+  <div class="tag">05 · สาธิตสด</div>
+  <div class="slide-content">
+    <p class="live-badge reveal"><span class="dot"></span> Live</p>
+    <h2 class="reveal" style="margin-top:.3em;">ลองฟังกันสดๆ</h2>
+    <div class="demo-frame reveal">
+      <p class="big">☎ โทรหาผู้ช่วยตอนนี้</p>
+      <p class="sub">แล้วดูคิวเด้งขึ้นปฏิทินตรงหน้า สดๆ ในห้องนี้</p>
+    </div>
+  </div>
+  <div class="foot">Ducky Cutz × Rejig Labs</div>
+</section>
+
+<!-- ===========================================
+     SLIDE 6 - WHAT CHANGES FOR YOU
+     =========================================== -->
+<section class="slide" id="s6">
+  <div class="frame"></div>
+  <div class="tag">06 · สำหรับช่าง</div>
+  <div class="slide-content">
+    <div class="split">
+      <div>
+        <p class="kicker reveal">แล้วช่างได้อะไร</p>
+        <h2 class="reveal">เปลี่ยนอะไรสำหรับคุณ</h2>
+        <div class="rule reveal"></div>
+        <ul class="points reveal">
+          <li>คิวของคุณอยู่ในปฏิทินเดียว ดูง่าย ไม่สับสน</li>
+          <li>ลูกค้าประจำ ระบบจำได้ ไม่ต้องถามซ้ำ</li>
+          <li>ลูกค้าขอจองกับคุณโดยเฉพาะได้</li>
+          <li>ไม่ต้องหยุดมือไปรับโทรศัพท์อีกต่อไป</li>
+        </ul>
+      </div>
+      <img class="ghost reveal" src="assets/mascot.png" alt="">
+    </div>
+  </div>
+  <div class="foot">Ducky Cutz × Rejig Labs</div>
+</section>
+
+<!-- ===========================================
+     SLIDE 7 - YOUR PHONE IS THE CONTROL
+     =========================================== -->
+<section class="slide" id="s7">
+  <div class="frame"></div>
+  <div class="tag">07 · แอปของช่าง</div>
+  <div class="slide-content" style="align-items:center;text-align:center;">
+    <p class="kicker reveal">คุมคิวเองได้จากมือถือ</p>
+    <h2 class="reveal">มือถือของคุณคือรีโมท</h2>
+    <div class="cards">
+      <div class="card reveal">
+        <span class="ico">🔒</span>
+        <h3>บล็อกเวลา</h3>
+        <p>กันช่วงที่ไม่ว่าง เช่น พักเที่ยง ลูกค้าจองทับไม่ได้</p>
+      </div>
+      <div class="card reveal">
+        <span class="ico">✚</span>
+        <h3>เปิดเวลาว่าง</h3>
+        <p>เพิ่มช่วงเวลาที่คุณรับลูกค้าได้</p>
+      </div>
+      <div class="card reveal">
+        <span class="ico">📝</span>
+        <h3>เพิ่มคิวเอง</h3>
+        <p>จดคิว walk-in หรือลูกค้าที่โทรเข้ามือถือคุณเอง</p>
+      </div>
+    </div>
+    <p class="punch reveal">เดี๋ยวเรา <em>ลองทำในมือถือจริง</em> ด้วยกัน</p>
+  </div>
+  <div class="foot">Ducky Cutz × Rejig Labs</div>
+</section>
+
+<!-- ===========================================
+     SLIDE 8 - RECOGNITION + PER-BARBER
+     =========================================== -->
+<section class="slide" id="s8">
+  <div class="frame"></div>
+  <div class="tag">08 · ช่างคนเดิม</div>
+  <div class="slide-content">
+    <div class="split">
+      <div>
+        <p class="kicker reveal">ลูกค้าประจำของคุณ</p>
+        <h2 class="reveal">ลูกค้าขอ "ช่างคนเดิม" ได้</h2>
+        <div class="rule reveal"></div>
+        <ul class="points reveal">
+          <li>ลูกค้าบอกชื่อช่าง ระบบจองให้กับช่างคนนั้นเลย</li>
+          <li>ลูกค้าประจำโทรมา ระบบจำเบอร์และชื่อได้</li>
+          <li>ช่วยให้แต่ละช่างสร้างฐานลูกค้าประจำของตัวเอง</li>
+        </ul>
+      </div>
+      <img class="ghost reveal" src="assets/mascot.png" alt="">
+    </div>
+  </div>
+  <div class="foot">Ducky Cutz × Rejig Labs</div>
+</section>
+
+<!-- ===========================================
+     SLIDE 9 - WHAT IS NOT CHANGING (reassurance)
+     =========================================== -->
+<section class="slide" id="s9">
+  <div class="frame"></div>
+  <div class="tag">09 · สิ่งที่ไม่เปลี่ยน</div>
+  <div class="slide-content">
+    <p class="kicker reveal">สำคัญที่สุด</p>
+    <h2 class="reveal">อะไรที่ "ไม่เปลี่ยน"</h2>
+    <div class="rule reveal"></div>
+    <ul class="points reveal">
+      <li>งานตัดผมยังเป็นของช่างเหมือนเดิม 100%</li>
+      <li>ทิปและรายได้ของคุณ เหมือนเดิมทุกอย่าง</li>
+      <li>ลูกค้า walk-in หน้าร้าน รับได้ตามปกติ</li>
+    </ul>
+    <p class="punch reveal" style="font-size:clamp(19px,3vw,34px);">AI ไม่ได้มาแทนคุณ <em>แต่มาช่วยรับโทรศัพท์ให้</em></p>
+  </div>
+  <div class="foot">Ducky Cutz × Rejig Labs</div>
+</section>
+
+<!-- ===========================================
+     SLIDE 10 - THE PILOT (Phuket Town first)
+     =========================================== -->
+<section class="slide" id="s10">
+  <div class="frame"></div>
+  <div class="tag">10 · เริ่มที่ไหน</div>
+  <div class="slide-content">
+    <p class="kicker reveal">ค่อยๆ ไปทีละขั้น</p>
+    <h2 class="reveal">เริ่มที่ภูเก็ตทาวน์ก่อน</h2>
+    <div class="rule reveal"></div>
+    <div class="timeline">
+      <div class="step reveal"><span class="when now">ตอนนี้</span><span class="what">สาขาภูเก็ตทาวน์ ทดลองใช้จริง (สายเยอะที่สุด)</span></div>
+      <div class="step reveal"><span class="when">ขั้นต่อไป</span><span class="what">ปรับปรุงระบบจากเสียงของพวกคุณ</span></div>
+      <div class="step reveal"><span class="when">จากนั้น</span><span class="what">ขยายไปทุกสาขา ทีละสาขา</span></div>
+    </div>
+    <p class="punch reveal">สาขาของคุณคือคิวต่อไป <em>และความเห็นของคุณกำหนดมันได้</em></p>
+  </div>
+  <div class="foot">Ducky Cutz × Rejig Labs</div>
+</section>
+
+<!-- ===========================================
+     SLIDE 11 - WE WANT YOUR FEEDBACK
+     =========================================== -->
+<section class="slide" id="s11">
+  <div class="frame"></div>
+  <div class="tag">11 · ขอความเห็น</div>
+  <div class="slide-content">
+    <p class="kicker reveal">วันนี้เราอยากฟังจากพวกคุณ</p>
+    <h2 class="reveal">ช่วยกันทำให้มันฉลาดขึ้น</h2>
+    <div class="qs">
+      <div class="q reveal"><span class="n">1</span><span>อะไรที่กวนใจที่สุดเรื่องการจองคิว</span></div>
+      <div class="q reveal"><span class="n">2</span><span>ชื่อลูกค้าแบบไหนที่ระบบมักฟังผิดหรือสะกดผิด</span></div>
+      <div class="q reveal"><span class="n">3</span><span>ลูกค้าถามอะไรบ่อยที่สุดทางโทรศัพท์</span></div>
+    </div>
+    <p class="punch reveal">ไม่มีคำตอบผิด <em>ยิ่งบอกเยอะ ระบบยิ่งฉลาด</em></p>
+  </div>
+  <div class="foot">Ducky Cutz × Rejig Labs</div>
+</section>
+
+<!-- ===========================================
+     SLIDE 12 - CLOSE
+     =========================================== -->
+<section class="slide close-slide" id="s12">
+  <div class="frame"></div>
+  <div class="tag">★ ขอบคุณ ★</div>
+  <div class="slide-content">
+    <img class="mascot" src="assets/mascot.png" alt="Ducky Cutz mascot">
+    <h2 class="reveal">ร้านแรกในภูเก็ต<br>ที่มีผู้ช่วยรับสายอัจฉริยะ</h2>
+    <div class="rule reveal" style="margin-left:auto;margin-right:auto;"></div>
+    <p class="lead reveal" style="max-width:30ch;">ขอบคุณทุกคน มาเริ่มกันเลย</p>
+    <p class="brandline reveal" style="margin-top:1em;">Ducky&nbsp;Cutz <span class="x">✕</span> Rejig&nbsp;Labs</p>
+  </div>
+</section>
+
+<script>
+/* ===========================================
+   SLIDE PRESENTATION CONTROLLER
+   Vertical scroll-snap deck: keyboard, touch, wheel, dots, progress.
+   =========================================== */
+class SlidePresentation{
+  constructor(){
+    this.slides=Array.from(document.querySelectorAll('.slide'));
+    this.current=0;
+    this.navDots=document.getElementById('navDots');
+    this.progress=document.getElementById('progressBar');
+    this.observe();
+    this.buildDots();
+    this.keys();
+    this.wheel();
+    this.touch();
+  }
+  observe(){
+    const io=new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          e.target.classList.add('visible');
+          this.current=this.slides.indexOf(e.target);
+          this.sync();
+        }
+      });
+    },{threshold:0.55});
+    this.slides.forEach(s=>io.observe(s));
+  }
+  buildDots(){
+    // clear first so re-opening an exported file never duplicates dots
+    this.navDots.innerHTML='';
+    this.slides.forEach((s,i)=>{
+      const b=document.createElement('button');
+      b.setAttribute('aria-label','สไลด์ '+(i+1));
+      b.addEventListener('click',()=>this.go(i));
+      this.navDots.appendChild(b);
+    });
+  }
+  sync(){
+    const dots=this.navDots.children;
+    for(let i=0;i<dots.length;i++)dots[i].classList.toggle('active',i===this.current);
+    this.progress.style.width=((this.current+1)/this.slides.length*100)+'%';
+  }
+  go(i){
+    if(i<0||i>=this.slides.length)return;
+    this.slides[i].scrollIntoView({behavior:'smooth'});
+  }
+  keys(){
+    document.addEventListener('keydown',(e)=>{
+      // don't hijack arrows while editing text
+      if(e.target.getAttribute&&e.target.getAttribute('contenteditable'))return;
+      if(['ArrowDown','ArrowRight',' ','PageDown'].includes(e.key)){e.preventDefault();this.go(this.current+1);}
+      if(['ArrowUp','ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();this.go(this.current-1);}
+      if(e.key==='Home'){e.preventDefault();this.go(0);}
+      if(e.key==='End'){e.preventDefault();this.go(this.slides.length-1);}
+    });
+  }
+  wheel(){
+    let lock=false;
+    window.addEventListener('wheel',(e)=>{
+      if(document.body.classList.contains('edit-active'))return;
+      if(lock)return;
+      if(Math.abs(e.deltaY)<24)return;
+      lock=true;
+      this.go(this.current+(e.deltaY>0?1:-1));
+      setTimeout(()=>lock=false,650);
+    },{passive:true});
+  }
+  touch(){
+    let y0=null;
+    window.addEventListener('touchstart',e=>{y0=e.touches[0].clientY;},{passive:true});
+    window.addEventListener('touchend',e=>{
+      if(y0===null)return;
+      const dy=y0-e.changedTouches[0].clientY;
+      if(Math.abs(dy)>50)this.go(this.current+(dy>0?1:-1));
+      y0=null;
+    },{passive:true});
+  }
+}
+
+/* ===========================================
+   INLINE EDITOR - edit Thai text in browser, save to localStorage, export file
+   =========================================== */
+class Editor{
+  constructor(){
+    this.isActive=false;
+    this.key='duckycutz-onboarding-edits';
+    this.editable=Array.from(document.querySelectorAll('h1,h2,h3,p,li,span:not(.x):not(.dot):not(.n):not(.step-no):not(.ico),.when,.what'))
+      .filter(el=>el.children.length===0 || el.classList.contains('what'));
+    this.toggle=document.getElementById('editToggle');
+    this.banner=document.getElementById('editBanner');
+    this.restore();
+    this.wire();
+  }
+  toggleEditMode(){
+    this.isActive=!this.isActive;
+    document.body.classList.toggle('edit-active',this.isActive);
+    this.toggle.classList.toggle('active',this.isActive);
+    this.banner.classList.toggle('active',this.isActive);
+    this.editable.forEach(el=>{
+      if(this.isActive)el.setAttribute('contenteditable','true');
+      else el.removeAttribute('contenteditable');
+    });
+    if(!this.isActive)this.save();
+  }
+  save(){
+    const data={};
+    this.editable.forEach((el,i)=>{data[i]=el.innerHTML;});
+    localStorage.setItem(this.key,JSON.stringify(data));
+  }
+  restore(){
+    const raw=localStorage.getItem(this.key);
+    if(!raw)return;
+    try{const data=JSON.parse(raw);this.editable.forEach((el,i)=>{if(data[i]!==undefined)el.innerHTML=data[i];});}catch(e){}
+  }
+  exportFile(){
+    // strip edit state so the saved file opens clean
+    const eds=Array.from(document.querySelectorAll('[contenteditable]'));
+    eds.forEach(el=>el.removeAttribute('contenteditable'));
+    document.body.classList.remove('edit-active');
+    this.toggle.classList.remove('active','show');
+    this.banner.classList.remove('active','show');
+    const html='<!DOCTYPE html>\n'+document.documentElement.outerHTML;
+    // restore so user keeps editing
+    document.body.classList.add('edit-active');
+    eds.forEach(el=>el.setAttribute('contenteditable','true'));
+    this.toggle.classList.add('active');this.banner.classList.add('active');
+    const blob=new Blob([html],{type:'text/html'});
+    const a=document.createElement('a');a.href=URL.createObjectURL(blob);
+    a.download='ducky-onboarding.html';a.click();URL.revokeObjectURL(a.href);
+  }
+  wire(){
+    this.toggle.addEventListener('click',()=>this.toggleEditMode());
+    const hot=document.querySelector('.edit-hotzone');let t=null;
+    hot.addEventListener('mouseenter',()=>{clearTimeout(t);this.toggle.classList.add('show');});
+    hot.addEventListener('mouseleave',()=>{t=setTimeout(()=>{if(!this.isActive)this.toggle.classList.remove('show');},400);});
+    this.toggle.addEventListener('mouseenter',()=>clearTimeout(t));
+    this.toggle.addEventListener('mouseleave',()=>{t=setTimeout(()=>{if(!this.isActive)this.toggle.classList.remove('show');},400);});
+    hot.addEventListener('click',()=>this.toggleEditMode());
+    document.addEventListener('keydown',(e)=>{
+      if((e.key==='e'||e.key==='E')&&!e.target.getAttribute('contenteditable')){this.toggleEditMode();}
+      if((e.ctrlKey||e.metaKey)&&e.key==='s'){e.preventDefault();this.save();this.exportFile();}
+    });
+    document.addEventListener('input',(e)=>{if(this.isActive&&e.target.getAttribute('contenteditable'))this.save();});
+  }
+}
+
+new SlidePresentation();
+const editor=new Editor();
+</script>
+</body>
+</html>
