@@ -86,6 +86,17 @@ ul.points li::before{content:'✦';position:absolute;left:0;top:.02em;color:var(
   font-size:clamp(17px,2.6vw,30px);line-height:1.2;}
 .punch em{font-style:normal;border-bottom:3px solid var(--accent);padding-bottom:.05em;}
 
+/* centered content slides: balance the whitespace + widen so bullets sit on one line.
+   block is centered (margin auto, fit-content) while inner text stays left-aligned/readable. */
+.slide-content.centered{align-items:center;text-align:center;}
+.slide-content.centered .rule{margin-left:auto;margin-right:auto;}
+.slide-content.centered ul.points{width:fit-content;max-width:min(92vw,940px);
+  margin-left:auto;margin-right:auto;text-align:left;}
+.slide-content.centered .timeline{width:fit-content;max-width:min(92vw,840px);
+  margin-left:auto;margin-right:auto;text-align:left;}
+.slide-content.centered .qs{width:fit-content;max-width:min(92vw,820px);
+  margin-left:auto;margin-right:auto;text-align:left;}
+
 /* ===========================================
    ENTRANCE ANIMATIONS - triggered by .visible
    =========================================== */
@@ -235,7 +246,7 @@ body.edit-active [contenteditable]:focus{outline:2px solid var(--accent);backgro
 <section class="slide" id="s2">
   <div class="frame"></div>
   <div class="tag">02 · ปัญหา</div>
-  <div class="slide-content">
+  <div class="slide-content centered">
     <p class="kicker reveal">เรื่องที่เจอกันทุกวัน</p>
     <h2 class="reveal">โทรศัพท์ไม่เคยหยุดดัง</h2>
     <div class="rule reveal"></div>
@@ -399,7 +410,7 @@ body.edit-active [contenteditable]:focus{outline:2px solid var(--accent);backgro
 <section class="slide" id="s9">
   <div class="frame"></div>
   <div class="tag">09 · สิ่งที่ไม่เปลี่ยน</div>
-  <div class="slide-content">
+  <div class="slide-content centered">
     <p class="kicker reveal">สำคัญที่สุด</p>
     <h2 class="reveal">อะไรที่ "ไม่เปลี่ยน"</h2>
     <div class="rule reveal"></div>
@@ -419,7 +430,7 @@ body.edit-active [contenteditable]:focus{outline:2px solid var(--accent);backgro
 <section class="slide" id="s10">
   <div class="frame"></div>
   <div class="tag">10 · เริ่มที่ไหน</div>
-  <div class="slide-content">
+  <div class="slide-content centered">
     <p class="kicker reveal">ค่อยๆ ไปทีละขั้น</p>
     <h2 class="reveal">เริ่มที่ภูเก็ตทาวน์ก่อน</h2>
     <div class="rule reveal"></div>
@@ -439,7 +450,7 @@ body.edit-active [contenteditable]:focus{outline:2px solid var(--accent);backgro
 <section class="slide" id="s11">
   <div class="frame"></div>
   <div class="tag">11 · ขอความเห็น</div>
-  <div class="slide-content">
+  <div class="slide-content centered">
     <p class="kicker reveal">วันนี้เราอยากฟังจากพวกคุณ</p>
     <h2 class="reveal">ช่วยกันทำให้มันฉลาดขึ้น</h2>
     <div class="qs">
