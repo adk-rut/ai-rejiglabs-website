@@ -1,5 +1,5 @@
 /**
- * AI Rejig Labs — i18n Module
+ * Rejig Labs — i18n Module
  * JSON-driven translation system. Supports EN, TH, RU.
  */
 (() => {

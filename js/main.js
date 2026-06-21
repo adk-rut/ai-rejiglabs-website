@@ -1,5 +1,5 @@
 /**
- * AI Rejig Labs — Main JS
+ * Rejig Labs — Main JS
  * GSAP ScrollTrigger animations + vanilla interactions
  */
 (() => {
@@ -41,15 +41,15 @@
     });
   });
 
-  /* ---- SAFETY FALLBACK — force in-view after 2.5s if observers haven't fired ---- */
+  /* ---- SAFETY FALLBACK — force in-view if observers haven't fired ---- */
   setTimeout(() => {
     document.querySelectorAll('[data-slide], .dot-card, .faq__item, .closing__line, .cs-card').forEach(el => {
       el.classList.add('in-view');
     });
-  }, 2500);
+  }, 600);
 
-  /* ---- GSAP SETUP — wait for full load so layout is stable ---- */
-  window.addEventListener('load', () => {
+  /* ---- GSAP SETUP — scripts are at body-bottom so GSAP is already loaded ---- */
+  (function () {
   gsap.registerPlugin(ScrollTrigger);
   const ease = 'power3.out';
 
@@ -180,7 +180,7 @@
       setTimeout(() => entry.target.classList.add('in-view'), idx * 200);
       slideObserver.unobserve(entry.target);
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.05 });
   processSteps.forEach(s => slideObserver.observe(s));
 
   /* =============================================
@@ -244,7 +244,7 @@
         role: 'Client | AI Workflow Implementation'
       },
       {
-        quote: 'AI Rejig Labs understood our workflows immediately and identified where automation could improve efficiency. Their practical approach addressed the real bottlenecks, and we\'re already seeing measurable results.',
+        quote: 'Rejig Labs understood our workflows immediately and identified where automation could improve efficiency. Their practical approach addressed the real bottlenecks, and we\'re already seeing measurable results.',
         role: 'Growth Lead | Marketing Agency'
       },
       {
@@ -300,7 +300,7 @@
       setTimeout(() => entry.target.classList.add('in-view'), idx * 100);
       statObserver.unobserve(entry.target);
     });
-  }, { threshold: 0.2 });
+  }, { threshold: 0.05 });
   statItems.forEach(s => statObserver.observe(s));
 
   /* Count-up */
@@ -321,7 +321,7 @@
       requestAnimationFrame(tick);
       countObserver.unobserve(el);
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.1 });
   countEls.forEach(el => countObserver.observe(el));
 
   /* =============================================
@@ -335,7 +335,7 @@
       setTimeout(() => entry.target.classList.add('in-view'), idx * 70);
       faqObserver.unobserve(entry.target);
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.05 });
   faqItems.forEach(f => faqObserver.observe(f));
 
   gsap.from('.faq__header > *', {
@@ -356,7 +356,7 @@
       });
       closingObserver.unobserve(entry.target);
     });
-  }, { threshold: 0.3 });
+  }, { threshold: 0.05 });
   const closingFooter = document.querySelector('.closing-footer');
   if (closingFooter) closingObserver.observe(closingFooter);
 
@@ -369,10 +369,10 @@
         setTimeout(function () {
           var wrap = document.getElementById('closingBtnWrap');
           if (wrap) wrap.classList.add('animate');
-        }, 1400);
+        }, 600);
       }
     },
-    y: 20, opacity: 0, duration: 0.7, delay: 1.2, ease,
+    y: 20, opacity: 0, duration: 0.7, delay: 0.3, ease,
   });
 
   /* =============================================
@@ -416,7 +416,7 @@
     const particleColor = '#3385ff';
 
     const particles = [];
-    const gridSize = 22;
+    const gridSize = 14;
     const spacing = size / gridSize;
 
     function Particle(x, y, order) {
@@ -502,7 +502,13 @@
       if (!running) return;
       ctx.clearRect(0, 0, size, size);
 
-      if (time % 30 === 0) updateNeighbors();
+      if (time % 60 === 0) {
+        if (typeof requestIdleCallback !== 'undefined') {
+          requestIdleCallback(updateNeighbors, { timeout: 100 });
+        } else {
+          updateNeighbors();
+        }
+      }
 
       for (var i = 0; i < particles.length; i++) {
         var p = particles[i];
@@ -548,9 +554,9 @@
     entropyObserver.observe(canvas);
   })();
 
-  /* Refresh ScrollTrigger after load to recalculate positions */
-  ScrollTrigger.refresh();
+  /* Yield to browser input queue before forcing layout recalculation */
+  setTimeout(() => ScrollTrigger.refresh(), 0);
 
-  }); // end window load
+  })(); // end GSAP setup
 
 })();
