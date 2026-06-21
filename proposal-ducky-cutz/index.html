@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>DuckyCutz × AI Rejig Labs · ข้อเสนอระบบจัดการร้าน AI</title>
+<title>DuckyCutz × Rejig Labs · ข้อเสนอระบบจัดการร้าน AI</title>
 <meta name="description" content="ระบบจัดการร้านครบวงจร AI สำหรับ DuckyCutz 6 สาขา ภูเก็ต รับสาย จองคิว ดูแลลูกค้า และการตลาด ในที่เดียว" />
 <link rel="icon" href="/proposal-ducky-cutz/ducky-head.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -314,6 +314,12 @@ body{
 .pcard .pv small{font-family:var(--sans);font-size:clamp(.72rem,1.2vw,.92rem);color:var(--text3);display:block;margin-top:.5em;font-weight:400}
 .pcard .pd{font-size:var(--small-size);color:var(--text2);line-height:1.55;border-top:1px solid var(--line2);padding-top:.6rem;margin-top:auto}
 .pcard.feature .tagx{align-self:flex-start;background:var(--accent);color:#fff;font-family:var(--mono);font-size:clamp(.54rem,.9vw,.64rem);letter-spacing:1px;text-transform:uppercase;padding:3px 9px;border-radius:999px}
+/* today-only: slashed setup fee (duplicated pricing slide) */
+.pcard.slashed{position:relative;overflow:hidden;border-color:#e0263a;background:linear-gradient(0deg,rgba(224,38,58,.05),rgba(224,38,58,.05)),var(--card-bg);box-shadow:0 14px 46px rgba(224,38,58,.16)}
+.pcard.slashed::after{content:"";position:absolute;left:-15%;top:46%;width:130%;height:5px;background:#e0263a;transform:rotate(-19deg);box-shadow:0 0 16px rgba(224,38,58,.6);border-radius:3px;pointer-events:none;z-index:4}
+.today-ribbon{position:absolute;top:15px;right:-42px;background:#e0263a;color:#fff;font-family:var(--mono);font-size:clamp(.5rem,.85vw,.6rem);letter-spacing:1px;padding:4px 44px;transform:rotate(45deg);z-index:5;box-shadow:0 4px 14px rgba(224,38,58,.4)}
+.pcard.slashed .was{color:var(--text3);text-decoration:line-through;text-decoration-color:#e0263a;text-decoration-thickness:3px;font-family:var(--serif);font-weight:700;font-size:clamp(1.2rem,3vw,2rem);line-height:1;display:block}
+.pcard.slashed .freebadge{display:inline-block;position:relative;z-index:6;margin-top:.35rem;background:var(--accent);color:#fff;border-radius:10px;padding:.08em .5em;font-family:var(--serif);font-weight:700;font-size:clamp(1.5rem,4vw,2.6rem);line-height:1.15;letter-spacing:-.5px;box-shadow:0 8px 26px var(--glow)}
 
 /* ROI */
 .roi-wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.2rem,3.5vw,3rem);align-items:center;width:100%;max-width:1100px;margin:0 auto}
@@ -449,7 +455,7 @@ body{
 
 <!-- ================= SLIDE 1 · COVER ================= -->
 <section class="slide" id="s1">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>ข้อเสนอ · <b>AI Rejig Labs</b></span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>ข้อเสนอ · <b>Rejig Labs</b></span></div>
   <img class="ghost decorative" src="/proposal-ducky-cutz/ducky-head.png" alt="" />
   <div class="slide-content">
     <div class="chip cover-chip reveal"><img src="/proposal-ducky-cutz/ducky-head.png" alt="DuckyCutz" /></div>
@@ -504,20 +510,73 @@ body{
         <div class="tile"><span class="num">04</span><span class="ic">🗒️</span><h4>ข้อมูลลูกค้า</h4><p>อยู่ในกระดาษและในหัว ไม่มีระบบกลาง</p></div>
       </div>
       <p class="sub reveal d4" style="max-width:66ch">ไม่ใช่ว่าพนักงานไม่ดี แต่ <b style="color:var(--ink)">คนเดียว</b> ครอบคลุม 6 สาขา ตลอด 24 ชั่วโมง ไม่ได้ ดีมานด์ที่โทรเข้ามาอยู่แล้วจึงรั่วออกไปทุกวัน</p>
-      <div class="reveal d5" style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;border-top:1px solid var(--line2);padding-top:clamp(.7rem,1.6vw,1.1rem);margin-top:clamp(.2rem,.8vw,.5rem)">
-        <p class="illus">ตัวเลขเป็นค่าประมาณ วัดค่าจริงในช่วงทดลอง</p>
-        <p style="font-family:var(--serif);font-weight:700;color:var(--ink);font-size:clamp(1.05rem,2.5vw,1.7rem)">≈ <span class="accent">฿117k/เดือน</span> โอกาสที่เสี่ยงหลุด</p>
+      <!-- CALC — edit the 4 bold inputs + the total: สาย/วัน × %จอง × ค่าตัด × วัน  (20 × 0.55 × 350 × 30 = 115,500) -->
+      <div class="reveal d5" style="border-top:1px solid var(--line2);padding-top:clamp(.7rem,1.6vw,1.1rem);margin-top:clamp(.2rem,.8vw,.5rem)">
+        <div style="display:flex;align-items:center;justify-content:center;gap:clamp(.4rem,1.4vw,1rem);flex-wrap:wrap;text-align:center;font-family:var(--sans);color:var(--text2);font-size:clamp(.66rem,1.2vw,.9rem)">
+          <span><b style="color:var(--ink);font-size:1.25em">~20</b><br>สาย/วัน รับไม่ทัน<br><span style="color:var(--text3)">รวม 6 สาขา</span></span>
+          <span style="color:var(--accent);font-weight:700">×</span>
+          <span><b style="color:var(--ink);font-size:1.25em">55%</b><br>ตั้งใจจะจอง</span>
+          <span style="color:var(--accent);font-weight:700">×</span>
+          <span><b style="color:var(--ink);font-size:1.25em">฿350</b><br>ค่าตัดเฉลี่ย</span>
+          <span style="color:var(--accent);font-weight:700">×</span>
+          <span><b style="color:var(--ink);font-size:1.25em">30</b><br>วัน/เดือน</span>
+          <span style="color:var(--accent);font-weight:700">=</span>
+          <span style="font-family:var(--serif);font-weight:700;color:var(--accent);font-size:clamp(1.2rem,3vw,2rem);line-height:1.1">≈ ฿115k<br><span style="font-size:.5em;color:var(--text2);font-weight:400">/เดือน ที่เสี่ยงหลุด</span></span>
+        </div>
+        <p class="illus" style="text-align:center;margin-top:clamp(.5rem,1.2vw,.8rem)">สมมติฐานแบบอนุรักษ์นิยม · ตัวเลขจริงวัดในช่วงทดลอง 30 วัน</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SLIDE · DISCOVERY QUESTIONS ================= -->
+<section class="slide" id="sAsk">
+  <div class="meta"><span class="wm">DuckyCutz</span><span>03 · คุยกันก่อน</span></div>
+  <div class="slide-content">
+    <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.4rem,1.1vw,.8rem);margin-bottom:clamp(.5rem,1.3vw,.95rem)">
+      <span class="eyebrow reveal"><b>03</b> ก่อนไปต่อ</span>
+      <h2 class="shead reveal d1" style="font-size:clamp(1.5rem,4.4vw,3rem)">ขอคุยเรื่อง <span class="accent">ร้านคุณ</span> หน่อย</h2>
+      <p class="sub reveal d2" style="max-width:60ch">ระบบที่ใช่ เริ่มจากเข้าใจเป้าหมายของคุณก่อน</p>
+    </div>
+    <div class="reveal d3" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(.5rem,1.2vw,.8rem);max-width:1020px;margin:0 auto;width:100%">
+      <div style="background:var(--card-bg);border:1px solid var(--line);border-radius:12px;padding:clamp(.7rem,1.5vw,1rem)">
+        <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:1px;color:var(--accent)">วิสัยทัศน์</span>
+        <p style="color:var(--ink);font-size:clamp(.86rem,1.6vw,1.1rem);font-weight:500;margin-top:.25rem">อีก 1 ปี อยากเห็น DuckyCutz ไปไกลแค่ไหน? คิดว่าจะมีกี่สาขา?</p>
+      </div>
+      <div style="background:var(--card-bg);border:1px solid var(--line);border-radius:12px;padding:clamp(.7rem,1.5vw,1rem)">
+        <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:1px;color:var(--accent)">เป้าหมาย</span>
+        <p style="color:var(--ink);font-size:clamp(.86rem,1.6vw,1.1rem);font-weight:500;margin-top:.25rem">ตั้งเป้ารายได้ปีหน้าไว้เท่าไหร่? ต้องได้ลูกค้าเพิ่มเดือนละกี่คน แล้ววางแผนจะไปถึงยังไง?</p>
+      </div>
+      <div style="background:var(--card-bg);border:1px solid var(--line);border-radius:12px;padding:clamp(.7rem,1.5vw,1rem)">
+        <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:1px;color:var(--accent)">ลูกค้าวันนี้</span>
+        <p style="color:var(--ink);font-size:clamp(.86rem,1.6vw,1.1rem);font-weight:500;margin-top:.25rem">ทุกวันนี้ลูกค้าเจอร้านได้ยังไง? ตอนนี้ทำการตลาดอยู่ไหม ใครดูแล?</p>
+      </div>
+      <div style="background:var(--card-bg);border:1px solid var(--line);border-radius:12px;padding:clamp(.7rem,1.5vw,1rem)">
+        <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:1px;color:var(--accent)">รีวิว</span>
+        <p style="color:var(--ink);font-size:clamp(.86rem,1.6vw,1.1rem);font-weight:500;margin-top:.25rem">ตอนนี้ขอรีวิว Google จากลูกค้ายังไง? มีวิธีประจำไหม?</p>
+      </div>
+      <div style="background:var(--card-bg);border:1px solid var(--line);border-radius:12px;padding:clamp(.7rem,1.5vw,1rem)">
+        <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:1px;color:var(--accent)">อัพเซล</span>
+        <p style="color:var(--ink);font-size:clamp(.86rem,1.6vw,1.1rem);font-weight:500;margin-top:.25rem">ปกติเสนอบริการเพิ่มให้ลูกค้ายังไงบ้าง?</p>
+      </div>
+      <div style="background:var(--card-bg);border:1px solid var(--line);border-radius:12px;padding:clamp(.7rem,1.5vw,1rem)">
+        <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:1px;color:var(--accent)">คุณค่า</span>
+        <p style="color:var(--ink);font-size:clamp(.86rem,1.6vw,1.1rem);font-weight:500;margin-top:.25rem">ลูกค้าประจำคนนึง อยู่กับเราทั้งปี คิดเป็นเงินเท่าไหร่?</p>
+      </div>
+    </div>
+    <div class="reveal d4" style="max-width:1020px;margin:clamp(.55rem,1.3vw,.9rem) auto 0;background:var(--glow);border:1px solid var(--line);border-radius:12px;padding:clamp(.7rem,1.5vw,1.05rem) clamp(1rem,2.2vw,1.5rem)">
+      <span style="font-family:var(--mono);font-size:.58rem;letter-spacing:1px;color:var(--accent)">ลองนึกภาพ</span>
+      <p style="color:var(--ink);font-size:clamp(.9rem,1.75vw,1.22rem);font-weight:600;margin-top:.25rem">ถ้าทุกสายมีคนรับ ลูกค้ากลับมาเองหมด มันจะต่างจากตอนนี้ยังไง? แล้วถ้าลูกค้าทุกคนอยู่ในระบบเดียว พร้อมยิงโปรตอนขยายสาขา — ช่วยได้ไหม?</p>
     </div>
   </div>
 </section>
 
 <!-- ================= SLIDE 4 · SOLUTION ================= -->
 <section class="slide" id="s5">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>03 · ทางออก</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>04 · ทางออก</span></div>
   <div class="slide-content">
     <div class="head-block" style="max-width:1100px;margin:0 auto;width:100%;gap:clamp(.9rem,2vw,1.4rem)">
-      <span class="eyebrow reveal"><b>03</b> ทางออก</span>
+      <span class="eyebrow reveal"><b>04</b> ทางออก</span>
       <p class="kick reveal d1">ระบบเดียว ดูแลทุกสาขา</p>
       <h2 class="shead reveal d1" style="font-size:clamp(1.9rem,5.5vw,4rem)">เริ่มที่ พนักงานต้อนรับ <span class="accent">AI</span></h2>
       <div class="cards c4 reveal d2">
@@ -533,10 +592,10 @@ body{
 
 <!-- ================= SLIDE 6 · HOW IT WORKS ================= -->
 <section class="slide" id="s6">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>04 · ขั้นตอน</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>05 · ขั้นตอน</span></div>
   <div class="slide-content">
     <div class="head-block" style="max-width:900px;margin:0 auto;width:100%;gap:clamp(.6rem,1.5vw,1rem);text-align:center;align-items:center">
-      <span class="eyebrow reveal"><b>04</b> ขั้นตอนการทำงาน</span>
+      <span class="eyebrow reveal"><b>05</b> ขั้นตอนการทำงาน</span>
       <h2 class="shead reveal d1" style="font-size:clamp(1.7rem,5vw,3.4rem)">จากสาย เป็นคิว<br>ใน <span class="accent">30 วินาที</span></h2>
     </div>
     <div class="pipe" style="margin-top:clamp(.7rem,1.8vw,1.3rem)">
@@ -551,11 +610,11 @@ body{
 
 <!-- ================= SLIDE 7 · WORKS WITH TEAM ================= -->
 <section class="slide" id="s7">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>05 · ทำงานคู่กับทีม</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>06 · ทำงานคู่กับทีม</span></div>
   <div class="slide-content">
     <div class="two">
       <div class="head-block">
-        <span class="eyebrow reveal"><b>05</b> ทำงานคู่กับทีม</span>
+        <span class="eyebrow reveal"><b>06</b> ทำงานคู่กับทีม</span>
         <h2 class="shead reveal d1">ทำงานคู่กับ<br>พนักงาน<br><span class="accent-em">ไม่ใช่แทนที่</span></h2>
         <p class="sub reveal d2">AI รับงานที่คนเดียวรับไม่ไหว สายที่เข้าพร้อมกัน สายนอกเวลา และสายข้ามสาขา ส่วนพนักงานของคุณดูแลลูกค้าในร้านและลูกค้าประจำได้เต็มที่</p>
       </div>
@@ -570,10 +629,10 @@ body{
 
 <!-- ================= SLIDE 8 · BEFORE / AFTER ================= -->
 <section class="slide" id="s8">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>06 · ก่อน / หลัง</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>07 · ก่อน / หลัง</span></div>
   <div class="slide-content">
     <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.6rem,1.5vw,1rem);margin-bottom:clamp(.6rem,1.6vw,1.2rem)">
-      <span class="eyebrow reveal"><b>06</b> การเปลี่ยนแปลง</span>
+      <span class="eyebrow reveal"><b>07</b> การเปลี่ยนแปลง</span>
       <h2 class="shead reveal d1" style="font-size:clamp(1.7rem,5vw,3.4rem)">ร้านเดิม<br>ระบบรับสาย <span class="accent">ใหม่</span></h2>
     </div>
     <div class="ba">
@@ -603,7 +662,7 @@ body{
 
 <!-- ================= SLIDE 9 · PIVOT (Act 2 opens) ================= -->
 <section class="slide" id="s9">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>07 · มากกว่าการรับสาย</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>08 · มากกว่าการรับสาย</span></div>
   <img class="ghost decorative" src="/proposal-ducky-cutz/ducky-head.png" alt="" />
   <div class="slide-content">
     <span class="eyebrow reveal">ก้าวต่อไป · เก็บและต่อยอดลูกค้า</span>
@@ -618,10 +677,10 @@ body{
 
 <!-- ================= SLIDE 10 · EVERYTHING IN ONE PLACE (dashboard) ================= -->
 <section class="slide" id="s10">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>08 · ทุกอย่างในที่เดียว</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>09 · ทุกอย่างในที่เดียว</span></div>
   <div class="slide-content">
     <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.5rem,1.3vw,.9rem);margin-bottom:clamp(.5rem,1.4vw,1rem)">
-      <span class="eyebrow reveal"><b>08</b> ทุกอย่างในที่เดียว</span>
+      <span class="eyebrow reveal"><b>09</b> ทุกอย่างในที่เดียว</span>
       <h2 class="shead reveal d1" style="font-size:clamp(1.6rem,4.6vw,3.2rem)">ทั้งร้าน อยู่ใน <span class="accent">จอเดียว</span></h2>
     </div>
     <div class="dash reveal d2">
@@ -663,10 +722,10 @@ body{
 
 <!-- ================= SLIDE · PIPELINE / CRM BOARD ================= -->
 <section class="slide" id="s10b">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>09 · ไปป์ไลน์ลูกค้า</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>10 · ไปป์ไลน์ลูกค้า</span></div>
   <div class="slide-content">
     <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.5rem,1.3vw,.9rem);margin-bottom:clamp(.5rem,1.4vw,1rem)">
-      <span class="eyebrow reveal"><b>09</b> ไปป์ไลน์ลูกค้า</span>
+      <span class="eyebrow reveal"><b>10</b> ไปป์ไลน์ลูกค้า</span>
       <h2 class="shead reveal d1" style="font-size:clamp(1.6rem,4.6vw,3.2rem)">ทุกลูกค้า อยู่ใน <span class="accent">ไปป์ไลน์เดียว</span></h2>
       <p class="sub reveal d2" style="max-width:64ch">เห็นทุกสายตั้งแต่เข้ามา จนจองคิว มาที่ร้าน และติดตามต่อ ไม่มีลูกค้าตกหล่น ไม่ต้องเดาว่าใครอยู่ขั้นไหน</p>
     </div>
@@ -704,10 +763,10 @@ body{
 
 <!-- ================= SLIDE · WEBCHAT + REVIEWS ================= -->
 <section class="slide" id="s10c">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>10 · เว็บแชต + รีวิว</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>11 · เว็บแชต + รีวิว</span></div>
   <div class="slide-content">
     <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.4rem,1.2vw,.8rem);margin-bottom:clamp(.5rem,1.4vw,1rem)">
-      <span class="eyebrow reveal"><b>10</b> จับลูกค้าหน้าเว็บ + สร้างรีวิว</span>
+      <span class="eyebrow reveal"><b>11</b> จับลูกค้าหน้าเว็บ + สร้างรีวิว</span>
       <h2 class="shead reveal d1" style="font-size:clamp(1.5rem,4.4vw,3rem)">เปลี่ยนคนเข้าเว็บ เป็น <span class="accent">ลูกค้า</span></h2>
     </div>
     <div class="two" style="align-items:center">
@@ -741,10 +800,10 @@ body{
 
 <!-- ================= SLIDE · 2-WAY TEXTING + VOICEMAIL ================= -->
 <section class="slide" id="s10d">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>11 · ตอบไว ติดตามอัตโนมัติ</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>12 · ตอบไว ติดตามอัตโนมัติ</span></div>
   <div class="slide-content">
     <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.4rem,1.2vw,.8rem);margin-bottom:clamp(.5rem,1.4vw,1rem)">
-      <span class="eyebrow reveal"><b>11</b> ตอบไว ติดตามอัตโนมัติ</span>
+      <span class="eyebrow reveal"><b>12</b> ตอบไว ติดตามอัตโนมัติ</span>
       <h2 class="shead reveal d1" style="font-size:clamp(1.5rem,4.4vw,3rem)">ตอบไวที่สุด <span class="accent">ชนะดีล</span></h2>
       <p class="sub reveal d2" style="max-width:60ch">ลูกค้าเลือกร้านที่ตอบก่อน ระบบทักกลับใน 5 นาทีอัตโนมัติ แล้วตามต่อให้เองทุกระยะ จนกว่าจะจอง</p>
     </div>
@@ -780,10 +839,10 @@ body{
 
 <!-- ================= SLIDE 11 · RETENTION ENGINE ================= -->
 <section class="slide" id="s11">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>12 · รักษาลูกค้า</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>13 · รักษาลูกค้า</span></div>
   <div class="slide-content">
     <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.5rem,1.3vw,.9rem);margin-bottom:clamp(.6rem,1.5vw,1.1rem)">
-      <span class="eyebrow reveal"><b>12</b> รักษาลูกค้า</span>
+      <span class="eyebrow reveal"><b>13</b> รักษาลูกค้า</span>
       <h2 class="shead reveal d1" style="font-size:clamp(1.6rem,4.6vw,3.2rem)">ทำให้ลูกค้า <span class="accent">กลับมาซ้ำ</span> เอง</h2>
       <p class="sub reveal d2" style="max-width:60ch">ลูกค้าหนึ่งคนที่กลับมาทุก 3 สัปดาห์ มีค่ามากกว่าลูกค้าใหม่ที่มาครั้งเดียว ระบบดูแลให้อัตโนมัติทุกขั้นตอน</p>
     </div>
@@ -797,12 +856,52 @@ body{
   </div>
 </section>
 
-<!-- ================= SLIDE 12 · MARKETING & PROMOTIONS ================= -->
-<section class="slide" id="s12">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>13 · การตลาด</span></div>
+<!-- ================= SLIDE · RETENTION MATH ================= -->
+<section class="slide" id="sMath">
+  <div class="meta"><span class="wm">DuckyCutz</span><span>14 · รายได้จากลูกค้าเดิม</span></div>
   <div class="slide-content">
     <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.5rem,1.3vw,.9rem);margin-bottom:clamp(.6rem,1.5vw,1.1rem)">
-      <span class="eyebrow reveal"><b>13</b> การตลาดและโปรโมชัน</span>
+      <span class="eyebrow reveal"><b>14</b> รายได้จากลูกค้าเดิม</span>
+      <h2 class="shead reveal d1" style="font-size:clamp(1.6rem,4.6vw,3.2rem)">ลูกค้ากลับมาบ่อยขึ้น<br>= <span class="accent">รายได้ที่มองไม่เห็น</span></h2>
+      <p class="sub reveal d2" style="max-width:64ch">การเตือนจองทุก 3 สัปดาห์ ทำให้ลูกค้ากลับมาถี่ขึ้นเองอัตโนมัติ ลองคิดเลขแบบอนุรักษ์นิยม</p>
+    </div>
+    <div class="reveal d3" style="display:flex;align-items:stretch;justify-content:center;gap:clamp(.5rem,1.4vw,1rem);flex-wrap:wrap;max-width:1000px;margin:0 auto">
+      <div style="flex:1;min-width:150px;background:var(--card-bg);border:1px solid var(--line);border-radius:14px;padding:clamp(.9rem,2vw,1.3rem)">
+        <div style="font-family:var(--mono);font-size:.66rem;letter-spacing:1px;color:var(--text3)">ลูกค้าประจำต่อสาขา</div>
+        <div style="font-family:var(--serif);font-weight:700;color:var(--ink);font-size:clamp(1.5rem,4vw,2.4rem)">~150 คน</div>
+        <p style="font-size:.8rem;color:var(--text2);margin-top:.2rem">ฐานลูกค้าที่ระบบเก็บไว้</p>
+      </div>
+      <div style="display:flex;align-items:center;font-size:1.6rem;color:var(--accent)">×</div>
+      <div style="flex:1;min-width:150px;background:var(--card-bg);border:1px solid var(--line);border-radius:14px;padding:clamp(.9rem,2vw,1.3rem)">
+        <div style="font-family:var(--mono);font-size:.66rem;letter-spacing:1px;color:var(--text3)">มาเพิ่มขึ้น</div>
+        <div style="font-family:var(--serif);font-weight:700;color:var(--ink);font-size:clamp(1.5rem,4vw,2.4rem)">+2 ครั้ง/ปี</div>
+        <p style="font-size:.8rem;color:var(--text2);margin-top:.2rem">จากการเตือนอัตโนมัติ</p>
+      </div>
+      <div style="display:flex;align-items:center;font-size:1.6rem;color:var(--accent)">×</div>
+      <div style="flex:1;min-width:150px;background:var(--card-bg);border:1px solid var(--line);border-radius:14px;padding:clamp(.9rem,2vw,1.3rem)">
+        <div style="font-family:var(--mono);font-size:.66rem;letter-spacing:1px;color:var(--text3)">ค่าตัดเฉลี่ย</div>
+        <div style="font-family:var(--serif);font-weight:700;color:var(--ink);font-size:clamp(1.5rem,4vw,2.4rem)">฿350</div>
+        <p style="font-size:.8rem;color:var(--text2);margin-top:.2rem">ต่อครั้ง</p>
+      </div>
+    </div>
+    <div class="reveal d4" style="text-align:center;margin-top:clamp(.9rem,2vw,1.3rem)">
+      <div style="display:inline-flex;flex-direction:column;align-items:center;gap:.2rem;background:var(--glow);border:1px solid var(--line);border-radius:16px;padding:clamp(.8rem,1.8vw,1.2rem) clamp(1.4rem,3vw,2.4rem)">
+        <span style="font-family:var(--mono);font-size:.66rem;letter-spacing:1px;color:var(--text2)">รายได้เพิ่มต่อสาขา</span>
+        <span style="font-family:var(--serif);font-weight:700;color:var(--accent);font-size:clamp(1.8rem,5vw,3rem)">≈ ฿105,000/ปี</span>
+        <span style="font-size:.82rem;color:var(--text2)">≈ ฿8,700/เดือน · ครอบคลุมค่าบริการทั้งหมด</span>
+      </div>
+    </div>
+    <p class="illus reveal d5" style="max-width:70ch;margin:clamp(.7rem,1.6vw,1rem) auto 0;text-align:center">ตัวเลขตัวอย่างแบบอนุรักษ์นิยม ยังไม่รวมลูกค้าที่ดึงกลับและรีวิวที่เพิ่มขึ้น · วัดค่าจริงในช่วงทดลอง 30 วัน</p>
+  </div>
+</section>
+
+
+<!-- ================= SLIDE 12 · MARKETING & PROMOTIONS ================= -->
+<section class="slide" id="s12">
+  <div class="meta"><span class="wm">DuckyCutz</span><span>15 · การตลาด</span></div>
+  <div class="slide-content">
+    <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.5rem,1.3vw,.9rem);margin-bottom:clamp(.6rem,1.5vw,1.1rem)">
+      <span class="eyebrow reveal"><b>15</b> การตลาดและโปรโมชัน</span>
       <h2 class="shead reveal d1" style="font-size:clamp(1.6rem,4.6vw,3.2rem)">สร้างมาเพื่อ <span class="accent">การตลาด</span></h2>
       <p class="sub reveal d2" style="max-width:62ch">เพราะลูกค้าทุกคนอยู่ในระบบแล้ว คุณส่งโปรที่ใช่ ให้คนที่ใช่ ได้ในไม่กี่คลิก <span class="tag addon" style="vertical-align:middle">ส่วนเสริม</span></p>
     </div>
@@ -816,10 +915,10 @@ body{
 
 <!-- ================= SLIDE 13 · OBJECTION · vs LINE OA ================= -->
 <section class="slide" id="s12b">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>14 · ทำไมไม่ใช้แค่ LINE</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>16 · ทำไมไม่ใช้แค่ LINE</span></div>
   <div class="slide-content">
     <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.5rem,1.3vw,.9rem);margin-bottom:clamp(.6rem,1.5vw,1.1rem)">
-      <span class="eyebrow reveal"><b>14</b> มี LINE อยู่แล้ว ทำไมต้องใช้?</span>
+      <span class="eyebrow reveal"><b>16</b> มี LINE อยู่แล้ว ทำไมต้องใช้?</span>
       <h2 class="shead reveal d1" style="font-size:clamp(1.6rem,4.6vw,3.2rem)">แล้ว LINE OA <span class="accent">ไม่พอเหรอ?</span></h2>
       <p class="sub reveal d2" style="max-width:64ch">LINE คือช่องแชตที่ดี แต่เป็นแค่ประตูเดียว ระบบนี้ดูแลทั้งร้าน และที่สำคัญ ทำงานร่วมกับ LINE ได้</p>
     </div>
@@ -837,9 +936,9 @@ body{
 
 <!-- ================= SLIDE 14 · PILOT ================= -->
 <section class="slide" id="s13">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>15 · เริ่มจากเล็ก</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>17 · เริ่มจากเล็ก</span></div>
   <div class="slide-content">
-    <span class="eyebrow reveal"><b>15</b> เริ่มจากเล็ก</span>
+    <span class="eyebrow reveal"><b>17</b> เริ่มจากเล็ก</span>
     <h2 class="giant reveal d1" style="font-size:clamp(2.4rem,8.5vw,6rem)">1 สาขา <span class="accent">30 วัน</span></h2>
     <div class="glowline reveal d1" style="margin:0 auto"></div>
     <p class="cover-sub reveal d2" style="max-width:44ch">พิสูจน์ที่สาขาเดียวก่อน วัดผล <b style="color:var(--ink)">จริง</b> จากร้านคุณ ไม่ใช่ตัวเลขในกระดาษ ก่อนจ่ายเพิ่มแม้แต่บาทเดียว</p>
@@ -853,10 +952,10 @@ body{
 
 <!-- ================= SLIDE · VALUE STACK ================= -->
 <section class="slide" id="s13b">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>16 · คุณได้อะไรบ้าง</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>18 · คุณได้อะไรบ้าง</span></div>
   <div class="slide-content">
     <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.4rem,1.2vw,.8rem);margin-bottom:clamp(.5rem,1.4vw,1rem)">
-      <span class="eyebrow reveal"><b>16</b> คุณได้อะไรบ้าง</span>
+      <span class="eyebrow reveal"><b>18</b> คุณได้อะไรบ้าง</span>
       <h2 class="shead reveal d1" style="font-size:clamp(1.6rem,4.6vw,3.2rem)">รวมทุกอย่าง ใน <span class="accent">ระบบเดียว</span></h2>
     </div>
     <div class="vstack reveal d2">
@@ -879,10 +978,10 @@ body{
 
 <!-- ================= SLIDE 14 · INVESTMENT ================= -->
 <section class="slide" id="s14">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>17 · ค่าใช้จ่าย</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>19 · ค่าใช้จ่าย</span></div>
   <div class="slide-content">
     <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.6rem,1.5vw,1rem);margin-bottom:clamp(.6rem,1.6vw,1.1rem)">
-      <span class="eyebrow reveal"><b>17</b> ค่าใช้จ่าย</span>
+      <span class="eyebrow reveal"><b>19</b> ค่าใช้จ่าย</span>
       <h2 class="shead reveal d1" style="font-size:clamp(1.7rem,5vw,3.4rem)">หนึ่งแพ็กเกจ<br>ไม่มี <span class="accent">บิลเซอร์ไพรส์</span></h2>
     </div>
     <div class="price-grid">
@@ -899,7 +998,7 @@ body{
       </div>
       <div class="pcard reveal d4">
         <div class="pk">ค่าใช้สายและข้อความ</div>
-        <div class="pv">มีเพดาน<small>รวมโควตา + เพดานที่คุณกำหนด</small></div>
+        <div class="pv">จ่ายตามจริง<small>รวมโควตา + เพดานที่คุณกำหนด</small></div>
         <div class="pd">มีโควตาให้พร้อม ใช้เกินคิดตามจริงแบบโปร่งใส แต่ไม่เกินเพดานที่คุณอนุมัติ <b style="color:var(--ink)">ถูกกว่าจ้างพนักงานเพิ่มหนึ่งคน</b> และทำงาน 24 ชม.</div>
       </div>
     </div>
@@ -907,12 +1006,43 @@ body{
   </div>
 </section>
 
+<!-- ================= SLIDE · TODAY-ONLY OFFER (duplicated pricing) ================= -->
+<section class="slide" id="s14b">
+  <div class="meta"><span class="wm">DuckyCutz</span><span>20 · ยืนยันวันนี้</span></div>
+  <div class="slide-content">
+    <div class="head-block" style="text-align:center;align-items:center;gap:clamp(.6rem,1.5vw,1rem);margin-bottom:clamp(.6rem,1.6vw,1.1rem)">
+      <span class="eyebrow reveal"><b>20</b> ข้อเสนอวันนี้</span>
+      <h2 class="shead reveal d1" style="font-size:clamp(1.7rem,5vw,3.4rem)">ยืนยันวันนี้<br>ฟรี <span class="accent">ค่าติดตั้ง</span></h2>
+    </div>
+    <div class="price-grid">
+      <div class="pcard slashed reveal d2">
+        <span class="today-ribbon">วันนี้เท่านั้น</span>
+        <div class="pk">ค่าติดตั้งครั้งเดียว</div>
+        <div class="pv"><span class="was">฿39,000</span><span class="freebadge">ฟรีวันนี้</span><small>ยืนยันวันนี้ ยกเว้นค่าติดตั้งทั้งหมด</small></div>
+        <div class="pd">สร้างระบบทั้งหมด แบรนด์ ระบบจอง พนักงาน AI ระบบ CRM และแชต ไม่เก็บซ้ำเมื่อขยายสาขา</div>
+      </div>
+      <div class="pcard feature reveal d3">
+        <span class="tagx">ต่อสาขา</span>
+        <div class="pk">ค่าบริการรายเดือน</div>
+        <div class="pv">฿7,900<small>ต่อสาขา ต่อเดือน</small></div>
+        <div class="pd">พนักงาน AI ระบบจอง CRM แชต และการดูแลระบบ เรทเท่ากันตั้งแต่ 1 ถึง 6 สาขา</div>
+      </div>
+      <div class="pcard reveal d4">
+        <div class="pk">ค่าใช้สายและข้อความ</div>
+        <div class="pv">จ่ายตามจริง<small>รวมโควตา + เพดานที่คุณกำหนด</small></div>
+        <div class="pd">มีโควตาให้พร้อม ใช้เกินคิดตามจริงแบบโปร่งใส แต่ไม่เกินเพดานที่คุณอนุมัติ <b style="color:var(--ink)">ถูกกว่าจ้างพนักงานเพิ่มหนึ่งคน</b> และทำงาน 24 ชม.</div>
+      </div>
+    </div>
+    <p class="illus reveal d5" style="max-width:74ch;margin:clamp(.8rem,2vw,1.2rem) auto 0;text-align:center">ยกเว้นค่าติดตั้ง ฿39,000 เฉพาะการยืนยันภายในวันนี้ · ค่ารายเดือนและส่วนเสริมตามเดิม</p>
+  </div>
+</section>
+
 <!-- ================= SLIDE 15 · ROI ================= -->
 <section class="slide" id="s15">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>18 · ความคุ้มค่า</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>21 · ความคุ้มค่า</span></div>
   <div class="slide-content">
     <div class="head-block" style="max-width:1100px;margin:0 auto 0;width:100%;text-align:center;align-items:center;gap:clamp(.5rem,1.4vw,.9rem);margin-bottom:clamp(.6rem,1.6vw,1.2rem)">
-      <span class="eyebrow reveal"><b>18</b> ความคุ้มค่า</span>
+      <span class="eyebrow reveal"><b>21</b> ความคุ้มค่า</span>
       <h2 class="shead reveal d1" style="font-size:clamp(1.6rem,4.6vw,3.2rem)">คุ้มกว่าที่จ่าย<br>ตั้งแต่ <span class="accent">เดือนแรก</span></h2>
     </div>
     <div class="roi-wrap">
@@ -944,11 +1074,11 @@ body{
 
 <!-- ================= SLIDE 16 · SCALE + ROADMAP + INTEGRATIONS ================= -->
 <section class="slide" id="s16">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>19 · ขยายผล</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>22 · ขยายผล</span></div>
   <div class="slide-content">
     <div class="scale-wrap">
       <div class="head-block">
-        <span class="eyebrow reveal"><b>19</b> ขยายผล และอนาคต</span>
+        <span class="eyebrow reveal"><b>22</b> ขยายผล และอนาคต</span>
         <h2 class="shead reveal d1">หนึ่งสาขาพิสูจน์<br><span class="accent">หกสาขา</span> ขยายผล</h2>
         <p class="sub reveal d2">ระบบสร้างไว้ครบทั้ง 6 สาขาแล้ว พิสูจน์สาขาแรก แล้วเปิดที่เหลือได้เลย เรทเดิม ไม่มีค่าติดตั้งใหม่ และเติบโตต่อได้เรื่อยๆ</p>
         <div class="addons reveal d3">
@@ -974,11 +1104,11 @@ body{
 
 <!-- ================= SLIDE 17 · NEXT STEPS ================= -->
 <section class="slide" id="s17">
-  <div class="meta"><span class="wm">DuckyCutz</span><span>20 · ขั้นต่อไป</span></div>
+  <div class="meta"><span class="wm">DuckyCutz</span><span>23 · ขั้นต่อไป</span></div>
   <img class="ghost decorative" src="/proposal-ducky-cutz/ducky-head.png" alt="" />
   <div class="slide-content">
     <div class="chip cover-chip reveal" style="width:clamp(58px,8vw,88px);height:clamp(58px,8vw,88px)"><img src="/proposal-ducky-cutz/ducky-head.png" style="height:clamp(42px,6vw,64px)" alt=""/></div>
-    <span class="eyebrow reveal d1"><b>20</b> ขั้นต่อไป</span>
+    <span class="eyebrow reveal d1"><b>23</b> ขั้นต่อไป</span>
     <h2 class="giant reveal d1" style="font-size:clamp(2.2rem,7.5vw,5rem)">เปิด <span class="accent">สาขาแรก</span> กันเลย</h2>
     <div class="cta-steps reveal d3">
       <div class="cstep"><span class="cn">1</span><b>เลือกสาขานำร่อง</b><span>เลือกสาขาที่ยุ่งที่สุด</span></div>
@@ -986,7 +1116,7 @@ body{
       <div class="cstep"><span class="cn">3</span><b>เปิดใช้และวัดผล</b><span>ดูคิวเต็มขึ้นเรื่อยๆ</span></div>
     </div>
     <a class="cta-btn reveal d4" href="#s1">เริ่มทดลอง 30 วัน →</a>
-    <p class="cta-contact reveal d5">AI Rejig Labs · เริ่มสาขาแรกกันเลย</p>
+    <p class="cta-contact reveal d5">Rejig Labs · เริ่มสาขาแรกกันเลย</p>
   </div>
 </section>
 
