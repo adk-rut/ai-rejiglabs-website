@@ -13,9 +13,24 @@
     "summary_ru": "Команда контента BoBe стоила $2–3K/мес и тратила 1–2 дня на один батч. Мы построили автономную систему, которая генерирует 14 материалов за секунды меньше чем за $30/мес.",
     "image": "assets/bobe-content-system.jpg",
     "stats": [
-      { "value": "<$30/mo", "label": "Running Cost", "label_th": "ต้นทุนรายเดือน", "label_ru": "Стоимость в месяц" },
-      { "value": "14 posts", "label": "Per Run", "label_th": "ต่อครั้ง", "label_ru": "За запуск" },
-      { "value": "3 days", "label": "Build Time", "label_th": "เวลาสร้างระบบ", "label_ru": "Срок разработки" }
+      {
+        "value": "<$30/mo",
+        "label": "Running Cost",
+        "label_th": "ต้นทุนรายเดือน",
+        "label_ru": "Стоимость в месяц"
+      },
+      {
+        "value": "14 posts",
+        "label": "Per Run",
+        "label_th": "ต่อครั้ง",
+        "label_ru": "За запуск"
+      },
+      {
+        "value": "3 days",
+        "label": "Build Time",
+        "label_th": "เวลาสร้างระบบ",
+        "label_ru": "Срок разработки"
+      }
     ],
     "challenge": "BoBe was running a fully manual content operation. A dedicated external team handled everything — research, ideation, copywriting, approvals, and visuals across multiple design tools. Producing a single batch took 1–2 days before anything was published. Cost: $2,000–$3,000/month. Scaling content meant scaling cost linearly, with no ceiling in sight.",
     "challenge_th": "BoBe มีทีมคอนเทนต์ภายนอกที่ทำงานด้วยมือทั้งหมด ตั้งแต่หาไอเดีย เขียนคอปปี้ ไปจนถึงทำภาพ ผลิตคอนเทนต์หนึ่งแบทช์ใช้เวลา 1–2 วัน ค่าใช้จ่าย 2,000–3,000 ดอลลาร์ต่อเดือน ถ้าอยากโตต้องจ่ายมากขึ้นไปเรื่อย ๆ",
@@ -36,6 +51,142 @@
     "published": true
   },
   {
+    "slug": "duckycutz",
+    "client": "Ducky Cutz",
+    "industry": "Barbershop · Local Service",
+    "industry_th": "ร้านตัดผม · ธุรกิจบริการท้องถิ่น",
+    "industry_ru": "Барбершоп · Локальный сервис",
+    "headline": "An AI front desk that books haircuts by phone, SMS and LINE, in three languages, 24/7",
+    "headline_th": "พนักงานต้อนรับ AI ที่รับจองตัดผมทางโทรศัพท์ SMS และ LINE ได้ 3 ภาษา ตลอด 24 ชั่วโมง",
+    "headline_ru": "AI-ресепшн, который принимает записи на стрижку по телефону, SMS и LINE, на трёх языках, 24/7",
+    "summary": "A busy Phuket Town barbershop lost bookings whenever the chairs were full or the shop was closed. We built an AI front desk that answers every call, text and LINE message in Thai, English or Russian and books straight into the calendar, with no staff time needed, day or night.",
+    "summary_th": "ร้านตัดผมย่านเมืองภูเก็ตที่ลูกค้าแน่นตลอด เสียลูกค้าทุกครั้งที่ช่างไม่ว่างหรือร้านปิด เราสร้างพนักงานต้อนรับ AI ที่รับทุกสาย ทุกข้อความ และทุก LINE เป็นภาษาไทย อังกฤษ หรือรัสเซีย แล้วจองลงปฏิทินให้ทันที โดยไม่ต้องใช้พนักงาน ไม่ว่ากลางวันหรือกลางคืน",
+    "summary_ru": "Загруженный барбершоп в Пхукет-Тауне терял записи, когда все кресла заняты или магазин закрыт. Мы построили AI-ресепшн, который отвечает на каждый звонок, SMS и сообщение в LINE на тайском, английском или русском и сразу записывает в календарь, без участия персонала, днём и ночью.",
+    "image": "assets/duckycutz-front-desk.png",
+    "stats": [
+      {
+        "value": "300+",
+        "label": "Calls Handled / mo",
+        "label_th": "สายที่รับต่อเดือน",
+        "label_ru": "Звонков в месяц"
+      },
+      {
+        "value": "~80%",
+        "label": "Booked Hands-Free",
+        "label_th": "จองได้โดยไม่ใช้พนักงาน",
+        "label_ru": "Записей без персонала"
+      },
+      {
+        "value": "24/7",
+        "label": "Always Answered",
+        "label_th": "รับสายตลอดเวลา",
+        "label_ru": "Всегда на связи"
+      }
+    ],
+    "challenge": "Ducky Cutz runs on walk-ins and phone bookings from a single Phuket Town branch with seven chairs. When every barber is mid-cut, the phone goes unanswered, and a missed call is a missed customer who simply rings the next shop. After hours, the line is dead. The shop serves Thai locals, expats and Russian tourists, so even a picked-up call can hit a language wall. Nothing was capturing who called, what they wanted, or whether they ever booked.",
+    "challenge_th": "Ducky Cutz รับลูกค้าทั้งแบบ walk-in และจองทางโทรศัพท์จากสาขาเดียวในเมืองภูเก็ต มีเก้าอี้ตัดผม 7 ตัว เวลาช่างไม่ว่างทุกคน สายที่โทรเข้าก็ไม่มีใครรับ และสายที่พลาดก็คือลูกค้าที่หายไปโทรหาร้านถัดไป นอกเวลาทำการสายขาดหายไปเลย ร้านให้บริการทั้งคนไทย ชาวต่างชาติ และนักท่องเที่ยวรัสเซีย ดังนั้นแม้รับสายได้ก็ยังติดกำแพงภาษา และไม่มีระบบบันทึกว่าใครโทรมา ต้องการอะไร หรือจองสำเร็จหรือไม่",
+    "challenge_ru": "Ducky Cutz работает на потоке walk-in и записях по телефону в одном филиале в Пхукет-Тауне с семью креслами. Когда все барберы заняты, звонок остаётся без ответа, а пропущенный звонок это потерянный клиент, который просто наберёт соседний салон. После закрытия линия молчит. Салон обслуживает тайцев, экспатов и русских туристов, так что даже принятый звонок может упереться в языковой барьер. Ничто не фиксировало, кто звонил, что хотел и записался ли он.",
+    "solution": "We built an AI front desk that answers every inbound channel (phone, SMS and LINE) and books directly into the shop's calendar. A four-assistant voice squad greets each caller, detects Thai, English or Russian, and runs the whole booking: which barber, which slot, group and party size, returning-caller recognition by phone number, and a single spoken confirmation. It reads real-time availability across the full day so it never double-books, writes special requests as notes the stylist sees on arrival, and runs 24/7 on cents-per-call infrastructure. A matching chat bot takes the same bookings from web and social, and completed appointments trigger SMS and LINE follow-ups.",
+    "solution_th": "เราสร้างพนักงานต้อนรับ AI ที่รับทุกช่องทางที่เข้ามา ทั้งโทรศัพท์ SMS และ LINE แล้วจองลงปฏิทินของร้านโดยตรง ทีมผู้ช่วยเสียง 4 ตัวทักทายลูกค้าแต่ละราย ตรวจจับภาษาไทย อังกฤษ หรือรัสเซีย และจัดการการจองทั้งหมด ทั้งเลือกช่าง เลือกเวลา จำนวนคนในกลุ่ม จดจำลูกค้าเก่าจากเบอร์โทร และยืนยันด้วยเสียงครั้งเดียว ระบบอ่านคิวว่างแบบเรียลไทม์ทั้งวันจึงไม่จองซ้ำ บันทึกคำขอพิเศษเป็นโน้ตให้ช่างเห็นตอนลูกค้ามาถึง และทำงานตลอด 24 ชั่วโมงด้วยต้นทุนระดับเศษสตางค์ต่อสาย พร้อมแชทบอทที่รับจองแบบเดียวกันจากเว็บและโซเชียล และนัดที่เสร็จแล้วจะส่ง SMS และ LINE ติดตามผลอัตโนมัติ",
+    "solution_ru": "Мы построили AI-ресепшн, который отвечает на каждый входящий канал (телефон, SMS и LINE) и записывает напрямую в календарь салона. Голосовая команда из четырёх ассистентов приветствует звонящего, определяет тайский, английский или русский и ведёт всю запись: какой барбер, какой слот, размер группы, узнавание повторного клиента по номеру телефона и одно голосовое подтверждение. Система читает доступность в реальном времени на весь день, поэтому не создаёт двойных записей, записывает особые пожелания заметкой, которую барбер видит при встрече, и работает 24/7 на инфраструктуре за копейки за звонок. Чат-бот принимает такие же записи из веба и соцсетей, а завершённые визиты запускают follow-up по SMS и LINE.",
+    "results": "In its first weeks live, the AI front desk handles an estimated 300+ inbound contacts a month across phone, SMS and LINE, with roughly 80% booked end to end without a staff member ever touching the phone. Every contact is answered in Thai, English or Russian, day or night, so after-hours and peak-hour callers who used to hit a dead line now book themselves in. Live on production since June 2026; figures are early estimates and will be replaced with measured numbers as the pilot matures.",
+    "results_th": "ในช่วงสัปดาห์แรก ๆ ที่เปิดใช้งาน พนักงานต้อนรับ AI รับการติดต่อเข้ามาประมาณ 300+ ครั้งต่อเดือนทั้งทางโทรศัพท์ SMS และ LINE โดยราว 80% จองสำเร็จครบวงจรโดยพนักงานไม่ต้องแตะโทรศัพท์เลย ทุกการติดต่อได้รับการตอบเป็นภาษาไทย อังกฤษ หรือรัสเซีย ทั้งกลางวันและกลางคืน ลูกค้าที่โทรนอกเวลาหรือช่วงร้านยุ่งซึ่งเคยเจอสายว่างเปล่า ตอนนี้จองเองได้ เปิดใช้งานจริงตั้งแต่มิถุนายน 2026 ตัวเลขเป็นการประมาณการเบื้องต้นและจะแทนที่ด้วยตัวเลขที่วัดได้จริงเมื่อโครงการดำเนินไป",
+    "results_ru": "В первые недели работы AI-ресепшн принимает примерно 300+ обращений в месяц по телефону, SMS и LINE, при этом около 80% записей оформляются полностью без участия персонала. Каждое обращение обрабатывается на тайском, английском или русском, днём и ночью, так что звонящие в нерабочее время и в часы пик, которые раньше упирались в молчащую линию, теперь записываются сами. В продакшене с июня 2026; приведённые цифры являются ранними оценками и будут заменены измеренными данными по мере развития пилота.",
+    "testimonial": null,
+    "published": true,
+    "gallery": [
+      {
+        "category": "How It Works",
+        "category_th": "วิธีการทำงาน",
+        "category_ru": "Как это работает",
+        "wide": true,
+        "items": [
+          {
+            "src": "assets/duckycutz/how-1-never-miss.png",
+            "caption": "Every call is answered, even when every chair is full.",
+            "caption_th": "รับทุกสาย แม้ทุกเก้าอี้จะเต็ม",
+            "caption_ru": "Отвечаем на каждый звонок, даже когда заняты все кресла."
+          },
+          {
+            "src": "assets/duckycutz/how-2-languages.png",
+            "caption": "Thai, English or Russian: detected and answered in the same language.",
+            "caption_th": "ไทย อังกฤษ หรือรัสเซีย ตรวจจับและตอบกลับเป็นภาษาเดียวกัน",
+            "caption_ru": "Тайский, английский или русский: распознаёт и отвечает на том же языке."
+          },
+          {
+            "src": "assets/duckycutz/how-3-after-hours.png",
+            "caption": "After hours, it still answers and books straight into the calendar.",
+            "caption_th": "นอกเวลาทำการก็ยังรับสายและจองลงปฏิทินให้ทันที",
+            "caption_ru": "В нерабочее время по-прежнему отвечает и сразу записывает в календарь."
+          }
+        ]
+      },
+      {
+        "category": "The Shop",
+        "category_th": "ร้าน",
+        "category_ru": "Салон",
+        "items": [
+          {
+            "src": "assets/duckycutz/shop-front.jpg",
+            "caption": "Ducky Cutz, a walk-in barbershop in the heart of Phuket Town.",
+            "caption_th": "Ducky Cutz ร้านตัดผมแบบ walk-in ใจกลางเมืองภูเก็ต",
+            "caption_ru": "Ducky Cutz, барбершоп без записи в центре Пхукет-Тауна."
+          }
+        ]
+      },
+      {
+        "category": "The Craft",
+        "category_th": "ฝีมือช่าง",
+        "category_ru": "Мастерство",
+        "items": [
+          {
+            "src": "assets/duckycutz/craft-fade.jpg",
+            "caption": "Precision fades and skin work, every chair busy at peak hours.",
+            "caption_th": "เฟดและสกินคัทคมกริบ ทุกเก้าอี้เต็มในชั่วโมงเร่งด่วน",
+            "caption_ru": "Точные фейды и работа под ноль; в час пик заняты все кресла."
+          },
+          {
+            "src": "assets/duckycutz/craft-shave.jpg",
+            "caption": "Hot-towel straight-razor shaves, a full-service experience.",
+            "caption_th": "โกนหนวดด้วยมีดโกนและผ้าร้อน บริการครบครัน",
+            "caption_ru": "Бритьё опасной бритвой с горячим полотенцем: сервис полного цикла."
+          },
+          {
+            "src": "assets/duckycutz/craft-art.jpg",
+            "caption": "Custom hair art, the kind of work clients book ahead for.",
+            "caption_th": "งานลายผมแบบเฉพาะตัว งานที่ลูกค้าต้องจองล่วงหน้า",
+            "caption_ru": "Художественные узоры на волосах: ради такого записываются заранее."
+          },
+          {
+            "src": "assets/duckycutz/craft-curls.jpg",
+            "caption": "Cuts and perms for every hair type, Thai and tourist clients alike.",
+            "caption_th": "ตัดและดัดผมได้ทุกแบบ ทั้งลูกค้าคนไทยและนักท่องเที่ยว",
+            "caption_ru": "Стрижки и завивка для любого типа волос, и тайцы, и туристы."
+          }
+        ]
+      },
+      {
+        "category": "The AI Front Desk",
+        "category_th": "พนักงานต้อนรับ AI",
+        "category_ru": "AI-ресепшн",
+        "items": [
+          {
+            "src": "assets/duckycutz/site-hero.png",
+            "caption": "The booking site: one tap to reserve, or call and book by voice.",
+            "caption_th": "เว็บจองคิว แตะเดียวจองได้ หรือโทรจองด้วยเสียง",
+            "caption_ru": "Сайт записи: бронь в один тап или запись голосом по звонку."
+          },
+          {
+            "src": "assets/duckycutz/site-voice.png",
+            "caption": "Prefer to talk? The AI answers the phone and books the slot itself.",
+            "caption_th": "อยากคุยมากกว่า? AI รับสายและจองคิวให้เอง",
+            "caption_ru": "Удобнее поговорить? AI отвечает на звонок и сам бронирует слот."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "slug": "greenline-logistics",
     "client": "GreenLine Logistics",
     "industry": "Logistics",
@@ -49,9 +200,24 @@
     "summary_ru": "Мы автоматизировали диспетчеризацию и маршрутизацию GreenLine, заменив ручную координацию на AI-систему, которая адаптируется в реальном времени.",
     "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=500&fit=crop",
     "stats": [
-      { "value": "52%", "label": "Faster Dispatch", "label_th": "จัดส่งเร็วขึ้น", "label_ru": "Быстрее диспетчеризация" },
-      { "value": "18hrs", "label": "Saved Per Week", "label_th": "ประหยัดต่อสัปดาห์", "label_ru": "Экономия в неделю" },
-      { "value": "3 wks", "label": "Implementation", "label_th": "ระยะเวลาติดตั้ง", "label_ru": "Срок внедрения" }
+      {
+        "value": "52%",
+        "label": "Faster Dispatch",
+        "label_th": "จัดส่งเร็วขึ้น",
+        "label_ru": "Быстрее диспетчеризация"
+      },
+      {
+        "value": "18hrs",
+        "label": "Saved Per Week",
+        "label_th": "ประหยัดต่อสัปดาห์",
+        "label_ru": "Экономия в неделю"
+      },
+      {
+        "value": "3 wks",
+        "label": "Implementation",
+        "label_th": "ระยะเวลาติดตั้ง",
+        "label_ru": "Срок внедрения"
+      }
     ],
     "challenge": "GreenLine's dispatch team was manually coordinating routes, driver assignments, and delivery updates across spreadsheets and phone calls. As order volume grew, the manual process couldn't keep up. Deliveries were getting delayed and the team was burning out.",
     "challenge_th": "ทีมจัดส่งของ GreenLine ใช้สเปรดชีตและโทรศัพท์ประสานงานเส้นทาง มอบหมายคนขับ และอัปเดตสถานะการจัดส่ง พอออเดอร์เยอะขึ้น กระบวนการแมนนวลก็ตามไม่ทัน ของส่งช้าและทีมเริ่มหมดแรง",
@@ -85,9 +251,24 @@
     "summary_ru": "Мы внедрили AI-процессы в производство контента, клиентскую отчётность и управление проектами Nova — и небольшая команда стала работать за троих.",
     "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop",
     "stats": [
-      { "value": "3x", "label": "Output Increase", "label_th": "ผลงานเพิ่มขึ้น", "label_ru": "Рост производительности" },
-      { "value": "30hrs", "label": "Saved Per Week", "label_th": "ประหยัดต่อสัปดาห์", "label_ru": "Экономия в неделю" },
-      { "value": "6 wks", "label": "Implementation", "label_th": "ระยะเวลาติดตั้ง", "label_ru": "Срок внедрения" }
+      {
+        "value": "3x",
+        "label": "Output Increase",
+        "label_th": "ผลงานเพิ่มขึ้น",
+        "label_ru": "Рост производительности"
+      },
+      {
+        "value": "30hrs",
+        "label": "Saved Per Week",
+        "label_th": "ประหยัดต่อสัปดาห์",
+        "label_ru": "Экономия в неделю"
+      },
+      {
+        "value": "6 wks",
+        "label": "Implementation",
+        "label_th": "ระยะเวลาติดตั้ง",
+        "label_ru": "Срок внедрения"
+      }
     ],
     "challenge": "Nova Creative was hitting a ceiling. Their 12-person team was maxed out, not because of talent, but because so much time went to repetitive production tasks, manual reporting, and project admin. Hiring more people wasn't the answer; they needed to work smarter.",
     "challenge_th": "Nova Creative ชนเพดาน ทีม 12 คนทำงานเต็มแม็กซ์แล้ว ไม่ใช่เพราะฝีมือไม่พอ แต่เพราะเวลาส่วนใหญ่หมดไปกับงานโปรดักชันซ้ำ ๆ ทำรีพอร์ตด้วยมือ และงานแอดมินโปรเจกต์ จ้างคนเพิ่มไม่ใช่คำตอบ ต้องทำงานให้ฉลาดขึ้น",
@@ -121,9 +302,24 @@
     "summary_ru": "Мы заменили бумажный приём пациентов и ручную систему напоминаний Atlas Health на AI-процессы, которые сократили административное время на 60% и повысили отклик пациентов.",
     "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=500&fit=crop",
     "stats": [
-      { "value": "60%", "label": "Admin Time Cut", "label_th": "ลดเวลาแอดมิน", "label_ru": "Сокращение админ. времени" },
-      { "value": "35hrs", "label": "Saved Per Week", "label_th": "ประหยัดต่อสัปดาห์", "label_ru": "Экономия в неделю" },
-      { "value": "5 wks", "label": "Implementation", "label_th": "ระยะเวลาติดตั้ง", "label_ru": "Срок внедрения" }
+      {
+        "value": "60%",
+        "label": "Admin Time Cut",
+        "label_th": "ลดเวลาแอดมิน",
+        "label_ru": "Сокращение админ. времени"
+      },
+      {
+        "value": "35hrs",
+        "label": "Saved Per Week",
+        "label_th": "ประหยัดต่อสัปดาห์",
+        "label_ru": "Экономия в неделю"
+      },
+      {
+        "value": "5 wks",
+        "label": "Implementation",
+        "label_th": "ระยะเวลาติดตั้ง",
+        "label_ru": "Срок внедрения"
+      }
     ],
     "challenge": "Atlas Health operates six clinics, each running its own intake and follow-up process, mostly on paper forms and spreadsheets. Front desk staff were spending hours re-entering patient data, chasing missed appointments, and manually sending follow-up reminders. The inconsistency across locations made it impossible to get a clear picture of patient flow or staff workload.",
     "challenge_th": "Atlas Health มี 6 คลินิก แต่ละที่มีกระบวนการรับผู้ป่วยและติดตามผลแบบของตัวเอง ส่วนใหญ่ใช้แบบฟอร์มกระดาษและสเปรดชีต พนักงานหน้าเคาน์เตอร์ต้องเสียเวลาหลายชั่วโมงกรอกข้อมูลผู้ป่วยซ้ำ ตามนัดที่พลาด และส่งแจ้งเตือนติดตามผลด้วยมือ ความไม่สม่ำเสมอระหว่างสาขาทำให้ดูภาพรวมของผู้ป่วยและภาระงานพนักงานไม่ได้เลย",

@@ -238,6 +238,20 @@
       };
       function lb(key) { return labels[key][l] || labels[key].en; }
 
+      // Categorised image gallery (optional)
+      var galleryHtml = '';
+      if (cs.gallery && cs.gallery.length) {
+        galleryHtml = '<section class="cs-page__gallery">' + cs.gallery.map(function (g) {
+          var items = (g.items || []).map(function (it) {
+            var cap = t(it, 'caption');
+            return '<figure class="cs-page__gallery-item"><img loading="lazy" src="' + it.src + '" alt="' + (cap || cs.client) + '">' +
+              (cap ? '<figcaption>' + cap + '</figcaption>' : '') + '</figure>';
+          }).join('');
+          return '<div class="cs-page__gallery-group"><div class="cs-page__section-label">' + t(g, 'category') + '</div>' +
+            '<div class="cs-page__gallery-grid' + (g.wide ? ' cs-page__gallery-grid--wide' : '') + '">' + items + '</div></div>';
+        }).join('') + '</section>';
+      }
+
       // Get other case studies for "More Case Studies" section
       var others = studies.filter(function (s) { return s.published && s.slug !== slug; }).slice(0, 2);
       var othersHtml = '';
@@ -266,6 +280,8 @@
           '<div class="cs-page__section-label">' + lb('solution') + '</div>' +
           '<p>' + t(cs, 'solution') + '</p>' +
         '</section>' +
+
+        galleryHtml +
 
         '<section class="cs-page__section">' +
           '<div class="cs-page__section-label">' + lb('results') + '</div>' +

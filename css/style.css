@@ -1781,6 +1781,50 @@ img, svg { display: block; max-width: 100%; }
   pointer-events: none;
 }
 
+.cs-page__gallery {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.cs-page__gallery-group + .cs-page__gallery-group {
+  margin-top: 2.5rem;
+}
+.cs-page__gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.cs-page__gallery-item {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--bg-elev, rgba(255,255,255,0.02));
+}
+.cs-page__gallery-item img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+.cs-page__gallery-item figcaption {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  padding: 0.7rem 0.85rem;
+}
+/* Wide explanatory diagrams: show full, no crop */
+.cs-page__gallery-grid--wide {
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 900px;
+}
+.cs-page__gallery-grid--wide .cs-page__gallery-item img {
+  height: auto;
+  object-fit: contain;
+  background: #f7f8fc;
+}
+
 .cs-page__section {
   padding: 3rem 0;
   border-bottom: 1px solid var(--border);
