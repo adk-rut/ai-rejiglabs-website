@@ -1734,7 +1734,7 @@ img, svg { display: block; max-width: 100%; }
 
 .cs-page__stats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 1.5rem;
 }
 .cs-page__stat {
