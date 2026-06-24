@@ -109,8 +109,8 @@
     paths.length = 0;
     lines.length = 0;
 
-    var xGap = 8;
-    var yGap = 8;
+    var xGap = 16;
+    var yGap = 16;
     var oW = w + 200;
     var oH = h + 30;
     var totalLines = Math.ceil(oW / xGap);
@@ -213,7 +213,10 @@
     }
   }
 
+  var running = false;
+
   function tick(time) {
+    if (!running) return;
     mouse.sx += (mouse.x - mouse.sx) * 0.1;
     mouse.sy += (mouse.y - mouse.sy) * 0.1;
 
@@ -245,5 +248,14 @@
     window.addEventListener('mousemove', function (e) { updateMouse(e.pageX, e.pageY); });
   }
 
-  requestAnimationFrame(tick);
+  // Only animate while the hero is on screen — the rAF loop is the page's
+  // heaviest cost, so pause it once the hero scrolls out of view.
+  var heroObserver = new IntersectionObserver(function (entries) {
+    if (entries[0].isIntersecting) {
+      if (!running) { running = true; requestAnimationFrame(tick); }
+    } else {
+      running = false;
+    }
+  }, { threshold: 0 });
+  heroObserver.observe(container);
 })();

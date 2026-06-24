@@ -63,7 +63,7 @@
     .from('.hero__h1', { y: 30, opacity: 0, duration: 0.9, ease }, '-=0.5')
     .from('.hero__sub', { y: 20, opacity: 0, duration: 0.7, ease }, '-=0.55')
     .from('.hero .btn', { y: 16, opacity: 0, duration: 0.6, ease }, '-=0.45')
-    .from('.trusted', { opacity: 0, duration: 0.8, ease }, '-=0.2');
+    .from('.hero__trusted', { opacity: 0, duration: 0.8, ease }, '-=0.2');
 
   /* =============================================
      NARRATIVE — sequential stack
@@ -379,7 +379,7 @@
      FOOTER — fade up
   ============================================= */
   gsap.from('.footer__inner > *', {
-    scrollTrigger: { trigger: '.footer', start: 'top 85%' },
+    scrollTrigger: { trigger: '.closing-footer', start: 'top 85%' },
     y: 16, opacity: 0, duration: 0.6, stagger: 0.1, ease,
   });
 
@@ -556,6 +556,14 @@
 
   /* Yield to browser input queue before forcing layout recalculation */
   setTimeout(() => ScrollTrigger.refresh(), 0);
+
+  /* Web fonts load async (preload onload) — once they swap in the text
+     reflows and every scroll trigger's start/end goes stale. Recompute
+     positions after fonts settle and after full load. */
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => ScrollTrigger.refresh());
+  }
+  window.addEventListener('load', () => ScrollTrigger.refresh());
 
   })(); // end GSAP setup
 
