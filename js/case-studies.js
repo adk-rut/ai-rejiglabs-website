@@ -96,7 +96,7 @@
       '<div class="ev-card">' +
         '<div class="ev-card__chars"></div>' +
         '<div class="ev-card__reveal"></div>' +
-        '<div class="ev-card__logo"><img src="' + basePath + 'assets/logo.png" alt="Rejig Labs"></div>' +
+        '<div class="ev-card__logo"><img src="' + basePath + (cs.logo || 'assets/logo.png') + '" alt="' + cs.client + '"></div>' +
       '</div>' +
       '<div class="cs-card__body">' +
         '<span class="cs-card__tag">' + (t(cs, 'industry') || cs.industry) + '</span>' +

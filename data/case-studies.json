@@ -122,7 +122,8 @@
           }
         ]
       }
-    ]
+    ],
+    "logo": "assets/bobe/logo.png"
   },
   {
     "slug": "duckycutz",
@@ -258,7 +259,8 @@
           }
         ]
       }
-    ]
+    ],
+    "logo": "assets/duckycutz/ducky-head.png"
   },
   {
     "slug": "greenline-logistics",
@@ -309,7 +311,7 @@
       "name": "[PLACEHOLDER]",
       "title": "Operations Director, GreenLine Logistics"
     },
-    "published": true
+    "published": false
   },
   {
     "slug": "nova-creative",
@@ -360,7 +362,7 @@
       "name": "[PLACEHOLDER]",
       "title": "Founder, Nova Creative"
     },
-    "published": true
+    "published": false
   },
   {
     "slug": "atlas-health",
@@ -411,6 +413,150 @@
       "name": "[PLACEHOLDER]",
       "title": "Operations Manager, Atlas Health"
     },
-    "published": true
+    "published": false
+  },
+  {
+    "slug": "anrcf-golf",
+    "client": "ANRCF",
+    "industry": "Environmental Charity · Fundraising Event",
+    "industry_th": "องค์กรการกุศลด้านสิ่งแวดล้อม · งานระดมทุน",
+    "industry_ru": "Экологический фонд · Благотворительное событие",
+    "headline": "An agency's output, delivered by one operator.",
+    "headline_th": "ผลงานระดับเอเจนซี ส่งมอบโดยคนเพียงคนเดียว",
+    "headline_ru": "Объём работы целого агентства — силами одного человека.",
+    "summary": "For Thailand's first Green Charity Golf Tournament, Rejig Labs ran the entire digital operation solo: a trilingual registration site, the sign-up funnel, print and brand collateral, and sponsor outreach. 35 teams, 21 sponsors, 3 languages. No agency, no team.",
+    "summary_th": "สำหรับงานกอล์ฟการกุศลเพื่อสิ่งแวดล้อมครั้งแรกของไทย Rejig Labs ดูแลงานดิจิทัลทั้งหมดด้วยตัวคนเดียว ทั้งเว็บไซต์ลงทะเบียนสามภาษา ระบบรับสมัครและชำระเงิน สื่อสิ่งพิมพ์และแบรนด์ และการติดต่อผู้สนับสนุน 35 ทีม 21 ผู้สนับสนุน 3 ภาษา ไม่ใช้เอเจนซี ไม่ใช้ทีม",
+    "summary_ru": "Для первого в Таиланде благотворительного гольф-турнира Green Charity Rejig Labs в одиночку вёл всю цифровую операцию: трёхъязычный сайт регистрации, воронку записи, печатные и брендовые материалы и работу со спонсорами. 35 команд, 21 спонсор, 3 языка. Без агентства, без команды.",
+    "image": "assets/anrcf-golf/blob-hero.png",
+    "stats": [
+      {
+        "value": "35",
+        "label": "Teams Registered",
+        "label_th": "ทีมที่ลงทะเบียน",
+        "label_ru": "Зарегистрированных команд"
+      },
+      {
+        "value": "21",
+        "label": "Sponsors Secured",
+        "label_th": "ผู้สนับสนุน",
+        "label_ru": "Привлечённых спонсоров"
+      },
+      {
+        "value": "3",
+        "label": "Languages (EN/TH/RU)",
+        "label_th": "ภาษา (EN/TH/RU)",
+        "label_ru": "Языка (EN/TH/RU)"
+      },
+      {
+        "value": "1",
+        "label": "Operator, No Agency",
+        "label_th": "คนทำ ไม่ใช้เอเจนซี",
+        "label_ru": "Исполнитель, без агентства"
+      }
+    ],
+    "challenge": "ANRCF was launching its first national charity golf tournament, a fundraiser for the foundation's Youth Conservation Fund aimed at high-net-worth donors, hotel groups, and tourism bodies across Thailand. It needed a complete digital operation: a registration site, a sign-up and payment funnel, print and brand collateral, and sponsor outreach, all across three languages (Thai, English, Russian) for a mixed local and international audience. There was no agency budget and no marketing team.",
+    "challenge_th": "ANRCF กำลังจัดงานกอล์ฟการกุศลระดับประเทศครั้งแรก เพื่อระดมทุนเข้ากองทุนเยาวชนเพื่อการอนุรักษ์ของมูลนิธิ โดยมีกลุ่มเป้าหมายเป็นผู้บริจาคระดับสูง กลุ่มโรงแรม และหน่วยงานท่องเที่ยวทั่วประเทศ งานต้องการระบบดิจิทัลครบวงจร ทั้งเว็บไซต์ลงทะเบียน ระบบรับสมัครและชำระเงิน สื่อสิ่งพิมพ์และแบรนด์ และการติดต่อผู้สนับสนุน ครบทั้งสามภาษา (ไทย อังกฤษ รัสเซีย) สำหรับผู้เข้าร่วมทั้งในและต่างประเทศ โดยไม่มีงบเอเจนซีและไม่มีทีมการตลาด",
+    "challenge_ru": "ANRCF запускал свой первый национальный благотворительный гольф-турнир — сбор средств в Молодёжный фонд охраны природы, ориентированный на состоятельных доноров, гостиничные группы и туристические ведомства по всему Таиланду. Требовалась полная цифровая операция: сайт регистрации, воронка записи и оплаты, печатные и брендовые материалы и работа со спонсорами — и всё это на трёх языках (тайский, английский, русский) для смешанной местной и международной аудитории. Бюджета на агентство и маркетинговой команды не было.",
+    "solution": "As part of the foundation, Rejig Labs built and ran the whole operation solo. A trilingual website (golf.anrcf.com) with a tab-based language switcher. A full registration funnel: team sign-up form, payment-slip upload, bank-transfer confirmation, an admin dashboard to track registrations, auto-generated participant certificates, and a QR code for on-site sign-up. A complete print and brand kit: event brochures, business cards, and the tournament banner. And targeted sponsor and school outreach automated through scripted email sequences over a researched contact list. Everything ran on one operator with AI instead of a multi-person agency.",
+    "solution_th": "ในฐานะส่วนหนึ่งของมูลนิธิ Rejig Labs สร้างและดูแลงานทั้งหมดด้วยตัวคนเดียว ทั้งเว็บไซต์สามภาษา (golf.anrcf.com) พร้อมระบบสลับภาษาแบบแท็บ ระบบรับสมัครครบวงจร ทั้งฟอร์มลงทะเบียนทีม อัปโหลดสลิปการชำระเงิน ยืนยันการโอน แดชบอร์ดแอดมินสำหรับติดตามการสมัคร ใบประกาศนียบัตรผู้เข้าร่วมที่สร้างอัตโนมัติ และ QR code สำหรับลงทะเบียนหน้างาน ชุดสื่อสิ่งพิมพ์และแบรนด์ครบชุด ทั้งโบรชัวร์ นามบัตร และแบนเนอร์งาน รวมถึงการติดต่อผู้สนับสนุนและโรงเรียนแบบเจาะจงผ่านอีเมลอัตโนมัติบนรายชื่อที่ค้นคว้ามาแล้ว ทุกอย่างทำโดยคนเดียวด้วย AI แทนเอเจนซีทั้งทีม",
+    "solution_ru": "Будучи частью фонда, Rejig Labs построил и вёл всю операцию в одиночку. Трёхъязычный сайт (golf.anrcf.com) с переключателем языков. Полная воронка регистрации: форма записи команд, загрузка платёжной квитанции, подтверждение банковского перевода, админ-панель для учёта регистраций, автоматически генерируемые сертификаты участников и QR-код для записи на месте. Полный печатно-брендовый комплект: брошюры, визитки и баннер турнира. И адресная работа со спонсорами и школами через скриптовые email-цепочки по заранее собранному списку контактов. Всё это — один исполнитель с AI вместо целого агентства.",
+    "results": "The tournament ran on 26 June 2026 with 35 teams registered and 21 sponsors secured, serving the full local and international audience in three languages without a marketing team. Because Rejig Labs worked from inside the foundation rather than as an outside vendor, it built deeper partner relationships and executed faster, and ended up credited as an event partner on the tournament banner alongside the sponsors. Powered by Rejig Labs.",
+    "results_th": "งานจัดขึ้นเมื่อวันที่ 26 มิถุนายน 2026 มี 35 ทีมลงทะเบียนและ 21 ผู้สนับสนุน รองรับผู้เข้าร่วมทั้งในและต่างประเทศครบสามภาษาโดยไม่มีทีมการตลาด เพราะ Rejig Labs ทำงานจากภายในมูลนิธิ ไม่ใช่ในฐานะผู้รับจ้างภายนอก จึงสร้างความสัมพันธ์กับพันธมิตรได้ลึกกว่าและทำงานได้เร็วกว่า และได้รับเครดิตเป็นพันธมิตรของงานบนแบนเนอร์ร่วมกับผู้สนับสนุน Powered by Rejig Labs",
+    "results_ru": "Турнир прошёл 26 июня 2026 года: 35 зарегистрированных команд и 21 спонсор, вся местная и международная аудитория обслужена на трёх языках без маркетинговой команды. Поскольку Rejig Labs работал изнутри фонда, а не как внешний подрядчик, удалось выстроить более глубокие партнёрские отношения и работать быстрее, а в итоге Rejig Labs указан как партнёр события на баннере турнира рядом со спонсорами. Powered by Rejig Labs.",
+    "testimonial": {
+      "quote": "We needed an entire event operation — website, registrations, sponsors, print — and we needed it in three languages. Rejig Labs delivered all of it, and ran it like a team many times its size. The tournament came together faster and more professionally than we expected.",
+      "quote_th": "เราต้องการระบบงานครบทั้งงาน ทั้งเว็บไซต์ การลงทะเบียน ผู้สนับสนุน สื่อสิ่งพิมพ์ และต้องครบสามภาษา Rejig Labs ส่งมอบให้ทั้งหมด และทำงานราวกับทีมที่ใหญ่กว่าหลายเท่า งานนี้สำเร็จได้เร็วและมืออาชีพกว่าที่เราคาดไว้",
+      "quote_ru": "Нам нужна была вся операция события — сайт, регистрации, спонсоры, печать — и сразу на трёх языках. Rejig Labs сделал всё это и работал как команда в разы больше. Турнир собрался быстрее и профессиональнее, чем мы ожидали.",
+      "name": "Samran Sinthong",
+      "title": "Vice President & Founder, Andaman Natural Resources Conservation Foundation"
+    },
+    "gallery": [
+      {
+        "category": "The Event",
+        "category_th": "ภาพงาน",
+        "category_ru": "Событие",
+        "wide": true,
+        "items": [
+          {
+            "src": "assets/anrcf-golf/event-rejig-banner.jpg",
+            "caption": "Rejig Labs credited as an event partner on the tournament banner, alongside the event's 21 sponsors.",
+            "caption_th": "Rejig Labs ได้รับเครดิตเป็นพันธมิตรของงานบนแบนเนอร์ ร่วมกับผู้สนับสนุนทั้ง 21 ราย",
+            "caption_ru": "Rejig Labs указан как партнёр события на баннере турнира рядом с 21 спонсором."
+          },
+          {
+            "src": "assets/anrcf-golf/event-1.jpg",
+            "caption": "Green Charity Golf Tournament 2026, Royal Thai Army Sports Center, Bangkok, 26 June.",
+            "caption_th": "งานกอล์ฟการกุศลเพื่อสิ่งแวดล้อม 2026 ศูนย์พัฒนากีฬากองทัพบก กรุงเทพฯ 26 มิถุนายน",
+            "caption_ru": "Green Charity Golf Tournament 2026, Спортивный центр Королевской армии Таиланда, Бангкок, 26 июня."
+          },
+          {
+            "src": "assets/anrcf-golf/event-2.jpg",
+            "caption": "35 teams played the inaugural tournament in support of ANRCF's Youth Conservation Fund.",
+            "caption_th": "35 ทีมร่วมแข่งขันในงานครั้งแรก เพื่อสนับสนุนกองทุนเยาวชนเพื่อการอนุรักษ์ของ ANRCF",
+            "caption_ru": "35 команд сыграли в первом турнире в поддержку Молодёжного фонда охраны природы ANRCF."
+          },
+          {
+            "src": "assets/anrcf-golf/event-3.jpg",
+            "caption": "A national fundraiser drawing high-net-worth donors, hotel groups, and tourism partners.",
+            "caption_th": "งานระดมทุนระดับประเทศ ดึงผู้บริจาคระดับสูง กลุ่มโรงแรม และพันธมิตรท่องเที่ยว",
+            "caption_ru": "Национальный сбор средств, привлёкший состоятельных доноров, гостиничные группы и туристических партнёров."
+          }
+        ]
+      },
+      {
+        "category": "The Live Site",
+        "category_th": "เว็บไซต์จริง",
+        "category_ru": "Живой сайт",
+        "wide": true,
+        "items": [
+          {
+            "src": "assets/anrcf-golf/site-hero.jpg",
+            "caption": "golf.anrcf.com: a trilingual registration site with an EN/TH/RU switcher, built from scratch.",
+            "caption_th": "golf.anrcf.com เว็บไซต์ลงทะเบียนสามภาษา สลับ EN/TH/RU สร้างขึ้นใหม่ทั้งหมด",
+            "caption_ru": "golf.anrcf.com: трёхъязычный сайт регистрации с переключателем EN/TH/RU, собранный с нуля."
+          },
+          {
+            "src": "assets/anrcf-golf/site-register.jpg",
+            "caption": "The same content, fully localised: event history and impact in all three languages.",
+            "caption_th": "เนื้อหาเดียวกัน แปลครบทุกส่วน ประวัติงานและผลงานในทั้งสามภาษา",
+            "caption_ru": "Тот же контент, полностью локализованный: история и результаты события на всех трёх языках."
+          }
+        ]
+      },
+      {
+        "category": "Print & Brand",
+        "category_th": "สื่อสิ่งพิมพ์และแบรนด์",
+        "category_ru": "Печать и бренд",
+        "wide": true,
+        "items": [
+          {
+            "src": "assets/anrcf-golf/brochure-1.jpg",
+            "caption": "Event brochure: sponsorship tiers and team packages, designed for HNW and corporate donors.",
+            "caption_th": "โบรชัวร์งาน ระดับการสนับสนุนและแพ็กเกจทีม ออกแบบสำหรับผู้บริจาคระดับสูงและองค์กร",
+            "caption_ru": "Брошюра события: уровни спонсорства и командные пакеты для состоятельных и корпоративных доноров."
+          },
+          {
+            "src": "assets/anrcf-golf/brochure-2.jpg",
+            "caption": "Inside spread: agenda, venue, and the conservation cause the tournament funds.",
+            "caption_th": "หน้าใน กำหนดการ สถานที่ และเป้าหมายการอนุรักษ์ที่งานนี้ระดมทุนให้",
+            "caption_ru": "Внутренний разворот: программа, площадка и природоохранная цель, на которую идёт сбор."
+          },
+          {
+            "src": "assets/anrcf-golf/card-front.png",
+            "caption": "Business cards for the organising team.",
+            "caption_th": "นามบัตรสำหรับทีมจัดงาน",
+            "caption_ru": "Визитки для организационной команды."
+          },
+          {
+            "src": "assets/anrcf-golf/banner.jpg",
+            "caption": "The tournament banner that stood at the tee, carrying the event brand and every sponsor.",
+            "caption_th": "แบนเนอร์งานที่ตั้งอยู่ที่จุดออกตัว แสดงแบรนด์งานและผู้สนับสนุนทุกราย",
+            "caption_ru": "Баннер турнира у зоны старта с брендом события и всеми спонсорами."
+          }
+        ]
+      }
+    ],
+    "published": true,
+    "logo": "assets/anrcf-golf/anrcf-logo.png"
   }
 ]
