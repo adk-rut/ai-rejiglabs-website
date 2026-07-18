@@ -192,20 +192,21 @@ ul.clean li b{color:var(--ink);font-weight:600}
 .cta-btn{display:inline-flex;align-items:center;gap:12px;background:var(--accent);color:#fff;font-family:var(--sans);font-weight:500;font-size:clamp(.78rem,1.3vw,.95rem);padding:clamp(.8rem,1.8vw,1.1rem) clamp(1.4rem,3vw,2.4rem);border-radius:999px;border:1px solid var(--accent);transition:.25s var(--ease);cursor:pointer;box-shadow:0 8px 40px rgba(0,51,204,.4);text-decoration:none}
 .cta-btn:hover{background:var(--accent-hi);transform:translateY(-3px)}
 
-/* ============ COMPONENT 1 · POOL SHIMMER (full-bleed cover) ============ */
-#s1{background:linear-gradient(165deg,#001440 0%,#012a9e 42%,#0a4fd6 80%,#1e73ff 100%);color:#fff}
+/* ============ COMPONENT 1 · REAL POOL COVER (full-bleed) ============ */
+#s1{background:#0a6a92;color:#fff}
 #s1 .slide-content{align-items:center;text-align:center;gap:clamp(.7rem,1.7vw,1.3rem);z-index:3}
-.caustics{position:absolute;inset:-20%;mix-blend-mode:screen;opacity:.5;filter:url(#causticFilter);
-  background:radial-gradient(60% 50% at 50% 95%,rgba(190,225,255,.9),rgba(120,180,255,.15) 55%,transparent 75%);pointer-events:none}
-.shimmer{position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 24px,rgba(255,255,255,.05) 24px 27px,transparent 27px 52px);animation:shimmerdrift 11s linear infinite;opacity:.6;pointer-events:none}
-.shimmer.b{background:repeating-linear-gradient(62deg,transparent 0 34px,rgba(150,200,255,.06) 34px 37px,transparent 37px 66px);animation-duration:17s;animation-direction:reverse}
-@keyframes shimmerdrift{to{transform:translateX(-52px)}}
-.glint{position:absolute;inset:0;background:radial-gradient(130% 70% at 28% 130%,rgba(255,255,255,.28),transparent 58%),radial-gradient(90% 60% at 80% 120%,rgba(120,190,255,.35),transparent 60%);animation:breathe 8s ease-in-out infinite;pointer-events:none}
-@keyframes breathe{0%,100%{opacity:.7;transform:scale(1)}50%{opacity:1;transform:scale(1.04)}}
-.villa-cover{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:min(80%,720px);opacity:.9;pointer-events:none}
-.villa-cover path,.villa-cover line,.villa-cover rect,.villa-cover polyline{stroke:rgba(255,255,255,.85);stroke-width:1.3;fill:none;stroke-dasharray:1600;stroke-dashoffset:1600}
-.slide.is-active .villa-cover path,.slide.is-active .villa-cover line,.slide.is-active .villa-cover rect,.slide.is-active .villa-cover polyline{animation:draw 2.8s var(--ease) forwards}
-@keyframes draw{to{stroke-dashoffset:0}}
+.pool{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.pool .water{fill:url(#waterGrad)}
+.pool .tiles{fill:url(#tilePat);filter:url(#poolRipple);opacity:.6}
+.pool .caustic{filter:url(#poolCaustic);mix-blend-mode:screen}
+.pool .glow{fill:url(#sunGlow);mix-blend-mode:screen;opacity:.8}
+.cover-scrim{position:absolute;inset:0;pointer-events:none;background:
+  radial-gradient(72% 60% at 50% 44%,rgba(3,30,48,.56),rgba(3,30,48,.16) 60%,transparent 82%),
+  linear-gradient(180deg,rgba(3,30,48,.32) 0%,transparent 20%,transparent 82%,rgba(3,30,48,.28) 100%)}
+#s1 .cover-title{color:#fff;text-shadow:0 2px 26px rgba(2,24,40,.62),0 1px 3px rgba(2,24,40,.55)}
+#s1 .cover-sub{color:#eafaff;text-shadow:0 1px 14px rgba(2,24,40,.6)}
+#s1 .cover-eb{color:#f2d79a;text-shadow:0 1px 10px rgba(2,24,40,.7),0 0 2px rgba(2,24,40,.6)}
+#s1 .cover-foot{color:rgba(255,255,255,.85);text-shadow:0 1px 8px rgba(2,24,40,.6)}
 .cover-eb{font-family:var(--mono);font-size:clamp(.66rem,1.1vw,.82rem);letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
 .cover-title{font-family:var(--serif);font-weight:600;color:#fff;font-size:clamp(2rem,7vw,4.6rem);line-height:1.15;letter-spacing:-.5px}
 .cover-title .en{font-family:'Instrument Serif',var(--serif);font-style:italic}
@@ -292,30 +293,46 @@ ul.clean li b{color:var(--ink);font-weight:600}
 
 <div class="progress" id="progress"></div>
 
-<!-- filters for the pool caustics -->
-<svg width="0" height="0" style="position:absolute"><defs>
-  <filter id="causticFilter"><feTurbulence type="fractalNoise" baseFrequency="0.012 0.03" numOctaves="2" seed="7" result="noise">
-      <animate attributeName="baseFrequency" dur="24s" values="0.012 0.03;0.02 0.05;0.012 0.03" repeatCount="indefinite"/>
-    </feTurbulence>
-    <feDisplacementMap in="SourceGraphic" in2="noise" scale="42" xChannelSelector="R" yChannelSelector="G"/>
-  </filter>
-</defs></svg>
-
-<!-- ================= SLIDE 1 · COVER (pool shimmer) ================= -->
+<!-- ================= SLIDE 1 · COVER (real pool) ================= -->
 <section class="slide" id="s1">
-  <div class="caustics"></div><div class="shimmer"></div><div class="shimmer b"></div><div class="glint"></div>
-  <svg class="villa-cover decorative" viewBox="0 0 520 200" preserveAspectRatio="xMidYMax meet">
-    <polyline points="40,190 40,110 130,55 220,110 220,190"/>
-    <polyline points="30,118 130,48 230,118"/>
-    <rect x="70" y="130" width="34" height="60"/>
-    <rect x="150" y="130" width="46" height="34"/>
-    <polyline points="250,190 250,130 470,130 470,190"/>
-    <polyline points="250,130 360,90 470,130"/>
-    <line x1="300" y1="150" x2="300" y2="190"/>
-    <line x1="420" y1="150" x2="420" y2="190"/>
-    <polyline points="240,190 490,190"/>
-    <path d="M255 178 q10 -7 20 0 q10 7 20 0 q10 -7 20 0 q10 7 20 0"/>
+  <svg class="pool decorative" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="waterGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#a6ecf4"/>
+        <stop offset="0.38" stop-color="#46c4de"/>
+        <stop offset="0.72" stop-color="#0f93bd"/>
+        <stop offset="1" stop-color="#0a6a92"/>
+      </linearGradient>
+      <radialGradient id="sunGlow" cx="0.5" cy="0.28" r="0.7">
+        <stop offset="0" stop-color="#eafcff" stop-opacity="0.75"/>
+        <stop offset="0.4" stop-color="#bff0fb" stop-opacity="0.28"/>
+        <stop offset="1" stop-color="#bff0fb" stop-opacity="0"/>
+      </radialGradient>
+      <pattern id="tilePat" width="96" height="96" patternUnits="userSpaceOnUse">
+        <rect width="96" height="96" fill="none"/>
+        <path d="M0 0H96M0 0V96" stroke="rgba(255,255,255,.24)" stroke-width="2.5"/>
+      </pattern>
+      <filter id="poolRipple" x="-15%" y="-15%" width="130%" height="130%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.009 0.014" numOctaves="2" seed="6" result="n">
+          <animate attributeName="baseFrequency" dur="19s" values="0.009 0.014;0.013 0.02;0.009 0.014" repeatCount="indefinite"/>
+        </feTurbulence>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="30" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+      <filter id="poolCaustic" x="-15%" y="-15%" width="130%" height="130%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.016 0.022" numOctaves="2" seed="3" result="n">
+          <animate attributeName="baseFrequency" dur="14s" values="0.016 0.022;0.022 0.03;0.016 0.022" repeatCount="indefinite"/>
+        </feTurbulence>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  1.25 1.25 1.25 0 -1.92" result="cut"/>
+        <feGaussianBlur in="cut" stdDeviation="0.8" result="soft"/>
+        <feColorMatrix in="soft" type="matrix" values="0 0 0 0 .85  0 0 0 0 .98  0 0 0 0 1  0 0 0 1.7 0"/>
+      </filter>
+    </defs>
+    <rect class="water" width="1200" height="800"/>
+    <rect class="tiles" width="1200" height="800"/>
+    <rect class="caustic" width="1200" height="800"/>
+    <rect class="glow" width="1200" height="800"/>
   </svg>
+  <div class="cover-scrim"></div>
   <div class="meta" style="border-color:rgba(255,255,255,.14)"><span class="wm" style="color:#fff">Suvarna Pool Villas</span><span style="color:rgba(255,255,255,.6)">ข้อเสนอ · <b style="color:var(--gold)">Rejig Labs</b></span></div>
   <div class="slide-content">
     <p class="cover-eb reveal">ข้อเสนอโครงการนำร่อง</p>
