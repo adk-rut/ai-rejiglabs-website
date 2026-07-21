@@ -46,6 +46,7 @@
     document.querySelectorAll('[data-slide], .dot-card, .faq__item, .closing__line, .cs-card').forEach(el => {
       el.classList.add('in-view');
     });
+    document.querySelectorAll('.rv').forEach(el => el.classList.add('in'));
   }, 600);
 
   /* ---- GSAP SETUP — scripts are at body-bottom so GSAP is already loaded ---- */
@@ -182,6 +183,16 @@
     });
   }, { threshold: 0.05 });
   processSteps.forEach(s => slideObserver.observe(s));
+
+  /* Enterprise sections (.rv) — simple fade-up reveal */
+  const rvObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('in');
+      rvObserver.unobserve(entry.target);
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.rv').forEach(el => rvObserver.observe(el));
 
   /* =============================================
      PROCESS — scroll-scrubbed morphing geometry
