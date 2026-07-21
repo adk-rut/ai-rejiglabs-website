@@ -261,6 +261,10 @@
       {
         quote: 'We needed a whole event operation: the website, registrations, sponsors and print, all in three languages. Rejig Labs delivered every piece and ran it like a team many times its size. They became a real partner, credited on the tournament banner alongside our sponsors.',
         role: 'Samran Sinthong | VP & Founder, ANRCF'
+      },
+      {
+        quote: 'We install and service elevators, we are not marketers. Rejig rebuilt our website, got us found on both search and AI search, set up our CRM and reworked how leads move through the business. For the first time our presence online matches the quality of our work on the ground.',
+        role: 'Mobile Engineer | Elevator Specialists, Phuket'
       }
     ];
 
