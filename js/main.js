@@ -249,22 +249,31 @@
 
   /* Interactive testimonial switcher */
   (function () {
+    // Quotes are English-only except Thai (RU falls back to EN by design).
     var testimonials = [
       {
         quote: 'We used to lose bookings every time the phone rang mid-cut. Rejig built us an AI front desk that answers in Thai, English and Russian, takes the booking and never puts a customer on hold. It runs on its own now and the calendar fills itself across all our branches.',
-        role: 'Ella N. | Owner, Ducky Cutz Barbershop, Phuket'
+        quote_th: 'เมื่อก่อนเราเสียลูกค้าจองคิวทุกครั้งที่โทรศัพท์ดังตอนกำลังตัดผม Rejig สร้างระบบรับสายอัจฉริยะ (AI) ที่รับสายเป็นภาษาไทย อังกฤษ และรัสเซีย จองคิวให้ลูกค้าได้ทันทีโดยไม่ต้องให้ใครรอสาย ตอนนี้ระบบทำงานเองทั้งหมด และคิวก็เต็มเองในทุกสาขาของเรา',
+        role: 'Ella N. | Owner, Ducky Cutz Barbershop, Phuket',
+        role_th: 'Ella N. | เจ้าของ Ducky Cutz Barbershop, ภูเก็ต'
       },
       {
         quote: 'Rejig didn\'t just advise, they built the whole engine we go to market with: the targeting, the outreach sequences, the design system, all of it. We went from a deck to a working pipeline in weeks. They handle the technical side so we can focus on closing.',
-        role: 'Denis K. | Founder, BoBe'
+        quote_th: 'Rejig ไม่ได้แค่ให้คำปรึกษา แต่สร้างระบบที่เราใช้บุกตลาดให้เราทั้งหมด ทั้งการเจาะกลุ่มเป้าหมาย ลำดับการติดต่อลูกค้า และระบบดีไซน์ทั้งชุด เราเปลี่ยนจากแค่สไลด์นำเสนอมาเป็นไปป์ไลน์ที่ใช้งานได้จริงภายในไม่กี่สัปดาห์ พวกเขาดูแลงานเทคนิคให้ เราเลยโฟกัสกับการปิดการขายได้เต็มที่',
+        role: 'Denis K. | Founder, BoBe',
+        role_th: 'Denis K. | ผู้ก่อตั้ง BoBe'
       },
       {
         quote: 'We needed a whole event operation: the website, registrations, sponsors and print, all in three languages. Rejig Labs delivered every piece and ran it like a team many times its size. They became a real partner, credited on the tournament banner alongside our sponsors.',
-        role: 'Samran Sinthong | VP & Founder, ANRCF'
+        quote_th: 'เราต้องการทีมจัดงานแบบครบวงจร ทั้งเว็บไซต์ ระบบลงทะเบียน งานสปอนเซอร์ และงานพิมพ์ ครบทั้งสามภาษา Rejig Labs ทำให้เราครบทุกส่วน และบริหารงานได้เหมือนทีมที่ใหญ่กว่าตัวจริงหลายเท่า พวกเขากลายเป็นพาร์ตเนอร์ตัวจริงของเรา จนได้ขึ้นชื่อบนป้ายงานเคียงข้างสปอนเซอร์',
+        role: 'Samran Sinthong | VP & Founder, ANRCF',
+        role_th: 'Samran Sinthong | รองประธานและผู้ก่อตั้ง ANRCF'
       },
       {
         quote: 'We install and service elevators, we are not marketers. Rejig rebuilt our website, got us found on both search and AI search, set up our CRM and reworked how leads move through the business. For the first time our presence online matches the quality of our work on the ground.',
-        role: 'Suchart | Founder, Mobile Engineer, Phuket'
+        quote_th: 'เราติดตั้งและดูแลลิฟต์ เราไม่ใช่นักการตลาด Rejig สร้างเว็บไซต์ใหม่ให้เรา ทำให้เราถูกค้นเจอทั้งบนเสิร์ชและบน AI จัดระบบ CRM และปรับวิธีที่ลูกค้าใหม่ไหลเข้าสู่ธุรกิจใหม่ทั้งหมด เป็นครั้งแรกที่ตัวตนออนไลน์ของเราสมกับคุณภาพงานจริงหน้างานของเรา',
+        role: 'Suchart | Founder, Mobile Engineer, Phuket',
+        role_th: 'Suchart | ผู้ก่อตั้ง Mobile Engineer, ภูเก็ต'
       }
     ];
 
@@ -273,6 +282,24 @@
     var btns = document.querySelectorAll('[data-tst-index]');
     var activeIdx = 0;
     var animating = false;
+
+    // Pick the quote/role in the active language; Thai when set, else English.
+    function tstText(t, field) {
+      var lang = (window.__i18n && window.__i18n.getLang) ? window.__i18n.getLang() : 'en';
+      return (lang === 'th' && t[field + '_th']) ? t[field + '_th'] : t[field];
+    }
+    function renderTst(idx) {
+      quoteEl.textContent = tstText(testimonials[idx], 'quote');
+      roleEl.textContent = tstText(testimonials[idx], 'role');
+    }
+
+    // Render the default card in the stored language (handles Thai-on-load).
+    renderTst(activeIdx);
+
+    // Re-render the active card when the language toggles.
+    if (window.__i18n && window.__i18n.onChange) {
+      window.__i18n.onChange(function () { renderTst(activeIdx); });
+    }
 
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -286,13 +313,12 @@
 
         setTimeout(function () {
           // Swap content
-          quoteEl.textContent = testimonials[idx].quote;
-          roleEl.textContent = testimonials[idx].role;
+          activeIdx = idx;
+          renderTst(idx);
 
           // Update active button
           btns.forEach(function (b) { b.classList.remove('active'); });
           btn.classList.add('active');
-          activeIdx = idx;
 
           // Fade in
           quoteEl.classList.remove('fading');

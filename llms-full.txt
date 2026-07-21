@@ -37,22 +37,17 @@ BoBe's content team cost $2,000–3,000/month and took 1–2 days per batch. We 
 - Running cost: under $30/month · 14 posts per run · 3 days build time.
 - Testimonial: "Working with RT gave us something we didn't expect: actual clarity on where AI could help us. Not theory. A real plan we could execute. The implementation saved us hours every week from day one." — Denis Kurilchik, CEO, BoBe.
 
-### GreenLine Logistics
-**Headline:** AI-powered dispatch that cut response times in half.
-Manual dispatch coordination via spreadsheets was causing delays. Dispatch response times dropped 52%, the operations team reclaimed 18 hours per week, and the system paid for itself within the first month.
-- 52% faster dispatch · 18 hours saved per week · 3-week implementation.
+### Ducky Cutz, Barbershop (Phuket)
+**Headline:** A 24/7 AI front desk that books hands-free.
+A busy Phuket Town barbershop lost bookings whenever the chairs were full or the shop was closed. We built an AI front desk that answers every call, text, and LINE message in Thai, English, or Russian and books straight into the calendar, day or night, with no staff time needed.
+- 300+ calls handled per month · ~80% booked hands-free · answered 24/7.
+- Testimonial: "We used to lose bookings every time the phone rang mid-cut. Rejig built us an AI front desk that answers in Thai, English and Russian, takes the booking and never puts a customer on hold. It runs on its own now and the calendar fills itself across all our branches." (Ella N., Owner, Ducky Cutz).
 
-### Nova Creative — Marketing Agency (12 people)
-**Headline:** Scaling a 12-person agency without scaling headcount.
-The team was maxed out on repetitive production and admin. Nova tripled content output without a single new hire and saved 30+ hours/week; the founder estimates the efficiency gains are worth two full-time salaries annually.
-- 3x output · 30 hours saved per week · 6-week implementation.
-- Testimonial: "RT didn't just give us a strategy. He built the thing. We're producing three times the work with the same team, and our margins have never been better." — Founder, Nova Creative.
-
-### Atlas Health — Healthcare (6 clinics)
-**Headline:** Automating patient intake and follow-ups across 6 clinics.
-Paper-heavy intake and manual follow-ups across six locations. Admin time dropped 60%, the team reclaimed 35 hours/week, and patient no-show rates fell 28% thanks to automated reminders.
-- 60% admin time cut · 35 hours saved per week · 5-week implementation.
-- Testimonial: "We'd been talking about going digital for years but never found someone who understood healthcare workflows. RT mapped our mess, built something that actually fit, and had it running in five weeks. Our staff love it." — Operations Manager, Atlas Health.
+### ANRCF, Green Charity Golf Tournament (Thailand)
+**Headline:** An entire trilingual event operation, run solo.
+For Thailand's first Green Charity Golf Tournament, Rejig Labs ran the whole digital operation solo: a trilingual registration site, the sign-up funnel, print and brand collateral, and sponsor outreach. No agency, no team.
+- 35 teams registered · 21 sponsors secured · 3 languages (EN/TH/RU) · 1 operator.
+- Testimonial: "We needed a whole event operation: the website, registrations, sponsors and print, all in three languages. Rejig Labs delivered every piece and ran it like a team many times its size. They became a real partner, credited on the tournament banner alongside our sponsors." (Samran Sinthong, VP & Founder, ANRCF).
 
 ---
 
