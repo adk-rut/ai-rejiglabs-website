@@ -36,6 +36,8 @@
   "stat_2_label": { "en": "to a full AI roadmap for your business", "th": "ถึงแผน AI ฉบับเต็มสำหรับธุรกิจคุณ", "ru": "до полной AI-дорожной карты для вашего бизнеса" },
   "stat_3_label": { "en": "audited: acquisition, delivery & support", "th": "ตรวจสอบครบ: หาลูกค้า, ส่งมอบ & ซัพพอร์ต", "ru": "проверено: привлечение, работа с клиентами и поддержка" },
   "stat_4_label": { "en": "implementation-first: we build, not just advise", "th": "ลงมือทำก่อน: สร้างให้เลย ไม่ใช่แค่แนะนำ", "ru": "сначала внедрение: мы строим, а не просто советуем" },
+  "stat_2_unit": { "en": "wks", "th": "สัปดาห์", "ru": "нед." },
+  "stat_3_unit": { "en": "flows", "th": "กระบวนการ", "ru": "процесса" },
   "faq_h2": { "en": "FAQ<em class=\"accent\">s</em>", "th": "คำถาม<em class=\"accent\">ที่พบบ่อย</em>", "ru": "Вопросы<em class=\"accent\"> и ответы</em>" },
   "faq_sub": { "en": "You've got questions. We've got answers.", "th": "มีคำถาม? เรามีคำตอบให้", "ru": "У вас вопросы — у нас ответы." },
   "faq_time": { "en": "Every day, 9:01 AM", "th": "ทุกวัน 9:01 น.", "ru": "Каждый день, 9:01" },
