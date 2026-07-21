@@ -1038,6 +1038,9 @@ img, svg { display: block; max-width: 100%; }
   color: var(--accent);
   margin-bottom: 1rem;
 }
+/* Count numeral must use the tight value line-height, not the :lang(th) 1.8 that
+   otherwise doubles the value box on count cards and misaligns the labels. */
+.stat__value .count { line-height: 0.95; }
 .stat__unit {
   font-family: var(--font-head);
   font-style: italic;
