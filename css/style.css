@@ -2168,14 +2168,23 @@ img, svg { display: block; max-width: 100%; }
   .C-grid, .B-seccols { grid-template-columns: 1fr; }
 }
 
-/* --- Trusted-by: real client wordmarks (replaces fake logo marquee) --- */
-.trusted__names {
-  display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline;
-  gap: 1rem 2.75rem;
-  font-family: var(--font-head); font-weight: 400;
-  font-size: 1.5rem; letter-spacing: -0.01em;
-  color: var(--text-muted);
+/* --- Built-with: real partner logo marks + wordmarks --- */
+.trusted__logos {
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+  gap: 1.1rem 2.4rem; margin-top: 1.25rem;
 }
-.trusted__names span { transition: color .3s var(--ease); }
-.trusted__names span:hover { color: var(--accent); }
-@media (max-width: 520px) { .trusted__names { font-size: 1.2rem; gap: .75rem 1.75rem; } }
+.tlogo {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  color: var(--text-muted); transition: color .3s var(--ease);
+}
+.tlogo:hover { color: var(--accent); }
+.tlogo__mark { width: auto; height: 21px; fill: currentColor; flex: none; }
+.tlogo__name {
+  font-family: var(--font-head); font-weight: 400;
+  font-size: 1.25rem; letter-spacing: -0.01em; white-space: nowrap;
+}
+@media (max-width: 520px) {
+  .trusted__logos { gap: 0.9rem 1.5rem; }
+  .tlogo__mark { height: 17px; }
+  .tlogo__name { font-size: 1.05rem; }
+}
