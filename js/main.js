@@ -43,7 +43,7 @@
 
   /* ---- SAFETY FALLBACK — force in-view if observers haven't fired ---- */
   setTimeout(() => {
-    document.querySelectorAll('[data-slide], .dot-card, .faq__item, .closing__line, .cs-card').forEach(el => {
+    document.querySelectorAll('[data-slide], .stat, .faq__item, .closing__line, .cs-card').forEach(el => {
       el.classList.add('in-view');
     });
     document.querySelectorAll('.rv').forEach(el => el.classList.add('in'));
@@ -333,7 +333,7 @@
   /* =============================================
      STATS — slide up + count-up
   ============================================= */
-  const statItems = document.querySelectorAll('.dot-card');
+  const statItems = document.querySelectorAll('.stat');
   const statObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
