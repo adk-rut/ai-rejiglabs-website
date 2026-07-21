@@ -251,16 +251,12 @@
   (function () {
     var testimonials = [
       {
-        quote: 'Working with RT gave us something we didn\'t expect: actual clarity on where AI could help us. Not theory. A real plan we could execute. The implementation saved us hours every week from day one.',
-        role: 'Client | AI Workflow Implementation'
+        quote: 'We used to lose bookings every time the phone rang mid-cut. Rejig built us an AI front desk that answers in Thai, English and Russian, takes the booking and never puts a customer on hold. It runs on its own now and the calendar fills itself across all our branches.',
+        role: 'Owner | Ducky Cutz Barbershop, Phuket'
       },
       {
-        quote: 'Rejig Labs understood our workflows immediately and identified where automation could improve efficiency. Their practical approach addressed the real bottlenecks, and we\'re already seeing measurable results.',
-        role: 'Growth Lead | Marketing Agency'
-      },
-      {
-        quote: 'We thought we needed a big tech team to implement AI. RT proved us wrong. He handled everything technical and trained our team to run it. The ROI was clear within the first month.',
-        role: 'Founder | E-commerce Brand'
+        quote: 'Rejig didn\'t just advise, they built the whole engine we go to market with: the targeting, the outreach sequences, the design system, all of it. We went from a deck to a working pipeline in weeks. They handle the technical side so we can focus on closing.',
+        role: 'Founder | BoBe'
       }
     ];
 

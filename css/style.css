@@ -863,13 +863,30 @@ img, svg { display: block; max-width: 100%; }
   background: var(--text-primary);
 }
 
-.tst__avatar-btn img {
+.tst__avatar-btn img,
+.tst__mono {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
   transition: transform 0.4s cubic-bezier(0.4,0,0.2,1), box-shadow 0.4s;
+}
+.tst__mono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-head);
+  font-size: 1rem;
+  line-height: 1;
+}
+.tst__avatar-btn.active .tst__mono {
+  box-shadow: 0 0 0 2px rgba(2,4,15,0.3);
+}
+.tst__avatar-btn:not(.active):hover .tst__mono {
+  transform: scale(1.08);
 }
 .tst__avatar-btn:not(.active):hover img {
   transform: scale(1.08);
