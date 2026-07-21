@@ -264,7 +264,7 @@
       },
       {
         quote: 'We install and service elevators, we are not marketers. Rejig rebuilt our website, got us found on both search and AI search, set up our CRM and reworked how leads move through the business. For the first time our presence online matches the quality of our work on the ground.',
-        role: 'Mobile Engineer | Elevator Specialists, Phuket'
+        role: 'Suchart | Founder, Mobile Engineer, Phuket'
       }
     ];
 
