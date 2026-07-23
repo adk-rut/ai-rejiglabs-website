@@ -2029,23 +2029,6 @@ img, svg { display: block; max-width: 100%; }
 
 .ico { width: 26px; height: 26px; stroke: var(--accent-hi); stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
 
-/* --- Capabilities: blueprint node grid --- */
-.C-scope { --line: rgba(0,51,204,.12); }
-.C-bp {
-  background:
-    linear-gradient(var(--line) 1px, transparent 1px) 0 0/100% 32px,
-    linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0/32px 100%;
-  border: 1px solid var(--border); border-radius: 16px; padding: 2rem;
-}
-.C-mono { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.2rem; }
-.C-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 0; }
-.C-node { border: 1px solid var(--border); margin: -0.5px; background: var(--bg-card); padding: 1.5rem; transition: background .3s, box-shadow .3s; position: relative; }
-.C-node:hover { background: var(--bg-alt); z-index: 2; box-shadow: inset 0 0 0 2px var(--accent-hi); }
-.C-node__top { display: flex; justify-content: space-between; align-items: center; margin-bottom: .8rem; }
-.C-node__id { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: .68rem; color: var(--text-muted); }
-.C-node h3 { font-size: 1rem; font-weight: 500; margin-bottom: .4rem; }
-.C-node p { color: var(--text-secondary); font-size: .82rem; line-height: 1.5; }
-
 /* --- Industries: numbered editorial rows --- */
 .B-rows { border-top: 1px solid var(--border); }
 .B-row { display: grid; grid-template-columns: 2.8rem 15rem 1fr; gap: 1.5rem; align-items: baseline; padding: 1.35rem .5rem; border-bottom: 1px solid var(--border); position: relative; transition: padding-left .35s var(--ease); }
@@ -2074,12 +2057,12 @@ img, svg { display: block; max-width: 100%; }
 
 @media (max-width: 820px) {
   .encap { padding: 4rem 0; }
-  .C-grid, .B-seccols { grid-template-columns: repeat(2,1fr); }
+  .B-seccols { grid-template-columns: repeat(2,1fr); }
   .B-row { grid-template-columns: 2.2rem 1fr; }
   .B-row__use { display: none; }
 }
 @media (max-width: 520px) {
-  .C-grid, .B-seccols { grid-template-columns: 1fr; }
+  .B-seccols { grid-template-columns: 1fr; }
 }
 
 /* --- Built-with: real partner logo marks + wordmarks --- */
