@@ -7,6 +7,7 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://rejiglabs.com/"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://rejiglabs.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rejiglabs.com/ru/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rejiglabs.com/"/>
   </url>
   <url>
@@ -15,6 +16,16 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://rejiglabs.com/"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://rejiglabs.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rejiglabs.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rejiglabs.com/"/>
+  </url>
+  <url>
+    <loc>https://rejiglabs.com/ru/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rejiglabs.com/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://rejiglabs.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://rejiglabs.com/ru/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rejiglabs.com/"/>
   </url>
   <url>

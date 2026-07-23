@@ -576,10 +576,12 @@
   },
   "seo_title": {
     "en": "Rejig Labs | AI That Actually Moves the Needle",
-    "th": "รับวางระบบ AI & แชทบอทอัตโนมัติ สำหรับธุรกิจ SME | Rejig Labs"
+    "th": "รับวางระบบ AI & แชทบอทอัตโนมัติ สำหรับธุรกิจ SME | Rejig Labs",
+    "ru": "AI-консалтинг и внедрение AI для бизнеса | Rejig Labs"
   },
   "seo_desc": {
     "en": "Rejig Labs finds where AI saves your business real time and real money, then builds it, implements it, and trains your team to run it.",
-    "th": "Rejig Labs ที่ปรึกษาและรับวางระบบ AI สำหรับธุรกิจ SME ในไทย เราหาจุดที่ AI ช่วยลดต้นทุนและเวลา แล้วสร้างแชทบอท AI ระบบตอบลูกค้าอัตโนมัติ พร้อมอบรมทีมให้ใช้งานได้จริง"
+    "th": "Rejig Labs ที่ปรึกษาและรับวางระบบ AI สำหรับธุรกิจ SME ในไทย เราหาจุดที่ AI ช่วยลดต้นทุนและเวลา แล้วสร้างแชทบอท AI ระบบตอบลูกค้าอัตโนมัติ พร้อมอบรมทีมให้ใช้งานได้จริง",
+    "ru": "Rejig Labs находит, где AI сэкономит вашему бизнесу реальное время и деньги, затем создаёт и внедряет решение и обучает вашу команду им пользоваться."
   }
 }

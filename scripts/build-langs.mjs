@@ -16,7 +16,7 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const ORIGIN = 'https://rejiglabs.com';
 
 // lang code -> { dir: output subfolder }.  'en' is the source at root (not generated).
-const LANGS = [{ code: 'th', dir: 'th' }];
+const LANGS = [{ code: 'th', dir: 'th' }, { code: 'ru', dir: 'ru' }];
 // source page -> { seoTitleKey, seoDescKey }.  Homepage only for now.
 const PAGES = [{ src: 'index.html', seoTitle: 'seo_title', seoDesc: 'seo_desc' }];
 
