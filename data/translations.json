@@ -583,5 +583,220 @@
     "en": "Rejig Labs finds where AI saves your business real time and real money, then builds it, implements it, and trains your team to run it.",
     "th": "Rejig Labs ที่ปรึกษาและรับวางระบบ AI สำหรับธุรกิจ SME ในไทย เราหาจุดที่ AI ช่วยลดต้นทุนและเวลา แล้วสร้างแชทบอท AI ระบบตอบลูกค้าอัตโนมัติ พร้อมอบรมทีมให้ใช้งานได้จริง",
     "ru": "Rejig Labs находит, где AI сэкономит вашему бизнесу реальное время и деньги, затем создаёт и внедряет решение и обучает вашу команду им пользоваться."
+  },
+  "seo_title_chatbot": {
+    "en": "AI Chatbot & LINE OA Automation for Business | Rejig Labs",
+    "th": "รับทำแชทบอท AI & ระบบตอบแชท LINE OA อัตโนมัติ | Rejig Labs",
+    "ru": "AI-чат-бот для бизнеса: ответы клиентам 24/7 | Rejig Labs"
+  },
+  "seo_desc_chatbot": {
+    "en": "We build AI chatbots that answer your customers 24/7 on LINE OA, your website and social, in Thai, English and Russian. They reply, qualify leads, and book appointments while you sleep.",
+    "th": "Rejig Labs รับทำแชทบอท AI ตอบลูกค้าอัตโนมัติ 24 ชม. บน LINE OA เว็บไซต์ และโซเชียล ตอบคำถาม เก็บลีด และจองคิวให้เอง รองรับภาษาไทย อังกฤษ และรัสเซีย",
+    "ru": "Rejig Labs создаёт AI-чат-ботов, которые отвечают клиентам 24/7 в вебе, LINE и соцсетях на тайском, английском и русском: отвечают, квалифицируют лиды и записывают на приём."
+  },
+  "svc_eyebrow": {
+    "en": "AI CHATBOTS · LINE OA · WEB · SOCIAL",
+    "th": "แชทบอท AI · LINE OA · เว็บไซต์ · โซเชียล",
+    "ru": "AI-ЧАТ-БОТЫ · LINE OA · ВЕБ · СОЦСЕТИ"
+  },
+  "svc_h1": {
+    "en": "AI chatbots &amp; LINE automation<br><em class=\"accent\">that never miss a customer.</em>",
+    "th": "รับทำแชทบอท AI และระบบตอบแชท LINE<br><em class=\"accent\">ที่ไม่พลาดทุกลูกค้า</em>",
+    "ru": "AI-чат-боты и автоматизация LINE,<br><em class=\"accent\">которые не упустят ни клиента.</em>"
+  },
+  "svc_sub": {
+    "en": "We build AI chatbots that reply on LINE OA, your website and social, in Thai, English and Russian. They answer questions, qualify leads and book appointments, day and night, so you never lose a customer to a slow reply.",
+    "th": "เราสร้างแชทบอท AI ที่ตอบลูกค้าบน LINE OA เว็บไซต์ และโซเชียล ทั้งภาษาไทย อังกฤษ และรัสเซีย ตอบคำถาม เก็บข้อมูลลูกค้า และจองคิวให้เอง ตลอด 24 ชั่วโมง คุณจะไม่เสียลูกค้าเพราะตอบช้าอีกต่อไป",
+    "ru": "Мы создаём AI-чат-ботов, которые отвечают в LINE OA, на вашем сайте и в соцсетях на тайском, английском и русском. Они отвечают на вопросы, квалифицируют лиды и записывают на приём круглосуточно, чтобы вы не теряли клиентов из-за медленного ответа."
+  },
+  "svc_prob_eyebrow": {
+    "en": "THE COST OF A SLOW REPLY",
+    "th": "ราคาของการตอบช้า",
+    "ru": "ЦЕНА МЕДЛЕННОГО ОТВЕТА"
+  },
+  "svc_prob_h2": {
+    "en": "Every unanswered message <em class=\"accent\">is a customer walking away.</em>",
+    "th": "ทุกข้อความที่ไม่ได้ตอบ <em class=\"accent\">คือลูกค้าที่กำลังเดินจากไป</em>",
+    "ru": "Каждое сообщение без ответа <em class=\"accent\">— это уходящий клиент.</em>"
+  },
+  "svc_prob_body": {
+    "en": "Thai customers message on LINE and expect an answer now. But nobody can watch the inbox 24/7. Nights, weekends, the lunch rush, that is exactly when messages pile up and buyers quietly go to whoever replies first. Hiring more staff to chat is slow and expensive. An AI chatbot answers instantly, every single time.",
+    "th": "ลูกค้าคนไทยทักมาทาง LINE และอยากได้คำตอบทันที แต่ไม่มีใครเฝ้าแชทได้ตลอด 24 ชั่วโมง ทั้งกลางคืน วันหยุด หรือช่วงพักเที่ยง คือช่วงที่ข้อความกองรอ และลูกค้าก็เงียบ ๆ ไปหาร้านที่ตอบก่อน การจ้างคนมานั่งตอบแชทเพิ่มก็ทั้งช้าและแพง แชทบอท AI ตอบให้ทันทีทุกครั้ง",
+    "ru": "Клиенты пишут в LINE и ждут ответа сразу. Но никто не может следить за входящими круглосуточно. Ночью, в выходные, в обеденный час — именно тогда сообщения копятся, а покупатели тихо уходят к тому, кто ответил первым. Нанимать больше людей на переписку — медленно и дорого. AI-чат-бот отвечает мгновенно, каждый раз."
+  },
+  "svc_build_eyebrow": {
+    "en": "WHAT YOUR CHATBOT DOES",
+    "th": "แชทบอทของคุณทำอะไรได้บ้าง",
+    "ru": "ЧТО УМЕЕТ ВАШ ЧАТ-БОТ"
+  },
+  "svc_build_h2": {
+    "en": "One AI brain across <em class=\"accent\">every channel you sell on.</em>",
+    "th": "สมอง AI เดียว <em class=\"accent\">ครอบทุกช่องทางที่คุณขาย</em>",
+    "ru": "Один AI-мозг на <em class=\"accent\">всех каналах, где вы продаёте.</em>"
+  },
+  "svc_build_sub": {
+    "en": "Trained on your business, live where your customers already are.",
+    "th": "เรียนรู้จากธุรกิจของคุณ และทำงานอยู่ในที่ที่ลูกค้าของคุณอยู่แล้ว",
+    "ru": "Обучен на вашем бизнесе и работает там, где уже находятся ваши клиенты."
+  },
+  "svc_f1_n": {
+    "en": "Answers 24/7 on LINE OA",
+    "th": "ตอบ 24 ชม. บน LINE OA",
+    "ru": "Отвечает 24/7 в LINE OA"
+  },
+  "svc_f1_d": {
+    "en": "Replies to every LINE message in seconds, even at 3am, so no enquiry ever goes cold.",
+    "th": "ตอบทุกข้อความใน LINE ภายในไม่กี่วินาที แม้ตอนตีสาม ไม่มีลูกค้ารายไหนถูกปล่อยให้เย็นชา",
+    "ru": "Отвечает на каждое сообщение в LINE за секунды, даже в 3 часа ночи, — ни один запрос не остынет."
+  },
+  "svc_f2_n": {
+    "en": "Books appointments",
+    "th": "จองคิวให้อัตโนมัติ",
+    "ru": "Записывает на приём"
+  },
+  "svc_f2_d": {
+    "en": "Checks your calendar and locks in bookings inside the chat, with no back-and-forth.",
+    "th": "เช็กปฏิทินของคุณและจองคิวให้เสร็จในแชทเลย ไม่ต้องคุยไปคุยมา",
+    "ru": "Проверяет ваш календарь и оформляет запись прямо в чате, без лишней переписки."
+  },
+  "svc_f3_n": {
+    "en": "Speaks Thai, English & Russian",
+    "th": "พูดไทย อังกฤษ และรัสเซีย",
+    "ru": "Говорит на тайском, английском и русском"
+  },
+  "svc_f3_d": {
+    "en": "Detects the customer's language automatically and replies naturally in it.",
+    "th": "ตรวจจับภาษาของลูกค้าให้เอง แล้วตอบกลับเป็นภาษานั้นอย่างเป็นธรรมชาติ",
+    "ru": "Автоматически определяет язык клиента и естественно отвечает на нём."
+  },
+  "svc_f4_n": {
+    "en": "Qualifies & captures leads",
+    "th": "คัดกรองและเก็บลีด",
+    "ru": "Квалифицирует и собирает лиды"
+  },
+  "svc_f4_d": {
+    "en": "Asks the right questions, saves details to your CRM, and flags the hot leads for your team.",
+    "th": "ถามคำถามที่ถูกต้อง บันทึกข้อมูลลง CRM และปักธงลีดที่น่าสนใจให้ทีมของคุณ",
+    "ru": "Задаёт правильные вопросы, сохраняет данные в вашу CRM и отмечает горячие лиды для команды."
+  },
+  "svc_f5_n": {
+    "en": "Knows your business",
+    "th": "รู้จักธุรกิจของคุณ",
+    "ru": "Знает ваш бизнес"
+  },
+  "svc_f5_d": {
+    "en": "Trained on your menu, prices and policies, so its answers are always right and on-brand.",
+    "th": "เรียนรู้จากเมนู ราคา และเงื่อนไขของคุณ คำตอบจึงถูกต้องและตรงแบรนด์เสมอ",
+    "ru": "Обучен на вашем меню, ценах и правилах, поэтому ответы всегда точны и в фирменном стиле."
+  },
+  "svc_f6_n": {
+    "en": "Hands off to a human",
+    "th": "ส่งต่อให้คนจริงเมื่อจำเป็น",
+    "ru": "Передаёт человеку"
+  },
+  "svc_f6_d": {
+    "en": "Knows when to pass a tricky chat to your team, with the full conversation history attached.",
+    "th": "รู้ว่าเมื่อไหร่ควรส่งแชทที่ซับซ้อนต่อให้ทีมของคุณ พร้อมประวัติการสนทนาทั้งหมด",
+    "ru": "Понимает, когда передать сложный диалог вашей команде — вместе со всей историей переписки."
+  },
+  "svc_how_eyebrow": {
+    "en": "HOW WE BUILD IT",
+    "th": "เราสร้างมันอย่างไร",
+    "ru": "КАК МЫ ЕГО СОЗДАЁМ"
+  },
+  "svc_how_h2": {
+    "en": "Live in weeks, <em class=\"accent\">not months.</em>",
+    "th": "ใช้งานได้ในไม่กี่สัปดาห์ <em class=\"accent\">ไม่ใช่เป็นเดือน</em>",
+    "ru": "Запуск за недели, <em class=\"accent\">а не месяцы.</em>"
+  },
+  "svc_s1_n": {
+    "en": "We learn your business",
+    "th": "เราเรียนรู้ธุรกิจของคุณ",
+    "ru": "Изучаем ваш бизнес"
+  },
+  "svc_s1_d": {
+    "en": "We feed the chatbot your FAQs, prices, policies and past chats, so it sounds like you and answers correctly.",
+    "th": "เราป้อนคำถามที่พบบ่อย ราคา เงื่อนไข และแชทเก่า ๆ ให้แชทบอท เพื่อให้มันพูดเหมือนคุณและตอบได้ถูกต้อง",
+    "ru": "Загружаем в чат-бот ваши FAQ, цены, правила и прошлые переписки, чтобы он звучал как вы и отвечал верно."
+  },
+  "svc_s2_n": {
+    "en": "We connect your channels",
+    "th": "เราเชื่อมช่องทางของคุณ",
+    "ru": "Подключаем ваши каналы"
+  },
+  "svc_s2_d": {
+    "en": "LINE OA, your website, Facebook and Instagram, all wired into one AI that shares the same brain.",
+    "th": "LINE OA เว็บไซต์ Facebook และ Instagram เชื่อมเข้ากับ AI ตัวเดียวที่ใช้สมองร่วมกัน",
+    "ru": "LINE OA, ваш сайт, Facebook и Instagram — всё связано с одним AI с общим мозгом."
+  },
+  "svc_s3_n": {
+    "en": "We test, launch & tune",
+    "th": "เราทดสอบ เปิดใช้ และปรับจูน",
+    "ru": "Тестируем, запускаем и настраиваем"
+  },
+  "svc_s3_d": {
+    "en": "We watch real conversations, fix the edge cases, and keep improving the chatbot after launch.",
+    "th": "เราดูบทสนทนาจริง แก้เคสที่ยาก และปรับปรุงแชทบอทต่อเนื่องหลังเปิดใช้",
+    "ru": "Смотрим реальные диалоги, исправляем крайние случаи и продолжаем улучшать чат-бот после запуска."
+  },
+  "svc_faq_h2": {
+    "en": "Chatbot <em class=\"accent\">questions.</em>",
+    "th": "คำถามเกี่ยวกับ <em class=\"accent\">แชทบอท</em>",
+    "ru": "Вопросы о <em class=\"accent\">чат-боте.</em>"
+  },
+  "svc_faq_q1": {
+    "en": "Does it work with LINE Official Account (LINE OA)?",
+    "th": "ใช้กับ LINE Official Account (LINE OA) ได้ไหม?",
+    "ru": "Работает ли он с LINE Official Account (LINE OA)?"
+  },
+  "svc_faq_a1": {
+    "en": "Yes. LINE OA is our primary channel for Thai businesses. We connect the chatbot directly to your LINE OA so it answers customers in the app they already use every day.",
+    "th": "ได้ครับ LINE OA คือช่องทางหลักของเราสำหรับธุรกิจไทย เราเชื่อมแชทบอทเข้ากับ LINE OA ของคุณโดยตรง ให้มันตอบลูกค้าในแอปที่พวกเขาใช้อยู่ทุกวัน",
+    "ru": "Да. LINE OA — наш основной канал для тайского бизнеса. Мы подключаем чат-бот напрямую к вашему LINE OA, чтобы он отвечал клиентам в приложении, которым они пользуются каждый день."
+  },
+  "svc_faq_q2": {
+    "en": "Will it sound like a robot?",
+    "th": "มันจะพูดเหมือนหุ่นยนต์ไหม?",
+    "ru": "Будет ли он звучать как робот?"
+  },
+  "svc_faq_a2": {
+    "en": "No. We train it on your real tone, your FAQs and your past chats, so replies feel natural and on-brand. And it hands off to a human the moment a conversation needs one.",
+    "th": "ไม่ครับ เราฝึกมันด้วยน้ำเสียงจริงของคุณ คำถามที่พบบ่อย และแชทเก่า ๆ คำตอบจึงเป็นธรรมชาติและตรงแบรนด์ และมันจะส่งต่อให้คนจริงทันทีเมื่อบทสนทนาต้องการ",
+    "ru": "Нет. Мы обучаем его на вашем реальном тоне, ваших FAQ и прошлых переписках, поэтому ответы звучат естественно и в фирменном стиле. А как только диалог требует человека, он передаёт его вашей команде."
+  },
+  "svc_faq_q3": {
+    "en": "What languages does the chatbot support?",
+    "th": "แชทบอทรองรับภาษาอะไรบ้าง?",
+    "ru": "Какие языки поддерживает чат-бот?"
+  },
+  "svc_faq_a3": {
+    "en": "Thai, English and Russian out of the box. It detects the customer's language automatically and replies in it. More languages on request.",
+    "th": "ไทย อังกฤษ และรัสเซีย พร้อมใช้งานทันที มันตรวจจับภาษาของลูกค้าให้เองและตอบเป็นภาษานั้น เพิ่มภาษาอื่นได้ตามต้องการ",
+    "ru": "Тайский, английский и русский сразу из коробки. Он автоматически определяет язык клиента и отвечает на нём. Другие языки — по запросу."
+  },
+  "svc_faq_q4": {
+    "en": "Can it book appointments and take orders?",
+    "th": "มันจองคิวและรับออเดอร์ได้ไหม?",
+    "ru": "Может ли он записывать на приём и принимать заказы?"
+  },
+  "svc_faq_a4": {
+    "en": "Yes. It checks your live calendar, books slots, captures order details and saves everything to your CRM, all inside the chat.",
+    "th": "ได้ครับ มันเช็กปฏิทินสด ๆ ของคุณ จองช่วงเวลา เก็บรายละเอียดออเดอร์ และบันทึกทุกอย่างลง CRM ทั้งหมดในแชทเดียว",
+    "ru": "Да. Он проверяет ваш актуальный календарь, бронирует слоты, фиксирует детали заказа и сохраняет всё в вашу CRM — прямо в чате."
+  },
+  "svc_faq_q5": {
+    "en": "How long until the chatbot is live?",
+    "th": "ใช้เวลานานแค่ไหนกว่าแชทบอทจะพร้อมใช้?",
+    "ru": "Сколько времени до запуска чат-бота?"
+  },
+  "svc_faq_a5": {
+    "en": "Most chatbots go live in 2 to 4 weeks, depending on how many channels and how complex your answers are. You'll see a working version early.",
+    "th": "แชทบอทส่วนใหญ่พร้อมใช้ใน 2 ถึง 4 สัปดาห์ ขึ้นอยู่กับจำนวนช่องทางและความซับซ้อนของคำตอบ คุณจะได้เห็นเวอร์ชันที่ใช้งานได้ตั้งแต่เนิ่น ๆ",
+    "ru": "Большинство чат-ботов запускаются за 2–4 недели — зависит от числа каналов и сложности ответов. Рабочую версию вы увидите уже на раннем этапе."
+  },
+  "nav_ai_chatbot": {
+    "en": "AI Chatbot & LINE",
+    "th": "แชทบอท AI & LINE",
+    "ru": "AI-чат-бот и LINE"
   }
 }

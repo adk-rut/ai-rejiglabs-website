@@ -17,8 +17,12 @@ const ORIGIN = 'https://rejiglabs.com';
 
 // lang code -> { dir: output subfolder }.  'en' is the source at root (not generated).
 const LANGS = [{ code: 'th', dir: 'th' }, { code: 'ru', dir: 'ru' }];
-// source page -> { seoTitleKey, seoDescKey }.  Homepage only for now.
-const PAGES = [{ src: 'index.html', seoTitle: 'seo_title', seoDesc: 'seo_desc' }];
+// source page -> { seoTitleKey, seoDescKey }.  src is root-relative; a "<dir>/index.html"
+// src produces the clean URL /<lang>/<dir>/.  Add a page by appending here.
+const PAGES = [
+  { src: 'index.html', seoTitle: 'seo_title', seoDesc: 'seo_desc' },
+  { src: 'ai-chatbot/index.html', seoTitle: 'seo_title_chatbot', seoDesc: 'seo_desc_chatbot' },
+];
 
 const T = JSON.parse(readFileSync(resolve(ROOT, 'data/translations.json'), 'utf8'));
 
@@ -70,7 +74,9 @@ function buildPage(page, lang) {
   // 2) head: lang, title, description, canonical, og/twitter, og:url
   const title = T[page.seoTitle][lang.code];
   const desc = T[page.seoDesc][lang.code];
-  const url = ORIGIN + '/' + lang.dir + '/';
+  // "ai-chatbot/index.html" -> clean URL /<lang>/ai-chatbot/ ; "index.html" -> /<lang>/
+  const srcDir = page.src.replace(/index\.html$/, '');
+  const url = ORIGIN + '/' + lang.dir + '/' + srcDir;
   html = html.replace(/<html lang="en">/, `<html lang="${lang.code}">`);
   html = html.replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(title)}</title>`);
   html = html.replace(/(<meta name="description" content=")[^"]*(">)/, `$1${esc(desc)}$2`);
@@ -85,10 +91,10 @@ function buildPage(page, lang) {
   html = html.replace(/((?:src|href)=")((?:css|js|assets|data|images)\/)/g, '$1/$2');
   html = html.replace(/(href=")([\w-]+\.html)(")/g, '$1/$2$3');
 
-  const outDir = resolve(ROOT, lang.dir);
-  mkdirSync(outDir, { recursive: true });
-  writeFileSync(resolve(outDir, 'index.html'), html);
-  return { url, path: `${lang.dir}/index.html`, title };
+  const outFile = resolve(ROOT, lang.dir, page.src);
+  mkdirSync(dirname(outFile), { recursive: true });
+  writeFileSync(outFile, html);
+  return { url, path: `${lang.dir}/${page.src}`, title };
 }
 
 // Only run the build when invoked directly (so tests can import the helpers).
