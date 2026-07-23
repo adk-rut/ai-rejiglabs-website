@@ -206,6 +206,7 @@
       <div class="nav__dropdown">
         <a href="#services" class="nav__link" data-i18n="nav_services">บริการ</a>
         <div class="nav__dropdown-menu">
+          <a href="/ai-chatbot/" class="nav__dropdown-item" data-i18n="nav_ai_chatbot">แชทบอท AI &amp; LINE</a>
           <a href="/blockchain/" class="nav__dropdown-item" data-i18n="nav_blockchain">บล็อกเชน</a>
         </div>
       </div>
@@ -294,12 +295,14 @@
         <div class="process__step" data-slide>
           <div class="process__num">1</div>
           <div class="process__card">
-            <div class="process__ui" data-slide>
-              <div class="pui__hd"><span class="pui__spin"></span>Workflow Audit<span class="pui__tag">Week 1</span></div>
-              <div class="pui__row"><span class="pui__check">&#10003;</span>Acquisition mapped<span class="pui__day">Day 1</span></div>
-              <div class="pui__row"><span class="pui__check">&#10003;</span>Delivery mapped<span class="pui__day">Day 3</span></div>
-              <div class="pui__row"><span class="pui__check">&#10003;</span>Bottlenecks found<span class="pui__day">Day 5</span></div>
-              <div class="pui__cta">Roadmap ready</div>
+            <div class="process__morph" id="morph1">
+              <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle class="morph-shape" cx="100" cy="100" r="30"/>
+                <polygon class="morph-shape" points="100,25 155,140 45,140"/>
+                <circle class="morph-shape" cx="100" cy="100" r="70"/>
+                <line class="morph-shape" x1="100" y1="10" x2="100" y2="190"/>
+                <line class="morph-shape" x1="10" y1="100" x2="190" y2="100"/>
+              </svg>
             </div>
             <div class="process__text">
               <h3>Identify <em class="accent">›</em></h3>
@@ -311,12 +314,12 @@
         <div class="process__step" data-slide>
           <div class="process__num">2</div>
           <div class="process__card">
-            <div class="process__ui" data-slide>
-              <div class="pui__hd"><span class="pui__spin"></span>Build Sprint<span class="pui__tag">Weeks 2&ndash;4</span></div>
-              <div class="pui__row"><span class="pui__check">&#10003;</span>Workflows built<span class="pui__day">Wk 2</span></div>
-              <div class="pui__row"><span class="pui__check">&#10003;</span>Tools integrated<span class="pui__day">Wk 3</span></div>
-              <div class="pui__row"><span class="pui__check">&#10003;</span>Tested &amp; live<span class="pui__day">Wk 4</span></div>
-              <div class="pui__cta">Shipped</div>
+            <div class="process__morph" id="morph2">
+              <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon class="morph-shape" points="100,40 145,65 145,115 100,140 55,115 55,65"/>
+                <rect class="morph-shape" x="28" y="28" width="144" height="144" rx="8"/>
+                <polygon class="morph-shape" points="100,10 165,35 185,100 165,165 100,190 35,165 15,100 35,35"/>
+              </svg>
             </div>
             <div class="process__text">
               <h3>Develop <em class="accent">›</em></h3>
@@ -328,12 +331,13 @@
         <div class="process__step" data-slide>
           <div class="process__num">3</div>
           <div class="process__card">
-            <div class="process__ui" data-slide>
-              <div class="pui__hd"><span class="pui__spin"></span>Rollout<span class="pui__tag">Ongoing</span></div>
-              <div class="pui__row"><span class="pui__check">&#10003;</span>Team trained<span class="pui__day">Wk 5</span></div>
-              <div class="pui__row"><span class="pui__check">&#10003;</span>Workflows refined<span class="pui__day">Wk 6</span></div>
-              <div class="pui__row"><span class="pui__check">&#10003;</span>Running solo<span class="pui__day">Wk 8</span></div>
-              <div class="pui__cta">Fully adopted</div>
+            <div class="process__morph" id="morph3">
+              <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle class="morph-shape" cx="100" cy="100" r="35"/>
+                <circle class="morph-shape" cx="100" cy="100" r="60"/>
+                <circle class="morph-shape" cx="100" cy="100" r="85"/>
+                <polygon class="morph-shape" points="100,12 120,80 192,80 132,120 152,188 100,148 48,188 68,120 8,80 80,80"/>
+              </svg>
             </div>
             <div class="process__text">
               <h3>Adopt <em class="accent">›</em></h3>
@@ -356,165 +360,24 @@
         <h2 data-i18n-html="cap_h2">ทีมเดียว ดูแล<em class="accent">ระบบ AI ทั้งหมด</em></h2>
         <p data-i18n="cap_sub">ตั้งแต่เอเจนต์เสียงที่รับโทรศัพท์ ไปจนถึงระบบอัตโนมัติที่ทำงานต่อเนื่องได้หลายเดือน ถ้างานไหนใช้ AI ทำแทนได้ เราสร้างและส่งมอบให้</p>
       </div>
-      <div class="wrap">
-        <div class="cap-bento">
-
-          <article class="cap-cell c-voice">
-            <div class="cap-cell__glow"></div>
-            <div class="cap-cell__txt">
-              <div class="cap-cell__id">SVC-01</div>
-              <h3 class="cap-cell__h" data-i18n="cap_1_t">เอเจนต์เสียง AI</h3>
-              <p class="cap-cell__d" data-i18n="cap_1_d">รับสาย ตรวจจับภาษา จองคิวให้อัตโนมัติ ตลอด 24 ชม.</p>
-            </div>
-            <div class="cap-cell__viz">
-              <div class="cap-vz">
-                <div class="cap-vz__top"><div class="cap-vz__ring"></div>
-                  <div><div class="cap-vz__who">Incoming call</div><div class="cap-vz__sub">+66 &middot; answered in 1 ring</div></div>
-                  <div class="cap-vz__lang"><span>TH</span><span>EN</span><span>RU</span></div></div>
-                <div class="cap-vz__wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-                <div class="cap-vz__done"><span class="cap-vz__check">&#10003;</span> Booking confirmed &middot; Sat 3:00 PM</div>
-              </div>
-            </div>
-          </article>
-
-          <article class="cap-cell c-chat">
-            <div class="cap-cell__glow"></div>
-            <div class="cap-cell__txt">
-              <div class="cap-cell__id">SVC-02</div>
-              <h3 class="cap-cell__h" data-i18n="cap_2_t">แชทและข้อความ</h3>
-              <p class="cap-cell__d" data-i18n="cap_2_d">สมองเดียวครอบคลุมเว็บ LINE และโซเชียล</p>
-            </div>
-            <div class="cap-cell__viz">
-              <div class="cap-ch__tabs"><span class="cap-ch__tab cap-ch__tab--on">Web</span><span class="cap-ch__tab">LINE</span><span class="cap-ch__tab">IG</span></div>
-              <div class="cap-ch__bubble cap-ch__bubble--in">Do you have a table for 4 tonight?</div>
-              <div class="cap-ch__bubble cap-ch__bubble--out">Yes, 7:30pm works. Shall I book it?</div>
-              <div class="cap-ch__typing"><i></i><i></i><i></i></div>
-            </div>
-          </article>
-
-          <article class="cap-cell c-content">
-            <div class="cap-cell__glow"></div>
-            <div class="cap-cell__txt">
-              <div class="cap-cell__id">SVC-03</div>
-              <h3 class="cap-cell__h" data-i18n="cap_3_t">เครื่องมือสร้างคอนเทนต์</h3>
-              <p class="cap-cell__d" data-i18n="cap_3_d">14 โพสต์ในไม่กี่วินาที อนุมัติได้ในคลิกเดียว</p>
-            </div>
-            <div class="cap-cell__viz">
-              <div class="cap-c4">
-                <div class="cap-c4__hd">SCHEDULED &middot; JUL <b>18 posts</b></div>
-                <div class="cap-c4__dow"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div>
-                <div class="cap-c4__grid"><div class="cap-c4__d cap-c4__d--on">1</div><div class="cap-c4__d">2</div><div class="cap-c4__d cap-c4__d--on cap-c4__d--on2">3</div><div class="cap-c4__d cap-c4__d--on">4</div><div class="cap-c4__d">5</div><div class="cap-c4__d cap-c4__d--on cap-c4__d--on3">6</div><div class="cap-c4__d">7</div><div class="cap-c4__d cap-c4__d--on">8</div><div class="cap-c4__d cap-c4__d--on cap-c4__d--on2">9</div><div class="cap-c4__d">10</div><div class="cap-c4__d cap-c4__d--on">11</div><div class="cap-c4__d">12</div><div class="cap-c4__d cap-c4__d--on cap-c4__d--on3">13</div><div class="cap-c4__d">14</div><div class="cap-c4__d cap-c4__d--on">15</div><div class="cap-c4__d cap-c4__d--on">16</div><div class="cap-c4__d">17</div><div class="cap-c4__d cap-c4__d--on cap-c4__d--on2">18</div><div class="cap-c4__d">19</div><div class="cap-c4__d cap-c4__d--on">20</div><div class="cap-c4__d">21</div><div class="cap-c4__d cap-c4__d--on cap-c4__d--on3">22</div><div class="cap-c4__d">23</div><div class="cap-c4__d cap-c4__d--on">24</div><div class="cap-c4__d cap-c4__d--on">25</div><div class="cap-c4__d">26</div><div class="cap-c4__d cap-c4__d--on cap-c4__d--on2">27</div><div class="cap-c4__d">28</div></div>
-                <div class="cap-c4__foot"><span>Auto-scheduled across</span><b>4 channels</b></div>
-              </div>
-            </div>
-          </article>
-
-          <article class="cap-cell c-pipe">
-            <div class="cap-cell__glow"></div>
-            <div class="cap-cell__txt">
-              <div class="cap-cell__id">SVC-05</div>
-              <h3 class="cap-cell__h" data-i18n="cap_5_t">CRM และเวิร์กโฟลว์</h3>
-              <p class="cap-cell__d" data-i18n="cap_5_d">การติดตามและไปป์ไลน์ที่ทำงานเอง</p>
-            </div>
-            <div class="cap-cell__viz">
-              <div class="cap-pl__chart"><svg viewBox="0 0 240 70" preserveAspectRatio="none">
-                <defs><linearGradient id="capg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4d84ff" stop-opacity=".35"/><stop offset="1" stop-color="#4d84ff" stop-opacity="0"/></linearGradient></defs>
-                <path class="cap-pl__area" d="M0,55 L34,48 L80,50 L120,32 L165,24 L210,12 L240,8 L240,70 L0,70 Z"/>
-                <path class="cap-pl__line" d="M0,55 L34,48 L80,50 L120,32 L165,24 L210,12 L240,8"/>
-                <circle class="cap-pl__dot" cx="240" cy="8" r="3.5"/>
-              </svg></div>
-              <div class="cap-pl__stages"><div class="cap-pl__stage"><b>128</b><span>NEW</span></div><div class="cap-pl__stage"><b>54</b><span>QUALIFIED</span></div><div class="cap-pl__stage"><b>21</b><span>BOOKED</span></div></div>
-            </div>
-          </article>
-
-          <article class="cap-cell c-rag">
-            <div class="cap-cell__glow"></div>
-            <div class="cap-cell__txt">
-              <div class="cap-cell__id">SVC-07</div>
-              <h3 class="cap-cell__h" data-i18n="cap_7_t">ฐานความรู้ / RAG</h3>
-              <p class="cap-cell__d" data-i18n="cap_7_d">เปลี่ยนเอกสารของคุณให้เป็นผู้ช่วย</p>
-            </div>
-            <div class="cap-cell__viz">
-              <div class="cap-rg__bar"><span class="cap-rg__q">refund policy for late cancels</span><span class="cap-rg__cursor"></span><span class="cap-rg__k">&#8984;K</span></div>
-              <div class="cap-rg__hit"><div class="cap-rg__src">policy_handbook.pdf &middot; p.12</div><div class="cap-rg__txt">Cancellations within 24h are charged <b>50% of the booking</b>; no-shows are charged in full.</div></div>
-            </div>
-          </article>
-
-          <article class="cap-cell c-auto">
-            <div class="cap-cell__glow"></div>
-            <div class="cap-cell__txt">
-              <div class="cap-cell__id">SVC-04</div>
-              <h3 class="cap-cell__h" data-i18n="cap_4_t">เอเจนต์อัตโนมัติ</h3>
-              <p class="cap-cell__d" data-i18n="cap_4_d">ค้นคว้า ตัดสินใจ และส่งมอบ ตามตารางเวลา</p>
-            </div>
-            <div class="cap-cell__viz">
-              <div class="cap-ag">
-                <div class="cap-ag__hd"><span class="cap-ag__live"></span>AGENT &middot; RUNNING<span class="cap-ag__sched">every 6h</span></div>
-                <div class="cap-ag__step"><span class="cap-ag__dot cap-ag__dot--ok">&#10003;</span>Research market</div>
-                <div class="cap-ag__step"><span class="cap-ag__dot cap-ag__dot--ok">&#10003;</span>Score 240 leads</div>
-                <div class="cap-ag__step cap-ag__step--now"><span class="cap-ag__spin"></span>Draft outreach</div>
-                <div class="cap-ag__step"><span class="cap-ag__dot"></span>Deliver report</div>
-              </div>
-            </div>
-          </article>
-
-          <article class="cap-cell c-web">
-            <div class="cap-cell__glow"></div>
-            <div class="cap-cell__txt">
-              <div class="cap-cell__id">SVC-06</div>
-              <h3 class="cap-cell__h" data-i18n="cap_6_t">เว็บและระบบลงทะเบียน</h3>
-              <p class="cap-cell__d" data-i18n="cap_6_d">เว็บสามภาษา ฟันเนล ระบบชำระเงิน</p>
-            </div>
-            <div class="cap-cell__viz">
-              <div class="cap-wb">
-                <div class="cap-wb__bar"><span class="cap-wb__d"></span><span class="cap-wb__d"></span><span class="cap-wb__d"></span>
-                  <span class="cap-wb__url">rejig.site/register</span><span class="cap-wb__langs"><b>TH</b> EN RU</span></div>
-                <div class="cap-wb__body"><div class="cap-wb__hero"></div><div class="cap-wb__line"></div>
-                  <div class="cap-wb__row"><span class="cap-wb__btn">Register</span><span class="cap-wb__paid">&#10003; Paid &#3647;1,200</span></div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="cap-cell c-hr">
-            <div class="cap-cell__glow"></div>
-            <div class="cap-cell__txt">
-              <div class="cap-cell__id">SVC-08</div>
-              <h3 class="cap-cell__h" data-i18n="cap_8_t">HR และการสรรหา</h3>
-              <p class="cap-cell__d" data-i18n="cap_8_d">คัดกรอง นัดหมาย ต้อนรับพนักงานใหม่</p>
-            </div>
-            <div class="cap-cell__viz">
-              <div class="cap-hr">
-                <div class="cap-hr__row"><span class="cap-hr__av" style="background:linear-gradient(135deg,#2b57d6,#6d3bd6)"></span>
-                  <div class="cap-hr__m"><div class="cap-hr__n">Candidate A <span class="cap-hr__tag">shortlist</span></div><div class="cap-hr__track"><i style="width:96%"></i></div></div><span class="cap-hr__pct">96</span></div>
-                <div class="cap-hr__row"><span class="cap-hr__av" style="background:linear-gradient(135deg,#0f8bd6,#2b57d6)"></span>
-                  <div class="cap-hr__m"><div class="cap-hr__n">Candidate B</div><div class="cap-hr__track"><i style="width:88%"></i></div></div><span class="cap-hr__pct">88</span></div>
-                <div class="cap-hr__row"><span class="cap-hr__av" style="background:linear-gradient(135deg,#6d3bd6,#c0398e)"></span>
-                  <div class="cap-hr__m"><div class="cap-hr__n">Candidate C</div><div class="cap-hr__track"><i style="width:74%"></i></div></div><span class="cap-hr__pct">74</span></div>
-              </div>
-            </div>
-          </article>
-
-          <article class="cap-cell c-fin">
-            <div class="cap-cell__glow"></div>
-            <div class="cap-cell__txt">
-              <div class="cap-cell__id">SVC-09</div>
-              <h3 class="cap-cell__h" data-i18n="cap_9_t">การเงินและบัญชี</h3>
-              <p class="cap-cell__d" data-i18n="cap_9_d">ออกใบแจ้งหนี้ กระทบยอด รายงาน</p>
-            </div>
-            <div class="cap-cell__viz">
-              <div class="cap-fn">
-                <div class="cap-fn__r"><span class="cap-fn__inv">INV-1042</span><span class="cap-fn__amt">&#3647;12,400</span><span class="cap-fn__ok">&#10003; matched</span></div>
-                <div class="cap-fn__r"><span class="cap-fn__inv">INV-1043</span><span class="cap-fn__amt">&#3647;8,900</span><span class="cap-fn__ok">&#10003; matched</span></div>
-                <div class="cap-fn__r"><span class="cap-fn__inv">INV-1044</span><span class="cap-fn__amt">&#3647;3,150</span><span class="cap-fn__pend">reconciling&#8230;</span></div>
-                <div class="cap-fn__foot"><span>Reconciled</span><div class="cap-fn__bar"><i></i></div><b>92%</b></div>
-              </div>
-            </div>
-          </article>
-
+      <div class="wrap C-scope">
+        <div class="C-bp">
+          <div class="C-mono">// rejig.capabilities</div>
+          <div class="C-grid">
+            <div class="C-node rv"><div class="C-node__top"><span class="C-node__id">SVC-01</span></div><h3 data-i18n="cap_1_t">เอเจนต์เสียง AI</h3><p data-i18n="cap_1_d">รับสาย ตรวจจับภาษา จองคิวให้อัตโนมัติ ตลอด 24 ชม.</p></div>
+            <div class="C-node rv"><div class="C-node__top"><span class="C-node__id">SVC-02</span></div><h3 data-i18n="cap_2_t">แชทและข้อความ</h3><p data-i18n="cap_2_d">สมองเดียวครอบคลุมเว็บ LINE และโซเชียล</p></div>
+            <div class="C-node rv"><div class="C-node__top"><span class="C-node__id">SVC-03</span></div><h3 data-i18n="cap_3_t">เครื่องมือสร้างคอนเทนต์</h3><p data-i18n="cap_3_d">14 โพสต์ในไม่กี่วินาที อนุมัติได้ในคลิกเดียว</p></div>
+            <div class="C-node rv"><div class="C-node__top"><span class="C-node__id">SVC-04</span></div><h3 data-i18n="cap_4_t">เอเจนต์อัตโนมัติ</h3><p data-i18n="cap_4_d">ค้นคว้า ตัดสินใจ และส่งมอบ ตามตารางเวลา</p></div>
+            <div class="C-node rv"><div class="C-node__top"><span class="C-node__id">SVC-05</span></div><h3 data-i18n="cap_5_t">CRM และเวิร์กโฟลว์</h3><p data-i18n="cap_5_d">การติดตามและไปป์ไลน์ที่ทำงานเอง</p></div>
+            <div class="C-node rv"><div class="C-node__top"><span class="C-node__id">SVC-06</span></div><h3 data-i18n="cap_6_t">เว็บและระบบลงทะเบียน</h3><p data-i18n="cap_6_d">เว็บหลายภาษา ฟันเนล ระบบชำระเงิน</p></div>
+            <div class="C-node rv"><div class="C-node__top"><span class="C-node__id">SVC-07</span></div><h3 data-i18n="cap_7_t">ฐานความรู้ / RAG</h3><p data-i18n="cap_7_d">เปลี่ยนเอกสารของคุณให้เป็นผู้ช่วย</p></div>
+            <div class="C-node rv"><div class="C-node__top"><span class="C-node__id">SVC-08</span></div><h3 data-i18n="cap_8_t">HR และการสรรหา</h3><p data-i18n="cap_8_d">คัดกรอง นัดหมาย ต้อนรับพนักงานใหม่</p></div>
+            <div class="C-node rv"><div class="C-node__top"><span class="C-node__id">SVC-09</span></div><h3 data-i18n="cap_9_t">การเงินและบัญชี</h3><p data-i18n="cap_9_d">ออกใบแจ้งหนี้ กระทบยอด รายงาน</p></div>
+          </div>
         </div>
       </div>
     </section>
+
 
     <!-- INDUSTRIES -->
     <section class="encap encap--alt" id="industries">
