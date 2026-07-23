@@ -6,6 +6,27 @@
   <title>Privacy Policy | Rejig Labs</title>
   <meta name="description" content="Privacy Policy for Rejig Labs. Learn how we collect, use, and protect your information.">
 
+  <!-- Consent Mode v2 defaults: analytics OFF until the visitor accepts -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update': 500
+    });
+    try {
+      if (localStorage.getItem('rejig_consent') === 'granted') {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted', 'analytics_storage': 'granted',
+          'ad_user_data': 'granted', 'ad_personalization': 'granted'
+        });
+      }
+    } catch (e) {}
+  </script>
+
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BB5D5KCXM"></script>
   <script>
@@ -244,5 +265,6 @@
     });
   </script>
   <script src="js/i18n.js"></script>
+  <script src="js/consent.js" defer></script>
 </body>
 </html>

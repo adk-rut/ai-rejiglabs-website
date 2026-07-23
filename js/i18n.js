@@ -23,6 +23,12 @@
   }
 
   function getLang() {
+    // A dedicated language URL (e.g. /th/) is the source of truth for that page,
+    // so a Thai page stays Thai regardless of a returning visitor's saved choice.
+    var path = location.pathname;
+    for (var s = 0; s < SUPPORTED.length; s++) {
+      if (path.indexOf('/' + SUPPORTED[s] + '/') === 0) return SUPPORTED[s];
+    }
     var stored = localStorage.getItem(STORAGE_KEY);
     return (stored && SUPPORTED.indexOf(stored) !== -1) ? stored : DEFAULT_LANG;
   }
@@ -82,7 +88,15 @@
       var langBtn = e.target.closest('.nav__lang button[data-lang]');
       if (!langBtn) return;
       e.preventDefault();
-      setLang(langBtn.getAttribute('data-lang'));
+      var lang = langBtn.getAttribute('data-lang');
+      // If this page has a dedicated URL for the chosen language, go there
+      // (keeps URL and content in sync so each language stays crawlable).
+      var urls = window.__i18nUrls;
+      if (urls && urls[lang]) {
+        try { localStorage.setItem(STORAGE_KEY, lang); } catch (e2) {}
+        if (location.pathname !== urls[lang]) { location.href = urls[lang]; return; }
+      }
+      setLang(lang);
     });
   }
 

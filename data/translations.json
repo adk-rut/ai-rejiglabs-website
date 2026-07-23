@@ -1,117 +1,585 @@
 {
-  "nav_services": { "en": "Services", "th": "บริการ", "ru": "Услуги" },
-  "nav_blockchain": { "en": "Blockchain", "th": "บล็อกเชน", "ru": "Блокчейн" },
-  "nav_process": { "en": "Process", "th": "ขั้นตอน", "ru": "Процесс" },
-  "nav_case_studies": { "en": "Case Studies", "th": "ผลงาน", "ru": "Кейсы" },
-  "nav_cta": { "en": "Get In Touch", "th": "ติดต่อเรา", "ru": "Связаться" },
-  "hero_eyebrow": { "en": "AI CONSULTANCY | THAILAND & WORLDWIDE", "th": "ที่ปรึกษาด้าน AI | ไทยและทั่วโลก", "ru": "AI-КОНСАЛТИНГ | ТАИЛАНД И ВЕСЬ МИР" },
-  "hero_h1": { "en": "We don't just talk AI.<br><em class=\"accent\">We deliver it.</em>", "th": "เราไม่ได้แค่พูดเรื่อง AI<br><em class=\"accent\">เราลงมือทำให้เลย</em>", "ru": "Мы не просто говорим про AI.<br><em class=\"accent\">Мы внедряем его.</em>" },
-  "hero_sub": { "en": "We help businesses identify AI opportunities that will actually transform their operations, then we build it, deploy it, and train your team to run it.", "th": "เราช่วยธุรกิจหาจุดที่ AI จะสร้างผลลัพธ์ได้จริง แล้วเราสร้างให้ ติดตั้งให้ และสอนทีมคุณใช้งานเองได้", "ru": "Мы помогаем бизнесу найти точки, где AI реально изменит работу. Потом строим, запускаем и обучаем вашу команду." },
-  "hero_btn": { "en": "Book a Discovery Call", "th": "นัดคุยฟรี", "ru": "Записаться на консультацию" },
-  "hero_trusted": { "en": "BUILT WITH", "th": "สร้างด้วย", "ru": "СОЗДАНО НА ОСНОВЕ" },
-  "narrative_1": { "en": "You know AI is the move. You've signed up for the tools. Watched the demos.", "th": "คุณรู้ว่า AI คือคำตอบ สมัครเครื่องมือแล้ว ดูเดโมแล้ว", "ru": "Вы знаете, что AI — это будущее. Подписались на инструменты. Посмотрели демо." },
-  "narrative_2": { "en": "But nothing changed. The tools sit unused. The strategy was a PDF that went nowhere.", "th": "แต่ไม่มีอะไรเปลี่ยน เครื่องมือถูกทิ้ง แผนกลยุทธ์เป็นแค่ไฟล์ PDF ที่ไม่เคยถูกใช้", "ru": "Но ничего не изменилось. Инструменты пылятся. Стратегия — PDF, который никто не открыл." },
-  "narrative_3": { "en": "Or you're still deciding where to start, watching competitors move first.", "th": "หรือคุณยังไม่รู้จะเริ่มตรงไหน แต่คู่แข่งเริ่มไปก่อนแล้ว", "ru": "Или вы всё ещё думаете, с чего начать. А конкуренты уже начали." },
-  "narrative_4": { "en": "The tools aren't the problem. Nobody showed you how to make them work for your business.", "th": "เครื่องมือไม่ใช่ปัญหา แค่ยังไม่มีใครมาช่วยทำให้มันใช้งานได้จริงกับธุรกิจคุณ", "ru": "Проблема не в инструментах. Просто никто не показал, как заставить их работать на ваш бизнес." },
-  "solution_eyebrow": { "en": "THAT'S EXACTLY WHY WE BUILT THIS", "th": "นี่คือเหตุผลที่เราทำสิ่งนี้", "ru": "ИМЕННО ПОЭТОМУ МЫ ЭТО СОЗДАЛИ" },
-  "solution_h2": { "en": "We don't just advise. <em class=\"accent\">We build it for you.</em>", "th": "เราไม่ได้แค่แนะนำ <em class=\"accent\">เราสร้างให้เลย</em>", "ru": "Мы не просто консультируем. <em class=\"accent\">Мы строим за вас.</em>" },
-  "solution_body": { "en": "Rejig Labs maps how your business actually runs, finds the 5% of workflows where AI makes a real difference, then builds and deploys it. You don't get a strategy deck. You get working systems, trained teams, and time back in your week.", "th": "Rejig Labs วิเคราะห์ว่าธุรกิจคุณทำงานยังไง หาจุด 5% ที่ AI จะสร้างความต่างได้จริง แล้วสร้างและติดตั้งให้ คุณจะไม่ได้แค่สไลด์สวย ๆ แต่ได้ระบบที่ใช้ได้จริง ทีมที่พร้อมใช้ และเวลาที่ได้คืน", "ru": "Rejig Labs разбирается, как ваш бизнес работает на самом деле, находит те 5% процессов, где AI даст реальный результат, и внедряет его. Вы получаете не презентацию, а работающие системы, обученную команду и свободное время." },
-  "solution_bold": { "en": "Stop paying for advice that sits in a drawer. <em class=\"accent\">Start paying for AI that's already running.</em>", "th": "เลิกจ่ายเงินกับคำแนะนำที่เก็บฝุ่น <em class=\"accent\">เริ่มลงทุนกับ AI ที่ทำงานให้คุณแล้ววันนี้</em>", "ru": "Хватит платить за советы, которые пылятся в ящике. <em class=\"accent\">Платите за AI, который уже работает.</em>" },
-  "process_h2": { "en": "Every engagement follows <em class=\"accent\">three steps…</em>", "th": "ทุกโปรเจกต์ของเราผ่าน <em class=\"accent\">3 ขั้นตอน…</em>", "ru": "Каждый проект — <em class=\"accent\">три шага…</em>" },
-  "process_identify": { "en": "Identify", "th": "วิเคราะห์", "ru": "Анализ" },
-  "process_identify_desc": { "en": "We get under the hood of your business. We map your acquisition, delivery, and support workflows to find where time is bleeding out, where bottlenecks hide, and where AI can make the biggest impact. No guesswork. Just the opportunities that are actually worth building.", "th": "เราเข้าไปดูว่าธุรกิจคุณทำงานจริง ๆ ยังไง ตั้งแต่หาลูกค้า ส่งมอบงาน ไปจนถึงซัพพอร์ต เพื่อหาว่าเวลาหายไปตรงไหน คอขวดอยู่ตรงไหน และ AI จะช่วยได้มากที่สุดตรงไหน ไม่มีเดา มีแต่โอกาสที่คุ้มค่า", "ru": "Мы залезаем внутрь вашего бизнеса. Разбираем процессы привлечения, работы с клиентами и поддержки — ищем, где утекает время, где узкие места, и где AI даст максимальный эффект. Без догадок. Только то, что реально стоит внедрять." },
-  "process_develop": { "en": "Develop", "th": "พัฒนา", "ru": "Разработка" },
-  "process_develop_desc": { "en": "With the roadmap locked, we build fast. Custom AI workflows designed around your existing tools and processes. No rip-and-replace. Everything integrates into how your team already works, so it delivers value from the first week.", "th": "พอแผนชัดแล้ว เราลงมือสร้างเลย ระบบ AI ที่ออกแบบให้เข้ากับเครื่องมือและกระบวนการที่คุณใช้อยู่ ไม่ต้องรื้อทิ้งอะไร ทุกอย่างต่อเข้ากับวิธีทำงานเดิมของทีม เริ่มเห็นผลตั้งแต่สัปดาห์แรก", "ru": "Когда план утверждён, мы строим быстро. AI-решения под ваши существующие инструменты и процессы. Ничего не ломаем. Всё встраивается в то, как ваша команда уже работает, и приносит пользу с первой недели." },
-  "process_adopt": { "en": "Adopt", "th": "นำไปใช้", "ru": "Внедрение" },
-  "process_adopt_desc": { "en": "AI only works if your team actually uses it. We embed alongside your people, running training, refining workflows, and adjusting until the new systems feel like second nature. When we step back, it's not a project anymore. It's just how things run.", "th": "AI จะได้ผลก็ต่อเมื่อทีมใช้จริง เราทำงานเคียงข้างทีมคุณ ฝึกสอน ปรับระบบ จนทุกอย่างเป็นธรรมชาติ พอเราถอยออก มันไม่ใช่โปรเจกต์แล้ว มันคือวิธีทำงานปกติของคุณ", "ru": "AI работает, только если команда им реально пользуется. Мы работаем рядом с вашими людьми — проводим обучение, дорабатываем процессы, подстраиваем, пока новые системы не станут привычными. Когда мы уходим, это уже не проект. Это просто то, как у вас всё устроено." },
-  "process_btn": { "en": "Get Started", "th": "เริ่มเลย", "ru": "Начать" },
-  "cs_eyebrow": { "en": "REAL RESULTS", "th": "ผลลัพธ์จริง", "ru": "РЕАЛЬНЫЕ РЕЗУЛЬТАТЫ" },
-  "cs_h2": { "en": "See it in <em class=\"accent\">action.</em>", "th": "ดู<em class=\"accent\">ผลงานจริง</em>", "ru": "Смотрите <em class=\"accent\">в деле.</em>" },
-  "cs_read": { "en": "Read Case Study", "th": "ดูรายละเอียด", "ru": "Подробнее" },
-  "tst_h2": { "en": "Don't just take <em class=\"accent\">our word for it…</em>", "th": "ไม่ต้องเชื่อเรา <em class=\"accent\">ฟังจากลูกค้าเอง…</em>", "ru": "Не верьте нам на слово — <em class=\"accent\">послушайте клиентов…</em>" },
-  "entropy_tagline": { "en": "Turn <strong>chaos</strong> into clarity for your whole company.", "th": "เปลี่ยน<strong>ความยุ่งเหยิง</strong>ให้กลายเป็นความชัดเจนทั้งองค์กร", "ru": "Превратите <strong>хаос</strong> в ясность для всей компании." },
-  "entropy_before": { "en": "before", "th": "ก่อน", "ru": "до" },
-  "entropy_after": { "en": "AFTER", "th": "หลัง", "ru": "ПОСЛЕ" },
-  "stat_1_label": { "en": "average time saved on manual workflows", "th": "เวลาที่ประหยัดได้จากงานแมนนวล", "ru": "среднее время, сэкономленное на ручных процессах" },
-  "stat_2_label": { "en": "to a full AI roadmap for your business", "th": "ถึงแผน AI ฉบับเต็มสำหรับธุรกิจคุณ", "ru": "до полной AI-дорожной карты для вашего бизнеса" },
-  "stat_3_label": { "en": "audited: acquisition, delivery & support", "th": "ตรวจสอบครบ: หาลูกค้า, ส่งมอบ & ซัพพอร์ต", "ru": "проверено: привлечение, работа с клиентами и поддержка" },
-  "stat_4_label": { "en": "implementation-first: we build, not just advise", "th": "ลงมือทำก่อน: สร้างให้เลย ไม่ใช่แค่แนะนำ", "ru": "сначала внедрение: мы строим, а не просто советуем" },
-  "stat_2_unit": { "en": "wks", "th": "สัปดาห์", "ru": "нед." },
-  "stat_3_unit": { "en": "flows", "th": "กระบวนการ", "ru": "процесса" },
-  "faq_h2": { "en": "FAQ<em class=\"accent\">s</em>", "th": "คำถาม<em class=\"accent\">ที่พบบ่อย</em>", "ru": "Вопросы<em class=\"accent\"> и ответы</em>" },
-  "faq_sub": { "en": "You've got questions. We've got answers.", "th": "มีคำถาม? เรามีคำตอบให้", "ru": "У вас вопросы — у нас ответы." },
-  "faq_time": { "en": "Every day, 9:01 AM", "th": "ทุกวัน 9:01 น.", "ru": "Каждый день, 9:01" },
-  "faq_q1": { "en": "How is Rejig Labs different from other AI consultants?", "th": "Rejig Labs ต่างจากที่ปรึกษา AI ที่อื่นยังไง?", "ru": "Чем Rejig Labs отличается от других AI-консультантов?" },
-  "faq_a1": { "en": "Most consultants give you a strategy deck and leave. We stay and build it. RT has hands-on implementation experience across real business workflows, not just conceptual knowledge. We only recommend what we can actually build and deploy ourselves.", "th": "ที่ปรึกษาส่วนใหญ่ให้แค่สไลด์กลยุทธ์แล้วก็ไป แต่เราอยู่สร้างให้จริง RT มีประสบการณ์ลงมือทำกับธุรกิจจริง ไม่ใช่แค่รู้ทฤษฎี เราแนะนำแค่สิ่งที่เราสร้างและติดตั้งได้เอง", "ru": "Большинство консультантов отдают вам красивую презентацию и уходят. Мы остаёмся и строим. У RT реальный опыт внедрения в живых бизнес-процессах, а не просто теория. Мы рекомендуем только то, что сами можем построить и запустить." },
-  "faq_q2": { "en": "How do I know if we're ready for AI?", "th": "จะรู้ได้ยังไงว่าธุรกิจเราพร้อมใช้ AI?", "ru": "Как понять, готовы ли мы к AI?" },
-  "faq_a2": { "en": "If your team is doing repetitive manual work like data entry, follow-ups, reporting, scheduling, or content, you're ready. The audit will tell you exactly where. You don't need clean data or a tech team. That's what the audit is for.", "th": "ถ้าทีมคุณยังทำงานซ้ำ ๆ ด้วยมืออยู่ เช่น กรอกข้อมูล ติดตามงาน ทำรีพอร์ต จัดตาราง ทำคอนเทนต์ แปลว่าพร้อมแล้ว การตรวจสอบของเราจะบอกว่าเริ่มตรงไหนดี ไม่ต้องมีข้อมูลสะอาดหรือทีม IT มาก่อน", "ru": "Если ваша команда делает рутинную работу вручную — ввод данных, напоминания, отчёты, расписания, контент — вы готовы. Аудит покажет, где именно начинать. Не нужны ни чистые данные, ни IT-отдел. Для этого и нужен аудит." },
-  "faq_q3": { "en": "What happens after the audit?", "th": "หลังตรวจสอบเสร็จแล้วได้อะไร?", "ru": "Что происходит после аудита?" },
-  "faq_a3": { "en": "You receive a full AI transformation plan: a 90-day roadmap, prioritised integrations, tool recommendations, and ROI estimates. From there, you can implement it yourself or engage us for Phase 2 (full execution).", "th": "คุณจะได้แผน AI ฉบับเต็ม: แผนงาน 90 วัน, ลำดับความสำคัญของระบบที่ต้องเชื่อมต่อ, เครื่องมือที่แนะนำ, และประมาณการ ROI จากนั้นจะทำเองหรือให้เราทำต่อในเฟส 2 ก็ได้", "ru": "Вы получаете полный план AI-трансформации: дорожную карту на 90 дней, приоритеты по интеграциям, рекомендации по инструментам и оценку ROI. Дальше можете внедрять сами или перейти с нами на Фазу 2 — полное выполнение." },
-  "faq_q4": { "en": "How much internal time will this take?", "th": "ทีมเราต้องใช้เวลาเยอะไหม?", "ru": "Сколько времени это займёт у нашей команды?" },
-  "faq_a4": { "en": "Minimal. We do the heavy lifting. The audit phase requires a few hours of your team's time for discovery calls and process walkthroughs. Implementation is handled by us. Your team only needs to be available for handoff and training.", "th": "น้อยมาก งานหนักเราทำเอง ช่วงตรวจสอบแค่ต้องใช้เวลาทีมคุณไม่กี่ชั่วโมงสำหรับคุยและดูกระบวนการ การติดตั้งเราจัดการให้ ทีมคุณแค่พร้อมรับงานและเข้าเทรนนิ่ง", "ru": "Минимум. Всю тяжёлую работу делаем мы. На этапе аудита нужно несколько часов от вашей команды — созвоны и разбор процессов. Внедрение — полностью на нас. Вашим людям нужно только прийти на обучение и принять систему." },
-  "faq_q5": { "en": "We've already tried AI and it didn't work. Why would this be different?", "th": "เคยลอง AI แล้วไม่เวิร์ค ทำไมครั้งนี้จะต่าง?", "ru": "Мы уже пробовали AI, и не сработало. Почему в этот раз будет иначе?" },
-  "faq_a5": { "en": "Because most AI attempts fail at integration, not technology. The tools work. The problem is mapping them to your specific workflows, getting buy-in, and building systems your team will actually use. That's exactly what we diagnose in the audit phase.", "th": "เพราะ AI ส่วนใหญ่พังตรงการเชื่อมต่อ ไม่ใช่ตัวเทคโนโลยี เครื่องมือมันดีอยู่แล้ว ปัญหาคือยังไม่มีใครมาจับคู่มันกับงานจริงของคุณ ทำให้ทีมยอมใช้ และสร้างระบบที่ทีมจะใช้ต่อจริง ๆ นั่นคือสิ่งที่เราวิเคราะห์ให้", "ru": "Потому что AI чаще всего ломается не на технологии, а на интеграции. Инструменты работают. Проблема — привязать их к вашим конкретным процессам, добиться, чтобы команда приняла изменения, и построить систему, которой реально будут пользоваться. Именно это мы и разбираем на этапе аудита." },
-  "faq_q6": { "en": "We don't have a big tech team. Can we still do this?", "th": "ไม่มีทีมเทคใหญ่ ทำได้ไหม?", "ru": "У нас нет большого IT-отдела. Это вообще возможно?" },
-  "faq_a6": { "en": "Yes, this is built for exactly that situation. Most of our clients have little to no technical team. We handle everything technical. Your job is to understand your own business; our job is to translate that into working AI systems.", "th": "ได้เลย เราทำมาเพื่อกรณีแบบนี้โดยเฉพาะ ลูกค้าเราส่วนใหญ่แทบไม่มีทีมเทค เราจัดการเรื่องเทคนิคทั้งหมด หน้าที่คุณคือรู้จักธุรกิจตัวเอง หน้าที่เราคือแปลงมันเป็นระบบ AI ที่ใช้ได้จริง", "ru": "Да, мы как раз для этого и работаем. У большинства наших клиентов почти нет технической команды. Всю техническую часть берём на себя. Ваша задача — знать свой бизнес. Наша — превратить это в работающие AI-системы." },
-  "closing_1": { "en": "AI is here. Most will react.", "th": "AI มาถึงแล้ว คนส่วนใหญ่จะแค่ตามเกม", "ru": "AI уже здесь. Большинство будут догонять." },
-  "closing_2": { "en": "The few with a plan will lead.", "th": "คนที่มีแผนจะนำหน้า", "ru": "Те, у кого есть план, будут впереди." },
-  "closing_3": { "en": "We build for those few.", "th": "เราสร้างให้คนกลุ่มนั้น", "ru": "Мы работаем для них." },
-  "footer_copy": { "en": "© 2026 Rejig Labs · An arm of Rejig Labs · Thailand", "th": "© 2026 Rejig Labs · ภายใต้ Rejig Labs · ประเทศไทย", "ru": "© 2026 Rejig Labs · Подразделение Rejig Labs · Таиланд" },
-  "footer_privacy": { "en": "Privacy", "th": "ความเป็นส่วนตัว", "ru": "Конфиденциальность" },
-  "footer_terms": { "en": "Terms", "th": "ข้อกำหนด", "ru": "Условия" },
-  "cap_eyebrow": { "en": "WHAT WE BUILD", "th": "สิ่งที่เราสร้าง", "ru": "ЧТО МЫ СОЗДАЁМ" },
-  "cap_h2": { "en": "One team, the whole <em class=\"accent\">AI stack.</em>", "th": "ทีมเดียว ดูแล<em class=\"accent\">ระบบ AI ทั้งหมด</em>", "ru": "Одна команда, весь <em class=\"accent\">стек ИИ.</em>" },
-  "cap_sub": { "en": "From voice agents that answer the phone to autonomous systems that run for months. If it can be automated with AI, we build and ship it.", "th": "ตั้งแต่เอเจนต์เสียงที่รับโทรศัพท์ ไปจนถึงระบบอัตโนมัติที่ทำงานต่อเนื่องได้หลายเดือน ถ้างานไหนใช้ AI ทำแทนได้ เราสร้างและส่งมอบให้", "ru": "От голосовых агентов, отвечающих на звонки, до автономных систем, работающих месяцами. Если это можно автоматизировать с ИИ, мы это построим и запустим." },
-  "cap_1_t": { "en": "Voice AI Agents", "th": "เอเจนต์เสียง AI", "ru": "Голосовые ИИ-агенты" },
-  "cap_1_d": { "en": "Phone answered, language detected, slot booked. 24/7.", "th": "รับสาย ตรวจจับภาษา จองคิวให้อัตโนมัติ ตลอด 24 ชม.", "ru": "Приняли звонок, определили язык, записали на приём. 24/7." },
-  "cap_2_t": { "en": "Chat & Messaging", "th": "แชทและข้อความ", "ru": "Чат и мессенджеры" },
-  "cap_2_d": { "en": "One brain across web, LINE and social.", "th": "สมองเดียวครอบคลุมเว็บ LINE และโซเชียล", "ru": "Один мозг для сайта, LINE и соцсетей." },
-  "cap_3_t": { "en": "Content Engines", "th": "เครื่องมือสร้างคอนเทนต์", "ru": "Контент-движки" },
-  "cap_3_d": { "en": "14 posts in seconds, approved in one click.", "th": "14 โพสต์ในไม่กี่วินาที อนุมัติได้ในคลิกเดียว", "ru": "14 постов за секунды, одобрение в один клик." },
-  "cap_4_t": { "en": "Autonomous Agents", "th": "เอเจนต์อัตโนมัติ", "ru": "Автономные агенты" },
-  "cap_4_d": { "en": "Research, decide and deliver, on a schedule.", "th": "ค้นคว้า ตัดสินใจ และส่งมอบ ตามตารางเวลา", "ru": "Исследуют, решают и выдают результат по расписанию." },
-  "cap_5_t": { "en": "CRM & Workflow", "th": "CRM และเวิร์กโฟลว์", "ru": "CRM и рабочие процессы" },
-  "cap_5_d": { "en": "Follow-ups and pipelines that fire themselves.", "th": "การติดตามและไปป์ไลน์ที่ทำงานเอง", "ru": "Напоминания и воронки, работающие сами." },
-  "cap_6_t": { "en": "Web & Registration", "th": "เว็บและระบบลงทะเบียน", "ru": "Сайты и регистрация" },
-  "cap_6_d": { "en": "Trilingual sites, funnels, payments.", "th": "เว็บสามภาษา ฟันเนล ระบบชำระเงิน", "ru": "Трёхъязычные сайты, воронки, оплаты." },
-  "cap_7_t": { "en": "Knowledge / RAG", "th": "ฐานความรู้ / RAG", "ru": "База знаний / RAG" },
-  "cap_7_d": { "en": "Your documents become an assistant.", "th": "เปลี่ยนเอกสารของคุณให้เป็นผู้ช่วย", "ru": "Ваши документы становятся ассистентом." },
-  "cap_8_t": { "en": "HR & Recruiting", "th": "HR และการสรรหา", "ru": "HR и найм" },
-  "cap_8_d": { "en": "Screening, scheduling, onboarding.", "th": "คัดกรอง นัดหมาย ต้อนรับพนักงานใหม่", "ru": "Отбор, планирование, онбординг." },
-  "cap_9_t": { "en": "Finance & Accounting", "th": "การเงินและบัญชี", "ru": "Финансы и учёт" },
-  "cap_9_d": { "en": "Invoicing, reconciliation, reporting.", "th": "ออกใบแจ้งหนี้ กระทบยอด รายงาน", "ru": "Счета, сверки, отчётность." },
-  "ind_eyebrow": { "en": "WHERE WE DEPLOY", "th": "เราใช้งานที่ไหนบ้าง", "ru": "ГДЕ МЫ ВНЕДРЯЕМ" },
-  "ind_h2": { "en": "Built for the way <em class=\"accent\">your industry runs.</em>", "th": "สร้างมาเพื่อวิธีการทำงานของ<em class=\"accent\">อุตสาหกรรมคุณ</em>", "ru": "Создано под то, как работает <em class=\"accent\">ваша отрасль.</em>" },
-  "ind_sub": { "en": "Same engine, tuned to the workflow. Here is the first thing we would automate in each.", "th": "เครื่องยนต์เดียวกัน ปรับจูนตามเวิร์กโฟลว์ นี่คือสิ่งแรกที่เราจะทำให้เป็นอัตโนมัติในแต่ละธุรกิจ", "ru": "Один движок, настроенный под процесс. Вот что мы автоматизировали бы первым в каждой отрасли." },
-  "ind_1_n": { "en": "Hospitality", "th": "งานบริการและโรงแรม", "ru": "Гостеприимство" },
-  "ind_1_d": { "en": "An AI front desk that takes bookings by phone, chat and LINE, in every guest's language, around the clock.", "th": "แผนกต้อนรับ AI ที่รับจองผ่านโทรศัพท์ แชท และ LINE ในภาษาของลูกค้าทุกคน ตลอด 24 ชั่วโมง", "ru": "ИИ-ресепшн, принимающий брони по телефону, в чате и LINE, на языке каждого гостя, круглосуточно." },
-  "ind_2_n": { "en": "Clinics & Healthcare", "th": "คลินิกและสุขภาพ", "ru": "Клиники и здравоохранение" },
-  "ind_2_d": { "en": "Patient intake, reminders and follow-ups that cut no-shows and free your front-of-house staff.", "th": "รับข้อมูลผู้ป่วย แจ้งเตือน และติดตามผล ลดการไม่มาตามนัดและช่วยแบ่งเบางานหน้าเคาน์เตอร์", "ru": "Приём пациентов, напоминания и контроль, снижающие неявки и разгружающие ресепшн." },
-  "ind_3_n": { "en": "Agencies", "th": "เอเจนซี", "ru": "Агентства" },
-  "ind_3_d": { "en": "Content and reporting automated end-to-end, so a lean team ships three times the output.", "th": "คอนเทนต์และรายงานอัตโนมัติครบวงจร ทีมเล็กก็ผลิตงานได้มากกว่าเดิมสามเท่า", "ru": "Контент и отчётность автоматизированы от и до, и небольшая команда выдаёт втрое больше." },
-  "ind_4_n": { "en": "E-Commerce & Retail", "th": "อีคอมเมิร์ซและค้าปลีก", "ru": "E-commerce и ритейл" },
-  "ind_4_d": { "en": "A 24/7 support agent that answers, upsells and recovers abandoned carts on its own.", "th": "เอเจนต์ซัพพอร์ตตลอด 24 ชม. ที่ตอบคำถาม เสนอขายเพิ่ม และดึงตะกร้าที่ถูกทิ้งกลับมาได้เอง", "ru": "Агент поддержки 24/7, который отвечает, допродаёт и сам возвращает брошенные корзины." },
-  "ind_5_n": { "en": "Logistics", "th": "โลจิสติกส์", "ru": "Логистика" },
-  "ind_5_d": { "en": "Dispatch and routing that adapts in real time and keeps customers updated automatically.", "th": "การจัดส่งและวางเส้นทางที่ปรับตัวแบบเรียลไทม์ และอัปเดตลูกค้าให้อัตโนมัติ", "ru": "Диспетчеризация и маршрутизация в реальном времени с автоматическим оповещением клиентов." },
-  "ind_6_n": { "en": "Professional Services", "th": "บริการมืออาชีพ", "ru": "Профессиональные услуги" },
-  "ind_6_d": { "en": "Intake, proposals and client comms handled, so billable hours go to the real work.", "th": "รับงาน จัดทำข้อเสนอ และสื่อสารกับลูกค้าให้เรียบร้อย เพื่อให้ชั่วโมงที่เก็บเงินได้ไปอยู่กับงานจริง", "ru": "Приём заявок, предложения и общение с клиентами берём на себя, чтобы оплачиваемые часы шли на настоящую работу." },
-  "ind_7_n": { "en": "Real Estate", "th": "อสังหาริมทรัพย์", "ru": "Недвижимость" },
-  "ind_7_d": { "en": "Leads qualified and viewings booked the moment an enquiry lands, day or night.", "th": "คัดกรองลูกค้าและจองนัดชมทันทีที่มีการสอบถามเข้ามา ไม่ว่ากลางวันหรือกลางคืน", "ru": "Квалификация лидов и запись на просмотры сразу после обращения, днём и ночью." },
-  "ind_8_n": { "en": "Fintech", "th": "ฟินเทค", "ru": "Финтех" },
-  "ind_8_d": { "en": "KYC, support and reporting workflows, each with a human check on every step.", "th": "เวิร์กโฟลว์ KYC ซัพพอร์ต และรายงาน โดยมีคนตรวจสอบในทุกขั้นตอน", "ru": "Процессы KYC, поддержки и отчётности, где на каждом шаге есть проверка человеком." },
-  "sec_eyebrow": { "en": "SECURITY & DATA", "th": "ความปลอดภัยและข้อมูล", "ru": "БЕЗОПАСНОСТЬ И ДАННЫЕ" },
-  "sec_h2": { "en": "Enterprise-grade <em class=\"accent\">by default.</em>", "th": "ระดับองค์กร<em class=\"accent\">ตั้งแต่เริ่มต้น</em>", "ru": "Корпоративный уровень <em class=\"accent\">по умолчанию.</em>" },
-  "sec_sub": { "en": "How we handle the thing that matters most: your data and your accounts.", "th": "วิธีที่เราดูแลสิ่งที่สำคัญที่สุด นั่นคือข้อมูลและบัญชีของคุณ", "ru": "Как мы обращаемся с самым важным: вашими данными и аккаунтами." },
-  "sec_1_t": { "en": "Client data isolation", "th": "การแยกข้อมูลลูกค้า", "ru": "Изоляция данных клиента" },
-  "sec_1_d": { "en": "Each client runs in its own isolated environment. Your data never mixes with anyone else's.", "th": "ลูกค้าแต่ละรายทำงานในสภาพแวดล้อมที่แยกจากกัน ข้อมูลของคุณจะไม่ปะปนกับใคร", "ru": "Каждый клиент работает в своей изолированной среде. Ваши данные никогда не смешиваются с чужими." },
-  "sec_2_t": { "en": "Secrets never in code", "th": "ไม่เก็บความลับไว้ในโค้ด", "ru": "Секреты не хранятся в коде" },
-  "sec_2_d": { "en": "Keys in protected env storage, with automated secret scanning on every commit.", "th": "เก็บคีย์ไว้ในที่จัดเก็บ env ที่ป้องกันไว้ พร้อมสแกนหาความลับอัตโนมัติทุกครั้งที่ commit", "ru": "Ключи в защищённом env-хранилище, с автоматическим сканированием секретов при каждом коммите." },
-  "sec_3_t": { "en": "You own everything", "th": "ทุกอย่างเป็นของคุณ", "ru": "Всё принадлежит вам" },
-  "sec_3_d": { "en": "Your accounts and data, fully exportable. No lock-in.", "th": "บัญชีและข้อมูลของคุณ ส่งออกได้ทั้งหมด ไม่มีการผูกมัด", "ru": "Ваши аккаунты и данные полностью выгружаются. Никакой привязки." },
-  "sec_4_t": { "en": "Human-in-the-loop", "th": "มีคนตรวจสอบเสมอ", "ru": "Человек в контуре" },
-  "sec_4_d": { "en": "Nothing sends or publishes without an approval step you control.", "th": "ไม่มีอะไรถูกส่งหรือเผยแพร่โดยไม่ผ่านขั้นตอนอนุมัติที่คุณควบคุม", "ru": "Ничего не отправляется и не публикуется без шага одобрения, который контролируете вы." },
-  "sec_5_t": { "en": "PDPA-aware", "th": "สอดคล้องกับ PDPA", "ru": "С учётом PDPA" },
-  "sec_5_d": { "en": "Thailand data-protection-conscious handling by default.", "th": "จัดการข้อมูลโดยคำนึงถึงกฎหมายคุ้มครองข้อมูลของไทยเป็นค่าเริ่มต้น", "ru": "Обработка данных с учётом законодательства Таиланда о защите данных по умолчанию." },
-  "sec_6_t": { "en": "Frameworks on request", "th": "มาตรฐานตามที่ร้องขอ", "ru": "Стандарты по запросу" },
-  "sec_6_d": { "en": "SOC 2 / ISO alignment documentation available for enterprise engagements.", "th": "มีเอกสารการปฏิบัติตาม SOC 2 / ISO สำหรับงานระดับองค์กรเมื่อร้องขอ", "ru": "Документация о соответствии SOC 2 / ISO доступна для корпоративных проектов." }
+  "nav_services": {
+    "en": "Services",
+    "th": "บริการ",
+    "ru": "Услуги"
+  },
+  "nav_blockchain": {
+    "en": "Blockchain",
+    "th": "บล็อกเชน",
+    "ru": "Блокчейн"
+  },
+  "nav_process": {
+    "en": "Process",
+    "th": "ขั้นตอน",
+    "ru": "Процесс"
+  },
+  "nav_case_studies": {
+    "en": "Case Studies",
+    "th": "ผลงาน",
+    "ru": "Кейсы"
+  },
+  "nav_cta": {
+    "en": "Get In Touch",
+    "th": "ติดต่อเรา",
+    "ru": "Связаться"
+  },
+  "hero_eyebrow": {
+    "en": "AI CONSULTANCY | THAILAND & WORLDWIDE",
+    "th": "ที่ปรึกษาและวางระบบ AI สำหรับธุรกิจ SME ไทย",
+    "ru": "AI-КОНСАЛТИНГ | ТАИЛАНД И ВЕСЬ МИР"
+  },
+  "hero_h1": {
+    "en": "We don't just talk AI.<br><em class=\"accent\">We deliver it.</em>",
+    "th": "รับวางระบบ AI และแชทบอทอัตโนมัติ<br><em class=\"accent\">สำหรับธุรกิจ SME ไทย</em>",
+    "ru": "Мы не просто говорим про AI.<br><em class=\"accent\">Мы внедряем его.</em>"
+  },
+  "hero_sub": {
+    "en": "We help businesses identify AI opportunities that will actually transform their operations, then we build it, deploy it, and train your team to run it.",
+    "th": "เราหาจุดที่ AI ช่วยธุรกิจคุณประหยัดเวลาและต้นทุนจริง แล้วสร้าง ติดตั้ง และสอนทีมให้ใช้งานเป็น",
+    "ru": "Мы помогаем бизнесу найти точки, где AI реально изменит работу. Потом строим, запускаем и обучаем вашу команду."
+  },
+  "hero_btn": {
+    "en": "Book a Discovery Call",
+    "th": "นัดคุยฟรี",
+    "ru": "Записаться на консультацию"
+  },
+  "hero_trusted": {
+    "en": "BUILT WITH",
+    "th": "สร้างด้วย",
+    "ru": "СОЗДАНО НА ОСНОВЕ"
+  },
+  "narrative_1": {
+    "en": "You know AI is the move. You've signed up for the tools. Watched the demos.",
+    "th": "คุณรู้ว่า AI คือคำตอบ สมัครเครื่องมือแล้ว ดูเดโมแล้ว",
+    "ru": "Вы знаете, что AI — это будущее. Подписались на инструменты. Посмотрели демо."
+  },
+  "narrative_2": {
+    "en": "But nothing changed. The tools sit unused. The strategy was a PDF that went nowhere.",
+    "th": "แต่ไม่มีอะไรเปลี่ยน เครื่องมือถูกทิ้ง แผนกลยุทธ์เป็นแค่ไฟล์ PDF ที่ไม่เคยถูกใช้",
+    "ru": "Но ничего не изменилось. Инструменты пылятся. Стратегия — PDF, который никто не открыл."
+  },
+  "narrative_3": {
+    "en": "Or you're still deciding where to start, watching competitors move first.",
+    "th": "หรือคุณยังไม่รู้จะเริ่มตรงไหน แต่คู่แข่งเริ่มไปก่อนแล้ว",
+    "ru": "Или вы всё ещё думаете, с чего начать. А конкуренты уже начали."
+  },
+  "narrative_4": {
+    "en": "The tools aren't the problem. Nobody showed you how to make them work for your business.",
+    "th": "เครื่องมือไม่ใช่ปัญหา แค่ยังไม่มีใครมาช่วยทำให้มันใช้งานได้จริงกับธุรกิจคุณ",
+    "ru": "Проблема не в инструментах. Просто никто не показал, как заставить их работать на ваш бизнес."
+  },
+  "solution_eyebrow": {
+    "en": "THAT'S EXACTLY WHY WE BUILT THIS",
+    "th": "นี่คือเหตุผลที่เราทำสิ่งนี้",
+    "ru": "ИМЕННО ПОЭТОМУ МЫ ЭТО СОЗДАЛИ"
+  },
+  "solution_h2": {
+    "en": "We don't just advise. <em class=\"accent\">We build it for you.</em>",
+    "th": "เราไม่ได้แค่แนะนำ <em class=\"accent\">เราสร้างให้เลย</em>",
+    "ru": "Мы не просто консультируем. <em class=\"accent\">Мы строим за вас.</em>"
+  },
+  "solution_body": {
+    "en": "Rejig Labs maps how your business actually runs, finds the 5% of workflows where AI makes a real difference, then builds and deploys it. You don't get a strategy deck. You get working systems, trained teams, and time back in your week.",
+    "th": "Rejig Labs วิเคราะห์ว่าธุรกิจคุณทำงานยังไง หาจุด 5% ที่ AI จะสร้างความต่างได้จริง แล้วสร้างและติดตั้งให้ คุณจะไม่ได้แค่สไลด์สวย ๆ แต่ได้ระบบที่ใช้ได้จริง ทีมที่พร้อมใช้ และเวลาที่ได้คืน",
+    "ru": "Rejig Labs разбирается, как ваш бизнес работает на самом деле, находит те 5% процессов, где AI даст реальный результат, и внедряет его. Вы получаете не презентацию, а работающие системы, обученную команду и свободное время."
+  },
+  "solution_bold": {
+    "en": "Stop paying for advice that sits in a drawer. <em class=\"accent\">Start paying for AI that's already running.</em>",
+    "th": "เลิกจ่ายเงินกับคำแนะนำที่เก็บฝุ่น <em class=\"accent\">เริ่มลงทุนกับ AI ที่ทำงานให้คุณแล้ววันนี้</em>",
+    "ru": "Хватит платить за советы, которые пылятся в ящике. <em class=\"accent\">Платите за AI, который уже работает.</em>"
+  },
+  "process_h2": {
+    "en": "Every engagement follows <em class=\"accent\">three steps…</em>",
+    "th": "ทุกโปรเจกต์ของเราผ่าน <em class=\"accent\">3 ขั้นตอน…</em>",
+    "ru": "Каждый проект — <em class=\"accent\">три шага…</em>"
+  },
+  "process_identify": {
+    "en": "Identify",
+    "th": "วิเคราะห์",
+    "ru": "Анализ"
+  },
+  "process_identify_desc": {
+    "en": "We map how you win, serve, and keep customers, then find where AI saves the most time. No guesswork.",
+    "th": "เราแมปวิธีที่คุณหาลูกค้า ส่งมอบงาน และดูแลลูกค้า แล้วหาจุดที่ AI ช่วยประหยัดเวลาได้มากที่สุด ไม่มีการเดา",
+    "ru": "Мы разбираем, как вы привлекаете, обслуживаете и удерживаете клиентов, и находим, где AI экономит больше всего времени. Без догадок."
+  },
+  "process_develop": {
+    "en": "Develop",
+    "th": "พัฒนา",
+    "ru": "Разработка"
+  },
+  "process_develop_desc": {
+    "en": "We build AI workflows around the tools you already use. No rip-and-replace, and it pays off from week one.",
+    "th": "เราสร้างเวิร์กโฟลว์ AI รอบเครื่องมือที่คุณใช้อยู่แล้ว ไม่ต้องรื้อระบบเดิม และเห็นผลตั้งแต่สัปดาห์แรก",
+    "ru": "Мы строим AI-процессы вокруг инструментов, которыми вы уже пользуетесь. Без замены систем — результат уже с первой недели."
+  },
+  "process_adopt": {
+    "en": "Adopt",
+    "th": "นำไปใช้",
+    "ru": "Внедрение"
+  },
+  "process_adopt_desc": {
+    "en": "We train your team until the new systems feel normal. When we step back, it's just how you work.",
+    "th": "เราเทรนทีมของคุณจนระบบใหม่กลายเป็นเรื่องปกติ เมื่อเราถอนตัว มันก็กลายเป็นวิธีทำงานของคุณ",
+    "ru": "Мы обучаем вашу команду, пока новые системы не станут привычными. Когда мы уходим, это просто ваш способ работать."
+  },
+  "process_btn": {
+    "en": "Get Started",
+    "th": "เริ่มเลย",
+    "ru": "Начать"
+  },
+  "cs_eyebrow": {
+    "en": "REAL RESULTS",
+    "th": "ผลลัพธ์จริง",
+    "ru": "РЕАЛЬНЫЕ РЕЗУЛЬТАТЫ"
+  },
+  "cs_h2": {
+    "en": "See it in <em class=\"accent\">action.</em>",
+    "th": "ดู<em class=\"accent\">ผลงานจริง</em>",
+    "ru": "Смотрите <em class=\"accent\">в деле.</em>"
+  },
+  "cs_read": {
+    "en": "Read Case Study",
+    "th": "ดูรายละเอียด",
+    "ru": "Подробнее"
+  },
+  "tst_h2": {
+    "en": "Don't just take <em class=\"accent\">our word for it…</em>",
+    "th": "ไม่ต้องเชื่อเรา <em class=\"accent\">ฟังจากลูกค้าเอง…</em>",
+    "ru": "Не верьте нам на слово — <em class=\"accent\">послушайте клиентов…</em>"
+  },
+  "entropy_tagline": {
+    "en": "Turn <strong>chaos</strong> into clarity for your whole company.",
+    "th": "เปลี่ยน<strong>ความยุ่งเหยิง</strong>ให้กลายเป็นความชัดเจนทั้งองค์กร",
+    "ru": "Превратите <strong>хаос</strong> в ясность для всей компании."
+  },
+  "entropy_before": {
+    "en": "before",
+    "th": "ก่อน",
+    "ru": "до"
+  },
+  "entropy_after": {
+    "en": "AFTER",
+    "th": "หลัง",
+    "ru": "ПОСЛЕ"
+  },
+  "stat_1_label": {
+    "en": "average time saved on manual workflows",
+    "th": "เวลาที่ประหยัดได้จากงานแมนนวล",
+    "ru": "среднее время, сэкономленное на ручных процессах"
+  },
+  "stat_2_label": {
+    "en": "to a full AI roadmap for your business",
+    "th": "ถึงแผน AI ฉบับเต็มสำหรับธุรกิจคุณ",
+    "ru": "до полной AI-дорожной карты для вашего бизнеса"
+  },
+  "stat_3_label": {
+    "en": "audited: acquisition, delivery & support",
+    "th": "ตรวจสอบครบ: หาลูกค้า, ส่งมอบ & ซัพพอร์ต",
+    "ru": "проверено: привлечение, работа с клиентами и поддержка"
+  },
+  "stat_4_label": {
+    "en": "implementation-first: we build, not just advise",
+    "th": "ลงมือทำก่อน: สร้างให้เลย ไม่ใช่แค่แนะนำ",
+    "ru": "сначала внедрение: мы строим, а не просто советуем"
+  },
+  "stat_2_unit": {
+    "en": "wks",
+    "th": "สัปดาห์",
+    "ru": "нед."
+  },
+  "stat_3_unit": {
+    "en": "flows",
+    "th": "กระบวนการ",
+    "ru": "процесса"
+  },
+  "faq_h2": {
+    "en": "FAQ<em class=\"accent\">s</em>",
+    "th": "คำถาม<em class=\"accent\">ที่พบบ่อย</em>",
+    "ru": "Вопросы<em class=\"accent\"> и ответы</em>"
+  },
+  "faq_sub": {
+    "en": "You've got questions. We've got answers.",
+    "th": "มีคำถาม? เรามีคำตอบให้",
+    "ru": "У вас вопросы — у нас ответы."
+  },
+  "faq_time": {
+    "en": "Every day, 9:01 AM",
+    "th": "ทุกวัน 9:01 น.",
+    "ru": "Каждый день, 9:01"
+  },
+  "faq_q1": {
+    "en": "How is Rejig Labs different from other AI consultants?",
+    "th": "Rejig Labs ต่างจากที่ปรึกษา AI ที่อื่นยังไง?",
+    "ru": "Чем Rejig Labs отличается от других AI-консультантов?"
+  },
+  "faq_a1": {
+    "en": "Most consultants give you a strategy deck and leave. We stay and build it. RT has hands-on implementation experience across real business workflows, not just conceptual knowledge. We only recommend what we can actually build and deploy ourselves.",
+    "th": "ที่ปรึกษาส่วนใหญ่ให้แค่สไลด์กลยุทธ์แล้วก็ไป แต่เราอยู่สร้างให้จริง RT มีประสบการณ์ลงมือทำกับธุรกิจจริง ไม่ใช่แค่รู้ทฤษฎี เราแนะนำแค่สิ่งที่เราสร้างและติดตั้งได้เอง",
+    "ru": "Большинство консультантов отдают вам красивую презентацию и уходят. Мы остаёмся и строим. У RT реальный опыт внедрения в живых бизнес-процессах, а не просто теория. Мы рекомендуем только то, что сами можем построить и запустить."
+  },
+  "faq_q2": {
+    "en": "How do I know if we're ready for AI?",
+    "th": "จะรู้ได้ยังไงว่าธุรกิจเราพร้อมใช้ AI?",
+    "ru": "Как понять, готовы ли мы к AI?"
+  },
+  "faq_a2": {
+    "en": "If your team is doing repetitive manual work like data entry, follow-ups, reporting, scheduling, or content, you're ready. The audit will tell you exactly where. You don't need clean data or a tech team. That's what the audit is for.",
+    "th": "ถ้าทีมคุณยังทำงานซ้ำ ๆ ด้วยมืออยู่ เช่น กรอกข้อมูล ติดตามงาน ทำรีพอร์ต จัดตาราง ทำคอนเทนต์ แปลว่าพร้อมแล้ว การตรวจสอบของเราจะบอกว่าเริ่มตรงไหนดี ไม่ต้องมีข้อมูลสะอาดหรือทีม IT มาก่อน",
+    "ru": "Если ваша команда делает рутинную работу вручную — ввод данных, напоминания, отчёты, расписания, контент — вы готовы. Аудит покажет, где именно начинать. Не нужны ни чистые данные, ни IT-отдел. Для этого и нужен аудит."
+  },
+  "faq_q3": {
+    "en": "What happens after the audit?",
+    "th": "หลังตรวจสอบเสร็จแล้วได้อะไร?",
+    "ru": "Что происходит после аудита?"
+  },
+  "faq_a3": {
+    "en": "You receive a full AI transformation plan: a 90-day roadmap, prioritised integrations, tool recommendations, and ROI estimates. From there, you can implement it yourself or engage us for Phase 2 (full execution).",
+    "th": "คุณจะได้แผน AI ฉบับเต็ม: แผนงาน 90 วัน, ลำดับความสำคัญของระบบที่ต้องเชื่อมต่อ, เครื่องมือที่แนะนำ, และประมาณการ ROI จากนั้นจะทำเองหรือให้เราทำต่อในเฟส 2 ก็ได้",
+    "ru": "Вы получаете полный план AI-трансформации: дорожную карту на 90 дней, приоритеты по интеграциям, рекомендации по инструментам и оценку ROI. Дальше можете внедрять сами или перейти с нами на Фазу 2 — полное выполнение."
+  },
+  "faq_q4": {
+    "en": "How much internal time will this take?",
+    "th": "ทีมเราต้องใช้เวลาเยอะไหม?",
+    "ru": "Сколько времени это займёт у нашей команды?"
+  },
+  "faq_a4": {
+    "en": "Minimal. We do the heavy lifting. The audit phase requires a few hours of your team's time for discovery calls and process walkthroughs. Implementation is handled by us. Your team only needs to be available for handoff and training.",
+    "th": "น้อยมาก งานหนักเราทำเอง ช่วงตรวจสอบแค่ต้องใช้เวลาทีมคุณไม่กี่ชั่วโมงสำหรับคุยและดูกระบวนการ การติดตั้งเราจัดการให้ ทีมคุณแค่พร้อมรับงานและเข้าเทรนนิ่ง",
+    "ru": "Минимум. Всю тяжёлую работу делаем мы. На этапе аудита нужно несколько часов от вашей команды — созвоны и разбор процессов. Внедрение — полностью на нас. Вашим людям нужно только прийти на обучение и принять систему."
+  },
+  "faq_q5": {
+    "en": "We've already tried AI and it didn't work. Why would this be different?",
+    "th": "เคยลอง AI แล้วไม่เวิร์ค ทำไมครั้งนี้จะต่าง?",
+    "ru": "Мы уже пробовали AI, и не сработало. Почему в этот раз будет иначе?"
+  },
+  "faq_a5": {
+    "en": "Because most AI attempts fail at integration, not technology. The tools work. The problem is mapping them to your specific workflows, getting buy-in, and building systems your team will actually use. That's exactly what we diagnose in the audit phase.",
+    "th": "เพราะ AI ส่วนใหญ่พังตรงการเชื่อมต่อ ไม่ใช่ตัวเทคโนโลยี เครื่องมือมันดีอยู่แล้ว ปัญหาคือยังไม่มีใครมาจับคู่มันกับงานจริงของคุณ ทำให้ทีมยอมใช้ และสร้างระบบที่ทีมจะใช้ต่อจริง ๆ นั่นคือสิ่งที่เราวิเคราะห์ให้",
+    "ru": "Потому что AI чаще всего ломается не на технологии, а на интеграции. Инструменты работают. Проблема — привязать их к вашим конкретным процессам, добиться, чтобы команда приняла изменения, и построить систему, которой реально будут пользоваться. Именно это мы и разбираем на этапе аудита."
+  },
+  "faq_q6": {
+    "en": "We don't have a big tech team. Can we still do this?",
+    "th": "ไม่มีทีมเทคใหญ่ ทำได้ไหม?",
+    "ru": "У нас нет большого IT-отдела. Это вообще возможно?"
+  },
+  "faq_a6": {
+    "en": "Yes, this is built for exactly that situation. Most of our clients have little to no technical team. We handle everything technical. Your job is to understand your own business; our job is to translate that into working AI systems.",
+    "th": "ได้เลย เราทำมาเพื่อกรณีแบบนี้โดยเฉพาะ ลูกค้าเราส่วนใหญ่แทบไม่มีทีมเทค เราจัดการเรื่องเทคนิคทั้งหมด หน้าที่คุณคือรู้จักธุรกิจตัวเอง หน้าที่เราคือแปลงมันเป็นระบบ AI ที่ใช้ได้จริง",
+    "ru": "Да, мы как раз для этого и работаем. У большинства наших клиентов почти нет технической команды. Всю техническую часть берём на себя. Ваша задача — знать свой бизнес. Наша — превратить это в работающие AI-системы."
+  },
+  "closing_1": {
+    "en": "AI is here. Most will react.",
+    "th": "AI มาถึงแล้ว คนส่วนใหญ่จะแค่ตามเกม",
+    "ru": "AI уже здесь. Большинство будут догонять."
+  },
+  "closing_2": {
+    "en": "The few with a plan will lead.",
+    "th": "คนที่มีแผนจะนำหน้า",
+    "ru": "Те, у кого есть план, будут впереди."
+  },
+  "closing_3": {
+    "en": "We build for those few.",
+    "th": "เราสร้างให้คนกลุ่มนั้น",
+    "ru": "Мы работаем для них."
+  },
+  "footer_copy": {
+    "en": "© 2026 Rejig Labs · An arm of Rejig Labs · Thailand",
+    "th": "© 2026 Rejig Labs · ภายใต้ Rejig Labs · ประเทศไทย",
+    "ru": "© 2026 Rejig Labs · Подразделение Rejig Labs · Таиланд"
+  },
+  "footer_privacy": {
+    "en": "Privacy",
+    "th": "ความเป็นส่วนตัว",
+    "ru": "Конфиденциальность"
+  },
+  "footer_terms": {
+    "en": "Terms",
+    "th": "ข้อกำหนด",
+    "ru": "Условия"
+  },
+  "cap_eyebrow": {
+    "en": "WHAT WE BUILD",
+    "th": "สิ่งที่เราสร้าง",
+    "ru": "ЧТО МЫ СОЗДАЁМ"
+  },
+  "cap_h2": {
+    "en": "One team, the whole <em class=\"accent\">AI stack.</em>",
+    "th": "ทีมเดียว ดูแล<em class=\"accent\">ระบบ AI ทั้งหมด</em>",
+    "ru": "Одна команда, весь <em class=\"accent\">стек ИИ.</em>"
+  },
+  "cap_sub": {
+    "en": "From voice agents that answer the phone to autonomous systems that run for months. If it can be automated with AI, we build and ship it.",
+    "th": "ตั้งแต่เอเจนต์เสียงที่รับโทรศัพท์ ไปจนถึงระบบอัตโนมัติที่ทำงานต่อเนื่องได้หลายเดือน ถ้างานไหนใช้ AI ทำแทนได้ เราสร้างและส่งมอบให้",
+    "ru": "От голосовых агентов, отвечающих на звонки, до автономных систем, работающих месяцами. Если это можно автоматизировать с ИИ, мы это построим и запустим."
+  },
+  "cap_1_t": {
+    "en": "Voice AI Agents",
+    "th": "เอเจนต์เสียง AI",
+    "ru": "Голосовые ИИ-агенты"
+  },
+  "cap_1_d": {
+    "en": "Phone answered, language detected, slot booked. 24/7.",
+    "th": "รับสาย ตรวจจับภาษา จองคิวให้อัตโนมัติ ตลอด 24 ชม.",
+    "ru": "Приняли звонок, определили язык, записали на приём. 24/7."
+  },
+  "cap_2_t": {
+    "en": "Chat & Messaging",
+    "th": "แชทและข้อความ",
+    "ru": "Чат и мессенджеры"
+  },
+  "cap_2_d": {
+    "en": "One brain across web, LINE and social.",
+    "th": "สมองเดียวครอบคลุมเว็บ LINE และโซเชียล",
+    "ru": "Один мозг для сайта, LINE и соцсетей."
+  },
+  "cap_3_t": {
+    "en": "Content Engines",
+    "th": "เครื่องมือสร้างคอนเทนต์",
+    "ru": "Контент-движки"
+  },
+  "cap_3_d": {
+    "en": "14 posts in seconds, approved in one click.",
+    "th": "14 โพสต์ในไม่กี่วินาที อนุมัติได้ในคลิกเดียว",
+    "ru": "14 постов за секунды, одобрение в один клик."
+  },
+  "cap_4_t": {
+    "en": "Autonomous Agents",
+    "th": "เอเจนต์อัตโนมัติ",
+    "ru": "Автономные агенты"
+  },
+  "cap_4_d": {
+    "en": "Research, decide and deliver, on a schedule.",
+    "th": "ค้นคว้า ตัดสินใจ และส่งมอบ ตามตารางเวลา",
+    "ru": "Исследуют, решают и выдают результат по расписанию."
+  },
+  "cap_5_t": {
+    "en": "CRM & Workflow",
+    "th": "CRM และเวิร์กโฟลว์",
+    "ru": "CRM и рабочие процессы"
+  },
+  "cap_5_d": {
+    "en": "Follow-ups and pipelines that fire themselves.",
+    "th": "การติดตามและไปป์ไลน์ที่ทำงานเอง",
+    "ru": "Напоминания и воронки, работающие сами."
+  },
+  "cap_6_t": {
+    "en": "Web & Registration",
+    "th": "เว็บและระบบลงทะเบียน",
+    "ru": "Сайты и регистрация"
+  },
+  "cap_6_d": {
+    "en": "Trilingual sites, funnels, payments.",
+    "th": "เว็บสามภาษา ฟันเนล ระบบชำระเงิน",
+    "ru": "Трёхъязычные сайты, воронки, оплаты."
+  },
+  "cap_7_t": {
+    "en": "Knowledge / RAG",
+    "th": "ฐานความรู้ / RAG",
+    "ru": "База знаний / RAG"
+  },
+  "cap_7_d": {
+    "en": "Your documents become an assistant.",
+    "th": "เปลี่ยนเอกสารของคุณให้เป็นผู้ช่วย",
+    "ru": "Ваши документы становятся ассистентом."
+  },
+  "cap_8_t": {
+    "en": "HR & Recruiting",
+    "th": "HR และการสรรหา",
+    "ru": "HR и найм"
+  },
+  "cap_8_d": {
+    "en": "Screening, scheduling, onboarding.",
+    "th": "คัดกรอง นัดหมาย ต้อนรับพนักงานใหม่",
+    "ru": "Отбор, планирование, онбординг."
+  },
+  "cap_9_t": {
+    "en": "Finance & Accounting",
+    "th": "การเงินและบัญชี",
+    "ru": "Финансы и учёт"
+  },
+  "cap_9_d": {
+    "en": "Invoicing, reconciliation, reporting.",
+    "th": "ออกใบแจ้งหนี้ กระทบยอด รายงาน",
+    "ru": "Счета, сверки, отчётность."
+  },
+  "ind_eyebrow": {
+    "en": "WHERE WE DEPLOY",
+    "th": "เราใช้งานที่ไหนบ้าง",
+    "ru": "ГДЕ МЫ ВНЕДРЯЕМ"
+  },
+  "ind_h2": {
+    "en": "Built for the way <em class=\"accent\">your industry runs.</em>",
+    "th": "สร้างมาเพื่อวิธีการทำงานของ<em class=\"accent\">อุตสาหกรรมคุณ</em>",
+    "ru": "Создано под то, как работает <em class=\"accent\">ваша отрасль.</em>"
+  },
+  "ind_sub": {
+    "en": "Same engine, tuned to the workflow. Here is the first thing we would automate in each.",
+    "th": "เครื่องยนต์เดียวกัน ปรับจูนตามเวิร์กโฟลว์ นี่คือสิ่งแรกที่เราจะทำให้เป็นอัตโนมัติในแต่ละธุรกิจ",
+    "ru": "Один движок, настроенный под процесс. Вот что мы автоматизировали бы первым в каждой отрасли."
+  },
+  "ind_1_n": {
+    "en": "Hospitality",
+    "th": "งานบริการและโรงแรม",
+    "ru": "Гостеприимство"
+  },
+  "ind_1_d": {
+    "en": "An AI front desk that takes bookings by phone, chat and LINE, in every guest's language, around the clock.",
+    "th": "แผนกต้อนรับ AI ที่รับจองผ่านโทรศัพท์ แชท และ LINE ในภาษาของลูกค้าทุกคน ตลอด 24 ชั่วโมง",
+    "ru": "ИИ-ресепшн, принимающий брони по телефону, в чате и LINE, на языке каждого гостя, круглосуточно."
+  },
+  "ind_2_n": {
+    "en": "Clinics & Healthcare",
+    "th": "คลินิกและสุขภาพ",
+    "ru": "Клиники и здравоохранение"
+  },
+  "ind_2_d": {
+    "en": "Patient intake, reminders and follow-ups that cut no-shows and free your front-of-house staff.",
+    "th": "รับข้อมูลผู้ป่วย แจ้งเตือน และติดตามผล ลดการไม่มาตามนัดและช่วยแบ่งเบางานหน้าเคาน์เตอร์",
+    "ru": "Приём пациентов, напоминания и контроль, снижающие неявки и разгружающие ресепшн."
+  },
+  "ind_3_n": {
+    "en": "Agencies",
+    "th": "เอเจนซี",
+    "ru": "Агентства"
+  },
+  "ind_3_d": {
+    "en": "Content and reporting automated end-to-end, so a lean team ships three times the output.",
+    "th": "คอนเทนต์และรายงานอัตโนมัติครบวงจร ทีมเล็กก็ผลิตงานได้มากกว่าเดิมสามเท่า",
+    "ru": "Контент и отчётность автоматизированы от и до, и небольшая команда выдаёт втрое больше."
+  },
+  "ind_4_n": {
+    "en": "E-Commerce & Retail",
+    "th": "อีคอมเมิร์ซและค้าปลีก",
+    "ru": "E-commerce и ритейл"
+  },
+  "ind_4_d": {
+    "en": "A 24/7 support agent that answers, upsells and recovers abandoned carts on its own.",
+    "th": "เอเจนต์ซัพพอร์ตตลอด 24 ชม. ที่ตอบคำถาม เสนอขายเพิ่ม และดึงตะกร้าที่ถูกทิ้งกลับมาได้เอง",
+    "ru": "Агент поддержки 24/7, который отвечает, допродаёт и сам возвращает брошенные корзины."
+  },
+  "ind_5_n": {
+    "en": "Logistics",
+    "th": "โลจิสติกส์",
+    "ru": "Логистика"
+  },
+  "ind_5_d": {
+    "en": "Dispatch and routing that adapts in real time and keeps customers updated automatically.",
+    "th": "การจัดส่งและวางเส้นทางที่ปรับตัวแบบเรียลไทม์ และอัปเดตลูกค้าให้อัตโนมัติ",
+    "ru": "Диспетчеризация и маршрутизация в реальном времени с автоматическим оповещением клиентов."
+  },
+  "ind_6_n": {
+    "en": "Professional Services",
+    "th": "บริการมืออาชีพ",
+    "ru": "Профессиональные услуги"
+  },
+  "ind_6_d": {
+    "en": "Intake, proposals and client comms handled, so billable hours go to the real work.",
+    "th": "รับงาน จัดทำข้อเสนอ และสื่อสารกับลูกค้าให้เรียบร้อย เพื่อให้ชั่วโมงที่เก็บเงินได้ไปอยู่กับงานจริง",
+    "ru": "Приём заявок, предложения и общение с клиентами берём на себя, чтобы оплачиваемые часы шли на настоящую работу."
+  },
+  "ind_7_n": {
+    "en": "Real Estate",
+    "th": "อสังหาริมทรัพย์",
+    "ru": "Недвижимость"
+  },
+  "ind_7_d": {
+    "en": "Leads qualified and viewings booked the moment an enquiry lands, day or night.",
+    "th": "คัดกรองลูกค้าและจองนัดชมทันทีที่มีการสอบถามเข้ามา ไม่ว่ากลางวันหรือกลางคืน",
+    "ru": "Квалификация лидов и запись на просмотры сразу после обращения, днём и ночью."
+  },
+  "ind_8_n": {
+    "en": "Fintech",
+    "th": "ฟินเทค",
+    "ru": "Финтех"
+  },
+  "ind_8_d": {
+    "en": "KYC, support and reporting workflows, each with a human check on every step.",
+    "th": "เวิร์กโฟลว์ KYC ซัพพอร์ต และรายงาน โดยมีคนตรวจสอบในทุกขั้นตอน",
+    "ru": "Процессы KYC, поддержки и отчётности, где на каждом шаге есть проверка человеком."
+  },
+  "sec_eyebrow": {
+    "en": "SECURITY & DATA",
+    "th": "ความปลอดภัยและข้อมูล",
+    "ru": "БЕЗОПАСНОСТЬ И ДАННЫЕ"
+  },
+  "sec_h2": {
+    "en": "Enterprise-grade <em class=\"accent\">by default.</em>",
+    "th": "ระดับองค์กร<em class=\"accent\">ตั้งแต่เริ่มต้น</em>",
+    "ru": "Корпоративный уровень <em class=\"accent\">по умолчанию.</em>"
+  },
+  "sec_sub": {
+    "en": "How we handle the thing that matters most: your data and your accounts.",
+    "th": "วิธีที่เราดูแลสิ่งที่สำคัญที่สุด นั่นคือข้อมูลและบัญชีของคุณ",
+    "ru": "Как мы обращаемся с самым важным: вашими данными и аккаунтами."
+  },
+  "sec_1_t": {
+    "en": "Client data isolation",
+    "th": "การแยกข้อมูลลูกค้า",
+    "ru": "Изоляция данных клиента"
+  },
+  "sec_1_d": {
+    "en": "Each client runs in its own isolated environment. Your data never mixes with anyone else's.",
+    "th": "ลูกค้าแต่ละรายทำงานในสภาพแวดล้อมที่แยกจากกัน ข้อมูลของคุณจะไม่ปะปนกับใคร",
+    "ru": "Каждый клиент работает в своей изолированной среде. Ваши данные никогда не смешиваются с чужими."
+  },
+  "sec_2_t": {
+    "en": "Secrets never in code",
+    "th": "ไม่เก็บความลับไว้ในโค้ด",
+    "ru": "Секреты не хранятся в коде"
+  },
+  "sec_2_d": {
+    "en": "Keys in protected env storage, with automated secret scanning on every commit.",
+    "th": "เก็บคีย์ไว้ในที่จัดเก็บ env ที่ป้องกันไว้ พร้อมสแกนหาความลับอัตโนมัติทุกครั้งที่ commit",
+    "ru": "Ключи в защищённом env-хранилище, с автоматическим сканированием секретов при каждом коммите."
+  },
+  "sec_3_t": {
+    "en": "You own everything",
+    "th": "ทุกอย่างเป็นของคุณ",
+    "ru": "Всё принадлежит вам"
+  },
+  "sec_3_d": {
+    "en": "Your accounts and data, fully exportable. No lock-in.",
+    "th": "บัญชีและข้อมูลของคุณ ส่งออกได้ทั้งหมด ไม่มีการผูกมัด",
+    "ru": "Ваши аккаунты и данные полностью выгружаются. Никакой привязки."
+  },
+  "sec_4_t": {
+    "en": "Human-in-the-loop",
+    "th": "มีคนตรวจสอบเสมอ",
+    "ru": "Человек в контуре"
+  },
+  "sec_4_d": {
+    "en": "Nothing sends or publishes without an approval step you control.",
+    "th": "ไม่มีอะไรถูกส่งหรือเผยแพร่โดยไม่ผ่านขั้นตอนอนุมัติที่คุณควบคุม",
+    "ru": "Ничего не отправляется и не публикуется без шага одобрения, который контролируете вы."
+  },
+  "sec_5_t": {
+    "en": "PDPA-aware",
+    "th": "สอดคล้องกับ PDPA",
+    "ru": "С учётом PDPA"
+  },
+  "sec_5_d": {
+    "en": "Thailand data-protection-conscious handling by default.",
+    "th": "จัดการข้อมูลโดยคำนึงถึงกฎหมายคุ้มครองข้อมูลของไทยเป็นค่าเริ่มต้น",
+    "ru": "Обработка данных с учётом законодательства Таиланда о защите данных по умолчанию."
+  },
+  "sec_6_t": {
+    "en": "Frameworks on request",
+    "th": "มาตรฐานตามที่ร้องขอ",
+    "ru": "Стандарты по запросу"
+  },
+  "sec_6_d": {
+    "en": "SOC 2 / ISO alignment documentation available for enterprise engagements.",
+    "th": "มีเอกสารการปฏิบัติตาม SOC 2 / ISO สำหรับงานระดับองค์กรเมื่อร้องขอ",
+    "ru": "Документация о соответствии SOC 2 / ISO доступна для корпоративных проектов."
+  },
+  "seo_title": {
+    "en": "Rejig Labs | AI That Actually Moves the Needle",
+    "th": "รับวางระบบ AI & แชทบอทอัตโนมัติ สำหรับธุรกิจ SME | Rejig Labs"
+  },
+  "seo_desc": {
+    "en": "Rejig Labs finds where AI saves your business real time and real money, then builds it, implements it, and trains your team to run it.",
+    "th": "Rejig Labs ที่ปรึกษาและรับวางระบบ AI สำหรับธุรกิจ SME ในไทย เราหาจุดที่ AI ช่วยลดต้นทุนและเวลา แล้วสร้างแชทบอท AI ระบบตอบลูกค้าอัตโนมัติ พร้อมอบรมทีมให้ใช้งานได้จริง"
+  }
 }
