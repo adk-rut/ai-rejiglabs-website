@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Served at /case-studies/<slug> via rewrite; base keeps relative assets resolving from root -->
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From a $60K/year content team to a fully autonomous system | Rejig Labs</title>
+  <meta name="description" content="BoBe's content team cost $60K/year and took 1–2 days per batch. We built an autonomous system that generates 14 pieces of content in seconds for under $30/month.">
+
+  <!-- Consent Mode v2 defaults: analytics OFF until the visitor accepts -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update': 500
+    });
+    try {
+      if (localStorage.getItem('rejig_consent') === 'granted') {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted', 'analytics_storage': 'granted',
+          'ad_user_data': 'granted', 'ad_personalization': 'granted'
+        });
+      }
+    } catch (e) {}
+  </script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BB5D5KCXM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1BB5D5KCXM');
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "w91b1gltmo");
+  </script>
+
+  <meta property="og:title" content="From a $60K/year content team to a fully autonomous system | Rejig Labs">
+  <meta property="og:description" content="BoBe's content team cost $60K/year and took 1–2 days per batch. We built an autonomous system that generates 14 pieces of content in seconds for under $30/month.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://rejiglabs.com/assets/og/case-bobe.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="From a $60K/year content team to a fully autonomous system | Rejig Labs">
+  <meta name="twitter:description" content="BoBe's content team cost $60K/year and took 1–2 days per batch. We built an autonomous system that generates 14 pieces of content in seconds for under $30/month.">
+  <meta name="twitter:image" content="https://rejiglabs.com/assets/og/case-bobe.png">
+  <meta name="theme-color" content="#f7f8fc">
+
+  <link rel="icon" href="assets/logo.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Vercel Web Analytics -->
+  <script>window.va=window.va||function(){(window.vai=window.vai||[]).push(arguments);};</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+
+  <!-- Vercel Speed Insights -->
+  <script>window.si=window.si||function(){(window.siq=window.siq||[]).push(arguments);};</script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+  <link rel="canonical" href="https://rejiglabs.com/case-studies/bobe">
+  <meta property="og:url" content="https://rejiglabs.com/case-studies/bobe">
+  <script type="application/ld+json" id="cs-jsonld">{"@context":"https://schema.org","@type":"Article","headline":"BoBe: From a $60K/year content team to a fully autonomous system","description":"BoBe's content team cost $60K/year and took 1–2 days per batch. We built an autonomous system that generates 14 pieces of content in seconds for under $30/month.","url":"https://rejiglabs.com/case-studies/bobe","inLanguage":"en","image":"https://rejiglabs.com/assets/og/case-bobe.png","about":{"@type":"Thing","name":"BoBe (AI Trading Platform)"},"author":{"@type":"Organization","name":"Rejig Labs","url":"https://rejiglabs.com"},"publisher":{"@type":"Organization","name":"Rejig Labs","logo":{"@type":"ImageObject","url":"https://rejiglabs.com/assets/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://rejiglabs.com/case-studies/bobe"}}</script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav nav--scrolled" id="nav">
+    <a href="index.html" class="nav__logo">
+      <img src="assets/logo.png" class="nav__logomark" alt="RL" width="32" height="26">
+      <span>Rejig Labs</span>
+    </a>
+    <div class="nav__links">
+      <a href="index.html#services" class="nav__link" data-i18n="nav_services">Services</a>
+      <a href="index.html#process" class="nav__link" data-i18n="nav_process">Process</a>
+      <a href="index.html#case-studies" class="nav__link" data-i18n="nav_case_studies">Case Studies</a>
+      <div class="nav__lang"><button data-lang="en" class="active">EN</button><button data-lang="th">TH</button><button data-lang="ru">RU</button></div>
+      <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="nav__cta">Get In Touch <span>›</span></button>
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#services" class="mobile-menu__link" data-i18n="nav_services">Services</a>
+    <a href="index.html#process" class="mobile-menu__link" data-i18n="nav_process">Process</a>
+    <a href="index.html#case-studies" class="mobile-menu__link" data-i18n="nav_case_studies">Case Studies</a>
+    <div class="mobile-menu__link nav__lang"><button data-lang="en" class="active">EN</button><button data-lang="th">TH</button><button data-lang="ru">RU</button></div>
+    <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="mobile-menu__link mobile-menu__link--cta">Get In Touch</button>
+  </div>
+
+  <main>
+    <div id="case-study-page"></div>
+  </main>
+
+  <footer class="closing-footer">
+    <div class="footer__glow"></div>
+    <div class="closing__content">
+      <div class="closing__h2">
+        <span class="closing__line in-view" data-i18n="closing_1">AI is here. Most will react.</span>
+        <span class="closing__line in-view" data-i18n="closing_2">The few with a plan will lead.</span>
+        <span class="closing__line in-view"><em class="accent" data-i18n="closing_3">We build for those few.</em></span>
+      </div>
+      <div class="closing__btn-wrap animate" id="closingBtnWrap">
+        <svg class="closing__circle" viewBox="0 0 300 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path class="closing__circle-path" d="M 260 18 C 310 40, 298 95, 150 105 C 20 105, -12 70, 8 55 C 30 20, 100 12, 150 12 C 230 12, 280 30, 260 38" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="btn"><span class="btn__text">Book a Discovery Call</span><span class="btn__hover">Book a Discovery Call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
+      </div>
+    </div>
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.png" alt="Rejig Labs" class="footer__logo" width="40" height="33" loading="lazy">
+        <span>Rejig Labs</span>
+      </div>
+      <p>&copy; 2026 Rejig Labs &middot; An arm of Rejig Labs &middot; Thailand &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
+      <div class="footer__socials">
+        <a href="https://x.com/rejiglabs" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="X / Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://linkedin.com/company/rejiglabs" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://youtube.com/@rejiglabs" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="mailto:hello@rejiglabs.com" class="footer__social-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/case-studies.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/consent.js" defer></script>
+
+  <!-- Nav toggle (minimal) -->
+  <script>
+    (() => {
+      const navToggle = document.getElementById('navToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      navToggle.addEventListener('click', () => {
+        const open = mobileMenu.classList.toggle('open');
+        navToggle.classList.toggle('open', open);
+      });
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('open');
+          navToggle.classList.remove('open');
+        });
+      });
+    })();
+  </script>
+
+  <!-- Cal.com Embed -->
+  <script type="text/javascript">
+    (function (C, A, L) {
+      let p = function (a, ar) { a.q.push(ar); };
+      let d = C.document;
+      C.Cal = C.Cal || function () {
+        let cal = C.Cal;
+        let ar = arguments;
+        if (!cal.loaded) {
+          cal.ns = {};
+          cal.q = cal.q || [];
+          d.head.appendChild(d.createElement("script")).src = A;
+          cal.loaded = true;
+        }
+        if (ar[0] === L) {
+          const api = function () { p(api, arguments); };
+          const namespace = ar[1];
+          api.q = api.q || [];
+          if (typeof namespace === "string") {
+            cal.ns[namespace] = cal.ns[namespace] || api;
+            p(cal.ns[namespace], ar);
+            p(cal, ["initNamespace", namespace]);
+          } else p(cal, ar);
+          return;
+        }
+        p(cal, ar);
+      };
+    })(window, "https://app.cal.com/embed/embed.js", "init");
+
+    Cal("init", "discovery", { origin: "https://cal.com" });
+    Cal.ns.discovery("ui", {
+      hideEventTypeDetails: false,
+      layout: "month_view"
+    });
+  </script>
+</body>
+</html>
