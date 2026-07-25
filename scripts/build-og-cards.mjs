@@ -51,7 +51,8 @@ export function cardHtml(cs, logoHref) {
      font-size:${headlineSize(cs.headline)}px;line-height:1.12;margin:28px 0 0;max-width:940px}
   .rule{width:96px;height:4px;background:#0033cc;margin:34px 0 0}
   .bottom{display:flex;align-items:center;gap:26px;margin-top:44px}
-  .bottom img{height:56px;width:auto}
+  /* multiply drops the white box on JPG logos; harmless for transparent PNGs. */
+  .bottom img{height:56px;width:auto;mix-blend-mode:multiply}
   .wm{font-size:23px;color:rgba(26,29,46,.42)}
 </style>
 <div class="card">

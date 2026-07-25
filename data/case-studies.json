@@ -221,22 +221,10 @@
             "caption_ru": "Точные фейды и работа под ноль; в час пик заняты все кресла."
           },
           {
-            "src": "assets/duckycutz/craft-shave.jpg",
-            "caption": "Hot-towel straight-razor shaves, a full-service experience.",
-            "caption_th": "โกนหนวดด้วยมีดโกนและผ้าร้อน บริการครบครัน",
-            "caption_ru": "Бритьё опасной бритвой с горячим полотенцем: сервис полного цикла."
-          },
-          {
             "src": "assets/duckycutz/craft-art.jpg",
             "caption": "Custom hair art, the kind of work clients book ahead for.",
             "caption_th": "งานลายผมแบบเฉพาะตัว งานที่ลูกค้าต้องจองล่วงหน้า",
             "caption_ru": "Художественные узоры на волосах: ради такого записываются заранее."
-          },
-          {
-            "src": "assets/duckycutz/craft-curls.jpg",
-            "caption": "Cuts and perms for every hair type, Thai and tourist clients alike.",
-            "caption_th": "ตัดและดัดผมได้ทุกแบบ ทั้งลูกค้าคนไทยและนักท่องเที่ยว",
-            "caption_ru": "Стрижки и завивка для любого типа волос, и тайцы, и туристы."
           }
         ]
       },
@@ -256,6 +244,44 @@
             "caption": "Prefer to talk? The AI answers the phone and books the slot itself.",
             "caption_th": "อยากคุยมากกว่า? AI รับสายและจองคิวให้เอง",
             "caption_ru": "Удобнее поговорить? AI отвечает на звонок и сам бронирует слот."
+          }
+        ]
+      },
+      {
+        "category": "Under the Hood",
+        "category_th": "เบื้องหลังระบบ",
+        "category_ru": "Как это устроено",
+        "wide": false,
+        "items": [
+          {
+            "src": "assets/duckycutz/front-desk-flow.png",
+            "caption": "Every enquiry follows the same path: detect the language, check the calendar, book it or log it.",
+            "caption_th": "ทุกการติดต่อเดินตามเส้นทางเดียวกัน ตรวจจับภาษา เช็กปฏิทิน แล้วจองหรือบันทึกไว้",
+            "caption_ru": "Каждое обращение идёт одним путём: определить язык, проверить календарь, записать или зафиксировать."
+          },
+          {
+            "src": "assets/duckycutz/dashboard-overview.png",
+            "caption": "The shop sees every call, what it cost and whether it booked. Client dashboard, sample data.",
+            "caption_th": "ร้านเห็นทุกสาย ค่าใช้จ่าย และผลว่าจองได้หรือไม่ แดชบอร์ดลูกค้า ข้อมูลตัวอย่าง",
+            "caption_ru": "Салон видит каждый звонок, его стоимость и была ли запись. Панель клиента, демонстрационные данные."
+          },
+          {
+            "src": "assets/duckycutz/dashboard-reports.png",
+            "caption": "Monthly reporting: bookings by language and by barber. Client dashboard, sample data.",
+            "caption_th": "รายงานรายเดือน การจองแยกตามภาษาและตามช่าง แดชบอร์ดลูกค้า ข้อมูลตัวอย่าง",
+            "caption_ru": "Ежемесячный отчёт: записи по языкам и по мастерам. Панель клиента, демонстрационные данные."
+          },
+          {
+            "src": "assets/duckycutz/form-barber.png",
+            "caption": "Barbers log a walk-in from their phone, so the shop's own bookings land in the same calendar.",
+            "caption_th": "ช่างบันทึกลูกค้า walk-in จากมือถือ การจองของร้านจึงลงปฏิทินเดียวกัน",
+            "caption_ru": "Мастера отмечают клиента без записи с телефона, и эти записи попадают в тот же календарь."
+          },
+          {
+            "src": "assets/duckycutz/form-customer.png",
+            "caption": "Customers book themselves in the same few taps, in their own language.",
+            "caption_th": "ลูกค้าจองเองได้ในไม่กี่แตะ ด้วยภาษาของตัวเอง",
+            "caption_ru": "Клиенты записываются сами за пару касаний, на своём языке."
           }
         ]
       }
@@ -405,5 +431,97 @@
     ],
     "published": true,
     "logo": "assets/anrcf-golf/anrcf-logo.png"
+  },
+  {
+    "slug": "me-elevator",
+    "client": "Mobile Engineer",
+    "industry": "Elevator Installation and Service, Phuket",
+    "industry_th": "ติดตั้งและบริการลิฟต์ ภูเก็ต",
+    "industry_ru": "Монтаж и обслуживание лифтов, Пхукет",
+    "headline": "A trade business with no marketing function, given one that pays for itself",
+    "headline_th": "ธุรกิจช่างที่ไม่มีฝ่ายการตลาด ได้ระบบที่คืนทุนให้ตัวเอง",
+    "headline_ru": "Технический бизнес без маркетинга получил систему, которая окупает себя",
+    "summary": "Mobile Engineer has installed and serviced elevators in Phuket since 1998, with no website and no way to turn an enquiry into a booked installation. We built the site from scratch, structured it for both search and AI answer engines, set up the CRM, and reworked how leads move through the business. The site has since brought in a client worth ฿X00,000+.",
+    "summary_th": "Mobile Engineer ติดตั้งและดูแลลิฟต์ในภูเก็ตมาตั้งแต่ปี 2541 โดยไม่มีเว็บไซต์ และไม่มีวิธีเปลี่ยนผู้สนใจให้กลายเป็นงานติดตั้งจริง เราสร้างเว็บไซต์ใหม่ทั้งหมด วางโครงสร้างให้ถูกค้นเจอทั้งบนเสิร์ชและบน AI จัดระบบ CRM และปรับเส้นทางของลูกค้าใหม่ทั้งกระบวนการ หลังจากนั้นเว็บไซต์พาลูกค้ามูลค่ากว่า ฿X00,000+ เข้ามา",
+    "summary_ru": "Mobile Engineer монтирует и обслуживает лифты на Пхукете с 1998 года, но без сайта и без способа превратить обращение в подтверждённый монтаж. Мы собрали сайт с нуля, выстроили его под поиск и под AI-ответы, настроили CRM и перестроили путь заявки внутри компании. С тех пор сайт привёл клиента на сумму ฿X00,000+.",
+    "image": "assets/me-elevator/home.png",
+    "logo": "assets/me-elevator/me-mark.png",
+    "stats": [
+      {
+        "value": "1",
+        "label": "Client Won",
+        "label_th": "ลูกค้าที่ได้มา",
+        "label_ru": "Клиент привлечён"
+      },
+      {
+        "value": "฿X00,000+",
+        "label": "Deal Value",
+        "label_th": "มูลค่างาน",
+        "label_ru": "Стоимость сделки"
+      },
+      {
+        "value": "5",
+        "label": "Workstreams Delivered",
+        "label_th": "งานที่ส่งมอบ",
+        "label_ru": "Направлений работы"
+      },
+      {
+        "value": "From scratch",
+        "label": "Built",
+        "label_th": "สร้างใหม่ทั้งหมด",
+        "label_ru": "Построено с нуля"
+      }
+    ],
+    "challenge": "A technical trade business with no marketing function. Mobile Engineer had 28 years of elevator installation and service behind it, hotels and hospitals on its client list, and no website, no lead system, and no defined path from an enquiry to an installed lift. Buyers searching for an elevator contractor in Phuket, in Thai or in English, could not find them. Enquiries that did arrive went into phones and notebooks and were followed up by memory.",
+    "challenge_th": "ธุรกิจช่างเทคนิคที่ไม่มีฝ่ายการตลาด Mobile Engineer มีประสบการณ์ติดตั้งและดูแลลิฟต์มา 28 ปี มีโรงแรมและโรงพยาบาลเป็นลูกค้า แต่ไม่มีเว็บไซต์ ไม่มีระบบเก็บผู้สนใจ และไม่มีเส้นทางที่ชัดเจนจากคำถามแรกไปจนถึงลิฟต์ที่ติดตั้งเสร็จ ผู้ที่ค้นหาผู้รับเหมาลิฟต์ในภูเก็ตทั้งภาษาไทยและอังกฤษหาพวกเขาไม่เจอ ส่วนคำถามที่เข้ามาก็อยู่ในโทรศัพท์และสมุดจด แล้วติดตามด้วยความจำ",
+    "challenge_ru": "Технический бизнес без маркетинговой функции. За Mobile Engineer 28 лет монтажа и обслуживания лифтов, отели и больницы в списке клиентов — и при этом ни сайта, ни системы работы с заявками, ни понятного пути от обращения до сданного лифта. Те, кто искал лифтового подрядчика на Пхукете по-тайски или по-английски, просто не находили компанию. А поступавшие обращения оседали в телефонах и блокнотах, и до них доходили по памяти.",
+    "solution": "Five workstreams, delivered end to end. We built the website from scratch in Thai and English, covering installation, maintenance, repair and consulting as separate pages a buyer can actually land on. We structured it for search and for AI answer engines, so the business is findable whether someone types a query into Google or asks an assistant who installs lifts in Phuket. We set up the CRM so every enquiry is captured and owned rather than remembered. We advised on positioning and go to market: what to lead with, who to talk to, and which jobs are worth chasing. And we reworked how leads move through the business end to end, from first contact to quote to installed lift.",
+    "solution_th": "งานห้าส่วน ส่งมอบครบตั้งแต่ต้นจนจบ เราสร้างเว็บไซต์ใหม่ทั้งหมดทั้งภาษาไทยและอังกฤษ ครอบคลุมงานติดตั้ง บำรุงรักษา ซ่อม และให้คำปรึกษา แยกเป็นหน้าที่ลูกค้าเข้ามาถึงได้จริง เราวางโครงสร้างให้รองรับทั้งเสิร์ชและ AI ที่ตอบคำถาม ธุรกิจจึงถูกค้นเจอไม่ว่าจะพิมพ์ใน Google หรือถามผู้ช่วย AI ว่าใครติดตั้งลิฟต์ในภูเก็ต เราจัดระบบ CRM ให้ทุกคำถามถูกเก็บและมีเจ้าของ ไม่ใช่แค่จำไว้ เราให้คำแนะนำเรื่องการวางตำแหน่งและการเข้าตลาด ว่าควรชูอะไร คุยกับใคร และงานแบบไหนที่คุ้มค่าจะไล่ตาม และเราปรับเส้นทางของลูกค้าใหม่ทั้งกระบวนการ ตั้งแต่ติดต่อครั้งแรก ไปจนถึงใบเสนอราคา และลิฟต์ที่ติดตั้งเสร็จ",
+    "solution_ru": "Пять направлений работы, выполненных целиком. Мы собрали сайт с нуля на тайском и английском: монтаж, обслуживание, ремонт и консультации — каждое отдельной страницей, на которую покупатель реально может попасть. Мы выстроили структуру под поиск и под AI-ответы, чтобы компанию находили и через запрос в Google, и когда у ассистента спрашивают, кто ставит лифты на Пхукете. Мы настроили CRM, чтобы каждое обращение фиксировалось и имело владельца, а не держалось в памяти. Мы проконсультировали по позиционированию и выходу на рынок: с чего начинать разговор, с кем говорить и за какие объекты стоит браться. И мы перестроили путь заявки внутри компании — от первого контакта до сметы и сданного лифта.",
+    "results": "The site produced a client, attributable to the site, worth ฿X00,000+. In elevator installation and maintenance one buyer is a six-figure deal, so a single won job pays for the whole build several times over. Traffic is deliberately not the headline here: the site draws roughly 30 visits a month and 21 organic search sessions across the past year, because the number of people searching for an elevator contractor in Phuket in any given month is small. That is the entire addressable market, and being the one they find is worth more than volume. Suchart's team now has an online presence that matches the quality of the work they do on the ground.",
+    "results_th": "เว็บไซต์พาลูกค้าเข้ามาหนึ่งราย ซึ่งเป็นผลจากเว็บไซต์โดยตรง มูลค่ากว่า ฿X00,000+ ในงานติดตั้งและดูแลลิฟต์ ลูกค้าหนึ่งรายคืองานหลักแสน งานเดียวที่ปิดได้จึงคุ้มค่าการสร้างทั้งระบบหลายเท่า ที่นี่เราไม่ได้ชูตัวเลขทราฟฟิกเป็นหัวข้อหลัก เว็บไซต์มีผู้เข้าชมราว 30 ครั้งต่อเดือน และมีเซสชันจากการค้นหาแบบธรรมชาติ 21 ครั้งในรอบปีที่ผ่านมา เพราะคนที่ค้นหาผู้รับเหมาลิฟต์ในภูเก็ตในแต่ละเดือนมีจำนวนน้อยอยู่แล้ว นั่นคือตลาดทั้งหมดที่มี และการเป็นรายที่พวกเขาหาเจอมีค่ามากกว่าปริมาณ วันนี้ทีมของ Suchart มีตัวตนออนไลน์ที่สมกับคุณภาพงานจริงหน้างาน",
+    "results_ru": "Сайт привёл клиента — именно сайт — на сумму ฿X00,000+. В монтаже и обслуживании лифтов один покупатель это шестизначная сделка, поэтому одна выигранная работа многократно окупает всю сборку. Трафик здесь сознательно не главный показатель: около 30 визитов в месяц и 21 сессия из органического поиска за прошедший год, потому что людей, ищущих лифтового подрядчика на Пхукете, в принципе немного. Это и есть весь доступный рынок, и быть тем, кого находят, ценнее объёма. У команды Suchart наконец есть присутствие в сети, соответствующее качеству их работы на объекте.",
+    "testimonial": {
+      "quote": "We install and service elevators, we are not marketers. Rejig rebuilt our website, got us found on both search and AI search, set up our CRM and reworked how leads move through the business. For the first time our presence online matches the quality of our work on the ground.",
+      "quote_th": "เราติดตั้งและดูแลลิฟต์ เราไม่ใช่นักการตลาด Rejig สร้างเว็บไซต์ใหม่ให้เรา ทำให้เราถูกค้นเจอทั้งบนเสิร์ชและบน AI จัดระบบ CRM และปรับวิธีที่ลูกค้าใหม่ไหลเข้าสู่ธุรกิจใหม่ทั้งหมด เป็นครั้งแรกที่ตัวตนออนไลน์ของเราสมกับคุณภาพงานจริงหน้างานของเรา",
+      "quote_ru": "Мы монтируем и обслуживаем лифты, мы не маркетологи. Rejig пересобрал наш сайт, сделал нас находимыми и в поиске, и в AI-поиске, настроил CRM и перестроил путь заявки внутри компании. Впервые наше присутствие в сети соответствует качеству нашей работы на объекте.",
+      "name": "Suchart",
+      "title": "Founder, Mobile Engineer, Phuket"
+    },
+    "gallery": [
+      {
+        "category": "The Build",
+        "category_th": "งานที่สร้าง",
+        "category_ru": "Что построено",
+        "wide": true,
+        "items": [
+          {
+            "src": "assets/me-elevator/home.png",
+            "caption": "The homepage, built from scratch: 28 years of work stated plainly, with one clear next step.",
+            "caption_th": "หน้าแรกที่สร้างใหม่ทั้งหมด บอกประสบการณ์ 28 ปีอย่างตรงไปตรงมา พร้อมขั้นตอนถัดไปที่ชัดเจน",
+            "caption_ru": "Главная страница, собранная с нуля: 28 лет работы сказаны прямо, с одним понятным следующим шагом."
+          },
+          {
+            "src": "assets/me-elevator/products.png",
+            "caption": "Products: six elevator types and five brands, laid out so a buyer can self-qualify before calling.",
+            "caption_th": "หน้าสินค้า ลิฟต์หกประเภทและห้าแบรนด์ จัดเรียงให้ลูกค้าประเมินตัวเองได้ก่อนโทร",
+            "caption_ru": "Продукты: шесть типов лифтов и пять брендов, изложены так, чтобы покупатель разобрался до звонка."
+          },
+          {
+            "src": "assets/me-elevator/installation.png",
+            "caption": "Each service gets its own page, which is what makes the business findable on search and in AI answers.",
+            "caption_th": "แต่ละบริการมีหน้าของตัวเอง นั่นคือสิ่งที่ทำให้ธุรกิจถูกค้นเจอทั้งบนเสิร์ชและในคำตอบของ AI",
+            "caption_ru": "У каждой услуги своя страница — именно это делает компанию находимой в поиске и в AI-ответах."
+          },
+          {
+            "src": "assets/me-elevator/home-mobile.png",
+            "caption": "Thai and English throughout, and built for the phone, where most local enquiries actually start.",
+            "caption_th": "ครบทั้งไทยและอังกฤษ และออกแบบมาเพื่อมือถือ ซึ่งเป็นจุดเริ่มต้นของลูกค้าท้องถิ่นส่วนใหญ่",
+            "caption_ru": "Тайский и английский повсюду, и всё сделано под телефон — именно оттуда приходит большинство местных обращений."
+          }
+        ]
+      }
+    ],
+    "published": true
   }
 ]

@@ -41,6 +41,9 @@ assert.ok(out.includes('<meta property="og:description" content="Two lines of su
 const ld = JSON.parse(out.match(/id="cs-jsonld">([\s\S]*?)<\/script>/)[1]);
 assert.strictEqual(ld.image, 'https://rejiglabs.com/assets/og/case-acme.png');
 assert.strictEqual(ld.headline, 'Acme: A "quoted" & <angled> headline');
+// ...and no raw "<" survives in the script block, so a headline containing
+// "</script>" cannot close it early.
+assert.ok(!out.match(/id="cs-jsonld">([\s\S]*?)<\/script>/)[1].includes('<'));
 assert.strictEqual(ld.mainEntityOfPage['@id'], 'https://rejiglabs.com/case-studies/acme');
 
 // The body survives untouched.

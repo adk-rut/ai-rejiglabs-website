@@ -1434,6 +1434,16 @@ img, svg { display: block; max-width: 100%; }
   max-width: 760px;
   margin: 0 auto;
 }
+/* Exactly four cards in a three-column grid leaves an orphan on row two, so
+   four falls back to a 2x2. Desktop only: :has() out-specifies the small-width
+   rules below, which would otherwise lose their max-width cap. */
+@media (min-width: 901px) {
+  .cs-grid:has(> :nth-child(4):last-child) {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
 
 @media (max-width: 900px) {
   .cs-grid { grid-template-columns: repeat(2, 1fr); }
