@@ -466,10 +466,10 @@
         "label_ru": "Направлений работы"
       },
       {
-        "value": "From scratch",
-        "label": "Built",
-        "label_th": "สร้างใหม่ทั้งหมด",
-        "label_ru": "Построено с нуля"
+        "value": "0",
+        "label": "Marketing Before Us",
+        "label_th": "การตลาดก่อนหน้าเรา",
+        "label_ru": "Маркетинга до нас"
       }
     ],
     "challenge": "A technical trade business with no marketing function. Mobile Engineer had 28 years of elevator installation and service behind it, hotels and hospitals on its client list, and no website, no lead system, and no defined path from an enquiry to an installed lift. Buyers searching for an elevator contractor in Phuket, in Thai or in English, could not find them. Enquiries that did arrive went into phones and notebooks and were followed up by memory.",
