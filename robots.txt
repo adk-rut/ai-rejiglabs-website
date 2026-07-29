@@ -3,11 +3,9 @@
 
 User-agent: *
 Allow: /
-# Client-facing proposals and decks: link-shared only, keep them out of the index
-Disallow: /enterprise-deck
-Disallow: /proposal-ducky-cutz
-Disallow: /proposal-suvarna
-Disallow: /proposal-suvarna-form
+# Client-facing proposals and decks now live on deck.rejiglabs.com, which is
+# passcode-gated and blocks crawlers at its own root. The old paths here
+# redirect there.
 
 # --- AI / LLM crawlers: explicitly welcome (training + answer citation) ---
 User-agent: GPTBot

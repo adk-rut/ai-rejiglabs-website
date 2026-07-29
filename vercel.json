@@ -5,6 +5,26 @@
       "has": [{ "type": "query", "key": "slug", "value": "(?<slug>[^&]+)" }],
       "destination": "/case-studies/:slug",
       "permanent": true
+    },
+    {
+      "source": "/enterprise-deck/:path*",
+      "destination": "https://deck.rejiglabs.com/enterprise",
+      "permanent": true
+    },
+    {
+      "source": "/proposal-ducky-cutz/:path*",
+      "destination": "https://deck.rejiglabs.com/ducky-cutz",
+      "permanent": true
+    },
+    {
+      "source": "/proposal-suvarna-form/:path*",
+      "destination": "https://deck.rejiglabs.com/suvarna-form",
+      "permanent": true
+    },
+    {
+      "source": "/proposal-suvarna/:path*",
+      "destination": "https://deck.rejiglabs.com/suvarna",
+      "permanent": true
     }
   ]
 }
