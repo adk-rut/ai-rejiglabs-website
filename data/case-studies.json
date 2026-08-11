@@ -6,16 +6,16 @@
     "industry": "AI Trading Platform",
     "industry_th": "แพลตฟอร์ม AI Trading",
     "industry_ru": "AI-торговая платформа",
-    "headline": "From a $60K/year content team to a fully autonomous system",
-    "headline_th": "จากทีมคอนเทนต์ 60,000 ดอลลาร์/ปี สู่ระบบอัตโนมัติเต็มรูปแบบ",
-    "headline_ru": "От команды контента за $60K/год к полностью автономной системе",
-    "summary": "BoBe's content team cost $60K/year and took 1–2 days per batch. We built an autonomous system that generates 14 pieces of content in seconds for under $30/month.",
-    "summary_th": "ทีมคอนเทนต์ของ BoBe เสียค่าใช้จ่าย 60,000 ดอลลาร์/ปี และใช้เวลา 1–2 วันต่อแบทช์ เราสร้างระบบอัตโนมัติที่ผลิตคอนเทนต์ 14 ชิ้นใน seconds ในราคาไม่ถึง 30 ดอลลาร์/เดือน",
-    "summary_ru": "Команда контента BoBe стоила $60K/год и тратила 1–2 дня на один батч. Мы построили автономную систему, которая генерирует 14 материалов за секунды меньше чем за $30/мес.",
+    "headline": "From a $3,000/month content team to a fully autonomous system",
+    "headline_th": "จากทีมคอนเทนต์ 3,000 ดอลลาร์/เดือน สู่ระบบอัตโนมัติเต็มรูปแบบ",
+    "headline_ru": "От команды контента за $3,000/мес к полностью автономной системе",
+    "summary": "BoBe's content team cost around $3,000/month and took 1–2 days per batch. We built an autonomous system that generates 14 pieces of content in seconds for under $30/month.",
+    "summary_th": "ทีมคอนเทนต์ของ BoBe เสียค่าใช้จ่ายราว 3,000 ดอลลาร์/เดือน และใช้เวลา 1–2 วันต่อแบทช์ เราสร้างระบบอัตโนมัติที่ผลิตคอนเทนต์ 14 ชิ้นใน seconds ในราคาไม่ถึง 30 ดอลลาร์/เดือน",
+    "summary_ru": "Команда контента BoBe стоила около $3,000/мес и тратила 1–2 дня на один батч. Мы построили автономную систему, которая генерирует 14 материалов за секунды меньше чем за $30/мес.",
     "image": "assets/bobe/engine.png",
     "stats": [
       {
-        "value": "$60K",
+        "value": "~$36K",
         "label": "Saved / Year",
         "label_th": "ประหยัดต่อปี",
         "label_ru": "Экономия в год"
@@ -39,15 +39,15 @@
         "label_ru": "Срок разработки"
       }
     ],
-    "challenge": "BoBe was running a fully manual content operation. A dedicated external team handled everything: research, ideation, copywriting, approvals, and visuals across multiple design tools. Producing a single batch took 1–2 days before anything was published. Cost: $60,000/year. Scaling content meant scaling cost linearly, with no ceiling in sight.",
+    "challenge": "BoBe was running a fully manual content operation. A dedicated external team handled everything: research, ideation, copywriting, approvals, and visuals across multiple design tools. Producing a single batch took 1–2 days before anything was published. Cost: $2,000 to $3,000/month. Scaling content meant scaling cost linearly, with no ceiling in sight.",
     "challenge_th": "BoBe มีทีมคอนเทนต์ภายนอกที่ทำงานด้วยมือทั้งหมด ตั้งแต่หาไอเดีย เขียนคอปปี้ ไปจนถึงทำภาพ ผลิตคอนเทนต์หนึ่งแบทช์ใช้เวลา 1–2 วัน ค่าใช้จ่าย 2,000–3,000 ดอลลาร์ต่อเดือน ถ้าอยากโตต้องจ่ายมากขึ้นไปเรื่อย ๆ",
-    "challenge_ru": "BoBe держала внешнюю команду контента, которая делала всё вручную: исследование, идеи, копирайтинг, согласования и визуалы в нескольких инструментах. Один батч занимал 1–2 дня. Стоимость: $60K/год. Рост объёма контента означал линейный рост затрат.",
+    "challenge_ru": "BoBe держала внешнюю команду контента, которая делала всё вручную: исследование, идеи, копирайтинг, согласования и визуалы в нескольких инструментах. Один батч занимал 1–2 дня. Стоимость: от $2,000 до $3,000 в месяц. Рост объёма контента означал линейный рост затрат.",
     "solution": "We ran a 2-week audit to map BoBe's full content workflow and identify where every hour was going. Every step was manual, and every step was repeatable. We designed and built a fully autonomous content generation system: it scrapes trending news, generates on-brand copy and visuals with AI, serves a one-click approve/disapprove interface to the client, auto-regenerates rejected content, and auto-translates approved pieces for multilingual publishing. 14 pieces of content per run, fully automated. The engine runs in two delivery modes: a batch run that fills the one-click dashboard, and a daily news cron that auto-curates the single top crypto story each morning and posts a ready draft straight into the client's Telegram for review.",
     "solution_th": "เราทำ audit 2 สัปดาห์เพื่อวิเคราะห์กระบวนการคอนเทนต์ทั้งหมดของ BoBe ทุกขั้นตอนทำด้วยมือ และทุกขั้นตอนทำซ้ำได้ เราออกแบบและสร้างระบบสร้างคอนเทนต์อัตโนมัติ: scrape ข่าวเทรนด์ สร้าง copy และภาพด้วย AI แสดงหน้า approve/disapprove แบบ one-click สร้างใหม่อัตโนมัติถ้าถูก disapprove และแปลอัตโนมัติสำหรับหลายภาษา 14 ชิ้นต่อครั้ง ทำงานเองทั้งหมด ระบบทำงานสองโหมด คือ โหมดแบทช์ที่ป้อนคอนเทนต์เข้าแดชบอร์ดอนุมัติคลิกเดียว และครอนข่าวรายวันที่คัดข่าวคริปโตเด่นที่สุดทุกเช้าแล้วส่งดราฟต์พร้อมใช้เข้ากลุ่ม Telegram ของลูกค้าเพื่อรีวิว",
     "solution_ru": "Мы провели 2-недельный аудит, чтобы разобрать весь контент-процесс BoBe. Каждый шаг был ручным, и каждый шаг был повторяемым. Мы спроектировали и построили полностью автономную систему генерации контента: скрейпит актуальные новости, генерирует брендированный текст и визуалы через AI, показывает клиенту интерфейс одобрения в один клик, автоматически перегенерирует отклонённое и переводит одобренное для мультиязычной публикации. 14 материалов за запуск, полностью автоматически. Движок работает в двух режимах доставки: пакетный прогон, наполняющий дашборд с одобрением в один клик, и ежедневный новостной крон, который каждое утро отбирает один главный крипто-сюжет и отправляет готовый черновик прямо в Telegram клиента на ревью.",
-    "results": "Content production went from 1–2 days per batch to seconds. The manual content operation cost around $5,000/month ($60,000/year); BoBe’s runs for under $30/month. Each piece now costs less than $1 to generate. The client opens the system, approves content, and publishes, and that's the entire workflow. No team to manage, no briefings, no back-and-forth. BoBe is live and using the system daily, with more AI implementations underway.",
+    "results": "Content production went from 1–2 days per batch to seconds. The manual content operation cost $2,000 to $3,000/month; BoBe’s runs for under $30/month. Each piece now costs less than $1 to generate. The client opens the system, approves content, and publishes, and that's the entire workflow. No team to manage, no briefings, no back-and-forth. BoBe is live and using the system daily, with more AI implementations underway.",
     "results_th": "เวลาผลิตคอนเทนต์จาก 1–2 วันต่อแบทช์ เหลือแค่ไม่กี่วินาที ต้นทุนรายเดือนจาก 2,000–3,000 ดอลลาร์ เหลือไม่ถึง 30 ดอลลาร์ แต่ละชิ้นสร้างในราคาต่ำกว่า 1 ดอลลาร์ ลูกค้าเปิดระบบ approve และ publish เท่านั้น ไม่ต้องบริหารทีม ไม่ต้อง brief ไม่ต้องรอ BoBe ใช้ระบบนี้ทุกวัน และมีการพัฒนาระบบ AI เพิ่มเติมอยู่ระหว่างดำเนินการ",
-    "results_ru": "Производство контента сократилось с 1–2 дней за батч до секунд. Ручная контент-операция стоила около $5,000 в месяц ($60,000 в год); у BoBe она работает менее чем за $30 в месяц. Каждый материал теперь стоит меньше $1. Клиент открывает систему, одобряет контент и публикует, и это весь процесс. Нет команды, нет брифингов, нет согласований. BoBe работает с системой ежедневно, дополнительные AI-внедрения в процессе.",
+    "results_ru": "Производство контента сократилось с 1–2 дней за батч до секунд. Ручная контент-операция стоила от $2,000 до $3,000 в месяц; у BoBe она работает менее чем за $30 в месяц. Каждый материал теперь стоит меньше $1. Клиент открывает систему, одобряет контент и публикует, и это весь процесс. Нет команды, нет брифингов, нет согласований. BoBe работает с системой ежедневно, дополнительные AI-внедрения в процессе.",
     "testimonial": {
       "quote": "Working with RT gave us something we didn't expect: actual clarity on where AI could help us. Not theory. A real plan we could execute. The implementation saved us hours every week from day one.",
       "quote_th": "ทำงานกับ RT แล้วได้สิ่งที่ไม่คาดคิด คือความชัดเจนว่า AI ช่วยเราได้ตรงไหนจริง ๆ ไม่ใช่ทฤษฎี แต่เป็นแผนที่ทำได้จริง ระบบที่ติดตั้งให้ช่วยประหยัดเวลาได้หลายชั่วโมงตั้งแต่วันแรก",
