@@ -1,8 +1,8 @@
 # Rejig Labs
 
-> We don't just talk AI. We deliver it. Rejig Labs finds where AI saves your business real time and real money, then builds it, implements it, and trains your team to run it.
+> We don't just talk AI. We deliver it. Rejig Labs is an AI automation agency in Thailand, based in Phuket. We find where AI saves your business real time and real money, then build it, implement it, and train your team to run it.
 
-Rejig Labs is an AI implementation consultancy based in Thailand (Bangkok / Phuket, working remotely worldwide). Unlike strategy-only consultants, we audit your workflows, build the custom AI systems ourselves, deploy them into your existing tools, and train your team to run them. Available in English, Thai, and Russian.
+Rejig Labs is an AI automation agency based in Thailand (Phuket / Bangkok, working remotely worldwide). Unlike strategy-only consultants, we audit your workflows, build the custom AI systems ourselves, deploy them into your existing tools, and train your team to run them. Available in English, Thai, and Russian.
 
 ## Services
 
