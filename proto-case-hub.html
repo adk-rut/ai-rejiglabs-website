@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROTOTYPE — case-study hub variants</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ponytail: prototype-only chrome, deleted with the file */
+    .proto-bar { position: sticky; top: 0; z-index: 99; background: var(--ink, #0b0d12); color: #fff;
+      font: 600 0.8rem/1 'Instrument Sans', sans-serif; letter-spacing: .08em; text-transform: uppercase;
+      padding: .9rem 1.25rem; display: flex; gap: 1.25rem; flex-wrap: wrap; }
+    .proto-bar a { color: #fff; opacity: .65; text-decoration: none; }
+    .proto-bar a:hover { opacity: 1; }
+    .proto-label { max-width: 1200px; margin: 0 auto; padding: 5rem 1.25rem 0; }
+    .proto-label h3 { font: 400 2rem/1.1 'Instrument Serif', serif; margin: 0 0 .4rem; }
+    .proto-label p { font: 400 .95rem/1.5 'Instrument Sans', sans-serif; opacity: .65; max-width: 46ch; margin: 0; }
+    .proto-rule { max-width: 1200px; margin: 4rem auto 0; border-top: 1px dashed rgba(0,0,0,.18); }
+
+    /* shared bits the real page would inherit from style.css */
+    .seg-head { max-width: 1200px; margin: 0 auto 1.5rem; padding: 0 1.25rem; }
+    .seg-head h4 { font: 400 1.6rem/1.2 'Instrument Serif', serif; margin: 0 0 .3rem; }
+    .seg-head p { font: 400 .95rem/1.5 'Instrument Sans', sans-serif; opacity: .6; margin: 0; max-width: 52ch; }
+    .seg-cta { max-width: 1200px; margin: 1.75rem auto 0; padding: 0 1.25rem; }
+    .seg-cta a { font: 500 .95rem/1 'Instrument Sans', sans-serif; color: var(--accent, #0055ff); text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 3px; }
+    .chips { display: flex; gap: .6rem; flex-wrap: wrap; max-width: 1200px; margin: 0 auto 2rem; padding: 0 1.25rem; }
+    .chip { font: 500 .85rem/1 'Instrument Sans', sans-serif; padding: .7rem 1.1rem; border-radius: 999px;
+      border: 1px solid rgba(0,0,0,.15); background: transparent; cursor: pointer; }
+    .chip[aria-selected="true"] { background: var(--accent, #0055ff); color: #fff; border-color: transparent; }
+    .feature { max-width: 1200px; margin: 0 auto 3rem; padding: 0 1.25rem; display: grid; gap: 2.5rem; grid-template-columns: 1.1fr 1fr; align-items: center; }
+    @media (max-width: 860px) { .feature { grid-template-columns: 1fr; } }
+    .feature img { width: 100%; border-radius: 18px; }
+    .feature h4 { font: 400 2.4rem/1.1 'Instrument Serif', serif; margin: .6rem 0 .8rem; }
+    .feature p { font: 400 1.05rem/1.6 'Instrument Sans', sans-serif; opacity: .75; margin: 0 0 1.4rem; }
+    .feature .cs-page__stats { margin-bottom: 1.4rem; }
+  </style>
+</head>
+<body>
+  <div class="proto-bar">
+    <span>Prototype · case-study hub</span>
+    <a href="#a">A · segment tabs</a>
+    <a href="#b">B · two stacked tracks</a>
+    <a href="#c">C · featured + filter chips</a>
+  </div>
+
+  <!-- ============ VARIANT A ============ -->
+  <div class="proto-label" id="a">
+    <h3>A · Segment tabs</h3>
+    <p>One hub page. Reader picks their world first, sees only matching proof, gets a CTA matched to that world. Least scrolling, but one track is always hidden.</p>
+  </div>
+  <section class="case-studies-section">
+    <div class="case-studies-section__header">
+      <p class="eyebrow">PROOF</p>
+      <h2>Systems we've <em class="accent">shipped.</em></h2>
+    </div>
+    <div class="chips" id="aChips"></div>
+    <div id="aGrid"></div>
+    <div class="seg-cta" id="aCta"></div>
+  </section>
+  <div class="proto-rule"></div>
+
+  <!-- ============ VARIANT B ============ -->
+  <div class="proto-label" id="b">
+    <h3>B · Two stacked tracks</h3>
+    <p>One scroll, two labelled sections. Nothing is hidden and it needs no JS. Local proof leads because that's where the traffic is aimed; the enterprise track sits under its own header so it still gets found.</p>
+  </div>
+  <section class="case-studies-section">
+    <div class="case-studies-section__header">
+      <p class="eyebrow">PROOF</p>
+      <h2>Systems we've <em class="accent">shipped.</em></h2>
+    </div>
+    <div id="bTracks"></div>
+  </section>
+  <div class="proto-rule"></div>
+
+  <!-- ============ VARIANT C ============ -->
+  <div class="proto-label" id="c">
+    <h3>C · Featured study + filter chips</h3>
+    <p>One study gets the whole top of the page, the rest sit in a filterable grid. Strongest for a single flagship story; weakest at telling two different readers apart.</p>
+  </div>
+  <section class="case-studies-section">
+    <div class="case-studies-section__header">
+      <p class="eyebrow">PROOF</p>
+      <h2>Systems we've <em class="accent">shipped.</em></h2>
+    </div>
+    <div id="cFeature"></div>
+    <div class="chips" id="cChips"></div>
+    <div id="cGrid"></div>
+  </section>
+  <div class="proto-rule" style="margin-bottom:6rem"></div>
+
+<script>
+// ponytail: prototype render, no i18n, no animation — real build reuses js/case-studies.js
+const SEGMENTS = {
+  local: {
+    label: 'Local & service businesses',
+    blurb: 'Phones, bookings, walk-ins, one location or a few. Proof that the system holds up with real customers.',
+    cta: 'Hear it answer a call →',
+    slugs: ['duckycutz', 'me-elevator', 'anrcf-golf']
+  },
+  platform: {
+    label: 'Platforms & teams',
+    blurb: 'A workflow a team runs by hand every week, replaced by something that runs itself.',
+    cta: 'Book a scoping call →',
+    slugs: ['bobe']
+  }
+};
+
+const card = cs => `
+  <a href="/case-studies/${cs.slug}" class="cs-card in-view">
+    <div class="ev-card"><div class="ev-card__logo"><img src="${cs.logo || 'assets/logo.png'}" alt="${cs.client}"></div></div>
+    <div class="cs-card__body">
+      <span class="cs-card__tag">${cs.industry}</span>
+      <h3 class="cs-card__title">${cs.client} <span class="cs-card__sep">|</span> ${cs.headline}</h3>
+      <p class="cs-card__summary">${cs.summary}</p>
+      <div class="cs-card__stats">${cs.stats.map(s => `<div class="cs-card__stat"><span class="cs-card__stat-val">${s.value}</span><span class="cs-card__stat-label">${s.label}</span></div>`).join('')}</div>
+      <span class="cs-card__link">Read Case Study →</span>
+    </div>
+  </a>`;
+
+const grid = list => `<div class="cs-grid">${list.map(card).join('')}</div>`;
+
+fetch('data/case-studies.json').then(r => r.json()).then(all => {
+  const by = s => all.find(c => c.slug === s);
+  const of = key => SEGMENTS[key].slugs.map(by).filter(Boolean);
+
+  // --- A: tabs ---
+  const aChips = document.getElementById('aChips');
+  aChips.innerHTML = Object.entries(SEGMENTS)
+    .map(([k, s], i) => `<button class="chip" data-seg="${k}" aria-selected="${i === 0}">${s.label}</button>`).join('');
+  const drawA = key => {
+    document.getElementById('aGrid').innerHTML = grid(of(key));
+    document.getElementById('aCta').innerHTML = `<a href="#">${SEGMENTS[key].cta}</a>`;
+    aChips.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-selected', c.dataset.seg === key));
+  };
+  aChips.addEventListener('click', e => { if (e.target.dataset.seg) drawA(e.target.dataset.seg); });
+  drawA('local');
+
+  // --- B: stacked tracks ---
+  document.getElementById('bTracks').innerHTML = Object.entries(SEGMENTS).map(([k, s]) => `
+    <div style="margin-bottom:4.5rem">
+      <div class="seg-head"><h4>${s.label}</h4><p>${s.blurb}</p></div>
+      ${grid(of(k))}
+      <div class="seg-cta"><a href="#">${s.cta}</a></div>
+    </div>`).join('');
+
+  // --- C: featured + chips ---
+  const hero = by('duckycutz');
+  document.getElementById('cFeature').innerHTML = `
+    <div class="feature">
+      <div>
+        <span class="cs-card__tag">${hero.industry}</span>
+        <h4>${hero.headline}</h4>
+        <p>${hero.summary}</p>
+        <div class="cs-page__stats">${hero.stats.map(s => `<div class="cs-page__stat"><span class="cs-page__stat-val">${s.value}</span><span class="cs-page__stat-label">${s.label}</span></div>`).join('')}</div>
+        <div class="seg-cta" style="padding:0"><a href="/case-studies/${hero.slug}">Read the full story →</a></div>
+      </div>
+      <img src="${hero.image}" alt="${hero.client}">
+    </div>`;
+  const rest = all.filter(c => c.slug !== hero.slug);
+  const cChips = document.getElementById('cChips');
+  cChips.innerHTML = `<button class="chip" data-seg="all" aria-selected="true">Everything</button>` +
+    Object.entries(SEGMENTS).map(([k, s]) => `<button class="chip" data-seg="${k}" aria-selected="false">${s.label}</button>`).join('');
+  const drawC = key => {
+    const list = key === 'all' ? rest : of(key).filter(c => c.slug !== hero.slug);
+    document.getElementById('cGrid').innerHTML = grid(list);
+    cChips.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-selected', c.dataset.seg === key));
+  };
+  cChips.addEventListener('click', e => { if (e.target.dataset.seg) drawC(e.target.dataset.seg); });
+  drawC('all');
+});
+</script>
+</body>
+</html>
