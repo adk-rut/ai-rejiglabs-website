@@ -131,43 +131,49 @@
     "industry": "Barbershop · Local Service",
     "industry_th": "ร้านตัดผม · ธุรกิจบริการท้องถิ่น",
     "industry_ru": "Барбершоп · Локальный сервис",
-    "headline": "An AI front desk that books haircuts by phone, SMS and LINE, in three languages, 24/7",
-    "headline_th": "พนักงานต้อนรับ AI ที่รับจองตัดผมทางโทรศัพท์ SMS และ LINE ได้ 3 ภาษา ตลอด 24 ชั่วโมง",
-    "headline_ru": "AI-ресепшн, который принимает записи на стрижку по телефону, SMS и LINE, на трёх языках, 24/7",
-    "summary": "A busy Phuket Town barbershop lost bookings whenever the chairs were full or the shop was closed. We built an AI front desk that answers every call, text and LINE message in Thai, English or Russian and books straight into the calendar, with no staff time needed, day or night.",
-    "summary_th": "ร้านตัดผมย่านเมืองภูเก็ตที่ลูกค้าแน่นตลอด เสียลูกค้าทุกครั้งที่ช่างไม่ว่างหรือร้านปิด เราสร้างพนักงานต้อนรับ AI ที่รับทุกสาย ทุกข้อความ และทุก LINE เป็นภาษาไทย อังกฤษ หรือรัสเซีย แล้วจองลงปฏิทินให้ทันที โดยไม่ต้องใช้พนักงาน ไม่ว่ากลางวันหรือกลางคืน",
-    "summary_ru": "Загруженный барбершоп в Пхукет-Тауне терял записи, когда все кресла заняты или магазин закрыт. Мы построили AI-ресепшн, который отвечает на каждый звонок, SMS и сообщение в LINE на тайском, английском или русском и сразу записывает в календарь, без участия персонала, днём и ночью.",
+    "headline": "535 bookings in seven weeks. The owner extended it to all six branches.",
+    "headline_th": "จอง 535 ครั้งใน 7 สัปดาห์ เจ้าของร้านขยายไปครบทั้ง 6 สาขา",
+    "headline_ru": "535 записей за семь недель. Владелица расширила систему на все шесть филиалов.",
+    "summary": "Ducky Cutz lost bookings every time the chairs were full or the shop was shut. We built an AI front desk that answers every call, text and LINE message in Thai, English or Russian and books straight into the calendar. In seven weeks it handled 535 bookings at one branch. The owner has now extended it to all six.",
+    "summary_th": "Ducky Cutz เสียลูกค้าทุกครั้งที่ช่างไม่ว่างหรือร้านปิด เราสร้างพนักงานต้อนรับ AI ที่รับทุกสาย ทุกข้อความ และทุก LINE เป็นภาษาไทย อังกฤษ หรือรัสเซีย แล้วจองลงปฏิทินให้ทันที ใน 7 สัปดาห์ระบบรับการจองไป 535 ครั้งจากสาขาเดียว ตอนนี้เจ้าของร้านขยายระบบไปครบทั้ง 6 สาขาแล้ว",
+    "summary_ru": "Ducky Cutz терял записи каждый раз, когда все кресла были заняты или салон закрыт. Мы построили AI-ресепшн, который отвечает на каждый звонок, SMS и сообщение в LINE на тайском, английском или русском и сразу записывает в календарь. За семь недель он принял 535 записей в одном филиале. Теперь владелица расширила его на все шесть.",
     "image": "assets/duckycutz-front-desk.png",
     "stats": [
       {
-        "value": "300+",
-        "label": "Calls Handled / mo",
-        "label_th": "สายที่รับต่อเดือน",
-        "label_ru": "Звонков в месяц"
+        "value": "535",
+        "label": "Bookings in 7 Weeks",
+        "label_th": "การจองใน 7 สัปดาห์",
+        "label_ru": "Записей за 7 недель"
       },
       {
-        "value": "~80%",
-        "label": "Booked Hands-Free",
-        "label_th": "จองได้โดยไม่ใช้พนักงาน",
-        "label_ru": "Записей без персонала"
+        "value": "1,000+",
+        "label": "Calls/mo Capacity · 6 Branches",
+        "label_th": "รองรับสายต่อเดือน · 6 สาขา",
+        "label_ru": "Звонков/мес · 6 филиалов"
       },
       {
-        "value": "24/7",
-        "label": "Always Answered",
-        "label_th": "รับสายตลอดเวลา",
-        "label_ru": "Всегда на связи"
+        "value": "3",
+        "label": "Languages · Answered 24/7",
+        "label_th": "ภาษา · รับสายตลอด 24 ชม.",
+        "label_ru": "Языка · ответ 24/7"
       }
     ],
-    "challenge": "Ducky Cutz runs on walk-ins and phone bookings from a single Phuket Town branch with seven chairs. When every barber is mid-cut, the phone goes unanswered, and a missed call is a missed customer who simply rings the next shop. After hours, the line is dead. The shop serves Thai locals, expats and Russian tourists, so even a picked-up call can hit a language wall. Nothing was capturing who called, what they wanted, or whether they ever booked.",
-    "challenge_th": "Ducky Cutz รับลูกค้าทั้งแบบ walk-in และจองทางโทรศัพท์จากสาขาเดียวในเมืองภูเก็ต มีเก้าอี้ตัดผม 7 ตัว เวลาช่างไม่ว่างทุกคน สายที่โทรเข้าก็ไม่มีใครรับ และสายที่พลาดก็คือลูกค้าที่หายไปโทรหาร้านถัดไป นอกเวลาทำการสายขาดหายไปเลย ร้านให้บริการทั้งคนไทย ชาวต่างชาติ และนักท่องเที่ยวรัสเซีย ดังนั้นแม้รับสายได้ก็ยังติดกำแพงภาษา และไม่มีระบบบันทึกว่าใครโทรมา ต้องการอะไร หรือจองสำเร็จหรือไม่",
-    "challenge_ru": "Ducky Cutz работает на потоке walk-in и записях по телефону в одном филиале в Пхукет-Тауне с семью креслами. Когда все барберы заняты, звонок остаётся без ответа, а пропущенный звонок это потерянный клиент, который просто наберёт соседний салон. После закрытия линия молчит. Салон обслуживает тайцев, экспатов и русских туристов, так что даже принятый звонок может упереться в языковой барьер. Ничто не фиксировало, кто звонил, что хотел и записался ли он.",
-    "solution": "We built an AI front desk that answers every inbound channel (phone, SMS and LINE) and books directly into the shop's calendar. A four-assistant voice squad greets each caller, detects Thai, English or Russian, and runs the whole booking: which barber, which slot, group and party size, returning-caller recognition by phone number, and a single spoken confirmation. It reads real-time availability across the full day so it never double-books, writes special requests as notes the stylist sees on arrival, and runs 24/7 on cents-per-call infrastructure. A matching chat bot takes the same bookings from web and social, and completed appointments trigger SMS and LINE follow-ups.",
-    "solution_th": "เราสร้างพนักงานต้อนรับ AI ที่รับทุกช่องทางที่เข้ามา ทั้งโทรศัพท์ SMS และ LINE แล้วจองลงปฏิทินของร้านโดยตรง ทีมผู้ช่วยเสียง 4 ตัวทักทายลูกค้าแต่ละราย ตรวจจับภาษาไทย อังกฤษ หรือรัสเซีย และจัดการการจองทั้งหมด ทั้งเลือกช่าง เลือกเวลา จำนวนคนในกลุ่ม จดจำลูกค้าเก่าจากเบอร์โทร และยืนยันด้วยเสียงครั้งเดียว ระบบอ่านคิวว่างแบบเรียลไทม์ทั้งวันจึงไม่จองซ้ำ บันทึกคำขอพิเศษเป็นโน้ตให้ช่างเห็นตอนลูกค้ามาถึง และทำงานตลอด 24 ชั่วโมงด้วยต้นทุนระดับเศษสตางค์ต่อสาย พร้อมแชทบอทที่รับจองแบบเดียวกันจากเว็บและโซเชียล และนัดที่เสร็จแล้วจะส่ง SMS และ LINE ติดตามผลอัตโนมัติ",
-    "solution_ru": "Мы построили AI-ресепшн, который отвечает на каждый входящий канал (телефон, SMS и LINE) и записывает напрямую в календарь салона. Голосовая команда из четырёх ассистентов приветствует звонящего, определяет тайский, английский или русский и ведёт всю запись: какой барбер, какой слот, размер группы, узнавание повторного клиента по номеру телефона и одно голосовое подтверждение. Система читает доступность в реальном времени на весь день, поэтому не создаёт двойных записей, записывает особые пожелания заметкой, которую барбер видит при встрече, и работает 24/7 на инфраструктуре за копейки за звонок. Чат-бот принимает такие же записи из веба и соцсетей, а завершённые визиты запускают follow-up по SMS и LINE.",
-    "results": "In its first weeks live, the AI front desk handles an estimated 300+ inbound contacts a month across phone, SMS and LINE, with roughly 80% booked end to end without a staff member ever touching the phone. Every contact is answered in Thai, English or Russian, day or night, so after-hours and peak-hour callers who used to hit a dead line now book themselves in. Live on production since June 2026; figures are early estimates and will be replaced with measured numbers as the pilot matures.",
-    "results_th": "ในช่วงสัปดาห์แรก ๆ ที่เปิดใช้งาน พนักงานต้อนรับ AI รับการติดต่อเข้ามาประมาณ 300+ ครั้งต่อเดือนทั้งทางโทรศัพท์ SMS และ LINE โดยราว 80% จองสำเร็จครบวงจรโดยพนักงานไม่ต้องแตะโทรศัพท์เลย ทุกการติดต่อได้รับการตอบเป็นภาษาไทย อังกฤษ หรือรัสเซีย ทั้งกลางวันและกลางคืน ลูกค้าที่โทรนอกเวลาหรือช่วงร้านยุ่งซึ่งเคยเจอสายว่างเปล่า ตอนนี้จองเองได้ เปิดใช้งานจริงตั้งแต่มิถุนายน 2026 ตัวเลขเป็นการประมาณการเบื้องต้นและจะแทนที่ด้วยตัวเลขที่วัดได้จริงเมื่อโครงการดำเนินไป",
-    "results_ru": "В первые недели работы AI-ресепшн принимает примерно 300+ обращений в месяц по телефону, SMS и LINE, при этом около 80% записей оформляются полностью без участия персонала. Каждое обращение обрабатывается на тайском, английском или русском, днём и ночью, так что звонящие в нерабочее время и в часы пик, которые раньше упирались в молчащую линию, теперь записываются сами. В продакшене с июня 2026; приведённые цифры являются ранними оценками и будут заменены измеренными данными по мере развития пилота.",
-    "testimonial": null,
+    "challenge": "Ducky Cutz runs on walk-ins and phone bookings, seven chairs at its Phuket Town branch. When every barber is mid-cut the phone rings out, and a missed call is a customer who rings the next shop instead. After hours the line is dead. The shop serves Thai locals, expats and Russian tourists, so even an answered call can hit a language wall. And nothing recorded who called, what they wanted, or whether they ever booked.",
+    "challenge_th": "Ducky Cutz รับลูกค้าทั้งแบบ walk-in และจองทางโทรศัพท์ มีเก้าอี้ตัดผม 7 ตัวที่สาขาเมืองภูเก็ต เวลาช่างไม่ว่างทุกคน สายที่โทรเข้าก็ไม่มีใครรับ และสายที่พลาดคือลูกค้าที่หันไปโทรร้านถัดไป นอกเวลาทำการสายขาดหายไปเลย ร้านให้บริการทั้งคนไทย ชาวต่างชาติ และนักท่องเที่ยวรัสเซีย ดังนั้นแม้รับสายได้ก็ยังติดกำแพงภาษา และไม่มีระบบบันทึกว่าใครโทรมา ต้องการอะไร หรือจองสำเร็จหรือไม่",
+    "challenge_ru": "Ducky Cutz работает на потоке walk-in и записях по телефону: семь кресел в филиале в Пхукет-Тауне. Когда все барберы заняты, звонок остаётся без ответа, а пропущенный звонок это клиент, который просто наберёт соседний салон. После закрытия линия молчит. Салон обслуживает тайцев, экспатов и русских туристов, так что даже принятый звонок может упереться в языковой барьер. И ничто не фиксировало, кто звонил, что хотел и записался ли он.",
+    "solution": "We built an AI front desk that answers phone, SMS and LINE and books straight into the shop’s calendar. It picks up Thai, English or Russian from the first sentence, then runs the whole booking itself: which barber, which slot, how many people, returning-caller recognition by phone number, and one spoken confirmation. It reads live availability across the full day so it never double-books, and writes special requests as notes the barber sees on arrival. Staff log walk-ins from their own phones into the same calendar, so the shop has one view of every booking, whoever made it.",
+    "solution_th": "เราสร้างพนักงานต้อนรับ AI ที่รับทั้งโทรศัพท์ SMS และ LINE แล้วจองลงปฏิทินของร้านโดยตรง ระบบจับภาษาไทย อังกฤษ หรือรัสเซียได้ตั้งแต่ประโยคแรก แล้วจัดการการจองทั้งหมดเอง ทั้งเลือกช่าง เลือกเวลา จำนวนคน จดจำลูกค้าเก่าจากเบอร์โทร และยืนยันด้วยเสียงครั้งเดียว ระบบอ่านคิวว่างแบบเรียลไทม์ทั้งวันจึงไม่จองซ้ำ และบันทึกคำขอพิเศษเป็นโน้ตให้ช่างเห็นตอนลูกค้ามาถึง พนักงานบันทึกลูกค้า walk-in จากมือถือของตัวเองลงปฏิทินเดียวกัน ร้านจึงเห็นทุกการจองในที่เดียว ไม่ว่าใครเป็นคนจอง",
+    "solution_ru": "Мы построили AI-ресепшн, который отвечает на телефон, SMS и LINE и записывает напрямую в календарь салона. Он определяет тайский, английский или русский с первой фразы, а затем ведёт всю запись сам: какой барбер, какой слот, сколько человек, узнавание постоянного клиента по номеру и одно голосовое подтверждение. Он читает доступность в реальном времени на весь день, поэтому не создаёт двойных записей, и сохраняет особые пожелания заметкой, которую барбер видит при встрече. Персонал отмечает клиентов без записи со своих телефонов в тот же календарь, так что у салона одна картина всех записей, кто бы их ни сделал.",
+    "results": "In its first seven weeks live at Phuket Town the system handled 535 bookings. 105 of those were booked end to end by the AI, 71 by voice and 34 by chat, with another 56 taken by customers on the self-serve form. It answered 169+ calls at an average of 76 seconds and roughly $0.18 each. Thai dominated the calls, and English and Russian are answered on the same line whenever they come. Those are one branch’s numbers: the system is built to handle over 1,000 calls a month across all six branches on the same stack. Figures measured 20 June to 7 August 2026 from the shop’s own calendar and call log; counts include our own test traffic, and call totals exclude 20 June to 2 July, which the telephony provider purged before logging began.",
+    "results_th": "ใน 7 สัปดาห์แรกที่เปิดใช้งานจริงที่สาขาเมืองภูเก็ต ระบบรับการจองไป 535 ครั้ง ในจำนวนนี้ 105 ครั้ง AI จองให้ครบวงจรเอง แบ่งเป็นทางเสียง 71 และทางแชท 34 อีก 56 ครั้งลูกค้าจองเองผ่านฟอร์ม ระบบรับสายไป 169+ สาย เฉลี่ยสายละ 76 วินาที ต้นทุนราว 0.18 ดอลลาร์ต่อสาย สายส่วนใหญ่เป็นภาษาไทย ส่วนภาษาอังกฤษและรัสเซียระบบรับได้บนเบอร์เดียวกันเมื่อมีสายเข้ามา ตัวเลขทั้งหมดนี้มาจากสาขาเดียว ระบบถูกออกแบบให้รองรับสายได้มากกว่า 1,000 สายต่อเดือนครบทั้ง 6 สาขาบนโครงสร้างเดียวกัน ตัวเลขวัดระหว่าง 20 มิถุนายน ถึง 7 สิงหาคม 2026 จากปฏิทินและบันทึกสายของร้านเอง ยอดรวมนับสายทดสอบของเราด้วย และยอดสายไม่รวมช่วง 20 มิถุนายน ถึง 2 กรกฎาคม ซึ่งผู้ให้บริการโทรศัพท์ลบข้อมูลไปก่อนที่ระบบบันทึกจะเริ่มทำงาน",
+    "results_ru": "За первые семь недель работы в Пхукет-Тауне система приняла 535 записей. Из них 105 AI оформил полностью сам: 71 голосом и 34 в чате, ещё 56 клиенты оформили сами через форму. Система ответила на 169+ звонков со средней длительностью 76 секунд и стоимостью около $0,18 за звонок. Преобладал тайский, а английский и русский принимаются на той же линии, когда такие звонки поступают. Это цифры одного филиала: система рассчитана на более чем 1 000 звонков в месяц по всем шести филиалам на том же стеке. Данные измерены с 20 июня по 7 августа 2026 по календарю и журналу звонков самого салона; в подсчёт входит наш собственный тестовый трафик, а из общего числа звонков исключён период с 20 июня по 2 июля, который телефонный провайдер удалил до начала логирования.",
+    "testimonial": {
+      "quote": "It cut our costs and freed the team from phone and admin work. We are making more, and we move a lot faster than before.",
+      "quote_th": "ช่วยลดต้นทุนและปลดทีมออกจากงานรับสายและงานเอกสาร เรามีรายได้มากขึ้น และทำงานได้เร็วกว่าเดิมมาก",
+      "quote_ru": "Это снизило наши расходы и освободило команду от звонков и админработы. Мы зарабатываем больше и работаем намного быстрее, чем раньше.",
+      "name": "Ella",
+      "title": "Owner, Ducky Cutz"
+    },
     "published": true,
     "gallery": [
       {
