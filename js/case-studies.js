@@ -235,6 +235,7 @@
         cta: { en: 'Ready to see results <em class="accent">like this?</em>', th: 'พร้อมเห็นผลลัพธ์<em class="accent">แบบนี้</em>ไหม?', ru: 'Хотите <em class="accent">такие же результаты?</em>' },
         more: { en: 'More <em class="accent">Case Studies</em>', th: 'ผลงาน<em class="accent">อื่น ๆ</em>', ru: 'Ещё <em class="accent">кейсы</em>' },
         back: { en: 'Back', th: 'กลับ', ru: 'Назад' },
+        site: { en: 'View the live site', th: 'ดูเว็บไซต์จริง', ru: 'Открыть сайт' },
         book: { en: 'Book a Discovery Call', th: 'นัดคุยฟรี', ru: 'Записаться на консультацию' }
       };
       function lb(key) { return labels[key][l] || labels[key].en; }
@@ -267,6 +268,7 @@
           '<span class="cs-card__tag">' + t(cs, 'industry') + '</span>' +
           '<h1>' + cs.client + ' <span class="cs-card__sep">|</span> <em class="accent">' + t(cs, 'headline') + '</em></h1>' +
           '<p class="cs-page__hero-summary">' + t(cs, 'summary') + '</p>' +
+          (cs.site ? '<a class="cs-page__site" href="' + cs.site + '" target="_blank" rel="noopener">' + lb('site') + ' <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>' : '') +
           '<div class="cs-page__stats">' + statsHtml + '</div>' +
         '</section>' +
 

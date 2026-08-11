@@ -1657,6 +1657,20 @@ img, svg { display: block; max-width: 100%; }
 .cs-page__back:hover { color: var(--accent-hi); }
 .cs-page__back svg { width: 16px; height: 16px; }
 
+.cs-page__site {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 2.5rem;
+  color: var(--accent-hi);
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.cs-page__site:hover { border-bottom-color: var(--accent-hi); }
+.cs-page__site svg { width: 14px; height: 14px; }
+
 .cs-page__hero {
   padding: 4rem 0 3rem;
   max-width: 900px;

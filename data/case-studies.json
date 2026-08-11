@@ -436,7 +436,8 @@
       }
     ],
     "published": true,
-    "logo": "assets/anrcf-golf/anrcf-logo.png"
+    "logo": "assets/anrcf-golf/anrcf-logo.png",
+    "site": "https://golf.anrcf.com"
   },
   {
     "slug": "me-elevator",
@@ -452,6 +453,7 @@
     "summary_ru": "Mobile Engineer монтирует и обслуживает лифты на Пхукете с 1998 года, но без сайта и без способа превратить обращение в подтверждённый монтаж. Мы собрали сайт с нуля, выстроили его под поиск и под AI-ответы, настроили CRM и перестроили путь заявки внутри компании. С тех пор сайт привёл клиента на сумму ฿X00,000+.",
     "image": "assets/me-elevator/home.png",
     "logo": "assets/me-elevator/me-mark.png",
+    "site": "https://www.mobileengineer-th.com/",
     "stats": [
       {
         "value": "1",
