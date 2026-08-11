@@ -798,5 +798,10 @@
     "en": "AI Chatbot & LINE",
     "th": "แชทบอท AI & LINE",
     "ru": "AI-чат-бот и LINE"
+  },
+  "nav_ai_receptionist": {
+    "en": "AI Receptionist",
+    "th": "AI รับสายโทรศัพท์",
+    "ru": "AI-секретарь"
   }
 }

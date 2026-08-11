@@ -86,51 +86,84 @@
     "@graph": [
       {
         "@type": "Service",
-        "@id": "https://rejiglabs.com/ai-chatbot/#service",
-        "name": "AI Chatbot & LINE OA Automation",
-        "url": "https://rejiglabs.com/ai-chatbot/",
-        "serviceType": "AI chatbot development",
-        "provider": { "@id": "https://rejiglabs.com/#organization" },
+        "@id": "https://rejiglabs.com/th/ai-chatbot/#service",
+        "name": "รับทำแชทบอท AI และระบบตอบแชท LINE OA อัตโนมัติ",
+        "url": "https://rejiglabs.com/th/ai-chatbot/",
+        "serviceType": "รับทำแชทบอท AI และระบบตอบแชทอัตโนมัติ",
+        "provider": {
+          "@id": "https://rejiglabs.com/#organization"
+        },
         "areaServed": "Thailand",
-        "availableLanguage": ["Thai", "English", "Russian"],
-        "description": "Custom AI chatbots that answer customers 24/7 on LINE OA, website and social channels, in Thai, English and Russian: replying, qualifying leads, and booking appointments automatically."
+        "availableLanguage": [
+          "Thai",
+          "English",
+          "Russian"
+        ],
+        "inLanguage": "th",
+        "description": "เราสร้างแชทบอท AI ที่ตอบลูกค้าบน LINE OA เว็บไซต์ และโซเชียล ทั้งภาษาไทย อังกฤษ และรัสเซีย ตอบคำถาม เก็บข้อมูลลูกค้า และจองคิวให้เอง ตลอด 24 ชั่วโมง คุณจะไม่เสียลูกค้าเพราะตอบช้าอีกต่อไป"
       },
       {
         "@type": "FAQPage",
-        "@id": "https://rejiglabs.com/ai-chatbot/#faq",
+        "@id": "https://rejiglabs.com/th/ai-chatbot/#faq",
+        "inLanguage": "th",
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Does it work with LINE Official Account (LINE OA)?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. LINE OA is our primary channel for Thai businesses. We connect the chatbot directly to your LINE OA so it answers customers in the app they already use every day." }
+            "name": "ใช้กับ LINE Official Account (LINE OA) ได้ไหม?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ได้ครับ LINE OA คือช่องทางหลักของเราสำหรับธุรกิจไทย เราเชื่อมแชทบอทเข้ากับ LINE OA ของคุณโดยตรง ให้มันตอบลูกค้าในแอปที่พวกเขาใช้อยู่ทุกวัน"
+            }
           },
           {
             "@type": "Question",
-            "name": "Will it sound like a robot?",
-            "acceptedAnswer": { "@type": "Answer", "text": "No. We train it on your real tone, your FAQs and your past chats, so replies feel natural and on-brand. It hands off to a human the moment a conversation needs one." }
+            "name": "มันจะพูดเหมือนหุ่นยนต์ไหม?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ไม่ครับ เราฝึกมันด้วยน้ำเสียงจริงของคุณ คำถามที่พบบ่อย และแชทเก่า ๆ คำตอบจึงเป็นธรรมชาติและตรงแบรนด์ และมันจะส่งต่อให้คนจริงทันทีเมื่อบทสนทนาต้องการ"
+            }
           },
           {
             "@type": "Question",
-            "name": "What languages does the chatbot support?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Thai, English and Russian out of the box. It detects the customer's language automatically and replies in it. More languages on request." }
+            "name": "แชทบอทรองรับภาษาอะไรบ้าง?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ไทย อังกฤษ และรัสเซีย พร้อมใช้งานทันที มันตรวจจับภาษาของลูกค้าให้เองและตอบเป็นภาษานั้น เพิ่มภาษาอื่นได้ตามต้องการ"
+            }
           },
           {
             "@type": "Question",
-            "name": "Can it book appointments and take orders?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. It checks your live calendar, books slots, captures order details and saves everything to your CRM, all inside the chat." }
+            "name": "มันจองคิวและรับออเดอร์ได้ไหม?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ได้ครับ มันเช็กปฏิทินสด ๆ ของคุณ จองช่วงเวลา เก็บรายละเอียดออเดอร์ และบันทึกทุกอย่างลง CRM ทั้งหมดในแชทเดียว"
+            }
           },
           {
             "@type": "Question",
-            "name": "How long until the chatbot is live?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Most chatbots go live in 2 to 4 weeks, depending on how many channels and how complex your answers are. You will see a working version early." }
+            "name": "ใช้เวลานานแค่ไหนกว่าแชทบอทจะพร้อมใช้?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "แชทบอทส่วนใหญ่พร้อมใช้ใน 2 ถึง 4 สัปดาห์ ขึ้นอยู่กับจำนวนช่องทางและความซับซ้อนของคำตอบ คุณจะได้เห็นเวอร์ชันที่ใช้งานได้ตั้งแต่เนิ่น ๆ"
+            }
           }
         ]
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rejiglabs.com/" },
-          { "@type": "ListItem", "position": 2, "name": "AI Chatbot & LINE OA", "item": "https://rejiglabs.com/ai-chatbot/" }
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "หน้าแรก",
+            "item": "https://rejiglabs.com/th/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "แชทบอท AI และ LINE OA",
+            "item": "https://rejiglabs.com/th/ai-chatbot/"
+          }
         ]
       }
     ]
@@ -149,6 +182,7 @@
       <div class="nav__dropdown">
         <a href="/#services" class="nav__link" data-i18n="nav_services">บริการ</a>
         <div class="nav__dropdown-menu">
+          <a href="/th/ai-receptionist/" class="nav__dropdown-item" data-i18n="nav_ai_receptionist">AI รับสายโทรศัพท์</a>
           <a href="/ai-chatbot/" class="nav__dropdown-item" data-i18n="nav_ai_chatbot">แชทบอท AI &amp; LINE</a>
           <a href="/blockchain/" class="nav__dropdown-item" data-i18n="nav_blockchain">บล็อกเชน</a>
         </div>
