@@ -6,31 +6,31 @@
     "industry": "AI Trading Platform",
     "industry_th": "แพลตฟอร์ม AI Trading",
     "industry_ru": "AI-торговая платформа",
-    "headline": "From a $3,000/month content team to a fully autonomous system",
-    "headline_th": "จากทีมคอนเทนต์ 3,000 ดอลลาร์/เดือน สู่ระบบอัตโนมัติเต็มรูปแบบ",
-    "headline_ru": "От команды контента за $3,000/мес к полностью автономной системе",
-    "summary": "BoBe's content team cost around $3,000/month and took 1–2 days per batch. We built an autonomous system that generates 14 pieces of content in seconds for under $30/month.",
-    "summary_th": "ทีมคอนเทนต์ของ BoBe เสียค่าใช้จ่ายราว 3,000 ดอลลาร์/เดือน และใช้เวลา 1–2 วันต่อแบทช์ เราสร้างระบบอัตโนมัติที่ผลิตคอนเทนต์ 14 ชิ้นใน seconds ในราคาไม่ถึง 30 ดอลลาร์/เดือน",
-    "summary_ru": "Команда контента BoBe стоила около $3,000/мес и тратила 1–2 дня на один батч. Мы построили автономную систему, которая генерирует 14 материалов за секунды меньше чем за $30/мес.",
+    "headline": "From a $3,000/month content team to an agent that files a story every morning",
+    "headline_th": "จากทีมคอนเทนต์ 3,000 ดอลลาร์/เดือน สู่เอเจนต์ที่ส่งข่าวให้ทุกเช้า",
+    "headline_ru": "От команды контента за $3,000/мес к агенту, который присылает материал каждое утро",
+    "summary": "BoBe's content team cost around $3,000/month and took 1–2 days per batch. We built an engine that produces 14 pieces in seconds for under $30/month, then added an agent that files a finished story every morning on its own.",
+    "summary_th": "ทีมคอนเทนต์ของ BoBe เสียค่าใช้จ่ายราว 3,000 ดอลลาร์/เดือน และใช้เวลา 1–2 วันต่อแบทช์ เราสร้างเอนจินที่ผลิตคอนเทนต์ 14 ชิ้นในไม่กี่วินาที ด้วยต้นทุนไม่ถึง 30 ดอลลาร์/เดือน แล้วเพิ่มเอเจนต์ที่ส่งข่าวที่เขียนเสร็จแล้วให้ทุกเช้าด้วยตัวเอง",
+    "summary_ru": "Команда контента BoBe стоила около $3,000/мес и тратила 1–2 дня на один батч. Мы построили движок, который выпускает 14 материалов за секунды меньше чем за $30/мес, а затем добавили агента, который сам присылает готовый материал каждое утро.",
     "image": "assets/bobe/engine.png",
     "stats": [
       {
-        "value": "~$36K",
-        "label": "Saved / Year",
-        "label_th": "ประหยัดต่อปี",
-        "label_ru": "Экономия в год"
-      },
-      {
         "value": "<$30/mo",
-        "label": "Running Cost",
-        "label_th": "ต้นทุนรายเดือน",
-        "label_ru": "Стоимость в месяц"
+        "label": "Down from ~$3,000",
+        "label_th": "จากเดิมราว 3,000 ดอลลาร์",
+        "label_ru": "Было около $3,000"
       },
       {
         "value": "14 posts",
         "label": "Per Run",
         "label_th": "ต่อครั้ง",
         "label_ru": "За запуск"
+      },
+      {
+        "value": "Daily",
+        "label": "Since 8 May 2026",
+        "label_th": "ตั้งแต่ 8 พ.ค. 2026",
+        "label_ru": "С 8 мая 2026"
       },
       {
         "value": "3 days",
@@ -42,12 +42,12 @@
     "challenge": "BoBe was running a fully manual content operation. A dedicated external team handled everything: research, ideation, copywriting, approvals, and visuals across multiple design tools. Producing a single batch took 1–2 days before anything was published. Cost: $2,000 to $3,000/month. Scaling content meant scaling cost linearly, with no ceiling in sight.",
     "challenge_th": "BoBe มีทีมคอนเทนต์ภายนอกที่ทำงานด้วยมือทั้งหมด ตั้งแต่หาไอเดีย เขียนคอปปี้ ไปจนถึงทำภาพ ผลิตคอนเทนต์หนึ่งแบทช์ใช้เวลา 1–2 วัน ค่าใช้จ่าย 2,000–3,000 ดอลลาร์ต่อเดือน ถ้าอยากโตต้องจ่ายมากขึ้นไปเรื่อย ๆ",
     "challenge_ru": "BoBe держала внешнюю команду контента, которая делала всё вручную: исследование, идеи, копирайтинг, согласования и визуалы в нескольких инструментах. Один батч занимал 1–2 дня. Стоимость: от $2,000 до $3,000 в месяц. Рост объёма контента означал линейный рост затрат.",
-    "solution": "We ran a 2-week audit to map BoBe's full content workflow and identify where every hour was going. Every step was manual, and every step was repeatable. We designed and built a fully autonomous content generation system: it scrapes trending news, generates on-brand copy and visuals with AI, serves a one-click approve/disapprove interface to the client, auto-regenerates rejected content, and auto-translates approved pieces for multilingual publishing. 14 pieces of content per run, fully automated. The engine runs in two delivery modes: a batch run that fills the one-click dashboard, and a daily news cron that auto-curates the single top crypto story each morning and posts a ready draft straight into the client's Telegram for review.",
-    "solution_th": "เราทำ audit 2 สัปดาห์เพื่อวิเคราะห์กระบวนการคอนเทนต์ทั้งหมดของ BoBe ทุกขั้นตอนทำด้วยมือ และทุกขั้นตอนทำซ้ำได้ เราออกแบบและสร้างระบบสร้างคอนเทนต์อัตโนมัติ: scrape ข่าวเทรนด์ สร้าง copy และภาพด้วย AI แสดงหน้า approve/disapprove แบบ one-click สร้างใหม่อัตโนมัติถ้าถูก disapprove และแปลอัตโนมัติสำหรับหลายภาษา 14 ชิ้นต่อครั้ง ทำงานเองทั้งหมด ระบบทำงานสองโหมด คือ โหมดแบทช์ที่ป้อนคอนเทนต์เข้าแดชบอร์ดอนุมัติคลิกเดียว และครอนข่าวรายวันที่คัดข่าวคริปโตเด่นที่สุดทุกเช้าแล้วส่งดราฟต์พร้อมใช้เข้ากลุ่ม Telegram ของลูกค้าเพื่อรีวิว",
-    "solution_ru": "Мы провели 2-недельный аудит, чтобы разобрать весь контент-процесс BoBe. Каждый шаг был ручным, и каждый шаг был повторяемым. Мы спроектировали и построили полностью автономную систему генерации контента: скрейпит актуальные новости, генерирует брендированный текст и визуалы через AI, показывает клиенту интерфейс одобрения в один клик, автоматически перегенерирует отклонённое и переводит одобренное для мультиязычной публикации. 14 материалов за запуск, полностью автоматически. Движок работает в двух режимах доставки: пакетный прогон, наполняющий дашборд с одобрением в один клик, и ежедневный новостной крон, который каждое утро отбирает один главный крипто-сюжет и отправляет готовый черновик прямо в Telegram клиента на ревью.",
-    "results": "Content production went from 1–2 days per batch to seconds. The manual content operation cost $2,000 to $3,000/month; BoBe’s runs for under $30/month. Each piece now costs less than $1 to generate. The client opens the system, approves content, and publishes, and that's the entire workflow. No team to manage, no briefings, no back-and-forth. BoBe is live and using the system daily, with more AI implementations underway.",
-    "results_th": "เวลาผลิตคอนเทนต์จาก 1–2 วันต่อแบทช์ เหลือแค่ไม่กี่วินาที ต้นทุนรายเดือนจาก 2,000–3,000 ดอลลาร์ เหลือไม่ถึง 30 ดอลลาร์ แต่ละชิ้นสร้างในราคาต่ำกว่า 1 ดอลลาร์ ลูกค้าเปิดระบบ approve และ publish เท่านั้น ไม่ต้องบริหารทีม ไม่ต้อง brief ไม่ต้องรอ BoBe ใช้ระบบนี้ทุกวัน และมีการพัฒนาระบบ AI เพิ่มเติมอยู่ระหว่างดำเนินการ",
-    "results_ru": "Производство контента сократилось с 1–2 дней за батч до секунд. Ручная контент-операция стоила от $2,000 до $3,000 в месяц; у BoBe она работает менее чем за $30 в месяц. Каждый материал теперь стоит меньше $1. Клиент открывает систему, одобряет контент и публикует, и это весь процесс. Нет команды, нет брифингов, нет согласований. BoBe работает с системой ежедневно, дополнительные AI-внедрения в процессе.",
+    "solution": "We ran a 2-week audit across BoBe's whole content workflow to find where the hours were actually going. Every step was manual, and every step was repeatable. So we built it in two parts: an engine that produces content in batches on demand, and an agent that handles the daily cadence on its own.",
+    "solution_th": "เราทำ audit 2 สัปดาห์ ไล่ดูกระบวนการคอนเทนต์ทั้งหมดของ BoBe เพื่อหาว่าเวลาหมดไปกับอะไร ทุกขั้นตอนทำด้วยมือ และทุกขั้นตอนทำซ้ำได้ เราจึงสร้างเป็นสองส่วน คือ เอนจินที่ผลิตคอนเทนต์เป็นแบทช์ตามสั่ง และเอเจนต์ที่ดูแลงานรายวันด้วยตัวเอง",
+    "solution_ru": "Мы провели 2-недельный аудит всего контент-процесса BoBe, чтобы понять, куда уходят часы. Каждый шаг был ручным, и каждый шаг был повторяемым. Поэтому мы собрали систему из двух частей: движок, который производит контент батчами по запросу, и агент, который сам держит ежедневный ритм.",
+    "results": "Content production went from 1–2 days per batch to seconds. The manual content operation cost $2,000 to $3,000/month; BoBe's runs for under $30/month, and each piece costs less than $1 to generate. The agent has not missed a morning since 8 May 2026. BoBe is live and using both daily, with more AI implementations underway.",
+    "results_th": "เวลาผลิตคอนเทนต์จาก 1–2 วันต่อแบทช์ เหลือแค่ไม่กี่วินาที การทำด้วยมือเคยมีต้นทุน 2,000–3,000 ดอลลาร์ต่อเดือน ของ BoBe ตอนนี้ไม่ถึง 30 ดอลลาร์ต่อเดือน และแต่ละชิ้นสร้างในราคาต่ำกว่า 1 ดอลลาร์ เอเจนต์ไม่เคยพลาดสักเช้าตั้งแต่ 8 พฤษภาคม 2026 BoBe ใช้ทั้งสองระบบทุกวัน และมีการพัฒนาระบบ AI เพิ่มเติมอยู่ระหว่างดำเนินการ",
+    "results_ru": "Производство контента сократилось с 1–2 дней за батч до секунд. Ручная контент-операция стоила от $2,000 до $3,000 в месяц; у BoBe она работает менее чем за $30 в месяц, и каждый материал стоит меньше $1. Агент не пропустил ни одного утра с 8 мая 2026 года. BoBe использует обе системы ежедневно, дополнительные AI-внедрения в процессе.",
     "testimonial": {
       "quote": "Working with RT gave us something we didn't expect: actual clarity on where AI could help us. Not theory. A real plan we could execute. The implementation saved us hours every week from day one.",
       "quote_th": "ทำงานกับ RT แล้วได้สิ่งที่ไม่คาดคิด คือความชัดเจนว่า AI ช่วยเราได้ตรงไหนจริง ๆ ไม่ใช่ทฤษฎี แต่เป็นแผนที่ทำได้จริง ระบบที่ติดตั้งให้ช่วยประหยัดเวลาได้หลายชั่วโมงตั้งแต่วันแรก",
@@ -90,9 +90,9 @@
         ]
       },
       {
-        "category": "The Daily News Cron",
-        "category_th": "ครอนข่าวรายวัน",
-        "category_ru": "Ежедневный новостной крон",
+        "category": "The Daily Agent",
+        "category_th": "เอเจนต์รายวัน",
+        "category_ru": "Ежедневный агент",
         "wide": true,
         "items": [
           {
@@ -124,7 +124,25 @@
         ]
       }
     ],
-    "logo": "assets/bobe/logo.png"
+    "logo": "assets/bobe/logo.png",
+    "sections": [
+      {
+        "label": "The content engine",
+        "label_th": "เอนจินคอนเทนต์",
+        "label_ru": "Контент-движок",
+        "body": "A batch run fills a one-click dashboard. The engine scrapes trending news, writes on-brand copy, generates the visuals alongside it, regenerates anything the client rejects, and auto-translates whatever gets approved for multilingual publishing. 14 pieces of content per run. No Figma, no Photoshop, no briefing, no email chains. Built in 3 days.",
+        "body_th": "การรันแบบแบทช์จะป้อนงานเข้าแดชบอร์ดอนุมัติคลิกเดียว เอนจินดึงข่าวที่กำลังมาแรง เขียนคอปปี้ให้ตรงแบรนด์ สร้างภาพไปพร้อมกัน สร้างใหม่ให้อัตโนมัติถ้าลูกค้าไม่อนุมัติ และแปลชิ้นที่อนุมัติแล้วเพื่อเผยแพร่หลายภาษา 14 ชิ้นต่อการรันหนึ่งครั้ง ไม่ต้องใช้ Figma ไม่ต้องใช้ Photoshop ไม่ต้อง brief ไม่ต้องส่งอีเมลกลับไปกลับมา สร้างเสร็จใน 3 วัน",
+        "body_ru": "Пакетный прогон наполняет дашборд с одобрением в один клик. Движок собирает актуальные новости, пишет текст в тоне бренда, тут же генерирует визуал, пересоздаёт всё, что клиент отклонил, и переводит одобренное для мультиязычной публикации. 14 материалов за прогон. Без Figma, без Photoshop, без брифов и переписки. Собрано за 3 дня."
+      },
+      {
+        "label": "The daily agent",
+        "label_th": "เอเจนต์รายวัน",
+        "label_ru": "Ежедневный агент",
+        "body": "The second mode needs nobody to start it. Every morning the agent reads the crypto feeds, picks the one story worth telling, writes the post, generates the image, and files a finished draft into BoBe's review channel. It has done that every morning since 8 May 2026. The last step is human on purpose: BoBe's team reads the draft and decides what goes public. Autonomous production, human publish gate. A second version with automated quality checks is in private trial.",
+        "body_th": "โหมดที่สองไม่ต้องมีใครกดเริ่ม ทุกเช้าเอเจนต์จะอ่านฟีดข่าวคริปโต เลือกข่าวที่ควรเล่าหนึ่งชิ้น เขียนโพสต์ สร้างภาพ แล้วส่งดราฟต์ที่เสร็จแล้วเข้าช่องรีวิวของ BoBe ทำแบบนี้ทุกเช้าตั้งแต่ 8 พฤษภาคม 2026 ขั้นตอนสุดท้ายเป็นคนโดยตั้งใจ ทีมของ BoBe อ่านดราฟต์แล้วตัดสินใจว่าจะเผยแพร่อะไร ผลิตอัตโนมัติ แต่คนเป็นผู้กดเผยแพร่ เวอร์ชันที่สองซึ่งมีระบบตรวจคุณภาพอัตโนมัติกำลังทดสอบภายใน",
+        "body_ru": "Второй режим не нужно запускать. Каждое утро агент читает крипто-фиды, выбирает один сюжет, который стоит рассказать, пишет пост, генерирует изображение и отправляет готовый черновик в канал ревью BoBe. Так каждое утро с 8 мая 2026 года. Последний шаг оставлен человеку намеренно: команда BoBe читает черновик и решает, что уходит в публикацию. Производство автономное, публикацию гейтит человек. Вторая версия с автоматическим контролем качества проходит закрытый тест."
+      }
+    ]
   },
   {
     "slug": "duckycutz",

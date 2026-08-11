@@ -284,6 +284,15 @@
           '<p>' + t(cs, 'solution') + '</p>' +
         '</section>' +
 
+        // Optional extra sections, each with its own per-study label. Same markup
+        // as the fixed ones above, so no new CSS.
+        (Array.isArray(cs.sections) ? cs.sections.map(function (s) {
+          return '<section class="cs-page__section">' +
+            '<div class="cs-page__section-label">' + t(s, 'label') + '</div>' +
+            '<p>' + t(s, 'body') + '</p>' +
+          '</section>';
+        }).join('') : '') +
+
         '<section class="cs-page__section">' +
           '<div class="cs-page__section-label">' + lb('results') + '</div>' +
           '<p>' + t(cs, 'results') + '</p>' +
