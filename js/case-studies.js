@@ -311,6 +311,65 @@
     });
   }
 
+  // ---- Hub page (/case-studies/) ----
+
+  // Chip labels; the segment key on each study in the JSON picks its chip.
+  var SEG_LABELS = {
+    all: { en: 'Everything', th: 'ทั้งหมด', ru: 'Все' },
+    local: { en: 'Local & service businesses', th: 'ธุรกิจท้องถิ่นและงานบริการ', ru: 'Локальный и сервисный бизнес' },
+    platform: { en: 'Platforms & teams', th: 'แพลตฟอร์มและทีม', ru: 'Платформы и команды' }
+  };
+  var featuredRead = { en: 'Read the full story', th: 'อ่านเรื่องราวทั้งหมด', ru: 'Читать кейс полностью' };
+
+  function renderHub(container) {
+    fetchData().then(function (studies) {
+      var l = lang();
+      var published = studies.filter(function (s) { return s.published; });
+      var featSlug = container.getAttribute('data-featured');
+      var feat = null;
+      published.forEach(function (s) { if (s.slug === featSlug) feat = s; });
+      var rest = published.filter(function (s) { return s !== feat; });
+      var active = container.getAttribute('data-filter') || 'all';
+
+      var featHtml = '';
+      if (feat) {
+        var featStats = feat.stats.map(function (s) {
+          return '<div class="cs-page__stat"><span class="cs-page__stat-val">' + s.value + '</span><span class="cs-page__stat-label">' + tStat(s) + '</span></div>';
+        }).join('');
+        featHtml =
+          '<div class="cs-hub__feature">' +
+            '<div class="cs-hub__feature-text">' +
+              '<span class="cs-card__tag">' + t(feat, 'industry') + '</span>' +
+              '<h2 class="cs-hub__feature-title"><a href="/case-studies/' + feat.slug + '">' + t(feat, 'headline') + '</a></h2>' +
+              '<p class="cs-hub__feature-summary">' + t(feat, 'summary') + '</p>' +
+              '<div class="cs-page__stats">' + featStats + '</div>' +
+              '<a class="cs-hub__feature-link" href="/case-studies/' + feat.slug + '">' + (featuredRead[l] || featuredRead.en) + ' <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>' +
+            '</div>' +
+            '<a href="/case-studies/' + feat.slug + '" class="cs-hub__feature-img"><img src="' + basePath + feat.image + '" alt="' + feat.client + '"></a>' +
+          '</div>';
+      }
+
+      var chipsHtml = '<div class="cs-hub__chips">' + ['all', 'local', 'platform'].map(function (key) {
+        return '<button class="cs-hub__chip" data-seg="' + key + '" aria-pressed="' + (key === active) + '">' + (SEG_LABELS[key][l] || SEG_LABELS[key].en) + '</button>';
+      }).join('') + '</div>';
+
+      var items = rest.filter(function (s) { return active === 'all' || s.segment === active; });
+      var gridHtml = '<div class="cs-grid cs-hub__grid">' + items.map(renderCard).join('') + '</div>';
+
+      container.innerHTML = featHtml + chipsHtml + gridHtml;
+
+      initEvervaultCards(container);
+      container.querySelectorAll('[data-cs-card]').forEach(function (c) { c.classList.add('in-view'); });
+
+      container.querySelectorAll('.cs-hub__chip').forEach(function (b) {
+        b.addEventListener('click', function () {
+          container.setAttribute('data-filter', b.getAttribute('data-seg'));
+          renderHub(container);
+        });
+      });
+    });
+  }
+
   // ---- Init ----
 
   function renderAll() {
@@ -321,6 +380,10 @@
     // Render full page if container exists
     var page = document.getElementById('case-study-page');
     if (page) renderFullPage(page);
+
+    // Render hub if container exists
+    var hub = document.getElementById('case-studies-hub');
+    if (hub) renderHub(hub);
   }
 
   document.addEventListener('DOMContentLoaded', function () {

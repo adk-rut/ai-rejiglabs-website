@@ -1454,6 +1454,104 @@ img, svg { display: block; max-width: 100%; }
   .stats__grid { grid-template-columns: 1fr !important; max-width: 320px; margin: 0 auto; }
 }
 
+/* ---- Case-study hub (/case-studies/) ---- */
+.cs-hub__feature {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.cs-hub__feature-title {
+  font-family: var(--font-head);
+  font-weight: 400;
+  font-size: clamp(1.7rem, 3.2vw, 2.4rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin: 0.8rem 0 0.9rem;
+}
+.cs-hub__feature-title a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+.cs-hub__feature-title a:hover { color: var(--accent); }
+.cs-hub__feature-summary {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0 0 1.6rem;
+}
+.cs-hub__feature .cs-page__stats { margin: 0 0 1.6rem; }
+.cs-hub__feature-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 3px;
+}
+.cs-hub__feature-link svg { width: 16px; height: 16px; }
+.cs-hub__feature-img img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  display: block;
+}
+.cs-hub__chips {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin: 0 0 2rem;
+}
+.cs-hub__chip {
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  padding: 0.7rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-hover);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+}
+.cs-hub__chip:hover { color: var(--accent); border-color: var(--accent); }
+.cs-hub__chip[aria-pressed="true"] {
+  background: var(--accent);
+  color: #fff;
+  border-color: transparent;
+}
+/* The hub grid keeps three columns even at four cards; the homepage 2x2
+   fallback is for the snack grid, not here. */
+@media (min-width: 901px) {
+  .cs-hub__grid:has(> :nth-child(4):last-child) {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: none;
+  }
+}
+@media (max-width: 900px) {
+  .cs-hub__feature { grid-template-columns: 1fr; gap: 2rem; }
+  .cs-hub__feature-img { order: -1; }
+}
+
+/* "View all case studies" link under the homepage snack grid */
+.cs-viewall-wrap { text-align: center; margin-top: 2.5rem; }
+.cs-viewall {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 3px;
+}
+.cs-viewall svg { width: 16px; height: 16px; }
+
 .cs-card {
   display: flex;
   flex-direction: column;

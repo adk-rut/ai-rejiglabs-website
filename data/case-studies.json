@@ -1,6 +1,7 @@
 [
   {
     "slug": "bobe",
+    "segment": "platform",
     "client": "BoBe",
     "industry": "AI Trading Platform",
     "industry_th": "แพลตฟอร์ม AI Trading",
@@ -127,6 +128,7 @@
   },
   {
     "slug": "duckycutz",
+    "segment": "local",
     "client": "Ducky Cutz",
     "industry": "Barbershop · Local Service",
     "industry_th": "ร้านตัดผม · ธุรกิจบริการท้องถิ่น",
@@ -296,6 +298,7 @@
   },
   {
     "slug": "anrcf-golf",
+    "segment": "local",
     "client": "ANRCF",
     "industry": "Environmental Charity · Fundraising Event",
     "industry_th": "องค์กรการกุศลด้านสิ่งแวดล้อม · งานระดมทุน",
@@ -441,6 +444,7 @@
   },
   {
     "slug": "me-elevator",
+    "segment": "local",
     "client": "Mobile Engineer",
     "industry": "Elevator Installation and Service, Phuket",
     "industry_th": "ติดตั้งและบริการลิฟต์ ภูเก็ต",

@@ -96,15 +96,16 @@
         "url": "https://rejiglabs.com/",
         "logo": "https://rejiglabs.com/assets/logo.png",
         "image": "https://rejiglabs.com/assets/og/home.png",
-        "description": "Rejig Labs finds where AI saves your business real time and real money, then builds it, implements it, and trains your team to run it.",
+        "description": "Rejig Labs is an AI automation agency in Thailand, based in Phuket. We find where AI saves your business real time and real money, then build it, implement it, and train your team to run it.",
         "email": "hello@rejiglabs.com",
         "foundingDate": "2026",
         "slogan": "We don't just talk AI. We deliver it.",
         "knowsLanguage": ["en", "th", "ru"],
-        "areaServed": "Worldwide",
+        "areaServed": ["Thailand", "Worldwide"],
         "address": {
           "@type": "PostalAddress",
           "addressCountry": "TH",
+          "addressLocality": "Phuket",
           "addressRegion": "Phuket / Bangkok"
         },
         "sameAs": [
@@ -116,13 +117,13 @@
       {
         "@type": "ProfessionalService",
         "@id": "https://rejiglabs.com/#service",
-        "name": "Rejig Labs — AI Implementation",
+        "name": "Rejig Labs — AI Automation Agency in Thailand",
         "url": "https://rejiglabs.com/",
         "image": "https://rejiglabs.com/assets/og/home.png",
         "provider": { "@id": "https://rejiglabs.com/#organization" },
-        "areaServed": "Worldwide",
+        "areaServed": ["Thailand", "Worldwide"],
         "availableLanguage": ["English", "Thai", "Russian"],
-        "description": "AI implementation consultancy: we audit your workflows, build custom AI systems, deploy them into your existing tools, and train your team to run them.",
+        "description": "AI automation agency in Thailand: we audit your workflows, build custom AI systems, deploy them into your existing tools, and train your team to run them.",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "AI Implementation Process",
@@ -206,13 +207,16 @@
       <div class="nav__dropdown">
         <a href="#services" class="nav__link" data-i18n="nav_services">บริการ</a>
         <div class="nav__dropdown-menu">
-          <a href="/th/ai-receptionist/" class="nav__dropdown-item" data-i18n="nav_ai_receptionist">AI รับสายโทรศัพท์</a>
           <a href="/ai-chatbot/" class="nav__dropdown-item" data-i18n="nav_ai_chatbot">แชทบอท AI &amp; LINE</a>
+          <!-- English-only page for now; add to /th/ and /ru/ navs when those versions ship -->
+          <a href="/ai-receptionist/" class="nav__dropdown-item" data-i18n="nav_ai_receptionist">AI รับสายโทรศัพท์</a>
+          <a href="/ai-receptionist-clinic/" class="nav__dropdown-item">For Clinics</a>
+          <a href="/ai-receptionist-barbershop/" class="nav__dropdown-item">For Barbershops &amp; Salons</a>
           <a href="/blockchain/" class="nav__dropdown-item" data-i18n="nav_blockchain">บล็อกเชน</a>
         </div>
       </div>
       <a href="#process" class="nav__link" data-i18n="nav_process">ขั้นตอน</a>
-      <a href="#case-studies" class="nav__link" data-i18n="nav_case_studies">ผลงาน</a>
+      <a href="/case-studies/" class="nav__link" data-i18n="nav_case_studies">ผลงาน</a>
       <div class="nav__lang"><button data-lang="en" class="active">EN</button><button data-lang="th">TH</button><button data-lang="ru">RU</button></div>
       <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="nav__cta">Get In Touch <span>›</span></button>
     </div>
@@ -225,7 +229,7 @@
     <a href="#services" class="mobile-menu__link" data-i18n="nav_services">บริการ</a>
     <a href="/blockchain/" class="mobile-menu__link" data-i18n="nav_blockchain">บล็อกเชน</a>
     <a href="#process" class="mobile-menu__link" data-i18n="nav_process">ขั้นตอน</a>
-    <a href="#case-studies" class="mobile-menu__link" data-i18n="nav_case_studies">ผลงาน</a>
+    <a href="/case-studies/" class="mobile-menu__link" data-i18n="nav_case_studies">ผลงาน</a>
     <div class="mobile-menu__link nav__lang"><button data-lang="en" class="active">EN</button><button data-lang="th">TH</button><button data-lang="ru">RU</button></div>
     <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="mobile-menu__link mobile-menu__link--cta">Get In Touch</button>
   </div>
@@ -583,6 +587,9 @@
 
       </div>
       <div class="case-studies" data-limit="4"></div>
+      <div class="cs-viewall-wrap">
+        <a href="/case-studies/" class="cs-viewall"><span data-i18n="cs_view_all">ดูผลงานทั้งหมด</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
     </section>
 
     <!-- TESTIMONIALS -->

@@ -13,6 +13,7 @@ Rejig Labs is an AI automation agency based in Thailand (Phuket / Bangkok, worki
 
 ## Case Studies
 
+- [All case studies](https://rejiglabs.com/case-studies/): The hub page. One featured study plus every published study, filterable by business type.
 - [BoBe, AI trading platform](https://rejiglabs.com/case-studies/bobe): Replaced a $2–3K/month, 1–2-day content team with an autonomous system producing 14 pieces in seconds for under $30/month.
 - [Ducky Cutz, barbershop in Phuket](https://rejiglabs.com/case-studies/duckycutz): An AI front desk that answers every call, text, and LINE message in Thai, English, or Russian and books straight into the calendar, day or night, with no staff time needed.
 - [ANRCF, Green Charity Golf Tournament](https://rejiglabs.com/case-studies/anrcf-golf): Ran the entire digital operation solo for Thailand's first Green Charity Golf Tournament: a trilingual registration site, sign-up funnel, print and brand collateral, and sponsor outreach. 35 teams, 21 sponsors, 3 languages.

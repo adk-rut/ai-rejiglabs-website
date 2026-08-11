@@ -57,7 +57,7 @@ export function cardHtml(cs, logoHref) {
 </style>
 <div class="card">
   <div>
-    <div class="eyebrow">Case study</div>
+    <div class="eyebrow">${esc(cs.eyebrow || 'Case study')}</div>
     <h2>${esc(cs.headline)}</h2>
     <div class="rule"></div>
   </div>
@@ -71,6 +71,8 @@ export function cardHtml(cs, logoHref) {
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const studies = JSON.parse(readFileSync(resolve(ROOT, 'data/case-studies.json'), 'utf8'))
     .filter((c) => c.published);
+  // The /case-studies/ hub gets its own card: same Quiet template, Rejig's blue mark.
+  studies.push({ slug: 'hub', headline: "Systems we've shipped.", client: 'Case Studies', logo: 'assets/logo-blue.png', eyebrow: 'Case studies' });
   const work = resolve(tmpdir(), 'rejig-og-cards');
   mkdirSync(work, { recursive: true });
   mkdirSync(resolve(ROOT, 'assets/og'), { recursive: true });

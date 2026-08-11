@@ -803,5 +803,25 @@
     "en": "AI Receptionist",
     "th": "AI รับสายโทรศัพท์",
     "ru": "AI-секретарь"
+  },
+  "cs_hub_eyebrow": {
+    "en": "PROOF",
+    "th": "ผลงานจริง",
+    "ru": "НАШИ КЕЙСЫ"
+  },
+  "cs_hub_h2": {
+    "en": "Systems we've <em class=\"accent\">shipped.</em>",
+    "th": "ระบบที่เรา<em class=\"accent\">ส่งมอบแล้ว</em>",
+    "ru": "Системы, которые мы <em class=\"accent\">уже запустили.</em>"
+  },
+  "cs_hub_sub": {
+    "en": "Named clients, real numbers, systems running in production today.",
+    "th": "ลูกค้าตัวจริง ตัวเลขจริง ระบบที่ใช้งานจริงอยู่ทุกวันนี้",
+    "ru": "Реальные клиенты, реальные цифры, системы в продакшене уже сегодня."
+  },
+  "cs_view_all": {
+    "en": "View all case studies",
+    "th": "ดูผลงานทั้งหมด",
+    "ru": "Все кейсы"
   }
 }
