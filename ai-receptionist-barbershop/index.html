@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Receptionist for Businesses in Thailand | AI Front Desk | Rejig Labs</title>
-  <meta name="description" content="An AI receptionist that answers your business phone 24/7 in Thai, English and Russian. It books appointments straight into your calendar, follows up on LINE and SMS, and transfers to staff when a human is needed. Live at a real Thai business today.">
+  <title>AI Receptionist for Barbershops &amp; Salons in Thailand | Rejig Labs</title>
+  <meta name="description" content="An AI receptionist built for barbershops and salons in Thailand. It answers the shop phone 24/7 in Thai, English and Russian, books the right barber into your live calendar, and confirms on LINE. Running at a 6-branch Phuket barbershop today.">
 
   <!-- Consent Mode v2 defaults: analytics OFF until the visitor accepts -->
   <script>
@@ -45,25 +45,19 @@
     })(window, document, "clarity", "script", "w91b1gltmo");
   </script>
 
-  <meta property="og:title" content="AI Receptionist for Businesses in Thailand | Rejig Labs">
-  <meta property="og:description" content="An AI receptionist that answers your business phone 24/7 in Thai, English and Russian, books appointments into your calendar, and transfers to staff when needed.">
+  <meta property="og:title" content="AI Receptionist for Barbershops &amp; Salons in Thailand | Rejig Labs">
+  <meta property="og:description" content="The shop phone answers itself. 24/7, in Thai, English and Russian, booked into the right barber's calendar. Live at a 6-branch Phuket barbershop.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://rejiglabs.com/ai-receptionist/">
+  <meta property="og:url" content="https://rejiglabs.com/ai-receptionist-barbershop/">
   <meta property="og:image" content="https://rejiglabs.com/assets/og/home.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AI Receptionist for Businesses in Thailand | Rejig Labs">
-  <meta name="twitter:description" content="An AI receptionist that answers your business phone 24/7 in Thai, English and Russian, books appointments, and transfers to staff when needed.">
+  <meta name="twitter:title" content="AI Receptionist for Barbershops &amp; Salons in Thailand | Rejig Labs">
+  <meta name="twitter:description" content="The shop phone answers itself. 24/7, in Thai, English and Russian, booked into the right barber's calendar. Live at a 6-branch Phuket barbershop.">
   <meta name="twitter:image" content="https://rejiglabs.com/assets/og/home.png">
   <meta name="theme-color" content="#f7f8fc">
-  <link rel="canonical" href="https://rejiglabs.com/ai-receptionist/">
-
-  <!-- Language versions (hreflang). EN + TH only: no Russian receptionist page yet. -->
-  <link rel="alternate" hreflang="en" href="https://rejiglabs.com/ai-receptionist/">
-  <link rel="alternate" hreflang="th" href="https://rejiglabs.com/th/ai-receptionist/">
-  <link rel="alternate" hreflang="x-default" href="https://rejiglabs.com/ai-receptionist/">
-  <script>window.__i18nUrls={en:'/ai-receptionist/',th:'/th/ai-receptionist/'};</script>
+  <link rel="canonical" href="https://rejiglabs.com/ai-receptionist-barbershop/">
 
   <link rel="icon" href="/assets/logo.png" type="image/png">
 
@@ -85,43 +79,49 @@
     "@graph": [
       {
         "@type": "Service",
-        "@id": "https://rejiglabs.com/ai-receptionist/#service",
-        "name": "AI Receptionist / AI Front Desk",
-        "url": "https://rejiglabs.com/ai-receptionist/",
-        "serviceType": "AI receptionist and voice agent development",
+        "@id": "https://rejiglabs.com/ai-receptionist-barbershop/#service",
+        "name": "AI Receptionist for Barbershops and Salons",
+        "url": "https://rejiglabs.com/ai-receptionist-barbershop/",
+        "serviceType": "AI receptionist and booking agent for barbershops, salons and spas",
         "provider": { "@id": "https://rejiglabs.com/#organization" },
         "areaServed": "Thailand",
+        "audience": { "@type": "BusinessAudience", "audienceType": "Barbershops, hair salons, beauty salons and spas" },
         "availableLanguage": ["Thai", "English", "Russian"],
-        "description": "A custom AI receptionist that answers business phone calls 24/7 in Thai, English and Russian, books appointments into the live calendar, follows up on LINE and SMS, and transfers to staff when a human is needed."
+        "description": "An AI receptionist built for barbershops and salons: it answers the shop phone 24/7 in Thai, English and Russian, books the requested barber into the live calendar, handles walk-ins alongside appointments, and confirms on LINE and SMS."
       },
       {
         "@type": "FAQPage",
-        "@id": "https://rejiglabs.com/ai-receptionist/#faq",
+        "@id": "https://rejiglabs.com/ai-receptionist-barbershop/#faq",
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Does the AI receptionist speak Thai?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. It answers in Thai, English or Russian, detecting the caller's language from their first words and switching mid-call if needed. Thai callers are the majority at our live deployment." }
+            "name": "Can the AI book a specific barber, not just any slot?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Customers ask for their usual barber by name and the AI checks that barber's own availability, not the shop's. Barbers who work by appointment only are kept on a separate calendar, so a full walk-in hour never hides a free appointment chair." }
           },
           {
             "@type": "Question",
-            "name": "What happens when a caller needs a real person?",
-            "acceptedAnswer": { "@type": "Answer", "text": "The AI transfers the call to your staff, with context. It handles the routine calls (bookings, opening hours, prices, directions) and passes on anything unusual, so your team only picks up when it matters." }
+            "name": "We take mostly walk-ins. Does this still help?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, and this is the part most shops underestimate. Walk-ins and phone bookings compete for the same chairs, so both have to live in one calendar or the AI will double-book. Your barbers log walk-ins from their own phones in a few taps, which keeps availability honest and gives you the first real picture of where your customers come from." }
           },
           {
             "@type": "Question",
-            "name": "Can it actually book appointments, not just take messages?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. It reads your live calendar during the call, offers real open slots, and books the appointment before the caller hangs up. The booking lands in the same calendar your staff already use." }
+            "name": "Does it speak Thai?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. It answers in Thai, English or Russian, picking the language from the caller's first words. At our live barbershop deployment Thai is the majority language, with English callers on the same number." }
           },
           {
             "@type": "Question",
-            "name": "Is this really running at a real business?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Ducky Cutz, a barbershop in Phuket Town, has run our AI front desk since June 2026. In its first 7 weeks it answered 169+ calls and made 105 bookings across voice and chat, in three languages, with no staff time." }
+            "name": "What if a customer wants something the AI can't handle?",
+            "acceptedAnswer": { "@type": "Answer", "text": "It transfers the call to your staff with the context attached. The AI takes the routine calls: bookings, changes, cancellations, prices, opening hours and directions. Your team only picks up when it actually needs a person." }
           },
           {
             "@type": "Question",
-            "name": "How long does it take to go live?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Most AI receptionists go live in 2 to 4 weeks: we learn your services and prices, connect your phone number and calendar, then test with real calls before switching it on for customers." }
+            "name": "Is this running at a real barbershop?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Ducky Cutz in Phuket Town has run it since June 2026. In the first 7 weeks the shop took 535 bookings, 105 of them made end to end by the AI across voice and chat, with 169+ calls answered at an average of 76 seconds. The owner has since extended it to all six branches." }
+          },
+          {
+            "@type": "Question",
+            "name": "How long until it is live in my shop?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Usually 2 to 4 weeks. We learn your services, prices and barbers, connect your existing phone number, calendar and LINE OA, then test with real calls before you switch it on for customers." }
           }
         ]
       },
@@ -129,7 +129,8 @@
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rejiglabs.com/" },
-          { "@type": "ListItem", "position": 2, "name": "AI Receptionist", "item": "https://rejiglabs.com/ai-receptionist/" }
+          { "@type": "ListItem", "position": 2, "name": "AI Receptionist", "item": "https://rejiglabs.com/ai-receptionist/" },
+          { "@type": "ListItem", "position": 3, "name": "For Barbershops & Salons", "item": "https://rejiglabs.com/ai-receptionist-barbershop/" }
         ]
       }
     ]
@@ -148,7 +149,7 @@
       <div class="nav__dropdown">
         <a href="/#services" class="nav__link" data-i18n="nav_services">Services</a>
         <div class="nav__dropdown-menu">
-          <a href="/ai-receptionist/" class="nav__dropdown-item" data-i18n="nav_ai_receptionist">AI Receptionist</a>
+          <a href="/ai-receptionist/" class="nav__dropdown-item">AI Receptionist</a>
           <a href="/ai-receptionist-barbershop/" class="nav__dropdown-item">For Barbershops &amp; Salons</a>
           <a href="/ai-chatbot/" class="nav__dropdown-item" data-i18n="nav_ai_chatbot">AI Chatbot &amp; LINE</a>
           <a href="/blockchain/" class="nav__dropdown-item" data-i18n="nav_blockchain">Blockchain</a>
@@ -166,7 +167,7 @@
 
   <div class="mobile-menu" id="mobileMenu">
     <a href="/#services" class="mobile-menu__link" data-i18n="nav_services">Services</a>
-    <a href="/ai-receptionist/" class="mobile-menu__link" data-i18n="nav_ai_receptionist">AI Receptionist</a>
+    <a href="/ai-receptionist/" class="mobile-menu__link">AI Receptionist</a>
     <a href="/ai-chatbot/" class="mobile-menu__link" data-i18n="nav_ai_chatbot">AI Chatbot &amp; LINE</a>
     <a href="/blockchain/" class="mobile-menu__link" data-i18n="nav_blockchain">Blockchain</a>
     <a href="/#process" class="mobile-menu__link" data-i18n="nav_process">Process</a>
@@ -180,9 +181,9 @@
     <!-- HERO -->
     <section class="encap" style="padding-top:9rem">
       <div class="sec-head">
-        <p class="eyebrow">AI RECEPTIONIST · PHONE · LINE · SMS</p>
-        <h1>An AI front desk that <em class="accent">answers every call.</em></h1>
-        <p>An AI receptionist for businesses in Thailand. It picks up your phone 24/7 in Thai, English or Russian, books appointments straight into your calendar, and transfers to your staff when a human is needed. No missed calls, no phone tag, no extra hire.</p>
+        <p class="eyebrow">AI RECEPTIONIST FOR BARBERSHOPS &amp; SALONS · THAILAND</p>
+        <h1>The shop phone that <em class="accent">books itself.</em></h1>
+        <p>An AI receptionist built for barbershops, salons and spas in Thailand. It answers every call in Thai, English or Russian while your hands are full, books the barber the customer asked for into your live calendar, and confirms on LINE. Already running a six-branch barbershop in Phuket.</p>
         <div style="text-align:center; margin-top:2.4rem">
           <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="btn btn--filled"><span class="btn__text">Book a Discovery Call</span><span class="btn__hover">Book a Discovery Call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
         </div>
@@ -198,8 +199,8 @@
             <div class="cap-cell__glow"></div>
             <div class="cap-cell__txt">
               <div class="cap-cell__id">LIVE · PHONE</div>
-              <h3 class="cap-cell__h">Every call answered</h3>
-              <p class="cap-cell__d">Language detected, slot found, booking confirmed. Before the caller hangs up.</p>
+              <h3 class="cap-cell__h">"Is Boy free at three?"</h3>
+              <p class="cap-cell__d">The AI checks that barber's own chair, not the shop average, and confirms before the caller hangs up.</p>
             </div>
             <div class="cap-cell__viz">
               <div class="cap-vz">
@@ -207,7 +208,7 @@
                   <div><div class="cap-vz__who">Incoming call</div><div class="cap-vz__sub">+66 &middot; answered in 1 ring</div></div>
                   <div class="cap-vz__lang"><span>TH</span><span>EN</span><span>RU</span></div></div>
                 <div class="cap-vz__wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-                <div class="cap-vz__done"><span class="cap-vz__check">&#10003;</span> Booking confirmed &middot; Sat 3:00 PM</div>
+                <div class="cap-vz__done"><span class="cap-vz__check">&#10003;</span> Booked with Boy &middot; Sat 3:00 PM</div>
               </div>
             </div>
           </article>
@@ -216,8 +217,8 @@
             <div class="cap-cell__glow"></div>
             <div class="cap-cell__txt">
               <div class="cap-cell__id">LIVE · LINE</div>
-              <h3 class="cap-cell__h">Confirmed where they chat</h3>
-              <p class="cap-cell__d">Booking confirmations and follow-ups land on LINE and SMS.</p>
+              <h3 class="cap-cell__h">Rebooked without a phone call</h3>
+              <p class="cap-cell__d">Changes, cancellations and reminders land on LINE, where Thai customers already are.</p>
             </div>
             <div class="cap-cell__viz">
               <div class="cap-ch__tabs"><span class="cap-ch__tab cap-ch__tab--on">LINE</span><span class="cap-ch__tab">SMS</span><span class="cap-ch__tab">Web</span></div>
@@ -234,28 +235,30 @@
     <!-- PROBLEM -->
     <section class="encap encap--alt">
       <div class="sec-head">
-        <p class="eyebrow">THE COST OF AN UNANSWERED PHONE</p>
-        <h2>Every call you can't pick up <em class="accent">books somewhere else.</em></h2>
-        <p>Your phone rings while your hands are full, while the shop is closed, while the whole team is with customers. The caller doesn't leave a voicemail. They call the next place on Google Maps. Hiring a receptionist for one phone line is expensive; asking staff to juggle calls and customers means both get worse. An AI receptionist answers every call the same way, every time, at any hour.</p>
-        <img src="/assets/blob/blob-never-missed.webp" alt="Sketch of an AI receptionist answering phone calls at 3 AM and booking them into a calendar" width="1400" height="791" loading="lazy" style="display:block;max-width:680px;width:100%;height:auto;margin:2.5rem auto 0;mix-blend-mode:multiply">
+        <p class="eyebrow">THE BUSIEST HOUR IS THE ONE YOU MISS</p>
+        <h2>Every chair is full, so <em class="accent">nobody picks up.</em></h2>
+        <p>A barbershop's phone rings hardest at exactly the moment nobody can answer it. Clippers are running, hands are in someone's hair, and the caller does not leave a voicemail. They ring the next shop on Google Maps. After closing, the line is simply dead, which is when half your customers finally get around to thinking about a haircut. Hiring someone to sit by the phone costs more than the bookings it saves, and asking a barber to answer mid-fade makes both jobs worse.</p>
+        <img src="/assets/blob/blob-barbershop-chairs-full.webp" alt="Sketch of a busy barbershop with every chair full while an AI assistant answers the ringing phone and books the appointment" width="1400" height="791" loading="lazy" style="display:block;max-width:680px;width:100%;height:auto;margin:2.5rem auto 0;mix-blend-mode:multiply">
       </div>
     </section>
 
     <!-- WHAT IT DOES -->
     <section class="encap">
       <div class="sec-head">
-        <p class="eyebrow">WHAT YOUR AI RECEPTIONIST DOES</p>
-        <h2>A real front desk, <em class="accent">minus the desk.</em></h2>
-        <p>A custom AI voice agent trained on your business, connected to your real phone number and calendar.</p>
+        <p class="eyebrow">BUILT FOR HOW A SHOP ACTUALLY RUNS</p>
+        <h2>Not a generic bot. <em class="accent">A barbershop front desk.</em></h2>
+        <p>Every one of these came out of running a real shop's phone line, not out of a feature list.</p>
       </div>
       <div class="wrap">
         <div class="B-rows">
-          <div class="B-row rv"><span class="B-row__n">01</span><span class="B-row__name">Answers 24/7, from the first ring</span><span class="B-row__use">Picks up every call instantly, at night, on holidays, during the rush, so no caller ever hits voicemail.</span></div>
-          <div class="B-row rv"><span class="B-row__n">02</span><span class="B-row__name">Speaks Thai, English &amp; Russian</span><span class="B-row__use">Detects the caller's language from their first words and answers naturally in it, switching mid-call if needed.</span></div>
-          <div class="B-row rv"><span class="B-row__n">03</span><span class="B-row__name">Books into your live calendar</span><span class="B-row__use">Reads real availability during the call, offers open slots, and confirms the booking before the caller hangs up.</span></div>
-          <div class="B-row rv"><span class="B-row__n">04</span><span class="B-row__name">Follows up on LINE &amp; SMS</span><span class="B-row__use">Sends booking confirmations and answers follow-up messages on the channels Thai customers actually use.</span></div>
-          <div class="B-row rv"><span class="B-row__n">05</span><span class="B-row__name">Transfers to staff when it matters</span><span class="B-row__use">Handles the routine calls itself and passes anything unusual to your team, with the context attached.</span></div>
-          <div class="B-row rv"><span class="B-row__n">06</span><span class="B-row__name">Logs every call</span><span class="B-row__use">Every conversation is recorded, transcribed and saved to your CRM, so you can see exactly what your phone line is doing.</span></div>
+          <div class="B-row rv"><span class="B-row__n">01</span><span class="B-row__name">Books the barber they asked for</span><span class="B-row__use">Customers name their usual barber. The AI checks that barber's own chair rather than the shop average, so it never promises a slot that person doesn't have.</span></div>
+          <div class="B-row rv"><span class="B-row__n">02</span><span class="B-row__name">Walk-ins and bookings share one calendar</span><span class="B-row__use">Barbers log walk-ins from their own phones in a few taps. Availability stays honest, and you finally see how much of the shop is walk-in versus booked.</span></div>
+          <div class="B-row rv"><span class="B-row__n">03</span><span class="B-row__name">Knows your regulars by their number</span><span class="B-row__use">A returning customer is recognised on the first ring, so the AI can greet them by name and skip straight to the booking.</span></div>
+          <div class="B-row rv"><span class="B-row__n">04</span><span class="B-row__name">Handles groups, not just one head</span><span class="B-row__use">Three friends coming in together need three chairs at once. The AI asks how many, then holds the right number of slots instead of quietly booking one.</span></div>
+          <div class="B-row rv"><span class="B-row__n">05</span><span class="B-row__name">Thai, English and Russian on one number</span><span class="B-row__use">It picks the language from the caller's first words. In a tourist town that is the difference between a booking and a hang-up.</span></div>
+          <div class="B-row rv"><span class="B-row__n">06</span><span class="B-row__name">Passes special requests to the chair</span><span class="B-row__use">"Same as last time", "skin fade, no razor", "he's four and scared of clippers". It writes them as notes the barber sees the moment the customer walks in.</span></div>
+          <div class="B-row rv"><span class="B-row__n">07</span><span class="B-row__name">Confirms and reschedules on LINE</span><span class="B-row__use">Confirmations, reminders and changes go out on LINE and SMS, so fewer people simply forget to show up.</span></div>
+          <div class="B-row rv"><span class="B-row__n">08</span><span class="B-row__name">Hands over when it should</span><span class="B-row__use">Anything unusual goes to your staff with the conversation attached. The AI takes the repetitive calls, your team takes the ones that need a person.</span></div>
         </div>
       </div>
     </section>
@@ -263,17 +266,18 @@
     <!-- PROOF -->
     <section class="encap encap--alt">
       <div class="sec-head">
-        <p class="eyebrow">LIVE IN THAILAND TODAY</p>
-        <h2>Running at a real business, <em class="accent">not a demo.</em></h2>
-        <p>Ducky Cutz, a barbershop in Phuket Town, has run our AI front desk since June 2026. In its first 7 weeks the AI answered <strong>169+ phone calls</strong> (average 76 seconds each) and made <strong>105 bookings</strong> across voice and chat, in three languages, without a staff member touching the phone. Real callers, real bookings, in the shop's own calendar. Run a shop like this? See the <a href="/ai-receptionist-barbershop/">AI receptionist for barbershops and salons</a>.</p>
+        <p class="eyebrow">RUNNING IN A REAL BARBERSHOP</p>
+        <h2>Ducky Cutz, Phuket Town. <em class="accent">Live since June 2026.</em></h2>
+        <p>Seven chairs, walk-in heavy, Thai locals and tourists on the same phone line. In its first seven weeks the shop took <strong>535 bookings</strong>, of which <strong>105 were made end to end by the AI</strong> across voice and chat, with another 56 taken by customers on the self-serve form. It answered <strong>169+ calls</strong> at an average of 76 seconds each. The owner has since extended it to all six branches.</p>
       </div>
       <div class="wrap">
         <div class="stats__grid" style="margin-top:1.5rem">
-          <div class="stat in-view"><div class="stat__value">169+</div><div class="stat__label">calls answered in the first 7 weeks</div></div>
-          <div class="stat in-view"><div class="stat__value">105</div><div class="stat__label">bookings made by the AI, voice &amp; chat</div></div>
-          <div class="stat in-view"><div class="stat__value">76<span class="stat__unit">s</span></div><div class="stat__label">average call duration</div></div>
-          <div class="stat in-view"><div class="stat__value">3</div><div class="stat__label">languages: Thai, English, Russian</div></div>
+          <div class="stat in-view"><div class="stat__value">535</div><div class="stat__label">bookings in the first 7 weeks</div></div>
+          <div class="stat in-view"><div class="stat__value">105</div><div class="stat__label">booked by the AI, voice &amp; chat</div></div>
+          <div class="stat in-view"><div class="stat__value">76<span class="stat__unit">s</span></div><div class="stat__label">average call, start to booked</div></div>
+          <div class="stat in-view"><div class="stat__value">6</div><div class="stat__label">branches now on the system</div></div>
         </div>
+        <p style="max-width:52rem;margin:2rem auto 0;text-align:center;font-size:.86rem;opacity:.6">Measured 20 June to 7 August 2026 from the shop's own calendar and call log. Counts include our own test traffic; call totals exclude 20 June to 2 July, which the phone provider purged before logging began.</p>
         <div style="text-align:center; margin-top:2.4rem">
           <a href="/case-studies/duckycutz" class="btn"><span class="btn__text">Read the Ducky Cutz case study</span><span class="btn__hover">Read the Ducky Cutz case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></a>
         </div>
@@ -283,60 +287,67 @@
     <!-- HOW IT WORKS -->
     <section class="encap">
       <div class="sec-head">
-        <p class="eyebrow">HOW WE BUILD IT</p>
-        <h2>Live in weeks, <em class="accent">not months.</em></h2>
+        <p class="eyebrow">HOW WE PUT IT IN YOUR SHOP</p>
+        <h2>Your number, your calendar, <em class="accent">nothing new to learn.</em></h2>
       </div>
       <div class="wrap">
         <div class="B-rows">
-          <div class="B-row rv"><span class="B-row__n">1</span><span class="B-row__name">We learn your business</span><span class="B-row__use">Your services, prices, opening hours and the questions callers actually ask, so the AI answers like your best staff member.</span></div>
-          <div class="B-row rv"><span class="B-row__n">2</span><span class="B-row__name">We connect phone, calendar &amp; LINE</span><span class="B-row__use">Your existing number, your existing calendar, your LINE OA. No new systems for your team to learn.</span></div>
-          <div class="B-row rv"><span class="B-row__n">3</span><span class="B-row__name">We test with real calls, then launch</span><span class="B-row__use">We listen to real conversations, fix the edge cases, and keep tuning after launch so quality goes up, not down.</span></div>
+          <div class="B-row rv"><span class="B-row__n">1</span><span class="B-row__name">We learn your shop</span><span class="B-row__use">Your barbers, services, prices, opening hours, and the questions customers actually ask on the phone.</span></div>
+          <div class="B-row rv"><span class="B-row__n">2</span><span class="B-row__name">We connect what you already use</span><span class="B-row__use">Your existing phone number, your existing calendar, your LINE OA. Your barbers keep working the way they work.</span></div>
+          <div class="B-row rv"><span class="B-row__n">3</span><span class="B-row__name">We test on real calls, then switch it on</span><span class="B-row__use">We listen to real conversations, fix the edge cases, and keep tuning after launch so it gets better in your shop, not worse.</span></div>
         </div>
-        <img src="/assets/blob/blob-one-brain.webp" alt="Sketch of your phone number, calendar and LINE being wired into one AI brain, nothing new to learn" width="1400" height="791" loading="lazy" style="display:block;max-width:680px;width:100%;height:auto;margin:3rem auto 0;mix-blend-mode:multiply">
+        <img src="/assets/blob/blob-barbershop-one-calendar.webp" alt="Sketch of phone calls, LINE messages and barber-logged walk-ins all landing in one shared barbershop calendar" width="1400" height="791" loading="lazy" style="display:block;max-width:680px;width:100%;height:auto;margin:3rem auto 0;mix-blend-mode:multiply">
       </div>
     </section>
 
     <!-- FAQ -->
     <section class="faq" id="faq">
       <div class="faq__header">
-        <h2>AI receptionist <em class="accent">questions.</em></h2>
+        <h2>Barbershop owner <em class="accent">questions.</em></h2>
         <p data-i18n="faq_sub">You've got questions. We've got answers.</p>
       </div>
       <div class="faq__chat">
         <div class="faq__item in-view" data-faq>
           <button class="faq__q">
-            <span class="faq__bubble faq__bubble--q"><span class="faq__emoji faq__emoji--right">🇹🇭</span>Does the AI receptionist speak Thai?</span>
+            <span class="faq__bubble faq__bubble--q"><span class="faq__emoji faq__emoji--right">💈</span>Can the AI book a specific barber, not just any slot?</span>
             <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq__a"><div class="faq__bubble faq__bubble--a">Yes. It answers in Thai, English or Russian, detecting the caller's language from their first words and switching mid-call if needed. Thai callers are the majority at our live deployment.</div></div>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a">Yes. Customers ask for their usual barber by name and the AI checks that barber's own availability, not the shop's. Barbers who work by appointment only are kept on a separate calendar, so a full walk-in hour never hides a free appointment chair.</div></div>
         </div>
         <div class="faq__item in-view" data-faq>
           <button class="faq__q">
-            <span class="faq__bubble faq__bubble--q">What happens when a caller needs a real person?</span>
+            <span class="faq__bubble faq__bubble--q">We take mostly walk-ins. Does this still help?</span>
             <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq__a"><div class="faq__bubble faq__bubble--a">The AI transfers the call to your staff, with context. It handles the routine calls (bookings, opening hours, prices, directions) and passes on anything unusual, so your team only picks up when it matters.</div></div>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a">Yes, and this is the part most shops underestimate. Walk-ins and phone bookings compete for the same chairs, so both have to live in one calendar or the AI will double-book. Your barbers log walk-ins from their own phones in a few taps, which keeps availability honest and gives you the first real picture of where your customers come from.</div></div>
         </div>
         <div class="faq__item in-view" data-faq>
           <button class="faq__q">
-            <span class="faq__bubble faq__bubble--q"><span class="faq__emoji faq__emoji--left">📅</span>Can it actually book appointments, not just take messages?</span>
+            <span class="faq__bubble faq__bubble--q"><span class="faq__emoji faq__emoji--left">🇹🇭</span>Does it speak Thai?</span>
             <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq__a"><div class="faq__bubble faq__bubble--a">Yes. It reads your live calendar during the call, offers real open slots, and books the appointment before the caller hangs up. The booking lands in the same calendar your staff already use.</div></div>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a">Yes. It answers in Thai, English or Russian, picking the language from the caller's first words. At our live barbershop deployment Thai is the majority language, with English callers on the same number.</div></div>
         </div>
         <div class="faq__item in-view" data-faq>
           <button class="faq__q">
-            <span class="faq__bubble faq__bubble--q">Is this really running at a real business?</span>
+            <span class="faq__bubble faq__bubble--q">What if a customer wants something the AI can't handle?</span>
             <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq__a"><div class="faq__bubble faq__bubble--a">Yes. Ducky Cutz, a barbershop in Phuket Town, has run our AI front desk since June 2026. In its first 7 weeks it answered 169+ calls and made 105 bookings across voice and chat, in three languages, with no staff time.</div></div>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a">It transfers the call to your staff with the context attached. The AI takes the routine calls: bookings, changes, cancellations, prices, opening hours and directions. Your team only picks up when it actually needs a person.</div></div>
         </div>
         <div class="faq__item in-view" data-faq>
           <button class="faq__q">
-            <span class="faq__bubble faq__bubble--q"><span class="faq__emoji faq__emoji--right">⚡</span>How long does it take to go live?</span>
+            <span class="faq__bubble faq__bubble--q"><span class="faq__emoji faq__emoji--right">✂️</span>Is this running at a real barbershop?</span>
             <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq__a"><div class="faq__bubble faq__bubble--a">Most AI receptionists go live in 2 to 4 weeks: we learn your services and prices, connect your phone number and calendar, then test with real calls before switching it on for customers.</div></div>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a">Yes. Ducky Cutz in Phuket Town has run it since June 2026. In the first 7 weeks the shop took 535 bookings, 105 of them made end to end by the AI across voice and chat, with 169+ calls answered at an average of 76 seconds. The owner has since extended it to all six branches.</div></div>
+        </div>
+        <div class="faq__item in-view" data-faq>
+          <button class="faq__q">
+            <span class="faq__bubble faq__bubble--q">How long until it is live in my shop?</span>
+            <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a">Usually 2 to 4 weeks. We learn your services, prices and barbers, connect your existing phone number, calendar and LINE OA, then test with real calls before you switch it on for customers.</div></div>
         </div>
       </div>
     </section>
