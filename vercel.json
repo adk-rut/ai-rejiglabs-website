@@ -2,7 +2,13 @@
   "redirects": [
     {
       "source": "/case-study.html",
-      "has": [{ "type": "query", "key": "slug", "value": "(?<slug>[^&]+)" }],
+      "has": [
+        {
+          "type": "query",
+          "key": "slug",
+          "value": "(?<slug>[^&]+)"
+        }
+      ],
       "destination": "/case-studies/:slug",
       "permanent": true
     },
@@ -25,6 +31,17 @@
       "source": "/proposal-suvarna/:path*",
       "destination": "https://deck.rejiglabs.com/suvarna",
       "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/c/(.*)\\.vcf",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/vcard; charset=utf-8"
+        }
+      ]
     }
   ]
 }

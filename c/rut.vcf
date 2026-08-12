@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Adikari;Rut
+FN:Rut Adikari
+TITLE:CEO & Founder
+ORG:Rejig Labs
+TEL;TYPE=CELL:+66991414896
+EMAIL:rut@rejiglabs.com
+URL:https://rejiglabs.com
+item1.URL:https://wa.me/66991414896
+item1.X-ABLabel:WhatsApp
+item2.URL:https://t.me/rt_adk
+item2.X-ABLabel:Telegram
+item3.URL:https://line.me/ti/p/~rutadik
+item3.X-ABLabel:LINE
+END:VCARD
