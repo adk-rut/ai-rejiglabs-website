@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Panyawut;Kanyarat
+FN:Kanyarat Panyawut
+TITLE:CBDO
+ORG:Rejig Labs
+TEL;TYPE=CELL:+66823573657
+URL:https://rejiglabs.com
+item1.URL:https://wa.me/66823573657
+item1.X-ABLabel:WhatsApp
+item2.URL:https://t.me/+66823573657
+item2.X-ABLabel:Telegram
+END:VCARD
