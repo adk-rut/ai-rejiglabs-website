@@ -284,6 +284,12 @@
           '<p>' + t(cs, 'solution') + '</p>' +
         '</section>' +
 
+        // Optional real-call player (cs.call = { src, label, note }). js/call-player.js mounts it.
+        (cs.call ? '<section class="cs-page__section">' +
+          '<div class="cs-page__section-label">' + (t(cs.call, 'label') || 'Hear it') + '</div>' +
+          '<div data-call-player data-src="' + cs.call.src + '" data-cta=""></div>' +
+        '</section>' : '') +
+
         // Optional extra sections, each with its own per-study label. Same markup
         // as the fixed ones above, so no new CSS.
         (Array.isArray(cs.sections) ? cs.sections.map(function (s) {
@@ -310,6 +316,8 @@
         othersHtml;
 
       // Init evervault on "more case studies" cards
+      if (window.RejigCallPlayer) window.RejigCallPlayer.init();
+
       requestAnimationFrame(function () {
         initEvervaultCards(container);
         // Make cards visible immediately on full page

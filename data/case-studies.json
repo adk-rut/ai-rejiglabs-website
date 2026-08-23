@@ -312,7 +312,13 @@
         ]
       }
     ],
-    "logo": "assets/duckycutz/ducky-head.png"
+    "logo": "assets/duckycutz/ducky-head.png",
+    "call": {
+      "src": "/assets/call/duckycutz-call.mp3",
+      "label": "Hear it book a customer",
+      "label_th": "ฟังตอนมันจองให้ลูกค้า",
+      "label_ru": "Послушайте, как он записывает клиента"
+    }
   },
   {
     "slug": "anrcf-golf",
