@@ -19,6 +19,12 @@ Rejig Labs is an AI automation agency based in Thailand (Phuket / Bangkok, worki
 - [ANRCF, Green Charity Golf Tournament](https://rejiglabs.com/case-studies/anrcf-golf): Ran the entire digital operation solo for Thailand's first Green Charity Golf Tournament: a trilingual registration site, sign-up funnel, print and brand collateral, and sponsor outreach. 35 teams, 21 sponsors, 3 languages.
 - [Mobile Engineer, elevator installation and service in Phuket](https://rejiglabs.com/case-studies/me-elevator): A 28-year elevator trade business with no website and no lead system. Built the site from scratch in Thai and English, structured it for search and AI answer engines, set up the CRM, advised on positioning, and reworked the lead flow. The site produced a client worth a six-figure baht deal.
 
+## Job Pages
+
+- [AI receptionist for a Phuket clinic](https://rejiglabs.com/ai-receptionist-phuket-clinic/): A patient calls the clinic at 8pm; the AI answers in Thai, English or Russian, books the slot in the clinic's live calendar, and confirms on WhatsApp or LINE.
+- [Hotel night desk that never misses a call](https://rejiglabs.com/hotel-night-desk-ai/): Rejig Labs runs the hotel phone from 10pm to 7am, handles late check-in calls, escalates the urgent ones, and leaves the front office one summary in the morning.
+- [What happens after a missed WhatsApp](https://rejiglabs.com/after-a-missed-whatsapp/): LINE and WhatsApp messages a shop cannot get to are answered within minutes; a human is pulled in only when it is a real booking.
+
 ## Key Pages
 
 - [Homepage](https://rejiglabs.com/): Offer, process, case studies, and FAQ.
