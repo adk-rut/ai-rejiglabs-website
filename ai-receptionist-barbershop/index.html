@@ -188,14 +188,25 @@
   <main>
 
     <!-- HERO -->
-    <section class="encap" style="padding-top:9rem">
-      <div class="sec-head">
-        <p class="eyebrow">AI RECEPTIONIST FOR BARBERSHOPS &amp; SALONS · THAILAND</p>
-        <h1>The shop phone that <em class="accent">books itself.</em></h1>
-        <p>An AI receptionist built for barbershops, salons and spas in Thailand. It answers every call in Thai, English or Russian while your hands are full, books the barber the customer asked for into your live calendar, and confirms on LINE. Already running a six-branch barbershop in Phuket.</p>
-        <div style="text-align:center; margin-top:2.4rem">
-          <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="btn btn--filled"><span class="btn__text">Book a Discovery Call</span><span class="btn__hover">Book a Discovery Call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
+    <section class="hero" id="hero">
+      <div class="hero__waves" id="heroWaves">
+        <svg id="wavesSvg" xmlns="http://www.w3.org/2000/svg"></svg>
+      </div>
+      <div class="hero__content">
+        <p class="eyebrow">AI RECEPTIONIST FOR BARBERSHOPS &amp; SALONS &middot; THAILAND</p>
+        <h1 class="hero__h1">The shop phone that <em class="accent">books itself.</em></h1>
+        <p class="hero__sub">An AI receptionist built for barbershops, salons and spas in Thailand. It answers in Thai, English or Russian while your hands are full, books the barber the customer asked for, and confirms on LINE. Already running a six-branch barbershop in Phuket.</p>
+        <div class="flow">
+          <span class="flow__step">Customer calls</span>
+          <span class="flow__arrow">&rarr;</span>
+          <span class="flow__step">Answered</span>
+          <span class="flow__arrow">&rarr;</span>
+          <span class="flow__step">Their barber booked</span>
+          <span class="flow__arrow">&rarr;</span>
+          <span class="flow__step flow__step--end">Confirmed on LINE</span>
         </div>
+        <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="btn btn--filled"><span class="btn__text">Book a Discovery Call</span><span class="btn__hover">Book a Discovery Call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
+        <p class="hero__contact"><a href="https://line.me/ti/p/~rutadik">LINE us</a> &middot; <a href="https://wa.me/66991414896">WhatsApp</a> &middot; <a href="mailto:hello@rejiglabs.com">hello@rejiglabs.com</a></p>
       </div>
     </section>
 
@@ -412,6 +423,7 @@
   </footer>
 
   <script src="/js/i18n.js"></script>
+  <script src="/js/waves.js" defer></script>
   <script src="/js/consent.js" defer></script>
 
   <!-- Minimal page interactions (nav toggle + FAQ accordion). No GSAP needed here. -->
