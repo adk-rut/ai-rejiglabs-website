@@ -44,58 +44,60 @@ em { font-style: normal; }
 img, svg { display: block; max-width: 100%; }
 
 /* ---- THAI LANGUAGE OVERRIDES ---- */
+/* Instrument Sans/Serif have no Thai glyphs; without a Thai web font every
+   Thai character falls back to the OS font (Thonburi on macOS/iOS), so the
+   serif headings turn into a bold sans and body text reads smaller than EN.
+   Latin stays Instrument (listed first); Thai glyphs come from Noto Thai. */
 :lang(th) {
+  --font:      'Instrument Sans', 'Noto Sans Thai', -apple-system, sans-serif;
+  --font-head: 'Instrument Serif', 'Noto Serif Thai', Georgia, serif;
   word-break: keep-all;
   overflow-wrap: break-word;
   line-height: 1.8;
 }
-/* Small text: eyebrows, tags, labels — bump up for Thai readability */
+/* Thai never gets letter-spacing: tone marks and vowels stack on the base
+   glyph and tracking pulls them apart. Uppercase does not exist in Thai, so
+   the small caps-style labels get a size nudge instead of tracking. */
 :lang(th) .eyebrow,
-:lang(th) .cs-card__tag,
-:lang(th) .cs-page__section-label,
-:lang(th) .cs-card__stat-label,
-:lang(th) .stat__unit,
-:lang(th) .entropy__label {
-  letter-spacing: 0.02em;
+:lang(th) .cs-page__section-label {
+  letter-spacing: 0;
   text-transform: none;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
 }
-:lang(th) .hero__h1,
-:lang(th) .solution__h2,
-:lang(th) .closing__h2,
+:lang(th) .cs-card__tag,
+:lang(th) .cs-card__stat-label,
+:lang(th) .tst__role {
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 0.78rem;
+}
+:lang(th) .stat__unit,
+:lang(th) .entropy__label,
+:lang(th) .tst__quote,
+:lang(th) .solution__bold,
+:lang(th) .narrative__line,
+:lang(th) .btn,
 :lang(th) h1, :lang(th) h2, :lang(th) h3 {
   letter-spacing: 0;
+}
+:lang(th) h1, :lang(th) h2, :lang(th) h3 {
   word-spacing: 0.05em;
 }
-:lang(th) .narrative__line {
-  letter-spacing: 0;
-}
-/* Body text and descriptions — slightly larger for Thai */
+/* Thai h1 line 1 measures 962px at 64px; the 820px EN cap broke it mid-word. */
+:lang(th) .hero__content { max-width: 980px; }
+/* Body copy: Thai glyph bodies sit lower than Latin caps, so +5% keeps the
+   same optical size as EN. Only for text whose EN size is >= 1rem. */
 :lang(th) .hero__sub,
 :lang(th) .solution__body,
-:lang(th) .solution__bold,
 :lang(th) .process__text p,
-:lang(th) .cs-card__summary,
-:lang(th) .faq__bubble,
-:lang(th) .stat__label,
-:lang(th) .tst__quote,
-:lang(th) .tst__role {
+:lang(th) .faq__bubble {
   font-size: 1.05rem;
   line-height: 1.8;
 }
-/* Nav and button text */
-:lang(th) .nav__link,
-:lang(th) .nav__cta,
-:lang(th) .mobile-menu__link,
-:lang(th) .btn__text,
-:lang(th) .cs-card__link {
+:lang(th) .cs-card__summary,
+:lang(th) .stat__label {
   font-size: 0.95rem;
-}
-/* Footer text */
-:lang(th) .footer p,
-:lang(th) .footer a,
-:lang(th) .closing-footer .footer__inner a {
-  font-size: 0.9rem;
+  line-height: 1.7;
 }
 
 /* ---- EYEBROW ---- */
