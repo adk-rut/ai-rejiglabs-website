@@ -833,7 +833,7 @@
     "th": "คุณเพิ่งจองคิวที่ Ducky Cutz<br><em class=\"accent\">ระบบนั้นเราสร้างเอง</em>"
   },
   "fdc_sub": {
-    "en": "The booking form you just used is ours. So is the AI receptionist that answers the shop phone in Thai, English or Russian, and the chat agent that replies on Facebook and Instagram. All six branches run on it.",
+    "en": "We built the form you just used, the AI receptionist that answers the shop phone in Thai, English or Russian, and the chat agent on Facebook and Instagram. All six branches run on it.",
     "th": "ฟอร์มจองคิวที่คุณเพิ่งใช้ เราเป็นคนสร้าง รวมถึงพนักงานต้อนรับ AI ที่รับสายร้านเป็นภาษาไทย อังกฤษ หรือรัสเซีย และ AI แชทที่ตอบทาง Facebook และ Instagram ทั้ง 6 สาขาใช้ระบบเดียวกันนี้"
   },
   "fdc_flow_1": {
@@ -869,8 +869,8 @@
     "th": "คุณก็มีระบบแบบนี้ได้<em class=\"accent\">เหมือนกัน</em>"
   },
   "fdc_own_sub": {
-    "en": "We find where AI saves you real time or money. Then we build it, deploy it and train your team to run it. Working software, not a strategy PDF.",
-    "th": "เราหาจุดที่ AI ช่วยคุณประหยัดเวลาและเงินได้จริง แล้วสร้าง ติดตั้ง และสอนทีมของคุณให้ใช้งานเป็น ได้ระบบที่ใช้งานจริง ไม่ใช่แค่ไฟล์แผน"
+    "en": "We find where AI saves you real time or money. Then we build it, switch it on and train your team to run it. Working software, not a report.",
+    "th": "เราหาจุดที่ AI ช่วยคุณประหยัดเวลาและเงินได้จริง แล้วสร้าง เปิดใช้ และสอนทีมของคุณให้ใช้งานเป็น ได้ของจริงที่ใช้งานได้ ไม่ใช่แค่แผนบนกระดาษ"
   },
   "fdc_stat_1_l": {
     "en": "bookings in the first 7 weeks, one branch",
@@ -889,8 +889,8 @@
     "th": "เวลาเฉลี่ยต่อสาย ตั้งแต่รับจนจองเสร็จ"
   },
   "fdc_step_1_n": {
-    "en": "We find the leak",
-    "th": "เราหาจุดรั่ว"
+    "en": "We find where bookings go missing",
+    "th": "เราหาว่าคิวหายไปตรงไหน"
   },
   "fdc_step_1_d": {
     "en": "Missed calls, unanswered chats, bookings written on paper. We look at how your day actually runs and pick the one thing worth fixing first.",
@@ -921,8 +921,8 @@
     "th": "ไม่ใช่แค่ร้านตัดผม <em class=\"accent\">ธุรกิจไหนที่โทรศัพท์ยุ่งก็ใช้ได้</em>"
   },
   "fdc_ind_sub": {
-    "en": "Same engine, tuned to how you work. Here is the first thing we would set up in each.",
-    "th": "ระบบเดียวกัน ปรับให้เข้ากับงานของคุณ นี่คือสิ่งแรกที่เราจะทำให้ในแต่ละธุรกิจ"
+    "en": "Same system, set up for how you work. The first thing we would build for each:",
+    "th": "ระบบเดียวกัน ตั้งค่าให้เข้ากับงานของคุณ นี่คือสิ่งแรกที่เราจะทำให้แต่ละธุรกิจ:"
   },
   "fdc_ind_1_n": {
     "en": "Barbers & salons",
@@ -938,7 +938,7 @@
   },
   "fdc_ind_2_d": {
     "en": "Answer the phone, book the appointment, send the reminder, cut no-shows.",
-    "th": "รับสาย จองนัด ส่งข้อความเตือน ลดคนไข้เบี้ยวนัด"
+    "th": "รับสาย จองนัด ส่งข้อความเตือน ลดการผิดนัด"
   },
   "fdc_ind_3_n": {
     "en": "Hotels & villas",
@@ -1045,8 +1045,8 @@
     "th": "ขอเลื่อนตัดผมเป็นพรุ่งนี้บ่ายสองได้ไหม"
   },
   "fdc_ui_chat_out": {
-    "en": "Done ✓ Rebooked for tomorrow, 2:00 PM.",
-    "th": "เรียบร้อย ✓ เลื่อนเป็นพรุ่งนี้ 14:00 ให้แล้ว"
+    "en": "Done ✓ Tomorrow at 2:00 PM.",
+    "th": "เรียบร้อย ✓ พรุ่งนี้ 14:00 ค่ะ"
   },
   "fdc_ui_voice_t": {
     "en": "\"Is Boy free at three?\"",
@@ -1061,8 +1061,8 @@
     "th": "สายเรียกเข้า"
   },
   "fdc_ui_voice_sub": {
-    "en": "+66 · answered in 1 ring",
-    "th": "+66 · รับภายใน 1 ริง"
+    "en": "answered in 1 ring",
+    "th": "รับสายทันที"
   },
   "fdc_ui_voice_done": {
     "en": "Booked with Boy · Sat 3:00 PM",
@@ -1077,8 +1077,8 @@
     "th": "เราทำงานทางไกลได้ <em class=\"accent\">ทุกที่</em>"
   },
   "fdc_far_sub": {
-    "en": "In your language, for businesses anywhere. And not only barbershops. Three of our other projects:",
-    "th": "ในภาษาของคุณ สำหรับธุรกิจทุกที่ และไม่ใช่แค่ร้านตัดผม นี่คือผลงานอื่นของเรา:"
+    "en": "Everything is set up remotely, in your language. Three other projects, none of them a barbershop:",
+    "th": "ทุกอย่างตั้งค่าได้จากระยะไกล ในภาษาของคุณ ผลงานอีกสามชิ้น ไม่มีร้านตัดผมสักร้าน:"
   },
   "fdc_cs_1_n": {
     "en": "Mobile Engineer · Elevator service, Phuket",

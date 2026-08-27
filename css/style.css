@@ -2491,4 +2491,9 @@ a.B-row { color: inherit; text-decoration: none; }
   /* the 3-step and case-study rows keep their one-line description on phones */
   .fdc-rows-full .B-row { row-gap: .3rem; }
   .fdc-rows-full .B-row__use { display: block; grid-column: 2; }
+  /* hero: the vertical 4-pill chain pushed the CTA below a phone's fold (y=782 at 390x829); run it as a wrapped row with no arrows */
+  .hero .flow { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 0.4rem 0.45rem; }
+  .hero .flow__arrow { display: none; }
+  /* stats: 2x2 instead of the site's forced single column (four stacked cells were 640px of scroll before the first step) */
+  .fdc-stats { grid-template-columns: repeat(2, 1fr) !important; max-width: 420px; }
 }
