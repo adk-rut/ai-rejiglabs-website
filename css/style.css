@@ -371,6 +371,58 @@ img, svg { display: block; max-width: 100%; }
 .mobile-menu__link:hover { color: var(--text-primary); }
 .mobile-menu__link--cta { color: var(--accent-hi); font-weight: 500; }
 
+/* ---- MOBILE LANG PICKER ---- */
+/* A <details> beside the hamburger: the trigger shows the active flag,
+   the open list reuses .nav__lang so i18n.js works unchanged. Mobile only. */
+.nav__lang-picker {
+  display: none;
+  position: relative;
+  margin-left: auto;
+  margin-right: 0.75rem;
+}
+.nav__lang-picker summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; height: 40px;
+  margin: -6px 0;            /* 40px tap target, 28px footprint: nav height stays put */
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.nav__lang-picker summary::-webkit-details-marker { display: none; }
+.nav__lang-picker .nav__lang {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 12px);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2px;
+  min-width: 160px;
+  padding: 4px;
+  border-radius: 14px;
+  background: var(--bg-card);
+  box-shadow: 0 8px 28px var(--accent-glow);
+}
+.nav__lang-picker .nav__lang button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.6rem;
+  min-height: 40px;
+  padding: 0 0.85rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  letter-spacing: 0;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+
 /* ============ HERO ============ */
 .hero {
   min-height: 100vh;
@@ -1376,6 +1428,7 @@ img, svg { display: block; max-width: 100%; }
 @media (max-width: 768px) {
   .nav__links { display: none; }
   .nav__toggle { display: flex; }
+  .nav__lang-picker { display: block; }
   .nav { padding: 1rem 1.25rem; }
   .hero { padding: 7rem 1.25rem 3rem; }
   .narrative__line { font-size: clamp(1.2rem, 4vw, 1.55rem); left: 1.25rem; right: 1.25rem; }

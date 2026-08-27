@@ -10,6 +10,7 @@
   var SUPPORTED = ['en', 'th', 'ru'];
   var translations = null;
   var _callbacks = [];
+  var FLAGS = { en: '🇬🇧', th: '🇹🇭', ru: '🇷🇺' };
 
   // Resolve base path from script src
   var scripts = document.querySelectorAll('script[src]');
@@ -67,6 +68,11 @@
     document.querySelectorAll('.nav__lang button[data-lang]').forEach(function (btn) {
       btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
+    // Mobile flag picker: trigger shows the active flag, list closes after a pick
+    document.querySelectorAll('.nav__lang-picker').forEach(function (d) {
+      d.querySelector('summary').textContent = FLAGS[lang];
+      d.removeAttribute('open');
+    });
   }
 
   function init() {
@@ -85,6 +91,10 @@
 
     // Click handler — only for language buttons inside .nav__lang
     document.addEventListener('click', function (e) {
+      // A tap outside an open mobile flag picker closes it
+      document.querySelectorAll('.nav__lang-picker[open]').forEach(function (d) {
+        if (!d.contains(e.target)) d.removeAttribute('open');
+      });
       var langBtn = e.target.closest('.nav__lang button[data-lang]');
       if (!langBtn) return;
       e.preventDefault();
