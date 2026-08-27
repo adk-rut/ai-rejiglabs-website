@@ -65,7 +65,7 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
 
-  <link rel="stylesheet" href="/css/style.css?v=3">
+  <link rel="stylesheet" href="/css/style.css?v=4">
 
   <!-- Vercel Web Analytics -->
   <script>window.va=window.va||function(){(window.vai=window.vai||[]).push(arguments);};</script>
@@ -173,6 +173,11 @@
   <div class="mobile-menu" id="mobileMenu">
     <a href="/#services" class="mobile-menu__link" data-i18n="nav_services">Services</a>
     <a href="/ai-receptionist/" class="mobile-menu__link" data-i18n="nav_ai_receptionist">AI Receptionist</a>
+    <a href="/ai-receptionist-clinic/" class="mobile-menu__link">For Clinics</a>
+    <a href="/ai-receptionist-barbershop/" class="mobile-menu__link">For Barbershops &amp; Salons</a>
+    <a href="/ai-receptionist-phuket-clinic/" class="mobile-menu__link">Phuket Clinic Receptionist</a>
+    <a href="/hotel-night-desk-ai/" class="mobile-menu__link">Hotel Night Desk</a>
+    <a href="/after-a-missed-whatsapp/" class="mobile-menu__link">Missed LINE &amp; WhatsApp</a>
     <a href="/ai-chatbot/" class="mobile-menu__link" data-i18n="nav_ai_chatbot">AI Chatbot &amp; LINE</a>
     <a href="/blockchain/" class="mobile-menu__link" data-i18n="nav_blockchain">Blockchain</a>
     <a href="/#process" class="mobile-menu__link" data-i18n="nav_process">Process</a>
@@ -184,15 +189,25 @@
   <main>
 
     <!-- HERO -->
-    <section class="encap" style="padding-top:9rem">
-      <div class="sec-head">
+    <section class="hero" id="hero">
+      <div class="hero__waves" id="heroWaves">
+        <svg id="wavesSvg" xmlns="http://www.w3.org/2000/svg"></svg>
+      </div>
+      <div class="hero__content">
         <p class="eyebrow">LINE &amp; WHATSAPP FOLLOW-UP &middot; THAILAND</p>
-        <h1>What happens after a <em class="accent">missed WhatsApp.</em></h1>
-        <p>Nothing, usually. That is the problem Rejig Labs fixes. A customer messages your shop on LINE or WhatsApp while the counter is busy; minutes later it is buried, and by evening they have booked somewhere else. We put an AI in that gap: it replies within minutes, in Thai, English or Russian, answers the price and availability questions, and only pulls one of your people in when it turns into a real booking. LINE and WhatsApp, where your customers actually are &mdash; not a US phone tree.</p>
-        <div style="text-align:center; margin-top:2.4rem">
-          <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="btn btn--filled"><span class="btn__text">Send us a real missed chat</span><span class="btn__hover">Send us a real missed chat <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
-          <p style="margin-top:1.2rem;font-size:.95rem"><a href="https://line.me/ti/p/~rutadik">LINE us</a> &middot; <a href="https://wa.me/66991414896">WhatsApp</a> &middot; <a href="mailto:hello@rejiglabs.com">hello@rejiglabs.com</a></p>
+        <h1 class="hero__h1">What happens after a <em class="accent">missed WhatsApp.</em></h1>
+        <p class="hero__sub">Nothing, usually &mdash; and by evening that customer has booked somewhere else. Rejig Labs replies within minutes on LINE or WhatsApp, and only pulls one of your people in when it is a real booking.</p>
+        <div class="flow">
+          <span class="flow__step">Message missed</span>
+          <span class="flow__arrow">&rarr;</span>
+          <span class="flow__step">Reply in minutes</span>
+          <span class="flow__arrow">&rarr;</span>
+          <span class="flow__step">Easy ones closed</span>
+          <span class="flow__arrow">&rarr;</span>
+          <span class="flow__step flow__step--end">Human if it's real</span>
         </div>
+        <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="btn btn--filled"><span class="btn__text">Send us a real missed chat</span><span class="btn__hover">Send us a real missed chat <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
+        <p class="hero__contact"><a href="https://line.me/ti/p/~rutadik">LINE us</a> &middot; <a href="https://wa.me/66991414896">WhatsApp</a> &middot; <a href="mailto:hello@rejiglabs.com">hello@rejiglabs.com</a></p>
       </div>
     </section>
 
@@ -301,6 +316,7 @@
   </footer>
 
   <script src="/js/i18n.js"></script>
+  <script src="/js/waves.js" defer></script>
   <script src="/js/consent.js" defer></script>
 
   <!-- Minimal page interactions (nav toggle + FAQ accordion). No GSAP needed here. -->
