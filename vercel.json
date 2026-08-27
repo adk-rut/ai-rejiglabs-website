@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/ai-receptionist-phuket-clinic/:path*",
+      "destination": "/ai-receptionist-clinic/",
+      "permanent": true
+    },
+    {
       "source": "/case-study.html",
       "has": [
         {
