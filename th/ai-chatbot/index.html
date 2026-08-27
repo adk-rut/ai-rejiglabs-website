@@ -73,7 +73,7 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Thai:wght@400;500;600&family=Noto+Serif+Thai&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Thai:wght@400;500;600&family=Noto+Serif+Thai&display=swap" rel="stylesheet"></noscript>
 
-  <link rel="stylesheet" href="/css/style.css?v=3">
+  <link rel="stylesheet" href="/css/style.css?v=4">
 
   <!-- Vercel Web Analytics -->
   <script>window.va=window.va||function(){(window.vai=window.vai||[]).push(arguments);};</script>
@@ -123,6 +123,21 @@
             "@type": "Question",
             "name": "How long until the chatbot is live?",
             "acceptedAnswer": { "@type": "Answer", "text": "Most chatbots go live in 2 to 4 weeks, depending on how many channels and how complex your answers are. You will see a working version early." }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens after a customer's LINE or WhatsApp message goes unanswered?",
+            "acceptedAnswer": { "@type": "Answer", "text": "With Rejig Labs, it does not go unanswered. The message is picked up within minutes, answered in the customer's language, and turned into a booking if that is what they wanted. A person is only pulled in when the conversation actually needs one." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this LINE or WhatsApp?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Both, plus web chat. This is built for Thailand, where customers message a shop on LINE or WhatsApp. It is not a US-style phone tree." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I know it would reply the way I would?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Send us a real chat you missed. We show you the reply it would have sent, in your language and your prices, before you commit to anything." }
           }
         ]
       },
@@ -152,6 +167,7 @@
           <a href="/ai-receptionist/" class="nav__dropdown-item" data-i18n="nav_ai_receptionist">AI รับสายโทรศัพท์</a>
           <a href="/ai-receptionist-clinic/" class="nav__dropdown-item">For Clinics</a>
           <a href="/ai-receptionist-barbershop/" class="nav__dropdown-item">For Barbershops &amp; Salons</a>
+          <a href="/hotel-night-desk-ai/" class="nav__dropdown-item">Hotel Night Desk</a>
           <a href="/ai-chatbot/" class="nav__dropdown-item" data-i18n="nav_ai_chatbot">แชทบอท AI &amp; LINE</a>
           <a href="/blockchain/" class="nav__dropdown-item" data-i18n="nav_blockchain">บล็อกเชน</a>
         </div>
@@ -162,10 +178,10 @@
       <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="nav__cta">Get In Touch <span>›</span></button>
     </div>
     <details class="nav__lang-picker">
-      <summary aria-label="Change language">🇹🇭</summary>
+      <summary aria-label="Change language">🇬🇧</summary>
       <div class="nav__lang">
-        <button data-lang="en">🇬🇧 English</button>
-        <button data-lang="th" class="active">🇹🇭 ไทย</button>
+        <button data-lang="en" class="active">🇬🇧 English</button>
+        <button data-lang="th">🇹🇭 ไทย</button>
         <button data-lang="ru">🇷🇺 Русский</button>
       </div>
     </details>
@@ -176,6 +192,11 @@
 
   <div class="mobile-menu" id="mobileMenu">
     <a href="/#services" class="mobile-menu__link" data-i18n="nav_services">บริการ</a>
+    <a href="/ai-receptionist/" class="mobile-menu__link" data-i18n="nav_ai_receptionist">AI รับสายโทรศัพท์</a>
+    <a href="/ai-receptionist-clinic/" class="mobile-menu__link">For Clinics</a>
+    <a href="/ai-receptionist-barbershop/" class="mobile-menu__link">For Barbershops &amp; Salons</a>
+    <a href="/hotel-night-desk-ai/" class="mobile-menu__link">Hotel Night Desk</a>
+    <a href="/ai-chatbot/" class="mobile-menu__link" data-i18n="nav_ai_chatbot">แชทบอท AI &amp; LINE</a>
     <a href="/blockchain/" class="mobile-menu__link" data-i18n="nav_blockchain">บล็อกเชน</a>
     <a href="/#process" class="mobile-menu__link" data-i18n="nav_process">ขั้นตอน</a>
     <a href="/case-studies/" class="mobile-menu__link" data-i18n="nav_case_studies">ผลงาน</a>
@@ -185,14 +206,25 @@
   <main>
 
     <!-- HERO -->
-    <section class="encap" style="padding-top:9rem">
-      <div class="sec-head">
+    <section class="hero" id="hero">
+      <div class="hero__waves" id="heroWaves">
+        <svg id="wavesSvg" xmlns="http://www.w3.org/2000/svg"></svg>
+      </div>
+      <div class="hero__content">
         <p class="eyebrow" data-i18n="svc_eyebrow">แชทบอท AI · LINE OA · เว็บไซต์ · โซเชียล</p>
-        <h1 data-i18n-html="svc_h1">รับทำแชทบอท AI และระบบตอบแชท LINE OA<br><em class="accent">ที่ไม่พลาดทุกลูกค้า</em></h1>
-        <p data-i18n="svc_sub">เราสร้างแชทบอท AI ที่ตอบลูกค้าบน LINE OA เว็บไซต์ และโซเชียล ทั้งภาษาไทย อังกฤษ และรัสเซีย ตอบคำถาม เก็บข้อมูลลูกค้า และจองคิวให้เอง ตลอด 24 ชั่วโมง คุณจะไม่เสียลูกค้าเพราะตอบช้าอีกต่อไป</p>
-        <div style="text-align:center; margin-top:2.4rem">
-          <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="btn btn--filled"><span class="btn__text" data-i18n="hero_btn">นัดคุยฟรี</span><span class="btn__hover">Book a Discovery Call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
+        <h1 class="hero__h1" data-i18n-html="svc_h1">รับทำแชทบอท AI และระบบตอบแชท LINE OA<br><em class="accent">ที่ไม่พลาดทุกลูกค้า</em></h1>
+        <p class="hero__sub" data-i18n="svc_sub">เราสร้างแชทบอท AI ที่ตอบลูกค้าบน LINE OA เว็บไซต์ และโซเชียล ทั้งภาษาไทย อังกฤษ และรัสเซีย ตอบคำถาม เก็บข้อมูลลูกค้า และจองคิวให้เอง ตลอด 24 ชั่วโมง คุณจะไม่เสียลูกค้าเพราะตอบช้าอีกต่อไป</p>
+        <div class="flow">
+          <span class="flow__step" data-i18n="svc_flow_1">ข้อความตกหล่น</span>
+          <span class="flow__arrow">&rarr;</span>
+          <span class="flow__step" data-i18n="svc_flow_2">ตอบภายในไม่กี่นาที</span>
+          <span class="flow__arrow">&rarr;</span>
+          <span class="flow__step" data-i18n="svc_flow_3">เรื่องง่ายจบในแชท</span>
+          <span class="flow__arrow">&rarr;</span>
+          <span class="flow__step flow__step--end" data-i18n="svc_flow_4">ส่งต่อคนจริงเมื่อจำเป็น</span>
         </div>
+        <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="btn btn--filled"><span class="btn__text" data-i18n="svc_hero_btn">ส่งแชทที่คุณพลาดมาให้เราดู</span><span class="btn__hover">Send us a real missed chat <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
+        <p class="hero__contact"><a href="https://line.me/ti/p/~rutadik" data-i18n="svc_contact_line">ทักไลน์</a> &middot; <a href="https://wa.me/66991414896">WhatsApp</a> &middot; <a href="mailto:hello@rejiglabs.com">hello@rejiglabs.com</a></p>
       </div>
     </section>
 
@@ -281,6 +313,27 @@
           </button>
           <div class="faq__a"><div class="faq__bubble faq__bubble--a" data-i18n="svc_faq_a5">แชทบอทส่วนใหญ่พร้อมใช้ใน 2 ถึง 4 สัปดาห์ ขึ้นอยู่กับจำนวนช่องทางและความซับซ้อนของคำตอบ คุณจะได้เห็นเวอร์ชันที่ใช้งานได้ตั้งแต่เนิ่น ๆ</div></div>
         </div>
+        <div class="faq__item in-view" data-faq>
+          <button class="faq__q">
+            <span class="faq__bubble faq__bubble--q" data-i18n="svc_faq_q6">ถ้าข้อความ LINE หรือ WhatsApp ของลูกค้าไม่มีคนตอบ จะเกิดอะไรขึ้น?</span>
+            <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a" data-i18n="svc_faq_a6">กับ Rejig Labs ข้อความจะไม่ถูกปล่อยทิ้ง ระบบรับเรื่องภายในไม่กี่นาที ตอบเป็นภาษาของลูกค้า และปิดเป็นการจองให้ถ้านั่นคือสิ่งที่ลูกค้าต้องการ จะส่งต่อให้คนจริงก็ต่อเมื่อบทสนทนานั้นต้องใช้คนจริงเท่านั้น</div></div>
+        </div>
+        <div class="faq__item in-view" data-faq>
+          <button class="faq__q">
+            <span class="faq__bubble faq__bubble--q" data-i18n="svc_faq_q7">ระบบนี้ใช้กับ LINE หรือ WhatsApp?</span>
+            <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a" data-i18n="svc_faq_a7">ได้ทั้งสองอย่าง รวมถึงแชทบนเว็บไซต์ด้วย ระบบนี้สร้างมาเพื่อประเทศไทยโดยเฉพาะ ที่ลูกค้าทักร้านผ่าน LINE หรือ WhatsApp ไม่ใช่ระบบกดหมายเลขแบบอเมริกา</div></div>
+        </div>
+        <div class="faq__item in-view" data-faq>
+          <button class="faq__q">
+            <span class="faq__bubble faq__bubble--q" data-i18n="svc_faq_q8">จะรู้ได้ยังไงว่ามันจะตอบเหมือนที่เราตอบเอง?</span>
+            <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a" data-i18n="svc_faq_a8">ส่งแชทจริงที่คุณพลาดมาให้เราดู เราจะแสดงให้เห็นว่าระบบจะตอบว่าอะไร ด้วยภาษาและราคาของคุณ ก่อนที่คุณจะตัดสินใจอะไรทั้งนั้น</div></div>
+        </div>
       </div>
     </section>
 
@@ -323,6 +376,7 @@
   </footer>
 
   <script src="/js/i18n.js"></script>
+  <script src="/js/waves.js" defer></script>
   <script src="/js/consent.js" defer></script>
 
   <!-- Minimal page interactions (nav toggle + FAQ accordion). No GSAP needed here. -->

@@ -73,7 +73,7 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Thai:wght@400;500;600&family=Noto+Serif+Thai&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Thai:wght@400;500;600&family=Noto+Serif+Thai&display=swap" rel="stylesheet"></noscript>
 
-  <link rel="stylesheet" href="/css/style.css?v=3">
+  <link rel="stylesheet" href="/css/style.css?v=4">
 
   <!-- Vercel Web Analytics -->
   <script>window.va=window.va||function(){(window.vai=window.vai||[]).push(arguments);};</script>
@@ -123,6 +123,21 @@
             "@type": "Question",
             "name": "How long until the chatbot is live?",
             "acceptedAnswer": { "@type": "Answer", "text": "Most chatbots go live in 2 to 4 weeks, depending on how many channels and how complex your answers are. You will see a working version early." }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens after a customer's LINE or WhatsApp message goes unanswered?",
+            "acceptedAnswer": { "@type": "Answer", "text": "With Rejig Labs, it does not go unanswered. The message is picked up within minutes, answered in the customer's language, and turned into a booking if that is what they wanted. A person is only pulled in when the conversation actually needs one." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this LINE or WhatsApp?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Both, plus web chat. This is built for Thailand, where customers message a shop on LINE or WhatsApp. It is not a US-style phone tree." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I know it would reply the way I would?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Send us a real chat you missed. We show you the reply it would have sent, in your language and your prices, before you commit to anything." }
           }
         ]
       },
@@ -152,6 +167,7 @@
           <a href="/ai-receptionist/" class="nav__dropdown-item" data-i18n="nav_ai_receptionist">AI-секретарь</a>
           <a href="/ai-receptionist-clinic/" class="nav__dropdown-item">For Clinics</a>
           <a href="/ai-receptionist-barbershop/" class="nav__dropdown-item">For Barbershops &amp; Salons</a>
+          <a href="/hotel-night-desk-ai/" class="nav__dropdown-item">Hotel Night Desk</a>
           <a href="/ai-chatbot/" class="nav__dropdown-item" data-i18n="nav_ai_chatbot">AI-чат-бот и LINE</a>
           <a href="/blockchain/" class="nav__dropdown-item" data-i18n="nav_blockchain">Блокчейн</a>
         </div>
@@ -162,11 +178,11 @@
       <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="nav__cta">Get In Touch <span>›</span></button>
     </div>
     <details class="nav__lang-picker">
-      <summary aria-label="Change language">🇷🇺</summary>
+      <summary aria-label="Change language">🇬🇧</summary>
       <div class="nav__lang">
-        <button data-lang="en">🇬🇧 English</button>
+        <button data-lang="en" class="active">🇬🇧 English</button>
         <button data-lang="th">🇹🇭 ไทย</button>
-        <button data-lang="ru" class="active">🇷🇺 Русский</button>
+        <button data-lang="ru">🇷🇺 Русский</button>
       </div>
     </details>
     <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
@@ -176,6 +192,11 @@
 
   <div class="mobile-menu" id="mobileMenu">
     <a href="/#services" class="mobile-menu__link" data-i18n="nav_services">Услуги</a>
+    <a href="/ai-receptionist/" class="mobile-menu__link" data-i18n="nav_ai_receptionist">AI-секретарь</a>
+    <a href="/ai-receptionist-clinic/" class="mobile-menu__link">For Clinics</a>
+    <a href="/ai-receptionist-barbershop/" class="mobile-menu__link">For Barbershops &amp; Salons</a>
+    <a href="/hotel-night-desk-ai/" class="mobile-menu__link">Hotel Night Desk</a>
+    <a href="/ai-chatbot/" class="mobile-menu__link" data-i18n="nav_ai_chatbot">AI-чат-бот и LINE</a>
     <a href="/blockchain/" class="mobile-menu__link" data-i18n="nav_blockchain">Блокчейн</a>
     <a href="/#process" class="mobile-menu__link" data-i18n="nav_process">Процесс</a>
     <a href="/case-studies/" class="mobile-menu__link" data-i18n="nav_case_studies">Кейсы</a>
@@ -185,14 +206,25 @@
   <main>
 
     <!-- HERO -->
-    <section class="encap" style="padding-top:9rem">
-      <div class="sec-head">
+    <section class="hero" id="hero">
+      <div class="hero__waves" id="heroWaves">
+        <svg id="wavesSvg" xmlns="http://www.w3.org/2000/svg"></svg>
+      </div>
+      <div class="hero__content">
         <p class="eyebrow" data-i18n="svc_eyebrow">AI-ЧАТ-БОТЫ · LINE OA · ВЕБ · СОЦСЕТИ</p>
-        <h1 data-i18n-html="svc_h1">AI-чат-боты и автоматизация LINE,<br><em class="accent">которые не упустят ни клиента.</em></h1>
-        <p data-i18n="svc_sub">Мы создаём AI-чат-ботов, которые отвечают в LINE OA, на вашем сайте и в соцсетях на тайском, английском и русском. Они отвечают на вопросы, квалифицируют лиды и записывают на приём круглосуточно, чтобы вы не теряли клиентов из-за медленного ответа.</p>
-        <div style="text-align:center; margin-top:2.4rem">
-          <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="btn btn--filled"><span class="btn__text" data-i18n="hero_btn">Записаться на консультацию</span><span class="btn__hover">Book a Discovery Call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
+        <h1 class="hero__h1" data-i18n-html="svc_h1">AI-чат-боты и автоматизация LINE,<br><em class="accent">которые не упустят ни клиента.</em></h1>
+        <p class="hero__sub" data-i18n="svc_sub">Мы создаём AI-чат-ботов, которые отвечают в LINE OA, на вашем сайте и в соцсетях на тайском, английском и русском. Они отвечают на вопросы, квалифицируют лиды и записывают на приём круглосуточно, чтобы вы не теряли клиентов из-за медленного ответа.</p>
+        <div class="flow">
+          <span class="flow__step" data-i18n="svc_flow_1">Сообщение пропущено</span>
+          <span class="flow__arrow">&rarr;</span>
+          <span class="flow__step" data-i18n="svc_flow_2">Ответ за минуты</span>
+          <span class="flow__arrow">&rarr;</span>
+          <span class="flow__step" data-i18n="svc_flow_3">Простое закрыто</span>
+          <span class="flow__arrow">&rarr;</span>
+          <span class="flow__step flow__step--end" data-i18n="svc_flow_4">Человек, если нужно</span>
         </div>
+        <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="btn btn--filled"><span class="btn__text" data-i18n="svc_hero_btn">Пришлите реальный пропущенный чат</span><span class="btn__hover">Send us a real missed chat <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
+        <p class="hero__contact"><a href="https://line.me/ti/p/~rutadik" data-i18n="svc_contact_line">Написать в LINE</a> &middot; <a href="https://wa.me/66991414896">WhatsApp</a> &middot; <a href="mailto:hello@rejiglabs.com">hello@rejiglabs.com</a></p>
       </div>
     </section>
 
@@ -281,6 +313,27 @@
           </button>
           <div class="faq__a"><div class="faq__bubble faq__bubble--a" data-i18n="svc_faq_a5">Большинство чат-ботов запускаются за 2–4 недели — зависит от числа каналов и сложности ответов. Рабочую версию вы увидите уже на раннем этапе.</div></div>
         </div>
+        <div class="faq__item in-view" data-faq>
+          <button class="faq__q">
+            <span class="faq__bubble faq__bubble--q" data-i18n="svc_faq_q6">Что происходит, если сообщение клиента в LINE или WhatsApp осталось без ответа?</span>
+            <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a" data-i18n="svc_faq_a6">С Rejig Labs оно не остаётся без ответа. Сообщение подхватывается за минуты, ответ приходит на языке клиента и превращается в запись, если клиент этого хотел. Человек подключается, только когда разговор действительно этого требует.</div></div>
+        </div>
+        <div class="faq__item in-view" data-faq>
+          <button class="faq__q">
+            <span class="faq__bubble faq__bubble--q" data-i18n="svc_faq_q7">Это LINE или WhatsApp?</span>
+            <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a" data-i18n="svc_faq_a7">И то, и другое, плюс веб-чат. Это сделано для Таиланда, где клиенты пишут в LINE или WhatsApp. Это не американское голосовое меню.</div></div>
+        </div>
+        <div class="faq__item in-view" data-faq>
+          <button class="faq__q">
+            <span class="faq__bubble faq__bubble--q" data-i18n="svc_faq_q8">Как понять, что бот ответит так же, как ответил бы я?</span>
+            <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a" data-i18n="svc_faq_a8">Пришлите реальный чат, который вы пропустили. Мы покажем, что бы ответил бот — на вашем языке и с вашими ценами, до любых обязательств.</div></div>
+        </div>
       </div>
     </section>
 
@@ -323,6 +376,7 @@
   </footer>
 
   <script src="/js/i18n.js"></script>
+  <script src="/js/waves.js" defer></script>
   <script src="/js/consent.js" defer></script>
 
   <!-- Minimal page interactions (nav toggle + FAQ accordion). No GSAP needed here. -->

@@ -205,13 +205,13 @@
     </a>
     <div class="nav__links">
       <div class="nav__dropdown">
-        <a href="#services" class="nav__link" data-i18n="nav_services">บริการ</a>
+        <a href="/#services" class="nav__link" data-i18n="nav_services">บริการ</a>
         <div class="nav__dropdown-menu">
-          <a href="/ai-chatbot/" class="nav__dropdown-item" data-i18n="nav_ai_chatbot">แชทบอท AI &amp; LINE</a>
-          <!-- English-only page for now; add to /th/ and /ru/ navs when those versions ship -->
           <a href="/ai-receptionist/" class="nav__dropdown-item" data-i18n="nav_ai_receptionist">AI รับสายโทรศัพท์</a>
           <a href="/ai-receptionist-clinic/" class="nav__dropdown-item">For Clinics</a>
           <a href="/ai-receptionist-barbershop/" class="nav__dropdown-item">For Barbershops &amp; Salons</a>
+          <a href="/hotel-night-desk-ai/" class="nav__dropdown-item">Hotel Night Desk</a>
+          <a href="/ai-chatbot/" class="nav__dropdown-item" data-i18n="nav_ai_chatbot">แชทบอท AI &amp; LINE</a>
           <a href="/blockchain/" class="nav__dropdown-item" data-i18n="nav_blockchain">บล็อกเชน</a>
         </div>
       </div>
@@ -221,10 +221,10 @@
       <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="nav__cta">Get In Touch <span>›</span></button>
     </div>
     <details class="nav__lang-picker">
-      <summary aria-label="Change language">🇹🇭</summary>
+      <summary aria-label="Change language">🇬🇧</summary>
       <div class="nav__lang">
-        <button data-lang="en">🇬🇧 English</button>
-        <button data-lang="th" class="active">🇹🇭 ไทย</button>
+        <button data-lang="en" class="active">🇬🇧 English</button>
+        <button data-lang="th">🇹🇭 ไทย</button>
         <button data-lang="ru">🇷🇺 Русский</button>
       </div>
     </details>
@@ -234,9 +234,14 @@
   </nav>
 
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#services" class="mobile-menu__link" data-i18n="nav_services">บริการ</a>
+    <a href="/#services" class="mobile-menu__link" data-i18n="nav_services">บริการ</a>
+    <a href="/ai-receptionist/" class="mobile-menu__link" data-i18n="nav_ai_receptionist">AI รับสายโทรศัพท์</a>
+    <a href="/ai-receptionist-clinic/" class="mobile-menu__link">For Clinics</a>
+    <a href="/ai-receptionist-barbershop/" class="mobile-menu__link">For Barbershops &amp; Salons</a>
+    <a href="/hotel-night-desk-ai/" class="mobile-menu__link">Hotel Night Desk</a>
+    <a href="/ai-chatbot/" class="mobile-menu__link" data-i18n="nav_ai_chatbot">แชทบอท AI &amp; LINE</a>
     <a href="/blockchain/" class="mobile-menu__link" data-i18n="nav_blockchain">บล็อกเชน</a>
-    <a href="#process" class="mobile-menu__link" data-i18n="nav_process">ขั้นตอน</a>
+    <a href="/#process" class="mobile-menu__link" data-i18n="nav_process">ขั้นตอน</a>
     <a href="/case-studies/" class="mobile-menu__link" data-i18n="nav_case_studies">ผลงาน</a>
     <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="mobile-menu__link mobile-menu__link--cta">Get In Touch</button>
   </div>

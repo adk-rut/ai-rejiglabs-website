@@ -1115,5 +1115,65 @@
   "fdc_back": {
     "en": "Just here for a haircut? Back to your booking →",
     "th": "แค่มาตัดผม? กลับไปหน้าจองคิว →"
+  },
+  "svc_flow_1": {
+    "en": "Message missed",
+    "th": "ข้อความตกหล่น",
+    "ru": "Сообщение пропущено"
+  },
+  "svc_flow_2": {
+    "en": "Reply in minutes",
+    "th": "ตอบภายในไม่กี่นาที",
+    "ru": "Ответ за минуты"
+  },
+  "svc_flow_3": {
+    "en": "Easy ones closed",
+    "th": "เรื่องง่ายจบในแชท",
+    "ru": "Простое закрыто"
+  },
+  "svc_flow_4": {
+    "en": "Human if it's real",
+    "th": "ส่งต่อคนจริงเมื่อจำเป็น",
+    "ru": "Человек, если нужно"
+  },
+  "svc_hero_btn": {
+    "en": "Send us a real missed chat",
+    "th": "ส่งแชทที่คุณพลาดมาให้เราดู",
+    "ru": "Пришлите реальный пропущенный чат"
+  },
+  "svc_contact_line": {
+    "en": "LINE us",
+    "th": "ทักไลน์",
+    "ru": "Написать в LINE"
+  },
+  "svc_faq_q6": {
+    "en": "What happens after a customer's LINE or WhatsApp message goes unanswered?",
+    "th": "ถ้าข้อความ LINE หรือ WhatsApp ของลูกค้าไม่มีคนตอบ จะเกิดอะไรขึ้น?",
+    "ru": "Что происходит, если сообщение клиента в LINE или WhatsApp осталось без ответа?"
+  },
+  "svc_faq_a6": {
+    "en": "With Rejig Labs, it does not go unanswered. The message is picked up within minutes, answered in the customer's language, and turned into a booking if that is what they wanted. A person is only pulled in when the conversation actually needs one.",
+    "th": "กับ Rejig Labs ข้อความจะไม่ถูกปล่อยทิ้ง ระบบรับเรื่องภายในไม่กี่นาที ตอบเป็นภาษาของลูกค้า และปิดเป็นการจองให้ถ้านั่นคือสิ่งที่ลูกค้าต้องการ จะส่งต่อให้คนจริงก็ต่อเมื่อบทสนทนานั้นต้องใช้คนจริงเท่านั้น",
+    "ru": "С Rejig Labs оно не остаётся без ответа. Сообщение подхватывается за минуты, ответ приходит на языке клиента и превращается в запись, если клиент этого хотел. Человек подключается, только когда разговор действительно этого требует."
+  },
+  "svc_faq_q7": {
+    "en": "Is this LINE or WhatsApp?",
+    "th": "ระบบนี้ใช้กับ LINE หรือ WhatsApp?",
+    "ru": "Это LINE или WhatsApp?"
+  },
+  "svc_faq_a7": {
+    "en": "Both, plus web chat. This is built for Thailand, where customers message a shop on LINE or WhatsApp. It is not a US-style phone tree.",
+    "th": "ได้ทั้งสองอย่าง รวมถึงแชทบนเว็บไซต์ด้วย ระบบนี้สร้างมาเพื่อประเทศไทยโดยเฉพาะ ที่ลูกค้าทักร้านผ่าน LINE หรือ WhatsApp ไม่ใช่ระบบกดหมายเลขแบบอเมริกา",
+    "ru": "И то, и другое, плюс веб-чат. Это сделано для Таиланда, где клиенты пишут в LINE или WhatsApp. Это не американское голосовое меню."
+  },
+  "svc_faq_q8": {
+    "en": "How do I know it would reply the way I would?",
+    "th": "จะรู้ได้ยังไงว่ามันจะตอบเหมือนที่เราตอบเอง?",
+    "ru": "Как понять, что бот ответит так же, как ответил бы я?"
+  },
+  "svc_faq_a8": {
+    "en": "Send us a real chat you missed. We show you the reply it would have sent, in your language and your prices, before you commit to anything.",
+    "th": "ส่งแชทจริงที่คุณพลาดมาให้เราดู เราจะแสดงให้เห็นว่าระบบจะตอบว่าอะไร ด้วยภาษาและราคาของคุณ ก่อนที่คุณจะตัดสินใจอะไรทั้งนั้น",
+    "ru": "Пришлите реальный чат, который вы пропустили. Мы покажем, что бы ответил бот — на вашем языке и с вашими ценами, до любых обязательств."
   }
 }
