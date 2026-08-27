@@ -48,7 +48,7 @@ img, svg { display: block; max-width: 100%; }
    Thai character falls back to the OS font (Thonburi on macOS/iOS), so the
    serif headings turn into a bold sans and body text reads smaller than EN.
    Latin stays Instrument (listed first); Thai glyphs come from Noto Thai. */
-:lang(th) {
+:root:lang(th) {
   --font:      'Instrument Sans', 'Noto Sans Thai', -apple-system, sans-serif;
   --font-head: 'Instrument Serif', 'Noto Serif Thai', Georgia, serif;
   word-break: keep-all;
