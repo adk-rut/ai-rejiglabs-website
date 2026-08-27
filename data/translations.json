@@ -823,5 +823,297 @@
     "en": "View all case studies",
     "th": "ดูผลงานทั้งหมด",
     "ru": "Все кейсы"
+  },
+  "fdc_eyebrow": {
+    "en": "MADE BY REJIG LABS · PHUKET",
+    "th": "สร้างโดย Rejig Labs · ภูเก็ต"
+  },
+  "fdc_h1": {
+    "en": "You just booked at <span class=\"fdc-nw\">Ducky Cutz.</span><br><em class=\"accent\">We built that.</em>",
+    "th": "คุณเพิ่งจองคิวที่ Ducky Cutz<br><em class=\"accent\">ระบบนั้นเราสร้างเอง</em>"
+  },
+  "fdc_sub": {
+    "en": "The booking form you just used is ours. So is the AI receptionist that answers the shop phone in Thai, English or Russian, and the chat agent that replies on Facebook and Instagram. All six branches run on it.",
+    "th": "ฟอร์มจองคิวที่คุณเพิ่งใช้ เราเป็นคนสร้าง รวมถึงพนักงานต้อนรับ AI ที่รับสายร้านเป็นภาษาไทย อังกฤษ หรือรัสเซีย และ AI แชทที่ตอบทาง Facebook และ Instagram ทั้ง 6 สาขาใช้ระบบเดียวกันนี้"
+  },
+  "fdc_flow_1": {
+    "en": "You tap Book",
+    "th": "คุณกดจอง"
+  },
+  "fdc_flow_2": {
+    "en": "Pick a branch and barber",
+    "th": "เลือกสาขาและช่าง"
+  },
+  "fdc_flow_3": {
+    "en": "Slot held",
+    "th": "ล็อกคิวให้ทันที"
+  },
+  "fdc_flow_4": {
+    "en": "Confirmed by SMS",
+    "th": "ยืนยันทาง SMS"
+  },
+  "fdc_cta": {
+    "en": "Book a free 20-min call",
+    "th": "นัดคุยฟรี 20 นาที"
+  },
+  "fdc_or_email": {
+    "en": "Or email",
+    "th": "หรืออีเมล"
+  },
+  "fdc_own_eyebrow": {
+    "en": "HAVE A BUSINESS?",
+    "th": "มีธุรกิจของตัวเองไหม?"
+  },
+  "fdc_own_h2": {
+    "en": "You can have <em class=\"accent\">this too.</em>",
+    "th": "คุณก็มีระบบแบบนี้ได้<em class=\"accent\">เหมือนกัน</em>"
+  },
+  "fdc_own_sub": {
+    "en": "We find where AI saves you real time or money. Then we build it, deploy it and train your team to run it. Working software, not a strategy PDF.",
+    "th": "เราหาจุดที่ AI ช่วยคุณประหยัดเวลาและเงินได้จริง แล้วสร้าง ติดตั้ง และสอนทีมของคุณให้ใช้งานเป็น ได้ระบบที่ใช้งานจริง ไม่ใช่แค่ไฟล์แผน"
+  },
+  "fdc_stat_1_l": {
+    "en": "bookings in the first 7 weeks, one branch",
+    "th": "การจองใน 7 สัปดาห์แรก จากสาขาเดียว"
+  },
+  "fdc_stat_2_l": {
+    "en": "branches on the same system",
+    "th": "สาขาที่ใช้ระบบเดียวกัน"
+  },
+  "fdc_stat_3_l": {
+    "en": "languages, answered 24/7",
+    "th": "ภาษา รับสายตลอด 24 ชม."
+  },
+  "fdc_stat_4_l": {
+    "en": "average call, start to booked",
+    "th": "เวลาเฉลี่ยต่อสาย ตั้งแต่รับจนจองเสร็จ"
+  },
+  "fdc_step_1_n": {
+    "en": "We find the leak",
+    "th": "เราหาจุดรั่ว"
+  },
+  "fdc_step_1_d": {
+    "en": "Missed calls, unanswered chats, bookings written on paper. We look at how your day actually runs and pick the one thing worth fixing first.",
+    "th": "สายที่ไม่ได้รับ แชทที่ไม่มีคนตอบ คิวที่จดใส่กระดาษ เราดูว่าวันทำงานของคุณเป็นอย่างไรจริง ๆ แล้วเลือกจุดที่คุ้มค่าที่สุดมาแก้ก่อน"
+  },
+  "fdc_step_2_n": {
+    "en": "We build it and switch it on",
+    "th": "เราสร้างแล้วเปิดใช้"
+  },
+  "fdc_step_2_d": {
+    "en": "Your phone number, your calendar, your chat channels. We connect what you already use and test it on real customers before it goes live.",
+    "th": "เบอร์โทรของคุณ ปฏิทินของคุณ ช่องทางแชทของคุณ เราเชื่อมต่อสิ่งที่คุณใช้อยู่แล้ว และทดสอบกับลูกค้าจริงก่อนเปิดใช้งาน"
+  },
+  "fdc_step_3_n": {
+    "en": "We train your team",
+    "th": "เราสอนทีมของคุณ"
+  },
+  "fdc_step_3_d": {
+    "en": "Your staff run it from their own phones. We stay on after launch and keep tuning it in your business.",
+    "th": "ทีมของคุณใช้งานได้จากมือถือของตัวเอง หลังเปิดใช้เรายังอยู่ดูแลและปรับระบบให้เข้ากับธุรกิจของคุณต่อ"
+  },
+  "fdc_ind_eyebrow": {
+    "en": "WHO IT FITS",
+    "th": "เหมาะกับใคร"
+  },
+  "fdc_ind_h2": {
+    "en": "Not just barbershops. <em class=\"accent\">Anyone with a busy phone.</em>",
+    "th": "ไม่ใช่แค่ร้านตัดผม <em class=\"accent\">ธุรกิจไหนที่โทรศัพท์ยุ่งก็ใช้ได้</em>"
+  },
+  "fdc_ind_sub": {
+    "en": "Same engine, tuned to how you work. Here is the first thing we would set up in each.",
+    "th": "ระบบเดียวกัน ปรับให้เข้ากับงานของคุณ นี่คือสิ่งแรกที่เราจะทำให้ในแต่ละธุรกิจ"
+  },
+  "fdc_ind_1_n": {
+    "en": "Barbers & salons",
+    "th": "ร้านตัดผมและซาลอน"
+  },
+  "fdc_ind_1_d": {
+    "en": "Book the barber they asked for, log walk-ins, confirm by SMS.",
+    "th": "จองช่างที่ลูกค้าต้องการ บันทึกลูกค้า walk-in ยืนยันทาง SMS"
+  },
+  "fdc_ind_2_n": {
+    "en": "Clinics & dental",
+    "th": "คลินิกและทันตกรรม"
+  },
+  "fdc_ind_2_d": {
+    "en": "Answer the phone, book the appointment, send the reminder, cut no-shows.",
+    "th": "รับสาย จองนัด ส่งข้อความเตือน ลดคนไข้เบี้ยวนัด"
+  },
+  "fdc_ind_3_n": {
+    "en": "Hotels & villas",
+    "th": "โรงแรมและวิลล่า"
+  },
+  "fdc_ind_3_d": {
+    "en": "A front desk that answers at 2am in the guest's language and takes the booking.",
+    "th": "ฟรอนต์ที่รับสายตอนตี 2 เป็นภาษาของแขก และรับจองให้ทันที"
+  },
+  "fdc_ind_4_n": {
+    "en": "Restaurants",
+    "th": "ร้านอาหาร"
+  },
+  "fdc_ind_4_d": {
+    "en": "Table bookings and menu questions handled in chat while the floor is busy.",
+    "th": "รับจองโต๊ะและตอบคำถามเรื่องเมนูในแชท ขณะที่หน้าร้านกำลังยุ่ง"
+  },
+  "fdc_ind_5_n": {
+    "en": "Spas & wellness",
+    "th": "สปาและเวลเนส"
+  },
+  "fdc_ind_5_d": {
+    "en": "Treatment slots booked by phone or chat, therapist and room kept in sync.",
+    "th": "จองคิวทรีตเมนต์ทางโทรศัพท์หรือแชท คิวนักบำบัดและห้องตรงกันเสมอ"
+  },
+  "fdc_ind_6_n": {
+    "en": "Gyms & studios",
+    "th": "ฟิตเนสและสตูดิโอ"
+  },
+  "fdc_ind_6_d": {
+    "en": "Class sign-ups, trial bookings and membership questions answered on the spot.",
+    "th": "สมัครคลาส จองทดลองเรียน และตอบคำถามเรื่องสมาชิกได้ทันที"
+  },
+  "fdc_ind_7_n": {
+    "en": "Real estate",
+    "th": "อสังหาริมทรัพย์"
+  },
+  "fdc_ind_7_d": {
+    "en": "Every enquiry answered in minutes and a viewing booked, day or night.",
+    "th": "ตอบทุกข้อความภายในไม่กี่นาที และนัดชมทรัพย์ได้ทั้งกลางวันและกลางคืน"
+  },
+  "fdc_ind_8_n": {
+    "en": "Car care & detailing",
+    "th": "ล้างรถและดีเทลลิ่ง"
+  },
+  "fdc_ind_8_d": {
+    "en": "Quotes, bay bookings and pick-up times sorted without a phone call.",
+    "th": "ใบเสนอราคา จองคิว และเวลานัดรับรถ จัดการได้โดยไม่ต้องโทร"
+  },
+  "fdc_ind_9_n": {
+    "en": "Tours & activities",
+    "th": "ทัวร์และกิจกรรม"
+  },
+  "fdc_ind_9_d": {
+    "en": "Availability, prices and bookings in the guest's language, on LINE or WhatsApp.",
+    "th": "เช็กวันว่าง ราคา และจองได้ในภาษาของลูกค้า ทั้งทาง LINE และ WhatsApp"
+  },
+  "fdc_ind_10_n": {
+    "en": "Any business that lives in its phone",
+    "th": "ธุรกิจไหนก็ได้ที่ลูกค้าติดต่อผ่านมือถือ"
+  },
+  "fdc_ind_10_d": {
+    "en": "If customers reach you by call or chat, we make sure every one of them gets an answer.",
+    "th": "ถ้าลูกค้าติดต่อคุณทางโทรหรือแชท เราทำให้ทุกคนได้รับคำตอบ"
+  },
+  "fdc_ui_eyebrow": {
+    "en": "WHAT IT LOOKS LIKE",
+    "th": "หน้าตาของระบบ"
+  },
+  "fdc_ui_h2": {
+    "en": "Three pieces, <em class=\"accent\">one calendar.</em>",
+    "th": "สามส่วน <em class=\"accent\">ปฏิทินเดียว</em>"
+  },
+  "fdc_ui_sub": {
+    "en": "The form, the phone and the chat all book into the same calendar. Nothing gets double-booked, whoever made the booking.",
+    "th": "ฟอร์ม โทรศัพท์ และแชท จองลงปฏิทินเดียวกันทั้งหมด ไม่มีคิวซ้อน ไม่ว่าใครเป็นคนจอง"
+  },
+  "fdc_ui_form_t": {
+    "en": "The form you just used",
+    "th": "ฟอร์มที่คุณเพิ่งใช้"
+  },
+  "fdc_ui_form_d": {
+    "en": "Pick a branch, a barber and a time on your phone. The slot is held and confirmed by SMS.",
+    "th": "เลือกสาขา ช่าง และเวลาบนมือถือ ระบบล็อกคิวให้และยืนยันทาง SMS"
+  },
+  "fdc_ui_form_btn": {
+    "en": "Book",
+    "th": "จอง"
+  },
+  "fdc_ui_form_ok": {
+    "en": "Slot held",
+    "th": "ล็อกคิวแล้ว"
+  },
+  "fdc_ui_chat_t": {
+    "en": "Answered while the chairs are full",
+    "th": "ตอบแชทแม้ทุกเก้าอี้จะเต็ม"
+  },
+  "fdc_ui_chat_d": {
+    "en": "Questions, changes and cancellations handled in chat, in the customer's language.",
+    "th": "คำถาม เลื่อนนัด ยกเลิก จัดการในแชทเป็นภาษาของลูกค้า"
+  },
+  "fdc_ui_chat_in": {
+    "en": "Can I move my cut to tomorrow 2pm?",
+    "th": "ขอเลื่อนตัดผมเป็นพรุ่งนี้บ่ายสองได้ไหม"
+  },
+  "fdc_ui_chat_out": {
+    "en": "Done ✓ Rebooked for tomorrow, 2:00 PM.",
+    "th": "เรียบร้อย ✓ เลื่อนเป็นพรุ่งนี้ 14:00 ให้แล้ว"
+  },
+  "fdc_ui_voice_t": {
+    "en": "\"Is Boy free at three?\"",
+    "th": "\"ช่างบอยว่างบ่ายสามไหม?\""
+  },
+  "fdc_ui_voice_d": {
+    "en": "The AI hears Thai, English or Russian, checks that barber's own chair and confirms before the caller hangs up.",
+    "th": "AI ฟังออกทั้งไทย อังกฤษ และรัสเซีย เช็กคิวของช่างคนนั้นโดยตรง และยืนยันให้ก่อนวางสาย"
+  },
+  "fdc_ui_voice_who": {
+    "en": "Incoming call",
+    "th": "สายเรียกเข้า"
+  },
+  "fdc_ui_voice_sub": {
+    "en": "+66 · answered in 1 ring",
+    "th": "+66 · รับภายใน 1 ริง"
+  },
+  "fdc_ui_voice_done": {
+    "en": "Booked with Boy · Sat 3:00 PM",
+    "th": "จองกับช่างบอย · เสาร์ 15:00"
+  },
+  "fdc_far_eyebrow": {
+    "en": "NOT JUST PHUKET",
+    "th": "ไม่ใช่แค่ภูเก็ต"
+  },
+  "fdc_far_h2": {
+    "en": "We deliver remotely, <em class=\"accent\">anywhere.</em>",
+    "th": "เราทำงานทางไกลได้ <em class=\"accent\">ทุกที่</em>"
+  },
+  "fdc_far_sub": {
+    "en": "In your language, for businesses anywhere. And not only barbershops. Three of our other projects:",
+    "th": "ในภาษาของคุณ สำหรับธุรกิจทุกที่ และไม่ใช่แค่ร้านตัดผม นี่คือผลงานอื่นของเรา:"
+  },
+  "fdc_cs_1_n": {
+    "en": "Mobile Engineer · Elevator service, Phuket",
+    "th": "Mobile Engineer · บริการลิฟต์ ภูเก็ต"
+  },
+  "fdc_cs_1_d": {
+    "en": "A trade business with no marketing function, given one that pays for itself.",
+    "th": "ธุรกิจช่างที่ไม่มีฝ่ายการตลาด ได้ระบบที่คืนทุนให้ตัวเอง"
+  },
+  "fdc_cs_2_n": {
+    "en": "ANRCF · Charity golf tournament",
+    "th": "ANRCF · กอล์ฟการกุศล"
+  },
+  "fdc_cs_2_d": {
+    "en": "An agency's output, delivered by one operator. 35 teams, 21 sponsors, three languages.",
+    "th": "ผลงานระดับเอเจนซี ส่งมอบโดยคนเพียงคนเดียว 35 ทีม 21 สปอนเซอร์ 3 ภาษา"
+  },
+  "fdc_cs_3_n": {
+    "en": "BoBe · AI trading platform",
+    "th": "BoBe · แพลตฟอร์มเทรด AI"
+  },
+  "fdc_cs_3_d": {
+    "en": "From a $3,000/month content team to an agent that files a story every morning.",
+    "th": "จากทีมคอนเทนต์ 3,000 ดอลลาร์/เดือน สู่เอเจนต์ที่ส่งข่าวให้ทุกเช้า"
+  },
+  "fdc_end_h2": {
+    "en": "Want this for <em class=\"accent\">your business?</em>",
+    "th": "อยากได้ระบบแบบนี้<em class=\"accent\">สำหรับธุรกิจของคุณ?</em>"
+  },
+  "fdc_end_sub": {
+    "en": "A free 20-minute call. We look at where your calls and chats go missing and tell you what we would build first.",
+    "th": "คุยฟรี 20 นาที เราดูว่าสายและแชทของคุณหายไปตรงไหน แล้วบอกว่าเราจะสร้างอะไรให้ก่อน"
+  },
+  "fdc_back": {
+    "en": "Just here for a haircut? Back to your booking →",
+    "th": "แค่มาตัดผม? กลับไปหน้าจองคิว →"
   }
 }

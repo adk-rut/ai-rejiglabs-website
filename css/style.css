@@ -2471,3 +2471,24 @@ img, svg { display: block; max-width: 100%; }
   .flow { flex-direction: column; gap: 0.4rem; }
   .flow__arrow { transform: rotate(90deg); }
 }
+
+/* ---- FROM-DUCKY-CUTZ PAGE ---- */
+/* bento order for /from-ducky-cutz: form + chat on top, phone full-width below. The #capabilities mobile rule above (id selector) still wins at <=760px and stacks it. */
+.fdc-bento { grid-template-areas: 'web web chat' 'voice voice voice'; }
+a.B-row { color: inherit; text-decoration: none; }
+.fdc-end .sec-head { text-align: center; }
+.fdc-end .sec-head p { margin-left: auto; margin-right: auto; }
+.fdc-end .btn { margin-top: 1.8rem; }
+.fdc-end .hero__contact { margin-top: 1.1rem; }
+.fdc-back { margin-top: 2.4rem; font-size: .9rem; }
+.fdc-back a { color: var(--text-muted); text-decoration: underline; text-underline-offset: 3px; }
+.fdc-back a:hover { color: var(--accent); }
+.fdc-nw { white-space: nowrap; }
+@media (max-width: 760px) {
+  /* the phone cell is a row layout on desktop; stack it on phones like the web/fin cells above */
+  #capabilities .fdc-bento .c-voice { flex-direction: column; align-items: stretch; gap: 1.2rem; }
+  #capabilities .fdc-bento .c-voice .cap-cell__txt { flex: none; }
+  /* the 3-step and case-study rows keep their one-line description on phones */
+  .fdc-rows-full .B-row { row-gap: .3rem; }
+  .fdc-rows-full .B-row__use { display: block; grid-column: 2; }
+}
