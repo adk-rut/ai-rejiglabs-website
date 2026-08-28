@@ -8,6 +8,7 @@ import { requireToken, signToken } from "../lib/token.js";
 import { answerTurn, capLine } from "../lib/answer-turn.js";
 import { fetchMessages, fetchContact, threadRows, toHistory, postInbound, postOutbound } from "../lib/ghl-chat.js";
 import { tgSend, escalationCard, standdownCard } from "../lib/telegram.js";
+import { freeSlots, matchSlots, bookDiscovery, offerLine, bookedLine } from "../lib/booking.js";
 
 const MAX_CHARS = 500;      // per message
 const MAX_VISITOR_MSGS = 40; // per thread, after which only the call-or-Rut line
@@ -47,11 +48,35 @@ export default async function handler(req, res) {
 
   // This message included: the 41st is the one that gets the line instead of an answer.
   const capped = rows.filter((m) => m.who === "visitor").length + 1 > MAX_VISITOR_MSGS;
-  const { reply, escalate } = capped
+  const { reply, escalate, booking } = capped
     ? { reply: capLine(lang) }
     : await answerTurn(toHistory(rows).slice(-HISTORY_TURNS), text, lang);
 
-  await postOutbound({ contactId: session.contactId, conversationId, message: reply });
+  // The Discovery call, in the conversation (#740). The model asked for it; the calendar decides
+  // what is actually open, and only a day AND a clock time that land on one slot book anything.
+  // A calendar we cannot read costs the visitor the times, never the answer.
+  let message = reply;
+  let booked;
+  if (booking?.wants) {
+    const slots = (await freeSlots()) || [];
+    if (slots.length) {
+      const { matches, exact } = matchSlots(booking.hint, slots);
+      const done = exact
+        ? await bookDiscovery({ contactId: session.contactId, conversationId, slot: matches[0], lang })
+        : null;
+      if (done?.ok) {
+        booked = { startTime: done.startTime, when: done.when, appointmentId: done.appointmentId };
+        message = `${reply}\n\n${bookedLine(done.when, lang)}`;
+      } else {
+        // Includes the slot GHL refused between the read and the write: offer again rather than
+        // apologise, the visitor still wants a call.
+        const offer = (matches.length && !done ? matches : slots).slice(0, 3);
+        message = `${reply}\n\n${offerLine(offer, lang, matches.length === 0 || !!done)}`;
+      }
+    }
+  }
+
+  await postOutbound({ contactId: session.contactId, conversationId, message });
 
   // After the reply is posted, never before: a Telegram wobble must not cost the visitor an answer
   // (tgSend swallows its own failures, so there is nothing here to catch).
@@ -69,5 +94,5 @@ export default async function handler(req, res) {
 
   // Re-minted every turn: on the first one it is the only place the new conversationId exists, and
   // after that it is the same payload signed again, which the widget can safely overwrite.
-  return res.status(200).json({ reply, token });
+  return res.status(200).json({ reply: message, token, booked });
 }
