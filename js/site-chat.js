@@ -295,8 +295,8 @@
         thread.innerHTML = '';
         S.lastWho = '';
         pending = Object.create(null);
+        render('jasmin', t().greet);
         poll().then(function () {
-          if (!thread.children.length) render('jasmin', t().greet);
           mine('visitor', pendingText);
           send(pendingText, true);
         });
@@ -362,24 +362,29 @@
   }
 
   // ---- open / close / expand ----------------------------------------------
+  // The cookie banner (js/consent.js) sits at z-index 2147483000, above everything. Rather than
+  // reach into that file, flag the state on <html> and let this widget's own stylesheet stand the
+  // banner down while the chat is up; it comes straight back on close.
+  function mode(m) {
+    rj.setAttribute('data-mode', m);
+    document.documentElement.classList.toggle('rj-open', m !== 'closed');
+  }
+
   function open() {
-    rj.setAttribute('data-mode', 'open');
+    mode('open');
     if (!S.opened) { S.opened = true; ga('chat_start'); }
     if (S.started) return;
     S.started = true;
-    // A returning visitor gets the thread back before anything else is drawn; only a genuinely
-    // empty one gets the greeting.
-    var first = S.token ? poll() : Promise.resolve();
-    first.then(function () {
-      if (!thread.children.length) render('jasmin', t().greet);
-      setChips();
-      if (S.token) startPolling();
-    });
+    // The greeting is ours, not GHL's — it is never a row in the conversation, so it opens every
+    // thread, fresh or restored, and the restore appends underneath it.
+    render('jasmin', t().greet);
+    setChips();
+    if (S.token) poll().then(startPolling);
   }
-  function close() { rj.setAttribute('data-mode', 'closed'); }
+  function close() { mode('closed'); }
   function expand(on) {
     if (window.innerWidth <= 640) return;
-    rj.setAttribute('data-mode', on ? 'expanded' : 'open');
+    mode(on ? 'expanded' : 'open');
   }
 
   $('rjBubble').addEventListener('click', open);

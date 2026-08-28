@@ -276,3 +276,12 @@
   @keyframes rj-in { from { opacity: 0; } to { opacity: 1; } }
   .rj__typing i { animation: none; opacity: 0.6; }
 }
+
+/* ---- the site's cookie banner stands down while the chat is up ----
+   js/consent.js parks it at z-index 2147483000, above every widget layer, where it covered the
+   Book-a-call chip and the composer in expanded mode. `.rj-open` is set on <html> by the widget. */
+html.rj-open .rl-consent {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms cubic-bezier(0.23, 1, 0.32, 1);
+}
