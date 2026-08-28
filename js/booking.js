@@ -156,8 +156,11 @@
       overlay.innerHTML = '<div class="rb-ov__bd"></div>';
       overlay.appendChild(root);
       document.body.appendChild(overlay);
-      // One frame before the class, or the transition has nothing to run from.
-      requestAnimationFrame(function () { overlay.classList.add('rb-ov--in'); });
+      // Read a layout property to flush the "from" styles, then add the class in the same tick:
+      // the transition has a start state without waiting for a frame that an automated or
+      // background tab may never paint.
+      void overlay.offsetHeight;
+      overlay.classList.add('rb-ov--in');
       document.documentElement.classList.add('rb-open');
       root.setAttribute('role', 'dialog');
       root.setAttribute('aria-modal', 'true');
