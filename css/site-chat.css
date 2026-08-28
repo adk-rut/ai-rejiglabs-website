@@ -35,7 +35,10 @@
 /* Thai: taller lines, and never letter-spacing (it breaks the script's clusters). */
 .rj:lang(th) { line-height: 1.7; letter-spacing: 0; }
 .rj em { font-style: italic; }
-.rj button { font-family: inherit; border: 0; background: none; cursor: pointer; color: inherit; }
+.rj :where(button) { font-family: inherit; border: 0; background: none; cursor: pointer; color: inherit; }
+/* :where() keeps the reset at zero specificity — a plain `.rj button` reset outranks every
+   single-class component rule below it and strips the pill its background and the chips their
+   border. */
 .rj svg { width: 18px; height: 18px; }
 .rj *, .rj *::before, .rj *::after { box-sizing: border-box; }
 
