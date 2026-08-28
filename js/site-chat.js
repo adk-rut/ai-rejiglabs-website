@@ -250,8 +250,8 @@
     f.innerHTML =
       '<h2 class="rj__gate-h">' + esc(t().gateTitle) + '</h2>' +
       '<p class="rj__gate-p">' + esc(t().gateSub) + '</p>' +
-      '<label class="rj__f"><span>' + esc(t().nameL) + '</span><input type="text" name="name" autocomplete="name" required placeholder="Ella"></label>' +
-      '<label class="rj__f"><span>' + esc(t().emailL) + '</span><input type="email" name="email" autocomplete="email" required placeholder="ella@duckycutz.com"></label>' +
+      '<label class="rj__f"><span>' + esc(t().nameL) + '</span><input type="text" name="name" autocomplete="name" required placeholder="Your name"></label>' +
+      '<label class="rj__f"><span>' + esc(t().emailL) + '</span><input type="email" name="email" autocomplete="email" required placeholder="you@company.com"></label>' +
       '<label class="rj__f"><span>' + esc(t().phoneL) + '</span>' +
         '<span class="rj__tel"><span class="rj__tel-plus">+</span>' +
         '<input type="tel" name="phone" inputmode="tel" autocomplete="tel" required placeholder="66 81 234 5678"></span>' +

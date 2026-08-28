@@ -250,8 +250,8 @@
           '<p class="rb__p">' + esc(t.detailsSub) + '</p>') +
         '<form class="rb__form">' +
           (known ? '' :
-            '<label class="rb__f"><span>' + esc(t.nameL) + '</span><input type="text" name="name" autocomplete="name" required placeholder="Ella"></label>' +
-            '<label class="rb__f"><span>' + esc(t.emailL) + '</span><input type="email" name="email" autocomplete="email" required placeholder="ella@duckycutz.com"></label>' +
+            '<label class="rb__f"><span>' + esc(t.nameL) + '</span><input type="text" name="name" autocomplete="name" required placeholder="Your name"></label>' +
+            '<label class="rb__f"><span>' + esc(t.emailL) + '</span><input type="email" name="email" autocomplete="email" required placeholder="you@company.com"></label>' +
             '<label class="rb__f"><span>' + esc(t.phoneL) + '</span>' +
               '<span class="rb__tel"><span class="rb__tel-plus">+</span>' +
               '<input type="tel" name="phone" inputmode="tel" autocomplete="tel" required placeholder="66 81 234 5678"></span>' +
