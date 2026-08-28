@@ -168,7 +168,7 @@
 
   // A row we rendered ourselves comes back from the poll a few seconds later. Counts, not a set:
   // a visitor who says "yes" twice must see it twice.
-  var pending = Object.create(null);
+  var pending = Object.create(null);   // reset on a gate pass, see gate()
   var key = function (who, text) { return who + '|' + text; };
   function mine(who, text) {
     text = String(text).trim();
@@ -289,7 +289,17 @@
         ga('gate_pass');
         f.remove();
         setChips();
-        send(pendingText, true);
+        // The token is new but the CONTACT may not be: GHL matches on email, so a visitor who
+        // cleared this browser walks back into their old thread. Restore it first, then re-say
+        // the line that opened the gate, or the history lands underneath it.
+        thread.innerHTML = '';
+        S.lastWho = '';
+        pending = Object.create(null);
+        poll().then(function () {
+          if (!thread.children.length) render('jasmin', t().greet);
+          mine('visitor', pendingText);
+          send(pendingText, true);
+        });
       }).catch(function () {
         btn.disabled = false;
         sys(esc(t().err), 'rj__err');
