@@ -1,0 +1,10 @@
+{
+  "name": "rejiglabs-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "rejiglabs.com — static site plus the Site chat serverless brain (api/)",
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}
