@@ -23,7 +23,9 @@ const res = () => {
 };
 
 const GHL = "https://services.leadconnectorhq.com";
-const liveChat = (direction, body, extra = {}) => ({ id: `m_${Math.random().toString(36).slice(2)}`, direction, messageType: "TYPE_LIVE_CHAT", body, dateAdded: "2026-08-28T01:00:00.000Z", ...extra });
+// Fixed and long past on purpose: a `Rut:` row less than four hours old is a Standdown (#738) and
+// would silence every turn this file drives.
+const liveChat = (direction, body, extra = {}) => ({ id: `m_${Math.random().toString(36).slice(2)}`, direction, messageType: "TYPE_LIVE_CHAT", body, dateAdded: "2026-08-20T01:00:00.000Z", ...extra });
 
 const messagesRoute = (rows) => [`GET ${GHL}/conversations/`, { json: { messages: { messages: rows } } }];
 // GHL answers with the conversation the message landed on: the existing one, or the one it just
