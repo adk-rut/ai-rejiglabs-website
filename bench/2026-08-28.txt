@@ -1,0 +1,40 @@
+Site chat latency bench — 2026-08-28T06:06:43.558Z
+target: https://rejiglabs.com (prod, real handlers)   n=10 per case   gate: p50 <= 3.00s, max <= 8.00s
+model: z-ai/glm-4.7 -> z-ai/glm-4.6, provider order Google then Z.AI (lib/answer-turn.js)
+
+case                                        lang     n     p50     p90     max  gate
+------------------------------------------------------------------------------------
+EN chip 1: What does AI Front Desk cost?    en      10   4.40   5.65  23.80  FAIL
+EN chip 2: How does it handle LINE and phone?  en      10   4.30   5.90   9.47  FAIL
+EN chip 3: Can I see it working?            en      10   3.69   5.20   5.54  FAIL
+EN chip 4: Book a discovery call            en      10   5.77  25.39  25.44  FAIL
+TH chip 1: AI Front Desk ราคาเท่าไหร่       th      10   8.94  22.62  25.28  FAIL
+TH chip 2: รับสายและตอบ LINE ยังไง          th      10   7.27   8.79  22.26  FAIL
+TH chip 3: ขอดูตัวอย่างที่ใช้งานจริงได้ไหม  th      10   6.40   8.01   8.40  FAIL
+TH chip 4: จองคอลคุยกับทีมงาน               th      10  13.67  26.42  27.00  FAIL
+Booking flow (EN, one slot each)            en      10  23.39  27.09  29.14  FAIL
+------------------------------------------------------------------------------------
+VERDICT: FAIL — 9/9 cases over budget
+
+Per-case numbers only; a run total would hide that TH costs far more output tokens
+than EN for the same sentence and is the case that misses the budget.
+
+Provider: /api/turn returns the reply, not OpenRouter's `provider` field, so the route
+that served each call is not observable from the bench. The configured order is
+Google then Z.AI; Helicone (HELICONE_API_KEY) holds the per-call response bodies.
+
+Bench appointments (3):
+  UfTZyUbgYB8S4D04FgJo  Booking flow (EN, one slot each)  cancelled
+  BTHUioShBrvqzi5FTlsO  Booking flow (EN, one slot each)  cancelled
+  PriRCslsHnSyPa14AUhk  Booking flow (EN, one slot each)  cancelled
+
+Contacts created (one per case, so no thread hits the 40-message cap):
+  WiH7RFWu2J4cqocolld0  bench-2026-08-28-1250-0-en-chip-1-what-does-ai-f@rejiglabs.com
+  wLL8jclGVuhA6RHTAe0j  bench-2026-08-28-1250-1-en-chip-2-how-does-it-ha@rejiglabs.com
+  LbRc7fx3b144OHUzr2y2  bench-2026-08-28-1250-2-en-chip-3-can-i-see-it-w@rejiglabs.com
+  nBFNDOhjb3uIrFkmzCNZ  bench-2026-08-28-1250-3-en-chip-4-book-a-discove@rejiglabs.com
+  8gkBbQrKx4tFhMgimayn  bench-2026-08-28-1250-4-th-chip-1-ai-front-desk@rejiglabs.com
+  nHS70l4sTBxKncd15jNK  bench-2026-08-28-1250-5-th-chip-2-line@rejiglabs.com
+  PWe26ZNQFYbIzG1EUUeH  bench-2026-08-28-1250-6-th-chip-3@rejiglabs.com
+  rcwIJIuoUUYmF4hs26bK  bench-2026-08-28-1250-7-th-chip-4@rejiglabs.com
+  S4C8tWMpkMX9u1rro167  bench-2026-08-28-1250-8-booking-flow-en-one-slot@rejiglabs.com
