@@ -74,13 +74,11 @@
 }
 
 /* ---- days + slots ---- */
-.rb__days {
-  display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px;
-  scrollbar-width: none; -webkit-overflow-scrolling: touch;
-}
-.rb__days::-webkit-scrollbar { display: none; }
+/* Wrapped, not scrolled: the calendar offers exactly 7 days, and a row that scrolls sideways
+   hides the last of them behind an affordance nobody sees. */
+.rb__days { display: flex; flex-wrap: wrap; gap: 6px; }
 .rb__day {
-  flex: none; padding: 8px 14px; border-radius: 999px; white-space: nowrap;
+  flex: none; padding: 8px 13px; border-radius: 999px; white-space: nowrap;
   border: 1px solid var(--rb-border-hi); color: var(--rb-accent);
   font-size: 13px; font-weight: 500; background: #fff;
   transition: background var(--rb-fast) ease, color var(--rb-fast) ease, transform var(--rb-fast) var(--rb-out);
