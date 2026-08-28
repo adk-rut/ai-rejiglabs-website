@@ -125,6 +125,19 @@ test("an empty first reply falls back to glm-4.6, and the fallback's reply is wh
   assert.equal(r.body.reply, "Second model answered.");
 });
 
+test("both models empty: the visitor is asked to try again, not told the thread is over", async () => {
+  const { r, fake } = await run({
+    token: withConv(),
+    body: { text: "hi", lang: "en" },
+    routes: [messagesRoute([]), inboundRoute, outboundRoute, modelRoute("")],
+  });
+  assert.equal(fake.calls.filter((c) => c.url.includes("openrouter.ai")).length, 2);
+  const outbound = fake.calls.find((c) => c.method === "POST" && c.url.endsWith("/conversations/messages"));
+  assert.match(outbound.body.message, /send that again/);
+  assert.equal(outbound.body.message.includes("covered a lot"), false, "that is the 40-message cap line, not this");
+  assert.equal(r.body.reply, outbound.body.message);
+});
+
 test("a 501-character message is rejected and reaches neither GHL nor the model", async () => {
   const { r, fake } = await run({ token: withConv(), body: { text: "a".repeat(501), lang: "en" } });
   assert.equal(r.code, 400);
