@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * add-site-chat.mjs — puts the Site chat tag on every page (#742, spec #734).
+ * add-site-chat.mjs — puts the Site chat tags on every page (#742, #743, spec #734).
  *
  * The site has no page template: 20-odd pages are hand-authored HTML and only /th/ and /ru/ are
  * generated (scripts/build-langs.mjs). So "one script tag on every page" is a stamping pass, not
@@ -16,7 +16,12 @@ import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-export const TAG = '<script src="/js/site-chat.js" defer></script>';
+// Two tags, one install: the widget, and the Booking panel every CTA on the page opens (#743).
+// booking.js first — a CTA click must not depend on the chat script having parsed.
+export const TAGS = [
+  '<script src="/js/booking.js" defer></script>',
+  '<script src="/js/site-chat.js" defer></script>',
+];
 
 // Not every .html under the repo is a page of rejiglabs.com:
 // - proto/      the prototype this widget was promoted from; it carries its own copy
@@ -39,10 +44,13 @@ export function pages(dir = ROOT, out = []) {
 // position costs nothing either way, but a widget appended to a body that is already there is one
 // less thing to reason about.
 export function withTag(html) {
-  if (html.includes('/js/site-chat.js')) return html;
-  const at = html.lastIndexOf('</body>');
-  if (at === -1) return html + '\n' + TAG + '\n';
-  return html.slice(0, at) + '  ' + TAG + '\n' + html.slice(at);
+  for (const tag of TAGS) {
+    const src = tag.match(/src="([^"]+)"/)[1];
+    if (html.includes(src)) continue;
+    const at = html.lastIndexOf('</body>');
+    html = at === -1 ? html + '\n' + tag + '\n' : html.slice(0, at) + '  ' + tag + '\n' + html.slice(at);
+  }
+  return html;
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
@@ -57,7 +65,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   }
   if (check) {
     if (missing.length) {
-      console.error(`Missing the Site chat tag:\n  ${missing.join('\n  ')}`);
+      console.error(`Missing a Site chat tag:\n  ${missing.join('\n  ')}`);
       process.exit(1);
     }
     console.log('✓ every page carries the Site chat tag');

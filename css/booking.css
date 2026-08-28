@@ -1,0 +1,211 @@
+/* Booking panel (#743, spec #734). Same brand tokens as the chat, redeclared rather than
+   inherited: a CTA on /blockchain loads neither css/style.css nor css/site-chat.css, and the
+   panel has to look identical there. Values copied verbatim from the brand design system. */
+.rb {
+  --rb-font: 'Instrument Sans', 'Noto Sans Thai', -apple-system, sans-serif;
+  --rb-mono: 'JetBrains Mono', 'Courier New', monospace;
+  --rb-card: #ffffff;
+  --rb-bg: #f7f8fc;
+  --rb-accent: #0033cc;
+  --rb-accent-hi: #0044ee;
+  --rb-glow: rgba(0, 51, 204, 0.10);
+  --rb-ink: #1a1d2e;
+  --rb-ink-2: rgba(26, 29, 46, 0.62);
+  --rb-ink-3: rgba(26, 29, 46, 0.38);
+  --rb-border: rgba(0, 51, 204, 0.10);
+  --rb-border-hi: rgba(0, 51, 204, 0.32);
+  --rb-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --rb-fast: 140ms;
+  --rb-mid: 200ms;
+  --rb-slow: 260ms;
+  font-family: var(--rb-font);
+  color: var(--rb-ink);
+  font-size: 15px;
+  line-height: 1.55;
+  background: var(--rb-card);
+  border: 1px solid var(--rb-border);
+  border-radius: 18px;
+  overflow: hidden;
+  text-align: left;
+}
+/* Thai: taller lines, and never letter-spacing (it breaks the script's clusters). */
+.rb:lang(th) { line-height: 1.7; letter-spacing: 0; }
+.rb *, .rb *::before, .rb *::after { box-sizing: border-box; }
+.rb :where(button) { font-family: inherit; border: 0; background: none; cursor: pointer; color: inherit; }
+.rb svg { width: 18px; height: 18px; }
+
+/* ---- head ---- */
+.rb__head {
+  display: flex; align-items: center; gap: 10px;
+  padding: 14px 14px 12px; border-bottom: 1px solid var(--rb-border); background: var(--rb-card);
+}
+.rb__who { flex: 1; min-width: 0; }
+.rb__title { font-weight: 600; font-size: 15px; }
+.rb__sub { font-size: 12px; color: var(--rb-ink-2); }
+.rb__ib {
+  flex: none; width: 30px; height: 30px; border-radius: 50%; color: var(--rb-ink-3);
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: background var(--rb-fast) ease, color var(--rb-fast) ease, transform var(--rb-fast) var(--rb-out);
+}
+.rb__ib:active { transform: scale(0.95); }
+/* The back arrow exists only once a time is chosen; reserving its space would shove the title. */
+.rb__back { display: none; }
+.rb--back .rb__back { display: inline-flex; }
+
+/* ---- body ---- */
+.rb__body { padding: 14px; max-height: min(60vh, 420px); overflow-y: auto; }
+.rb__label {
+  font-family: var(--rb-mono); font-size: 11px; color: var(--rb-ink-3);
+  letter-spacing: 0; margin: 14px 0 8px;
+}
+.rb__msg { margin: 6px 0 14px; color: var(--rb-ink-2); font-size: 14px; }
+.rb__h { font-size: 15px; font-weight: 600; margin: 16px 0 2px; }
+.rb__p { font-size: 13px; color: var(--rb-ink-2); margin: 0 0 10px; }
+.rb__err { color: var(--rb-accent-hi); font-size: 13px; margin: 0 0 8px; }
+
+.rb__wait {
+  display: flex; align-items: center; gap: 10px; padding: 26px 4px;
+  color: var(--rb-ink-2); font-size: 14px;
+}
+.rb__spin {
+  width: 16px; height: 16px; border-radius: 50%; flex: none;
+  border: 2px solid var(--rb-border-hi); border-top-color: var(--rb-accent);
+  animation: rb-spin 700ms linear infinite;
+}
+
+/* ---- days + slots ---- */
+.rb__days {
+  display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px;
+  scrollbar-width: none; -webkit-overflow-scrolling: touch;
+}
+.rb__days::-webkit-scrollbar { display: none; }
+.rb__day {
+  flex: none; padding: 8px 14px; border-radius: 999px; white-space: nowrap;
+  border: 1px solid var(--rb-border-hi); color: var(--rb-accent);
+  font-size: 13px; font-weight: 500; background: #fff;
+  transition: background var(--rb-fast) ease, color var(--rb-fast) ease, transform var(--rb-fast) var(--rb-out);
+}
+.rb__day:active { transform: scale(0.97); }
+.rb__day.is-on { background: var(--rb-accent); border-color: var(--rb-accent); color: #fff; }
+
+.rb__slots { display: grid; grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 8px; }
+.rb__slot {
+  padding: 11px 4px; border-radius: 12px; border: 1px solid var(--rb-border-hi);
+  color: var(--rb-ink); font-size: 14px; font-weight: 500; font-variant-numeric: tabular-nums;
+  background: #fff;
+  /* Staggered so a fresh day reads as a list arriving, not a grid blinking. Capped by the
+     --i the markup sets, so a 20-slot day never waits half a second for its last time. */
+  animation: rb-in var(--rb-mid) var(--rb-out) backwards;
+  animation-delay: calc(min(var(--i, 0), 11) * 18ms);
+  transition: border-color var(--rb-fast) ease, background var(--rb-fast) ease, transform var(--rb-fast) var(--rb-out), box-shadow var(--rb-fast) ease;
+}
+.rb__slot:active { transform: scale(0.96); }
+
+/* ---- confirm ---- */
+.rb__chosen {
+  display: flex; align-items: center; gap: 10px; padding: 12px 14px;
+  border: 1px solid var(--rb-border-hi); border-radius: 14px; background: var(--rb-bg);
+  animation: rb-in var(--rb-slow) var(--rb-out);
+}
+.rb__chosen svg { flex: none; color: var(--rb-accent); }
+.rb__chosen-h { font-weight: 600; font-size: 15px; }
+.rb__chosen-p { font-size: 12px; color: var(--rb-ink-2); }
+
+.rb__form { display: flex; flex-direction: column; gap: 10px; margin-top: 14px; }
+.rb__f { display: flex; flex-direction: column; gap: 4px; font-size: 12px; font-weight: 500; color: var(--rb-ink-2); }
+.rb__f input {
+  font: inherit; font-size: 15px; font-weight: 400; color: var(--rb-ink);
+  padding: 11px 13px; border: 1px solid var(--rb-border-hi); border-radius: 10px; background: #fff; outline: none;
+  transition: border-color var(--rb-fast) ease, box-shadow var(--rb-fast) ease;
+}
+.rb__f input:focus { border-color: var(--rb-accent); box-shadow: 0 0 0 3px var(--rb-glow); }
+.rb__tel {
+  display: flex; align-items: center; border: 1px solid var(--rb-border-hi); border-radius: 10px; background: #fff;
+  transition: border-color var(--rb-fast) ease, box-shadow var(--rb-fast) ease;
+}
+.rb__tel:focus-within { border-color: var(--rb-accent); box-shadow: 0 0 0 3px var(--rb-glow); }
+.rb__tel-plus { padding: 0 2px 0 13px; font-size: 15px; color: var(--rb-ink); font-weight: 500; }
+.rb__tel input { border: 0 !important; box-shadow: none !important; padding-left: 4px; flex: 1; min-width: 0; }
+.rb__hint { display: none; font-size: 12px; font-weight: 400; color: var(--rb-accent-hi); margin-top: 2px; }
+.rb__f--hint .rb__hint { display: block; }
+.rb__fine { font-size: 12px; color: var(--rb-ink-3); text-align: center; margin: 0; }
+
+.rb__btn {
+  margin-top: 4px; padding: 12px 18px; border-radius: 999px; background: var(--rb-accent); color: #fff;
+  font-weight: 500; font-size: 15px; width: 100%;
+  transition: transform var(--rb-mid) var(--rb-out), box-shadow var(--rb-mid) ease, opacity var(--rb-fast) ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .rb__btn:hover { transform: translateY(-1px); box-shadow: 0 8px 22px rgba(0, 51, 204, 0.28); }
+  .rb__ib:hover { background: var(--rb-bg); color: var(--rb-ink); }
+  .rb__day:hover:not(.is-on) { background: var(--rb-bg); }
+  .rb__slot:hover { border-color: var(--rb-accent); background: var(--rb-glow); }
+}
+.rb__btn:active { transform: scale(0.98); transition-duration: var(--rb-fast); }
+.rb__btn[disabled] { opacity: 0.55; pointer-events: none; }
+
+/* ---- booked ---- */
+.rb__done { text-align: center; padding: 18px 6px 6px; animation: rb-in var(--rb-slow) var(--rb-out); }
+.rb__done-ic {
+  width: 44px; height: 44px; margin: 0 auto 12px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--rb-glow); color: var(--rb-accent);
+  animation: rb-pop var(--rb-slow) var(--rb-out) 60ms backwards;
+}
+.rb__done-ic svg { width: 22px; height: 22px; }
+.rb__done-h { font-weight: 600; font-size: 16px; }
+.rb__done-p { font-size: 13px; color: var(--rb-ink-2); margin: 6px 0 16px; }
+
+/* ---- inline in the chat thread ---- */
+.rb--inline {
+  align-self: stretch; width: 100%; margin: 6px 0 2px;
+  border-color: var(--rb-border-hi);
+  animation: rb-in var(--rb-slow) var(--rb-out);
+}
+.rb--inline .rb__body { max-height: none; overflow: visible; }
+
+/* ---- the CTA modal ---- */
+.rb-ov { position: fixed; inset: 0; z-index: 960; display: flex; align-items: center; justify-content: center; padding: 24px; }
+.rb-ov__bd {
+  position: absolute; inset: 0; background: rgba(26, 29, 46, 0.32); backdrop-filter: blur(3px);
+  opacity: 0; transition: opacity var(--rb-mid, 200ms) cubic-bezier(0.23, 1, 0.32, 1);
+}
+.rb-ov--in .rb-ov__bd { opacity: 1; }
+.rb-ov .rb {
+  position: relative; width: 100%; max-width: 420px;
+  box-shadow: 0 24px 64px rgba(0, 51, 204, 0.16), 0 2px 10px rgba(26, 29, 46, 0.06);
+  opacity: 0; transform: translateY(12px) scale(0.96);
+  transition: opacity var(--rb-mid) var(--rb-out), transform var(--rb-slow) var(--rb-out);
+}
+.rb-ov--in .rb { opacity: 1; transform: none; }
+html.rb-open { overflow: hidden; }
+/* The cookie banner parks itself above every widget layer (js/consent.js). Same standdown the
+   chat uses, so it cannot cover the confirm button. */
+html.rb-open .rl-consent { opacity: 0; pointer-events: none; transition: opacity 200ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+@keyframes rb-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes rb-pop { from { opacity: 0; transform: scale(0.7); } to { opacity: 1; transform: none; } }
+@keyframes rb-spin { to { transform: rotate(360deg); } }
+
+/* ---- mobile: the modal becomes a bottom sheet ---- */
+@media (max-width: 640px) {
+  .rb-ov { padding: 0; align-items: flex-end; }
+  .rb-ov .rb { max-width: none; border-radius: 18px 18px 0 0; border-bottom: 0; transform: translateY(24px); }
+  .rb-ov--in .rb { transform: none; }
+  .rb__body { max-height: 66vh; padding-bottom: max(14px, env(safe-area-inset-bottom)); }
+  .rb__slots { grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); }
+}
+
+/* ---- reduced motion: keep the fades that explain state, drop the movement ---- */
+@media (prefers-reduced-motion: reduce) {
+  .rb *, .rb *::before, .rb *::after, .rb-ov .rb {
+    transition-duration: 120ms !important;
+    animation-duration: 120ms !important;
+    animation-delay: 0ms !important;
+  }
+  .rb-ov .rb, .rb-ov--in .rb { transform: none; }
+  .rb__btn:hover, .rb__slot:active, .rb__day:active { transform: none; }
+  @keyframes rb-in { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes rb-pop { from { opacity: 0; } to { opacity: 1; } }
+  .rb__spin { animation-duration: 1400ms !important; }
+}

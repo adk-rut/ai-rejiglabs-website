@@ -308,7 +308,7 @@
 
         '<section class="cs-page__cta">' +
           '<h2>' + lb('cta') + '</h2>' +
-          '<button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config=\'{"layout":"month_view"}\' class="btn btn--filled"><span class="btn__text">' + lb('book') + '</span><span class="btn__hover">' + lb('book') + ' <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>' +
+          '<button data-book class="btn btn--filled"><span class="btn__text">' + lb('book') + '</span><span class="btn__hover">' + lb('book') + ' <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>' +
         '</section>' +
 
         galleryHtml +

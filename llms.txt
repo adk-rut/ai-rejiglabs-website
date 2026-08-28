@@ -32,7 +32,7 @@ Rejig Labs is an AI automation agency based in Thailand (Phuket / Bangkok, worki
 ## Contact
 
 - Email: rut@rejiglabs.com
-- Book a discovery call: https://cal.com/rejiglabs/discovery
+- Book a discovery call: https://rejiglabs.com/ (the "Book a Discovery Call" button on any page opens the booking panel)
 - X/Twitter: https://x.com/rejiglabs
 - LinkedIn: https://linkedin.com/company/rejiglabs
 - YouTube: https://youtube.com/@rejiglabs

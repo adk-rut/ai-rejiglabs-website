@@ -853,8 +853,8 @@
     "th": "ยืนยันทาง SMS"
   },
   "fdc_cta": {
-    "en": "Book a free 20-min call",
-    "th": "นัดคุยฟรี 20 นาที"
+    "en": "Book a free 30-min call",
+    "th": "นัดคุยฟรี 30 นาที"
   },
   "fdc_or_email": {
     "en": "Or email",
@@ -1109,8 +1109,8 @@
     "th": "อยากได้ระบบแบบนี้<em class=\"accent\">สำหรับธุรกิจของคุณ?</em>"
   },
   "fdc_end_sub": {
-    "en": "A free 20-minute call. We look at where your calls and chats go missing and tell you what we would build first.",
-    "th": "คุยฟรี 20 นาที เราดูว่าสายและแชทของคุณหายไปตรงไหน แล้วบอกว่าเราจะสร้างอะไรให้ก่อน"
+    "en": "A free 30-minute call. We look at where your calls and chats go missing and tell you what we would build first.",
+    "th": "คุยฟรี 30 นาที เราดูว่าสายและแชทของคุณหายไปตรงไหน แล้วบอกว่าเราจะสร้างอะไรให้ก่อน"
   },
   "fdc_back": {
     "en": "Just here for a haircut? Back to your booking →",

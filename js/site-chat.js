@@ -37,7 +37,6 @@
       fine: 'No password, no newsletter. The team reads every chat.',
       greet: 'Hi, I\'m Jasmin, Rejig\'s AI front desk. Ask me anything, or pick one:',
       rtTag: 'Rut · Founder', rtJoined: 'Rut joined', booked: 'Discovery call booked',
-      bookingSoon: 'Booking panel coming.',
       err: 'Something went wrong on our side. Try again, or email rut@rejiglabs.com.',
       chips: {
         cost: 'What does AI Front Desk cost?',
@@ -58,7 +57,6 @@
       fine: 'ไม่ต้องตั้งรหัสผ่าน ไม่มีสแปม ทีมงานอ่านทุกแชทค่ะ',
       greet: 'สวัสดีค่ะ จัสมินค่ะ ผู้ช่วยหน้าร้าน AI ของ Rejig Labs ถามได้ทุกอย่างเลยค่ะ หรือเลือกจากนี้ก็ได้',
       rtTag: 'รุจ · ผู้ก่อตั้ง', rtJoined: 'รุจเข้าร่วมแชท', booked: 'จองคอลเรียบร้อย',
-      bookingSoon: 'ระบบจองกำลังจะมาค่ะ',
       err: 'ระบบขัดข้องค่ะ ลองใหม่อีกครั้ง หรืออีเมลไปที่ rut@rejiglabs.com ได้เลยค่ะ',
       chips: {
         cost: 'AI Front Desk ราคาเท่าไหร่',
@@ -455,13 +453,29 @@
     });
   })();
 
-  // The Booking panel is #743. Until it lands the chip says so; the panel replaces this hook.
+  // The Booking panel (js/booking.js, #743) renders INSIDE the thread, not over it: booking from
+  // the chip is part of the conversation, and a modal on top of the chat would hide it.
   window.rejigChat = {
     open: open,
     close: close,
     openBooking: function () {
       if (!S.started) open();
-      sys(esc(t().bookingSoon));
+      if (!window.rejigBooking) { sys(esc(t().err), 'rj__err'); return; }
+      var slot = document.createElement('div');
+      slot.className = 'rj__book';
+      thread.appendChild(slot);
+      scroll();
+      window.rejigBooking.open({
+        mount: slot,
+        lang: S.lang,
+        // The panel's own Booked state sits in a box the thread scrolls past; the card is the
+        // widget's own furniture, and is what a booking made by TALKING to Jasmin leaves behind.
+        // One shape for both, so the thread reads the same however the call was booked.
+        onBooked: function (b) {
+          slot.remove();
+          bookedCard(b.when);
+        }
+      });
     }
   };
 

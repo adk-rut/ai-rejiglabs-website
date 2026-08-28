@@ -101,7 +101,7 @@
       <a href="index.html#process" class="nav__link" data-i18n="nav_process">Process</a>
       <a href="/case-studies/" class="nav__link" data-i18n="nav_case_studies">Case Studies</a>
       <div class="nav__lang"><button data-lang="en" class="active">EN</button><button data-lang="th">TH</button><button data-lang="ru">RU</button></div>
-      <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="nav__cta">Get In Touch <span>›</span></button>
+      <button data-book class="nav__cta">Get In Touch <span>›</span></button>
     </div>
     <details class="nav__lang-picker">
       <summary aria-label="Change language">🇬🇧</summary>
@@ -126,7 +126,7 @@
     <a href="/blockchain/" class="mobile-menu__link" data-i18n="nav_blockchain">Blockchain</a>
     <a href="/#process" class="mobile-menu__link" data-i18n="nav_process">Process</a>
     <a href="/case-studies/" class="mobile-menu__link" data-i18n="nav_case_studies">Case Studies</a>
-    <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="mobile-menu__link mobile-menu__link--cta">Get In Touch</button>
+    <button data-book class="mobile-menu__link mobile-menu__link--cta">Get In Touch</button>
   </div>
 
   <main>
@@ -145,7 +145,7 @@
         <svg class="closing__circle" viewBox="0 0 300 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
           <path class="closing__circle-path" d="M 260 18 C 310 40, 298 95, 150 105 C 20 105, -12 70, 8 55 C 30 20, 100 12, 150 12 C 230 12, 280 30, 260 38" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
         </svg>
-        <button data-cal-namespace="discovery" data-cal-link="rejiglabs/discovery" data-cal-config='{"layout":"month_view"}' class="btn"><span class="btn__text">Book a Discovery Call</span><span class="btn__hover">Book a Discovery Call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
+        <button data-book class="btn"><span class="btn__text">Book a Discovery Call</span><span class="btn__hover">Book a Discovery Call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
       </div>
     </div>
     <div class="footer__inner">
@@ -193,41 +193,7 @@
     })();
   </script>
 
-  <!-- Cal.com Embed -->
-  <script type="text/javascript">
-    (function (C, A, L) {
-      let p = function (a, ar) { a.q.push(ar); };
-      let d = C.document;
-      C.Cal = C.Cal || function () {
-        let cal = C.Cal;
-        let ar = arguments;
-        if (!cal.loaded) {
-          cal.ns = {};
-          cal.q = cal.q || [];
-          d.head.appendChild(d.createElement("script")).src = A;
-          cal.loaded = true;
-        }
-        if (ar[0] === L) {
-          const api = function () { p(api, arguments); };
-          const namespace = ar[1];
-          api.q = api.q || [];
-          if (typeof namespace === "string") {
-            cal.ns[namespace] = cal.ns[namespace] || api;
-            p(cal.ns[namespace], ar);
-            p(cal, ["initNamespace", namespace]);
-          } else p(cal, ar);
-          return;
-        }
-        p(cal, ar);
-      };
-    })(window, "https://app.cal.com/embed/embed.js", "init");
-
-    Cal("init", "discovery", { origin: "https://cal.com" });
-    Cal.ns.discovery("ui", {
-      hideEventTypeDetails: false,
-      layout: "month_view"
-    });
-  </script>
   <script src="/js/site-chat.js" defer></script>
+  <script src="/js/booking.js" defer></script>
 </body>
 </html>
