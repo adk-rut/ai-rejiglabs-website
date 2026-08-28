@@ -184,12 +184,18 @@
     }
 
     var showBack = function (on) { root.classList.toggle('rb--back', !!on); };
+    // Inside the chat thread the panel changes height at every step (loading -> days -> form ->
+    // booked). The thread does not follow on its own, so each render ends by pulling the panel
+    // back into view. `block: end` and not `smooth`: an automated or background tab never paints
+    // the frames a smooth scroll needs.
+    var settle = function () { if (inline && root.scrollIntoView) root.scrollIntoView({ block: 'end' }); };
     back.addEventListener('click', function () { state.slot = null; renderDays(); });
 
     // ---- steps -----------------------------------------------------------
     function renderLoading() {
       showBack(false);
       body.innerHTML = '<div class="rb__wait"><span class="rb__spin"></span>' + esc(t.loading) + '</div>';
+      settle();
     }
 
     function renderError(msg) {
@@ -197,6 +203,7 @@
       body.innerHTML = '<p class="rb__msg">' + esc(msg) + '</p>' +
         '<button type="button" class="rb__btn rb__retry">' + esc(t.retry) + '</button>';
       body.querySelector('.rb__retry').addEventListener('click', load);
+      settle();
     }
 
     function renderDays() {
@@ -228,6 +235,7 @@
         state.slot = b.dataset.s;
         renderConfirm();
       });
+      settle();
     }
 
     // Gate-passed → one tap. Otherwise the same three fields as the gate, same nudge.
@@ -263,6 +271,7 @@
         });
       }
       form.addEventListener('submit', function (e) { e.preventDefault(); confirm(form, tel); });
+      settle();
       var first = form.querySelector('input');
       if (first) first.focus();
     }
@@ -314,6 +323,7 @@
           '<p class="rb__done-p">' + esc(t.bookedSub) + '</p>' +
           (inline ? '' : '<button type="button" class="rb__btn rb__done-x">' + esc(t.close) + '</button>') +
         '</div>';
+      settle();
       var x = body.querySelector('.rb__done-x');
       if (x) x.addEventListener('click', close);
     }
@@ -333,7 +343,6 @@
 
     ga('book_click', { lang: lang });
     load();
-    if (inline && root.scrollIntoView) root.scrollIntoView({ block: 'nearest' });
     return { close: close, el: root };
   }
 

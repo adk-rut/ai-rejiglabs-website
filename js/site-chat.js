@@ -461,6 +461,10 @@
     openBooking: function () {
       if (!S.started) open();
       if (!window.rejigBooking) { sys(esc(t().err), 'rj__err'); return; }
+      // The Book-a-call chip stays on screen while the panel is open (an Escalation needs it
+      // there). Tapping it again means "where did it go", not "give me a second one".
+      var already = thread.querySelector('.rj__book');
+      if (already) { already.scrollIntoView({ block: 'end' }); return; }
       var slot = document.createElement('div');
       slot.className = 'rj__book';
       thread.appendChild(slot);
