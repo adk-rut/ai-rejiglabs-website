@@ -20,6 +20,8 @@ const res = () => {
 
 const GHL = "https://services.leadconnectorhq.com";
 const outboundRoute = [`POST ${GHL}/conversations/messages`, { status: 201, json: { messageId: "mo_1" } }];
+// The card carries only the conversation id; the outbound post 404s without a contactId (live, #739).
+const conversationRoute = [`GET ${GHL}/conversations/`, { json: { id: "cv_1", contactId: "ct_1" } }];
 const tgRoute = ["POST https://api.telegram.org", { json: { ok: true, result: { message_id: 7 } } }];
 
 const CARD = [
@@ -42,7 +44,7 @@ const update = ({ chatId = "-100123", text = "on my way, 2pm works", reply = CAR
   },
 });
 
-const run = async ({ routes = [outboundRoute, tgRoute], body }) => {
+const run = async ({ routes = [conversationRoute, outboundRoute, tgRoute], body }) => {
   const fake = fakeFetch(routes);
   const real = globalThis.fetch;
   globalThis.fetch = fake.fetch;
@@ -57,15 +59,27 @@ const run = async ({ routes = [outboundRoute, tgRoute], body }) => {
   return { r, fake, tg, outbound };
 };
 
-test("reply to a card: one Rut: outbound on the ref: conversation, 200, nothing sent back", async () => {
-  const { r, tg, outbound } = await run({ body: update() });
+test("reply to a card: the ref: conversation is resolved to its contact, one Rut: outbound, 200, nothing sent back", async () => {
+  const { r, fake, tg, outbound } = await run({ body: update() });
   assert.equal(r.code, 200);
+  assert.equal(fake.calls[0].url, `${GHL}/conversations/cv_1`);
   assert.equal(outbound.length, 1);
   assert.deepEqual(
-    { type: outbound[0].body.type, conversationId: outbound[0].body.conversationId, message: outbound[0].body.message },
-    { type: "Live_Chat", conversationId: "cv_1", message: "Rut: on my way, 2pm works" },
+    { type: outbound[0].body.type, contactId: outbound[0].body.contactId, conversationId: outbound[0].body.conversationId, message: outbound[0].body.message },
+    { type: "Live_Chat", contactId: "ct_1", conversationId: "cv_1", message: "Rut: on my way, 2pm works" },
   );
   assert.equal(tg.length, 0);
+});
+
+test("the conversation lookup 404s: the error is echoed, nothing is posted", async () => {
+  const { r, tg, outbound } = await run({
+    routes: [[`GET ${GHL}/conversations/`, { status: 404, json: { message: "not found" } }], tgRoute],
+    body: update(),
+  });
+  assert.equal(r.code, 200);
+  assert.equal(outbound.length, 0);
+  assert.equal(tg.length, 1);
+  assert.match(tg[0].body.text, /could not send.*404/i);
 });
 
 test("not a reply: the guidance line goes back, no GHL call", async () => {
@@ -85,7 +99,7 @@ test("reply to something without a ref: footer is treated as not a reply", async
 
 test("GHL refuses the post: the error is echoed back to Rut, still 200", async () => {
   const { r, tg, outbound } = await run({
-    routes: [[`POST ${GHL}/conversations/messages`, { status: 422, json: { message: "bad conversation" } }], tgRoute],
+    routes: [conversationRoute, [`POST ${GHL}/conversations/messages`, { status: 422, json: { message: "bad conversation" } }], tgRoute],
     body: update(),
   });
   assert.equal(r.code, 200);

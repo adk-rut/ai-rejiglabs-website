@@ -9,6 +9,29 @@ import { postOutbound, RUT_PREFIX } from "../lib/ghl-chat.js";
 import { tgSend } from "../lib/telegram.js";
 
 const GUIDANCE = "reply to a ping to send it";
+const GHL_BASE = "https://services.leadconnectorhq.com";
+
+// The card carries only the conversation id, but `POST /conversations/messages` 404s without a
+// `contactId` — proved live on 2026-08-28, when Rut's first real Takeover came back "GHL said 404".
+// One GET turns one into the other. Kept here rather than in lib/ghl-chat.js: the webhook is the
+// only caller that starts from a bare conversation id.
+async function conversationContact(conversationId) {
+  try {
+    const r = await fetch(`${GHL_BASE}/conversations/${conversationId}`, {
+      headers: {
+        Authorization: `Bearer ${process.env.GHL_REJIG_API_KEY}`,
+        Version: "2021-04-15",
+        "User-Agent": "Mozilla/5.0", // GHL's Cloudflare blocks default fetch UAs
+      },
+    });
+    if (!r.ok) return { ok: false, status: r.status };
+    const j = await r.json().catch(() => ({}));
+    const contactId = j?.contactId || j?.conversation?.contactId || "";
+    return contactId ? { ok: true, contactId } : { ok: false, status: "no contact on that conversation" };
+  } catch (e) {
+    return { ok: false, status: String(e).slice(0, 80) };
+  }
+}
 
 export default async function handler(req, res) {
   const body = typeof req.body === "string" ? JSON.parse(req.body || "{}") : req.body || {};
@@ -26,7 +49,13 @@ export default async function handler(req, res) {
     return res.status(200).json({ ok: true, guidance: true });
   }
 
-  const posted = await postOutbound({ conversationId, message: `${RUT_PREFIX}${text}` });
+  const found = await conversationContact(conversationId);
+  if (!found.ok) {
+    await tgSend(`could not send that — GHL said ${found.status}. Try again.`);
+    return res.status(200).json({ ok: true, sent: false });
+  }
+
+  const posted = await postOutbound({ contactId: found.contactId, conversationId, message: `${RUT_PREFIX}${text}` });
   if (!posted.ok) await tgSend(`could not send that — GHL said ${posted.status}. Try again.`);
   return res.status(200).json({ ok: true, sent: posted.ok });
 }
