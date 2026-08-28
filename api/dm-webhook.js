@@ -9,8 +9,19 @@
 //
 // The visitor's line is already a row in the thread by the time this fires, so unlike the widget
 // there is nothing to post inbound; the turn itself is lib/run-turn.js, shared with api/turn.js.
+import { createHash, timingSafeEqual } from "node:crypto";
 import { fetchMessages, threadRows } from "../lib/ghl-chat.js";
 import { runTurn, MAX_CHARS } from "../lib/run-turn.js";
+
+// The workflow's Webhook action sends this header; nothing else knows it. Without it the endpoint
+// is a public "post as Jasmin into conversation X" button for anyone who learns a conversation id,
+// and a free OpenRouter meter for anyone who does not. Digests, so the compare is a fixed 32 bytes
+// and an attacker learns nothing from how long it took.
+const digest = (v) => createHash("sha256").update(String(v ?? "")).digest();
+const secretOk = (given) => {
+  const want = process.env.DM_WEBHOOK_SECRET || "";
+  return !!want && timingSafeEqual(digest(given), digest(want));
+};
 
 const pick = (...vals) => vals.map((v) => String(v ?? "").trim()).find(Boolean) || "";
 
@@ -25,6 +36,8 @@ export function normalizeChannel(value) {
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "POST only" });
+  // Before the body is even parsed: an unsigned caller gets nothing read, nothing sent, no model.
+  if (!secretOk(req.headers?.["x-webhook-secret"])) return res.status(401).json({ error: "unauthorized" });
 
   const body = typeof req.body === "string" ? JSON.parse(req.body || "{}") : req.body || {};
   const cd = body.customData || {};

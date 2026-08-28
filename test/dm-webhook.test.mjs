@@ -10,6 +10,7 @@ import test from "node:test";
 import { fakeFetch } from "./fake-fetch.mjs";
 import dm from "../api/dm-webhook.js";
 
+process.env.DM_WEBHOOK_SECRET = "dm-test-secret";
 process.env.GHL_REJIG_API_KEY = "pit-test";
 process.env.GHL_REJIG_LOCATION_ID = "loc-test";
 process.env.GHL_REJIG_DISCOVERY_CAL = "cal-test";
@@ -38,13 +39,13 @@ const outboundRoute = [`POST ${GHL}/conversations/messages`, { status: 201, json
 const modelRoute = (content) => [/openrouter\.ai/, { json: { choices: [{ message: { content } }] } }];
 const tgRoute = ["POST https://api.telegram.org", { json: { ok: true, result: { message_id: 7 } } }];
 
-const run = async ({ routes, body, method = "POST" }) => {
+const run = async ({ routes, body, method = "POST", headers = { "x-webhook-secret": "dm-test-secret" } }) => {
   const fake = fakeFetch(routes);
   const real = globalThis.fetch;
   globalThis.fetch = fake.fetch;
   const r = res();
   try {
-    await dm({ method, body, headers: {} }, r);
+    await dm({ method, body, headers }, r);
   } finally {
     globalThis.fetch = real;
   }
@@ -179,4 +180,22 @@ test("booking over a DM: the pick is booked through the same book path, with the
   assert.match(outbound[0].body.message, /Booked/);
   assert.equal(r.code, 200);
   assert.ok(r.body.booked?.appointmentId, "ap_1");
+});
+
+test("no shared secret, no turn: an unsigned caller cannot post as Jasmin or spend a model call", async () => {
+  const { r, fake } = await run({
+    headers: {},
+    body: { customData: { contact_id: "ct_1", conversation_id: "cv_1", channel: "IG" } },
+    routes: [], // any request at all would throw: fakeFetch has nothing routed
+  });
+  assert.equal(r.code, 401);
+  assert.equal(fake.calls.length, 0);
+
+  const wrong = await run({
+    headers: { "x-webhook-secret": "not-the-secret" },
+    body: { customData: { contact_id: "ct_1", conversation_id: "cv_1", channel: "IG" } },
+    routes: [],
+  });
+  assert.equal(wrong.r.code, 401);
+  assert.equal(wrong.fake.calls.length, 0);
 });
