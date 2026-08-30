@@ -37,7 +37,10 @@ export function normalizeChannel(value) {
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "POST only" });
   // Before the body is even parsed: an unsigned caller gets nothing read, nothing sent, no model.
-  if (!secretOk(req.headers?.["x-webhook-secret"])) return res.status(401).json({ error: "unauthorized" });
+  if (!secretOk(req.headers?.["x-webhook-secret"])) {
+    console.error("[dm-webhook] 401: secret header", req.headers?.["x-webhook-secret"] ? "wrong" : "missing");
+    return res.status(401).json({ error: "unauthorized" });
+  }
 
   const body = typeof req.body === "string" ? JSON.parse(req.body || "{}") : req.body || {};
   const cd = body.customData || {};
@@ -45,9 +48,15 @@ export default async function handler(req, res) {
   const conversationId = pick(cd.conversation_id, cd.conversationId, body.conversation_id, body.conversationId, body.conversation?.id)
     || await findConversation(contactId);
   const channel = normalizeChannel(pick(cd.channel, body.channel, body.message?.type, body.messageType, body.conversation?.lastMessageType));
-  if (!contactId || !conversationId) return res.status(400).json({ error: "contact and conversation are required" });
+  // Shape only, never content: which keys GHL actually sent is the whole diagnosis when a DM goes
+  // unanswered, and `vercel logs` is the only place to read it.
+  const reject = (why) => {
+    console.error(`[dm-webhook] 400 ${why}: keys=${Object.keys(body).join(",")} customData=${Object.keys(cd).join(",")} channel=${JSON.stringify(pick(cd.channel, body.channel, body.message?.type, body.messageType))}`);
+    return res.status(400).json({ error: why });
+  };
+  if (!contactId || !conversationId) return reject("contact and conversation are required");
   // Only the two DM inboxes: this endpoint must never answer an SMS or an email as if it were one.
-  if (!channel) return res.status(400).json({ error: "unsupported channel" });
+  if (!channel) return reject("unsupported channel");
 
   const rows = threadRows(await fetchMessages(conversationId), channel);
   const last = rows.filter((m) => m.who === "visitor").pop();
