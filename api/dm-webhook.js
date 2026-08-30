@@ -47,7 +47,11 @@ export default async function handler(req, res) {
   const contactId = pick(cd.contact_id, cd.contactId, body.contact_id, body.contactId, body.contact?.id);
   const conversationId = pick(cd.conversation_id, cd.conversationId, body.conversation_id, body.conversationId, body.conversation?.id)
     || await findConversation(contactId);
-  const channel = normalizeChannel(pick(cd.channel, body.channel, body.message?.type, body.messageType, body.conversation?.lastMessageType));
+  // `{{message.type}}` renders EMPTY on a live Customer Replied fire (seen 2026-08-30), so the
+  // channel comes from the thread itself: the newest inbound row's type is the inbox the DM sat in.
+  const raw = await fetchMessages(conversationId);
+  const channel = normalizeChannel(pick(cd.channel, body.channel, body.message?.type, body.messageType, body.conversation?.lastMessageType))
+    || normalizeChannel(raw.find((m) => m.direction === "inbound")?.messageType);
   // Shape only, never content: which keys GHL actually sent is the whole diagnosis when a DM goes
   // unanswered, and `vercel logs` is the only place to read it.
   const reject = (why) => {
@@ -58,7 +62,7 @@ export default async function handler(req, res) {
   // Only the two DM inboxes: this endpoint must never answer an SMS or an email as if it were one.
   if (!channel) return reject("unsupported channel");
 
-  const rows = threadRows(await fetchMessages(conversationId), channel);
+  const rows = threadRows(raw, channel);
   const last = rows.filter((m) => m.who === "visitor").pop();
   const text = pick(cd.message, body.message?.body, last?.text);
   if (!text) return res.status(200).json({ ignored: "no visitor message" });

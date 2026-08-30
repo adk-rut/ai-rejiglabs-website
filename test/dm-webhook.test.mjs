@@ -197,6 +197,27 @@ test("no conversation id in the payload: the contact's newest conversation is lo
   assert.equal(outbound[0].body.conversationId, "cv_found");
 });
 
+test("channel merge field rendered empty (the live GHL shape): the thread's newest inbound row names the inbox", async () => {
+  const rows = [row("inbound", "sent", "TYPE_INSTAGRAM", 60000)];
+  const { r, outbound } = await run({
+    body: { customData: { contact_id: "ct_1", conversation_id: "cv_1", channel: "", message: "sent" } },
+    routes: [messagesRoute(rows), outboundRoute, modelRoute("Got it.")],
+  });
+  assert.equal(r.code, 200, JSON.stringify(r.body));
+  assert.equal(outbound.length, 1);
+  assert.equal(outbound[0].body.type, "IG");
+});
+
+test("no channel anywhere and the thread is SMS: rejected, never answered as a DM", async () => {
+  const rows = [row("inbound", "hi", "TYPE_SMS", 60000)];
+  const { r, outbound } = await run({
+    body: { customData: { contact_id: "ct_1", conversation_id: "cv_1", channel: "" } },
+    routes: [messagesRoute(rows), outboundRoute, modelRoute("never")],
+  });
+  assert.equal(r.code, 400);
+  assert.equal(outbound.length, 0);
+});
+
 test("no shared secret, no turn: an unsigned caller cannot post as Jasmin or spend a model call", async () => {
   const { r, fake } = await run({
     headers: {},
