@@ -10,7 +10,7 @@
 // The visitor's line is already a row in the thread by the time this fires, so unlike the widget
 // there is nothing to post inbound; the turn itself is lib/run-turn.js, shared with api/turn.js.
 import { createHash, timingSafeEqual } from "node:crypto";
-import { fetchMessages, threadRows } from "../lib/ghl-chat.js";
+import { fetchMessages, threadRows, findConversation } from "../lib/ghl-chat.js";
 import { runTurn, MAX_CHARS } from "../lib/run-turn.js";
 
 // The workflow's Webhook action sends this header; nothing else knows it. Without it the endpoint
@@ -42,7 +42,8 @@ export default async function handler(req, res) {
   const body = typeof req.body === "string" ? JSON.parse(req.body || "{}") : req.body || {};
   const cd = body.customData || {};
   const contactId = pick(cd.contact_id, cd.contactId, body.contact_id, body.contactId, body.contact?.id);
-  const conversationId = pick(cd.conversation_id, cd.conversationId, body.conversation_id, body.conversationId, body.conversation?.id);
+  const conversationId = pick(cd.conversation_id, cd.conversationId, body.conversation_id, body.conversationId, body.conversation?.id)
+    || await findConversation(contactId);
   const channel = normalizeChannel(pick(cd.channel, body.channel, body.message?.type, body.messageType, body.conversation?.lastMessageType));
   if (!contactId || !conversationId) return res.status(400).json({ error: "contact and conversation are required" });
   // Only the two DM inboxes: this endpoint must never answer an SMS or an email as if it were one.

@@ -182,6 +182,21 @@ test("booking over a DM: the pick is booked through the same book path, with the
   assert.ok(r.body.booked?.appointmentId, "ap_1");
 });
 
+test("no conversation id in the payload: the contact's newest conversation is looked up and answered on (#741 follow-up)", async () => {
+  const rows = [row("inbound", "hi from insta", "TYPE_INSTAGRAM")];
+  const { r, urls, outbound } = await run({
+    body: { customData: { contact_id: "ct_1", conversation_id: "", channel: "IG" } },
+    routes: [
+      [`GET ${GHL}/conversations/search`, { json: { conversations: [{ id: "cv_found" }] } }],
+      messagesRoute(rows), contactRoute, tgRoute, outboundRoute, modelRoute("Hello from Jasmin."),
+    ],
+  });
+  assert.equal(r.code, 200, JSON.stringify(r.body));
+  assert.ok(urls.some((u) => u.includes("/conversations/search?") && u.includes("contactId=ct_1")), urls.join(" | "));
+  assert.equal(outbound.length, 1);
+  assert.equal(outbound[0].body.conversationId, "cv_found");
+});
+
 test("no shared secret, no turn: an unsigned caller cannot post as Jasmin or spend a model call", async () => {
   const { r, fake } = await run({
     headers: {},
