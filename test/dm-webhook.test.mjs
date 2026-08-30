@@ -175,9 +175,9 @@ test("booking over a DM: the pick is booked through the same book path, with the
   assert.ok(booked, "Rut gets the 📅 card");
   assert.match(booked.body.text, /Instagram/);
 
-  assert.equal(outbound.length, 1);
+  assert.equal(outbound.length, 2, "the reply and the Booked line are two bubbles");
   assert.equal(outbound[0].body.type, "IG");
-  assert.match(outbound[0].body.message, /Booked/);
+  assert.match(outbound[1].body.message, /Booked/);
   assert.equal(r.code, 200);
   assert.ok(r.body.booked?.appointmentId, "ap_1");
 });
@@ -216,6 +216,21 @@ test("no channel anywhere and the thread is SMS: rejected, never answered as a D
   });
   assert.equal(r.code, 400);
   assert.equal(outbound.length, 0);
+});
+
+test("a DM reply goes out as bubbles, in order, each posted as IG", async () => {
+  const rows = [row("inbound", "what do you do?", "TYPE_INSTAGRAM", 60000)];
+  const { r, outbound } = await run({
+    body: { customData: { contact_id: "ct_1", conversation_id: "cv_1", channel: "IG" } },
+    routes: [messagesRoute(rows), outboundRoute, modelRoute("We build AI front desks. Setup starts at 50,000 baht. Want a call? See rejiglabs.com/pricing for detail.")],
+  });
+  assert.equal(r.code, 200, JSON.stringify(r.body));
+  assert.deepEqual(outbound.map((c) => c.body.message), [
+    "We build AI front desks.",
+    "Setup starts at 50,000 baht.",
+    "Want a call? See rejiglabs.com/pricing for detail.",
+  ]);
+  assert.ok(outbound.every((c) => c.body.type === "IG" && c.body.conversationId === "cv_1"));
 });
 
 test("no shared secret, no turn: an unsigned caller cannot post as Jasmin or spend a model call", async () => {

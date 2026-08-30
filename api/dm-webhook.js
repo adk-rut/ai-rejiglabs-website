@@ -13,6 +13,10 @@ import { createHash, timingSafeEqual } from "node:crypto";
 import { fetchMessages, threadRows, findConversation } from "../lib/ghl-chat.js";
 import { runTurn, MAX_CHARS } from "../lib/run-turn.js";
 
+// The bubbles and their typing pauses come AFTER the model turn; the default function limit is not
+// enough for all three (the relay learned this on a Thalang IG thread, 2026-08-24).
+export const config = { maxDuration: 60 };
+
 // The workflow's Webhook action sends this header; nothing else knows it. Without it the endpoint
 // is a public "post as Jasmin into conversation X" button for anyone who learns a conversation id,
 // and a free OpenRouter meter for anyone who does not. Digests, so the compare is a fixed 32 bytes
