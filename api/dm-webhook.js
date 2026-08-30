@@ -65,6 +65,12 @@ export default async function handler(req, res) {
   if (!contactId || !conversationId) return reject("contact and conversation are required");
   // Only the two DM inboxes: this endpoint must never answer an SMS or an email as if it were one.
   if (!channel) return reject("unsupported channel");
+  // A paused inbox (Vercel env `DM_PAUSED_CHANNELS`, e.g. `IG` or `IG,FB`) is acknowledged and left
+  // alone. Set to `IG` 2026-08-30: the Rejig Instagram is run by the BoBe web3 KOL outreach
+  // automation, and Jasmin answering those replies would collide with it. Unpause = remove the var.
+  if ((process.env.DM_PAUSED_CHANNELS || "").split(",").map((s) => s.trim().toUpperCase()).includes(channel)) {
+    return res.status(200).json({ ignored: `${channel} paused` });
+  }
 
   const rows = threadRows(raw, channel);
   const last = rows.filter((m) => m.who === "visitor").pop();

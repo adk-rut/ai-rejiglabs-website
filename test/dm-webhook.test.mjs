@@ -233,6 +233,21 @@ test("a DM reply goes out as bubbles, in order, each posted as IG", async () => 
   assert.ok(outbound.every((c) => c.body.type === "IG" && c.body.conversationId === "cv_1"));
 });
 
+
+test("a paused channel (DM_PAUSED_CHANNELS): no model, no reply, 200", async () => {
+  process.env.DM_PAUSED_CHANNELS = "IG";
+  const rows = [row("inbound", "hi", "TYPE_INSTAGRAM", 60000)];
+  const { r, model, outbound } = await run({
+    body: { customData: { contact_id: "ct_1", conversation_id: "cv_1", channel: "IG" } },
+    routes: [messagesRoute(rows)],
+  });
+  assert.equal(r.code, 200);
+  delete process.env.DM_PAUSED_CHANNELS;
+  assert.equal(r.body.ignored, "IG paused");
+  assert.equal(model.length, 0);
+  assert.equal(outbound.length, 0);
+});
+
 test("no shared secret, no turn: an unsigned caller cannot post as Jasmin or spend a model call", async () => {
   const { r, fake } = await run({
     headers: {},
