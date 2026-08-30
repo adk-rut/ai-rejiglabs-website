@@ -85,7 +85,7 @@ async function turn(token, text, lang) {
     body: JSON.stringify({ text, lang, pageUrl: `${BASE}/?bench` }),
   });
   const j = await r.json().catch(() => ({}));
-  return { ms: Date.now() - t0, status: r.status, reply: String(j.reply || ""), booked: j.booked, token: j.token || token };
+  return { ms: Date.now() - t0, status: r.status, reply: String(j.reply || ""), booked: j.booked, served: j.served, token: j.token || token };
 }
 
 // --- the booking case's phrases -----------------------------------------------------------------
@@ -153,11 +153,12 @@ async function runCase({ name, lang, texts, index }) {
   const phone = `+6690000${String(1000 + index).slice(1)}`;
   const { token: gateToken, contactId } = await gate(email, phone, lang);
   let token = gateToken;
-  const times = [], notes = [], appointments = [];
+  const times = [], notes = [], appointments = [], served = {};
   for (const text of texts) {
     const t = await turn(token, text, lang);
     token = t.token;
     times.push(t.ms);
+    served[t.served || "?"] = (served[t.served || "?"] || 0) + 1;
     if (t.status !== 200) notes.push(`HTTP ${t.status}`);
     else if (!t.reply.trim()) notes.push("empty reply");
     // The cap line costs no model call, so a case that measures it is not measuring latency.
@@ -169,7 +170,7 @@ async function runCase({ name, lang, texts, index }) {
   // How many of the turns actually booked. A booking case where the model offered times instead is
   // measuring the offer path, and the reader has to be able to see that.
   if (texts.some((t) => /book/i.test(t))) notes.push(`booked ${appointments.length}/${texts.length}`);
-  return { name, lang, email, contactId, times, notes, appointments };
+  return { name, lang, email, contactId, times, notes, appointments, served };
 }
 
 function report(results, cancelled) {
@@ -177,7 +178,7 @@ function report(results, cancelled) {
   const lines = [];
   lines.push(`Site chat latency bench — ${new Date().toISOString()}`);
   lines.push(`target: ${BASE} (prod, real handlers)   n=${N} per case   gate: p50 <= 3.00s, max <= 8.00s`);
-  lines.push(`model: z-ai/glm-4.7 -> z-ai/glm-4.6, provider order Google then Z.AI (lib/answer-turn.js)`);
+  lines.push(`model: z-ai/glm-4.7 -> z-ai/glm-4.6, provider order Google then Z.AI, reasoning off (lib/answer-turn.js)`);
   lines.push("");
   lines.push("case                                        lang     n     p50     p90     max  gate");
   lines.push("-".repeat(84));
@@ -186,6 +187,9 @@ function report(results, cancelled) {
       `${r.name.padEnd(42)}  ${r.lang.padEnd(4)} ${String(r.times.length).padStart(5)} ` +
       `${s(pct(r.times, 0.5))} ${s(pct(r.times, 0.9))} ${s(Math.max(...r.times))}  ${gateOk(r) ? "PASS" : "FAIL"}`
     );
+    // Provider and model per call, as OpenRouter reported it. "A -> B" is a first reply that came
+    // back empty and the fallback that answered instead.
+    lines.push(`${"".padEnd(42)}  served: ${Object.entries(r.served).map(([k, v]) => `${k} x${v}`).join(", ")}`);
     if (r.notes.length) lines.push(`${"".padEnd(42)}  notes: ${r.notes.join(", ")}`);
   }
   lines.push("-".repeat(84));
@@ -195,9 +199,6 @@ function report(results, cancelled) {
   lines.push("Per-case numbers only; a run total would hide that TH costs far more output tokens");
   lines.push("than EN for the same sentence and is the case that misses the budget.");
   lines.push("");
-  lines.push("Provider: /api/turn returns the reply, not OpenRouter's `provider` field, so the route");
-  lines.push("that served each call is not observable from the bench. The configured order is");
-  lines.push("Google then Z.AI; Helicone (HELICONE_API_KEY) holds the per-call response bodies.");
   const appts = results.flatMap((r) => r.appointments.map((id) => [r.name, id]));
   if (appts.length) {
     lines.push("");

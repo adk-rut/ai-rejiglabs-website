@@ -121,10 +121,31 @@ test("an empty first reply falls back to glm-4.6, and the fallback's reply is wh
   assert.equal(model[0].body.model, "z-ai/glm-4.7");
   assert.deepEqual(model[0].body.provider, { order: ["Google", "Z.AI"] });
   assert.equal(model[1].body.model, "z-ai/glm-4.6");
+  // Thinking off on BOTH calls (#746): the hidden reasoning was the latency, and a fallback that
+  // thinks is a fallback that times out.
+  assert.deepEqual(model[0].body.reasoning, { enabled: false });
+  assert.deepEqual(model[1].body.reasoning, { enabled: false });
 
   const outbound = fake.calls.find((c) => c.method === "POST" && c.url.endsWith("/conversations/messages"));
   assert.equal(outbound.body.message, "Second model answered.");
   assert.equal(r.body.reply, "Second model answered.");
+});
+
+test("the response says which provider and model answered, and names both when the first came back empty (#746)", async () => {
+  const one = await run({
+    token: withConv(), body: { text: "hi", lang: "en" },
+    routes: [messagesRoute([]), inboundRoute, outboundRoute, [/openrouter\.ai/, { json: { provider: "Google", choices: [{ message: { content: "Hello." } }] } }]],
+  });
+  assert.equal(one.r.body.served, "Google:z-ai/glm-4.7");
+
+  let n = 0;
+  const two = await run({
+    token: withConv(), body: { text: "hi", lang: "en" },
+    routes: [messagesRoute([]), inboundRoute, outboundRoute, [/openrouter\.ai/, () => (++n === 1
+      ? { json: { provider: "Google", choices: [{ message: { content: "" } }] } }
+      : { json: { provider: "Z.AI", choices: [{ message: { content: "Second." } }] } })]],
+  });
+  assert.equal(two.r.body.served, "Google:z-ai/glm-4.7 -> Z.AI:z-ai/glm-4.6");
 });
 
 test("both models empty: the visitor is asked to try again, not told the thread is over", async () => {

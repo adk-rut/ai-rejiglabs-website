@@ -84,6 +84,31 @@ test("with a session token there is no upsert: appointment, tags, note, ping, in
   assert.equal(appt.body.appointmentStatus, "confirmed");
 });
 
+test("on Vercel the visitor's response goes out before the summary, note and ping (#746)", async () => {
+  // Vercel's request context, as @vercel/functions reads it: `waitUntil` collects the work that may
+  // outlive the response. Present only inside this test, so every other case keeps awaiting.
+  const tails = [];
+  const SYM = Symbol.for("@vercel/request-context");
+  globalThis[SYM] = { get: () => ({ waitUntil: (p) => tails.push(p) }) };
+  try {
+    const token = signToken({ contactId: "ct_1", conversationId: "cv_1" });
+    const { r, fake } = await run({ token, body: { slot: SLOT, lang: "en" } });
+    assert.equal(r.code, 200);
+    assert.equal(r.body.appointmentId, "appt_1");
+    assert.deepEqual(writes(fake), ["/calendars/events/appointments", "/contacts/ct_1/tags"], "the response is ready before the note and the ping");
+    assert.equal(fake.calls.some((c) => /openrouter/.test(c.url)), false, "the summary model call is not on the visitor's path");
+
+    assert.equal(tails.length, 1);
+    const real = globalThis.fetch; // `run` restored it; the tail still needs the fake
+    globalThis.fetch = fake.fetch;
+    try { await tails[0]; } finally { globalThis.fetch = real; }
+    assert.deepEqual(writes(fake), ["/calendars/events/appointments", "/contacts/ct_1/tags", "/contacts/ct_1/notes", "telegram"]);
+    assert.ok(fake.calls.find((c) => /\/notes$/.test(c.url)).body.body.includes(SUMMARY));
+  } finally {
+    delete globalThis[SYM];
+  }
+});
+
 test("the note and the ping carry the same summary", async () => {
   const token = signToken({ contactId: "ct_1", conversationId: "cv_1" });
   const { fake } = await run({ token, body: { slot: SLOT, lang: "en" } });

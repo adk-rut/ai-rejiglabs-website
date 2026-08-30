@@ -33,5 +33,6 @@ export default async function handler(req, res) {
   // after that it is the same payload signed again, which the widget can safely overwrite.
   const token = signToken({ contactId: session.contactId, conversationId: out.conversationId });
   if (out.standdown) return res.status(200).json({ reply: "", standdown: true, token });
-  return res.status(200).json({ reply: out.reply, token, booked: out.booked });
+  // `served` is for the bench and nobody else: which provider and model answered (#746).
+  return res.status(200).json({ reply: out.reply, token, booked: out.booked, served: out.served });
 }
