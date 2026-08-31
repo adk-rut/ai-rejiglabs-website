@@ -1,13 +1,148 @@
 {
   "redirects": [
     {
-      "source": "/after-a-missed-whatsapp/:path*",
-      "destination": "/ai-chatbot/",
+      "source": "/ai-receptionist/:sub(pricing|how-it-works|demo|barbershops|chat|help)",
+      "destination": "https://heybeem.com/:sub",
+      "permanent": true
+    },
+    {
+      "source": "/ai-receptionist",
+      "destination": "https://heybeem.com/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-receptionist/",
+      "destination": "https://heybeem.com/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-receptionist/:path*",
+      "destination": "https://heybeem.com/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-receptionist-barbershop",
+      "destination": "https://heybeem.com/barbershops",
+      "permanent": true
+    },
+    {
+      "source": "/ai-receptionist-barbershop/",
+      "destination": "https://heybeem.com/barbershops",
+      "permanent": true
+    },
+    {
+      "source": "/ai-receptionist-barbershop/:path*",
+      "destination": "https://heybeem.com/barbershops",
+      "permanent": true
+    },
+    {
+      "source": "/ai-chatbot/:sub(pricing|how-it-works|demo|barbershops|chat|help)",
+      "destination": "https://heybeem.com/:sub",
+      "permanent": true
+    },
+    {
+      "source": "/ai-chatbot",
+      "destination": "https://heybeem.com/chat",
+      "permanent": true
+    },
+    {
+      "source": "/ai-chatbot/",
+      "destination": "https://heybeem.com/chat",
+      "permanent": true
+    },
+    {
+      "source": "/ai-chatbot/:path*",
+      "destination": "https://heybeem.com/chat",
+      "permanent": true
+    },
+    {
+      "source": "/th/ai-receptionist/:sub(pricing|how-it-works|demo|barbershops|chat|help)",
+      "destination": "https://heybeem.com/th/:sub",
+      "permanent": true
+    },
+    {
+      "source": "/th/ai-receptionist",
+      "destination": "https://heybeem.com/th",
+      "permanent": true
+    },
+    {
+      "source": "/th/ai-receptionist/",
+      "destination": "https://heybeem.com/th",
+      "permanent": true
+    },
+    {
+      "source": "/th/ai-receptionist/:path*",
+      "destination": "https://heybeem.com/th",
+      "permanent": true
+    },
+    {
+      "source": "/th/ai-receptionist-barbershop",
+      "destination": "https://heybeem.com/th/barbershops",
+      "permanent": true
+    },
+    {
+      "source": "/th/ai-receptionist-barbershop/",
+      "destination": "https://heybeem.com/th/barbershops",
+      "permanent": true
+    },
+    {
+      "source": "/th/ai-receptionist-barbershop/:path*",
+      "destination": "https://heybeem.com/th/barbershops",
+      "permanent": true
+    },
+    {
+      "source": "/th/ai-chatbot/:sub(pricing|how-it-works|demo|barbershops|chat|help)",
+      "destination": "https://heybeem.com/th/:sub",
+      "permanent": true
+    },
+    {
+      "source": "/th/ai-chatbot",
+      "destination": "https://heybeem.com/th/chat",
+      "permanent": true
+    },
+    {
+      "source": "/th/ai-chatbot/",
+      "destination": "https://heybeem.com/th/chat",
+      "permanent": true
+    },
+    {
+      "source": "/th/ai-chatbot/:path*",
+      "destination": "https://heybeem.com/th/chat",
+      "permanent": true
+    },
+    {
+      "source": "/ru/ai-chatbot/:sub(pricing|how-it-works|demo|barbershops|chat|help)",
+      "destination": "https://heybeem.com/:sub",
+      "permanent": true
+    },
+    {
+      "source": "/ru/ai-chatbot",
+      "destination": "https://heybeem.com/chat",
+      "permanent": true
+    },
+    {
+      "source": "/ru/ai-chatbot/",
+      "destination": "https://heybeem.com/chat",
+      "permanent": true
+    },
+    {
+      "source": "/ru/ai-chatbot/:path*",
+      "destination": "https://heybeem.com/chat",
+      "permanent": true
+    },
+    {
+      "source": "/after-a-missed-whatsapp",
+      "destination": "https://heybeem.com/chat",
       "permanent": true
     },
     {
       "source": "/after-a-missed-whatsapp/",
-      "destination": "/ai-chatbot/",
+      "destination": "https://heybeem.com/chat",
+      "permanent": true
+    },
+    {
+      "source": "/after-a-missed-whatsapp/:path*",
+      "destination": "https://heybeem.com/chat",
       "permanent": true
     },
     {

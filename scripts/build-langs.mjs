@@ -91,6 +91,9 @@ function buildPage(page, lang) {
   html = html.replace(/((?:src|href)=")((?:css|js|assets|data|images)\/)/g, '$1/$2');
   html = html.replace(/(href=")([\w-]+\.html)(")/g, '$1/$2$3');
 
+  // 4) Beem links: Thai visitors land on the Thai side of heybeem.com
+  if (lang.code === 'th') html = html.replace(/href="https:\/\/heybeem\.com\/"/g, 'href="https://heybeem.com/th"');
+
   const outFile = resolve(ROOT, lang.dir, page.src);
   mkdirSync(dirname(outFile), { recursive: true });
   writeFileSync(outFile, html);

@@ -1175,5 +1175,30 @@
     "en": "Send us a real chat you missed. We show you the reply it would have sent, in your language and your prices, before you commit to anything.",
     "th": "ส่งแชทจริงที่คุณพลาดมาให้เราดู เราจะแสดงให้เห็นว่าระบบจะตอบว่าอะไร ด้วยภาษาและราคาของคุณ ก่อนที่คุณจะตัดสินใจอะไรทั้งนั้น",
     "ru": "Пришлите реальный чат, который вы пропустили. Мы покажем, что бы ответил бот — на вашем языке и с вашими ценами, до любых обязательств."
+  },
+  "nav_beem": {
+    "en": "Beem — AI Front Desk",
+    "th": "Beem — AI หน้าร้านรับสาย",
+    "ru": "Beem — AI-ресепшн"
+  },
+  "beem_t": {
+    "en": "Beem — the AI front desk, now a product",
+    "th": "Beem — AI หน้าร้านรับสาย ตอนนี้เป็นผลิตภัณฑ์แล้ว",
+    "ru": "Beem — AI-ресепшн, теперь как продукт"
+  },
+  "beem_d": {
+    "en": "The receptionist we built for shops and salons runs as its own product: one price per branch, live in days.",
+    "th": "ระบบรับสายที่เราสร้างให้ร้านตัดผมและสปา แยกออกมาเป็นผลิตภัณฑ์ของตัวเอง ราคาเดียวต่อสาขา เปิดใช้ได้ภายในไม่กี่วัน",
+    "ru": "Ресепшн, который мы построили для салонов, стал отдельным продуктом: одна цена за филиал, запуск за несколько дней."
+  },
+  "beem_cta": {
+    "en": "heybeem.com ›",
+    "th": "heybeem.com ›",
+    "ru": "heybeem.com ›"
+  },
+  "beem_btn": {
+    "en": "See Beem",
+    "th": "ดู Beem",
+    "ru": "Смотреть Beem"
   }
 }
