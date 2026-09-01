@@ -106,7 +106,7 @@
     '<div class="rj__backdrop" id="rjBackdrop"></div>' +
     '<section class="rj__panel" id="rjPanel" role="dialog" aria-label="Chat with Beem" aria-modal="false">' +
       '<header class="rj__head">' +
-        '<span class="rj__av rj__av--j"><em>J</em></span>' +
+        '<span class="rj__av rj__av--j"><em>B</em></span>' +
         '<div class="rj__who"><div class="rj__name">Beem</div><div class="rj__role" data-t="role"></div></div>' +
         '<div class="rj__lang" id="rjLang"><button type="button" data-l="en">EN</button><button type="button" data-l="th">TH</button></div>' +
         '<button class="rj__ib rj__expand" id="rjExpand" aria-label="Expand">' + IC.max + IC.min + '</button>' +
@@ -150,7 +150,7 @@
   var esc = function (s) {
     return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   };
-  var avJ = '<span class="rj__av rj__av--j rj__av--sm"><em>J</em></span>';
+  var avJ = '<span class="rj__av rj__av--j rj__av--sm"><em>B</em></span>';
   var avRT = '<span class="rj__av rj__av--rt rj__av--sm"><img src="/assets/rut.jpg" alt="Rut" width="26" height="26"></span>';
 
   // Every row the widget shows goes through here, whether it came from a fetch response or from

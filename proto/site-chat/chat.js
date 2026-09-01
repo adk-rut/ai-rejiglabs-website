@@ -90,7 +90,7 @@
 
   function scroll() { thread.scrollTop = thread.scrollHeight; setTimeout(function () { thread.scrollTop = thread.scrollHeight; }, 50); }
   function el(cls, html) { var d = document.createElement('div'); d.className = cls; d.innerHTML = html; thread.appendChild(d); scroll(); return d; }
-  function avJ(sm) { return '<span class="rj__av rj__av--j' + (sm ? ' rj__av--sm' : '') + '"><em>J</em></span>'; }
+  function avJ(sm) { return '<span class="rj__av rj__av--j' + (sm ? ' rj__av--sm' : '') + '"><em>B</em></span>'; }
   function avRT(sm) { return '<span class="rj__av rj__av--rt' + (sm ? ' rj__av--sm' : '') + '"><img src="rut.jpg" alt="Rut"></span>'; }
   function msgV(text) { el('rj__msg rj__msg--v', '<div class="rj__bub">' + text + '</div>'); }
   function msgJ(html, cont) { el('rj__msg rj__msg--j' + (cont ? ' rj__msg--cont' : ''), avJ(true) + '<div class="rj__bub">' + html + '</div>'); }
