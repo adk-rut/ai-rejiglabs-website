@@ -1,4 +1,4 @@
-// POST /api/dm-webhook (#741, spec #734): Jasmin answers Rejig's Instagram and Facebook DMs.
+// POST /api/dm-webhook (#741, spec #734): Beem answers Rejig's Instagram and Facebook DMs.
 //
 // A hand-built GHL workflow (Customer Replied, IG + FB) fires a Webhook action at this URL. What
 // arrives depends on how that action was filled in, so both shapes are read: the mapped custom
@@ -18,7 +18,7 @@ import { runTurn, MAX_CHARS } from "../lib/run-turn.js";
 export const config = { maxDuration: 60 };
 
 // The workflow's Webhook action sends this header; nothing else knows it. Without it the endpoint
-// is a public "post as Jasmin into conversation X" button for anyone who learns a conversation id,
+// is a public "post as Beem into conversation X" button for anyone who learns a conversation id,
 // and a free OpenRouter meter for anyone who does not. Digests, so the compare is a fixed 32 bytes
 // and an attacker learns nothing from how long it took.
 const digest = (v) => createHash("sha256").update(String(v ?? "")).digest();
@@ -67,7 +67,7 @@ export default async function handler(req, res) {
   if (!channel) return reject("unsupported channel");
   // A paused inbox (Vercel env `DM_PAUSED_CHANNELS`, e.g. `IG` or `IG,FB`) is acknowledged and left
   // alone. Set to `IG` 2026-08-30: the Rejig Instagram is run by the BoBe web3 KOL outreach
-  // automation, and Jasmin answering those replies would collide with it. Unpause = remove the var.
+  // automation, and Beem answering those replies would collide with it. Unpause = remove the var.
   if ((process.env.DM_PAUSED_CHANNELS || "").split(",").map((s) => s.trim().toUpperCase()).includes(channel)) {
     return res.status(200).json({ ignored: `${channel} paused` });
   }

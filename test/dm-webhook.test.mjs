@@ -62,7 +62,7 @@ const run = async ({ routes, body, method = "POST", headers = { "x-webhook-secre
 test("customData payload: the thread is fetched, the model answers, the reply goes out as IG", async () => {
   const rows = [
     row("inbound", "hi, do you do Instagram DMs?", "TYPE_INSTAGRAM", 9 * 60000),
-    row("outbound", "We do. Jasmin answers them.", "TYPE_INSTAGRAM", 8 * 60000),
+    row("outbound", "We do. Beem answers them.", "TYPE_INSTAGRAM", 8 * 60000),
     row("inbound", "What does it cost?", "TYPE_INSTAGRAM", 60000),
   ];
   const { r, fake, model, outbound, urls } = await run({
@@ -127,7 +127,7 @@ test("Rut answered from the GHL app: a recent outbound with a userId is a Takeov
   assert.equal(r.body.standdown, true);
 });
 
-test("an outbound with a userId older than four hours is not a Takeover: Jasmin answers again", async () => {
+test("an outbound with a userId older than four hours is not a Takeover: Beem answers again", async () => {
   const rows = [
     row("outbound", "Yes, this is Rut.", "TYPE_INSTAGRAM", 5 * 3600000, { userId: "user_rut" }),
     row("inbound", "still interested", "TYPE_INSTAGRAM", 60000),
@@ -188,7 +188,7 @@ test("no conversation id in the payload: the contact's newest conversation is lo
     body: { customData: { contact_id: "ct_1", conversation_id: "", channel: "IG" } },
     routes: [
       [`GET ${GHL}/conversations/search`, { json: { conversations: [{ id: "cv_found" }] } }],
-      messagesRoute(rows), contactRoute, tgRoute, outboundRoute, modelRoute("Hello from Jasmin."),
+      messagesRoute(rows), contactRoute, tgRoute, outboundRoute, modelRoute("Hello from Beem."),
     ],
   });
   assert.equal(r.code, 200, JSON.stringify(r.body));
@@ -248,7 +248,7 @@ test("a paused channel (DM_PAUSED_CHANNELS): no model, no reply, 200", async () 
   assert.equal(outbound.length, 0);
 });
 
-test("no shared secret, no turn: an unsigned caller cannot post as Jasmin or spend a model call", async () => {
+test("no shared secret, no turn: an unsigned caller cannot post as Beem or spend a model call", async () => {
   const { r, fake } = await run({
     headers: {},
     body: { customData: { contact_id: "ct_1", conversation_id: "cv_1", channel: "IG" } },

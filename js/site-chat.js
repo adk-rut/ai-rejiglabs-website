@@ -1,5 +1,5 @@
 /**
- * Site chat — Jasmin, Rejig's AI front desk (#742, spec #734).
+ * Site chat — Beem, Rejig's AI front desk (#742, spec #734).
  *
  * The prototype at proto/site-chat/ shipped for real: same states, same markup, same brand,
  * but every answer now comes from the handlers in api/ (#735-#741) instead of a script.
@@ -26,7 +26,7 @@
   // verbatim from knowledge/site-chat-knowledge.md and the spec — do not paraphrase either.
   var T = {
     en: {
-      bubble: 'Ask Jasmin',
+      bubble: 'Ask Beem',
       role: 'Rejig Labs · AI front desk',
       placeholder: 'Type a message',
       gateTitle: 'Quick one before I answer.',
@@ -35,7 +35,7 @@
       phoneHint: 'Start with your country code: 66 for Thailand, not 0.',
       cont: 'Continue',
       fine: 'No password, no newsletter. The team reads every chat.',
-      greet: 'Hi, I\'m Jasmin, Rejig\'s AI front desk. Ask me anything, or pick one:',
+      greet: 'Hi, I\'m Beem, Rejig\'s AI front desk. Ask me anything, or pick one:',
       rtTag: 'Rut · Founder', rtJoined: 'Rut joined', booked: 'Discovery call booked',
       err: 'Something went wrong on our side. Try again, or email rut@rejiglabs.com.',
       chips: {
@@ -46,7 +46,7 @@
       }
     },
     th: {
-      bubble: 'คุยกับจัสมิน',
+      bubble: 'คุยกับบีม',
       role: 'Rejig Labs · ผู้ช่วยหน้าร้าน AI',
       placeholder: 'พิมพ์ข้อความ',
       gateTitle: 'ขอข้อมูลนิดนึงก่อนตอบนะคะ',
@@ -55,7 +55,7 @@
       phoneHint: 'ใส่รหัสประเทศก่อนนะคะ เช่น 66 แทน 0 นำหน้า',
       cont: 'ไปต่อ',
       fine: 'ไม่ต้องตั้งรหัสผ่าน ไม่มีสแปม ทีมงานอ่านทุกแชทค่ะ',
-      greet: 'สวัสดีค่ะ จัสมินค่ะ ผู้ช่วยหน้าร้าน AI ของ Rejig Labs ถามได้ทุกอย่างเลยค่ะ หรือเลือกจากนี้ก็ได้',
+      greet: 'สวัสดีค่ะ บีมค่ะ ผู้ช่วยหน้าร้าน AI ของ Rejig Labs ถามได้ทุกอย่างเลยค่ะ หรือเลือกจากนี้ก็ได้',
       rtTag: 'รุจ · ผู้ก่อตั้ง', rtJoined: 'รุจเข้าร่วมแชท', booked: 'จองคอลเรียบร้อย',
       err: 'ระบบขัดข้องค่ะ ลองใหม่อีกครั้ง หรืออีเมลไปที่ rut@rejiglabs.com ได้เลยค่ะ',
       chips: {
@@ -68,7 +68,7 @@
   };
 
   // The page decides the language; the header switch overrides it and that choice sticks.
-  // A /ru/ page has no Russian Jasmin, so it opens in English.
+  // A /ru/ page has no Russian Beem, so it opens in English.
   var pageLang = (document.documentElement.lang || 'en').slice(0, 2) === 'th' ? 'th' : 'en';
   var S = {
     lang: (function () { try { return localStorage.getItem(LANG_KEY); } catch (e) { return null; } })() || pageLang,
@@ -101,13 +101,13 @@
   rj.setAttribute('data-mode', 'closed');
   rj.setAttribute('lang', S.lang);
   rj.innerHTML =
-    '<button class="rj__bubble" id="rjBubble" aria-label="Chat with Jasmin">' + IC.chat +
+    '<button class="rj__bubble" id="rjBubble" aria-label="Chat with Beem">' + IC.chat +
       '<span class="rj__bubble-label" data-t="bubble"></span><span class="rj__bubble-dot"></span></button>' +
     '<div class="rj__backdrop" id="rjBackdrop"></div>' +
-    '<section class="rj__panel" id="rjPanel" role="dialog" aria-label="Chat with Jasmin" aria-modal="false">' +
+    '<section class="rj__panel" id="rjPanel" role="dialog" aria-label="Chat with Beem" aria-modal="false">' +
       '<header class="rj__head">' +
         '<span class="rj__av rj__av--j"><em>J</em></span>' +
-        '<div class="rj__who"><div class="rj__name">Jasmin</div><div class="rj__role" data-t="role"></div></div>' +
+        '<div class="rj__who"><div class="rj__name">Beem</div><div class="rj__role" data-t="role"></div></div>' +
         '<div class="rj__lang" id="rjLang"><button type="button" data-l="en">EN</button><button type="button" data-l="th">TH</button></div>' +
         '<button class="rj__ib rj__expand" id="rjExpand" aria-label="Expand">' + IC.max + IC.min + '</button>' +
         '<button class="rj__ib rj__close" id="rjClose" aria-label="Close">' + IC.close + '</button>' +
@@ -321,7 +321,7 @@
         typing(false);
         saveToken(j.token);
         // A Standdown returns no reply on purpose: Rut owns the thread and his line arrives on
-        // the next poll. Saying anything here would be Jasmin talking over him.
+        // the next poll. Saying anything here would be Beem talking over him.
         if (j.reply) mine('jasmin', j.reply);
         if (j.booked && j.booked.when) bookedCard(j.booked.when);
         startPolling();
@@ -473,7 +473,7 @@
         mount: slot,
         lang: S.lang,
         // The panel's own Booked state sits in a box the thread scrolls past; the card is the
-        // widget's own furniture, and is what a booking made by TALKING to Jasmin leaves behind.
+        // widget's own furniture, and is what a booking made by TALKING to Beem leaves behind.
         // One shape for both, so the thread reads the same however the call was booked.
         onBooked: function (b) {
           slot.remove();

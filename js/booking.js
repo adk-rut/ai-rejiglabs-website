@@ -2,7 +2,7 @@
  * Booking panel — the Discovery call, booked on the page (#743, spec #734).
  *
  * One component, two homes:
- *   - inside the chat thread, opened by Jasmin's Book-a-call chip (`open({ mount })`)
+ *   - inside the chat thread, opened by Beem's Book-a-call chip (`open({ mount })`)
  *   - in a same-page modal, opened by every site CTA (`[data-book]`, bound below)
  * GHL's own booking page is never shown and there is no iframe: days, times and the confirm
  * all come from /api/slots and /api/book, which is the same pair the chat uses.

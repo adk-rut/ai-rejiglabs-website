@@ -88,7 +88,7 @@ test("the first message opens the thread: inbound with contactId only, and the r
   const { r, fake } = await run({
     token: signToken({ contactId: "ct_1" }),
     body: { text: "hello", lang: "en" },
-    routes: [inboundRoute, outboundRoute, modelRoute("Hi, I'm Jasmin.")],
+    routes: [inboundRoute, outboundRoute, modelRoute("Hi, I'm Beem.")],
   });
 
   const inbound = fake.calls.find((c) => c.url.includes("/messages/inbound"));
