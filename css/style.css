@@ -64,6 +64,7 @@ img, svg { display: block; max-width: 100%; }
   text-transform: none;
   font-size: 0.85rem;
 }
+
 :lang(th) .cs-card__tag,
 :lang(th) .cs-card__stat-label,
 :lang(th) .tst__role {
@@ -2406,6 +2407,15 @@ img, svg { display: block; max-width: 100%; }
 .cap-wb__langs b { color:var(--cap-blue); }
 .cap-wb__body { padding:.8rem; }
 .cap-wb__hero { height:34px; border-radius:6px; background:linear-gradient(135deg,#2b57d6,#6d3bd6); margin-bottom:.5rem; }
+.c-beem .cap-wb__stage { position:relative; border-radius:6px; overflow:hidden; margin-bottom:.5rem; }
+.c-beem .cap-wb__hero { display:block; width:100%; height:132px; object-fit:cover; background:#00122E; margin:0; border-radius:0; }
+/* heybeem.com's own hero copy, over its own hero loop */
+.c-beem .cap-wb__ov { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; gap:.3rem; padding:0 1rem; background:linear-gradient(90deg,rgba(0,18,46,.82) 0%,rgba(0,18,46,.55) 55%,rgba(0,18,46,.15) 100%); }
+.c-beem .cap-wb__ovk { font-family:var(--cap-mono); font-size:.52rem; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6); }
+:lang(th) .c-beem .cap-wb__ovk { font-family:var(--font); letter-spacing:0; text-transform:none; font-size:.58rem; }
+.c-beem .cap-wb__ovh { font-size:.95rem; line-height:1.2; font-weight:600; color:#fff; max-width:19ch; }
+.c-beem .cap-wb__ovs { display:flex; align-items:center; gap:.35rem; margin-top:.15rem; font-size:.56rem; color:rgba(255,255,255,.72); }
+.c-beem .cap-wb__ovs i { font-style:normal; color:#ffc25c; letter-spacing:.06em; }
 .cap-wb__line { height:8px; width:70%; border-radius:4px; background:rgba(255,255,255,.08); margin-bottom:.7rem; }
 .cap-wb__row { display:flex; align-items:center; gap:.5rem; }
 .cap-wb__btn { font-size:.66rem; color:#fff; background:var(--accent); border-radius:7px; padding:.3rem .6rem; }
