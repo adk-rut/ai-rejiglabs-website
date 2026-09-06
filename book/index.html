@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Discovery Call | Rejig Labs</title>
+  <meta name="description" content="Book a 30-minute Discovery call with Rejig Labs. Google Meet, times in Bangkok.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/assets/logo.svg">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', { 'ad_storage': 'denied', 'analytics_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'wait_for_update': 500 });
+    try { if (localStorage.getItem('rejig_consent') === 'granted') gtag('consent', 'update', { 'ad_storage': 'granted', 'analytics_storage': 'granted', 'ad_user_data': 'granted', 'ad_personalization': 'granted' }); } catch (e) {}
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BB5D5KCXM"></script>
+  <script>gtag('js', new Date()); gtag('config', 'G-1BB5D5KCXM');</script>
+  <link rel="stylesheet" href="/css/booking.css">
+  <style>
+    html, body { margin: 0; background: #f6f5f1; font-family: 'Instrument Sans', system-ui, -apple-system, sans-serif; }
+    .page { max-width: 460px; margin: 0 auto; padding: 32px 16px 64px; }
+    .page__logo { display: block; height: 28px; margin: 0 auto 24px; }
+    .page__foot { text-align: center; font-size: 13px; color: #6b6b6b; margin-top: 24px; }
+    .page__foot a { color: inherit; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a href="https://rejiglabs.com"><img class="page__logo" src="/assets/logo-blue.png" alt="Rejig Labs"></a>
+    <div id="book"></div>
+    <p class="page__foot">Trouble booking? Email <a href="mailto:rut@rejiglabs.com">rut@rejiglabs.com</a></p>
+  </main>
+  <script src="/js/booking.js"></script>
+  <script>window.rejigBooking.open({ mount: document.getElementById('book') });</script>
+</body>
+</html>
