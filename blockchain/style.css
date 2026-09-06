@@ -890,8 +890,10 @@ body .rb {
   --rb-ink-2: var(--white-60);
   --rb-ink-3: var(--white-40);
   --rb-border: var(--border);
-  --rb-border-hi: var(--border-blue);
+  --rb-border-hi: var(--white-20);
 }
+/* The page's own hairline, not the blue: the card and its fields sit like every other card here. */
+body .rb, body .rb--inline { border-color: var(--border); }
 body .rb__f input, body .rb__f select, body .rb__f textarea, body .rb__tel, body .rb__day, body .rb__slot { background: var(--white-06); color: var(--white); }
 body .rb__f select option { background: var(--bg-card-solid); color: var(--white); }
 body .rb__f input::placeholder, body .rb__f textarea::placeholder { color: var(--white-40); }
