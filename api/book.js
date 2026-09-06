@@ -24,10 +24,15 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: "name, email and phone are all required" });
   }
 
+  // Page questions (/blockchain): a small {label: answer} map, strings only, bounded.
+  const answers = Object.fromEntries(Object.entries(body.answers && typeof body.answers === "object" ? body.answers : {})
+    .filter(([k, v]) => typeof v === "string" && v.trim()).slice(0, 8)
+    .map(([k, v]) => [clean(k).slice(0, 80), clean(v).slice(0, 600)]));
+
   const booked = await bookDiscovery({
     contactId: session.contactId,
     conversationId: session.conversationId,
-    name, email, phone, slot, lang,
+    name, email, phone, slot, lang, answers,
     pageUrl: clean(body.pageUrl),
   });
   if (booked.stale) return res.status(401).json({ error: booked.error });

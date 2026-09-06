@@ -876,3 +876,23 @@ h4 { font-size: 20px; font-weight: 600; line-height: 1.3; }
   h1 { font-size: 40px; }
   h2 { font-size: 30px; }
 }
+
+/* ---- Booking panel, on the Web3 side: same component as the main site, this page's tokens ---- */
+/* `body .rb`: booking.js injects /css/booking.css after this sheet, so plain .rb would lose. */
+body .rb {
+  --rb-font: var(--font);
+  --rb-card: var(--bg-card-solid);
+  --rb-bg: #0f1430;
+  --rb-accent: var(--blue);
+  --rb-accent-hi: #3d7bff;
+  --rb-glow: var(--blue-glow);
+  --rb-ink: var(--white);
+  --rb-ink-2: var(--white-60);
+  --rb-ink-3: var(--white-40);
+  --rb-border: var(--border);
+  --rb-border-hi: var(--border-blue);
+}
+body .rb__f input, body .rb__f select, body .rb__f textarea, body .rb__tel, body .rb__day, body .rb__slot { background: var(--white-06); color: var(--white); }
+body .rb__f select option { background: var(--bg-card-solid); color: var(--white); }
+body .rb__f input::placeholder, body .rb__f textarea::placeholder { color: var(--white-40); }
+body .rb-ov__bd { background: rgba(5, 8, 16, 0.7); }

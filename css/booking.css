@@ -113,12 +113,14 @@
 
 .rb__form { display: flex; flex-direction: column; gap: 10px; margin-top: 14px; }
 .rb__f { display: flex; flex-direction: column; gap: 4px; font-size: 12px; font-weight: 500; color: var(--rb-ink-2); }
-.rb__f input {
+.rb__f input, .rb__f select, .rb__f textarea {
   font: inherit; font-size: 15px; font-weight: 400; color: var(--rb-ink);
   padding: 11px 13px; border: 1px solid var(--rb-border-hi); border-radius: 10px; background: #fff; outline: none;
   transition: border-color var(--rb-fast) ease, box-shadow var(--rb-fast) ease;
 }
-.rb__f input:focus { border-color: var(--rb-accent); box-shadow: 0 0 0 3px var(--rb-glow); }
+.rb__f textarea { resize: vertical; line-height: 1.45; }
+.rb__f select { appearance: none; -webkit-appearance: none; background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%); background-position: calc(100% - 18px) 50%, calc(100% - 13px) 50%; background-size: 5px 5px; background-repeat: no-repeat; padding-right: 34px; }
+.rb__f input:focus, .rb__f select:focus, .rb__f textarea:focus { border-color: var(--rb-accent); box-shadow: 0 0 0 3px var(--rb-glow); }
 .rb__tel {
   display: flex; align-items: center; border: 1px solid var(--rb-border-hi); border-radius: 10px; background: #fff;
   transition: border-color var(--rb-fast) ease, box-shadow var(--rb-fast) ease;

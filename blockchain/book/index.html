@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Discovery Call | Rejig Labs Web3</title>
+  <meta name="description" content="Book a 30-minute Discovery call with Rejig Labs about Web3 marketing. Google Meet, times in Bangkok.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/assets/logo.svg">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', { 'ad_storage': 'denied', 'analytics_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'wait_for_update': 500 });
+    try { if (localStorage.getItem('rejig_consent') === 'granted') gtag('consent', 'update', { 'ad_storage': 'granted', 'analytics_storage': 'granted', 'ad_user_data': 'granted', 'ad_personalization': 'granted' }); } catch (e) {}
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BB5D5KCXM"></script>
+  <script>gtag('js', new Date()); gtag('config', 'G-1BB5D5KCXM');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/booking.css">
+  <link rel="stylesheet" href="/blockchain/style.css">
+  <style>
+    .page { max-width: 480px; margin: 0 auto; padding: 112px 16px 64px; }
+    .page__h { font-size: 28px; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 6px; text-align: center; }
+    .page__p { color: var(--white-60); margin: 0 0 24px; text-align: center; font-size: 15px; }
+    .page__foot { text-align: center; font-size: 13px; color: var(--white-40); margin-top: 24px; }
+    .page__foot a { color: var(--white-60); }
+  </style>
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="/blockchain" class="nav__logo"><img src="/blockchain/assets/logo.png" alt="Rejig Labs" height="32"></a>
+      <div class="nav__sep"></div>
+      <ul class="nav__links"><li><a href="/blockchain" class="nav__back">← Web3</a></li></ul>
+    </div>
+  </nav>
+  <main class="page">
+    <h1 class="page__h">Book a Discovery call</h1>
+    <p class="page__p">30 minutes on Google Meet. Three quick questions so the call starts on your problem, not ours.</p>
+    <div id="book"></div>
+    <p class="page__foot">Trouble booking? Email <a href="mailto:rut@rejiglabs.com">rut@rejiglabs.com</a></p>
+  </main>
+  <script src="/blockchain/book-questions.js"></script>
+  <script src="/js/booking.js"></script>
+  <script>window.rejigBooking.open({ mount: document.getElementById('book') });</script>
+</body>
+</html>

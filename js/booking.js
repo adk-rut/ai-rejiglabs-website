@@ -126,6 +126,9 @@
    *   onBooked({ slot, when }) – the chat draws its own Booked card; the modal shows its own.
    */
   function open(opts) {
+    // A page can pre-set questions for every panel it opens (window.rejigBookingDefaults, set by
+    // /blockchain). Explicit opts win.
+    opts = Object.assign({}, window.rejigBookingDefaults || {}, opts || {});
     opts = opts || {};
     var lang = opts.lang === 'th' ? 'th' : (opts.lang === 'en' ? 'en' : pageLang());
     var t = T[lang];
@@ -256,6 +259,7 @@
               '<span class="rb__tel"><span class="rb__tel-plus">+</span>' +
               '<input type="tel" name="phone" inputmode="tel" autocomplete="tel" required placeholder="66 81 234 5678"></span>' +
               '<small class="rb__hint">' + esc(t.phoneHint) + '</small></label>') +
+          questionsHtml(opts.questions) +
           '<button type="submit" class="rb__btn">' + esc(t.confirm) + '</button>' +
           (known ? '' : '<p class="rb__fine">' + esc(t.fine) + '</p>') +
         '</form>';
@@ -276,6 +280,19 @@
       if (first) first.focus();
     }
 
+    // [{ label, options?, required? }] → a select per option list, a textarea otherwise.
+    function questionsHtml(qs) {
+      if (!qs || !qs.length) return '';
+      return qs.map(function (q, i) {
+        var req = q.required ? ' required' : '';
+        var field = q.options
+          ? '<select name="q' + i + '"' + req + '><option value="" disabled selected>' + esc(q.placeholder || 'Choose one') + '</option>' +
+              q.options.map(function (o) { return '<option value="' + esc(o) + '">' + esc(o) + '</option>'; }).join('') + '</select>'
+          : '<textarea name="q' + i + '" rows="3"' + req + ' placeholder="' + esc(q.placeholder || '') + '"></textarea>';
+        return '<label class="rb__f"><span>' + esc(q.label) + '</span>' + field + '</label>';
+      }).join('');
+    }
+
     function confirm(form, tel) {
       var btn = form.querySelector('.rb__btn');
       btn.disabled = true;
@@ -285,6 +302,13 @@
         payload.name = form.elements.name.value.trim();
         payload.email = form.elements.email.value.trim();
         payload.phone = '+' + tel.value.replace(/\D/g, '');
+      }
+      if (opts.questions && opts.questions.length) {
+        payload.answers = {};
+        opts.questions.forEach(function (q, i) {
+          var v = (form.elements['q' + i].value || '').trim();
+          if (v) payload.answers[q.label] = v;
+        });
       }
       var headers = { 'Content-Type': 'application/json' };
       if (token()) headers.Authorization = 'Bearer ' + token();
