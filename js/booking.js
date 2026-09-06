@@ -292,7 +292,7 @@
       fetch('/api/book', { method: 'POST', headers: headers, body: JSON.stringify(payload) })
         .then(function (r) {
           return r.json().catch(function () { return {}; }).then(function (j) {
-            if (!r.ok) throw new Error(j.error || ('HTTP ' + r.status));
+            if (!r.ok) { var e = new Error(j.error || ('HTTP ' + r.status)); e.status = r.status; throw e; }
             return j;
           });
         })
@@ -303,6 +303,11 @@
           renderBooked(when);
         })
         .catch(function (err) {
+          // 401: the session's contact is gone from GHL. Drop the token and ask for the details.
+          if (err && err.status === 401) {
+            try { localStorage.removeItem(TOKEN_KEY); } catch (e) {}
+            return renderConfirm();
+          }
           btn.disabled = false;
           btn.textContent = t.confirm;
           var line = document.createElement('p');

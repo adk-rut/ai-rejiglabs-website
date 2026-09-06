@@ -30,6 +30,7 @@ export default async function handler(req, res) {
     name, email, phone, slot, lang,
     pageUrl: clean(body.pageUrl),
   });
+  if (booked.stale) return res.status(401).json({ error: booked.error });
   if (!booked.ok) return res.status(502).json({ error: booked.error });
   return res.status(200).json(booked);
 }

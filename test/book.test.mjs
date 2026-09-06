@@ -164,6 +164,14 @@ test("an appointment GHL refused is a 5xx, and no tags, note or ping follow", as
   assert.deepEqual(writes(fake), ["/calendars/events/appointments"]);
 });
 
+test("a token naming a contact GHL has deleted is a 401, so the widget can drop it and ask again", async () => {
+  const token = signToken({ contactId: "ct_gone", conversationId: "cv_1" });
+  const { r, fake } = await run({ token, body: { slot: SLOT }, routes: defaults({ status: 400, json: { message: "Error in contact service: Contact not found for id:ct_gone" } }) });
+
+  assert.equal(r.code, 401);
+  assert.deepEqual(writes(fake), ["/calendars/events/appointments"]);
+});
+
 test("the booked time comes back for the widget's Booked state", async () => {
   const token = signToken({ contactId: "ct_1", conversationId: "cv_1" });
   const { r } = await run({ token, body: { slot: SLOT, lang: "en" } });
