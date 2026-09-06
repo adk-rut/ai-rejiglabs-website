@@ -280,12 +280,15 @@
       if (first) first.focus();
     }
 
-    // [{ label, options?, required? }] → a select per option list, a textarea otherwise.
+    // [{ label, options?, text?, required? }] → a select per option list, a one-line input for
+    // `text`, a textarea otherwise.
     function questionsHtml(qs) {
       if (!qs || !qs.length) return '';
       return qs.map(function (q, i) {
         var req = q.required ? ' required' : '';
-        var field = q.options
+        var field = q.text
+          ? '<input type="text" name="q' + i + '"' + req + ' placeholder="' + esc(q.placeholder || '') + '">'
+          : q.options
           ? '<select name="q' + i + '"' + req + '><option value="" disabled selected>' + esc(q.placeholder || 'Choose one') + '</option>' +
               q.options.map(function (o) { return '<option value="' + esc(o) + '">' + esc(o) + '</option>'; }).join('') + '</select>'
           : '<textarea name="q' + i + '" rows="3"' + req + ' placeholder="' + esc(q.placeholder || '') + '"></textarea>';

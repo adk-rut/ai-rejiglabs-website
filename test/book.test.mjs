@@ -174,11 +174,12 @@ test("a token naming a contact GHL has deleted is a 401, so the widget can drop 
 
 test("a /blockchain booking carries its answers into the note and card, and tags the contact web3", async () => {
   const { fake } = await run({ body: { slot: SLOT, name: "Ann Smith", email: "ann@example.com", phone: "+66811111111", pageUrl: "https://rejiglabs.com/blockchain/book",
-      answers: { "Building?": "DeFi", "Budget?": "$5k-20k", "Notes?": "", junk: 42 } },
+      answers: { Company: "Acme DAO", "Building?": "DeFi", "Budget?": "$5k-20k", "Notes?": "", junk: 42 } },
     routes: [upsertRoute, apptRoute(), tagsRoute, notesRoute, contactRoute, [`GET ${GHL}/conversations/`, { json: { messages: { messages: [] } } }], tgRoute] });
 
   const tags = fake.calls.find((c) => /\/tags$/.test(c.url));
   assert.ok(tags.body.tags.includes("web3"), tags.body.tags);
+  assert.equal(fake.calls.find((c) => /\/contacts\/upsert$/.test(c.url)).body.companyName, "Acme DAO");
   const note = fake.calls.find((c) => /\/notes$/.test(c.url));
   assert.ok(note.body.body.includes("Building? DeFi"), note.body.body);
   assert.ok(note.body.body.includes("Budget? $5k-20k"), note.body.body);
