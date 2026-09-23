@@ -2595,3 +2595,27 @@ a.B-row { color: inherit; text-decoration: none; }
 .about-faq__item h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: .45rem; }
 .about-faq__item p { color: var(--text-secondary); line-height: 1.7; }
 @media (max-width: 700px) { .about-faq__grid { grid-template-columns: 1fr; } }
+
+/* ============ MOBILE FIXES (QA pass, 375px) ============ */
+@media (max-width: 760px) {
+  /* the voice card stacks like the other wide cells */
+  #capabilities .c-voice { flex-direction: column; align-items: stretch; gap: 1.2rem; }
+  #capabilities .c-voice .cap-cell__txt, #capabilities .c-fin .cap-cell__txt, #capabilities .c-web .cap-cell__txt { flex: none; }
+}
+@media (max-width: 768px) {
+  /* one 20px side gutter for every section (later rules had won over the 768px block) */
+  .case-studies-section { padding-left: 1.25rem; padding-right: 1.25rem; }
+  .sec-head, .encap .wrap { padding-left: 1.25rem; padding-right: 1.25rem; }
+  .closing-footer { padding-left: 1.25rem; padding-right: 1.25rem; }
+  /* bigger hamburger hit area without moving the icon */
+  .nav__toggle { padding: 12px 10px; margin: -12px -10px; }
+  /* room under the last content so the fixed "Ask Beem" button never covers it */
+  body { padding-bottom: 88px; }
+  .clogo { min-height: 40px; }
+}
+/* case-study card stats wrap instead of clipping the 4th value */
+.cs-card__stats { flex-wrap: wrap; row-gap: .8rem; }
+.cs-card__stat { min-width: 0; }
+@media (max-width: 520px) {
+  .cs-card__stats { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem 1rem; }
+}

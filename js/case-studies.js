@@ -82,6 +82,10 @@
     if (l !== 'en' && s['label_' + l]) return s['label_' + l];
     return s.label;
   }
+  function tVal(s) {
+    var l = lang();
+    return (l !== 'en' && s['value_' + l]) || s.value;
+  }
   var readText = { en: 'Read Case Study', th: 'ดูรายละเอียด', ru: 'Подробнее' };
 
   // Card tag leads with what was built, then who it was for.
@@ -96,7 +100,7 @@
   function renderCard(cs) {
     var l = lang();
     var statsHtml = cs.stats.map(function (s) {
-      return '<div class="cs-card__stat"><span class="cs-card__stat-val">' + s.value + '</span><span class="cs-card__stat-label">' + tStat(s) + '</span></div>';
+      return '<div class="cs-card__stat"><span class="cs-card__stat-val">' + tVal(s) + '</span><span class="cs-card__stat-label">' + tStat(s) + '</span></div>';
     }).join('');
 
     return '<a href="/case-studies/' + cs.slug + '" class="cs-card" data-cs-card>' +
@@ -231,7 +235,7 @@
 
       var l = lang();
       var statsHtml = cs.stats.map(function (s) {
-        return '<div class="cs-page__stat"><span class="cs-page__stat-val">' + s.value + '</span><span class="cs-page__stat-label">' + tStat(s) + '</span></div>';
+        return '<div class="cs-page__stat"><span class="cs-page__stat-val">' + tVal(s) + '</span><span class="cs-page__stat-label">' + tStat(s) + '</span></div>';
       }).join('');
 
       // i18n labels for section headers
@@ -311,7 +315,7 @@
           '<p>' + t(cs, 'results') + '</p>' +
         '</section>' +
 
-        (cs.testimonial ? '<section class="cs-page__testimonial"><span class="cs-page__tst-mark">"</span><blockquote>' + (t(cs.testimonial, 'quote') || cs.testimonial.quote) + '</blockquote><cite>' + cs.testimonial.name + ', ' + cs.testimonial.title + '</cite></section>' : '') +
+        (cs.testimonial ? '<section class="cs-page__testimonial"><span class="cs-page__tst-mark">"</span><blockquote>' + (t(cs.testimonial, 'quote') || cs.testimonial.quote) + '</blockquote><cite>' + cs.testimonial.name + ', ' + (t(cs.testimonial, 'title') || cs.testimonial.title) + '</cite></section>' : '') +
 
         '<section class="cs-page__cta">' +
           '<h2>' + lb('cta') + '</h2>' +
@@ -358,7 +362,7 @@
       var featHtml = '';
       if (feat) {
         var featStats = feat.stats.map(function (s) {
-          return '<div class="cs-page__stat"><span class="cs-page__stat-val">' + s.value + '</span><span class="cs-page__stat-label">' + tStat(s) + '</span></div>';
+          return '<div class="cs-page__stat"><span class="cs-page__stat-val">' + tVal(s) + '</span><span class="cs-page__stat-label">' + tStat(s) + '</span></div>';
         }).join('');
         featHtml =
           '<div class="cs-hub__feature">' +

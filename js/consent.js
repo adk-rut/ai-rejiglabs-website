@@ -88,6 +88,18 @@
     + '</div>';
 
   document.body.appendChild(banner);
+
+  // Follow a live language switch (pages without their own /th/ or /ru/ URL).
+  if (window.__i18n && window.__i18n.onChange) {
+    window.__i18n.onChange(function (l) {
+      var n = T[l] || T.en;
+      banner.setAttribute('aria-label', n.title);
+      banner.querySelector('.rl-consent__t').textContent = n.title;
+      banner.querySelector('.rl-consent__b').innerHTML = n.body + ' <a href="/privacy.html">' + n.more + '</a>';
+      banner.querySelector('.rl-consent__accept').textContent = n.accept;
+      banner.querySelector('.rl-consent__decline').textContent = n.decline;
+    });
+  }
   requestAnimationFrame(function () { banner.classList.add('in'); });
 
   banner.querySelector('.rl-consent__accept').addEventListener('click', function () { set('granted'); });

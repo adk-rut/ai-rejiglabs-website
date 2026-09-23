@@ -75,7 +75,7 @@
           "@type": "Organization",
           "name": "Rejig Labs",
           "url": "https://rejiglabs.com/",
-          "sameAs": ["https://x.com/RejigLabs", "https://t.me/rt_adk"]
+          "sameAs": ["https://x.com/rejiglabs", "https://t.me/rt_adk"]
         }
       },
       {
@@ -668,7 +668,7 @@
 
       <div class="contact__inner">
         <div class="contact__form-card fade-up">
-          <form class="form" id="contact-form">
+          <form class="form" id="contact-form" action="mailto:rut@rejiglabs.com" method="post" enctype="text/plain">
             <div class="form__row">
               <div class="form__field">
                 <label class="form__label" for="fname" data-i18n="bc_form_fname">First name*</label>
@@ -768,10 +768,6 @@
           </div>
           <div class="footer__divider"></div>
           <p class="footer__tagline" data-i18n="bc_foot_tagline">Your Web3 growth partner</p>
-          <div class="footer__subscribe">
-            <input type="email" placeholder="Your email" data-i18n-ph="bc_foot_email_ph">
-            <button class="btn btn-primary" data-i18n="bc_foot_subscribe">Subscribe</button>
-          </div>
         </div>
 
         <div class="footer__col">
@@ -788,16 +784,16 @@
         <div class="footer__col">
           <h5 data-i18n="bc_foot_social">Social</h5>
           <ul>
-            <li><a href="https://x.com/RejigLabs" target="_blank" rel="noopener">X (Twitter)</a></li>
+            <li><a href="https://x.com/rejiglabs" target="_blank" rel="noopener">X (Twitter)</a></li>
             <li><a href="https://t.me/rt_adk" target="_blank" rel="noopener">Telegram</a></li>
-            <li><a href="https://www.youtube.com/rtadk" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="https://youtube.com/@rejiglabs" target="_blank" rel="noopener">YouTube</a></li>
           </ul>
         </div>
 
         <div class="footer__btc-col">
-          <div class="footer__btc-pill">
+          <div class="footer__btc-pill" id="btc-pill" hidden>
             <span class="footer__btc-label">BTC —</span>
-            <span class="footer__btc-price" id="btc-price">$420,069</span>
+            <span class="footer__btc-price" id="btc-price"></span>
           </div>
           <div class="footer__preview">
             <video autoplay muted loop playsinline src="/blockchain/assets/hero-animation.mp4" style="width:100%;display:block;border-radius:var(--radius-lg);"></video>
@@ -838,6 +834,20 @@
         document.querySelectorAll('.nav__menu[open]').forEach(function (d) {
           if (!d.contains(e.target) || e.target.closest('.nav__menu-list a, .nav__menu-list button')) d.removeAttribute('open');
         });
+      });
+    })();
+  </script>
+  <script>
+    // No form backend: the enquiry opens as a pre-filled email to Rut, never a lost submit.
+    (function () {
+      var f = document.getElementById('contact-form');
+      if (!f) return;
+      f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var d = new FormData(f), lines = [];
+        d.forEach(function (v, k) { if (String(v).trim()) lines.push(k.replace(/_/g, ' ') + ': ' + v); });
+        var subject = 'Web3 enquiry: ' + (d.get('project_name') || d.get('first_name') || 'new project');
+        location.href = 'mailto:rut@rejiglabs.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
       });
     })();
   </script>

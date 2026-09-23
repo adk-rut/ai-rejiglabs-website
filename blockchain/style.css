@@ -898,3 +898,4 @@ body .rb__f input, body .rb__f select, body .rb__f textarea, body .rb__tel, body
 body .rb__f select option { background: var(--bg-card-solid); color: var(--white); }
 body .rb__f input::placeholder, body .rb__f textarea::placeholder { color: var(--white-40); }
 body .rb-ov__bd { background: rgba(5, 8, 16, 0.7); }
+.footer__btc-pill[hidden] { display: none; }

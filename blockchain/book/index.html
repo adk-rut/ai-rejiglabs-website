@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book a Call | Rejig Labs Web3</title>
+  <title>Book a Web3 Call | Rejig Labs</title>
   <meta name="description" content="Book a 30-minute call with Rejig Labs about Web3 growth. Google Meet, times in Bangkok.">
   <meta name="robots" content="noindex">
   <link rel="icon" href="/assets/logo.svg">
@@ -26,6 +26,8 @@
     .page__p { color: var(--white-60); margin: 0 0 24px; text-align: center; font-size: 15px; }
     .page__foot { text-align: center; font-size: 13px; color: var(--white-40); margin-top: 24px; }
     .page__foot a { color: var(--white-60); }
+    /* the back link is the only nav item here, so it stays visible on phones */
+    .nav .nav__links { display: flex; }
   </style>
 </head>
 <body>
@@ -37,7 +39,7 @@
     </div>
   </nav>
   <main class="page">
-    <h1 class="page__h" data-i18n="bc_book_h1">Book a Call</h1>
+    <h1 class="page__h" data-i18n="bc_book_h1">Let's talk about your project</h1>
     <p class="page__p" data-i18n="bc_book_p">30 minutes on Google Meet. Three quick questions first, so we start on your problem.</p>
     <div id="book"></div>
     <p class="page__foot" data-i18n-html="bc_book_foot">Trouble booking? Email <a href="mailto:rut@rejiglabs.com">rut@rejiglabs.com</a></p>

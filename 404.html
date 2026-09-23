@@ -46,11 +46,11 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "w91b1gltmo");
   </script>
-  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="icon" href="/assets/logo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&family=Noto+Sans+Thai:wght@400;500;600&family=Noto+Serif+Thai&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=5">
+  <link rel="stylesheet" href="/css/style.css?v=5">
 
   <!-- Vercel Web Analytics -->
   <script>window.va=window.va||function(){(window.vai=window.vai||[]).push(arguments);};</script>
@@ -82,18 +82,21 @@
       margin-bottom: 2rem;
     }
   </style>
+  <style>.four-oh-four__links{margin-top:1.6rem;font-size:.95rem;color:var(--text-secondary)}.four-oh-four__links a,.four-oh-four__book{color:var(--accent);text-decoration:none;background:none;border:0;font:inherit;cursor:pointer;padding:.5rem .2rem}</style>
 </head>
 <body>
   <div class="four-oh-four">
     <h1>404</h1>
-    <p>This page doesn't exist. Let's get you back on track.</p>
+    <p data-i18n="nf_p">This page doesn't exist. Let's get you back on track.</p>
     <a href="/" class="btn btn--filled">
-      <span class="btn__text">Back to Home</span>
-      <span class="btn__hover">Back to Home <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      <span class="btn__text" data-i18n="nf_home">Back to Home</span>
+      <span class="btn__hover"><span data-i18n="nf_home">Back to Home</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
       <span class="btn__fill"></span>
     </a>
+    <p class="four-oh-four__links"><a href="/case-studies/" data-i18n="nav_case_studies">Case Studies</a> · <a href="/about/" data-i18n="nav_about">About</a> · <button type="button" data-book class="four-oh-four__book" data-i18n="nav_cta">Book a Call</button></p>
   </div>
-  <script src="js/consent.js" defer></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/consent.js" defer></script>
   <script src="/js/site-chat.js" defer></script>
   <script src="/js/booking.js" defer></script>
 </body>

@@ -2127,9 +2127,9 @@
     "ru": "← Web3"
   },
   "bc_book_h1": {
-    "en": "Book a Call",
-    "th": "นัดคุย",
-    "ru": "Записаться на звонок"
+    "en": "Let's talk about your project",
+    "th": "มาคุยเรื่องโปรเจกต์ของคุณกัน",
+    "ru": "Обсудим ваш проект"
   },
   "bc_book_p": {
     "en": "30 minutes on Google Meet. Three quick questions first, so we start on your problem.",
@@ -2185,5 +2185,100 @@
     "en": "Book a free 30-minute call. You get a straight answer on where AI fits your business and what it would take. Or email rut@rejiglabs.com.",
     "th": "นัดคุยฟรี 30 นาที คุณจะได้คำตอบตรง ๆ ว่า AI เหมาะกับธุรกิจคุณตรงไหน และต้องใช้อะไรบ้าง หรืออีเมลมาที่ rut@rejiglabs.com",
     "ru": "Запишитесь на бесплатный 30-минутный звонок: вы получите прямой ответ, где AI подойдёт вашему бизнесу и что для этого нужно. Или напишите на rut@rejiglabs.com."
+  },
+  "nf_p": {
+    "en": "This page doesn't exist. Let's get you back on track.",
+    "th": "ไม่พบหน้านี้ กลับไปเริ่มต้นใหม่กันเถอะ",
+    "ru": "Такой страницы нет. Давайте вернём вас на верный путь."
+  },
+  "nf_home": {
+    "en": "Back to Home",
+    "th": "กลับหน้าแรก",
+    "ru": "На главную"
+  },
+  "mk_call": {
+    "en": "Incoming call",
+    "th": "สายเรียกเข้า",
+    "ru": "Входящий звонок"
+  },
+  "mk_ring": {
+    "en": "+66 · answered in 1 ring",
+    "th": "+66 · รับสายตั้งแต่เสียงแรก",
+    "ru": "+66 · ответ с первого гудка"
+  },
+  "mk_booked": {
+    "en": "Booking confirmed · Sat 3:00 PM",
+    "th": "ยืนยันการจองแล้ว · ส. 15:00 น.",
+    "ru": "Запись подтверждена · Сб 15:00"
+  },
+  "mk_chat_in": {
+    "en": "Do you have a table for 4 tonight?",
+    "th": "คืนนี้มีโต๊ะสำหรับ 4 คนไหมคะ?",
+    "ru": "Есть столик на четверых сегодня вечером?"
+  },
+  "mk_chat_out": {
+    "en": "Yes, 7:30pm works. Shall I book it?",
+    "th": "มีค่ะ 19:30 น. ว่าง ให้จองเลยไหมคะ?",
+    "ru": "Да, есть на 19:30. Забронировать?"
+  },
+  "mk_sched": {
+    "en": "Auto-scheduled across",
+    "th": "ตั้งเวลาโพสต์อัตโนมัติ",
+    "ru": "Автопубликация в"
+  },
+  "mk_channels": {
+    "en": "4 channels",
+    "th": "4 ช่องทาง",
+    "ru": "4 каналах"
+  },
+  "mk_rag_q": {
+    "en": "refund policy for late cancels",
+    "th": "นโยบายคืนเงินกรณียกเลิกช้า",
+    "ru": "возврат при поздней отмене"
+  },
+  "mk_rag_a": {
+    "en": "Cancellations within 24h are charged <b>50% of the booking</b>; no-shows are charged in full.",
+    "th": "ยกเลิกภายใน 24 ชม. คิดค่าบริการ <b>50% ของยอดจอง</b> ไม่มาตามนัดคิดเต็มจำนวน",
+    "ru": "Отмена менее чем за 24 ч — <b>50% стоимости</b>; неявка оплачивается полностью."
+  },
+  "mk_ag1": {
+    "en": "Research market",
+    "th": "วิจัยตลาด",
+    "ru": "Анализ рынка"
+  },
+  "mk_ag2": {
+    "en": "Score 240 leads",
+    "th": "ให้คะแนนลีด 240 ราย",
+    "ru": "Оценка 240 лидов"
+  },
+  "mk_ag3": {
+    "en": "Draft outreach",
+    "th": "ร่างข้อความติดต่อ",
+    "ru": "Черновики писем"
+  },
+  "mk_ag4": {
+    "en": "Deliver report",
+    "th": "ส่งรายงาน",
+    "ru": "Отправка отчёта"
+  },
+  "mk_register": {
+    "en": "Register",
+    "th": "ลงทะเบียน",
+    "ru": "Регистрация"
+  },
+  "mk_recon": {
+    "en": "Reconciled",
+    "th": "กระทบยอดแล้ว",
+    "ru": "Сверено"
+  },
+  "mk_matched": {
+    "en": "✓ matched",
+    "th": "✓ ตรงกัน",
+    "ru": "✓ сверено"
+  },
+  "mk_pending": {
+    "en": "reconciling…",
+    "th": "กำลังกระทบยอด…",
+    "ru": "сверка…"
   }
 }
