@@ -22,6 +22,7 @@ const LANGS = [{ code: 'th', dir: 'th' }, { code: 'ru', dir: 'ru' }];
 const PAGES = [
   { src: 'index.html', seoTitle: 'seo_title', seoDesc: 'seo_desc' },
   { src: 'ai-chatbot/index.html', seoTitle: 'seo_title_chatbot', seoDesc: 'seo_desc_chatbot' },
+  { src: 'about/index.html', seoTitle: 'seo_title_about', seoDesc: 'seo_desc_about' },
 ];
 
 const T = JSON.parse(readFileSync(resolve(ROOT, 'data/translations.json'), 'utf8'));
@@ -91,7 +92,12 @@ function buildPage(page, lang) {
   html = html.replace(/((?:src|href)=")((?:css|js|assets|data|images)\/)/g, '$1/$2');
   html = html.replace(/(href=")([\w-]+\.html)(")/g, '$1/$2$3');
 
-  // 4) Beem links: Thai visitors land on the Thai side of heybeem.com
+  // 4) Links to pages that exist in this language stay in this language
+  //    (home, its #anchors, and /about/).
+  html = html.replace(/href="\/(#[\w-]*)?"/g, (_, hash) => `href="/${lang.dir}/${hash || ''}"`);
+  html = html.replace(/href="\/about\/"/g, `href="/${lang.dir}/about/"`);
+
+  // 5) Beem links: Thai visitors land on the Thai side of heybeem.com
   if (lang.code === 'th') html = html.replace(/href="https:\/\/heybeem\.com\/"/g, 'href="https://heybeem.com/th"');
 
   const outFile = resolve(ROOT, lang.dir, page.src);

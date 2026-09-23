@@ -23,7 +23,7 @@
 
   var T = {
     en: {
-      title: 'Book a Discovery call',
+      title: 'Book a call',
       sub: '30 min · Google Meet · times in Bangkok',
       loading: 'Finding open times…',
       none: 'No open times in the next few days. Email rut@rejiglabs.com and we will find one.',
@@ -61,6 +61,26 @@
       booked: 'จองเรียบร้อย',
       bookedSub: 'คำเชิญในปฏิทินพร้อมลิงก์ Google Meet กำลังส่งไปที่อีเมลของคุณค่ะ',
       close: 'ปิด'
+    },
+    ru: {
+      title: 'Записаться на звонок',
+      sub: '30 мин · Google Meet · время по Бангкоку',
+      loading: 'Ищем свободное время…',
+      none: 'В ближайшие дни свободного времени нет. Напишите на rut@rejiglabs.com, и мы подберём удобное.',
+      err: 'Не удалось загрузить календарь. Попробуйте ещё раз или напишите на rut@rejiglabs.com.',
+      retry: 'Ещё раз',
+      pick: 'Выберите время',
+      back: 'Назад',
+      confirm: 'Подтвердить время',
+      detailsTitle: 'Почти готово.',
+      detailsSub: 'Имя, email и телефон, чтобы отправить приглашение и связаться с вами.',
+      nameL: 'Имя', emailL: 'Email', phoneL: 'Телефон',
+      phoneHint: 'Начните с кода страны: 66 для Таиланда, без 0.',
+      fine: 'Без паролей и рассылок. Команда читает каждое сообщение.',
+      booking: 'Записываем…',
+      booked: 'Готово',
+      bookedSub: 'Приглашение со ссылкой на Google Meet уже отправлено вам на email.',
+      close: 'Закрыть'
     }
   };
 
@@ -71,9 +91,9 @@
   };
 
   // The page decides the language; the chat passes its own, which may differ (header switch).
-  // /ru/ has no Russian panel, so it opens in English — same rule as the widget.
   function pageLang() {
-    return (document.documentElement.lang || 'en').slice(0, 2) === 'th' ? 'th' : 'en';
+    var l = (document.documentElement.lang || 'en').slice(0, 2);
+    return T[l] ? l : 'en';
   }
 
   var esc = function (s) {
@@ -99,7 +119,7 @@
   // ---- slot times, in Bangkok ---------------------------------------------
   // Never getDay()/getHours(): a slot is an ISO instant and the browser's zone is the visitor's.
   function parts(iso, lang, opts) {
-    return new Intl.DateTimeFormat(lang === 'th' ? 'th-TH-u-ca-gregory' : 'en-GB',
+    return new Intl.DateTimeFormat(lang === 'th' ? 'th-TH-u-ca-gregory' : (lang === 'ru' ? 'ru-RU' : 'en-GB'),
       Object.assign({ timeZone: TZ }, opts)).format(new Date(iso));
   }
   var dayKey = function (iso) { return parts(iso, 'en', { year: 'numeric', month: '2-digit', day: '2-digit' }); };
@@ -130,7 +150,7 @@
     // /blockchain). Explicit opts win.
     opts = Object.assign({}, window.rejigBookingDefaults || {}, opts || {});
     opts = opts || {};
-    var lang = opts.lang === 'th' ? 'th' : (opts.lang === 'en' ? 'en' : pageLang());
+    var lang = T[opts.lang] ? opts.lang : pageLang();
     var t = T[lang];
     var inline = !!opts.mount;
 
@@ -324,7 +344,8 @@
           });
         })
         .then(function (j) {
-          var when = j.when || fullLabel(state.slot, lang);
+          // The server formats EN/TH only; Russian formats the slot locally.
+          var when = (lang !== 'ru' && j.when) || fullLabel(state.slot, lang);
           ga('book_complete', { lang: lang, slot: state.slot });
           if (opts.onBooked) opts.onBooked({ slot: state.slot, when: when });
           renderBooked(when);

@@ -84,6 +84,13 @@
   }
   var readText = { en: 'Read Case Study', th: 'ดูรายละเอียด', ru: 'Подробнее' };
 
+  // Card tag leads with what was built, then who it was for.
+  function tag(cs) {
+    var sys = t(cs, 'system');
+    var ind = t(cs, 'industry') || cs.industry;
+    return sys ? sys + ' · ' + ind : ind;
+  }
+
   // ---- Card Grid ----
 
   function renderCard(cs) {
@@ -99,7 +106,7 @@
         '<div class="ev-card__logo"><img src="' + basePath + (cs.logo || 'assets/logo.png') + '" alt="' + cs.client + '"></div>' +
       '</div>' +
       '<div class="cs-card__body">' +
-        '<span class="cs-card__tag">' + (t(cs, 'industry') || cs.industry) + '</span>' +
+        '<span class="cs-card__tag">' + tag(cs) + '</span>' +
         '<h3 class="cs-card__title">' + cs.client + ' <span class="cs-card__sep">|</span> ' + t(cs, 'headline') + '</h3>' +
         '<p class="cs-card__summary">' + t(cs, 'summary') + '</p>' +
         '<div class="cs-card__stats">' + statsHtml + '</div>' +
@@ -265,7 +272,7 @@
         '<a href="index.html#case-studies" class="cs-page__back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg> ' + lb('back') + '</a>' +
 
         '<section class="cs-page__hero">' +
-          '<span class="cs-card__tag">' + t(cs, 'industry') + '</span>' +
+          '<span class="cs-card__tag">' + tag(cs) + '</span>' +
           '<h1>' + cs.client + ' <span class="cs-card__sep">|</span> <em class="accent">' + t(cs, 'headline') + '</em></h1>' +
           '<p class="cs-page__hero-summary">' + t(cs, 'summary') + '</p>' +
           (cs.site ? '<a class="cs-page__site" href="' + cs.site + '" target="_blank" rel="noopener">' + lb('site') + ' <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>' : '') +
@@ -356,7 +363,7 @@
         featHtml =
           '<div class="cs-hub__feature">' +
             '<div class="cs-hub__feature-text">' +
-              '<span class="cs-card__tag">' + t(feat, 'industry') + '</span>' +
+              '<span class="cs-card__tag">' + tag(feat) + '</span>' +
               '<h2 class="cs-hub__feature-title"><a href="/case-studies/' + feat.slug + '">' + t(feat, 'headline') + '</a></h2>' +
               '<p class="cs-hub__feature-summary">' + t(feat, 'summary') + '</p>' +
               '<div class="cs-page__stats">' + featStats + '</div>' +

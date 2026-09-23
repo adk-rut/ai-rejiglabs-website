@@ -1,12 +1,12 @@
 # Rejig Labs — Full Reference
 
-> We don't just talk AI. We deliver it. Rejig Labs is an AI automation agency in Thailand, based in Phuket. We find where AI saves your business real time and real money, then build it, implement it, and train your team to run it.
+> AI that works inside your business. Rejig Labs is an AI implementation partner based in Phuket, Thailand. We find where AI saves your business time and money, build it into the tools you already use, and train your team to run it.
 
-**What we are:** An AI automation agency in Thailand. Most consultants hand over a strategy deck and leave; we stay and build it. We only recommend what we can actually build and deploy ourselves.
+**What we are:** An AI implementation partner in Thailand, founded and led by Rut Adikari (Mr. RT). Most consultants hand over a strategy deck and leave; we stay and build it. We only recommend what we can actually build and deploy ourselves.
 
 **Location:** Phuket, Thailand (also Bangkok), working remotely worldwide.
 **Languages:** English, Thai (ไทย), Russian (Русский).
-**Contact:** rut@rejiglabs.com · Book a call: the "Book a Discovery Call" button on any page of https://rejiglabs.com/
+**Contact:** rut@rejiglabs.com · Book a call: the "Book a Call" button on any page of https://rejiglabs.com/
 **Social:** https://x.com/rejiglabs · https://linkedin.com/company/rejiglabs · https://youtube.com/@rejiglabs
 
 ---
@@ -54,7 +54,7 @@ For Thailand's first Green Charity Golf Tournament, Rejig Labs ran the whole dig
 ## FAQ
 
 **How is Rejig Labs different from other AI consultants?**
-Most consultants give you a strategy deck and leave. We stay and build it. RT has hands-on implementation experience across real business workflows, not just conceptual knowledge. We only recommend what we can actually build and deploy ourselves.
+Most consultants give you a strategy deck and leave. We stay and build it. We build what we recommend, deploy it, and stay until your team runs it. Every project is led by our founder, Rut Adikari (Mr. RT).
 
 **How do I know if we're ready for AI?**
 If your team is doing repetitive manual work like data entry, follow-ups, reporting, scheduling, or content, you're ready. The audit will tell you exactly where. You don't need clean data or a tech team. That's what the audit is for.

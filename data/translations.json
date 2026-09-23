@@ -20,34 +20,34 @@
     "ru": "Кейсы"
   },
   "nav_cta": {
-    "en": "Get In Touch",
-    "th": "ติดต่อเรา",
-    "ru": "Связаться"
+    "en": "Book a Call",
+    "th": "นัดคุย",
+    "ru": "Записаться на звонок"
   },
   "hero_eyebrow": {
-    "en": "AI AUTOMATION AGENCY | PHUKET, THAILAND & WORLDWIDE",
-    "th": "ที่ปรึกษาและวางระบบ AI สำหรับธุรกิจ SME ไทย",
-    "ru": "AI-КОНСАЛТИНГ | ТАИЛАНД И ВЕСЬ МИР"
+    "en": "AI IMPLEMENTATION PARTNER · THAILAND & WORLDWIDE",
+    "th": "พาร์ตเนอร์วางระบบ AI สำหรับธุรกิจ · ไทยและทั่วโลก",
+    "ru": "ПАРТНЁР ПО ВНЕДРЕНИЮ AI · ТАИЛАНД И ВЕСЬ МИР"
   },
   "hero_h1": {
-    "en": "We don't just talk AI.<br><em class=\"accent\">We deliver it.</em>",
-    "th": "รับวางระบบ AI และแชทบอทอัตโนมัติ<br><em class=\"accent\">สำหรับธุรกิจ SME ไทย</em>",
-    "ru": "Мы не просто говорим про AI.<br><em class=\"accent\">Мы внедряем его.</em>"
+    "en": "AI that works<br><em class=\"accent\">inside your business.</em>",
+    "th": "AI ที่ทำงานได้จริง<br><em class=\"accent\">ในธุรกิจของคุณ</em>",
+    "ru": "AI, который работает<br><em class=\"accent\">внутри вашего бизнеса.</em>"
   },
   "hero_sub": {
-    "en": "We help businesses identify AI opportunities that will actually transform their operations, then we build it, deploy it, and train your team to run it.",
-    "th": "เราหาจุดที่ AI ช่วยธุรกิจคุณประหยัดเวลาและต้นทุนจริง แล้วสร้าง ติดตั้ง และสอนทีมให้ใช้งานเป็น",
-    "ru": "Мы помогаем бизнесу найти точки, где AI реально изменит работу. Потом строим, запускаем и обучаем вашу команду."
+    "en": "We find where AI saves you time and money, build it into the tools you already use, and train your team to run it.",
+    "th": "เราหาจุดที่ AI ช่วยประหยัดเวลาและต้นทุน สร้างระบบเข้ากับเครื่องมือที่คุณใช้อยู่ แล้วสอนทีมของคุณให้ดูแลเองได้",
+    "ru": "Находим, где AI экономит вам время и деньги, встраиваем его в ваши текущие инструменты и обучаем команду им управлять."
   },
   "hero_btn": {
-    "en": "Book a Discovery Call",
-    "th": "นัดคุยฟรี",
-    "ru": "Записаться на консультацию"
+    "en": "Book a Call",
+    "th": "นัดคุย",
+    "ru": "Записаться на звонок"
   },
   "hero_trusted": {
-    "en": "BUILT WITH",
-    "th": "สร้างด้วย",
-    "ru": "СОЗДАНО НА ОСНОВЕ"
+    "en": "WORK DELIVERED FOR",
+    "th": "ลูกค้าที่เราส่งมอบงานให้",
+    "ru": "МЫ РАБОТАЛИ С"
   },
   "narrative_1": {
     "en": "You know AI is the move. You've signed up for the tools. Watched the demos.",
@@ -125,9 +125,9 @@
     "ru": "Мы обучаем вашу команду, пока новые системы не станут привычными. Когда мы уходим, это просто ваш способ работать."
   },
   "process_btn": {
-    "en": "Get Started",
-    "th": "เริ่มเลย",
-    "ru": "Начать"
+    "en": "Book a Call",
+    "th": "นัดคุย",
+    "ru": "Записаться на звонок"
   },
   "cs_eyebrow": {
     "en": "REAL RESULTS",
@@ -148,21 +148,6 @@
     "en": "Don't just take <em class=\"accent\">our word for it…</em>",
     "th": "ไม่ต้องเชื่อเรา <em class=\"accent\">ฟังจากลูกค้าเอง…</em>",
     "ru": "Не верьте нам на слово — <em class=\"accent\">послушайте клиентов…</em>"
-  },
-  "entropy_tagline": {
-    "en": "Turn <strong>chaos</strong> into clarity for your whole company.",
-    "th": "เปลี่ยน<strong>ความยุ่งเหยิง</strong>ให้กลายเป็นความชัดเจนทั้งองค์กร",
-    "ru": "Превратите <strong>хаос</strong> в ясность для всей компании."
-  },
-  "entropy_before": {
-    "en": "before",
-    "th": "ก่อน",
-    "ru": "до"
-  },
-  "entropy_after": {
-    "en": "AFTER",
-    "th": "หลัง",
-    "ru": "ПОСЛЕ"
   },
   "stat_1_label": {
     "en": "average time saved on manual workflows",
@@ -195,99 +180,94 @@
     "ru": "процесса"
   },
   "faq_h2": {
-    "en": "FAQ<em class=\"accent\">s</em>",
+    "en": "Common <em class=\"accent\">questions.</em>",
     "th": "คำถาม<em class=\"accent\">ที่พบบ่อย</em>",
-    "ru": "Вопросы<em class=\"accent\"> и ответы</em>"
+    "ru": "Частые <em class=\"accent\">вопросы.</em>"
   },
   "faq_sub": {
-    "en": "You've got questions. We've got answers.",
-    "th": "มีคำถาม? เรามีคำตอบให้",
-    "ru": "У вас вопросы — у нас ответы."
-  },
-  "faq_time": {
-    "en": "Every day, 9:01 AM",
-    "th": "ทุกวัน 9:01 น.",
-    "ru": "Каждый день, 9:01"
+    "en": "Straight answers before you book a call.",
+    "th": "คำตอบตรง ๆ ก่อนนัดคุยกับเรา",
+    "ru": "Прямые ответы до звонка."
   },
   "faq_q1": {
-    "en": "How is Rejig Labs different from other AI consultants?",
-    "th": "Rejig Labs ต่างจากที่ปรึกษา AI ที่อื่นยังไง?",
-    "ru": "Чем Rejig Labs отличается от других AI-консультантов?"
+    "en": "How are you different from AI consultants?",
+    "th": "ต่างจากที่ปรึกษา AI ทั่วไปอย่างไร?",
+    "ru": "Чем вы отличаетесь от AI-консультантов?"
   },
   "faq_a1": {
-    "en": "Most consultants give you a strategy deck and leave. We stay and build it. RT has hands-on implementation experience across real business workflows, not just conceptual knowledge. We only recommend what we can actually build and deploy ourselves.",
-    "th": "ที่ปรึกษาส่วนใหญ่ให้แค่สไลด์กลยุทธ์แล้วก็ไป แต่เราอยู่สร้างให้จริง RT มีประสบการณ์ลงมือทำกับธุรกิจจริง ไม่ใช่แค่รู้ทฤษฎี เราแนะนำแค่สิ่งที่เราสร้างและติดตั้งได้เอง",
-    "ru": "Большинство консультантов отдают вам красивую презентацию и уходят. Мы остаёмся и строим. У RT реальный опыт внедрения в живых бизнес-процессах, а не просто теория. Мы рекомендуем только то, что сами можем построить и запустить."
+    "en": "Most consultants hand you a strategy deck and leave. We build what we recommend, deploy it, and stay until your team runs it. Every project is led by our founder, <a href=\"/about/\">Rut Adikari (Mr. RT)</a>.",
+    "th": "ที่ปรึกษาส่วนใหญ่ส่งสไลด์กลยุทธ์ให้แล้วก็จบ เราสร้างสิ่งที่เราแนะนำ ติดตั้งให้ และอยู่จนทีมของคุณดูแลเองได้ ทุกโปรเจกต์นำโดยผู้ก่อตั้งของเรา <a href=\"/about/\">Rut Adikari (Mr. RT)</a>",
+    "ru": "Большинство консультантов оставляют презентацию со стратегией и уходят. Мы строим то, что рекомендуем, внедряем и остаёмся, пока команда не начнёт управлять системой сама. Каждый проект ведёт наш основатель, <a href=\"/about/\">Rut Adikari (Mr. RT)</a>."
   },
   "faq_q2": {
-    "en": "How do I know if we're ready for AI?",
-    "th": "จะรู้ได้ยังไงว่าธุรกิจเราพร้อมใช้ AI?",
-    "ru": "Как понять, готовы ли мы к AI?"
+    "en": "How do I know if we're ready?",
+    "th": "จะรู้ได้อย่างไรว่าเราพร้อมแล้ว?",
+    "ru": "Как понять, что мы готовы?"
   },
   "faq_a2": {
-    "en": "If your team is doing repetitive manual work like data entry, follow-ups, reporting, scheduling, or content, you're ready. The audit will tell you exactly where. You don't need clean data or a tech team. That's what the audit is for.",
-    "th": "ถ้าทีมคุณยังทำงานซ้ำ ๆ ด้วยมืออยู่ เช่น กรอกข้อมูล ติดตามงาน ทำรีพอร์ต จัดตาราง ทำคอนเทนต์ แปลว่าพร้อมแล้ว การตรวจสอบของเราจะบอกว่าเริ่มตรงไหนดี ไม่ต้องมีข้อมูลสะอาดหรือทีม IT มาก่อน",
-    "ru": "Если ваша команда делает рутинную работу вручную — ввод данных, напоминания, отчёты, расписания, контент — вы готовы. Аудит покажет, где именно начинать. Не нужны ни чистые данные, ни IT-отдел. Для этого и нужен аудит."
+    "en": "If your team repeats the same manual work every week (data entry, follow-ups, reports, scheduling, content), you're ready. You don't need clean data or a tech team. The audit shows where to start.",
+    "th": "ถ้าทีมของคุณทำงานซ้ำ ๆ ด้วยมือทุกสัปดาห์ (คีย์ข้อมูล ติดตามลูกค้า ทำรายงาน จัดตารางนัด ทำคอนเทนต์) แปลว่าคุณพร้อมแล้ว ไม่จำเป็นต้องมีข้อมูลที่เป็นระเบียบหรือทีมไอที การ audit จะบอกว่าควรเริ่มตรงไหน",
+    "ru": "Если команда каждую неделю делает одну и ту же ручную работу (ввод данных, напоминания клиентам, отчёты, расписание, контент), вы готовы. Чистые данные и IT-отдел не нужны. Аудит покажет, с чего начать."
   },
   "faq_q3": {
     "en": "What happens after the audit?",
-    "th": "หลังตรวจสอบเสร็จแล้วได้อะไร?",
-    "ru": "Что происходит после аудита?"
+    "th": "หลัง audit แล้วจะได้อะไร?",
+    "ru": "Что вы получаете после аудита?"
   },
   "faq_a3": {
-    "en": "You receive a full AI transformation plan: a 90-day roadmap, prioritised integrations, tool recommendations, and ROI estimates. From there, you can implement it yourself or engage us for Phase 2 (full execution).",
-    "th": "คุณจะได้แผน AI ฉบับเต็ม: แผนงาน 90 วัน, ลำดับความสำคัญของระบบที่ต้องเชื่อมต่อ, เครื่องมือที่แนะนำ, และประมาณการ ROI จากนั้นจะทำเองหรือให้เราทำต่อในเฟส 2 ก็ได้",
-    "ru": "Вы получаете полный план AI-трансформации: дорожную карту на 90 дней, приоритеты по интеграциям, рекомендации по инструментам и оценку ROI. Дальше можете внедрять сами или перейти с нами на Фазу 2 — полное выполнение."
+    "en": "You get a written plan: a 90-day roadmap, the integrations to build first, tool choices and expected ROI. Run it yourself, or have us build it.",
+    "th": "คุณจะได้แผนงานเป็นลายลักษณ์อักษร: โรดแมป 90 วัน ระบบที่ควรเชื่อมต่อก่อน เครื่องมือที่แนะนำ และ ROI ที่คาดหวัง จะลงมือเองก็ได้ หรือให้เราสร้างให้",
+    "ru": "Письменный план: дорожная карта на 90 дней, интеграции, с которых стоит начать, выбор инструментов и ожидаемый ROI. Реализуйте его сами или поручите нам."
   },
   "faq_q4": {
-    "en": "How much internal time will this take?",
-    "th": "ทีมเราต้องใช้เวลาเยอะไหม?",
+    "en": "How much of our team's time will this take?",
+    "th": "ต้องใช้เวลาของทีมเรามากแค่ไหน?",
     "ru": "Сколько времени это займёт у нашей команды?"
   },
   "faq_a4": {
-    "en": "Minimal. We do the heavy lifting. The audit phase requires a few hours of your team's time for discovery calls and process walkthroughs. Implementation is handled by us. Your team only needs to be available for handoff and training.",
-    "th": "น้อยมาก งานหนักเราทำเอง ช่วงตรวจสอบแค่ต้องใช้เวลาทีมคุณไม่กี่ชั่วโมงสำหรับคุยและดูกระบวนการ การติดตั้งเราจัดการให้ ทีมคุณแค่พร้อมรับงานและเข้าเทรนนิ่ง",
-    "ru": "Минимум. Всю тяжёлую работу делаем мы. На этапе аудита нужно несколько часов от вашей команды — созвоны и разбор процессов. Внедрение — полностью на нас. Вашим людям нужно только прийти на обучение и принять систему."
+    "en": "A few hours of calls and walkthroughs during the audit. We handle the build. Your team joins for handover and training.",
+    "th": "แค่ไม่กี่ชั่วโมงสำหรับการคุยและพาดูขั้นตอนงานช่วง audit ส่วนการสร้างระบบเราดูแลเอง ทีมของคุณเข้ามาร่วมแค่ตอนส่งมอบและอบรม",
+    "ru": "Несколько часов на созвоны и разбор процессов во время аудита. Разработку ведём мы. Команда подключается на передачу системы и обучение."
   },
   "faq_q5": {
-    "en": "We've already tried AI and it didn't work. Why would this be different?",
-    "th": "เคยลอง AI แล้วไม่เวิร์ค ทำไมครั้งนี้จะต่าง?",
-    "ru": "Мы уже пробовали AI, и не сработало. Почему в этот раз будет иначе?"
+    "en": "We tried AI before and it didn't stick. Why is this different?",
+    "th": "เคยลองใช้ AI แล้วแต่ไม่ได้ผล ครั้งนี้ต่างกันอย่างไร?",
+    "ru": "Мы уже пробовали AI, и не прижилось. Что изменится?"
   },
   "faq_a5": {
-    "en": "Because most AI attempts fail at integration, not technology. The tools work. The problem is mapping them to your specific workflows, getting buy-in, and building systems your team will actually use. That's exactly what we diagnose in the audit phase.",
-    "th": "เพราะ AI ส่วนใหญ่พังตรงการเชื่อมต่อ ไม่ใช่ตัวเทคโนโลยี เครื่องมือมันดีอยู่แล้ว ปัญหาคือยังไม่มีใครมาจับคู่มันกับงานจริงของคุณ ทำให้ทีมยอมใช้ และสร้างระบบที่ทีมจะใช้ต่อจริง ๆ นั่นคือสิ่งที่เราวิเคราะห์ให้",
-    "ru": "Потому что AI чаще всего ломается не на технологии, а на интеграции. Инструменты работают. Проблема — привязать их к вашим конкретным процессам, добиться, чтобы команда приняла изменения, и построить систему, которой реально будут пользоваться. Именно это мы и разбираем на этапе аудита."
+    "en": "Most AI projects fail at integration, not technology. We fit the tools to how your team works, get people on board, and build systems they use every day.",
+    "th": "โปรเจกต์ AI ส่วนใหญ่ล้มเหลวตอนนำไปใช้จริง ไม่ใช่เพราะเทคโนโลยี เราปรับเครื่องมือให้เข้ากับวิธีทำงานของทีม ทำให้ทุกคนพร้อมใช้ และสร้างระบบที่ถูกใช้งานทุกวัน",
+    "ru": "Большинство AI-проектов проваливаются на внедрении, а не из-за технологии. Мы подстраиваем инструменты под то, как работает ваша команда, вовлекаем людей и строим системы, которыми пользуются каждый день."
   },
   "faq_q6": {
-    "en": "We don't have a big tech team. Can we still do this?",
-    "th": "ไม่มีทีมเทคใหญ่ ทำได้ไหม?",
-    "ru": "У нас нет большого IT-отдела. Это вообще возможно?"
+    "en": "We don't have a tech team. Can we still do this?",
+    "th": "เราไม่มีทีมไอที ทำได้ไหม?",
+    "ru": "У нас нет IT-команды. Это проблема?"
   },
   "faq_a6": {
-    "en": "Yes, this is built for exactly that situation. Most of our clients have little to no technical team. We handle everything technical. Your job is to understand your own business; our job is to translate that into working AI systems.",
-    "th": "ได้เลย เราทำมาเพื่อกรณีแบบนี้โดยเฉพาะ ลูกค้าเราส่วนใหญ่แทบไม่มีทีมเทค เราจัดการเรื่องเทคนิคทั้งหมด หน้าที่คุณคือรู้จักธุรกิจตัวเอง หน้าที่เราคือแปลงมันเป็นระบบ AI ที่ใช้ได้จริง",
-    "ru": "Да, мы как раз для этого и работаем. У большинства наших клиентов почти нет технической команды. Всю техническую часть берём на себя. Ваша задача — знать свой бизнес. Наша — превратить это в работающие AI-системы."
+    "en": "Yes. Most of our clients don't. You know your business. We handle everything technical.",
+    "th": "ได้แน่นอน ลูกค้าส่วนใหญ่ของเราก็ไม่มี คุณรู้จักธุรกิจของคุณดีที่สุด ส่วนเรื่องเทคนิคทั้งหมดเราดูแลเอง",
+    "ru": "Нет. У большинства наших клиентов её тоже нет. Вы знаете свой бизнес, а всю техническую часть мы берём на себя."
   },
   "closing_1": {
-    "en": "AI is here. Most will react.",
-    "th": "AI มาถึงแล้ว คนส่วนใหญ่จะแค่ตามเกม",
-    "ru": "AI уже здесь. Большинство будут догонять."
+    "en": "Start with one workflow.",
+    "th": "เริ่มจากงานเดียว",
+    "ru": "Начните с одного процесса."
   },
   "closing_2": {
-    "en": "The few with a plan will lead.",
-    "th": "คนที่มีแผนจะนำหน้า",
-    "ru": "Те, у кого есть план, будут впереди."
+    "en": "See it running in weeks.",
+    "th": "เห็นระบบทำงานจริงในไม่กี่สัปดาห์",
+    "ru": "Увидите его в работе через несколько недель."
   },
   "closing_3": {
-    "en": "We build for those few.",
-    "th": "เราสร้างให้คนกลุ่มนั้น",
-    "ru": "Мы работаем для них."
+    "en": "Then scale what works.",
+    "th": "แล้วค่อยขยายสิ่งที่ได้ผล",
+    "ru": "Затем масштабируйте то, что работает."
   },
   "footer_copy": {
-    "en": "© 2026 Rejig Labs · An arm of Rejig Labs · Thailand",
-    "th": "© 2026 Rejig Labs · ภายใต้ Rejig Labs · ประเทศไทย",
-    "ru": "© 2026 Rejig Labs · Подразделение Rejig Labs · Таиланд"
+    "en": "© 2026 Rejig Labs · Thailand",
+    "th": "© 2026 Rejig Labs · ประเทศไทย",
+    "ru": "© 2026 Rejig Labs · Таиланд"
   },
   "footer_privacy": {
     "en": "Privacy",
@@ -305,14 +285,14 @@
     "ru": "ЧТО МЫ СОЗДАЁМ"
   },
   "cap_h2": {
-    "en": "One team, the whole <em class=\"accent\">AI stack.</em>",
-    "th": "ทีมเดียว ดูแล<em class=\"accent\">ระบบ AI ทั้งหมด</em>",
-    "ru": "Одна команда, весь <em class=\"accent\">стек ИИ.</em>"
+    "en": "Four areas. <em class=\"accent\">One team.</em>",
+    "th": "สี่ด้าน <em class=\"accent\">ทีมเดียวดูแลครบ</em>",
+    "ru": "Четыре направления. <em class=\"accent\">Одна команда.</em>"
   },
   "cap_sub": {
-    "en": "From voice agents that answer the phone to autonomous systems that run for months. If it can be automated with AI, we build and ship it.",
-    "th": "ตั้งแต่เอเจนต์เสียงที่รับโทรศัพท์ ไปจนถึงระบบอัตโนมัติที่ทำงานต่อเนื่องได้หลายเดือน ถ้างานไหนใช้ AI ทำแทนได้ เราสร้างและส่งมอบให้",
-    "ru": "От голосовых агентов, отвечающих на звонки, до автономных систем, работающих месяцами. Если это можно автоматизировать с ИИ, мы это построим и запустим."
+    "en": "Customer conversations, growth, operations and knowledge. We build each one and connect it to the tools you already use.",
+    "th": "การสื่อสารกับลูกค้า การเติบโต งานปฏิบัติการ และองค์ความรู้ เราสร้างทุกส่วนและเชื่อมเข้ากับเครื่องมือที่คุณใช้อยู่",
+    "ru": "Общение с клиентами, рост, операции и знания. Мы строим каждое направление и подключаем его к вашим текущим инструментам."
   },
   "cap_1_t": {
     "en": "Voice AI Agents",
@@ -375,14 +355,14 @@
     "ru": "Многоязычные сайты, воронки, оплаты."
   },
   "cap_7_t": {
-    "en": "Knowledge / RAG",
-    "th": "ฐานความรู้ / RAG",
-    "ru": "База знаний / RAG"
+    "en": "Knowledge Assistant",
+    "th": "ผู้ช่วยตอบจากเอกสาร",
+    "ru": "Ассистент по базе знаний"
   },
   "cap_7_d": {
-    "en": "Your documents become an assistant.",
-    "th": "เปลี่ยนเอกสารของคุณให้เป็นผู้ช่วย",
-    "ru": "Ваши документы становятся ассистентом."
+    "en": "Answers from your own documents, in seconds.",
+    "th": "ตอบคำถามจากเอกสารของคุณเองภายในไม่กี่วินาที",
+    "ru": "Ответы из ваших документов за секунды."
   },
   "cap_8_t": {
     "en": "HR & Recruiting",
@@ -405,19 +385,19 @@
     "ru": "Счета, сверки, отчётность."
   },
   "ind_eyebrow": {
-    "en": "WHERE WE DEPLOY",
-    "th": "เราใช้งานที่ไหนบ้าง",
-    "ru": "ГДЕ МЫ ВНЕДРЯЕМ"
+    "en": "WHERE THIS APPLIES",
+    "th": "ใช้ได้กับธุรกิจไหนบ้าง",
+    "ru": "ГДЕ ЭТО РАБОТАЕТ"
   },
   "ind_h2": {
-    "en": "Built for the way <em class=\"accent\">your industry runs.</em>",
-    "th": "สร้างมาเพื่อวิธีการทำงานของ<em class=\"accent\">อุตสาหกรรมคุณ</em>",
-    "ru": "Создано под то, как работает <em class=\"accent\">ваша отрасль.</em>"
+    "en": "Where AI <em class=\"accent\">pays off first.</em>",
+    "th": "จุดที่ AI <em class=\"accent\">เห็นผลเร็วที่สุด</em>",
+    "ru": "Где AI <em class=\"accent\">окупается быстрее всего.</em>"
   },
   "ind_sub": {
-    "en": "Same engine, tuned to the workflow. Here is the first thing we would automate in each.",
-    "th": "เครื่องยนต์เดียวกัน ปรับจูนตามเวิร์กโฟลว์ นี่คือสิ่งแรกที่เราจะทำให้เป็นอัตโนมัติในแต่ละธุรกิจ",
-    "ru": "Один движок, настроенный под процесс. Вот что мы автоматизировали бы первым в каждой отрасли."
+    "en": "The first system we would build in each industry.",
+    "th": "ระบบแรกที่เราจะสร้างให้ในแต่ละอุตสาหกรรม",
+    "ru": "Первая система, которую мы построили бы в каждой отрасли."
   },
   "ind_1_n": {
     "en": "Hospitality",
@@ -575,14 +555,14 @@
     "ru": "Документация о соответствии SOC 2 / ISO доступна для корпоративных проектов."
   },
   "seo_title": {
-    "en": "AI Automation Agency in Thailand | Rejig Labs",
-    "th": "รับวางระบบ AI & แชทบอทอัตโนมัติ สำหรับธุรกิจ SME | Rejig Labs",
-    "ru": "AI-консалтинг и внедрение AI для бизнеса | Rejig Labs"
+    "en": "AI Implementation Partner in Thailand | Rejig Labs",
+    "th": "พาร์ตเนอร์วางระบบ AI สำหรับธุรกิจในไทย | Rejig Labs",
+    "ru": "Партнёр по внедрению AI в Таиланде | Rejig Labs"
   },
   "seo_desc": {
-    "en": "Rejig Labs is an AI automation agency in Thailand, based in Phuket. We find where AI saves you real time and money, then build it, deploy it, and train your team.",
-    "th": "Rejig Labs ที่ปรึกษาและรับวางระบบ AI สำหรับธุรกิจ SME ในไทย เราหาจุดที่ AI ช่วยลดต้นทุนและเวลา แล้วสร้างแชทบอท AI ระบบตอบลูกค้าอัตโนมัติ พร้อมอบรมทีมให้ใช้งานได้จริง",
-    "ru": "Rejig Labs находит, где AI сэкономит вашему бизнесу реальное время и деньги, затем создаёт и внедряет решение и обучает вашу команду им пользоваться."
+    "en": "Rejig Labs is an AI implementation partner based in Phuket, Thailand. We find where AI saves you time and money, build it into your tools, and train your team to run it.",
+    "th": "Rejig Labs พาร์ตเนอร์วางระบบ AI จากภูเก็ต เราหาจุดที่ AI ช่วยประหยัดเวลาและต้นทุน สร้างระบบเข้ากับเครื่องมือที่คุณใช้อยู่ แล้วสอนทีมของคุณให้ดูแลเองได้",
+    "ru": "Rejig Labs — партнёр по внедрению AI с базой на Пхукете. Находим, где AI экономит время и деньги, встраиваем его в ваши инструменты и обучаем команду им управлять."
   },
   "seo_title_chatbot": {
     "en": "AI Chatbot & LINE OA Automation for Business | Rejig Labs",
@@ -1215,5 +1195,950 @@
     "en": "See Beem",
     "th": "ดู Beem",
     "ru": "Смотреть Beem"
+  },
+  "nav_about": {
+    "en": "About",
+    "th": "เกี่ยวกับเรา",
+    "ru": "О нас"
+  },
+  "built_eyebrow": {
+    "en": "BUILT ON",
+    "th": "เทคโนโลยีที่เราใช้",
+    "ru": "НАШ СТЕК"
+  },
+  "built_sub": {
+    "en": "The platforms behind the systems we build.",
+    "th": "แพลตฟอร์มเบื้องหลังระบบที่เราสร้าง",
+    "ru": "Платформы, на которых работают наши системы."
+  },
+  "cap_g1": {
+    "en": "01 · CONVERSATIONS",
+    "th": "01 · การสื่อสารกับลูกค้า",
+    "ru": "01 · КОММУНИКАЦИИ"
+  },
+  "cap_g2": {
+    "en": "02 · GROWTH",
+    "th": "02 · การเติบโต",
+    "ru": "02 · РОСТ"
+  },
+  "cap_g3": {
+    "en": "03 · OPERATIONS",
+    "th": "03 · งานปฏิบัติการ",
+    "ru": "03 · ОПЕРАЦИИ"
+  },
+  "cap_g4": {
+    "en": "04 · KNOWLEDGE &amp; AGENTS",
+    "th": "04 · องค์ความรู้และเอเจนต์",
+    "ru": "04 · ЗНАНИЯ И АГЕНТЫ"
+  },
+  "about_eyebrow": {
+    "en": "ABOUT REJIG LABS",
+    "th": "เกี่ยวกับ REJIG LABS",
+    "ru": "О REJIG LABS"
+  },
+  "about_h1": {
+    "en": "We build what <em class=\"accent\">we recommend.</em>",
+    "th": "เราสร้าง<em class=\"accent\">สิ่งที่เราแนะนำ</em>",
+    "ru": "Мы строим то, <em class=\"accent\">что рекомендуем.</em>"
+  },
+  "about_sub": {
+    "en": "Rejig Labs is an AI implementation partner based in Phuket, Thailand. We turn AI plans into systems that run inside real businesses, then hand them to the people who use them.",
+    "th": "Rejig Labs คือพาร์ตเนอร์วางระบบ AI จากภูเก็ต เราเปลี่ยนแผน AI ให้เป็นระบบที่ทำงานจริงในธุรกิจ แล้วส่งมอบให้ทีมที่ใช้งานดูแลต่อ",
+    "ru": "Rejig Labs — партнёр по внедрению AI с базой на Пхукете. Мы превращаем AI-планы в системы, которые работают в реальном бизнесе, и передаём их людям, которые ими пользуются."
+  },
+  "about_why_h2": {
+    "en": "Why Rejig <em class=\"accent\">exists.</em>",
+    "th": "ทำไมต้อง <em class=\"accent\">Rejig</em>",
+    "ru": "Зачем <em class=\"accent\">нужен Rejig.</em>"
+  },
+  "about_why_1": {
+    "en": "Most companies don't lack AI tools. They lack someone who connects those tools to how the business really works.",
+    "th": "ธุรกิจส่วนใหญ่ไม่ได้ขาดเครื่องมือ AI แต่ขาดคนที่เชื่อมเครื่องมือเหล่านั้นเข้ากับวิธีทำงานจริงของธุรกิจ",
+    "ru": "Большинству компаний не хватает не AI-инструментов, а человека, который свяжет эти инструменты с тем, как бизнес работает на самом деле."
+  },
+  "about_why_2": {
+    "en": "We kept seeing the same pattern: a strategy deck, a few new subscriptions, and nothing different on Monday morning. Rejig Labs exists to close that gap. Fewer slides. More systems that run.",
+    "th": "เราเห็นภาพเดิมซ้ำ ๆ มีสไลด์กลยุทธ์ มีแอปใหม่ที่สมัครไว้ แต่เช้าวันจันทร์ทุกอย่างก็เหมือนเดิม Rejig Labs เกิดขึ้นเพื่อปิดช่องว่างนี้ สไลด์น้อยลง ระบบที่ทำงานจริงมากขึ้น",
+    "ru": "Мы снова и снова видели одно и то же: презентация со стратегией, пара новых подписок, а в понедельник утром ничего не меняется. Rejig Labs создан, чтобы закрыть этот разрыв. Меньше слайдов. Больше работающих систем."
+  },
+  "about_founder_eyebrow": {
+    "en": "FOUNDER",
+    "th": "ผู้ก่อตั้ง",
+    "ru": "ОСНОВАТЕЛЬ"
+  },
+  "about_founder_role": {
+    "en": "Founder & CEO · known to clients as Mr. RT",
+    "th": "ผู้ก่อตั้งและ CEO · ลูกค้ารู้จักในชื่อ Mr. RT",
+    "ru": "Основатель и CEO · клиенты знают как Mr. RT"
+  },
+  "about_founder_1": {
+    "en": "Rut started Rejig Labs to give businesses the part most AI advice leaves out: the build.",
+    "th": "Rut ก่อตั้ง Rejig Labs เพื่อมอบสิ่งที่คำแนะนำด้าน AI ส่วนใหญ่ขาดไป นั่นคือการลงมือสร้างจริง",
+    "ru": "Rejig Labs — это ответ Rut на то, что обычно выпадает из AI-консалтинга: саму разработку."
+  },
+  "about_founder_2": {
+    "en": "Before Rejig, Rut worked in management and marketing with companies in logistics, energy, robotics, food and Web3. That time on the business side of the table is the edge. Rut knows where hours and money leak, and that a tool only matters if people use it every day.",
+    "th": "ก่อนมี Rejig, Rut ทำงานด้านบริหารและการตลาดกับบริษัทในหลายอุตสาหกรรม ทั้งโลจิสติกส์ พลังงาน หุ่นยนต์ อาหาร และ Web3 ประสบการณ์ฝั่งธุรกิจนี้คือจุดแข็ง Rut รู้ว่าเวลาและเงินรั่วไหลตรงไหน และรู้ว่าเครื่องมือจะมีค่าก็ต่อเมื่อคนใช้งานมันทุกวัน",
+    "ru": "До Rejig у Rut был опыт в управлении и маркетинге в компаниях из логистики, энергетики, робототехники, пищевой отрасли и Web3. Этот опыт со стороны бизнеса и есть преимущество: Rut знает, где утекают время и деньги, и что инструмент ценен, только если им пользуются каждый день."
+  },
+  "about_founder_3": {
+    "en": "Today Rut leads every Rejig project personally, from the first call to the day your team runs the system on its own. Rut also founded Beem, the AI front desk that grew out of Rejig's client work.",
+    "th": "วันนี้ Rut ดูแลทุกโปรเจกต์ของ Rejig ด้วยตัวเอง ตั้งแต่การคุยครั้งแรกจนถึงวันที่ทีมของคุณดูแลระบบเองได้ Rut ยังเป็นผู้ก่อตั้ง Beem ระบบ AI รับสายหน้าร้านที่ต่อยอดมาจากงานลูกค้าของ Rejig",
+    "ru": "Сегодня Rut лично ведёт каждый проект Rejig — от первого звонка до дня, когда ваша команда управляет системой сама. Beem, AI-ресепшн, который вырос из клиентских проектов Rejig, — тоже проект Rut."
+  },
+  "about_founder_quote": {
+    "en": "“I don't sell AI. I sell hours back in your week, and a team that trusts the system.”",
+    "th": "“สิ่งที่เราขายไม่ใช่ AI แต่คือเวลาที่คุณได้คืนในแต่ละสัปดาห์ และทีมที่เชื่อมั่นในระบบ”",
+    "ru": "«Я не продаю AI. Я продаю часы, которые возвращаются в вашу неделю, и команду, которая доверяет системе.»"
+  },
+  "about_founder_card": {
+    "en": "Contact card ›",
+    "th": "นามบัตรติดต่อ ›",
+    "ru": "Контакты ›"
+  },
+  "about_how_eyebrow": {
+    "en": "HOW WE WORK",
+    "th": "วิธีทำงานของเรา",
+    "ru": "КАК МЫ РАБОТАЕМ"
+  },
+  "about_how_h2": {
+    "en": "Four promises <em class=\"accent\">on every project.</em>",
+    "th": "สี่ข้อที่เรายึด<em class=\"accent\">ในทุกโปรเจกต์</em>",
+    "ru": "Четыре обещания <em class=\"accent\">в каждом проекте.</em>"
+  },
+  "about_p1_t": {
+    "en": "We build what we recommend.",
+    "th": "เราสร้างสิ่งที่เราแนะนำ",
+    "ru": "Строим то, что рекомендуем."
+  },
+  "about_p1_d": {
+    "en": "No advice we can't deliver ourselves. If it's in the plan, we can build it.",
+    "th": "เราไม่แนะนำสิ่งที่เราทำเองไม่ได้ อะไรที่อยู่ในแผน เราสร้างได้",
+    "ru": "Никаких советов, которые мы не можем реализовать сами. Если это есть в плане, мы это построим."
+  },
+  "about_p2_t": {
+    "en": "You own everything.",
+    "th": "ทุกอย่างเป็นของคุณ",
+    "ru": "Всё принадлежит вам."
+  },
+  "about_p2_d": {
+    "en": "Your accounts, your data, your systems. Fully exportable. No lock-in.",
+    "th": "บัญชี ข้อมูล และระบบเป็นของคุณ ส่งออกได้ทั้งหมด ไม่ผูกมัด",
+    "ru": "Ваши аккаунты, данные и системы. Всё можно выгрузить. Никакой привязки."
+  },
+  "about_p3_t": {
+    "en": "A person signs off.",
+    "th": "มีคนอนุมัติเสมอ",
+    "ru": "Последнее слово за человеком."
+  },
+  "about_p3_d": {
+    "en": "Nothing sends or publishes without an approval step you control.",
+    "th": "ไม่มีอะไรถูกส่งหรือเผยแพร่โดยไม่ผ่านขั้นตอนอนุมัติที่คุณควบคุม",
+    "ru": "Ничего не отправляется и не публикуется без шага согласования под вашим контролем."
+  },
+  "about_p4_t": {
+    "en": "We stay until it sticks.",
+    "th": "เราอยู่จนระบบเข้าที่",
+    "ru": "Остаёмся, пока всё не заработает."
+  },
+  "about_p4_d": {
+    "en": "Training, fixes and tuning until your team runs it without us.",
+    "th": "อบรม แก้ไข และปรับจูน จนทีมของคุณดูแลได้เองโดยไม่ต้องพึ่งเรา",
+    "ru": "Обучение, доработки и настройка, пока команда не сможет управлять системой без нас."
+  },
+  "about_f1_v": {
+    "en": "Phuket & Bangkok",
+    "th": "ภูเก็ตและกรุงเทพฯ",
+    "ru": "Пхукет и Бангкок"
+  },
+  "about_f1_l": {
+    "en": "Where we're based",
+    "th": "ที่ตั้งของเรา",
+    "ru": "Где мы находимся"
+  },
+  "about_f2_v": {
+    "en": "Worldwide",
+    "th": "ทั่วโลก",
+    "ru": "Весь мир"
+  },
+  "about_f2_l": {
+    "en": "Where we work",
+    "th": "พื้นที่ที่เราทำงาน",
+    "ru": "Где мы работаем"
+  },
+  "about_f3_l": {
+    "en": "Languages we work in",
+    "th": "ภาษาที่เราใช้ทำงาน",
+    "ru": "Языки работы"
+  },
+  "about_f4_l": {
+    "en": "Published case studies",
+    "th": "กรณีศึกษาที่เผยแพร่แล้ว",
+    "ru": "Опубликованных кейса"
+  },
+  "seo_title_about": {
+    "en": "About Rejig Labs: AI Implementation Partner in Thailand",
+    "th": "เกี่ยวกับ Rejig Labs: พาร์ตเนอร์วางระบบ AI ในไทย",
+    "ru": "О Rejig Labs: партнёр по внедрению AI в Таиланде"
+  },
+  "seo_desc_about": {
+    "en": "Rejig Labs is an AI implementation partner in Phuket, Thailand, founded by Rut Adikari (Mr. RT). We build what we recommend and stay until your team runs it.",
+    "th": "Rejig Labs พาร์ตเนอร์วางระบบ AI จากภูเก็ต ก่อตั้งโดย Rut Adikari (Mr. RT) เราสร้างสิ่งที่เราแนะนำ และอยู่จนทีมของคุณดูแลระบบเองได้",
+    "ru": "Rejig Labs — партнёр по внедрению AI на Пхукете, основатель — Rut Adikari (Mr. RT). Мы строим то, что рекомендуем, и остаёмся, пока команда не освоит систему."
+  },
+  "bc_nav_home": {
+    "en": "Home",
+    "th": "หน้าแรก",
+    "ru": "Главная"
+  },
+  "bc_nav_cases": {
+    "en": "Case Studies",
+    "th": "ผลงาน",
+    "ru": "Кейсы"
+  },
+  "bc_nav_about": {
+    "en": "About",
+    "th": "เกี่ยวกับเรา",
+    "ru": "О нас"
+  },
+  "bc_nav_faq": {
+    "en": "FAQ",
+    "th": "คำถามที่พบบ่อย",
+    "ru": "Вопросы"
+  },
+  "bc_cta_book": {
+    "en": "Book a Call",
+    "th": "นัดคุย",
+    "ru": "Записаться на звонок"
+  },
+  "bc_hero_badge": {
+    "en": "Growth Partner · Thailand & Worldwide",
+    "th": "พาร์ทเนอร์ด้านการเติบโต · ไทยและทั่วโลก",
+    "ru": "Партнёр по росту · Таиланд и весь мир"
+  },
+  "bc_hero_h1": {
+    "en": "Turn attention<br>into traction.",
+    "th": "เปลี่ยนความสนใจ<br>ให้เป็นการเติบโต",
+    "ru": "Превращаем внимание<br>в рост."
+  },
+  "bc_hero_sub": {
+    "en": "Strategy, systems and storytelling for Web3 teams. Built to scale.",
+    "th": "กลยุทธ์ ระบบ และการเล่าเรื่องสำหรับทีม Web3 พร้อมขยายได้เต็มที่",
+    "ru": "Стратегия, системы и сторителлинг для Web3-команд. С запасом на масштаб."
+  },
+  "bc_hero_cta2": {
+    "en": "See Services",
+    "th": "ดูบริการ",
+    "ru": "Наши услуги"
+  },
+  "bc_about_pill": {
+    "en": "About Rejig Labs",
+    "th": "เกี่ยวกับ Rejig Labs",
+    "ru": "О Rejig Labs"
+  },
+  "bc_about_h2a": {
+    "en": "Growth for fast-moving",
+    "th": "การเติบโตสำหรับ",
+    "ru": "Рост для быстрых"
+  },
+  "bc_about_h2b": {
+    "en": "Web3 projects.",
+    "th": "โปรเจกต์ Web3 ที่เคลื่อนเร็ว",
+    "ru": "Web3-проектов."
+  },
+  "bc_about_sub": {
+    "en": "Clear strategy. Fast execution. On demand.",
+    "th": "กลยุทธ์ชัดเจน ลงมือเร็ว พร้อมเมื่อคุณต้องการ",
+    "ru": "Чёткая стратегия. Быстрое исполнение. Когда нужно."
+  },
+  "bc_about_stat1": {
+    "en": "Helped clients raise $10M+",
+    "th": "ช่วยลูกค้าระดมทุนได้กว่า $10M",
+    "ru": "Помогли клиентам привлечь $10M+"
+  },
+  "bc_about_stat2": {
+    "en": "47% more user acquisition across clients",
+    "th": "ลูกค้าได้ผู้ใช้ใหม่เพิ่มขึ้น 47%",
+    "ru": "На 47% больше новых пользователей у клиентов"
+  },
+  "bc_about_trust": {
+    "en": "Trusted by 30+ projects",
+    "th": "ได้รับความไว้วางใจจากกว่า 30 โปรเจกต์",
+    "ru": "Нам доверяют 30+ проектов"
+  },
+  "bc_results_pill": {
+    "en": "Results",
+    "th": "ผลลัพธ์",
+    "ru": "Результаты"
+  },
+  "bc_results_h2a": {
+    "en": "Results you can measure.",
+    "th": "ผลลัพธ์ที่วัดได้",
+    "ru": "Результат, который можно измерить."
+  },
+  "bc_results_h2b": {
+    "en": "Growth you can see.",
+    "th": "การเติบโตที่เห็นได้จริง",
+    "ru": "Рост, который видно."
+  },
+  "bc_results_p": {
+    "en": "We focus on one thing: outcomes you can measure.",
+    "th": "เราโฟกัสเรื่องเดียว คือผลลัพธ์ที่วัดได้",
+    "ru": "Мы сосредоточены на одном: измеримом результате."
+  },
+  "bc_r1_title": {
+    "en": "Founder-Led Marketing",
+    "th": "การตลาดนำโดยผู้ก่อตั้ง",
+    "ru": "Маркетинг через основателя"
+  },
+  "bc_r1_desc": {
+    "en": "Put the founder up front. Real attention on the project.",
+    "th": "ให้ผู้ก่อตั้งเป็นหน้าด่าน ดึงความสนใจจริงมาสู่โปรเจกต์",
+    "ru": "Основатель — в центре внимания. Реальный интерес к проекту."
+  },
+  "bc_r1_tag1": {
+    "en": "5 Content Pillars",
+    "th": "5 แกนหลักคอนเทนต์",
+    "ru": "5 контентных направлений"
+  },
+  "bc_r1_tag2": {
+    "en": "Scheduling & Management",
+    "th": "วางแผนและดูแลโพสต์",
+    "ru": "Планирование и ведение"
+  },
+  "bc_r2_title": {
+    "en": "Project Partnerships",
+    "th": "พาร์ทเนอร์ระหว่างโปรเจกต์",
+    "ru": "Партнёрства с проектами"
+  },
+  "bc_r2_desc": {
+    "en": "Team up with the right projects. Build reach and authority together.",
+    "th": "จับมือกับโปรเจกต์ที่ใช่ ขยายการเข้าถึงและสร้างความน่าเชื่อถือไปด้วยกัน",
+    "ru": "Объединяйтесь с нужными проектами. Вместе растите охват и авторитет."
+  },
+  "bc_r2_tag1": {
+    "en": "Wide Network",
+    "th": "เครือข่ายกว้าง",
+    "ru": "Широкая сеть"
+  },
+  "bc_r2_tag2": {
+    "en": "Relationship Building",
+    "th": "สร้างความสัมพันธ์",
+    "ru": "Выстраивание связей"
+  },
+  "bc_r3_title": {
+    "en": "Events",
+    "th": "อีเวนต์",
+    "ru": "Мероприятия"
+  },
+  "bc_r3_desc": {
+    "en": "More than a sponsor logo. Meet investors, users and long-term partners.",
+    "th": "มากกว่าแค่โลโก้สปอนเซอร์ ได้พบนักลงทุน ผู้ใช้ และพาร์ทเนอร์ระยะยาว",
+    "ru": "Больше, чем логотип спонсора. Встречи с инвесторами, пользователями и долгосрочными партнёрами."
+  },
+  "bc_r3_tag1": {
+    "en": "Brand Visibility",
+    "th": "การมองเห็นแบรนด์",
+    "ru": "Узнаваемость бренда"
+  },
+  "bc_r3_tag2": {
+    "en": "Fresh Ideas",
+    "th": "ไอเดียใหม่",
+    "ru": "Свежие идеи"
+  },
+  "bc_r4_title": {
+    "en": "Ad Strategy",
+    "th": "กลยุทธ์โฆษณา",
+    "ru": "Рекламная стратегия"
+  },
+  "bc_r4_desc": {
+    "en": "Funnels built for your project. No templates. Scaling gets simple.",
+    "th": "ฟันเนลที่ออกแบบเพื่อโปรเจกต์ของคุณ ไม่ใช้เทมเพลต ขยายได้ง่าย",
+    "ru": "Воронки под ваш проект. Без шаблонов. Масштабировать просто."
+  },
+  "bc_r4_tag1": {
+    "en": "User Acquisition",
+    "th": "หาผู้ใช้ใหม่",
+    "ru": "Привлечение пользователей"
+  },
+  "bc_r4_tag2": {
+    "en": "TOFU – BOFU Strategy",
+    "th": "กลยุทธ์ TOFU – BOFU",
+    "ru": "Стратегия TOFU – BOFU"
+  },
+  "bc_p1_badge": {
+    "en": "Phase 1",
+    "th": "เฟส 1",
+    "ru": "Этап 1"
+  },
+  "bc_p1_title": {
+    "en": "Strategic Clarity",
+    "th": "กลยุทธ์ที่ชัดเจน",
+    "ru": "Ясная стратегия"
+  },
+  "bc_p1_sub": {
+    "en": "We start with questions. Market, product, goals. You leave with a sharp story and a clear roadmap.",
+    "th": "เราเริ่มจากคำถาม ตลาด ผลิตภัณฑ์ เป้าหมาย คุณจะได้เรื่องราวที่คมชัดและโรดแมปที่ชัดเจน",
+    "ru": "Начинаем с вопросов. Рынок, продукт, цели. На выходе — сильная история и понятный план."
+  },
+  "bc_p1_tag1": {
+    "en": "Project Audit",
+    "th": "ตรวจสอบโปรเจกต์",
+    "ru": "Аудит проекта"
+  },
+  "bc_p1_tag2": {
+    "en": "Go-to-Market & Positioning",
+    "th": "แผนเข้าตลาดและการวางตำแหน่ง",
+    "ru": "Выход на рынок и позиционирование"
+  },
+  "bc_p2_badge": {
+    "en": "Phase 2",
+    "th": "เฟส 2",
+    "ru": "Этап 2"
+  },
+  "bc_p2_title": {
+    "en": "High-Leverage Execution",
+    "th": "ลงมือทำแบบได้ผลสูง",
+    "ru": "Исполнение с максимальной отдачей"
+  },
+  "bc_p2_sub": {
+    "en": "Done for you. Never without you. Fast, precise execution. You stay in the loop.",
+    "th": "เราทำให้ แต่ไม่ทิ้งคุณ ลงมือเร็วและแม่นยำ คุณรู้ทุกความคืบหน้า",
+    "ru": "Делаем за вас, но всегда вместе с вами. Быстро и точно. Вы в курсе каждого шага."
+  },
+  "bc_p2_tag1": {
+    "en": "Growth Systems",
+    "th": "ระบบการเติบโต",
+    "ru": "Системы роста"
+  },
+  "bc_p2_tag2": {
+    "en": "Influencer & Community Campaigns",
+    "th": "แคมเปญอินฟลูเอนเซอร์และคอมมูนิตี้",
+    "ru": "Кампании с инфлюенсерами и комьюнити"
+  },
+  "bc_p3_badge": {
+    "en": "Phase 3",
+    "th": "เฟส 3",
+    "ru": "Этап 3"
+  },
+  "bc_p3_title": {
+    "en": "Insights & Iteration",
+    "th": "วิเคราะห์และปรับปรุง",
+    "ru": "Аналитика и улучшения"
+  },
+  "bc_p3_sub": {
+    "en": "We measure what matters. Then improve it. Clear reports, live dashboards, next steps.",
+    "th": "เราวัดสิ่งที่สำคัญ แล้วปรับให้ดีขึ้น รายงานชัดเจน แดชบอร์ดเรียลไทม์ พร้อมขั้นตอนถัดไป",
+    "ru": "Измеряем главное. Затем улучшаем. Понятные отчёты, живые дашборды, следующие шаги."
+  },
+  "bc_p3_tag1": {
+    "en": "Report & Review",
+    "th": "รายงานและทบทวน",
+    "ru": "Отчёты и разбор"
+  },
+  "bc_p3_tag2": {
+    "en": "Feedback Loops & Optimization",
+    "th": "รับฟีดแบ็กและปรับให้ดีขึ้น",
+    "ru": "Обратная связь и оптимизация"
+  },
+  "bc_how_pill": {
+    "en": "How We Work",
+    "th": "วิธีการทำงาน",
+    "ru": "Как мы работаем"
+  },
+  "bc_how_h2a": {
+    "en": "From plan to launch.",
+    "th": "จากแผนสู่การเปิดตัว",
+    "ru": "От плана до запуска."
+  },
+  "bc_how_h2b": {
+    "en": "One simple path.",
+    "th": "ในเส้นทางเดียวที่เรียบง่าย",
+    "ru": "Один простой путь."
+  },
+  "bc_feat_pill": {
+    "en": "Services",
+    "th": "บริการ",
+    "ru": "Услуги"
+  },
+  "bc_feat_h2a": {
+    "en": "Built to scale.",
+    "th": "พร้อมขยาย",
+    "ru": "Готово к масштабу."
+  },
+  "bc_feat_h2b": {
+    "en": "Made to convert.",
+    "th": "สร้างยอดขายได้จริง",
+    "ru": "Создано для конверсий."
+  },
+  "bc_feat_p": {
+    "en": "Strategy plus AI-driven systems. Web3 teams grow faster.",
+    "th": "กลยุทธ์ผสานระบบ AI ช่วยให้ทีม Web3 เติบโตเร็วขึ้น",
+    "ru": "Стратегия плюс системы на базе AI. Web3-команды растут быстрее."
+  },
+  "bc_f1_title": {
+    "en": "Growth System",
+    "th": "ระบบการเติบโต",
+    "ru": "Система роста"
+  },
+  "bc_f1_tag": {
+    "en": "ESSENTIAL",
+    "th": "พื้นฐาน",
+    "ru": "БАЗА"
+  },
+  "bc_f1_sub": {
+    "en": "Funnels that convert",
+    "th": "ฟันเนลที่ปิดการขายได้",
+    "ru": "Воронки, которые конвертируют"
+  },
+  "bc_f1_desc": {
+    "en": "Full-funnel systems for user growth and fundraising.",
+    "th": "ระบบครบทั้งฟันเนล เพื่อเพิ่มผู้ใช้และระดมทุน",
+    "ru": "Полная воронка для роста аудитории и привлечения инвестиций."
+  },
+  "bc_f2_title": {
+    "en": "Brand Strategy & Positioning",
+    "th": "กลยุทธ์แบรนด์และการวางตำแหน่ง",
+    "ru": "Стратегия бренда и позиционирование"
+  },
+  "bc_f2_sub": {
+    "en": "Narratives that stick",
+    "th": "เรื่องราวที่คนจำได้",
+    "ru": "Истории, которые запоминаются"
+  },
+  "bc_f2_desc": {
+    "en": "Stories that land with users, partners and investors.",
+    "th": "เรื่องราวที่เข้าถึงผู้ใช้ พาร์ทเนอร์ และนักลงทุน",
+    "ru": "Истории, которые находят отклик у пользователей, партнёров и инвесторов."
+  },
+  "bc_f3_title": {
+    "en": "Web3 Ads Engine",
+    "th": "ระบบโฆษณา Web3",
+    "ru": "Реклама для Web3"
+  },
+  "bc_f3_sub": {
+    "en": "Crypto-native campaigns",
+    "th": "แคมเปญสำหรับโลกคริปโต",
+    "ru": "Кампании для крипто-аудитории"
+  },
+  "bc_f3_desc": {
+    "en": "Ads that perform on Meta, Google and Web3 platforms.",
+    "th": "โฆษณาที่ได้ผลบน Meta, Google และแพลตฟอร์ม Web3",
+    "ru": "Реклама, которая работает в Meta, Google и на Web3-площадках."
+  },
+  "bc_f4_title": {
+    "en": "Paid + Organic SEO",
+    "th": "SEO แบบเสียเงินและออร์แกนิก",
+    "ru": "Платное и органическое SEO"
+  },
+  "bc_f4_sub": {
+    "en": "Visibility that compounds",
+    "th": "การมองเห็นที่เพิ่มขึ้นทบต้น",
+    "ru": "Видимость, которая накапливается"
+  },
+  "bc_f4_desc": {
+    "en": "Rank faster. Get traffic that converts.",
+    "th": "ติดอันดับเร็วขึ้น ได้ทราฟฟิกที่เปลี่ยนเป็นลูกค้า",
+    "ru": "Быстрее в топе. Трафик, который конвертируется."
+  },
+  "bc_f5_title": {
+    "en": "KOL & Thought Leaders",
+    "th": "KOL และผู้นำทางความคิด",
+    "ru": "KOL и лидеры мнений"
+  },
+  "bc_f5_tag": {
+    "en": "UPDATED",
+    "th": "อัปเดต",
+    "ru": "ОБНОВЛЕНО"
+  },
+  "bc_f5_sub": {
+    "en": "Trusted voices",
+    "th": "เสียงที่คนเชื่อถือ",
+    "ru": "Голоса, которым доверяют"
+  },
+  "bc_f5_desc": {
+    "en": "We match you with trusted voices in Web3 and AI. Adoption follows.",
+    "th": "เราจับคู่คุณกับคนที่มีเสียงน่าเชื่อถือในวงการ Web3 และ AI แล้วผู้ใช้จะตามมา",
+    "ru": "Подбираем авторитетных людей в Web3 и AI. Пользователи приходят следом."
+  },
+  "bc_f6_title": {
+    "en": "AI-Powered Workflows",
+    "th": "เวิร์กโฟลว์ขับเคลื่อนด้วย AI",
+    "ru": "Процессы на базе AI"
+  },
+  "bc_f6_sub": {
+    "en": "Marketing automation",
+    "th": "การตลาดอัตโนมัติ",
+    "ru": "Автоматизация маркетинга"
+  },
+  "bc_f6_desc": {
+    "en": "AI handles follow-ups, lead flows and outreach.",
+    "th": "AI ดูแลการติดตามลูกค้า การจัดการลีด และการติดต่อออกให้",
+    "ru": "AI ведёт фоллоу-апы, лиды и рассылки."
+  },
+  "bc_ben_pill": {
+    "en": "Why Rejig Labs",
+    "th": "ทำไมต้อง Rejig Labs",
+    "ru": "Почему Rejig Labs"
+  },
+  "bc_ben_h2a": {
+    "en": "Not just a service.",
+    "th": "ไม่ใช่แค่บริการ",
+    "ru": "Не просто услуга."
+  },
+  "bc_ben_h2b": {
+    "en": "Results.",
+    "th": "แต่คือผลลัพธ์",
+    "ru": "Результат."
+  },
+  "bc_ben_t1": {
+    "en": "AI-Ready Flows",
+    "th": "โฟลว์พร้อม AI",
+    "ru": "Процессы с AI"
+  },
+  "bc_ben_t2": {
+    "en": "Funnels That Convert",
+    "th": "ฟันเนลที่ปิดการขายได้",
+    "ru": "Конвертящие воронки"
+  },
+  "bc_ben_t3": {
+    "en": "Fast Execution",
+    "th": "ลงมือเร็ว",
+    "ru": "Быстрое исполнение"
+  },
+  "bc_ben_t4": {
+    "en": "SEO Optimized",
+    "th": "เหมาะกับ SEO",
+    "ru": "SEO-оптимизация"
+  },
+  "bc_ben_t5": {
+    "en": "Customizable",
+    "th": "ปรับแต่งได้",
+    "ru": "Гибкая настройка"
+  },
+  "bc_ben_t6": {
+    "en": "Scalable",
+    "th": "ขยายได้",
+    "ru": "Масштабируемость"
+  },
+  "bc_ben_t7": {
+    "en": "More Engagement",
+    "th": "เอนเกจเมนต์สูงขึ้น",
+    "ru": "Больше вовлечённости"
+  },
+  "bc_ben_t8": {
+    "en": "Expandable",
+    "th": "ต่อยอดได้",
+    "ru": "Легко расширить"
+  },
+  "bc_ben_t9": {
+    "en": "Secure",
+    "th": "ปลอดภัย",
+    "ru": "Безопасность"
+  },
+  "bc_ben_t10": {
+    "en": "Quality First",
+    "th": "คุณภาพมาก่อน",
+    "ru": "Качество прежде всего"
+  },
+  "bc_strat_h3": {
+    "en": "A strategy built for you.",
+    "th": "กลยุทธ์ที่ออกแบบมาเพื่อคุณ",
+    "ru": "Стратегия под ваш проект."
+  },
+  "bc_strat_cta2": {
+    "en": "Send a Request",
+    "th": "ส่งคำขอ",
+    "ru": "Отправить заявку"
+  },
+  "bc_strat_comm": {
+    "en": "Fast Communication",
+    "th": "ติดต่อสื่อสารรวดเร็ว",
+    "ru": "Быстрая связь"
+  },
+  "bc_s1_title": {
+    "en": "Move With The Market",
+    "th": "ไปให้ทันตลาด",
+    "ru": "В темпе рынка"
+  },
+  "bc_s1_badge": {
+    "en": "FAST",
+    "th": "เร็ว",
+    "ru": "БЫСТРО"
+  },
+  "bc_s1_desc": {
+    "en": "Markets move fast. So do we. Quick decisions, quick launches.",
+    "th": "ตลาดเปลี่ยนเร็ว เราก็เช่นกัน ตัดสินใจไว เปิดตัวไว",
+    "ru": "Рынок движется быстро. Мы тоже. Быстрые решения, быстрые запуски."
+  },
+  "bc_s2_title": {
+    "en": "Real Results, No Fluff",
+    "th": "ผลลัพธ์จริง ไม่มีน้ำ",
+    "ru": "Реальный результат, без воды"
+  },
+  "bc_s2_desc": {
+    "en": "You need impact, not decks. We focus on performance, conversion and visibility. No vanity metrics.",
+    "th": "คุณต้องการผลลัพธ์ ไม่ใช่สไลด์ เราโฟกัสที่ประสิทธิภาพ คอนเวอร์ชัน และการมองเห็น ไม่ใช่ตัวเลขสวยหรู",
+    "ru": "Вам нужен эффект, а не презентации. Мы работаем на результат, конверсию и видимость. Без метрик для галочки."
+  },
+  "bc_s3_title": {
+    "en": "Return On Investment",
+    "th": "ผลตอบแทนจากการลงทุน",
+    "ru": "Окупаемость инвестиций"
+  },
+  "bc_s3_desc": {
+    "en": "Every dollar tracked. Every campaign measured. We double down on what works.",
+    "th": "ติดตามทุกดอลลาร์ วัดผลทุกแคมเปญ แล้วทุ่มกับสิ่งที่ได้ผล",
+    "ru": "Каждый доллар на учёте. Каждая кампания измерена. Усиливаем то, что работает."
+  },
+  "bc_faq_h2a": {
+    "en": "Frequently",
+    "th": "คำถาม",
+    "ru": "Частые"
+  },
+  "bc_faq_h2b": {
+    "en": "asked questions",
+    "th": "ที่พบบ่อย",
+    "ru": "вопросы"
+  },
+  "bc_faq_p": {
+    "en": "Quick answers to common questions.",
+    "th": "คำตอบสั้นๆ สำหรับคำถามที่เจอบ่อย",
+    "ru": "Короткие ответы на частые вопросы."
+  },
+  "bc_faq1_q": {
+    "en": "Why “Rejig” Labs?",
+    "th": "ทำไมชื่อ “Rejig” Labs?",
+    "ru": "Почему «Rejig» Labs?"
+  },
+  "bc_faq1_a": {
+    "en": "“Rejig” means to rethink and reorganize. That’s what we do. We take your strategy and systems and rebuild them for growth in Web3.",
+    "th": "“Rejig” แปลว่าคิดใหม่และจัดใหม่ นั่นคือสิ่งที่เราทำ เรานำกลยุทธ์และระบบของคุณมาปรับใหม่ เพื่อการเติบโตในโลก Web3",
+    "ru": "«Rejig» — значит переосмыслить и перестроить. Именно это мы и делаем: перестраиваем вашу стратегию и системы для роста в Web3."
+  },
+  "bc_faq2_q": {
+    "en": "Who are we?",
+    "th": "เราคือใคร?",
+    "ru": "Кто мы?"
+  },
+  "bc_faq2_a": {
+    "en": "A growth partner for Web3 and AI projects. Marketing expertise plus blockchain knowledge. Focused on results.",
+    "th": "พาร์ทเนอร์ด้านการเติบโตสำหรับโปรเจกต์ Web3 และ AI เชี่ยวชาญการตลาดและเข้าใจบล็อกเชน มุ่งที่ผลลัพธ์",
+    "ru": "Партнёр по росту для Web3- и AI-проектов. Экспертиза в маркетинге плюс знание блокчейна. Фокус на результате."
+  },
+  "bc_faq3_q": {
+    "en": "Who do we work with?",
+    "th": "เราทำงานกับใคร?",
+    "ru": "С кем мы работаем?"
+  },
+  "bc_faq3_a": {
+    "en": "Web3 projects, DeFi protocols, NFT platforms, AI companies and blockchain startups. Teams with product-market fit, ready to grow.",
+    "th": "โปรเจกต์ Web3, โปรโตคอล DeFi, แพลตฟอร์ม NFT, บริษัท AI และสตาร์ทอัพบล็อกเชน ทีมที่มี product-market fit และพร้อมเติบโต",
+    "ru": "Web3-проекты, DeFi-протоколы, NFT-платформы, AI-компании и блокчейн-стартапы. Команды с product-market fit, готовые к росту."
+  },
+  "bc_faq4_q": {
+    "en": "How do we measure success?",
+    "th": "เราวัดความสำเร็จอย่างไร?",
+    "ru": "Как мы измеряем успех?"
+  },
+  "bc_faq4_a": {
+    "en": "Clear KPIs: user acquisition, conversion, TVL growth, community size and ROI on ad spend. You get live dashboards and weekly reports.",
+    "th": "ใช้ KPI ที่ชัดเจน ได้แก่ ผู้ใช้ใหม่ คอนเวอร์ชัน การเติบโตของ TVL ขนาดคอมมูนิตี้ และ ROI จากค่าโฆษณา คุณจะได้แดชบอร์ดเรียลไทม์และรายงานทุกสัปดาห์",
+    "ru": "Понятные KPI: привлечение пользователей, конверсия, рост TVL, размер комьюнити и ROI рекламы. У вас будут живые дашборды и еженедельные отчёты."
+  },
+  "bc_faq5_q": {
+    "en": "How do we get started?",
+    "th": "เริ่มต้นอย่างไร?",
+    "ru": "Как начать?"
+  },
+  "bc_faq5_a": {
+    "en": "Book a call on this page. We review where you are, agree on goals and propose a growth plan. Then we move fast.",
+    "th": "นัดคุยได้จากหน้านี้ เราจะดูว่าคุณอยู่จุดไหน ตกลงเป้าหมายร่วมกัน แล้วเสนอแผนการเติบโต จากนั้นลงมือทันที",
+    "ru": "Запишитесь на звонок на этой странице. Разберём текущую ситуацию, согласуем цели и предложим план роста. Дальше — действуем быстро."
+  },
+  "bc_faq6_q": {
+    "en": "What makes us different?",
+    "th": "อะไรทำให้เราแตกต่าง?",
+    "ru": "Чем мы отличаемся?"
+  },
+  "bc_faq6_a": {
+    "en": "Founder-led. Execution-first. Web3-native. No templates. We build a framework for your project and own the results.",
+    "th": "นำโดยผู้ก่อตั้ง เน้นลงมือทำ เข้าใจ Web3 จากข้างใน ไม่ใช้เทมเพลต เราสร้างแนวทางเฉพาะโปรเจกต์ของคุณ และรับผิดชอบต่อผลลัพธ์",
+    "ru": "Ведёт основатель. Упор на исполнение. Мы изнутри Web3. Никаких шаблонов: строим подход под ваш проект и отвечаем за результат."
+  },
+  "bc_cta_eyebrow": {
+    "en": "Ready to grow?",
+    "th": "พร้อมเติบโตหรือยัง?",
+    "ru": "Готовы расти?"
+  },
+  "bc_cta_h2a": {
+    "en": "Stop scrolling.",
+    "th": "เลิกเลื่อนหน้าจอ",
+    "ru": "Хватит листать."
+  },
+  "bc_cta_h2b": {
+    "en": "Start a conversation.",
+    "th": "แล้วมาคุยกัน",
+    "ru": "Давайте поговорим."
+  },
+  "bc_cta_p": {
+    "en": "Booking takes one minute. We’ll help you decide what’s next.",
+    "th": "นัดคุยใช้เวลาแค่หนึ่งนาที เราจะช่วยคุณตัดสินใจก้าวต่อไป",
+    "ru": "Запись занимает минуту. Поможем решить, что делать дальше."
+  },
+  "bc_contact_pill": {
+    "en": "Let’s Work Together",
+    "th": "มาร่วมงานกัน",
+    "ru": "Давайте работать вместе"
+  },
+  "bc_contact_h2": {
+    "en": "Questions?<br>We’re here.",
+    "th": "มีคำถาม?<br>เราพร้อมตอบ",
+    "ru": "Есть вопросы?<br>Мы на связи."
+  },
+  "bc_contact_p": {
+    "en": "A question, a project or an idea. Send it over.",
+    "th": "คำถาม โปรเจกต์ หรือไอเดีย ส่งมาได้เลย",
+    "ru": "Вопрос, проект или идея — пишите."
+  },
+  "bc_form_fname": {
+    "en": "First name*",
+    "th": "ชื่อ*",
+    "ru": "Имя*"
+  },
+  "bc_form_lname": {
+    "en": "Last name*",
+    "th": "นามสกุล*",
+    "ru": "Фамилия*"
+  },
+  "bc_form_email": {
+    "en": "Email*",
+    "th": "อีเมล*",
+    "ru": "Email*"
+  },
+  "bc_form_project": {
+    "en": "Project name*",
+    "th": "ชื่อโปรเจกต์*",
+    "ru": "Название проекта*"
+  },
+  "bc_form_project_ph": {
+    "en": "Your project",
+    "th": "โปรเจกต์ของคุณ",
+    "ru": "Ваш проект"
+  },
+  "bc_form_cat": {
+    "en": "Category*",
+    "th": "หมวดหมู่*",
+    "ru": "Категория*"
+  },
+  "bc_form_cat_ph": {
+    "en": "Select a category",
+    "th": "เลือกหมวดหมู่",
+    "ru": "Выберите категорию"
+  },
+  "bc_form_cat_game": {
+    "en": "Game",
+    "th": "เกม",
+    "ru": "Игры"
+  },
+  "bc_form_msg": {
+    "en": "Message*",
+    "th": "ข้อความ*",
+    "ru": "Сообщение*"
+  },
+  "bc_form_msg_ph": {
+    "en": "Type your message...",
+    "th": "พิมพ์ข้อความของคุณ...",
+    "ru": "Ваше сообщение..."
+  },
+  "bc_form_submit": {
+    "en": "Send Message",
+    "th": "ส่งข้อความ",
+    "ru": "Отправить"
+  },
+  "bc_info_email": {
+    "en": "Email",
+    "th": "อีเมล",
+    "ru": "Email"
+  },
+  "bc_info_phone": {
+    "en": "Phone",
+    "th": "โทรศัพท์",
+    "ru": "Телефон"
+  },
+  "bc_info_addr": {
+    "en": "Address",
+    "th": "ที่อยู่",
+    "ru": "Адрес"
+  },
+  "bc_info_remote": {
+    "en": "REMOTE",
+    "th": "ทำงานทางไกล",
+    "ru": "УДАЛЁННО"
+  },
+  "bc_info_addr_v": {
+    "en": "Bangkok, Thailand<br>Phuket, Thailand",
+    "th": "กรุงเทพฯ ประเทศไทย<br>ภูเก็ต ประเทศไทย",
+    "ru": "Бангкок, Таиланд<br>Пхукет, Таиланд"
+  },
+  "bc_foot_tagline": {
+    "en": "Your Web3 growth partner",
+    "th": "พาร์ทเนอร์ด้านการเติบโตสำหรับ Web3",
+    "ru": "Ваш партнёр по росту в Web3"
+  },
+  "bc_foot_email_ph": {
+    "en": "Your email",
+    "th": "อีเมลของคุณ",
+    "ru": "Ваш email"
+  },
+  "bc_foot_subscribe": {
+    "en": "Subscribe",
+    "th": "ติดตาม",
+    "ru": "Подписаться"
+  },
+  "bc_foot_pages": {
+    "en": "Pages",
+    "th": "หน้า",
+    "ru": "Страницы"
+  },
+  "bc_foot_contact": {
+    "en": "Contact",
+    "th": "ติดต่อ",
+    "ru": "Контакты"
+  },
+  "bc_foot_social": {
+    "en": "Social",
+    "th": "โซเชียล",
+    "ru": "Соцсети"
+  },
+  "bc_foot_terms": {
+    "en": "Terms & Conditions",
+    "th": "ข้อกำหนดและเงื่อนไข",
+    "ru": "Условия использования"
+  },
+  "bc_foot_privacy": {
+    "en": "Privacy Policy",
+    "th": "นโยบายความเป็นส่วนตัว",
+    "ru": "Политика конфиденциальности"
+  },
+  "bc_book_back": {
+    "en": "← Web3",
+    "th": "← Web3",
+    "ru": "← Web3"
+  },
+  "bc_book_h1": {
+    "en": "Book a Call",
+    "th": "นัดคุย",
+    "ru": "Записаться на звонок"
+  },
+  "bc_book_p": {
+    "en": "30 minutes on Google Meet. Three quick questions first, so we start on your problem.",
+    "th": "30 นาทีผ่าน Google Meet ตอบคำถามสั้นๆ 3 ข้อก่อน เพื่อให้เราเริ่มคุยที่โจทย์ของคุณได้ทันที",
+    "ru": "30 минут в Google Meet. Сначала три коротких вопроса — чтобы сразу говорить о вашей задаче."
+  },
+  "bc_book_foot": {
+    "en": "Trouble booking? Email <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>",
+    "th": "จองไม่ได้? อีเมลมาที่ <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>",
+    "ru": "Не получается записаться? Напишите на <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>"
   }
 }

@@ -3,6 +3,9 @@
     "slug": "bobe",
     "segment": "platform",
     "client": "BoBe",
+    "system": "Content engine + daily agent",
+    "system_th": "เอนจินคอนเทนต์ + เอเจนต์รายวัน",
+    "system_ru": "Контент-движок и ежедневный агент",
     "industry": "AI Trading Platform",
     "industry_th": "แพลตฟอร์ม AI Trading",
     "industry_ru": "AI-торговая платформа",
@@ -148,6 +151,9 @@
     "slug": "duckycutz",
     "segment": "local",
     "client": "Ducky Cutz",
+    "system": "Multilingual AI front desk",
+    "system_th": "ระบบ AI รับสายหลายภาษา",
+    "system_ru": "Мультиязычный AI-ресепшн",
     "industry": "Barbershop · Local Service",
     "industry_th": "ร้านตัดผม · ธุรกิจบริการท้องถิ่น",
     "industry_ru": "Барбершоп · Локальный сервис",
@@ -324,12 +330,15 @@
     "slug": "anrcf-golf",
     "segment": "local",
     "client": "ANRCF",
+    "system": "Event operations, end to end",
+    "system_th": "ระบบงานอีเวนต์ครบวงจร",
+    "system_ru": "Операционная часть мероприятия под ключ",
     "industry": "Environmental Charity · Fundraising Event",
     "industry_th": "องค์กรการกุศลด้านสิ่งแวดล้อม · งานระดมทุน",
     "industry_ru": "Экологический фонд · Благотворительное событие",
-    "headline": "An agency's output, delivered by one operator.",
-    "headline_th": "ผลงานระดับเอเจนซี ส่งมอบโดยคนเพียงคนเดียว",
-    "headline_ru": "Объём работы целого агентства — силами одного человека.",
+    "headline": "Thailand's first Green Charity Golf Tournament, run end to end in three languages.",
+    "headline_th": "ทัวร์นาเมนต์กอล์ฟการกุศลสีเขียวครั้งแรกของไทย ดูแลครบวงจรในสามภาษา",
+    "headline_ru": "Первый в Таиланде «зелёный» благотворительный гольф-турнир — под ключ и на трёх языках.",
     "summary": "For Thailand's first Green Charity Golf Tournament, Rejig Labs ran the entire digital operation solo: a trilingual registration site, the sign-up funnel, print and brand collateral, and sponsor outreach. 35 teams, 21 sponsors, 3 languages. No agency, no team.",
     "summary_th": "สำหรับงานกอล์ฟการกุศลเพื่อสิ่งแวดล้อมครั้งแรกของไทย Rejig Labs ดูแลงานดิจิทัลทั้งหมดด้วยตัวคนเดียว ทั้งเว็บไซต์ลงทะเบียนสามภาษา ระบบรับสมัครและชำระเงิน สื่อสิ่งพิมพ์และแบรนด์ และการติดต่อผู้สนับสนุน 35 ทีม 21 ผู้สนับสนุน 3 ภาษา ไม่ใช้เอเจนซี ไม่ใช้ทีม",
     "summary_ru": "Для первого в Таиланде благотворительного гольф-турнира Green Charity Rejig Labs в одиночку вёл всю цифровую операцию: трёхъязычный сайт регистрации, воронку записи, печатные и брендовые материалы и работу со спонсорами. 35 команд, 21 спонсор, 3 языка. Без агентства, без команды.",
@@ -354,10 +363,10 @@
         "label_ru": "Языка (EN/TH/RU)"
       },
       {
-        "value": "1",
-        "label": "Operator, No Agency",
-        "label_th": "คนทำ ไม่ใช้เอเจนซี",
-        "label_ru": "Исполнитель, без агентства"
+        "value": "4",
+        "label": "Workstreams: Site, Sign-ups, Print, Sponsors",
+        "label_th": "งานที่ดูแล: เว็บ ลงทะเบียน สิ่งพิมพ์ สปอนเซอร์",
+        "label_ru": "Направления: сайт, регистрация, печать, спонсоры"
       }
     ],
     "challenge": "ANRCF was launching its first national charity golf tournament, a fundraiser for the foundation's Youth Conservation Fund aimed at high-net-worth donors, hotel groups, and tourism bodies across Thailand. It needed a complete digital operation: a registration site, a sign-up and payment funnel, print and brand collateral, and sponsor outreach, all across three languages (Thai, English, Russian) for a mixed local and international audience. There was no agency budget and no marketing team.",
@@ -470,6 +479,9 @@
     "slug": "me-elevator",
     "segment": "local",
     "client": "Mobile Engineer",
+    "system": "Website, search & CRM",
+    "system_th": "เว็บไซต์ การค้นหา และ CRM",
+    "system_ru": "Сайт, поиск и CRM",
     "industry": "Elevator Installation and Service, Phuket",
     "industry_th": "ติดตั้งและบริการลิฟต์ ภูเก็ต",
     "industry_ru": "Монтаж и обслуживание лифтов, Пхукет",
@@ -490,7 +502,7 @@
         "label_ru": "Клиент привлечён"
       },
       {
-        "value": "฿X00,000+",
+        "value": "฿100,000+",
         "label": "Deal Value",
         "label_th": "มูลค่างาน",
         "label_ru": "Стоимость сделки"
