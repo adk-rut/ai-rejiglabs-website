@@ -2690,5 +2690,700 @@
     "en": "<strong>Rejig Labs</strong><br>Based in Thailand<br>Email: <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>",
     "th": "<strong>Rejig Labs</strong><br>ตั้งอยู่ในประเทศไทย<br>อีเมล: <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>",
     "ru": "<strong>Rejig Labs</strong><br>Таиланд<br>Эл. почта: <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>"
+  },
+  "clinic_nav_link": {
+    "en": "For Clinics",
+    "th": "สำหรับคลินิก",
+    "ru": "Для клиник"
+  },
+  "hotel_nav_link": {
+    "en": "Hotel Night Desk",
+    "th": "รับสายกะดึกโรงแรม",
+    "ru": "Ночной ресепшн отелей"
+  },
+  "clinic_talk": {
+    "en": "Talk to Rejig Labs:",
+    "th": "คุยกับ Rejig Labs:",
+    "ru": "Свяжитесь с Rejig Labs:"
+  },
+  "hotel_talk": {
+    "en": "Talk to Rejig Labs:",
+    "th": "คุยกับ Rejig Labs:",
+    "ru": "Свяжитесь с Rejig Labs:"
+  },
+  "clinic_hero_eyebrow": {
+    "en": "AI RECEPTIONIST FOR CLINICS · PHUKET & THAILAND",
+    "th": "AI รับสายสำหรับคลินิก · ภูเก็ตและทั่วประเทศไทย",
+    "ru": "AI-СЕКРЕТАРЬ ДЛЯ КЛИНИК · ПХУКЕТ И ТАИЛАНД"
+  },
+  "clinic_hero_h1": {
+    "en": "The clinic phone that <em class=\"accent\">never misses a patient.</em>",
+    "th": "โทรศัพท์คลินิกที่<em class=\"accent\">ไม่พลาดคนไข้สักราย</em>",
+    "ru": "Телефон клиники, который <em class=\"accent\">не упускает ни одного пациента.</em>"
+  },
+  "clinic_hero_sub": {
+    "en": "Rejig Labs builds the AI receptionist for clinics in Phuket and across Thailand. A patient calls at 8pm, it answers in Thai, English or Russian, books the right practitioner, and the appointment is in your calendar before they hang up. Urgent calls go straight to your staff, and it never gives medical advice.",
+    "th": "Rejig Labs สร้างระบบ AI รับสายสำหรับคลินิกในภูเก็ตและทั่วประเทศไทย เมื่อคนไข้โทรมาตอน 20.00 น. ระบบจะรับสายเป็นภาษาไทย อังกฤษ หรือรัสเซีย จองคิวกับแพทย์ที่ใช่ และนัดหมายจะเข้าปฏิทินของคุณก่อนคนไข้วางสาย สายเร่งด่วนจะส่งต่อถึงทีมงานของคุณทันที และระบบจะไม่ให้คำแนะนำทางการแพทย์เด็ดขาด",
+    "ru": "Rejig Labs создаёт AI-секретаря для клиник на Пхукете и по всему Таиланду. Пациент звонит в 20:00 — система отвечает на тайском, английском или русском, записывает к нужному специалисту, и запись появляется в вашем календаре ещё до конца разговора. Срочные звонки сразу переводятся на ваш персонал, а медицинских советов система не даёт никогда."
+  },
+  "clinic_flow_1": {
+    "en": "Patient calls, 8pm",
+    "th": "คนไข้โทรมา 20.00 น.",
+    "ru": "Пациент звонит в 20:00"
+  },
+  "clinic_flow_2": {
+    "en": "Answered",
+    "th": "รับสายทันที",
+    "ru": "Звонок принят"
+  },
+  "clinic_flow_3": {
+    "en": "Right practitioner booked",
+    "th": "จองแพทย์ที่ใช่ได้ทันที",
+    "ru": "Запись к нужному врачу"
+  },
+  "clinic_flow_4": {
+    "en": "Reminded on LINE",
+    "th": "แจ้งเตือนทาง LINE",
+    "ru": "Напоминание в LINE"
+  },
+  "clinic_cap_voice_id": {
+    "en": "LIVE · PHONE",
+    "th": "ใช้งานจริง · โทรศัพท์",
+    "ru": "В РАБОТЕ · ТЕЛЕФОН"
+  },
+  "clinic_cap_voice_h": {
+    "en": "\"Can I see Dr. Nok tomorrow morning?\"",
+    "th": "“ขอนัดหมอนกพรุ่งนี้เช้าได้ไหม”",
+    "ru": "«Можно попасть к доктору Нок завтра утром?»"
+  },
+  "clinic_cap_voice_d": {
+    "en": "The AI checks that doctor's own schedule, books the right slot length for the treatment, and confirms before the caller hangs up.",
+    "th": "AI ตรวจตารางของแพทย์ท่านนั้นโดยตรง จองเวลาให้เหมาะกับการรักษา และยืนยันนัดก่อนผู้โทรวางสาย",
+    "ru": "AI проверяет расписание именно этого врача, бронирует время нужной длительности под процедуру и подтверждает запись до конца звонка."
+  },
+  "clinic_cap_incoming": {
+    "en": "Incoming call",
+    "th": "สายเรียกเข้า",
+    "ru": "Входящий звонок"
+  },
+  "clinic_cap_answered": {
+    "en": "+66 · answered in 1 ring",
+    "th": "+66 · รับสายตั้งแต่เสียงเรียกที่ 1",
+    "ru": "+66 · ответ с 1 гудка"
+  },
+  "clinic_cap_booked": {
+    "en": "Booked with Dr. Nok · Tue 9:30 AM",
+    "th": "จองกับหมอนกแล้ว · อังคาร 9:30 น.",
+    "ru": "Запись к доктору Нок · вт 9:30"
+  },
+  "clinic_cap_chat_id": {
+    "en": "LIVE · LINE",
+    "th": "ใช้งานจริง · LINE",
+    "ru": "В РАБОТЕ · LINE"
+  },
+  "clinic_cap_chat_h": {
+    "en": "Rescheduled without holding the line",
+    "th": "เลื่อนนัดได้โดยไม่ต้องรอสาย",
+    "ru": "Перенос записи без ожидания на линии"
+  },
+  "clinic_cap_chat_d": {
+    "en": "Confirmations, reminders and changes happen on LINE, where Thai patients already are. Fewer forgotten appointments, fewer empty chairs.",
+    "th": "ยืนยันนัด แจ้งเตือน และเปลี่ยนนัดผ่าน LINE ที่คนไข้ชาวไทยใช้อยู่แล้วทุกวัน นัดที่ถูกลืมน้อยลง เก้าอี้ว่างก็น้อยลง",
+    "ru": "Подтверждения, напоминания и переносы — в LINE, где тайские пациенты и так проводят время. Меньше забытых визитов, меньше пустых кресел."
+  },
+  "clinic_cap_tab_web": {
+    "en": "Web",
+    "th": "เว็บ",
+    "ru": "Сайт"
+  },
+  "clinic_cap_msg_in": {
+    "en": "Can I move my cleaning to Friday?",
+    "th": "ขอเลื่อนนัดขูดหินปูนเป็นวันศุกร์ได้ไหม",
+    "ru": "Можно перенести чистку на пятницу?"
+  },
+  "clinic_cap_msg_out": {
+    "en": "Done ✓ Rebooked for Friday, 2:00 PM.",
+    "th": "เรียบร้อย ✓ เลื่อนเป็นวันศุกร์ 14:00 น. แล้ว",
+    "ru": "Готово ✓ Перенесли на пятницу, 14:00."
+  },
+  "clinic_problem_eyebrow": {
+    "en": "THE FRONT DESK CAN'T BE IN TWO PLACES",
+    "th": "เคาน์เตอร์ต้อนรับอยู่สองที่พร้อมกันไม่ได้",
+    "ru": "РЕСЕПШН НЕ МОЖЕТ БЫТЬ В ДВУХ МЕСТАХ СРАЗУ"
+  },
+  "clinic_problem_h2": {
+    "en": "Someone is always checking in, so <em class=\"accent\">the phone keeps ringing.</em>",
+    "th": "มีคนไข้มาเช็กอินตลอดเวลา <em class=\"accent\">โทรศัพท์จึงดังไม่หยุด</em>",
+    "ru": "На ресепшне всегда кто-то регистрируется, <em class=\"accent\">а телефон всё звонит.</em>"
+  },
+  "clinic_problem_p": {
+    "en": "A clinic's front desk juggles arrivals, payments and the practitioner's next patient, and the phone rings through all of it. A caller who reaches nobody does not try again in an hour: they book the next clinic on Google Maps. After closing, the line is dead, which is exactly when working patients finally have time to call. And every no-show that a reminder would have caught is a slot you paid a practitioner to sit through empty.",
+    "th": "เคาน์เตอร์ต้อนรับของคลินิกต้องดูแลทั้งคนไข้ที่มาถึง การชำระเงิน และคนไข้คิวถัดไปของแพทย์ ขณะที่โทรศัพท์ก็ดังไม่หยุด ผู้โทรที่ไม่มีใครรับสายจะไม่โทรกลับมาอีกในอีกชั่วโมง แต่จะไปจองคลินิกถัดไปบน Google Maps แทน หลังปิดทำการสายก็เงียบไป ทั้งที่เป็นช่วงที่คนทำงานเพิ่งมีเวลาโทรมา และทุกครั้งที่คนไข้ไม่มาตามนัดซึ่งการแจ้งเตือนช่วยป้องกันได้ ก็คือช่วงเวลาที่คุณจ่ายค่าตัวแพทย์ไปโดยไม่มีคนไข้",
+    "ru": "Ресепшн клиники одновременно встречает пациентов, принимает оплату и готовит следующего пациента к врачу — и всё это время звонит телефон. Тот, кто не дозвонился, не станет перезванивать через час: он запишется в соседнюю клинику через Google Maps. После закрытия линия молчит — а ведь именно тогда у работающих пациентов наконец появляется время позвонить. И каждая неявка, которую предотвратило бы напоминание, — это время, за которое вы заплатили специалисту, а кресло простояло пустым."
+  },
+  "clinic_does_eyebrow": {
+    "en": "BUILT FOR HOW A CLINIC ACTUALLY RUNS",
+    "th": "ออกแบบตามการทำงานจริงของคลินิก",
+    "ru": "СОЗДАНО ПОД РЕАЛЬНУЮ РАБОТУ КЛИНИКИ"
+  },
+  "clinic_does_h2": {
+    "en": "Not a generic bot. <em class=\"accent\">A clinic front desk.</em>",
+    "th": "ไม่ใช่บอททั่วไป <em class=\"accent\">แต่คือเคาน์เตอร์ต้อนรับของคลินิก</em>",
+    "ru": "Не типовой бот. <em class=\"accent\">Ресепшн клиники.</em>"
+  },
+  "clinic_does_p": {
+    "en": "Booking a clinic is not booking a table. The slot length depends on the treatment, the practitioner matters, and some calls must reach a human immediately.",
+    "th": "การจองคิวคลินิกไม่เหมือนการจองโต๊ะร้านอาหาร ระยะเวลานัดขึ้นอยู่กับการรักษา แพทย์แต่ละท่านไม่เหมือนกัน และบางสายต้องถึงมือคนทันที",
+    "ru": "Запись в клинику — это не бронь столика. Длительность приёма зависит от процедуры, важен конкретный специалист, а некоторые звонки должны сразу попадать к человеку."
+  },
+  "clinic_feat_1_name": {
+    "en": "Books the practitioner they asked for",
+    "th": "จองแพทย์ตามที่คนไข้ระบุ",
+    "ru": "Записывает к тому врачу, о котором просят"
+  },
+  "clinic_feat_1_use": {
+    "en": "Patients name their doctor or dentist. The AI checks that person's own schedule, not the clinic average, so it never promises a slot that practitioner doesn't have.",
+    "th": "คนไข้ระบุชื่อแพทย์หรือทันตแพทย์ที่ต้องการ AI จะตรวจตารางของแพทย์ท่านนั้นโดยตรง ไม่ใช่ตารางรวมของคลินิก จึงไม่รับปากเวลาที่แพทย์ท่านนั้นไม่ว่าง",
+    "ru": "Пациент называет своего врача или стоматолога. AI проверяет расписание именно этого специалиста, а не клиники в целом, поэтому никогда не обещает время, которого у него нет."
+  },
+  "clinic_feat_2_name": {
+    "en": "Knows a cleaning is not a root canal",
+    "th": "รู้ว่าขูดหินปูนกับรักษารากฟันใช้เวลาไม่เท่ากัน",
+    "ru": "Отличает чистку от лечения каналов"
+  },
+  "clinic_feat_2_use": {
+    "en": "Every treatment gets its real duration. The AI books the right amount of time, so the schedule stays honest instead of running 40 minutes late by noon.",
+    "th": "ทุกการรักษามีระยะเวลาจริงของตัวเอง AI จองเวลาให้พอดี ตารางจึงเป็นไปตามจริง ไม่ล่าช้าไป 40 นาทีตั้งแต่ยังไม่เที่ยง",
+    "ru": "У каждой процедуры своя реальная длительность. AI бронирует ровно столько времени, сколько нужно, и расписание не съезжает на 40 минут уже к полудню."
+  },
+  "clinic_feat_3_name": {
+    "en": "Answers the questions that clog your line",
+    "th": "ตอบคำถามที่ทำให้สายไม่ว่าง",
+    "ru": "Отвечает на вопросы, которые занимают линию"
+  },
+  "clinic_feat_3_use": {
+    "en": "Prices, opening hours, directions, parking, and preparation instructions like \"no food before the blood test\". The routine calls stop reaching your staff at all.",
+    "th": "ราคา เวลาทำการ เส้นทาง ที่จอดรถ และคำแนะนำก่อนมาพบแพทย์ เช่น “งดอาหารก่อนเจาะเลือด” สายทั่วไปเหล่านี้จะไม่ต้องถึงทีมงานของคุณอีกเลย",
+    "ru": "Цены, часы работы, как добраться, парковка и инструкции по подготовке вроде «не есть перед анализом крови». Рутинные звонки больше вообще не доходят до персонала."
+  },
+  "clinic_feat_4_name": {
+    "en": "New patients arrive pre-registered",
+    "th": "คนไข้ใหม่ลงทะเบียนไว้ก่อนมาถึง",
+    "ru": "Новые пациенты приходят уже зарегистрированными"
+  },
+  "clinic_feat_4_use": {
+    "en": "Name, phone number and reason for visit are captured on the call and waiting in the calendar note, so the front desk isn't spelling out a surname at check-in.",
+    "th": "ชื่อ เบอร์โทร และเหตุผลที่มาพบแพทย์ถูกบันทึกระหว่างการโทรและรออยู่ในโน้ตของปฏิทิน เคาน์เตอร์จึงไม่ต้องมาสะกดนามสกุลกันตอนเช็กอิน",
+    "ru": "Имя, телефон и причина визита фиксируются во время звонка и уже ждут в заметке календаря — на ресепшне не придётся диктовать фамилию по буквам."
+  },
+  "clinic_feat_5_name": {
+    "en": "Thai, English and Russian on one number",
+    "th": "ไทย อังกฤษ และรัสเซีย ในเบอร์เดียว",
+    "ru": "Тайский, английский и русский на одном номере"
+  },
+  "clinic_feat_5_use": {
+    "en": "It picks the language from the caller's first words. Thai patients, expats and medical tourists all book on the same line, with no language menu.",
+    "th": "ระบบเลือกภาษาจากคำแรกที่ผู้โทรพูด คนไข้ชาวไทย ชาวต่างชาติที่พำนักในไทย และนักท่องเที่ยวเชิงการแพทย์ จองได้ในสายเดียวกันโดยไม่ต้องกดเลือกภาษา",
+    "ru": "Язык определяется по первым словам звонящего. Тайские пациенты, экспаты и медицинские туристы записываются по одной линии, без меню выбора языка."
+  },
+  "clinic_feat_6_name": {
+    "en": "Chases the no-shows before they happen",
+    "th": "ป้องกันการไม่มาตามนัดล่วงหน้า",
+    "ru": "Предотвращает неявки заранее"
+  },
+  "clinic_feat_6_use": {
+    "en": "Confirmations and reminders go out on LINE and SMS, and rescheduling takes one reply. Patients fix their booking instead of silently skipping it.",
+    "th": "ส่งยืนยันและแจ้งเตือนนัดทาง LINE และ SMS การเลื่อนนัดใช้แค่การตอบกลับครั้งเดียว คนไข้จึงแก้นัดเองแทนที่จะหายไปเงียบ ๆ",
+    "ru": "Подтверждения и напоминания уходят в LINE и по SMS, а перенос — это один ответ. Пациенты меняют запись, а не молча пропускают визит."
+  },
+  "clinic_feat_7_name": {
+    "en": "Never plays doctor",
+    "th": "ไม่ทำหน้าที่แทนแพทย์",
+    "ru": "Никогда не изображает врача"
+  },
+  "clinic_feat_7_use": {
+    "en": "It gives no medical advice, ever. When a caller describes symptoms or sounds urgent, it follows your escalation rules: transfer to staff in hours, your emergency instructions after hours.",
+    "th": "ระบบไม่ให้คำแนะนำทางการแพทย์ใด ๆ ทั้งสิ้น เมื่อผู้โทรเล่าอาการหรือฟังดูเร่งด่วน ระบบจะทำตามกฎการส่งต่อที่คุณกำหนด: ในเวลาทำการโอนสายถึงทีมงาน นอกเวลาทำการแจ้งขั้นตอนกรณีฉุกเฉินของคุณ",
+    "ru": "Никаких медицинских советов — никогда. Если звонящий описывает симптомы или дело срочное, система действует по вашим правилам эскалации: в рабочее время переводит звонок на персонал, в нерабочее — сообщает ваши инструкции на экстренный случай."
+  },
+  "clinic_feat_8_name": {
+    "en": "Recognises returning patients",
+    "th": "จำคนไข้เก่าได้",
+    "ru": "Узнаёт постоянных пациентов"
+  },
+  "clinic_feat_8_use": {
+    "en": "A returning patient is recognised by their number on the first ring, greeted by name, and skips straight to the booking.",
+    "th": "คนไข้เก่าจะถูกจดจำจากเบอร์โทรตั้งแต่เสียงเรียกแรก ได้รับการทักทายด้วยชื่อ และเข้าสู่การจองได้ทันที",
+    "ru": "Постоянного пациента система узнаёт по номеру с первого гудка, приветствует по имени и сразу переходит к записи."
+  },
+  "clinic_proof_eyebrow": {
+    "en": "A PROVEN CORE, TUNED FOR YOUR CLINIC",
+    "th": "ระบบหลักที่พิสูจน์แล้ว ปรับให้เข้ากับคลินิกของคุณ",
+    "ru": "ПРОВЕРЕННОЕ ЯДРО, НАСТРОЕННОЕ ПОД ВАШУ КЛИНИКУ"
+  },
+  "clinic_proof_h2": {
+    "en": "The same receptionist is <em class=\"accent\">already on the phones.</em>",
+    "th": "ระบบรับสายตัวเดียวกันนี้<em class=\"accent\">รับสายจริงอยู่แล้ว</em>",
+    "ru": "Этот же секретарь <em class=\"accent\">уже отвечает на звонки.</em>"
+  },
+  "clinic_proof_p": {
+    "en": "This is not a demo waiting for its first caller. The same AI receptionist has answered the phones of a six-branch service business in Phuket since June 2026: <strong>169 calls</strong> at an average of <strong>76 seconds</strong> each, and <strong>105 bookings</strong> made end to end across voice and chat, in three languages. A clinic deployment starts from that proven core, then adds your treatments, practitioners and escalation rules on top.",
+    "th": "นี่ไม่ใช่เดโมที่รอผู้โทรรายแรก AI รับสายตัวเดียวกันนี้รับสายให้ธุรกิจบริการ 6 สาขาในภูเก็ตมาตั้งแต่มิถุนายน 2026: <strong>169 สาย</strong> เฉลี่ยสายละ <strong>76 วินาที</strong> และ <strong>105 การจอง</strong> ที่ทำครบจบทั้งทางโทรศัพท์และแชต ใน 3 ภาษา การติดตั้งให้คลินิกเริ่มจากระบบหลักที่พิสูจน์แล้วนี้ แล้วเพิ่มการรักษา แพทย์ และกฎการส่งต่อของคุณเข้าไป",
+    "ru": "Это не демо, которое ждёт первого звонка. Этот же AI-секретарь с июня 2026 года отвечает на звонки сервисного бизнеса с шестью филиалами на Пхукете: <strong>169 звонков</strong> в среднем по <strong>76 секунд</strong> и <strong>105 записей</strong>, оформленных от начала до конца голосом и в чате, на трёх языках. Внедрение в клинике начинается с этого проверенного ядра, а затем добавляются ваши процедуры, специалисты и правила эскалации."
+  },
+  "clinic_stat_unit_s": {
+    "en": "s",
+    "th": "วิ",
+    "ru": "с"
+  },
+  "clinic_stat_1": {
+    "en": "calls answered since June 2026",
+    "th": "สายที่รับตั้งแต่มิถุนายน 2026",
+    "ru": "звонков принято с июня 2026"
+  },
+  "clinic_stat_2": {
+    "en": "average call, start to booked",
+    "th": "เวลาเฉลี่ยต่อสาย ตั้งแต่รับสายจนจองเสร็จ",
+    "ru": "средний звонок — от ответа до записи"
+  },
+  "clinic_stat_3": {
+    "en": "bookings made by the AI",
+    "th": "การจองที่ AI ทำเอง",
+    "ru": "записей сделал AI"
+  },
+  "clinic_stat_4": {
+    "en": "languages on one number",
+    "th": "ภาษาในเบอร์เดียว",
+    "ru": "языка на одном номере"
+  },
+  "clinic_proof_note": {
+    "en": "Measured 20 June to 7 August 2026 from the business's own calendar and call log. Counts include our own test traffic; call totals exclude 20 June to 2 July, which the phone provider purged before logging began.",
+    "th": "วัดผลระหว่าง 20 มิถุนายน ถึง 7 สิงหาคม 2026 จากปฏิทินและบันทึกการโทรของธุรกิจเอง ตัวเลขรวมสายทดสอบของเราด้วย ส่วนยอดรวมสายไม่นับช่วง 20 มิถุนายน ถึง 2 กรกฎาคม ซึ่งผู้ให้บริการโทรศัพท์ลบข้อมูลไปก่อนเริ่มบันทึก",
+    "ru": "Данные за период с 20 июня по 7 августа 2026 года из собственного календаря и журнала звонков компании. В цифры входит и наш тестовый трафик; из общего числа звонков исключён период с 20 июня по 2 июля — эти данные оператор связи удалил до начала учёта."
+  },
+  "clinic_beem_btn": {
+    "en": "See how Beem answers the phone",
+    "th": "ดูว่า Beem รับสายอย่างไร",
+    "ru": "Посмотреть, как Beem отвечает на звонки"
+  },
+  "clinic_how_eyebrow": {
+    "en": "HOW WE PUT IT IN YOUR CLINIC",
+    "th": "เราติดตั้งในคลินิกของคุณอย่างไร",
+    "ru": "КАК МЫ ВНЕДРЯЕМ ЭТО В ВАШЕЙ КЛИНИКЕ"
+  },
+  "clinic_how_h2": {
+    "en": "Your number, your calendar, <em class=\"accent\">your rules.</em>",
+    "th": "เบอร์ของคุณ ปฏิทินของคุณ <em class=\"accent\">กฎของคุณ</em>",
+    "ru": "Ваш номер, ваш календарь, <em class=\"accent\">ваши правила.</em>"
+  },
+  "clinic_step_1_name": {
+    "en": "We learn your clinic",
+    "th": "เราเรียนรู้คลินิกของคุณ",
+    "ru": "Изучаем вашу клинику"
+  },
+  "clinic_step_1_use": {
+    "en": "Your practitioners, treatments and their durations, prices, opening hours, and the escalation rules for urgent calls. You decide what the AI may handle and what always reaches a human.",
+    "th": "แพทย์ การรักษาและระยะเวลาของแต่ละรายการ ราคา เวลาทำการ และกฎการส่งต่อสายเร่งด่วน คุณเป็นผู้กำหนดว่า AI จัดการเรื่องใดได้ และเรื่องใดต้องถึงมือคนเสมอ",
+    "ru": "Ваши специалисты, процедуры и их длительность, цены, часы работы и правила эскалации срочных звонков. Вы решаете, что AI может делать сам, а что всегда передаётся человеку."
+  },
+  "clinic_step_2_name": {
+    "en": "We connect what you already use",
+    "th": "เราเชื่อมต่อกับระบบที่คุณใช้อยู่แล้ว",
+    "ru": "Подключаем то, чем вы уже пользуетесь"
+  },
+  "clinic_step_2_use": {
+    "en": "Your existing phone number, your existing calendar or booking system, your LINE OA. Patient details land in your systems, not a third-party inbox, set up in line with Thailand's PDPA.",
+    "th": "เบอร์โทรเดิม ปฏิทินหรือระบบจองเดิม และ LINE OA ของคุณ ข้อมูลคนไข้เข้าสู่ระบบของคุณเอง ไม่ใช่กล่องข้อความของบุคคลภายนอก และตั้งค่าตาม พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล (PDPA)",
+    "ru": "Ваш текущий номер, ваш календарь или система записи, ваш LINE OA. Данные пациентов попадают в ваши системы, а не в сторонний почтовый ящик, и всё настроено в соответствии с тайским законом о защите данных (PDPA)."
+  },
+  "clinic_step_3_name": {
+    "en": "We test on real calls, then switch it on",
+    "th": "ทดสอบกับสายจริง แล้วจึงเปิดใช้งาน",
+    "ru": "Тестируем на реальных звонках, затем запускаем"
+  },
+  "clinic_step_3_use": {
+    "en": "We listen to real conversations, fix the edge cases, and keep tuning after launch so it gets better in your clinic, not worse.",
+    "th": "เราฟังบทสนทนาจริง แก้กรณียกเว้น และปรับจูนต่อเนื่องหลังเปิดใช้งาน ระบบจึงดีขึ้นเรื่อย ๆ ในคลินิกของคุณ ไม่ใช่แย่ลง",
+    "ru": "Мы слушаем реальные разговоры, исправляем нестандартные случаи и продолжаем настройку после запуска, чтобы в вашей клинике система становилась лучше, а не хуже."
+  },
+  "clinic_hear_eyebrow": {
+    "en": "HEAR IT WORK",
+    "th": "ฟังการทำงานจริง",
+    "ru": "ПОСЛУШАЙТЕ, КАК ЭТО РАБОТАЕТ"
+  },
+  "clinic_hear_h2": {
+    "en": "A real call, <em class=\"accent\">start to booked.</em>",
+    "th": "สายจริง <em class=\"accent\">ตั้งแต่รับสายจนจองเสร็จ</em>",
+    "ru": "Реальный звонок — <em class=\"accent\">от ответа до записи.</em>"
+  },
+  "clinic_hear_p": {
+    "en": "This is a live recording from Ducky Cutz, the Phuket barbershop we run the phone for — not a clinic, but the same receptionist doing the same job: answer, check the calendar, book, confirm. Press play. We have no recorded clinic call published yet; on a demo call we walk you through it with your own treatments and prices.",
+    "th": "นี่คือเสียงบันทึกจริงจาก Ducky Cutz ร้านตัดผมในภูเก็ตที่เราดูแลการรับสายให้ ไม่ใช่คลินิก แต่เป็นระบบรับสายตัวเดียวกันที่ทำงานแบบเดียวกัน: รับสาย ตรวจปฏิทิน จองคิว และยืนยัน กดเล่นเพื่อฟังได้เลย ตอนนี้เรายังไม่ได้เผยแพร่เสียงสายจริงจากคลินิก แต่ในการนัดคุย เราจะพาคุณดูการทำงานด้วยรายการรักษาและราคาของคลินิกคุณเอง",
+    "ru": "Это живая запись из Ducky Cutz — барбершопа на Пхукете, звонки которого мы ведём. Не клиника, но тот же секретарь делает ту же работу: отвечает, проверяет календарь, записывает, подтверждает. Нажмите «воспроизвести». Записи звонка из клиники мы пока не публиковали; на демо-звонке покажем всё на ваших процедурах и ценах."
+  },
+  "clinic_hear_link": {
+    "en": "Read the Ducky Cutz case study",
+    "th": "อ่านกรณีศึกษา Ducky Cutz",
+    "ru": "Читать кейс Ducky Cutz"
+  },
+  "clinic_faq_h2": {
+    "en": "Clinic owner <em class=\"accent\">questions.</em>",
+    "th": "คำถามจาก<em class=\"accent\">เจ้าของคลินิก</em>",
+    "ru": "Вопросы <em class=\"accent\">владельцев клиник.</em>"
+  },
+  "clinic_faq_q1": {
+    "en": "What happens when a patient calls my Phuket clinic at 8pm?",
+    "th": "ถ้าคนไข้โทรหาคลินิกของฉันในภูเก็ตตอน 20.00 น. จะเกิดอะไรขึ้น",
+    "ru": "Что будет, если пациент позвонит в мою клинику на Пхукете в 20:00?"
+  },
+  "clinic_faq_a1": {
+    "en": "The Rejig Labs AI receptionist answers on the first ring in the caller's language, checks your live calendar, books the appointment, and sends the confirmation on WhatsApp or LINE. Nothing waits for the morning.",
+    "th": "AI รับสายของ Rejig Labs จะรับสายตั้งแต่เสียงเรียกแรกในภาษาของผู้โทร ตรวจปฏิทินแบบเรียลไทม์ จองนัด และส่งการยืนยันทาง WhatsApp หรือ LINE ไม่มีอะไรต้องรอถึงเช้า",
+    "ru": "AI-секретарь Rejig Labs отвечает с первого гудка на языке звонящего, проверяет ваш календарь в реальном времени, записывает на приём и отправляет подтверждение в WhatsApp или LINE. Ничего не откладывается до утра."
+  },
+  "clinic_faq_q2": {
+    "en": "Can it book a specific doctor or dentist, not just any slot?",
+    "th": "จองแพทย์หรือทันตแพทย์ที่ระบุได้ไหม ไม่ใช่แค่เวลาไหนก็ได้",
+    "ru": "Можно ли записать к конкретному врачу или стоматологу, а не просто на свободное время?"
+  },
+  "clinic_faq_a2": {
+    "en": "Yes. Patients ask for their practitioner by name and the AI checks that person's own schedule, not the clinic average. It also knows that a cleaning and a root canal need different slot lengths, so it books the right amount of time for the treatment.",
+    "th": "ได้ คนไข้ขอพบแพทย์ด้วยชื่อ และ AI จะตรวจตารางของแพทย์ท่านนั้นโดยตรง ไม่ใช่ตารางรวมของคลินิก ระบบยังรู้ว่าการขูดหินปูนกับการรักษารากฟันใช้เวลาต่างกัน จึงจองเวลาให้เหมาะกับการรักษา",
+    "ru": "Да. Пациент называет своего специалиста по имени, и AI проверяет расписание именно этого человека, а не клиники в целом. Система также знает, что чистка и лечение каналов занимают разное время, и бронирует нужную длительность под процедуру."
+  },
+  "clinic_faq_q3": {
+    "en": "What happens when a call is urgent?",
+    "th": "ถ้าเป็นสายเร่งด่วนจะทำอย่างไร",
+    "ru": "Что происходит при срочном звонке?"
+  },
+  "clinic_faq_a3": {
+    "en": "It never gives medical advice, ever. When a caller describes symptoms or sounds urgent, it follows the escalation rules you set: during opening hours it transfers to your staff with the conversation attached, and after hours it gives the caller your emergency instructions instead of booking a slot.",
+    "th": "ระบบไม่ให้คำแนะนำทางการแพทย์เด็ดขาด เมื่อผู้โทรเล่าอาการหรือฟังดูเร่งด่วน ระบบจะทำตามกฎการส่งต่อที่คุณกำหนด: ในเวลาทำการจะโอนสายถึงทีมงานพร้อมแนบบทสนทนา และนอกเวลาทำการจะแจ้งขั้นตอนกรณีฉุกเฉินของคุณแทนการจองนัด",
+    "ru": "Система никогда не даёт медицинских советов. Если звонящий описывает симптомы или дело срочное, она действует по заданным вами правилам эскалации: в рабочее время переводит звонок на персонал вместе с записью разговора, а в нерабочее — сообщает ваши инструкции на экстренный случай вместо записи на приём."
+  },
+  "clinic_faq_q4": {
+    "en": "Does it speak Thai?",
+    "th": "พูดภาษาไทยได้ไหม",
+    "ru": "Говорит ли система по-тайски?"
+  },
+  "clinic_faq_a4": {
+    "en": "Yes. It answers in Thai, English or Russian, picking the language from the caller's first words. One number serves your Thai patients, expats and medical tourists without a language menu.",
+    "th": "ได้ ระบบรับสายเป็นภาษาไทย อังกฤษ หรือรัสเซีย โดยเลือกภาษาจากคำแรกที่ผู้โทรพูด เบอร์เดียวรองรับทั้งคนไข้ชาวไทย ชาวต่างชาติที่พำนักในไทย และนักท่องเที่ยวเชิงการแพทย์ โดยไม่ต้องกดเลือกภาษา",
+    "ru": "Да. Она отвечает на тайском, английском или русском, определяя язык по первым словам звонящего. Один номер обслуживает тайских пациентов, экспатов и медицинских туристов без меню выбора языка."
+  },
+  "clinic_faq_q5": {
+    "en": "Is patient information safe?",
+    "th": "ข้อมูลคนไข้ปลอดภัยไหม",
+    "ru": "Защищены ли данные пациентов?"
+  },
+  "clinic_faq_a5": {
+    "en": "Booking details go into your own calendar and booking system, not a third-party inbox. Before launch we agree with you exactly what is stored and for how long, and we set the system up in line with Thailand's PDPA. The AI only collects what a human receptionist would ask for: name, phone number and reason for visit.",
+    "th": "รายละเอียดการจองเข้าสู่ปฏิทินและระบบจองของคุณเอง ไม่ใช่กล่องข้อความของบุคคลภายนอก ก่อนเปิดใช้งาน เราตกลงร่วมกับคุณว่าจะจัดเก็บข้อมูลอะไรและนานเท่าใด และตั้งค่าระบบตาม พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล (PDPA) AI เก็บเฉพาะข้อมูลที่พนักงานต้อนรับจะถามตามปกติ คือ ชื่อ เบอร์โทร และเหตุผลที่มาพบแพทย์",
+    "ru": "Данные о записи попадают в ваш собственный календарь и систему записи, а не в сторонний почтовый ящик. До запуска мы согласуем с вами, что именно хранится и как долго, и настраиваем систему в соответствии с тайским законом о защите данных (PDPA). AI собирает только то, что спросил бы администратор: имя, телефон и причину визита."
+  },
+  "clinic_faq_q6": {
+    "en": "Will it reduce no-shows?",
+    "th": "ช่วยลดการไม่มาตามนัดได้ไหม",
+    "ru": "Сократит ли это количество неявок?"
+  },
+  "clinic_faq_a6": {
+    "en": "Reminders are the main lever: confirmations and reminders go out on LINE and SMS, and rescheduling takes one reply instead of a phone call, so patients fix their booking rather than silently skipping it. We measure your no-show rate before and after launch rather than promising a number upfront.",
+    "th": "การแจ้งเตือนคือกลไกหลัก: ระบบส่งยืนยันและแจ้งเตือนนัดทาง LINE และ SMS และการเลื่อนนัดใช้แค่การตอบกลับครั้งเดียวแทนการโทร คนไข้จึงแก้นัดเองแทนที่จะหายไปเงียบ ๆ เราวัดอัตราการไม่มาตามนัดของคุณทั้งก่อนและหลังเปิดใช้งาน แทนการรับปากตัวเลขล่วงหน้า",
+    "ru": "Главный рычаг — напоминания: подтверждения и напоминания уходят в LINE и по SMS, а перенос занимает один ответ вместо звонка, поэтому пациенты меняют запись, а не молча пропускают визит. Мы измеряем долю неявок до и после запуска, а не обещаем цифру заранее."
+  },
+  "clinic_faq_q7": {
+    "en": "Is this system already running somewhere real?",
+    "th": "ระบบนี้ใช้งานจริงที่ไหนแล้วบ้าง",
+    "ru": "Работает ли эта система где-то на практике?"
+  },
+  "clinic_faq_a7": {
+    "en": "Yes. The same receptionist has answered the phones of a six-branch service business in Phuket since June 2026, taking 169 calls at an average of 76 seconds each and making 105 bookings across voice and chat. A clinic deployment starts from that proven core, then adds your treatments, practitioners and escalation rules on top. Setup usually takes 2 to 4 weeks.",
+    "th": "ใช้แล้ว ระบบรับสายตัวเดียวกันนี้รับสายให้ธุรกิจบริการ 6 สาขาในภูเก็ตมาตั้งแต่มิถุนายน 2026 รับไปแล้ว 169 สาย เฉลี่ยสายละ 76 วินาที และทำการจองได้ 105 รายการ ทั้งทางโทรศัพท์และแชต การติดตั้งให้คลินิกเริ่มจากระบบหลักที่พิสูจน์แล้วนี้ แล้วเพิ่มการรักษา แพทย์ และกฎการส่งต่อของคุณเข้าไป โดยทั่วไปใช้เวลาติดตั้ง 2 ถึง 4 สัปดาห์",
+    "ru": "Да. Этот же секретарь с июня 2026 года отвечает на звонки сервисного бизнеса с шестью филиалами на Пхукете: 169 звонков в среднем по 76 секунд и 105 записей голосом и в чате. Внедрение в клинике начинается с этого проверенного ядра, а затем добавляются ваши процедуры, специалисты и правила эскалации. Настройка обычно занимает от 2 до 4 недель."
+  },
+  "clinic_related_eyebrow": {
+    "en": "RELATED",
+    "th": "บริการที่เกี่ยวข้อง",
+    "ru": "ПО ТЕМЕ"
+  },
+  "clinic_related_h2": {
+    "en": "Same front desk, <em class=\"accent\">different room.</em>",
+    "th": "ระบบรับสายเดียวกัน <em class=\"accent\">ต่างธุรกิจ</em>",
+    "ru": "Тот же ресепшн, <em class=\"accent\">другая сфера.</em>"
+  },
+  "clinic_related_links": {
+    "en": "<a href=\"/hotel-night-desk-ai/\">Hotel night desk that never misses a call</a> &middot; <a href=\"https://heybeem.com/\" target=\"_blank\" rel=\"noopener\">Beem, the AI front desk for shops and salons</a>",
+    "th": "<a href=\"/hotel-night-desk-ai/\">ระบบรับสายกะดึกของโรงแรมที่ไม่พลาดสักสาย</a> &middot; <a href=\"https://heybeem.com/\" target=\"_blank\" rel=\"noopener\">Beem ระบบ AI หน้าร้านสำหรับร้านค้าและซาลอน</a>",
+    "ru": "<a href=\"/hotel-night-desk-ai/\">Ночной ресепшн отеля, который не пропускает звонков</a> &middot; <a href=\"https://heybeem.com/\" target=\"_blank\" rel=\"noopener\">Beem — AI-ресепшн для магазинов и салонов</a>"
+  },
+  "clinic_call_t1": {
+    "en": "Ducky Cutz. For Thai press one, for English press two.",
+    "th": "Ducky Cutz ภาษาไทยกด 1 ภาษาอังกฤษกด 2",
+    "ru": "Ducky Cutz. Для тайского нажмите 1, для английского — 2."
+  },
+  "clinic_call_t2": {
+    "en": "pressed 2 for English",
+    "th": "กด 2 เลือกภาษาอังกฤษ",
+    "ru": "нажата 2 — английский"
+  },
+  "clinic_call_t3": {
+    "en": "Hello. How can we help you today?",
+    "th": "สวัสดี วันนี้ให้เราช่วยอะไรดี",
+    "ru": "Здравствуйте. Чем можем помочь?"
+  },
+  "clinic_call_t4": {
+    "en": "Can I book a haircut?",
+    "th": "ขอจองตัดผมได้ไหม",
+    "ru": "Можно записаться на стрижку?"
+  },
+  "clinic_call_t5": {
+    "en": "looking up the caller",
+    "th": "ค้นหาข้อมูลผู้โทร",
+    "ru": "поиск звонящего в базе"
+  },
+  "clinic_call_t6": {
+    "en": "Of course, Thomas. The same haircut as usual, or did you have a different style in mind?",
+    "th": "ได้เลย คุณโทมัส ตัดทรงเดิมเหมือนทุกครั้ง หรืออยากลองทรงอื่น",
+    "ru": "Конечно, Томас. Стрижка как обычно или хотите что-то другое?"
+  },
+  "clinic_call_t7": {
+    "en": "The same, the same.",
+    "th": "ทรงเดิม ทรงเดิม",
+    "ru": "Как обычно, как обычно."
+  },
+  "clinic_call_t8": {
+    "en": "I can do tomorrow at 10 AM, 11 AM or 12 PM — with your usual style. Would you like one of those times?",
+    "th": "พรุ่งนี้ว่างเวลา 10:00, 11:00 หรือ 12:00 น. ทรงเดิมของคุณ สะดวกเวลาไหน",
+    "ru": "Могу предложить завтра в 10:00, 11:00 или 12:00 — вашу обычную стрижку. Подойдёт одно из этих времён?"
+  },
+  "clinic_call_t9": {
+    "en": "Can you do today? Today at 12:30 or 1?",
+    "th": "วันนี้ได้ไหม วันนี้ 12:30 หรือ 13:00 น.",
+    "ru": "А сегодня можно? Сегодня в 12:30 или в 13:00?"
+  },
+  "clinic_call_t10": {
+    "en": "checking the calendar",
+    "th": "ตรวจปฏิทิน",
+    "ru": "проверка календаря"
+  },
+  "clinic_call_t11": {
+    "en": "You can do today at 1 PM — or you're welcome to walk in now if you want it sooner. Would you like 1 PM?",
+    "th": "วันนี้ได้ตอน 13:00 น. หรือถ้าอยากตัดเร็วกว่านั้นก็แวะมาได้เลยตอนนี้ รับเป็น 13:00 น. ไหม",
+    "ru": "Сегодня можно в 13:00 — или приходите прямо сейчас, если хотите пораньше. Записать на 13:00?"
+  },
+  "clinic_call_t12": {
+    "en": "1 PM.",
+    "th": "13:00 น.",
+    "ru": "На 13:00."
+  },
+  "clinic_call_t13": {
+    "en": "Booking that for you now.",
+    "th": "กำลังจองให้เลย",
+    "ru": "Записываю вас."
+  },
+  "clinic_call_t14": {
+    "en": "All booked. You're set for today at 1 PM. Anything else I can help you with before you come in?",
+    "th": "จองเรียบร้อย นัดของคุณคือวันนี้ 13:00 น. มีอะไรให้ช่วยอีกไหมก่อนมาที่ร้าน",
+    "ru": "Готово. Вы записаны на сегодня, 13:00. Могу ещё чем-то помочь до вашего визита?"
+  },
+  "clinic_call_t15": {
+    "en": "No, thank you. Thank you so much.",
+    "th": "ไม่มีแล้ว ขอบคุณมาก",
+    "ru": "Нет, спасибо. Большое спасибо."
+  },
+  "clinic_call_t16": {
+    "en": "Please arrive about 15 minutes early. Thank you for calling Ducky Cutz.",
+    "th": "กรุณามาก่อนเวลาประมาณ 15 นาที ขอบคุณที่โทรหา Ducky Cutz",
+    "ru": "Пожалуйста, приходите минут за 15. Спасибо, что позвонили в Ducky Cutz."
+  },
+  "clinic_call_f1": {
+    "en": "Answers and routes by language",
+    "th": "รับสายและเลือกภาษาให้อัตโนมัติ",
+    "ru": "Отвечает и выбирает язык"
+  },
+  "clinic_call_f2": {
+    "en": "Recognises the returning caller",
+    "th": "จำลูกค้าเก่าได้",
+    "ru": "Узнаёт постоянного клиента"
+  },
+  "clinic_call_f3": {
+    "en": "Checks the live calendar",
+    "th": "ตรวจปฏิทินแบบเรียลไทม์",
+    "ru": "Проверяет календарь в реальном времени"
+  },
+  "clinic_call_f4": {
+    "en": "Writes the booking",
+    "th": "บันทึกการจอง",
+    "ru": "Оформляет запись"
+  },
+  "clinic_call_f5": {
+    "en": "Confirms the details",
+    "th": "ยืนยันรายละเอียด",
+    "ru": "Подтверждает детали"
+  },
+  "clinic_call_k": {
+    "en": "What the AI did",
+    "th": "สิ่งที่ AI ทำ",
+    "ru": "Что сделал AI"
+  },
+  "clinic_call_agent": {
+    "en": "AI receptionist",
+    "th": "AI รับสาย",
+    "ru": "AI-секретарь"
+  },
+  "clinic_call_caller": {
+    "en": "Caller",
+    "th": "ผู้โทร",
+    "ru": "Звонящий"
+  },
+  "clinic_call_note": {
+    "en": "This is a real recording.",
+    "th": "นี่คือเสียงบันทึกจริง",
+    "ru": "Это реальная запись."
+  },
+  "clinic_call_sub": {
+    "en": "Ducky Cutz, Phuket Town — 9 Aug 2026.",
+    "th": "Ducky Cutz ตัวเมืองภูเก็ต — 9 ส.ค. 2026",
+    "ru": "Ducky Cutz, Пхукет-Таун — 9 авг. 2026."
+  },
+  "hotel_hero_eyebrow": {
+    "en": "AI NIGHT DESK · HOTELS IN THAILAND",
+    "th": "AI รับสายกะดึก · โรงแรมในประเทศไทย",
+    "ru": "AI-НОЧНОЙ РЕСЕПШН · ОТЕЛИ ТАИЛАНДА"
+  },
+  "hotel_hero_h1": {
+    "en": "Hotel night desk that <em class=\"accent\">never misses a call.</em>",
+    "th": "ระบบรับสายกะดึกของโรงแรมที่<em class=\"accent\">ไม่พลาดสักสาย</em>",
+    "ru": "Ночной ресепшн отеля, который <em class=\"accent\">не пропускает ни одного звонка.</em>"
+  },
+  "hotel_hero_sub": {
+    "en": "Rejig Labs runs your hotel phone from 10pm to 7am. Late arrivals get a real answer, urgent calls still reach your duty manager, and the front office starts the shift with one summary.",
+    "th": "Rejig Labs ดูแลโทรศัพท์ของโรงแรมคุณตั้งแต่ 22.00 ถึง 07.00 น. แขกที่มาถึงดึกได้รับคำตอบจริง สายเร่งด่วนยังถึงผู้จัดการเวรเสมอ และฝ่ายต้อนรับเริ่มกะด้วยสรุปเพียงฉบับเดียว",
+    "ru": "Rejig Labs ведёт телефон вашего отеля с 22:00 до 7:00. Гости, прибывающие поздно, получают настоящий ответ, срочные звонки по-прежнему доходят до дежурного менеджера, а служба приёма начинает смену с одной сводки."
+  },
+  "hotel_flow_1": {
+    "en": "Late check-in, 1am",
+    "th": "เช็กอินดึก 01.00 น.",
+    "ru": "Поздний заезд, 1:00"
+  },
+  "hotel_flow_2": {
+    "en": "Answered first ring",
+    "th": "รับสายตั้งแต่เสียงแรก",
+    "ru": "Ответ с первого гудка"
+  },
+  "hotel_flow_3": {
+    "en": "Escalated if urgent",
+    "th": "ส่งต่อทันทีหากเร่งด่วน",
+    "ru": "Эскалация, если срочно"
+  },
+  "hotel_flow_4": {
+    "en": "Morning summary",
+    "th": "สรุปตอนเช้า",
+    "ru": "Утренняя сводка"
+  },
+  "hotel_problem_eyebrow": {
+    "en": "10PM TO 7AM",
+    "th": "22.00 ถึง 07.00 น.",
+    "ru": "С 22:00 ДО 7:00"
+  },
+  "hotel_problem_h2": {
+    "en": "The quietest shift is the one <em class=\"accent\">that costs you.</em>",
+    "th": "กะที่เงียบที่สุด <em class=\"accent\">คือกะที่ทำให้คุณเสียมากที่สุด</em>",
+    "ru": "Самая тихая смена — <em class=\"accent\">та, что обходится дороже всего.</em>"
+  },
+  "hotel_problem_p": {
+    "en": "Overnight the phone rings rarely and matters enormously: the late arrival, the guest who cannot find the gate, the booking someone wants to make right now. Staffing a full desk for that volume is hard to justify, so the calls go to a night porter mid-round, to voicemail, or nowhere. The GM finds out at breakfast, from a guest.",
+    "th": "ช่วงกลางคืนโทรศัพท์ดังไม่บ่อย แต่ทุกสายสำคัญมาก: แขกที่มาถึงดึก แขกที่หาประตูทางเข้าไม่เจอ หรือคนที่อยากจองห้องตอนนี้เลย การจัดพนักงานประจำเคาน์เตอร์เต็มกะสำหรับปริมาณสายเท่านี้คุ้มค่าได้ยาก สายจึงไปตกอยู่กับพนักงานกะดึกที่กำลังเดินตรวจ ไปที่ข้อความเสียง หรือไม่มีใครรับเลย แล้วผู้จัดการทั่วไปก็มารู้ตอนมื้อเช้าจากปากแขกเอง",
+    "ru": "Ночью телефон звонит редко, но каждый звонок очень важен: поздний заезд, гость, который не может найти ворота, бронирование, которое кто-то хочет сделать прямо сейчас. Держать полноценный ресепшн ради такого объёма трудно оправдать, поэтому звонки уходят ночному портье посреди обхода, на автоответчик или в никуда. Генеральный менеджер узнаёт об этом за завтраком — от гостя."
+  },
+  "hotel_process_eyebrow": {
+    "en": "WHAT ACTUALLY HAPPENS",
+    "th": "สิ่งที่เกิดขึ้นจริง",
+    "ru": "ЧТО ПРОИСХОДИТ НА САМОМ ДЕЛЕ"
+  },
+  "hotel_process_h2": {
+    "en": "Answered, handled, <em class=\"accent\">handed over.</em>",
+    "th": "รับสาย จัดการ <em class=\"accent\">และส่งต่อ</em>",
+    "ru": "Ответили, решили, <em class=\"accent\">передали.</em>"
+  },
+  "hotel_step_1_name": {
+    "en": "The late call is answered",
+    "th": "สายดึกได้รับการตอบรับ",
+    "ru": "Поздний звонок принят"
+  },
+  "hotel_step_1_use": {
+    "en": "First ring, in Thai, English or Russian. Late check-in, arrival time, directions, parking, breakfast hours, a room request.",
+    "th": "รับตั้งแต่เสียงแรก เป็นภาษาไทย อังกฤษ หรือรัสเซีย ทั้งเรื่องเช็กอินดึก เวลาที่จะมาถึง เส้นทาง ที่จอดรถ เวลาอาหารเช้า และคำขอเกี่ยวกับห้องพัก",
+    "ru": "С первого гудка, на тайском, английском или русском. Поздний заезд, время прибытия, как добраться, парковка, часы завтрака, просьба по номеру."
+  },
+  "hotel_step_2_name": {
+    "en": "Anything real reaches a person",
+    "th": "เรื่องสำคัญถึงมือคนเสมอ",
+    "ru": "Всё серьёзное попадает к человеку"
+  },
+  "hotel_step_2_use": {
+    "en": "A complaint, a medical issue, anything the AI should not decide goes to your duty manager immediately, with the conversation attached.",
+    "th": "คำร้องเรียน ปัญหาสุขภาพ หรือเรื่องใดก็ตามที่ AI ไม่ควรตัดสินใจเอง จะส่งถึงผู้จัดการเวรทันที พร้อมแนบบทสนทนา",
+    "ru": "Жалоба, проблема со здоровьем, всё, что AI не должен решать сам, сразу уходит дежурному менеджеру вместе с записью разговора."
+  },
+  "hotel_step_3_name": {
+    "en": "The morning summary lands",
+    "th": "สรุปตอนเช้าพร้อมรออยู่",
+    "ru": "Утренняя сводка готова"
+  },
+  "hotel_step_3_use": {
+    "en": "One list at the start of the shift: every call, what was asked, what was promised, what is still open at the top.",
+    "th": "รายการเดียวตอนเริ่มกะ: ทุกสาย สิ่งที่แขกถาม สิ่งที่รับปากไว้ และเรื่องที่ยังค้างอยู่แสดงไว้บนสุด",
+    "ru": "Один список в начале смены: каждый звонок, что спросили, что пообещали, а всё незакрытое — в самом верху."
+  },
+  "hotel_faq_h2": {
+    "en": "Front office <em class=\"accent\">questions.</em>",
+    "th": "คำถามจาก<em class=\"accent\">ฝ่ายต้อนรับ</em>",
+    "ru": "Вопросы <em class=\"accent\">службы приёма.</em>"
+  },
+  "hotel_faq_q1": {
+    "en": "Who answers the hotel phone at 2am?",
+    "th": "ใครรับโทรศัพท์โรงแรมตอน 02.00 น.",
+    "ru": "Кто отвечает на телефон отеля в 2 часа ночи?"
+  },
+  "hotel_faq_a1": {
+    "en": "The Rejig Labs AI night desk. It answers in the caller's language, handles late check-in, arrival times, directions and standard requests, and escalates to your duty manager when the call actually needs a person.",
+    "th": "AI รับสายกะดึกของ Rejig Labs ระบบรับสายในภาษาของผู้โทร จัดการเรื่องเช็กอินดึก เวลาที่จะมาถึง เส้นทาง และคำขอทั่วไป และส่งต่อถึงผู้จัดการเวรเมื่อสายนั้นต้องการคนจริง ๆ",
+    "ru": "Ночной AI-ресепшн от Rejig Labs. Он отвечает на языке звонящего, решает вопросы позднего заезда, времени прибытия, маршрута и стандартных просьб и передаёт звонок дежурному менеджеру, когда действительно нужен человек."
+  },
+  "hotel_faq_q2": {
+    "en": "How does my front office know what happened overnight?",
+    "th": "ฝ่ายต้อนรับจะรู้ได้อย่างไรว่าเมื่อคืนเกิดอะไรขึ้น",
+    "ru": "Как служба приёма узнает, что произошло за ночь?"
+  },
+  "hotel_faq_a2": {
+    "en": "One summary at the start of the shift: every call, who it was, what they asked for and what was promised, with anything still open flagged at the top.",
+    "th": "สรุปฉบับเดียวตอนเริ่มกะ: ทุกสาย ใครโทรมา ขออะไร และรับปากอะไรไว้ โดยเรื่องที่ยังค้างอยู่จะถูกทำเครื่องหมายไว้บนสุด",
+    "ru": "Одна сводка в начале смены: каждый звонок, кто звонил, что просил и что было обещано, а всё незакрытое отмечено в самом верху."
+  },
+  "hotel_faq_q3": {
+    "en": "Does it work with our PMS?",
+    "th": "ใช้งานร่วมกับ PMS ของเราได้ไหม",
+    "ru": "Работает ли это с нашей PMS?"
+  },
+  "hotel_faq_a3": {
+    "en": "It works alongside the systems you already pay for rather than replacing them. Which parts write back automatically depends on what your PMS exposes, so we scope that on the walkthrough before quoting.",
+    "th": "ระบบทำงานร่วมกับระบบที่คุณใช้อยู่แล้ว ไม่ได้เข้ามาแทนที่ ส่วนใดจะบันทึกกลับอัตโนมัติได้ขึ้นอยู่กับสิ่งที่ PMS ของคุณเปิดให้เชื่อมต่อ เราจึงประเมินเรื่องนี้ร่วมกันระหว่างการนัดคุยก่อนเสนอราคา",
+    "ru": "Система работает вместе с решениями, за которые вы уже платите, а не заменяет их. Что именно будет записываться обратно автоматически, зависит от возможностей вашей PMS, поэтому мы определяем это на созвоне до составления предложения."
+  },
+  "hotel_related_eyebrow": {
+    "en": "RELATED",
+    "th": "บริการที่เกี่ยวข้อง",
+    "ru": "ПО ТЕМЕ"
+  },
+  "hotel_related_h2": {
+    "en": "Same front desk, <em class=\"accent\">different room.</em>",
+    "th": "ระบบรับสายเดียวกัน <em class=\"accent\">ต่างธุรกิจ</em>",
+    "ru": "Тот же ресепшн, <em class=\"accent\">другая сфера.</em>"
+  },
+  "hotel_related_links": {
+    "en": "<a href=\"/ai-receptionist-clinic/\">AI receptionist for clinics</a> &middot; <a href=\"https://heybeem.com/\" target=\"_blank\" rel=\"noopener\">Beem, the AI front desk for shops and salons</a>",
+    "th": "<a href=\"/ai-receptionist-clinic/\">AI รับสายสำหรับคลินิก</a> &middot; <a href=\"https://heybeem.com/\" target=\"_blank\" rel=\"noopener\">Beem ระบบ AI หน้าร้านสำหรับร้านค้าและซาลอน</a>",
+    "ru": "<a href=\"/ai-receptionist-clinic/\">AI-секретарь для клиник</a> &middot; <a href=\"https://heybeem.com/\" target=\"_blank\" rel=\"noopener\">Beem — AI-ресепшн для магазинов и салонов</a>"
   }
 }

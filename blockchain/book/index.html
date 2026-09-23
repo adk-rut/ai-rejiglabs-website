@@ -47,6 +47,10 @@
   <script src="/blockchain/book-questions.js"></script>
   <script src="/js/i18n.js"></script>
   <script src="/js/booking.js"></script>
-  <script>window.rejigBooking.open({ mount: document.getElementById('book') });</script>
+  <script>
+    // Open the panel in the visitor's saved site language.
+    try { var l = localStorage.getItem('airejig_lang'); if (l === 'th' || l === 'ru') document.documentElement.lang = l; } catch (e) {}
+    window.rejigBooking.open({ mount: document.getElementById('book') });
+  </script>
 </body>
 </html>
