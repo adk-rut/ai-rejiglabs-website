@@ -65,12 +65,33 @@ function bakeAttr(html, attr, lang, isHtml) {
   return html;
 }
 
+// Structured data follows the visible copy: any JSON-LD string that equals an
+// English translation (tags stripped) becomes that key's text in this language,
+// so a Thai page's FAQPage answers in Thai, as its FAQ does.
+const strip = (h) => h.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').trim();
+export function localizeJsonLd(html, code) {
+  const byEn = new Map();
+  for (const v of Object.values(T)) if (v.en && v[code]) byEn.set(strip(v.en), strip(v[code]));
+  const walk = (x) => Array.isArray(x) ? x.map(walk)
+    : x && typeof x === 'object' ? Object.fromEntries(Object.entries(x).map(([k, v]) => [k, walk(v)]))
+    : typeof x === 'string' && byEn.has(x) ? byEn.get(x) : x;
+  return html.replace(/(<script type="application\/ld\+json"[^>]*>)([\s\S]*?)(<\/script>)/g, (m, open, body, close) => {
+    let data;
+    try { data = JSON.parse(body); } catch { return m; }
+    const out = walk(data);
+    if (out && typeof out === 'object' && !Array.isArray(out) && 'inLanguage' in out) out.inLanguage = code;
+    return open + '\n' + JSON.stringify(out, null, 2).replace(/</g, '\\u003c') + '\n  ' + close;
+  });
+}
+
 function buildPage(page, lang) {
   let html = readFileSync(resolve(ROOT, page.src), 'utf8');
 
   // 1) body text
   html = bakeAttr(html, 'data-i18n-html', lang.code, true);
   html = bakeAttr(html, 'data-i18n', lang.code, false);
+
+  html = localizeJsonLd(html, lang.code);
 
   // 2) head: lang, title, description, canonical, og/twitter, og:url
   const title = T[page.seoTitle][lang.code];

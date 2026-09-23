@@ -81,75 +81,115 @@
 
   <!-- Structured data: Service + FAQ + Breadcrumb -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Service",
-        "@id": "https://rejiglabs.com/ai-chatbot/#service",
-        "name": "AI Chatbot & LINE OA Automation",
-        "url": "https://rejiglabs.com/ai-chatbot/",
-        "serviceType": "AI chatbot development",
-        "provider": { "@id": "https://rejiglabs.com/#organization" },
-        "areaServed": "Thailand",
-        "availableLanguage": ["Thai", "English", "Russian"],
-        "description": "Custom AI chatbots that answer customers 24/7 on LINE OA, website and social channels, in Thai, English and Russian: replying, qualifying leads, and booking appointments automatically."
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://rejiglabs.com/ai-chatbot/#service",
+      "name": "AI Chatbot & LINE OA Automation",
+      "url": "https://rejiglabs.com/ai-chatbot/",
+      "serviceType": "AI chatbot development",
+      "provider": {
+        "@id": "https://rejiglabs.com/#organization"
       },
-      {
-        "@type": "FAQPage",
-        "@id": "https://rejiglabs.com/ai-chatbot/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Does it work with LINE Official Account (LINE OA)?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. LINE OA is our primary channel for Thai businesses. We connect the chatbot directly to your LINE OA so it answers customers in the app they already use every day." }
-          },
-          {
-            "@type": "Question",
-            "name": "Will it sound like a robot?",
-            "acceptedAnswer": { "@type": "Answer", "text": "No. We train it on your real tone, your FAQs and your past chats, so replies feel natural and on-brand. It hands off to a human the moment a conversation needs one." }
-          },
-          {
-            "@type": "Question",
-            "name": "What languages does the chatbot support?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Thai, English and Russian out of the box. It detects the customer's language automatically and replies in it. More languages on request." }
-          },
-          {
-            "@type": "Question",
-            "name": "Can it book appointments and take orders?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. It checks your live calendar, books slots, captures order details and saves everything to your CRM, all inside the chat." }
-          },
-          {
-            "@type": "Question",
-            "name": "How long until the chatbot is live?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Most chatbots go live in 2 to 4 weeks, depending on how many channels and how complex your answers are. You will see a working version early." }
-          },
-          {
-            "@type": "Question",
-            "name": "What happens after a customer's LINE or WhatsApp message goes unanswered?",
-            "acceptedAnswer": { "@type": "Answer", "text": "With Rejig Labs, it does not go unanswered. The message is picked up within minutes, answered in the customer's language, and turned into a booking if that is what they wanted. A person is only pulled in when the conversation actually needs one." }
-          },
-          {
-            "@type": "Question",
-            "name": "Is this LINE or WhatsApp?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Both, plus web chat. This is built for Thailand, where customers message a shop on LINE or WhatsApp. It is not a US-style phone tree." }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I know it would reply the way I would?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Send us a real chat you missed. We show you the reply it would have sent, in your language and your prices, before you commit to anything." }
+      "areaServed": "Thailand",
+      "availableLanguage": [
+        "Thai",
+        "English",
+        "Russian"
+      ],
+      "description": "Custom AI chatbots that answer customers 24/7 on LINE OA, website and social channels, in Thai, English and Russian: replying, qualifying leads, and booking appointments automatically."
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://rejiglabs.com/ai-chatbot/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Работает ли он с LINE Official Account (LINE OA)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. LINE OA — наш основной канал для тайского бизнеса. Мы подключаем чат-бот напрямую к вашему LINE OA, чтобы он отвечал клиентам в приложении, которым они пользуются каждый день."
           }
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rejiglabs.com/" },
-          { "@type": "ListItem", "position": 2, "name": "AI Chatbot & LINE OA", "item": "https://rejiglabs.com/ai-chatbot/" }
-        ]
-      }
-    ]
-  }
+        },
+        {
+          "@type": "Question",
+          "name": "Будет ли он звучать как робот?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We train it on your real tone, your FAQs and your past chats, so replies feel natural and on-brand. It hands off to a human the moment a conversation needs one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие языки поддерживает чат-бот?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Тайский, английский и русский сразу из коробки. Он автоматически определяет язык клиента и отвечает на нём. Другие языки — по запросу."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Может ли он записывать на приём и принимать заказы?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Он проверяет ваш актуальный календарь, бронирует слоты, фиксирует детали заказа и сохраняет всё в вашу CRM — прямо в чате."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько времени до запуска чат-бота?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most chatbots go live in 2 to 4 weeks, depending on how many channels and how complex your answers are. You will see a working version early."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что происходит, если сообщение клиента в LINE или WhatsApp осталось без ответа?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "С Rejig Labs оно не остаётся без ответа. Сообщение подхватывается за минуты, ответ приходит на языке клиента и превращается в запись, если клиент этого хотел. Человек подключается, только когда разговор действительно этого требует."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Это LINE или WhatsApp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "И то, и другое, плюс веб-чат. Это сделано для Таиланда, где клиенты пишут в LINE или WhatsApp. Это не американское голосовое меню."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как понять, что бот ответит так же, как ответил бы я?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Пришлите реальный чат, который вы пропустили. Мы покажем, что бы ответил бот — на вашем языке и с вашими ценами, до любых обязательств."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://rejiglabs.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI Chatbot & LINE OA",
+          "item": "https://rejiglabs.com/ai-chatbot/"
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>

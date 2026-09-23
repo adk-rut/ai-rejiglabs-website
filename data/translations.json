@@ -31,7 +31,7 @@
   },
   "hero_h1": {
     "en": "AI that works<br><em class=\"accent\">inside your business.</em>",
-    "th": "AI ที่ทำงานได้จริง<br><em class=\"accent\">ในธุรกิจของคุณ</em>",
+    "th": "วางระบบ AI ที่ทำงานได้จริง<br><em class=\"accent\">ในธุรกิจของคุณ</em>",
     "ru": "AI, который работает<br><em class=\"accent\">внутри вашего бизнеса.</em>"
   },
   "hero_sub": {
@@ -190,9 +190,9 @@
     "ru": "Прямые ответы до звонка."
   },
   "faq_q1": {
-    "en": "How are you different from AI consultants?",
-    "th": "ต่างจากที่ปรึกษา AI ทั่วไปอย่างไร?",
-    "ru": "Чем вы отличаетесь от AI-консультантов?"
+    "en": "How is Rejig Labs different from AI consultants?",
+    "th": "Rejig Labs ต่างจากที่ปรึกษา AI ทั่วไปอย่างไร?",
+    "ru": "Чем Rejig Labs отличается от AI-консультантов?"
   },
   "faq_a1": {
     "en": "Most consultants hand you a strategy deck and leave. We build what we recommend, deploy it, and stay until your team runs it. Every project is led by our founder, <a href=\"/about/\">Rut Adikari (Mr. RT)</a>.",
@@ -556,12 +556,12 @@
   },
   "seo_title": {
     "en": "AI Implementation Partner in Thailand | Rejig Labs",
-    "th": "พาร์ตเนอร์วางระบบ AI สำหรับธุรกิจในไทย | Rejig Labs",
-    "ru": "Партнёр по внедрению AI в Таиланде | Rejig Labs"
+    "th": "รับวางระบบ AI และระบบอัตโนมัติสำหรับธุรกิจ | Rejig Labs",
+    "ru": "Внедрение AI и автоматизация для бизнеса в Таиланде | Rejig Labs"
   },
   "seo_desc": {
-    "en": "Rejig Labs is an AI implementation partner based in Phuket, Thailand. We find where AI saves you time and money, build it into your tools, and train your team to run it.",
-    "th": "Rejig Labs พาร์ตเนอร์วางระบบ AI จากภูเก็ต เราหาจุดที่ AI ช่วยประหยัดเวลาและต้นทุน สร้างระบบเข้ากับเครื่องมือที่คุณใช้อยู่ แล้วสอนทีมของคุณให้ดูแลเองได้",
+    "en": "Rejig Labs is an AI implementation partner in Phuket, Thailand. We find where AI automation saves you time and money, build it into your tools, and train your team to run it.",
+    "th": "Rejig Labs พาร์ตเนอร์รับวางระบบ AI จากภูเก็ต เราหาจุดที่ระบบ AI อัตโนมัติช่วยประหยัดเวลาและต้นทุน สร้างเข้ากับเครื่องมือที่คุณใช้อยู่ แล้วสอนทีมให้ดูแลเองได้",
     "ru": "Rejig Labs — партнёр по внедрению AI с базой на Пхукете. Находим, где AI экономит время и деньги, встраиваем его в ваши инструменты и обучаем команду им управлять."
   },
   "seo_title_chatbot": {
@@ -795,7 +795,7 @@
     "ru": "Системы, которые мы <em class=\"accent\">уже запустили.</em>"
   },
   "cs_hub_sub": {
-    "en": "Named clients, real numbers, systems running in production today.",
+    "en": "Named clients, real numbers, AI systems running in production today.",
     "th": "ลูกค้าตัวจริง ตัวเลขจริง ระบบที่ใช้งานจริงอยู่ทุกวันนี้",
     "ru": "Реальные клиенты, реальные цифры, системы в продакшене уже сегодня."
   },
@@ -2140,5 +2140,50 @@
     "en": "Trouble booking? Email <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>",
     "th": "จองไม่ได้? อีเมลมาที่ <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>",
     "ru": "Не получается записаться? Напишите на <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>"
+  },
+  "about_faq_h2": {
+    "en": "Quick <em class=\"accent\">facts.</em>",
+    "th": "ข้อมูล<em class=\"accent\">โดยย่อ</em>",
+    "ru": "Коротко <em class=\"accent\">о нас.</em>"
+  },
+  "about_q1": {
+    "en": "What does Rejig Labs do?",
+    "th": "Rejig Labs ทำอะไร?",
+    "ru": "Чем занимается Rejig Labs?"
+  },
+  "about_a1": {
+    "en": "Rejig Labs is an AI implementation partner. It audits how a business runs, builds AI systems into the tools the team already uses (voice agents, chat, CRM automation, content engines, knowledge assistants) and trains the team to run them.",
+    "th": "Rejig Labs คือพาร์ตเนอร์วางระบบ AI เราวิเคราะห์การทำงานของธุรกิจ สร้างระบบ AI เข้ากับเครื่องมือที่ทีมใช้อยู่ (ระบบรับสาย แชท CRM อัตโนมัติ ระบบทำคอนเทนต์ ผู้ช่วยตอบจากเอกสาร) และสอนทีมให้ดูแลเองได้",
+    "ru": "Rejig Labs — партнёр по внедрению AI. Мы разбираем, как работает бизнес, встраиваем AI-системы в текущие инструменты команды (голосовые агенты, чаты, автоматизация CRM, контент-движки, ассистенты по базе знаний) и обучаем команду ими управлять."
+  },
+  "about_q2": {
+    "en": "Who founded Rejig Labs?",
+    "th": "ใครเป็นผู้ก่อตั้ง Rejig Labs?",
+    "ru": "Кто основал Rejig Labs?"
+  },
+  "about_a2": {
+    "en": "Rejig Labs was founded by Rut Adikari, known to clients as Mr. RT, who leads every project personally.",
+    "th": "Rejig Labs ก่อตั้งโดย Rut Adikari หรือ Mr. RT ซึ่งดูแลทุกโปรเจกต์ด้วยตัวเอง",
+    "ru": "Основатель Rejig Labs — Rut Adikari (Mr. RT). Rut лично ведёт каждый проект."
+  },
+  "about_q3": {
+    "en": "Where is Rejig Labs based?",
+    "th": "Rejig Labs ตั้งอยู่ที่ไหน?",
+    "ru": "Где находится Rejig Labs?"
+  },
+  "about_a3": {
+    "en": "Rejig Labs is based in Phuket and Bangkok, Thailand, and works with clients worldwide in English, Thai and Russian.",
+    "th": "Rejig Labs ตั้งอยู่ที่ภูเก็ตและกรุงเทพฯ และทำงานกับลูกค้าทั่วโลกในภาษาอังกฤษ ไทย และรัสเซีย",
+    "ru": "Rejig Labs работает из Пхукета и Бангкока (Таиланд) с клиентами по всему миру на английском, тайском и русском."
+  },
+  "about_q4": {
+    "en": "How do I start a project with Rejig Labs?",
+    "th": "เริ่มโปรเจกต์กับ Rejig Labs ได้อย่างไร?",
+    "ru": "Как начать проект с Rejig Labs?"
+  },
+  "about_a4": {
+    "en": "Book a free 30-minute call. You get a straight answer on where AI fits your business and what it would take. Or email rut@rejiglabs.com.",
+    "th": "นัดคุยฟรี 30 นาที คุณจะได้คำตอบตรง ๆ ว่า AI เหมาะกับธุรกิจคุณตรงไหน และต้องใช้อะไรบ้าง หรืออีเมลมาที่ rut@rejiglabs.com",
+    "ru": "Запишитесь на бесплатный 30-минутный звонок: вы получите прямой ответ, где AI подойдёт вашему бизнесу и что для этого нужно. Или напишите на rut@rejiglabs.com."
   }
 }
