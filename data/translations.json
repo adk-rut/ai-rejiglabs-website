@@ -2280,5 +2280,415 @@
     "en": "reconciling…",
     "th": "กำลังกระทบยอด…",
     "ru": "сверка…"
+  },
+  "legal_back": {
+    "en": "← Back to Home",
+    "th": "← กลับสู่หน้าแรก",
+    "ru": "← На главную"
+  },
+  "legal_updated": {
+    "en": "Last updated: March 21, 2026",
+    "th": "ปรับปรุงล่าสุด: 21 มีนาคม 2026",
+    "ru": "Последнее обновление: 21 марта 2026 г."
+  },
+  "legal_notice": {
+    "en": "This page is available in English, Thai and Russian. If the versions differ, the English version applies.",
+    "th": "หน้านี้มีให้บริการเป็นภาษาอังกฤษ ภาษาไทย และภาษารัสเซีย หากฉบับภาษาต่าง ๆ มีข้อความแตกต่างกัน ให้ถือตามฉบับภาษาอังกฤษ",
+    "ru": "Эта страница доступна на английском, тайском и русском языках. В случае расхождений между версиями преимущественную силу имеет версия на английском языке."
+  },
+  "pv_h1": {
+    "en": "Privacy Policy",
+    "th": "นโยบายความเป็นส่วนตัว",
+    "ru": "Политика конфиденциальности"
+  },
+  "pv_intro": {
+    "en": "Rejig Labs, based in Thailand, is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your information when you interact with our website and services.",
+    "th": "Rejig Labs ซึ่งตั้งอยู่ในประเทศไทย มุ่งมั่นที่จะคุ้มครองความเป็นส่วนตัวของท่าน นโยบายนี้อธิบายถึงวิธีการที่เราเก็บรวบรวม ใช้ และปกป้องข้อมูลของท่าน เมื่อท่านใช้งานหรือติดต่อกับเว็บไซต์และบริการของเรา",
+    "ru": "Компания Rejig Labs, расположенная в Таиланде, обязуется защищать вашу конфиденциальность. Настоящая политика описывает, как мы собираем, используем и защищаем вашу информацию при вашем взаимодействии с нашим веб-сайтом и услугами."
+  },
+  "pv_collect_h": {
+    "en": "Information We Collect",
+    "th": "ข้อมูลที่เราเก็บรวบรวม",
+    "ru": "Какую информацию мы собираем"
+  },
+  "pv_collect_p": {
+    "en": "We may collect the following types of information:",
+    "th": "เราอาจเก็บรวบรวมข้อมูลประเภทต่าง ๆ ดังต่อไปนี้:",
+    "ru": "Мы можем собирать следующие виды информации:"
+  },
+  "pv_collect_1": {
+    "en": "<strong>Contact information</strong> you provide directly, such as your name, email address, company name, and phone number when you book a discovery call, fill out a form, or email us.",
+    "th": "<strong>ข้อมูลการติดต่อ</strong> ที่ท่านให้ไว้โดยตรง เช่น ชื่อ ที่อยู่อีเมล ชื่อบริษัท และหมายเลขโทรศัพท์ เมื่อท่านนัดหมายการพูดคุยเบื้องต้น กรอกแบบฟอร์ม หรือส่งอีเมลถึงเรา",
+    "ru": "<strong>Контактная информация</strong>, которую вы предоставляете напрямую, например ваше имя, адрес электронной почты, название компании и номер телефона, когда вы записываетесь на ознакомительный звонок, заполняете форму или пишете нам по электронной почте."
+  },
+  "pv_collect_2": {
+    "en": "<strong>Usage data</strong> collected automatically, including IP address, browser type, pages visited, and time spent on our site.",
+    "th": "<strong>ข้อมูลการใช้งาน</strong> ที่เก็บรวบรวมโดยอัตโนมัติ รวมถึงหมายเลข IP ประเภทของเบราว์เซอร์ หน้าที่เข้าชม และระยะเวลาที่ใช้บนเว็บไซต์ของเรา",
+    "ru": "<strong>Данные об использовании</strong>, собираемые автоматически, включая IP-адрес, тип браузера, посещённые страницы и время, проведённое на нашем сайте."
+  },
+  "pv_collect_3": {
+    "en": "<strong>Business information</strong> you share during consultations, including details about your operations, workflows, and technology stack.",
+    "th": "<strong>ข้อมูลทางธุรกิจ</strong> ที่ท่านแจ้งให้เราทราบระหว่างการให้คำปรึกษา รวมถึงรายละเอียดเกี่ยวกับการดำเนินงาน กระบวนการทำงาน และชุดเทคโนโลยีที่ท่านใช้",
+    "ru": "<strong>Деловая информация</strong>, которую вы сообщаете в ходе консультаций, включая сведения о вашей деятельности, рабочих процессах и технологическом стеке."
+  },
+  "pv_use_h": {
+    "en": "How We Use Your Information",
+    "th": "วิธีที่เราใช้ข้อมูลของท่าน",
+    "ru": "Как мы используем вашу информацию"
+  },
+  "pv_use_p": {
+    "en": "We use the information we collect to:",
+    "th": "เราใช้ข้อมูลที่เก็บรวบรวมเพื่อวัตถุประสงค์ดังต่อไปนี้:",
+    "ru": "Мы используем собранную информацию для следующих целей:"
+  },
+  "pv_use_1": {
+    "en": "Respond to your enquiries and schedule consultations",
+    "th": "ตอบข้อสอบถามของท่านและนัดหมายการให้คำปรึกษา",
+    "ru": "Ответ на ваши запросы и назначение консультаций"
+  },
+  "pv_use_2": {
+    "en": "Deliver our AI consulting and implementation services",
+    "th": "ให้บริการที่ปรึกษาและบริการนำ AI ไปใช้งานของเรา",
+    "ru": "Оказание наших услуг по консалтингу и внедрению в области ИИ"
+  },
+  "pv_use_3": {
+    "en": "Improve our website and service offerings",
+    "th": "ปรับปรุงเว็บไซต์และบริการที่เรานำเสนอ",
+    "ru": "Совершенствование нашего веб-сайта и предлагаемых услуг"
+  },
+  "pv_use_4": {
+    "en": "Send relevant follow-up communications (only with your consent)",
+    "th": "ส่งการติดต่อสื่อสารเพื่อติดตามผลที่เกี่ยวข้อง (เฉพาะเมื่อได้รับความยินยอมจากท่านเท่านั้น)",
+    "ru": "Направление соответствующих последующих сообщений (только с вашего согласия)"
+  },
+  "pv_use_5": {
+    "en": "Comply with legal obligations",
+    "th": "ปฏิบัติตามหน้าที่ตามกฎหมาย",
+    "ru": "Исполнение обязанностей, предусмотренных законом"
+  },
+  "pv_share_h": {
+    "en": "Information Sharing",
+    "th": "การเปิดเผยข้อมูล",
+    "ru": "Передача информации"
+  },
+  "pv_share_p": {
+    "en": "We do not sell, rent, or trade your personal information. We may share information only in the following circumstances:",
+    "th": "เราไม่ขาย ไม่ให้เช่า และไม่แลกเปลี่ยนข้อมูลส่วนบุคคลของท่าน เราอาจเปิดเผยข้อมูลเฉพาะในกรณีดังต่อไปนี้เท่านั้น:",
+    "ru": "Мы не продаём, не сдаём в аренду и не обмениваем вашу персональную информацию. Мы можем передавать информацию только в следующих случаях:"
+  },
+  "pv_share_1": {
+    "en": "<strong>Service providers:</strong> Trusted third-party tools we use to operate our business (e.g., scheduling, email, analytics), bound by their own privacy policies.",
+    "th": "<strong>ผู้ให้บริการ:</strong> เครื่องมือของบุคคลภายนอกที่เชื่อถือได้ซึ่งเราใช้ในการดำเนินธุรกิจ (เช่น การนัดหมาย อีเมล และการวิเคราะห์ข้อมูล) ซึ่งอยู่ภายใต้นโยบายความเป็นส่วนตัวของผู้ให้บริการนั้นเอง",
+    "ru": "<strong>Поставщики услуг:</strong> надёжные сторонние инструменты, которые мы используем для ведения деятельности (например, для планирования встреч, электронной почты, аналитики) и которые руководствуются собственными политиками конфиденциальности."
+  },
+  "pv_share_2": {
+    "en": "<strong>Legal requirements:</strong> When required by law or to protect our rights.",
+    "th": "<strong>ข้อกำหนดทางกฎหมาย:</strong> เมื่อกฎหมายกำหนด หรือเพื่อคุ้มครองสิทธิของเรา",
+    "ru": "<strong>Требования закона:</strong> когда этого требует закон или для защиты наших прав."
+  },
+  "pv_share_3": {
+    "en": "<strong>With your consent:</strong> When you have explicitly agreed to the sharing.",
+    "th": "<strong>เมื่อได้รับความยินยอมจากท่าน:</strong> เมื่อท่านได้ให้ความยินยอมอย่างชัดแจ้งต่อการเปิดเผยข้อมูลดังกล่าว",
+    "ru": "<strong>С вашего согласия:</strong> когда вы явно согласились на такую передачу."
+  },
+  "pv_security_h": {
+    "en": "Data Security",
+    "th": "ความปลอดภัยของข้อมูล",
+    "ru": "Безопасность данных"
+  },
+  "pv_security_p": {
+    "en": "We take reasonable measures to protect your information from unauthorised access, alteration, or destruction. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.",
+    "th": "เราใช้มาตรการที่สมเหตุสมผลเพื่อปกป้องข้อมูลของท่านจากการเข้าถึง การเปลี่ยนแปลง หรือการทำลายโดยไม่ได้รับอนุญาต อย่างไรก็ตาม ไม่มีวิธีการส่งข้อมูลผ่านอินเทอร์เน็ตใดที่ปลอดภัย 100% และเราไม่สามารถรับประกันความปลอดภัยได้อย่างสมบูรณ์",
+    "ru": "Мы принимаем разумные меры для защиты вашей информации от несанкционированного доступа, изменения или уничтожения. Однако ни один способ передачи данных через интернет не является на 100% безопасным, и мы не можем гарантировать абсолютную безопасность."
+  },
+  "pv_cookies_h": {
+    "en": "Cookies",
+    "th": "คุกกี้",
+    "ru": "Файлы cookie"
+  },
+  "pv_cookies_p": {
+    "en": "Our website may use cookies and similar tracking technologies to improve your browsing experience and analyse site traffic. You can control cookie settings through your browser preferences. We use:",
+    "th": "เว็บไซต์ของเราอาจใช้คุกกี้และเทคโนโลยีการติดตามที่คล้ายคลึงกัน เพื่อปรับปรุงประสบการณ์การท่องเว็บของท่านและวิเคราะห์การเข้าชมเว็บไซต์ ท่านสามารถควบคุมการตั้งค่าคุกกี้ได้ผ่านการตั้งค่าเบราว์เซอร์ของท่าน เราใช้:",
+    "ru": "Наш веб-сайт может использовать файлы cookie и аналогичные технологии отслеживания, чтобы сделать просмотр удобнее и анализировать посещаемость сайта. Вы можете управлять настройками файлов cookie в параметрах своего браузера. Мы используем:"
+  },
+  "pv_cookies_1": {
+    "en": "<strong>Essential cookies:</strong> Required for the website to function properly.",
+    "th": "<strong>คุกกี้ที่จำเป็น:</strong> จำเป็นต่อการทำงานของเว็บไซต์อย่างถูกต้อง",
+    "ru": "<strong>Необходимые файлы cookie:</strong> требуются для надлежащей работы веб-сайта."
+  },
+  "pv_cookies_2": {
+    "en": "<strong>Analytics cookies:</strong> Help us understand how visitors interact with our site.",
+    "th": "<strong>คุกกี้เพื่อการวิเคราะห์:</strong> ช่วยให้เราเข้าใจว่าผู้เข้าชมใช้งานเว็บไซต์ของเราอย่างไร",
+    "ru": "<strong>Аналитические файлы cookie:</strong> помогают нам понять, как посетители взаимодействуют с нашим сайтом."
+  },
+  "pv_cookies_3": {
+    "en": "<strong>Third-party cookies:</strong> Set by services we integrate, such as our scheduling tool.",
+    "th": "<strong>คุกกี้ของบุคคลภายนอก:</strong> ตั้งค่าโดยบริการที่เราเชื่อมต่อไว้ เช่น เครื่องมือนัดหมายของเรา",
+    "ru": "<strong>Сторонние файлы cookie:</strong> устанавливаются интегрированными нами сервисами, например нашим инструментом для записи на встречи."
+  },
+  "pv_third_h": {
+    "en": "Third-Party Services",
+    "th": "บริการของบุคคลภายนอก",
+    "ru": "Сторонние сервисы"
+  },
+  "pv_third_p": {
+    "en": "Our website integrates with third-party services including GoHighLevel / LeadConnector (scheduling and our CRM), Google Fonts, and analytics providers. These services have their own privacy policies, and we encourage you to review them. We are not responsible for the privacy practices of third-party services.",
+    "th": "เว็บไซต์ของเราเชื่อมต่อกับบริการของบุคคลภายนอก ซึ่งรวมถึง GoHighLevel / LeadConnector (ระบบนัดหมายและระบบ CRM ของเรา) Google Fonts และผู้ให้บริการด้านการวิเคราะห์ข้อมูล บริการเหล่านี้มีนโยบายความเป็นส่วนตัวของตนเอง และเราขอแนะนำให้ท่านศึกษานโยบายดังกล่าว เราไม่รับผิดชอบต่อแนวปฏิบัติด้านความเป็นส่วนตัวของบริการของบุคคลภายนอก",
+    "ru": "Наш веб-сайт интегрирован со сторонними сервисами, в том числе с GoHighLevel / LeadConnector (запись на встречи и наша CRM-система), Google Fonts и поставщиками аналитических услуг. У этих сервисов есть собственные политики конфиденциальности, и мы рекомендуем вам с ними ознакомиться. Мы не несём ответственности за практику обеспечения конфиденциальности сторонних сервисов."
+  },
+  "pv_rights_h": {
+    "en": "Your Rights",
+    "th": "สิทธิของท่าน",
+    "ru": "Ваши права"
+  },
+  "pv_rights_p": {
+    "en": "Depending on your jurisdiction, you may have the right to:",
+    "th": "ท่านอาจมีสิทธิดังต่อไปนี้ ทั้งนี้ขึ้นอยู่กับเขตอำนาจทางกฎหมายที่ใช้บังคับกับท่าน:",
+    "ru": "В зависимости от вашей юрисдикции вы можете иметь право:"
+  },
+  "pv_rights_1": {
+    "en": "Access the personal data we hold about you",
+    "th": "เข้าถึงข้อมูลส่วนบุคคลของท่านที่เราเก็บรักษาไว้",
+    "ru": "Получить доступ к персональным данным о вас, которые мы храним"
+  },
+  "pv_rights_2": {
+    "en": "Request correction of inaccurate data",
+    "th": "ขอให้แก้ไขข้อมูลที่ไม่ถูกต้อง",
+    "ru": "Запросить исправление неточных данных"
+  },
+  "pv_rights_3": {
+    "en": "Request deletion of your data",
+    "th": "ขอให้ลบข้อมูลของท่าน",
+    "ru": "Запросить удаление ваших данных"
+  },
+  "pv_rights_4": {
+    "en": "Withdraw consent for communications at any time",
+    "th": "เพิกถอนความยินยอมในการรับการติดต่อสื่อสารได้ทุกเมื่อ",
+    "ru": "В любое время отозвать согласие на получение сообщений"
+  },
+  "pv_rights_5": {
+    "en": "Lodge a complaint with a relevant data protection authority",
+    "th": "ยื่นข้อร้องเรียนต่อหน่วยงานกำกับดูแลด้านการคุ้มครองข้อมูลที่เกี่ยวข้อง",
+    "ru": "Подать жалобу в соответствующий орган по защите данных"
+  },
+  "pv_rights_p2": {
+    "en": "To exercise any of these rights, please contact us at the address below.",
+    "th": "หากท่านประสงค์จะใช้สิทธิใด ๆ ข้างต้น โปรดติดต่อเราตามที่อยู่ด้านล่าง",
+    "ru": "Чтобы воспользоваться любым из этих прав, свяжитесь с нами по адресу, указанному ниже."
+  },
+  "pv_contact_h": {
+    "en": "Contact Us",
+    "th": "ติดต่อเรา",
+    "ru": "Свяжитесь с нами"
+  },
+  "pv_contact_p": {
+    "en": "If you have any questions about this Privacy Policy or how we handle your data, please contact us:",
+    "th": "หากท่านมีคำถามใด ๆ เกี่ยวกับนโยบายความเป็นส่วนตัวนี้ หรือเกี่ยวกับวิธีที่เราจัดการข้อมูลของท่าน โปรดติดต่อเรา:",
+    "ru": "Если у вас есть вопросы о настоящей Политике конфиденциальности или о том, как мы обращаемся с вашими данными, свяжитесь с нами:"
+  },
+  "pv_contact_block": {
+    "en": "<strong>Rejig Labs</strong><br>Based in Thailand<br>Email: <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>",
+    "th": "<strong>Rejig Labs</strong><br>ตั้งอยู่ในประเทศไทย<br>อีเมล: <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>",
+    "ru": "<strong>Rejig Labs</strong><br>Таиланд<br>Эл. почта: <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>"
+  },
+  "tm_h1": {
+    "en": "Terms & Conditions",
+    "th": "ข้อกำหนดและเงื่อนไข",
+    "ru": "Условия и положения"
+  },
+  "tm_intro": {
+    "en": "These Terms & Conditions (\"Terms\") govern the use of services provided by Rejig Labs, based in Thailand (\"we\", \"us\", \"our\"). By engaging our services, you (\"Client\") agree to be bound by these Terms.",
+    "th": "ข้อกำหนดและเงื่อนไขฉบับนี้ (“ข้อกำหนด”) ใช้บังคับกับการใช้บริการที่ให้โดย Rejig Labs ซึ่งตั้งอยู่ในประเทศไทย (“เรา” หรือ “ของเรา”) เมื่อท่านว่าจ้างให้เราให้บริการ ท่าน (“ลูกค้า”) ตกลงที่จะผูกพันตามข้อกำหนดนี้",
+    "ru": "Настоящие Условия и положения («Условия») регулируют пользование услугами, которые предоставляет компания Rejig Labs, расположенная в Таиланде («мы», «нас», «наш»). Привлекая нас для оказания услуг, вы («Клиент») соглашаетесь соблюдать настоящие Условия."
+  },
+  "tm_s1_h": {
+    "en": "1. Services",
+    "th": "1. บริการ",
+    "ru": "1. Услуги"
+  },
+  "tm_s1_p": {
+    "en": "Rejig Labs provides AI consulting, operational audits, workflow automation, and implementation services for businesses. Our services include, but are not limited to:",
+    "th": "Rejig Labs ให้บริการแก่ธุรกิจด้านการให้คำปรึกษาเกี่ยวกับ AI การตรวจประเมินการดำเนินงาน การทำระบบอัตโนมัติสำหรับกระบวนการทำงาน และการนำระบบไปใช้งาน บริการของเรารวมถึงแต่ไม่จำกัดเพียง:",
+    "ru": "Rejig Labs оказывает компаниям услуги по консалтингу в области ИИ, операционному аудиту, автоматизации рабочих процессов и внедрению. Наши услуги включают, помимо прочего:"
+  },
+  "tm_s1_1": {
+    "en": "AI readiness audits and strategy development",
+    "th": "การตรวจประเมินความพร้อมด้าน AI และการพัฒนากลยุทธ์",
+    "ru": "Аудит готовности к ИИ и разработка стратегии"
+  },
+  "tm_s1_2": {
+    "en": "Workflow analysis and automation design",
+    "th": "การวิเคราะห์กระบวนการทำงานและการออกแบบระบบอัตโนมัติ",
+    "ru": "Анализ рабочих процессов и проектирование автоматизации"
+  },
+  "tm_s1_3": {
+    "en": "AI tool selection, configuration, and implementation",
+    "th": "การคัดเลือก การตั้งค่า และการนำเครื่องมือ AI ไปใช้งาน",
+    "ru": "Подбор, настройка и внедрение инструментов ИИ"
+  },
+  "tm_s1_4": {
+    "en": "Training, documentation, and ongoing advisory",
+    "th": "การฝึกอบรม การจัดทำเอกสาร และการให้คำปรึกษาอย่างต่อเนื่อง",
+    "ru": "Обучение, документация и постоянное консультационное сопровождение"
+  },
+  "tm_s1_p2": {
+    "en": "The specific scope of work for each engagement will be defined in a separate proposal or statement of work agreed upon by both parties.",
+    "th": "ขอบเขตงานโดยเฉพาะของการว่าจ้างแต่ละครั้งจะกำหนดไว้ในข้อเสนอหรือเอกสารกำหนดขอบเขตงานแยกต่างหาก ซึ่งทั้งสองฝ่ายได้ตกลงร่วมกัน",
+    "ru": "Конкретный объём работ по каждому проекту определяется в отдельном коммерческом предложении или техническом задании, согласованном обеими сторонами."
+  },
+  "tm_s2_h": {
+    "en": "2. Engagement Terms",
+    "th": "2. เงื่อนไขการว่าจ้าง",
+    "ru": "2. Условия сотрудничества"
+  },
+  "tm_s2_p1": {
+    "en": "Each engagement begins upon mutual acceptance of a proposal or statement of work. The Client agrees to provide timely access to relevant systems, personnel, and information necessary for us to deliver the agreed services. Delays caused by the Client may result in adjusted timelines or additional fees.",
+    "th": "การว่าจ้างแต่ละครั้งจะเริ่มต้นเมื่อทั้งสองฝ่ายยอมรับข้อเสนอหรือเอกสารกำหนดขอบเขตงานร่วมกัน ลูกค้าตกลงที่จะให้สิทธิ์เข้าถึงระบบ บุคลากร และข้อมูลที่เกี่ยวข้องซึ่งจำเป็นต่อการให้บริการตามที่ตกลงกันไว้อย่างทันท่วงที ความล่าช้าที่เกิดจากลูกค้าอาจส่งผลให้มีการปรับกำหนดเวลาหรือมีค่าธรรมเนียมเพิ่มเติม",
+    "ru": "Каждый проект начинается после взаимного принятия сторонами коммерческого предложения или технического задания. Клиент обязуется своевременно предоставлять доступ к соответствующим системам, сотрудникам и информации, необходимым для оказания нами согласованных услуг. Задержки по вине Клиента могут повлечь корректировку сроков или дополнительную оплату."
+  },
+  "tm_s2_p2": {
+    "en": "We reserve the right to subcontract portions of the work where appropriate, while remaining responsible for the quality of all deliverables.",
+    "th": "เราขอสงวนสิทธิ์ในการจ้างช่วงงานบางส่วนตามความเหมาะสม โดยเรายังคงรับผิดชอบต่อคุณภาพของผลงานที่ส่งมอบทั้งหมด",
+    "ru": "Мы оставляем за собой право при необходимости привлекать субподрядчиков для выполнения части работ, сохраняя ответственность за качество всех результатов."
+  },
+  "tm_s3_h": {
+    "en": "3. Intellectual Property",
+    "th": "3. ทรัพย์สินทางปัญญา",
+    "ru": "3. Интеллектуальная собственность"
+  },
+  "tm_s3_p1": {
+    "en": "Upon full payment, the Client receives ownership of all custom deliverables produced specifically for their engagement, including reports, workflows, and configurations. We retain ownership of our proprietary methodologies, frameworks, tools, and any pre-existing intellectual property used in the delivery of services.",
+    "th": "เมื่อชำระเงินครบถ้วนแล้ว ลูกค้าจะได้รับความเป็นเจ้าของในผลงานทั้งหมดที่จัดทำขึ้นเฉพาะสำหรับการว่าจ้างของลูกค้า รวมถึงรายงาน กระบวนการทำงาน และการตั้งค่าระบบ เรายังคงเป็นเจ้าของระเบียบวิธี กรอบการทำงาน และเครื่องมือที่เป็นกรรมสิทธิ์ของเรา ตลอดจนทรัพย์สินทางปัญญาใด ๆ ที่มีอยู่ก่อนแล้วซึ่งใช้ในการให้บริการ",
+    "ru": "После полной оплаты Клиент получает право собственности на все индивидуальные результаты, созданные специально для его проекта, включая отчёты, рабочие процессы и конфигурации. Мы сохраняем за собой право собственности на наши собственные методологии, фреймворки, инструменты и любую ранее существовавшую интеллектуальную собственность, используемую при оказании услуг."
+  },
+  "tm_s3_p2": {
+    "en": "We reserve the right to use anonymised and generalised learnings from engagements to improve our services, unless otherwise agreed in writing.",
+    "th": "เราขอสงวนสิทธิ์ในการนำองค์ความรู้ที่ได้จากการว่าจ้าง ซึ่งได้รับการทำให้ไม่สามารถระบุตัวตนได้และเป็นการทั่วไปแล้ว มาใช้เพื่อปรับปรุงบริการของเรา เว้นแต่จะได้ตกลงกันไว้เป็นอย่างอื่นเป็นลายลักษณ์อักษร",
+    "ru": "Мы оставляем за собой право использовать обезличенные и обобщённые выводы, полученные в ходе проектов, для совершенствования наших услуг, если иное не согласовано в письменной форме."
+  },
+  "tm_s4_h": {
+    "en": "4. Confidentiality",
+    "th": "4. การรักษาความลับ",
+    "ru": "4. Конфиденциальность"
+  },
+  "tm_s4_p1": {
+    "en": "Both parties agree to keep confidential any proprietary or sensitive information disclosed during the engagement. This includes business data, processes, strategies, and technical information. Confidentiality obligations survive the termination of any engagement for a period of two (2) years.",
+    "th": "ทั้งสองฝ่ายตกลงที่จะเก็บรักษาข้อมูลที่เป็นกรรมสิทธิ์หรือข้อมูลที่มีความอ่อนไหวใด ๆ ซึ่งได้เปิดเผยระหว่างการว่าจ้างไว้เป็นความลับ ซึ่งรวมถึงข้อมูลทางธุรกิจ กระบวนการ กลยุทธ์ และข้อมูลทางเทคนิค หน้าที่ในการรักษาความลับจะยังคงมีผลใช้บังคับต่อไปเป็นระยะเวลาสอง (2) ปีภายหลังการสิ้นสุดของการว่าจ้างใด ๆ",
+    "ru": "Обе стороны обязуются сохранять конфиденциальность любой служебной или чувствительной информации, раскрытой в ходе проекта. Это включает деловые данные, процессы, стратегии и техническую информацию. Обязательства по соблюдению конфиденциальности сохраняют силу в течение двух (2) лет после прекращения любого проекта."
+  },
+  "tm_s4_p2": {
+    "en": "This obligation does not apply to information that is publicly available, independently developed, or required to be disclosed by law.",
+    "th": "หน้าที่นี้ไม่ใช้บังคับกับข้อมูลที่เปิดเผยต่อสาธารณะ ข้อมูลที่ได้รับการพัฒนาขึ้นโดยอิสระ หรือข้อมูลที่กฎหมายกำหนดให้ต้องเปิดเผย",
+    "ru": "Данное обязательство не распространяется на информацию, которая является общедоступной, разработана независимо или подлежит раскрытию в соответствии с законом."
+  },
+  "tm_s5_h": {
+    "en": "5. Payment Terms",
+    "th": "5. เงื่อนไขการชำระเงิน",
+    "ru": "5. Условия оплаты"
+  },
+  "tm_s5_p": {
+    "en": "Payment terms are specified in each proposal or statement of work. Unless otherwise agreed:",
+    "th": "เงื่อนไขการชำระเงินจะระบุไว้ในข้อเสนอหรือเอกสารกำหนดขอบเขตงานแต่ละฉบับ เว้นแต่จะตกลงกันไว้เป็นอย่างอื่น:",
+    "ru": "Условия оплаты указываются в каждом коммерческом предложении или техническом задании. Если не согласовано иное:"
+  },
+  "tm_s5_1": {
+    "en": "A deposit is required before work commences",
+    "th": "ต้องชำระเงินมัดจำก่อนเริ่มดำเนินงาน",
+    "ru": "До начала работ требуется внести депозит"
+  },
+  "tm_s5_2": {
+    "en": "Invoices are due within 14 days of issue",
+    "th": "ใบแจ้งหนี้ต้องชำระภายใน 14 วันนับจากวันที่ออก",
+    "ru": "Счета подлежат оплате в течение 14 дней с даты выставления"
+  },
+  "tm_s5_3": {
+    "en": "Late payments may incur a charge of 1.5% per month on the outstanding balance",
+    "th": "การชำระเงินล่าช้าอาจมีค่าธรรมเนียมในอัตราร้อยละ 1.5 ต่อเดือนของยอดค้างชำระ",
+    "ru": "За просрочку платежа может начисляться плата в размере 1,5% в месяц от суммы задолженности"
+  },
+  "tm_s5_4": {
+    "en": "All fees are quoted in the currency specified in the proposal and are exclusive of applicable taxes",
+    "th": "ค่าธรรมเนียมทั้งหมดเสนอในสกุลเงินที่ระบุไว้ในข้อเสนอ และยังไม่รวมภาษีที่เกี่ยวข้อง",
+    "ru": "Все суммы вознаграждения указываются в валюте, определённой в коммерческом предложении, и не включают применимые налоги"
+  },
+  "tm_s6_h": {
+    "en": "6. Limitation of Liability",
+    "th": "6. การจำกัดความรับผิด",
+    "ru": "6. Ограничение ответственности"
+  },
+  "tm_s6_p1": {
+    "en": "Rejig Labs provides services on a best-efforts basis. While we strive for measurable outcomes, we do not guarantee specific business results, revenue increases, or cost savings. Our recommendations are based on professional judgement and available information at the time of delivery.",
+    "th": "Rejig Labs ให้บริการโดยใช้ความพยายามอย่างดีที่สุด แม้เรามุ่งมั่นที่จะให้เกิดผลลัพธ์ที่วัดผลได้ แต่เราไม่รับประกันผลลัพธ์ทางธุรกิจที่เฉพาะเจาะจง การเพิ่มขึ้นของรายได้ หรือการประหยัดต้นทุน คำแนะนำของเราตั้งอยู่บนดุลยพินิจทางวิชาชีพและข้อมูลที่มีอยู่ ณ เวลาที่ส่งมอบ",
+    "ru": "Rejig Labs оказывает услуги на условиях приложения максимальных усилий. Стремясь к измеримым результатам, мы тем не менее не гарантируем конкретных бизнес-результатов, роста выручки или экономии затрат. Наши рекомендации основаны на профессиональном суждении и информации, доступной на момент их предоставления."
+  },
+  "tm_s6_p2": {
+    "en": "To the maximum extent permitted by law, our total liability for any claim arising from an engagement shall not exceed the total fees paid by the Client for that specific engagement. We shall not be liable for any indirect, incidental, consequential, or punitive damages.",
+    "th": "ภายในขอบเขตสูงสุดที่กฎหมายอนุญาต ความรับผิดรวมทั้งหมดของเราสำหรับข้อเรียกร้องใด ๆ ที่เกิดจากการว่าจ้าง จะไม่เกินค่าธรรมเนียมทั้งหมดที่ลูกค้าได้ชำระสำหรับการว่าจ้างนั้น ๆ เราจะไม่รับผิดต่อความเสียหายทางอ้อม ความเสียหายโดยบังเอิญ ความเสียหายต่อเนื่อง หรือค่าเสียหายเชิงลงโทษใด ๆ",
+    "ru": "В максимальной степени, допускаемой законом, наша совокупная ответственность по любому требованию, вытекающему из проекта, не может превышать общую сумму вознаграждения, уплаченного Клиентом за данный конкретный проект. Мы не несём ответственности за какие-либо косвенные, случайные, последующие или штрафные убытки."
+  },
+  "tm_s7_h": {
+    "en": "7. Termination",
+    "th": "7. การบอกเลิก",
+    "ru": "7. Расторжение"
+  },
+  "tm_s7_p": {
+    "en": "Either party may terminate an engagement with 14 days' written notice. Upon termination:",
+    "th": "คู่สัญญาฝ่ายใดฝ่ายหนึ่งอาจบอกเลิกการว่าจ้างได้โดยแจ้งเป็นลายลักษณ์อักษรล่วงหน้า 14 วัน เมื่อมีการบอกเลิก:",
+    "ru": "Любая из сторон вправе прекратить проект, направив письменное уведомление за 14 дней. При прекращении:"
+  },
+  "tm_s7_1": {
+    "en": "The Client shall pay for all work completed up to the termination date",
+    "th": "ลูกค้าต้องชำระค่างานทั้งหมดที่ดำเนินการแล้วเสร็จจนถึงวันที่บอกเลิก",
+    "ru": "Клиент оплачивает все работы, выполненные до даты прекращения"
+  },
+  "tm_s7_2": {
+    "en": "We will deliver any completed or in-progress deliverables",
+    "th": "เราจะส่งมอบผลงานใด ๆ ที่เสร็จสมบูรณ์แล้วหรืออยู่ระหว่างดำเนินการ",
+    "ru": "Мы передаём все завершённые и находящиеся в работе результаты"
+  },
+  "tm_s7_3": {
+    "en": "Pre-paid fees for undelivered work will be refunded on a pro-rata basis",
+    "th": "ค่าธรรมเนียมที่ชำระล่วงหน้าสำหรับงานที่ยังไม่ได้ส่งมอบจะได้รับคืนตามสัดส่วน",
+    "ru": "Предварительно оплаченное вознаграждение за непереданные работы возвращается пропорционально"
+  },
+  "tm_s7_p2": {
+    "en": "We reserve the right to terminate immediately if the Client breaches these Terms or engages in conduct that is unlawful or harmful to our business.",
+    "th": "เราขอสงวนสิทธิ์ในการบอกเลิกได้ทันที หากลูกค้าฝ่าฝืนข้อกำหนดนี้ หรือกระทำการที่ผิดกฎหมายหรือก่อให้เกิดความเสียหายต่อธุรกิจของเรา",
+    "ru": "Мы оставляем за собой право немедленно прекратить сотрудничество, если Клиент нарушает настоящие Условия или совершает действия, которые являются незаконными или наносят вред нашему бизнесу."
+  },
+  "tm_s8_h": {
+    "en": "8. Governing Law",
+    "th": "8. กฎหมายที่ใช้บังคับ",
+    "ru": "8. Применимое право"
+  },
+  "tm_s8_p": {
+    "en": "These Terms are governed by and construed in accordance with the laws of Thailand. Any disputes arising from or in connection with these Terms shall be resolved through good-faith negotiation. If a resolution cannot be reached, disputes shall be submitted to the competent courts of Thailand.",
+    "th": "ข้อกำหนดนี้อยู่ภายใต้บังคับและให้ตีความตามกฎหมายแห่งราชอาณาจักรไทย ข้อพิพาทใด ๆ ที่เกิดขึ้นจากหรือเกี่ยวเนื่องกับข้อกำหนดนี้จะระงับโดยการเจรจาด้วยความสุจริต หากไม่สามารถตกลงกันได้ ให้นำข้อพิพาทขึ้นสู่ศาลที่มีเขตอำนาจในประเทศไทย",
+    "ru": "Настоящие Условия регулируются и толкуются в соответствии с законодательством Таиланда. Любые споры, возникающие из настоящих Условий или в связи с ними, разрешаются путём добросовестных переговоров. Если урегулировать спор не удаётся, он передаётся на рассмотрение в компетентный суд Таиланда."
+  },
+  "tm_s9_h": {
+    "en": "9. Changes to Terms",
+    "th": "9. การเปลี่ยนแปลงข้อกำหนด",
+    "ru": "9. Изменение Условий"
+  },
+  "tm_s9_p": {
+    "en": "We may update these Terms from time to time. Changes will be posted on this page with an updated revision date. Continued engagement of our services after changes are posted constitutes acceptance of the revised Terms. For active engagements, material changes will be communicated directly to the Client.",
+    "th": "เราอาจปรับปรุงข้อกำหนดนี้เป็นครั้งคราว การเปลี่ยนแปลงจะประกาศไว้บนหน้านี้พร้อมวันที่แก้ไขล่าสุด การใช้บริการของเราต่อไปภายหลังจากที่มีการประกาศการเปลี่ยนแปลงแล้ว ถือเป็นการยอมรับข้อกำหนดฉบับแก้ไข สำหรับการว่าจ้างที่ยังดำเนินอยู่ เราจะแจ้งการเปลี่ยนแปลงที่เป็นสาระสำคัญให้ลูกค้าทราบโดยตรง",
+    "ru": "Мы можем время от времени обновлять настоящие Условия. Изменения публикуются на этой странице с указанием новой даты редакции. Дальнейшее пользование нашими услугами после публикации изменений означает принятие Условий в новой редакции. В рамках действующих проектов о существенных изменениях Клиенту сообщается напрямую."
+  },
+  "tm_s10_h": {
+    "en": "10. Contact",
+    "th": "10. การติดต่อ",
+    "ru": "10. Контакты"
+  },
+  "tm_s10_p": {
+    "en": "If you have questions about these Terms, please contact us:",
+    "th": "หากท่านมีคำถามเกี่ยวกับข้อกำหนดนี้ โปรดติดต่อเรา:",
+    "ru": "Если у вас есть вопросы по настоящим Условиям, свяжитесь с нами:"
+  },
+  "tm_contact_block": {
+    "en": "<strong>Rejig Labs</strong><br>Based in Thailand<br>Email: <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>",
+    "th": "<strong>Rejig Labs</strong><br>ตั้งอยู่ในประเทศไทย<br>อีเมล: <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>",
+    "ru": "<strong>Rejig Labs</strong><br>Таиланд<br>Эл. почта: <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>"
   }
 }
