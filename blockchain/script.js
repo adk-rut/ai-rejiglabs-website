@@ -49,6 +49,8 @@ async function fetchBtcPrice() {
     const price = data?.bitcoin?.usd;
     if (price) {
       document.getElementById('btc-price').textContent = '$' + price.toLocaleString('en-US');
+      var pill = document.getElementById('btc-pill');
+      if (pill) pill.hidden = false;
     }
   } catch (_) {}
 }

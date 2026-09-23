@@ -20,34 +20,34 @@
     "ru": "Кейсы"
   },
   "nav_cta": {
-    "en": "Get In Touch",
-    "th": "ติดต่อเรา",
-    "ru": "Связаться"
+    "en": "Book a Call",
+    "th": "นัดคุย",
+    "ru": "Записаться на звонок"
   },
   "hero_eyebrow": {
-    "en": "AI AUTOMATION AGENCY | PHUKET, THAILAND & WORLDWIDE",
-    "th": "ที่ปรึกษาและวางระบบ AI สำหรับธุรกิจ SME ไทย",
-    "ru": "AI-КОНСАЛТИНГ | ТАИЛАНД И ВЕСЬ МИР"
+    "en": "AI IMPLEMENTATION PARTNER · THAILAND & WORLDWIDE",
+    "th": "พาร์ตเนอร์วางระบบ AI สำหรับธุรกิจ · ไทยและทั่วโลก",
+    "ru": "ПАРТНЁР ПО ВНЕДРЕНИЮ AI · ТАИЛАНД И ВЕСЬ МИР"
   },
   "hero_h1": {
-    "en": "We don't just talk AI.<br><em class=\"accent\">We deliver it.</em>",
-    "th": "รับวางระบบ AI และแชทบอทอัตโนมัติ<br><em class=\"accent\">สำหรับธุรกิจ SME ไทย</em>",
-    "ru": "Мы не просто говорим про AI.<br><em class=\"accent\">Мы внедряем его.</em>"
+    "en": "AI that works<br><em class=\"accent\">inside your business.</em>",
+    "th": "วางระบบ AI ที่ทำงานได้จริง<br><em class=\"accent\">ในธุรกิจของคุณ</em>",
+    "ru": "AI, который работает<br><em class=\"accent\">внутри вашего бизнеса.</em>"
   },
   "hero_sub": {
-    "en": "We help businesses identify AI opportunities that will actually transform their operations, then we build it, deploy it, and train your team to run it.",
-    "th": "เราหาจุดที่ AI ช่วยธุรกิจคุณประหยัดเวลาและต้นทุนจริง แล้วสร้าง ติดตั้ง และสอนทีมให้ใช้งานเป็น",
-    "ru": "Мы помогаем бизнесу найти точки, где AI реально изменит работу. Потом строим, запускаем и обучаем вашу команду."
+    "en": "We find where AI saves you time and money, build it into the tools you already use, and train your team to run it.",
+    "th": "เราหาจุดที่ AI ช่วยประหยัดเวลาและต้นทุน สร้างระบบเข้ากับเครื่องมือที่คุณใช้อยู่ แล้วสอนทีมของคุณให้ดูแลเองได้",
+    "ru": "Находим, где AI экономит вам время и деньги, встраиваем его в ваши текущие инструменты и обучаем команду им управлять."
   },
   "hero_btn": {
-    "en": "Book a Discovery Call",
-    "th": "นัดคุยฟรี",
-    "ru": "Записаться на консультацию"
+    "en": "Book a Call",
+    "th": "นัดคุย",
+    "ru": "Записаться на звонок"
   },
   "hero_trusted": {
-    "en": "BUILT WITH",
-    "th": "สร้างด้วย",
-    "ru": "СОЗДАНО НА ОСНОВЕ"
+    "en": "WORK DELIVERED FOR",
+    "th": "ลูกค้าที่เราส่งมอบงานให้",
+    "ru": "МЫ РАБОТАЛИ С"
   },
   "narrative_1": {
     "en": "You know AI is the move. You've signed up for the tools. Watched the demos.",
@@ -125,9 +125,9 @@
     "ru": "Мы обучаем вашу команду, пока новые системы не станут привычными. Когда мы уходим, это просто ваш способ работать."
   },
   "process_btn": {
-    "en": "Get Started",
-    "th": "เริ่มเลย",
-    "ru": "Начать"
+    "en": "Book a Call",
+    "th": "นัดคุย",
+    "ru": "Записаться на звонок"
   },
   "cs_eyebrow": {
     "en": "REAL RESULTS",
@@ -148,21 +148,6 @@
     "en": "Don't just take <em class=\"accent\">our word for it…</em>",
     "th": "ไม่ต้องเชื่อเรา <em class=\"accent\">ฟังจากลูกค้าเอง…</em>",
     "ru": "Не верьте нам на слово — <em class=\"accent\">послушайте клиентов…</em>"
-  },
-  "entropy_tagline": {
-    "en": "Turn <strong>chaos</strong> into clarity for your whole company.",
-    "th": "เปลี่ยน<strong>ความยุ่งเหยิง</strong>ให้กลายเป็นความชัดเจนทั้งองค์กร",
-    "ru": "Превратите <strong>хаос</strong> в ясность для всей компании."
-  },
-  "entropy_before": {
-    "en": "before",
-    "th": "ก่อน",
-    "ru": "до"
-  },
-  "entropy_after": {
-    "en": "AFTER",
-    "th": "หลัง",
-    "ru": "ПОСЛЕ"
   },
   "stat_1_label": {
     "en": "average time saved on manual workflows",
@@ -195,99 +180,94 @@
     "ru": "процесса"
   },
   "faq_h2": {
-    "en": "FAQ<em class=\"accent\">s</em>",
+    "en": "Common <em class=\"accent\">questions.</em>",
     "th": "คำถาม<em class=\"accent\">ที่พบบ่อย</em>",
-    "ru": "Вопросы<em class=\"accent\"> и ответы</em>"
+    "ru": "Частые <em class=\"accent\">вопросы.</em>"
   },
   "faq_sub": {
-    "en": "You've got questions. We've got answers.",
-    "th": "มีคำถาม? เรามีคำตอบให้",
-    "ru": "У вас вопросы — у нас ответы."
-  },
-  "faq_time": {
-    "en": "Every day, 9:01 AM",
-    "th": "ทุกวัน 9:01 น.",
-    "ru": "Каждый день, 9:01"
+    "en": "Straight answers before you book a call.",
+    "th": "คำตอบตรง ๆ ก่อนนัดคุยกับเรา",
+    "ru": "Прямые ответы до звонка."
   },
   "faq_q1": {
-    "en": "How is Rejig Labs different from other AI consultants?",
-    "th": "Rejig Labs ต่างจากที่ปรึกษา AI ที่อื่นยังไง?",
-    "ru": "Чем Rejig Labs отличается от других AI-консультантов?"
+    "en": "How is Rejig Labs different from AI consultants?",
+    "th": "Rejig Labs ต่างจากที่ปรึกษา AI ทั่วไปอย่างไร?",
+    "ru": "Чем Rejig Labs отличается от AI-консультантов?"
   },
   "faq_a1": {
-    "en": "Most consultants give you a strategy deck and leave. We stay and build it. RT has hands-on implementation experience across real business workflows, not just conceptual knowledge. We only recommend what we can actually build and deploy ourselves.",
-    "th": "ที่ปรึกษาส่วนใหญ่ให้แค่สไลด์กลยุทธ์แล้วก็ไป แต่เราอยู่สร้างให้จริง RT มีประสบการณ์ลงมือทำกับธุรกิจจริง ไม่ใช่แค่รู้ทฤษฎี เราแนะนำแค่สิ่งที่เราสร้างและติดตั้งได้เอง",
-    "ru": "Большинство консультантов отдают вам красивую презентацию и уходят. Мы остаёмся и строим. У RT реальный опыт внедрения в живых бизнес-процессах, а не просто теория. Мы рекомендуем только то, что сами можем построить и запустить."
+    "en": "Most consultants hand you a strategy deck and leave. We build what we recommend, deploy it, and stay until your team runs it. Every project is led by our founder, <a href=\"/about/\">Rut Adikari (Mr. RT)</a>.",
+    "th": "ที่ปรึกษาส่วนใหญ่ส่งสไลด์กลยุทธ์ให้แล้วก็จบ เราสร้างสิ่งที่เราแนะนำ ติดตั้งให้ และอยู่จนทีมของคุณดูแลเองได้ ทุกโปรเจกต์นำโดยผู้ก่อตั้งของเรา <a href=\"/about/\">Rut Adikari (Mr. RT)</a>",
+    "ru": "Большинство консультантов оставляют презентацию со стратегией и уходят. Мы строим то, что рекомендуем, внедряем и остаёмся, пока команда не начнёт управлять системой сама. Каждый проект ведёт наш основатель, <a href=\"/about/\">Rut Adikari (Mr. RT)</a>."
   },
   "faq_q2": {
-    "en": "How do I know if we're ready for AI?",
-    "th": "จะรู้ได้ยังไงว่าธุรกิจเราพร้อมใช้ AI?",
-    "ru": "Как понять, готовы ли мы к AI?"
+    "en": "How do I know if we're ready?",
+    "th": "จะรู้ได้อย่างไรว่าเราพร้อมแล้ว?",
+    "ru": "Как понять, что мы готовы?"
   },
   "faq_a2": {
-    "en": "If your team is doing repetitive manual work like data entry, follow-ups, reporting, scheduling, or content, you're ready. The audit will tell you exactly where. You don't need clean data or a tech team. That's what the audit is for.",
-    "th": "ถ้าทีมคุณยังทำงานซ้ำ ๆ ด้วยมืออยู่ เช่น กรอกข้อมูล ติดตามงาน ทำรีพอร์ต จัดตาราง ทำคอนเทนต์ แปลว่าพร้อมแล้ว การตรวจสอบของเราจะบอกว่าเริ่มตรงไหนดี ไม่ต้องมีข้อมูลสะอาดหรือทีม IT มาก่อน",
-    "ru": "Если ваша команда делает рутинную работу вручную — ввод данных, напоминания, отчёты, расписания, контент — вы готовы. Аудит покажет, где именно начинать. Не нужны ни чистые данные, ни IT-отдел. Для этого и нужен аудит."
+    "en": "If your team repeats the same manual work every week (data entry, follow-ups, reports, scheduling, content), you're ready. You don't need clean data or a tech team. The audit shows where to start.",
+    "th": "ถ้าทีมของคุณทำงานซ้ำ ๆ ด้วยมือทุกสัปดาห์ (คีย์ข้อมูล ติดตามลูกค้า ทำรายงาน จัดตารางนัด ทำคอนเทนต์) แปลว่าคุณพร้อมแล้ว ไม่จำเป็นต้องมีข้อมูลที่เป็นระเบียบหรือทีมไอที การ audit จะบอกว่าควรเริ่มตรงไหน",
+    "ru": "Если команда каждую неделю делает одну и ту же ручную работу (ввод данных, напоминания клиентам, отчёты, расписание, контент), вы готовы. Чистые данные и IT-отдел не нужны. Аудит покажет, с чего начать."
   },
   "faq_q3": {
     "en": "What happens after the audit?",
-    "th": "หลังตรวจสอบเสร็จแล้วได้อะไร?",
-    "ru": "Что происходит после аудита?"
+    "th": "หลัง audit แล้วจะได้อะไร?",
+    "ru": "Что вы получаете после аудита?"
   },
   "faq_a3": {
-    "en": "You receive a full AI transformation plan: a 90-day roadmap, prioritised integrations, tool recommendations, and ROI estimates. From there, you can implement it yourself or engage us for Phase 2 (full execution).",
-    "th": "คุณจะได้แผน AI ฉบับเต็ม: แผนงาน 90 วัน, ลำดับความสำคัญของระบบที่ต้องเชื่อมต่อ, เครื่องมือที่แนะนำ, และประมาณการ ROI จากนั้นจะทำเองหรือให้เราทำต่อในเฟส 2 ก็ได้",
-    "ru": "Вы получаете полный план AI-трансформации: дорожную карту на 90 дней, приоритеты по интеграциям, рекомендации по инструментам и оценку ROI. Дальше можете внедрять сами или перейти с нами на Фазу 2 — полное выполнение."
+    "en": "You get a written plan: a 90-day roadmap, the integrations to build first, tool choices and expected ROI. Run it yourself, or have us build it.",
+    "th": "คุณจะได้แผนงานเป็นลายลักษณ์อักษร: โรดแมป 90 วัน ระบบที่ควรเชื่อมต่อก่อน เครื่องมือที่แนะนำ และ ROI ที่คาดหวัง จะลงมือเองก็ได้ หรือให้เราสร้างให้",
+    "ru": "Письменный план: дорожная карта на 90 дней, интеграции, с которых стоит начать, выбор инструментов и ожидаемый ROI. Реализуйте его сами или поручите нам."
   },
   "faq_q4": {
-    "en": "How much internal time will this take?",
-    "th": "ทีมเราต้องใช้เวลาเยอะไหม?",
+    "en": "How much of our team's time will this take?",
+    "th": "ต้องใช้เวลาของทีมเรามากแค่ไหน?",
     "ru": "Сколько времени это займёт у нашей команды?"
   },
   "faq_a4": {
-    "en": "Minimal. We do the heavy lifting. The audit phase requires a few hours of your team's time for discovery calls and process walkthroughs. Implementation is handled by us. Your team only needs to be available for handoff and training.",
-    "th": "น้อยมาก งานหนักเราทำเอง ช่วงตรวจสอบแค่ต้องใช้เวลาทีมคุณไม่กี่ชั่วโมงสำหรับคุยและดูกระบวนการ การติดตั้งเราจัดการให้ ทีมคุณแค่พร้อมรับงานและเข้าเทรนนิ่ง",
-    "ru": "Минимум. Всю тяжёлую работу делаем мы. На этапе аудита нужно несколько часов от вашей команды — созвоны и разбор процессов. Внедрение — полностью на нас. Вашим людям нужно только прийти на обучение и принять систему."
+    "en": "A few hours of calls and walkthroughs during the audit. We handle the build. Your team joins for handover and training.",
+    "th": "แค่ไม่กี่ชั่วโมงสำหรับการคุยและพาดูขั้นตอนงานช่วง audit ส่วนการสร้างระบบเราดูแลเอง ทีมของคุณเข้ามาร่วมแค่ตอนส่งมอบและอบรม",
+    "ru": "Несколько часов на созвоны и разбор процессов во время аудита. Разработку ведём мы. Команда подключается на передачу системы и обучение."
   },
   "faq_q5": {
-    "en": "We've already tried AI and it didn't work. Why would this be different?",
-    "th": "เคยลอง AI แล้วไม่เวิร์ค ทำไมครั้งนี้จะต่าง?",
-    "ru": "Мы уже пробовали AI, и не сработало. Почему в этот раз будет иначе?"
+    "en": "We tried AI before and it didn't stick. Why is this different?",
+    "th": "เคยลองใช้ AI แล้วแต่ไม่ได้ผล ครั้งนี้ต่างกันอย่างไร?",
+    "ru": "Мы уже пробовали AI, и не прижилось. Что изменится?"
   },
   "faq_a5": {
-    "en": "Because most AI attempts fail at integration, not technology. The tools work. The problem is mapping them to your specific workflows, getting buy-in, and building systems your team will actually use. That's exactly what we diagnose in the audit phase.",
-    "th": "เพราะ AI ส่วนใหญ่พังตรงการเชื่อมต่อ ไม่ใช่ตัวเทคโนโลยี เครื่องมือมันดีอยู่แล้ว ปัญหาคือยังไม่มีใครมาจับคู่มันกับงานจริงของคุณ ทำให้ทีมยอมใช้ และสร้างระบบที่ทีมจะใช้ต่อจริง ๆ นั่นคือสิ่งที่เราวิเคราะห์ให้",
-    "ru": "Потому что AI чаще всего ломается не на технологии, а на интеграции. Инструменты работают. Проблема — привязать их к вашим конкретным процессам, добиться, чтобы команда приняла изменения, и построить систему, которой реально будут пользоваться. Именно это мы и разбираем на этапе аудита."
+    "en": "Most AI projects fail at integration, not technology. We fit the tools to how your team works, get people on board, and build systems they use every day.",
+    "th": "โปรเจกต์ AI ส่วนใหญ่ล้มเหลวตอนนำไปใช้จริง ไม่ใช่เพราะเทคโนโลยี เราปรับเครื่องมือให้เข้ากับวิธีทำงานของทีม ทำให้ทุกคนพร้อมใช้ และสร้างระบบที่ถูกใช้งานทุกวัน",
+    "ru": "Большинство AI-проектов проваливаются на внедрении, а не из-за технологии. Мы подстраиваем инструменты под то, как работает ваша команда, вовлекаем людей и строим системы, которыми пользуются каждый день."
   },
   "faq_q6": {
-    "en": "We don't have a big tech team. Can we still do this?",
-    "th": "ไม่มีทีมเทคใหญ่ ทำได้ไหม?",
-    "ru": "У нас нет большого IT-отдела. Это вообще возможно?"
+    "en": "We don't have a tech team. Can we still do this?",
+    "th": "เราไม่มีทีมไอที ทำได้ไหม?",
+    "ru": "У нас нет IT-команды. Это проблема?"
   },
   "faq_a6": {
-    "en": "Yes, this is built for exactly that situation. Most of our clients have little to no technical team. We handle everything technical. Your job is to understand your own business; our job is to translate that into working AI systems.",
-    "th": "ได้เลย เราทำมาเพื่อกรณีแบบนี้โดยเฉพาะ ลูกค้าเราส่วนใหญ่แทบไม่มีทีมเทค เราจัดการเรื่องเทคนิคทั้งหมด หน้าที่คุณคือรู้จักธุรกิจตัวเอง หน้าที่เราคือแปลงมันเป็นระบบ AI ที่ใช้ได้จริง",
-    "ru": "Да, мы как раз для этого и работаем. У большинства наших клиентов почти нет технической команды. Всю техническую часть берём на себя. Ваша задача — знать свой бизнес. Наша — превратить это в работающие AI-системы."
+    "en": "Yes. Most of our clients don't. You know your business. We handle everything technical.",
+    "th": "ได้แน่นอน ลูกค้าส่วนใหญ่ของเราก็ไม่มี คุณรู้จักธุรกิจของคุณดีที่สุด ส่วนเรื่องเทคนิคทั้งหมดเราดูแลเอง",
+    "ru": "Нет. У большинства наших клиентов её тоже нет. Вы знаете свой бизнес, а всю техническую часть мы берём на себя."
   },
   "closing_1": {
-    "en": "AI is here. Most will react.",
-    "th": "AI มาถึงแล้ว คนส่วนใหญ่จะแค่ตามเกม",
-    "ru": "AI уже здесь. Большинство будут догонять."
+    "en": "Start with one workflow.",
+    "th": "เริ่มจากงานเดียว",
+    "ru": "Начните с одного процесса."
   },
   "closing_2": {
-    "en": "The few with a plan will lead.",
-    "th": "คนที่มีแผนจะนำหน้า",
-    "ru": "Те, у кого есть план, будут впереди."
+    "en": "See it running in weeks.",
+    "th": "เห็นระบบทำงานจริงในไม่กี่สัปดาห์",
+    "ru": "Увидите его в работе через несколько недель."
   },
   "closing_3": {
-    "en": "We build for those few.",
-    "th": "เราสร้างให้คนกลุ่มนั้น",
-    "ru": "Мы работаем для них."
+    "en": "Then scale what works.",
+    "th": "แล้วค่อยขยายสิ่งที่ได้ผล",
+    "ru": "Затем масштабируйте то, что работает."
   },
   "footer_copy": {
-    "en": "© 2026 Rejig Labs · An arm of Rejig Labs · Thailand",
-    "th": "© 2026 Rejig Labs · ภายใต้ Rejig Labs · ประเทศไทย",
-    "ru": "© 2026 Rejig Labs · Подразделение Rejig Labs · Таиланд"
+    "en": "© 2026 Rejig Labs · Thailand",
+    "th": "© 2026 Rejig Labs · ประเทศไทย",
+    "ru": "© 2026 Rejig Labs · Таиланд"
   },
   "footer_privacy": {
     "en": "Privacy",
@@ -305,14 +285,14 @@
     "ru": "ЧТО МЫ СОЗДАЁМ"
   },
   "cap_h2": {
-    "en": "One team, the whole <em class=\"accent\">AI stack.</em>",
-    "th": "ทีมเดียว ดูแล<em class=\"accent\">ระบบ AI ทั้งหมด</em>",
-    "ru": "Одна команда, весь <em class=\"accent\">стек ИИ.</em>"
+    "en": "Four areas. <em class=\"accent\">One team.</em>",
+    "th": "สี่ด้าน <em class=\"accent\">ทีมเดียวดูแลครบ</em>",
+    "ru": "Четыре направления. <em class=\"accent\">Одна команда.</em>"
   },
   "cap_sub": {
-    "en": "From voice agents that answer the phone to autonomous systems that run for months. If it can be automated with AI, we build and ship it.",
-    "th": "ตั้งแต่เอเจนต์เสียงที่รับโทรศัพท์ ไปจนถึงระบบอัตโนมัติที่ทำงานต่อเนื่องได้หลายเดือน ถ้างานไหนใช้ AI ทำแทนได้ เราสร้างและส่งมอบให้",
-    "ru": "От голосовых агентов, отвечающих на звонки, до автономных систем, работающих месяцами. Если это можно автоматизировать с ИИ, мы это построим и запустим."
+    "en": "Customer conversations, growth, operations and knowledge. We build each one and connect it to the tools you already use.",
+    "th": "การสื่อสารกับลูกค้า การเติบโต งานปฏิบัติการ และองค์ความรู้ เราสร้างทุกส่วนและเชื่อมเข้ากับเครื่องมือที่คุณใช้อยู่",
+    "ru": "Общение с клиентами, рост, операции и знания. Мы строим каждое направление и подключаем его к вашим текущим инструментам."
   },
   "cap_1_t": {
     "en": "Voice AI Agents",
@@ -375,14 +355,14 @@
     "ru": "Многоязычные сайты, воронки, оплаты."
   },
   "cap_7_t": {
-    "en": "Knowledge / RAG",
-    "th": "ฐานความรู้ / RAG",
-    "ru": "База знаний / RAG"
+    "en": "Knowledge Assistant",
+    "th": "ผู้ช่วยตอบจากเอกสาร",
+    "ru": "Ассистент по базе знаний"
   },
   "cap_7_d": {
-    "en": "Your documents become an assistant.",
-    "th": "เปลี่ยนเอกสารของคุณให้เป็นผู้ช่วย",
-    "ru": "Ваши документы становятся ассистентом."
+    "en": "Answers from your own documents, in seconds.",
+    "th": "ตอบคำถามจากเอกสารของคุณเองภายในไม่กี่วินาที",
+    "ru": "Ответы из ваших документов за секунды."
   },
   "cap_8_t": {
     "en": "HR & Recruiting",
@@ -405,19 +385,19 @@
     "ru": "Счета, сверки, отчётность."
   },
   "ind_eyebrow": {
-    "en": "WHERE WE DEPLOY",
-    "th": "เราใช้งานที่ไหนบ้าง",
-    "ru": "ГДЕ МЫ ВНЕДРЯЕМ"
+    "en": "WHERE THIS APPLIES",
+    "th": "ใช้ได้กับธุรกิจไหนบ้าง",
+    "ru": "ГДЕ ЭТО РАБОТАЕТ"
   },
   "ind_h2": {
-    "en": "Built for the way <em class=\"accent\">your industry runs.</em>",
-    "th": "สร้างมาเพื่อวิธีการทำงานของ<em class=\"accent\">อุตสาหกรรมคุณ</em>",
-    "ru": "Создано под то, как работает <em class=\"accent\">ваша отрасль.</em>"
+    "en": "Where AI <em class=\"accent\">pays off first.</em>",
+    "th": "จุดที่ AI <em class=\"accent\">เห็นผลเร็วที่สุด</em>",
+    "ru": "Где AI <em class=\"accent\">окупается быстрее всего.</em>"
   },
   "ind_sub": {
-    "en": "Same engine, tuned to the workflow. Here is the first thing we would automate in each.",
-    "th": "เครื่องยนต์เดียวกัน ปรับจูนตามเวิร์กโฟลว์ นี่คือสิ่งแรกที่เราจะทำให้เป็นอัตโนมัติในแต่ละธุรกิจ",
-    "ru": "Один движок, настроенный под процесс. Вот что мы автоматизировали бы первым в каждой отрасли."
+    "en": "The first system we would build in each industry.",
+    "th": "ระบบแรกที่เราจะสร้างให้ในแต่ละอุตสาหกรรม",
+    "ru": "Первая система, которую мы построили бы в каждой отрасли."
   },
   "ind_1_n": {
     "en": "Hospitality",
@@ -575,14 +555,14 @@
     "ru": "Документация о соответствии SOC 2 / ISO доступна для корпоративных проектов."
   },
   "seo_title": {
-    "en": "AI Automation Agency in Thailand | Rejig Labs",
-    "th": "รับวางระบบ AI & แชทบอทอัตโนมัติ สำหรับธุรกิจ SME | Rejig Labs",
-    "ru": "AI-консалтинг и внедрение AI для бизнеса | Rejig Labs"
+    "en": "AI Implementation Partner in Thailand | Rejig Labs",
+    "th": "รับวางระบบ AI และระบบอัตโนมัติสำหรับธุรกิจ | Rejig Labs",
+    "ru": "Внедрение AI и автоматизация для бизнеса в Таиланде | Rejig Labs"
   },
   "seo_desc": {
-    "en": "Rejig Labs is an AI automation agency in Thailand, based in Phuket. We find where AI saves you real time and money, then build it, deploy it, and train your team.",
-    "th": "Rejig Labs ที่ปรึกษาและรับวางระบบ AI สำหรับธุรกิจ SME ในไทย เราหาจุดที่ AI ช่วยลดต้นทุนและเวลา แล้วสร้างแชทบอท AI ระบบตอบลูกค้าอัตโนมัติ พร้อมอบรมทีมให้ใช้งานได้จริง",
-    "ru": "Rejig Labs находит, где AI сэкономит вашему бизнесу реальное время и деньги, затем создаёт и внедряет решение и обучает вашу команду им пользоваться."
+    "en": "Rejig Labs is an AI implementation partner in Phuket, Thailand. We find where AI automation saves you time and money, build it into your tools, and train your team to run it.",
+    "th": "Rejig Labs พาร์ตเนอร์รับวางระบบ AI จากภูเก็ต เราหาจุดที่ระบบ AI อัตโนมัติช่วยประหยัดเวลาและต้นทุน สร้างเข้ากับเครื่องมือที่คุณใช้อยู่ แล้วสอนทีมให้ดูแลเองได้",
+    "ru": "Rejig Labs — партнёр по внедрению AI с базой на Пхукете. Находим, где AI экономит время и деньги, встраиваем его в ваши инструменты и обучаем команду им управлять."
   },
   "seo_title_chatbot": {
     "en": "AI Chatbot & LINE OA Automation for Business | Rejig Labs",
@@ -815,7 +795,7 @@
     "ru": "Системы, которые мы <em class=\"accent\">уже запустили.</em>"
   },
   "cs_hub_sub": {
-    "en": "Named clients, real numbers, systems running in production today.",
+    "en": "Named clients, real numbers, AI systems running in production today.",
     "th": "ลูกค้าตัวจริง ตัวเลขจริง ระบบที่ใช้งานจริงอยู่ทุกวันนี้",
     "ru": "Реальные клиенты, реальные цифры, системы в продакшене уже сегодня."
   },
@@ -1215,5 +1195,2195 @@
     "en": "See Beem",
     "th": "ดู Beem",
     "ru": "Смотреть Beem"
+  },
+  "nav_about": {
+    "en": "About",
+    "th": "เกี่ยวกับเรา",
+    "ru": "О нас"
+  },
+  "built_eyebrow": {
+    "en": "BUILT ON",
+    "th": "เทคโนโลยีที่เราใช้",
+    "ru": "НАШ СТЕК"
+  },
+  "built_sub": {
+    "en": "The platforms behind the systems we build.",
+    "th": "แพลตฟอร์มเบื้องหลังระบบที่เราสร้าง",
+    "ru": "Платформы, на которых работают наши системы."
+  },
+  "cap_g1": {
+    "en": "01 · CONVERSATIONS",
+    "th": "01 · การสื่อสารกับลูกค้า",
+    "ru": "01 · КОММУНИКАЦИИ"
+  },
+  "cap_g2": {
+    "en": "02 · GROWTH",
+    "th": "02 · การเติบโต",
+    "ru": "02 · РОСТ"
+  },
+  "cap_g3": {
+    "en": "03 · OPERATIONS",
+    "th": "03 · งานปฏิบัติการ",
+    "ru": "03 · ОПЕРАЦИИ"
+  },
+  "cap_g4": {
+    "en": "04 · KNOWLEDGE &amp; AGENTS",
+    "th": "04 · องค์ความรู้และเอเจนต์",
+    "ru": "04 · ЗНАНИЯ И АГЕНТЫ"
+  },
+  "about_eyebrow": {
+    "en": "ABOUT REJIG LABS",
+    "th": "เกี่ยวกับ REJIG LABS",
+    "ru": "О REJIG LABS"
+  },
+  "about_h1": {
+    "en": "We build what <em class=\"accent\">we recommend.</em>",
+    "th": "เราสร้าง<em class=\"accent\">สิ่งที่เราแนะนำ</em>",
+    "ru": "Мы строим то, <em class=\"accent\">что рекомендуем.</em>"
+  },
+  "about_sub": {
+    "en": "Rejig Labs is an AI implementation partner based in Phuket, Thailand. We turn AI plans into systems that run inside real businesses, then hand them to the people who use them.",
+    "th": "Rejig Labs คือพาร์ตเนอร์วางระบบ AI จากภูเก็ต เราเปลี่ยนแผน AI ให้เป็นระบบที่ทำงานจริงในธุรกิจ แล้วส่งมอบให้ทีมที่ใช้งานดูแลต่อ",
+    "ru": "Rejig Labs — партнёр по внедрению AI с базой на Пхукете. Мы превращаем AI-планы в системы, которые работают в реальном бизнесе, и передаём их людям, которые ими пользуются."
+  },
+  "about_why_h2": {
+    "en": "Why Rejig <em class=\"accent\">exists.</em>",
+    "th": "ทำไมต้อง <em class=\"accent\">Rejig</em>",
+    "ru": "Зачем <em class=\"accent\">нужен Rejig.</em>"
+  },
+  "about_why_1": {
+    "en": "Most companies don't lack AI tools. They lack someone who connects those tools to how the business really works.",
+    "th": "ธุรกิจส่วนใหญ่ไม่ได้ขาดเครื่องมือ AI แต่ขาดคนที่เชื่อมเครื่องมือเหล่านั้นเข้ากับวิธีทำงานจริงของธุรกิจ",
+    "ru": "Большинству компаний не хватает не AI-инструментов, а человека, который свяжет эти инструменты с тем, как бизнес работает на самом деле."
+  },
+  "about_why_2": {
+    "en": "We kept seeing the same pattern: a strategy deck, a few new subscriptions, and nothing different on Monday morning. Rejig Labs exists to close that gap. Fewer slides. More systems that run.",
+    "th": "เราเห็นภาพเดิมซ้ำ ๆ มีสไลด์กลยุทธ์ มีแอปใหม่ที่สมัครไว้ แต่เช้าวันจันทร์ทุกอย่างก็เหมือนเดิม Rejig Labs เกิดขึ้นเพื่อปิดช่องว่างนี้ สไลด์น้อยลง ระบบที่ทำงานจริงมากขึ้น",
+    "ru": "Мы снова и снова видели одно и то же: презентация со стратегией, пара новых подписок, а в понедельник утром ничего не меняется. Rejig Labs создан, чтобы закрыть этот разрыв. Меньше слайдов. Больше работающих систем."
+  },
+  "about_founder_eyebrow": {
+    "en": "FOUNDER",
+    "th": "ผู้ก่อตั้ง",
+    "ru": "ОСНОВАТЕЛЬ"
+  },
+  "about_founder_role": {
+    "en": "Founder & CEO · known to clients as Mr. RT",
+    "th": "ผู้ก่อตั้งและ CEO · ลูกค้ารู้จักในชื่อ Mr. RT",
+    "ru": "Основатель и CEO · клиенты знают как Mr. RT"
+  },
+  "about_founder_1": {
+    "en": "Rut started Rejig Labs to give businesses the part most AI advice leaves out: the build.",
+    "th": "Rut ก่อตั้ง Rejig Labs เพื่อมอบสิ่งที่คำแนะนำด้าน AI ส่วนใหญ่ขาดไป นั่นคือการลงมือสร้างจริง",
+    "ru": "Rejig Labs — это ответ Rut на то, что обычно выпадает из AI-консалтинга: саму разработку."
+  },
+  "about_founder_2": {
+    "en": "Before Rejig, Rut worked in management and marketing with companies in logistics, energy, robotics, food and Web3. That time on the business side of the table is the edge. Rut knows where hours and money leak, and that a tool only matters if people use it every day.",
+    "th": "ก่อนมี Rejig, Rut ทำงานด้านบริหารและการตลาดกับบริษัทในหลายอุตสาหกรรม ทั้งโลจิสติกส์ พลังงาน หุ่นยนต์ อาหาร และ Web3 ประสบการณ์ฝั่งธุรกิจนี้คือจุดแข็ง Rut รู้ว่าเวลาและเงินรั่วไหลตรงไหน และรู้ว่าเครื่องมือจะมีค่าก็ต่อเมื่อคนใช้งานมันทุกวัน",
+    "ru": "До Rejig у Rut был опыт в управлении и маркетинге в компаниях из логистики, энергетики, робототехники, пищевой отрасли и Web3. Этот опыт со стороны бизнеса и есть преимущество: Rut знает, где утекают время и деньги, и что инструмент ценен, только если им пользуются каждый день."
+  },
+  "about_founder_3": {
+    "en": "Today Rut leads every Rejig project personally, from the first call to the day your team runs the system on its own. Rut also founded Beem, the AI front desk that grew out of Rejig's client work.",
+    "th": "วันนี้ Rut ดูแลทุกโปรเจกต์ของ Rejig ด้วยตัวเอง ตั้งแต่การคุยครั้งแรกจนถึงวันที่ทีมของคุณดูแลระบบเองได้ Rut ยังเป็นผู้ก่อตั้ง Beem ระบบ AI รับสายหน้าร้านที่ต่อยอดมาจากงานลูกค้าของ Rejig",
+    "ru": "Сегодня Rut лично ведёт каждый проект Rejig — от первого звонка до дня, когда ваша команда управляет системой сама. Beem, AI-ресепшн, который вырос из клиентских проектов Rejig, — тоже проект Rut."
+  },
+  "about_founder_quote": {
+    "en": "“I don't sell AI. I sell hours back in your week, and a team that trusts the system.”",
+    "th": "“สิ่งที่เราขายไม่ใช่ AI แต่คือเวลาที่คุณได้คืนในแต่ละสัปดาห์ และทีมที่เชื่อมั่นในระบบ”",
+    "ru": "«Я не продаю AI. Я продаю часы, которые возвращаются в вашу неделю, и команду, которая доверяет системе.»"
+  },
+  "about_founder_card": {
+    "en": "Contact card ›",
+    "th": "นามบัตรติดต่อ ›",
+    "ru": "Контакты ›"
+  },
+  "about_how_eyebrow": {
+    "en": "HOW WE WORK",
+    "th": "วิธีทำงานของเรา",
+    "ru": "КАК МЫ РАБОТАЕМ"
+  },
+  "about_how_h2": {
+    "en": "Four promises <em class=\"accent\">on every project.</em>",
+    "th": "สี่ข้อที่เรายึด<em class=\"accent\">ในทุกโปรเจกต์</em>",
+    "ru": "Четыре обещания <em class=\"accent\">в каждом проекте.</em>"
+  },
+  "about_p1_t": {
+    "en": "We build what we recommend.",
+    "th": "เราสร้างสิ่งที่เราแนะนำ",
+    "ru": "Строим то, что рекомендуем."
+  },
+  "about_p1_d": {
+    "en": "No advice we can't deliver ourselves. If it's in the plan, we can build it.",
+    "th": "เราไม่แนะนำสิ่งที่เราทำเองไม่ได้ อะไรที่อยู่ในแผน เราสร้างได้",
+    "ru": "Никаких советов, которые мы не можем реализовать сами. Если это есть в плане, мы это построим."
+  },
+  "about_p2_t": {
+    "en": "You own everything.",
+    "th": "ทุกอย่างเป็นของคุณ",
+    "ru": "Всё принадлежит вам."
+  },
+  "about_p2_d": {
+    "en": "Your accounts, your data, your systems. Fully exportable. No lock-in.",
+    "th": "บัญชี ข้อมูล และระบบเป็นของคุณ ส่งออกได้ทั้งหมด ไม่ผูกมัด",
+    "ru": "Ваши аккаунты, данные и системы. Всё можно выгрузить. Никакой привязки."
+  },
+  "about_p3_t": {
+    "en": "A person signs off.",
+    "th": "มีคนอนุมัติเสมอ",
+    "ru": "Последнее слово за человеком."
+  },
+  "about_p3_d": {
+    "en": "Nothing sends or publishes without an approval step you control.",
+    "th": "ไม่มีอะไรถูกส่งหรือเผยแพร่โดยไม่ผ่านขั้นตอนอนุมัติที่คุณควบคุม",
+    "ru": "Ничего не отправляется и не публикуется без шага согласования под вашим контролем."
+  },
+  "about_p4_t": {
+    "en": "We stay until it sticks.",
+    "th": "เราอยู่จนระบบเข้าที่",
+    "ru": "Остаёмся, пока всё не заработает."
+  },
+  "about_p4_d": {
+    "en": "Training, fixes and tuning until your team runs it without us.",
+    "th": "อบรม แก้ไข และปรับจูน จนทีมของคุณดูแลได้เองโดยไม่ต้องพึ่งเรา",
+    "ru": "Обучение, доработки и настройка, пока команда не сможет управлять системой без нас."
+  },
+  "about_f1_v": {
+    "en": "Phuket & Bangkok",
+    "th": "ภูเก็ตและกรุงเทพฯ",
+    "ru": "Пхукет и Бангкок"
+  },
+  "about_f1_l": {
+    "en": "Where we're based",
+    "th": "ที่ตั้งของเรา",
+    "ru": "Где мы находимся"
+  },
+  "about_f2_v": {
+    "en": "Worldwide",
+    "th": "ทั่วโลก",
+    "ru": "Весь мир"
+  },
+  "about_f2_l": {
+    "en": "Where we work",
+    "th": "พื้นที่ที่เราทำงาน",
+    "ru": "Где мы работаем"
+  },
+  "about_f3_l": {
+    "en": "Languages we work in",
+    "th": "ภาษาที่เราใช้ทำงาน",
+    "ru": "Языки работы"
+  },
+  "about_f4_l": {
+    "en": "Published case studies",
+    "th": "กรณีศึกษาที่เผยแพร่แล้ว",
+    "ru": "Опубликованных кейса"
+  },
+  "seo_title_about": {
+    "en": "About Rejig Labs: AI Implementation Partner in Thailand",
+    "th": "เกี่ยวกับ Rejig Labs: พาร์ตเนอร์วางระบบ AI ในไทย",
+    "ru": "О Rejig Labs: партнёр по внедрению AI в Таиланде"
+  },
+  "seo_desc_about": {
+    "en": "Rejig Labs is an AI implementation partner in Phuket, Thailand, founded by Rut Adikari (Mr. RT). We build what we recommend and stay until your team runs it.",
+    "th": "Rejig Labs พาร์ตเนอร์วางระบบ AI จากภูเก็ต ก่อตั้งโดย Rut Adikari (Mr. RT) เราสร้างสิ่งที่เราแนะนำ และอยู่จนทีมของคุณดูแลระบบเองได้",
+    "ru": "Rejig Labs — партнёр по внедрению AI на Пхукете, основатель — Rut Adikari (Mr. RT). Мы строим то, что рекомендуем, и остаёмся, пока команда не освоит систему."
+  },
+  "bc_nav_home": {
+    "en": "Home",
+    "th": "หน้าแรก",
+    "ru": "Главная"
+  },
+  "bc_nav_cases": {
+    "en": "Case Studies",
+    "th": "ผลงาน",
+    "ru": "Кейсы"
+  },
+  "bc_nav_about": {
+    "en": "About",
+    "th": "เกี่ยวกับเรา",
+    "ru": "О нас"
+  },
+  "bc_nav_faq": {
+    "en": "FAQ",
+    "th": "คำถามที่พบบ่อย",
+    "ru": "Вопросы"
+  },
+  "bc_cta_book": {
+    "en": "Book a Call",
+    "th": "นัดคุย",
+    "ru": "Записаться на звонок"
+  },
+  "bc_hero_badge": {
+    "en": "Growth Partner · Thailand & Worldwide",
+    "th": "พาร์ทเนอร์ด้านการเติบโต · ไทยและทั่วโลก",
+    "ru": "Партнёр по росту · Таиланд и весь мир"
+  },
+  "bc_hero_h1": {
+    "en": "Turn attention<br>into traction.",
+    "th": "เปลี่ยนความสนใจ<br>ให้เป็นการเติบโต",
+    "ru": "Превращаем внимание<br>в рост."
+  },
+  "bc_hero_sub": {
+    "en": "Strategy, systems and storytelling for Web3 teams. Built to scale.",
+    "th": "กลยุทธ์ ระบบ และการเล่าเรื่องสำหรับทีม Web3 พร้อมขยายได้เต็มที่",
+    "ru": "Стратегия, системы и сторителлинг для Web3-команд. С запасом на масштаб."
+  },
+  "bc_hero_cta2": {
+    "en": "See Services",
+    "th": "ดูบริการ",
+    "ru": "Наши услуги"
+  },
+  "bc_about_pill": {
+    "en": "About Rejig Labs",
+    "th": "เกี่ยวกับ Rejig Labs",
+    "ru": "О Rejig Labs"
+  },
+  "bc_about_h2a": {
+    "en": "Growth for fast-moving",
+    "th": "การเติบโตสำหรับ",
+    "ru": "Рост для быстрых"
+  },
+  "bc_about_h2b": {
+    "en": "Web3 projects.",
+    "th": "โปรเจกต์ Web3 ที่เคลื่อนเร็ว",
+    "ru": "Web3-проектов."
+  },
+  "bc_about_sub": {
+    "en": "Clear strategy. Fast execution. On demand.",
+    "th": "กลยุทธ์ชัดเจน ลงมือเร็ว พร้อมเมื่อคุณต้องการ",
+    "ru": "Чёткая стратегия. Быстрое исполнение. Когда нужно."
+  },
+  "bc_about_stat1": {
+    "en": "Helped clients raise $10M+",
+    "th": "ช่วยลูกค้าระดมทุนได้กว่า $10M",
+    "ru": "Помогли клиентам привлечь $10M+"
+  },
+  "bc_about_stat2": {
+    "en": "47% more user acquisition across clients",
+    "th": "ลูกค้าได้ผู้ใช้ใหม่เพิ่มขึ้น 47%",
+    "ru": "На 47% больше новых пользователей у клиентов"
+  },
+  "bc_about_trust": {
+    "en": "Trusted by 30+ projects",
+    "th": "ได้รับความไว้วางใจจากกว่า 30 โปรเจกต์",
+    "ru": "Нам доверяют 30+ проектов"
+  },
+  "bc_results_pill": {
+    "en": "Results",
+    "th": "ผลลัพธ์",
+    "ru": "Результаты"
+  },
+  "bc_results_h2a": {
+    "en": "Results you can measure.",
+    "th": "ผลลัพธ์ที่วัดได้",
+    "ru": "Результат, который можно измерить."
+  },
+  "bc_results_h2b": {
+    "en": "Growth you can see.",
+    "th": "การเติบโตที่เห็นได้จริง",
+    "ru": "Рост, который видно."
+  },
+  "bc_results_p": {
+    "en": "We focus on one thing: outcomes you can measure.",
+    "th": "เราโฟกัสเรื่องเดียว คือผลลัพธ์ที่วัดได้",
+    "ru": "Мы сосредоточены на одном: измеримом результате."
+  },
+  "bc_r1_title": {
+    "en": "Founder-Led Marketing",
+    "th": "การตลาดนำโดยผู้ก่อตั้ง",
+    "ru": "Маркетинг через основателя"
+  },
+  "bc_r1_desc": {
+    "en": "Put the founder up front. Real attention on the project.",
+    "th": "ให้ผู้ก่อตั้งเป็นหน้าด่าน ดึงความสนใจจริงมาสู่โปรเจกต์",
+    "ru": "Основатель — в центре внимания. Реальный интерес к проекту."
+  },
+  "bc_r1_tag1": {
+    "en": "5 Content Pillars",
+    "th": "5 แกนหลักคอนเทนต์",
+    "ru": "5 контентных направлений"
+  },
+  "bc_r1_tag2": {
+    "en": "Scheduling & Management",
+    "th": "วางแผนและดูแลโพสต์",
+    "ru": "Планирование и ведение"
+  },
+  "bc_r2_title": {
+    "en": "Project Partnerships",
+    "th": "พาร์ทเนอร์ระหว่างโปรเจกต์",
+    "ru": "Партнёрства с проектами"
+  },
+  "bc_r2_desc": {
+    "en": "Team up with the right projects. Build reach and authority together.",
+    "th": "จับมือกับโปรเจกต์ที่ใช่ ขยายการเข้าถึงและสร้างความน่าเชื่อถือไปด้วยกัน",
+    "ru": "Объединяйтесь с нужными проектами. Вместе растите охват и авторитет."
+  },
+  "bc_r2_tag1": {
+    "en": "Wide Network",
+    "th": "เครือข่ายกว้าง",
+    "ru": "Широкая сеть"
+  },
+  "bc_r2_tag2": {
+    "en": "Relationship Building",
+    "th": "สร้างความสัมพันธ์",
+    "ru": "Выстраивание связей"
+  },
+  "bc_r3_title": {
+    "en": "Events",
+    "th": "อีเวนต์",
+    "ru": "Мероприятия"
+  },
+  "bc_r3_desc": {
+    "en": "More than a sponsor logo. Meet investors, users and long-term partners.",
+    "th": "มากกว่าแค่โลโก้สปอนเซอร์ ได้พบนักลงทุน ผู้ใช้ และพาร์ทเนอร์ระยะยาว",
+    "ru": "Больше, чем логотип спонсора. Встречи с инвесторами, пользователями и долгосрочными партнёрами."
+  },
+  "bc_r3_tag1": {
+    "en": "Brand Visibility",
+    "th": "การมองเห็นแบรนด์",
+    "ru": "Узнаваемость бренда"
+  },
+  "bc_r3_tag2": {
+    "en": "Fresh Ideas",
+    "th": "ไอเดียใหม่",
+    "ru": "Свежие идеи"
+  },
+  "bc_r4_title": {
+    "en": "Ad Strategy",
+    "th": "กลยุทธ์โฆษณา",
+    "ru": "Рекламная стратегия"
+  },
+  "bc_r4_desc": {
+    "en": "Funnels built for your project. No templates. Scaling gets simple.",
+    "th": "ฟันเนลที่ออกแบบเพื่อโปรเจกต์ของคุณ ไม่ใช้เทมเพลต ขยายได้ง่าย",
+    "ru": "Воронки под ваш проект. Без шаблонов. Масштабировать просто."
+  },
+  "bc_r4_tag1": {
+    "en": "User Acquisition",
+    "th": "หาผู้ใช้ใหม่",
+    "ru": "Привлечение пользователей"
+  },
+  "bc_r4_tag2": {
+    "en": "TOFU – BOFU Strategy",
+    "th": "กลยุทธ์ TOFU – BOFU",
+    "ru": "Стратегия TOFU – BOFU"
+  },
+  "bc_p1_badge": {
+    "en": "Phase 1",
+    "th": "เฟส 1",
+    "ru": "Этап 1"
+  },
+  "bc_p1_title": {
+    "en": "Strategic Clarity",
+    "th": "กลยุทธ์ที่ชัดเจน",
+    "ru": "Ясная стратегия"
+  },
+  "bc_p1_sub": {
+    "en": "We start with questions. Market, product, goals. You leave with a sharp story and a clear roadmap.",
+    "th": "เราเริ่มจากคำถาม ตลาด ผลิตภัณฑ์ เป้าหมาย คุณจะได้เรื่องราวที่คมชัดและโรดแมปที่ชัดเจน",
+    "ru": "Начинаем с вопросов. Рынок, продукт, цели. На выходе — сильная история и понятный план."
+  },
+  "bc_p1_tag1": {
+    "en": "Project Audit",
+    "th": "ตรวจสอบโปรเจกต์",
+    "ru": "Аудит проекта"
+  },
+  "bc_p1_tag2": {
+    "en": "Go-to-Market & Positioning",
+    "th": "แผนเข้าตลาดและการวางตำแหน่ง",
+    "ru": "Выход на рынок и позиционирование"
+  },
+  "bc_p2_badge": {
+    "en": "Phase 2",
+    "th": "เฟส 2",
+    "ru": "Этап 2"
+  },
+  "bc_p2_title": {
+    "en": "High-Leverage Execution",
+    "th": "ลงมือทำแบบได้ผลสูง",
+    "ru": "Исполнение с максимальной отдачей"
+  },
+  "bc_p2_sub": {
+    "en": "Done for you. Never without you. Fast, precise execution. You stay in the loop.",
+    "th": "เราทำให้ แต่ไม่ทิ้งคุณ ลงมือเร็วและแม่นยำ คุณรู้ทุกความคืบหน้า",
+    "ru": "Делаем за вас, но всегда вместе с вами. Быстро и точно. Вы в курсе каждого шага."
+  },
+  "bc_p2_tag1": {
+    "en": "Growth Systems",
+    "th": "ระบบการเติบโต",
+    "ru": "Системы роста"
+  },
+  "bc_p2_tag2": {
+    "en": "Influencer & Community Campaigns",
+    "th": "แคมเปญอินฟลูเอนเซอร์และคอมมูนิตี้",
+    "ru": "Кампании с инфлюенсерами и комьюнити"
+  },
+  "bc_p3_badge": {
+    "en": "Phase 3",
+    "th": "เฟส 3",
+    "ru": "Этап 3"
+  },
+  "bc_p3_title": {
+    "en": "Insights & Iteration",
+    "th": "วิเคราะห์และปรับปรุง",
+    "ru": "Аналитика и улучшения"
+  },
+  "bc_p3_sub": {
+    "en": "We measure what matters. Then improve it. Clear reports, live dashboards, next steps.",
+    "th": "เราวัดสิ่งที่สำคัญ แล้วปรับให้ดีขึ้น รายงานชัดเจน แดชบอร์ดเรียลไทม์ พร้อมขั้นตอนถัดไป",
+    "ru": "Измеряем главное. Затем улучшаем. Понятные отчёты, живые дашборды, следующие шаги."
+  },
+  "bc_p3_tag1": {
+    "en": "Report & Review",
+    "th": "รายงานและทบทวน",
+    "ru": "Отчёты и разбор"
+  },
+  "bc_p3_tag2": {
+    "en": "Feedback Loops & Optimization",
+    "th": "รับฟีดแบ็กและปรับให้ดีขึ้น",
+    "ru": "Обратная связь и оптимизация"
+  },
+  "bc_how_pill": {
+    "en": "How We Work",
+    "th": "วิธีการทำงาน",
+    "ru": "Как мы работаем"
+  },
+  "bc_how_h2a": {
+    "en": "From plan to launch.",
+    "th": "จากแผนสู่การเปิดตัว",
+    "ru": "От плана до запуска."
+  },
+  "bc_how_h2b": {
+    "en": "One simple path.",
+    "th": "ในเส้นทางเดียวที่เรียบง่าย",
+    "ru": "Один простой путь."
+  },
+  "bc_feat_pill": {
+    "en": "Services",
+    "th": "บริการ",
+    "ru": "Услуги"
+  },
+  "bc_feat_h2a": {
+    "en": "Built to scale.",
+    "th": "พร้อมขยาย",
+    "ru": "Готово к масштабу."
+  },
+  "bc_feat_h2b": {
+    "en": "Made to convert.",
+    "th": "สร้างยอดขายได้จริง",
+    "ru": "Создано для конверсий."
+  },
+  "bc_feat_p": {
+    "en": "Strategy plus AI-driven systems. Web3 teams grow faster.",
+    "th": "กลยุทธ์ผสานระบบ AI ช่วยให้ทีม Web3 เติบโตเร็วขึ้น",
+    "ru": "Стратегия плюс системы на базе AI. Web3-команды растут быстрее."
+  },
+  "bc_f1_title": {
+    "en": "Growth System",
+    "th": "ระบบการเติบโต",
+    "ru": "Система роста"
+  },
+  "bc_f1_tag": {
+    "en": "ESSENTIAL",
+    "th": "พื้นฐาน",
+    "ru": "БАЗА"
+  },
+  "bc_f1_sub": {
+    "en": "Funnels that convert",
+    "th": "ฟันเนลที่ปิดการขายได้",
+    "ru": "Воронки, которые конвертируют"
+  },
+  "bc_f1_desc": {
+    "en": "Full-funnel systems for user growth and fundraising.",
+    "th": "ระบบครบทั้งฟันเนล เพื่อเพิ่มผู้ใช้และระดมทุน",
+    "ru": "Полная воронка для роста аудитории и привлечения инвестиций."
+  },
+  "bc_f2_title": {
+    "en": "Brand Strategy & Positioning",
+    "th": "กลยุทธ์แบรนด์และการวางตำแหน่ง",
+    "ru": "Стратегия бренда и позиционирование"
+  },
+  "bc_f2_sub": {
+    "en": "Narratives that stick",
+    "th": "เรื่องราวที่คนจำได้",
+    "ru": "Истории, которые запоминаются"
+  },
+  "bc_f2_desc": {
+    "en": "Stories that land with users, partners and investors.",
+    "th": "เรื่องราวที่เข้าถึงผู้ใช้ พาร์ทเนอร์ และนักลงทุน",
+    "ru": "Истории, которые находят отклик у пользователей, партнёров и инвесторов."
+  },
+  "bc_f3_title": {
+    "en": "Web3 Ads Engine",
+    "th": "ระบบโฆษณา Web3",
+    "ru": "Реклама для Web3"
+  },
+  "bc_f3_sub": {
+    "en": "Crypto-native campaigns",
+    "th": "แคมเปญสำหรับโลกคริปโต",
+    "ru": "Кампании для крипто-аудитории"
+  },
+  "bc_f3_desc": {
+    "en": "Ads that perform on Meta, Google and Web3 platforms.",
+    "th": "โฆษณาที่ได้ผลบน Meta, Google และแพลตฟอร์ม Web3",
+    "ru": "Реклама, которая работает в Meta, Google и на Web3-площадках."
+  },
+  "bc_f4_title": {
+    "en": "Paid + Organic SEO",
+    "th": "SEO แบบเสียเงินและออร์แกนิก",
+    "ru": "Платное и органическое SEO"
+  },
+  "bc_f4_sub": {
+    "en": "Visibility that compounds",
+    "th": "การมองเห็นที่เพิ่มขึ้นทบต้น",
+    "ru": "Видимость, которая накапливается"
+  },
+  "bc_f4_desc": {
+    "en": "Rank faster. Get traffic that converts.",
+    "th": "ติดอันดับเร็วขึ้น ได้ทราฟฟิกที่เปลี่ยนเป็นลูกค้า",
+    "ru": "Быстрее в топе. Трафик, который конвертируется."
+  },
+  "bc_f5_title": {
+    "en": "KOL & Thought Leaders",
+    "th": "KOL และผู้นำทางความคิด",
+    "ru": "KOL и лидеры мнений"
+  },
+  "bc_f5_tag": {
+    "en": "UPDATED",
+    "th": "อัปเดต",
+    "ru": "ОБНОВЛЕНО"
+  },
+  "bc_f5_sub": {
+    "en": "Trusted voices",
+    "th": "เสียงที่คนเชื่อถือ",
+    "ru": "Голоса, которым доверяют"
+  },
+  "bc_f5_desc": {
+    "en": "We match you with trusted voices in Web3 and AI. Adoption follows.",
+    "th": "เราจับคู่คุณกับคนที่มีเสียงน่าเชื่อถือในวงการ Web3 และ AI แล้วผู้ใช้จะตามมา",
+    "ru": "Подбираем авторитетных людей в Web3 и AI. Пользователи приходят следом."
+  },
+  "bc_f6_title": {
+    "en": "AI-Powered Workflows",
+    "th": "เวิร์กโฟลว์ขับเคลื่อนด้วย AI",
+    "ru": "Процессы на базе AI"
+  },
+  "bc_f6_sub": {
+    "en": "Marketing automation",
+    "th": "การตลาดอัตโนมัติ",
+    "ru": "Автоматизация маркетинга"
+  },
+  "bc_f6_desc": {
+    "en": "AI handles follow-ups, lead flows and outreach.",
+    "th": "AI ดูแลการติดตามลูกค้า การจัดการลีด และการติดต่อออกให้",
+    "ru": "AI ведёт фоллоу-апы, лиды и рассылки."
+  },
+  "bc_ben_pill": {
+    "en": "Why Rejig Labs",
+    "th": "ทำไมต้อง Rejig Labs",
+    "ru": "Почему Rejig Labs"
+  },
+  "bc_ben_h2a": {
+    "en": "Not just a service.",
+    "th": "ไม่ใช่แค่บริการ",
+    "ru": "Не просто услуга."
+  },
+  "bc_ben_h2b": {
+    "en": "Results.",
+    "th": "แต่คือผลลัพธ์",
+    "ru": "Результат."
+  },
+  "bc_ben_t1": {
+    "en": "AI-Ready Flows",
+    "th": "โฟลว์พร้อม AI",
+    "ru": "Процессы с AI"
+  },
+  "bc_ben_t2": {
+    "en": "Funnels That Convert",
+    "th": "ฟันเนลที่ปิดการขายได้",
+    "ru": "Конвертящие воронки"
+  },
+  "bc_ben_t3": {
+    "en": "Fast Execution",
+    "th": "ลงมือเร็ว",
+    "ru": "Быстрое исполнение"
+  },
+  "bc_ben_t4": {
+    "en": "SEO Optimized",
+    "th": "เหมาะกับ SEO",
+    "ru": "SEO-оптимизация"
+  },
+  "bc_ben_t5": {
+    "en": "Customizable",
+    "th": "ปรับแต่งได้",
+    "ru": "Гибкая настройка"
+  },
+  "bc_ben_t6": {
+    "en": "Scalable",
+    "th": "ขยายได้",
+    "ru": "Масштабируемость"
+  },
+  "bc_ben_t7": {
+    "en": "More Engagement",
+    "th": "เอนเกจเมนต์สูงขึ้น",
+    "ru": "Больше вовлечённости"
+  },
+  "bc_ben_t8": {
+    "en": "Expandable",
+    "th": "ต่อยอดได้",
+    "ru": "Легко расширить"
+  },
+  "bc_ben_t9": {
+    "en": "Secure",
+    "th": "ปลอดภัย",
+    "ru": "Безопасность"
+  },
+  "bc_ben_t10": {
+    "en": "Quality First",
+    "th": "คุณภาพมาก่อน",
+    "ru": "Качество прежде всего"
+  },
+  "bc_strat_h3": {
+    "en": "A strategy built for you.",
+    "th": "กลยุทธ์ที่ออกแบบมาเพื่อคุณ",
+    "ru": "Стратегия под ваш проект."
+  },
+  "bc_strat_cta2": {
+    "en": "Send a Request",
+    "th": "ส่งคำขอ",
+    "ru": "Отправить заявку"
+  },
+  "bc_strat_comm": {
+    "en": "Fast Communication",
+    "th": "ติดต่อสื่อสารรวดเร็ว",
+    "ru": "Быстрая связь"
+  },
+  "bc_s1_title": {
+    "en": "Move With The Market",
+    "th": "ไปให้ทันตลาด",
+    "ru": "В темпе рынка"
+  },
+  "bc_s1_badge": {
+    "en": "FAST",
+    "th": "เร็ว",
+    "ru": "БЫСТРО"
+  },
+  "bc_s1_desc": {
+    "en": "Markets move fast. So do we. Quick decisions, quick launches.",
+    "th": "ตลาดเปลี่ยนเร็ว เราก็เช่นกัน ตัดสินใจไว เปิดตัวไว",
+    "ru": "Рынок движется быстро. Мы тоже. Быстрые решения, быстрые запуски."
+  },
+  "bc_s2_title": {
+    "en": "Real Results, No Fluff",
+    "th": "ผลลัพธ์จริง ไม่มีน้ำ",
+    "ru": "Реальный результат, без воды"
+  },
+  "bc_s2_desc": {
+    "en": "You need impact, not decks. We focus on performance, conversion and visibility. No vanity metrics.",
+    "th": "คุณต้องการผลลัพธ์ ไม่ใช่สไลด์ เราโฟกัสที่ประสิทธิภาพ คอนเวอร์ชัน และการมองเห็น ไม่ใช่ตัวเลขสวยหรู",
+    "ru": "Вам нужен эффект, а не презентации. Мы работаем на результат, конверсию и видимость. Без метрик для галочки."
+  },
+  "bc_s3_title": {
+    "en": "Return On Investment",
+    "th": "ผลตอบแทนจากการลงทุน",
+    "ru": "Окупаемость инвестиций"
+  },
+  "bc_s3_desc": {
+    "en": "Every dollar tracked. Every campaign measured. We double down on what works.",
+    "th": "ติดตามทุกดอลลาร์ วัดผลทุกแคมเปญ แล้วทุ่มกับสิ่งที่ได้ผล",
+    "ru": "Каждый доллар на учёте. Каждая кампания измерена. Усиливаем то, что работает."
+  },
+  "bc_faq_h2a": {
+    "en": "Frequently",
+    "th": "คำถาม",
+    "ru": "Частые"
+  },
+  "bc_faq_h2b": {
+    "en": "asked questions",
+    "th": "ที่พบบ่อย",
+    "ru": "вопросы"
+  },
+  "bc_faq_p": {
+    "en": "Quick answers to common questions.",
+    "th": "คำตอบสั้นๆ สำหรับคำถามที่เจอบ่อย",
+    "ru": "Короткие ответы на частые вопросы."
+  },
+  "bc_faq1_q": {
+    "en": "Why “Rejig” Labs?",
+    "th": "ทำไมชื่อ “Rejig” Labs?",
+    "ru": "Почему «Rejig» Labs?"
+  },
+  "bc_faq1_a": {
+    "en": "“Rejig” means to rethink and reorganize. That’s what we do. We take your strategy and systems and rebuild them for growth in Web3.",
+    "th": "“Rejig” แปลว่าคิดใหม่และจัดใหม่ นั่นคือสิ่งที่เราทำ เรานำกลยุทธ์และระบบของคุณมาปรับใหม่ เพื่อการเติบโตในโลก Web3",
+    "ru": "«Rejig» — значит переосмыслить и перестроить. Именно это мы и делаем: перестраиваем вашу стратегию и системы для роста в Web3."
+  },
+  "bc_faq2_q": {
+    "en": "Who are we?",
+    "th": "เราคือใคร?",
+    "ru": "Кто мы?"
+  },
+  "bc_faq2_a": {
+    "en": "A growth partner for Web3 and AI projects. Marketing expertise plus blockchain knowledge. Focused on results.",
+    "th": "พาร์ทเนอร์ด้านการเติบโตสำหรับโปรเจกต์ Web3 และ AI เชี่ยวชาญการตลาดและเข้าใจบล็อกเชน มุ่งที่ผลลัพธ์",
+    "ru": "Партнёр по росту для Web3- и AI-проектов. Экспертиза в маркетинге плюс знание блокчейна. Фокус на результате."
+  },
+  "bc_faq3_q": {
+    "en": "Who do we work with?",
+    "th": "เราทำงานกับใคร?",
+    "ru": "С кем мы работаем?"
+  },
+  "bc_faq3_a": {
+    "en": "Web3 projects, DeFi protocols, NFT platforms, AI companies and blockchain startups. Teams with product-market fit, ready to grow.",
+    "th": "โปรเจกต์ Web3, โปรโตคอล DeFi, แพลตฟอร์ม NFT, บริษัท AI และสตาร์ทอัพบล็อกเชน ทีมที่มี product-market fit และพร้อมเติบโต",
+    "ru": "Web3-проекты, DeFi-протоколы, NFT-платформы, AI-компании и блокчейн-стартапы. Команды с product-market fit, готовые к росту."
+  },
+  "bc_faq4_q": {
+    "en": "How do we measure success?",
+    "th": "เราวัดความสำเร็จอย่างไร?",
+    "ru": "Как мы измеряем успех?"
+  },
+  "bc_faq4_a": {
+    "en": "Clear KPIs: user acquisition, conversion, TVL growth, community size and ROI on ad spend. You get live dashboards and weekly reports.",
+    "th": "ใช้ KPI ที่ชัดเจน ได้แก่ ผู้ใช้ใหม่ คอนเวอร์ชัน การเติบโตของ TVL ขนาดคอมมูนิตี้ และ ROI จากค่าโฆษณา คุณจะได้แดชบอร์ดเรียลไทม์และรายงานทุกสัปดาห์",
+    "ru": "Понятные KPI: привлечение пользователей, конверсия, рост TVL, размер комьюнити и ROI рекламы. У вас будут живые дашборды и еженедельные отчёты."
+  },
+  "bc_faq5_q": {
+    "en": "How do we get started?",
+    "th": "เริ่มต้นอย่างไร?",
+    "ru": "Как начать?"
+  },
+  "bc_faq5_a": {
+    "en": "Book a call on this page. We review where you are, agree on goals and propose a growth plan. Then we move fast.",
+    "th": "นัดคุยได้จากหน้านี้ เราจะดูว่าคุณอยู่จุดไหน ตกลงเป้าหมายร่วมกัน แล้วเสนอแผนการเติบโต จากนั้นลงมือทันที",
+    "ru": "Запишитесь на звонок на этой странице. Разберём текущую ситуацию, согласуем цели и предложим план роста. Дальше — действуем быстро."
+  },
+  "bc_faq6_q": {
+    "en": "What makes us different?",
+    "th": "อะไรทำให้เราแตกต่าง?",
+    "ru": "Чем мы отличаемся?"
+  },
+  "bc_faq6_a": {
+    "en": "Founder-led. Execution-first. Web3-native. No templates. We build a framework for your project and own the results.",
+    "th": "นำโดยผู้ก่อตั้ง เน้นลงมือทำ เข้าใจ Web3 จากข้างใน ไม่ใช้เทมเพลต เราสร้างแนวทางเฉพาะโปรเจกต์ของคุณ และรับผิดชอบต่อผลลัพธ์",
+    "ru": "Ведёт основатель. Упор на исполнение. Мы изнутри Web3. Никаких шаблонов: строим подход под ваш проект и отвечаем за результат."
+  },
+  "bc_cta_eyebrow": {
+    "en": "Ready to grow?",
+    "th": "พร้อมเติบโตหรือยัง?",
+    "ru": "Готовы расти?"
+  },
+  "bc_cta_h2a": {
+    "en": "Stop scrolling.",
+    "th": "เลิกเลื่อนหน้าจอ",
+    "ru": "Хватит листать."
+  },
+  "bc_cta_h2b": {
+    "en": "Start a conversation.",
+    "th": "แล้วมาคุยกัน",
+    "ru": "Давайте поговорим."
+  },
+  "bc_cta_p": {
+    "en": "Booking takes one minute. We’ll help you decide what’s next.",
+    "th": "นัดคุยใช้เวลาแค่หนึ่งนาที เราจะช่วยคุณตัดสินใจก้าวต่อไป",
+    "ru": "Запись занимает минуту. Поможем решить, что делать дальше."
+  },
+  "bc_contact_pill": {
+    "en": "Let’s Work Together",
+    "th": "มาร่วมงานกัน",
+    "ru": "Давайте работать вместе"
+  },
+  "bc_contact_h2": {
+    "en": "Questions?<br>We’re here.",
+    "th": "มีคำถาม?<br>เราพร้อมตอบ",
+    "ru": "Есть вопросы?<br>Мы на связи."
+  },
+  "bc_contact_p": {
+    "en": "A question, a project or an idea. Send it over.",
+    "th": "คำถาม โปรเจกต์ หรือไอเดีย ส่งมาได้เลย",
+    "ru": "Вопрос, проект или идея — пишите."
+  },
+  "bc_form_fname": {
+    "en": "First name*",
+    "th": "ชื่อ*",
+    "ru": "Имя*"
+  },
+  "bc_form_lname": {
+    "en": "Last name*",
+    "th": "นามสกุล*",
+    "ru": "Фамилия*"
+  },
+  "bc_form_email": {
+    "en": "Email*",
+    "th": "อีเมล*",
+    "ru": "Email*"
+  },
+  "bc_form_project": {
+    "en": "Project name*",
+    "th": "ชื่อโปรเจกต์*",
+    "ru": "Название проекта*"
+  },
+  "bc_form_project_ph": {
+    "en": "Your project",
+    "th": "โปรเจกต์ของคุณ",
+    "ru": "Ваш проект"
+  },
+  "bc_form_cat": {
+    "en": "Category*",
+    "th": "หมวดหมู่*",
+    "ru": "Категория*"
+  },
+  "bc_form_cat_ph": {
+    "en": "Select a category",
+    "th": "เลือกหมวดหมู่",
+    "ru": "Выберите категорию"
+  },
+  "bc_form_cat_game": {
+    "en": "Game",
+    "th": "เกม",
+    "ru": "Игры"
+  },
+  "bc_form_msg": {
+    "en": "Message*",
+    "th": "ข้อความ*",
+    "ru": "Сообщение*"
+  },
+  "bc_form_msg_ph": {
+    "en": "Type your message...",
+    "th": "พิมพ์ข้อความของคุณ...",
+    "ru": "Ваше сообщение..."
+  },
+  "bc_form_submit": {
+    "en": "Send Message",
+    "th": "ส่งข้อความ",
+    "ru": "Отправить"
+  },
+  "bc_info_email": {
+    "en": "Email",
+    "th": "อีเมล",
+    "ru": "Email"
+  },
+  "bc_info_phone": {
+    "en": "Phone",
+    "th": "โทรศัพท์",
+    "ru": "Телефон"
+  },
+  "bc_info_addr": {
+    "en": "Address",
+    "th": "ที่อยู่",
+    "ru": "Адрес"
+  },
+  "bc_info_remote": {
+    "en": "REMOTE",
+    "th": "ทำงานทางไกล",
+    "ru": "УДАЛЁННО"
+  },
+  "bc_info_addr_v": {
+    "en": "Bangkok, Thailand<br>Phuket, Thailand",
+    "th": "กรุงเทพฯ ประเทศไทย<br>ภูเก็ต ประเทศไทย",
+    "ru": "Бангкок, Таиланд<br>Пхукет, Таиланд"
+  },
+  "bc_foot_tagline": {
+    "en": "Your Web3 growth partner",
+    "th": "พาร์ทเนอร์ด้านการเติบโตสำหรับ Web3",
+    "ru": "Ваш партнёр по росту в Web3"
+  },
+  "bc_foot_email_ph": {
+    "en": "Your email",
+    "th": "อีเมลของคุณ",
+    "ru": "Ваш email"
+  },
+  "bc_foot_subscribe": {
+    "en": "Subscribe",
+    "th": "ติดตาม",
+    "ru": "Подписаться"
+  },
+  "bc_foot_pages": {
+    "en": "Pages",
+    "th": "หน้า",
+    "ru": "Страницы"
+  },
+  "bc_foot_contact": {
+    "en": "Contact",
+    "th": "ติดต่อ",
+    "ru": "Контакты"
+  },
+  "bc_foot_social": {
+    "en": "Social",
+    "th": "โซเชียล",
+    "ru": "Соцсети"
+  },
+  "bc_foot_terms": {
+    "en": "Terms & Conditions",
+    "th": "ข้อกำหนดและเงื่อนไข",
+    "ru": "Условия использования"
+  },
+  "bc_foot_privacy": {
+    "en": "Privacy Policy",
+    "th": "นโยบายความเป็นส่วนตัว",
+    "ru": "Политика конфиденциальности"
+  },
+  "bc_book_back": {
+    "en": "← Web3",
+    "th": "← Web3",
+    "ru": "← Web3"
+  },
+  "bc_book_h1": {
+    "en": "Let's talk about your project",
+    "th": "มาคุยเรื่องโปรเจกต์ของคุณกัน",
+    "ru": "Обсудим ваш проект"
+  },
+  "bc_book_p": {
+    "en": "30 minutes on Google Meet. Three quick questions first, so we start on your problem.",
+    "th": "30 นาทีผ่าน Google Meet ตอบคำถามสั้นๆ 3 ข้อก่อน เพื่อให้เราเริ่มคุยที่โจทย์ของคุณได้ทันที",
+    "ru": "30 минут в Google Meet. Сначала три коротких вопроса — чтобы сразу говорить о вашей задаче."
+  },
+  "bc_book_foot": {
+    "en": "Trouble booking? Email <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>",
+    "th": "จองไม่ได้? อีเมลมาที่ <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>",
+    "ru": "Не получается записаться? Напишите на <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>"
+  },
+  "about_faq_h2": {
+    "en": "Quick <em class=\"accent\">facts.</em>",
+    "th": "ข้อมูล<em class=\"accent\">โดยย่อ</em>",
+    "ru": "Коротко <em class=\"accent\">о нас.</em>"
+  },
+  "about_q1": {
+    "en": "What does Rejig Labs do?",
+    "th": "Rejig Labs ทำอะไร?",
+    "ru": "Чем занимается Rejig Labs?"
+  },
+  "about_a1": {
+    "en": "Rejig Labs is an AI implementation partner. It audits how a business runs, builds AI systems into the tools the team already uses (voice agents, chat, CRM automation, content engines, knowledge assistants) and trains the team to run them.",
+    "th": "Rejig Labs คือพาร์ตเนอร์วางระบบ AI เราวิเคราะห์การทำงานของธุรกิจ สร้างระบบ AI เข้ากับเครื่องมือที่ทีมใช้อยู่ (ระบบรับสาย แชท CRM อัตโนมัติ ระบบทำคอนเทนต์ ผู้ช่วยตอบจากเอกสาร) และสอนทีมให้ดูแลเองได้",
+    "ru": "Rejig Labs — партнёр по внедрению AI. Мы разбираем, как работает бизнес, встраиваем AI-системы в текущие инструменты команды (голосовые агенты, чаты, автоматизация CRM, контент-движки, ассистенты по базе знаний) и обучаем команду ими управлять."
+  },
+  "about_q2": {
+    "en": "Who founded Rejig Labs?",
+    "th": "ใครเป็นผู้ก่อตั้ง Rejig Labs?",
+    "ru": "Кто основал Rejig Labs?"
+  },
+  "about_a2": {
+    "en": "Rejig Labs was founded by Rut Adikari, known to clients as Mr. RT, who leads every project personally.",
+    "th": "Rejig Labs ก่อตั้งโดย Rut Adikari หรือ Mr. RT ซึ่งดูแลทุกโปรเจกต์ด้วยตัวเอง",
+    "ru": "Основатель Rejig Labs — Rut Adikari (Mr. RT). Rut лично ведёт каждый проект."
+  },
+  "about_q3": {
+    "en": "Where is Rejig Labs based?",
+    "th": "Rejig Labs ตั้งอยู่ที่ไหน?",
+    "ru": "Где находится Rejig Labs?"
+  },
+  "about_a3": {
+    "en": "Rejig Labs is based in Phuket and Bangkok, Thailand, and works with clients worldwide in English, Thai and Russian.",
+    "th": "Rejig Labs ตั้งอยู่ที่ภูเก็ตและกรุงเทพฯ และทำงานกับลูกค้าทั่วโลกในภาษาอังกฤษ ไทย และรัสเซีย",
+    "ru": "Rejig Labs работает из Пхукета и Бангкока (Таиланд) с клиентами по всему миру на английском, тайском и русском."
+  },
+  "about_q4": {
+    "en": "How do I start a project with Rejig Labs?",
+    "th": "เริ่มโปรเจกต์กับ Rejig Labs ได้อย่างไร?",
+    "ru": "Как начать проект с Rejig Labs?"
+  },
+  "about_a4": {
+    "en": "Book a free 30-minute call. You get a straight answer on where AI fits your business and what it would take. Or email rut@rejiglabs.com.",
+    "th": "นัดคุยฟรี 30 นาที คุณจะได้คำตอบตรง ๆ ว่า AI เหมาะกับธุรกิจคุณตรงไหน และต้องใช้อะไรบ้าง หรืออีเมลมาที่ rut@rejiglabs.com",
+    "ru": "Запишитесь на бесплатный 30-минутный звонок: вы получите прямой ответ, где AI подойдёт вашему бизнесу и что для этого нужно. Или напишите на rut@rejiglabs.com."
+  },
+  "nf_p": {
+    "en": "This page doesn't exist. Let's get you back on track.",
+    "th": "ไม่พบหน้านี้ กลับไปเริ่มต้นใหม่กันเถอะ",
+    "ru": "Такой страницы нет. Давайте вернём вас на верный путь."
+  },
+  "nf_home": {
+    "en": "Back to Home",
+    "th": "กลับหน้าแรก",
+    "ru": "На главную"
+  },
+  "mk_call": {
+    "en": "Incoming call",
+    "th": "สายเรียกเข้า",
+    "ru": "Входящий звонок"
+  },
+  "mk_ring": {
+    "en": "+66 · answered in 1 ring",
+    "th": "+66 · รับสายตั้งแต่เสียงแรก",
+    "ru": "+66 · ответ с первого гудка"
+  },
+  "mk_booked": {
+    "en": "Booking confirmed · Sat 3:00 PM",
+    "th": "ยืนยันการจองแล้ว · ส. 15:00 น.",
+    "ru": "Запись подтверждена · Сб 15:00"
+  },
+  "mk_chat_in": {
+    "en": "Do you have a table for 4 tonight?",
+    "th": "คืนนี้มีโต๊ะสำหรับ 4 คนไหมคะ?",
+    "ru": "Есть столик на четверых сегодня вечером?"
+  },
+  "mk_chat_out": {
+    "en": "Yes, 7:30pm works. Shall I book it?",
+    "th": "มีค่ะ 19:30 น. ว่าง ให้จองเลยไหมคะ?",
+    "ru": "Да, есть на 19:30. Забронировать?"
+  },
+  "mk_sched": {
+    "en": "Auto-scheduled across",
+    "th": "ตั้งเวลาโพสต์อัตโนมัติ",
+    "ru": "Автопубликация в"
+  },
+  "mk_channels": {
+    "en": "4 channels",
+    "th": "4 ช่องทาง",
+    "ru": "4 каналах"
+  },
+  "mk_rag_q": {
+    "en": "refund policy for late cancels",
+    "th": "นโยบายคืนเงินกรณียกเลิกช้า",
+    "ru": "возврат при поздней отмене"
+  },
+  "mk_rag_a": {
+    "en": "Cancellations within 24h are charged <b>50% of the booking</b>; no-shows are charged in full.",
+    "th": "ยกเลิกภายใน 24 ชม. คิดค่าบริการ <b>50% ของยอดจอง</b> ไม่มาตามนัดคิดเต็มจำนวน",
+    "ru": "Отмена менее чем за 24 ч — <b>50% стоимости</b>; неявка оплачивается полностью."
+  },
+  "mk_ag1": {
+    "en": "Research market",
+    "th": "วิจัยตลาด",
+    "ru": "Анализ рынка"
+  },
+  "mk_ag2": {
+    "en": "Score 240 leads",
+    "th": "ให้คะแนนลีด 240 ราย",
+    "ru": "Оценка 240 лидов"
+  },
+  "mk_ag3": {
+    "en": "Draft outreach",
+    "th": "ร่างข้อความติดต่อ",
+    "ru": "Черновики писем"
+  },
+  "mk_ag4": {
+    "en": "Deliver report",
+    "th": "ส่งรายงาน",
+    "ru": "Отправка отчёта"
+  },
+  "mk_register": {
+    "en": "Register",
+    "th": "ลงทะเบียน",
+    "ru": "Регистрация"
+  },
+  "mk_recon": {
+    "en": "Reconciled",
+    "th": "กระทบยอดแล้ว",
+    "ru": "Сверено"
+  },
+  "mk_matched": {
+    "en": "✓ matched",
+    "th": "✓ ตรงกัน",
+    "ru": "✓ сверено"
+  },
+  "mk_pending": {
+    "en": "reconciling…",
+    "th": "กำลังกระทบยอด…",
+    "ru": "сверка…"
+  },
+  "legal_back": {
+    "en": "← Back to Home",
+    "th": "← กลับสู่หน้าแรก",
+    "ru": "← На главную"
+  },
+  "legal_updated": {
+    "en": "Last updated: March 21, 2026",
+    "th": "ปรับปรุงล่าสุด: 21 มีนาคม 2026",
+    "ru": "Последнее обновление: 21 марта 2026 г."
+  },
+  "legal_notice": {
+    "en": "This page is available in English, Thai and Russian. If the versions differ, the English version applies.",
+    "th": "หน้านี้มีให้บริการเป็นภาษาอังกฤษ ภาษาไทย และภาษารัสเซีย หากฉบับภาษาต่าง ๆ มีข้อความแตกต่างกัน ให้ถือตามฉบับภาษาอังกฤษ",
+    "ru": "Эта страница доступна на английском, тайском и русском языках. В случае расхождений между версиями преимущественную силу имеет версия на английском языке."
+  },
+  "pv_h1": {
+    "en": "Privacy Policy",
+    "th": "นโยบายความเป็นส่วนตัว",
+    "ru": "Политика конфиденциальности"
+  },
+  "pv_intro": {
+    "en": "Rejig Labs, based in Thailand, is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your information when you interact with our website and services.",
+    "th": "Rejig Labs ซึ่งตั้งอยู่ในประเทศไทย มุ่งมั่นที่จะคุ้มครองความเป็นส่วนตัวของท่าน นโยบายนี้อธิบายถึงวิธีการที่เราเก็บรวบรวม ใช้ และปกป้องข้อมูลของท่าน เมื่อท่านใช้งานหรือติดต่อกับเว็บไซต์และบริการของเรา",
+    "ru": "Компания Rejig Labs, расположенная в Таиланде, обязуется защищать вашу конфиденциальность. Настоящая политика описывает, как мы собираем, используем и защищаем вашу информацию при вашем взаимодействии с нашим веб-сайтом и услугами."
+  },
+  "pv_collect_h": {
+    "en": "Information We Collect",
+    "th": "ข้อมูลที่เราเก็บรวบรวม",
+    "ru": "Какую информацию мы собираем"
+  },
+  "pv_collect_p": {
+    "en": "We may collect the following types of information:",
+    "th": "เราอาจเก็บรวบรวมข้อมูลประเภทต่าง ๆ ดังต่อไปนี้:",
+    "ru": "Мы можем собирать следующие виды информации:"
+  },
+  "pv_collect_1": {
+    "en": "<strong>Contact information</strong> you provide directly, such as your name, email address, company name, and phone number when you book a discovery call, fill out a form, or email us.",
+    "th": "<strong>ข้อมูลการติดต่อ</strong> ที่ท่านให้ไว้โดยตรง เช่น ชื่อ ที่อยู่อีเมล ชื่อบริษัท และหมายเลขโทรศัพท์ เมื่อท่านนัดหมายการพูดคุยเบื้องต้น กรอกแบบฟอร์ม หรือส่งอีเมลถึงเรา",
+    "ru": "<strong>Контактная информация</strong>, которую вы предоставляете напрямую, например ваше имя, адрес электронной почты, название компании и номер телефона, когда вы записываетесь на ознакомительный звонок, заполняете форму или пишете нам по электронной почте."
+  },
+  "pv_collect_2": {
+    "en": "<strong>Usage data</strong> collected automatically, including IP address, browser type, pages visited, and time spent on our site.",
+    "th": "<strong>ข้อมูลการใช้งาน</strong> ที่เก็บรวบรวมโดยอัตโนมัติ รวมถึงหมายเลข IP ประเภทของเบราว์เซอร์ หน้าที่เข้าชม และระยะเวลาที่ใช้บนเว็บไซต์ของเรา",
+    "ru": "<strong>Данные об использовании</strong>, собираемые автоматически, включая IP-адрес, тип браузера, посещённые страницы и время, проведённое на нашем сайте."
+  },
+  "pv_collect_3": {
+    "en": "<strong>Business information</strong> you share during consultations, including details about your operations, workflows, and technology stack.",
+    "th": "<strong>ข้อมูลทางธุรกิจ</strong> ที่ท่านแจ้งให้เราทราบระหว่างการให้คำปรึกษา รวมถึงรายละเอียดเกี่ยวกับการดำเนินงาน กระบวนการทำงาน และชุดเทคโนโลยีที่ท่านใช้",
+    "ru": "<strong>Деловая информация</strong>, которую вы сообщаете в ходе консультаций, включая сведения о вашей деятельности, рабочих процессах и технологическом стеке."
+  },
+  "pv_use_h": {
+    "en": "How We Use Your Information",
+    "th": "วิธีที่เราใช้ข้อมูลของท่าน",
+    "ru": "Как мы используем вашу информацию"
+  },
+  "pv_use_p": {
+    "en": "We use the information we collect to:",
+    "th": "เราใช้ข้อมูลที่เก็บรวบรวมเพื่อวัตถุประสงค์ดังต่อไปนี้:",
+    "ru": "Мы используем собранную информацию для следующих целей:"
+  },
+  "pv_use_1": {
+    "en": "Respond to your enquiries and schedule consultations",
+    "th": "ตอบข้อสอบถามของท่านและนัดหมายการให้คำปรึกษา",
+    "ru": "Ответ на ваши запросы и назначение консультаций"
+  },
+  "pv_use_2": {
+    "en": "Deliver our AI consulting and implementation services",
+    "th": "ให้บริการที่ปรึกษาและบริการนำ AI ไปใช้งานของเรา",
+    "ru": "Оказание наших услуг по консалтингу и внедрению в области ИИ"
+  },
+  "pv_use_3": {
+    "en": "Improve our website and service offerings",
+    "th": "ปรับปรุงเว็บไซต์และบริการที่เรานำเสนอ",
+    "ru": "Совершенствование нашего веб-сайта и предлагаемых услуг"
+  },
+  "pv_use_4": {
+    "en": "Send relevant follow-up communications (only with your consent)",
+    "th": "ส่งการติดต่อสื่อสารเพื่อติดตามผลที่เกี่ยวข้อง (เฉพาะเมื่อได้รับความยินยอมจากท่านเท่านั้น)",
+    "ru": "Направление соответствующих последующих сообщений (только с вашего согласия)"
+  },
+  "pv_use_5": {
+    "en": "Comply with legal obligations",
+    "th": "ปฏิบัติตามหน้าที่ตามกฎหมาย",
+    "ru": "Исполнение обязанностей, предусмотренных законом"
+  },
+  "pv_share_h": {
+    "en": "Information Sharing",
+    "th": "การเปิดเผยข้อมูล",
+    "ru": "Передача информации"
+  },
+  "pv_share_p": {
+    "en": "We do not sell, rent, or trade your personal information. We may share information only in the following circumstances:",
+    "th": "เราไม่ขาย ไม่ให้เช่า และไม่แลกเปลี่ยนข้อมูลส่วนบุคคลของท่าน เราอาจเปิดเผยข้อมูลเฉพาะในกรณีดังต่อไปนี้เท่านั้น:",
+    "ru": "Мы не продаём, не сдаём в аренду и не обмениваем вашу персональную информацию. Мы можем передавать информацию только в следующих случаях:"
+  },
+  "pv_share_1": {
+    "en": "<strong>Service providers:</strong> Trusted third-party tools we use to operate our business (e.g., scheduling, email, analytics), bound by their own privacy policies.",
+    "th": "<strong>ผู้ให้บริการ:</strong> เครื่องมือของบุคคลภายนอกที่เชื่อถือได้ซึ่งเราใช้ในการดำเนินธุรกิจ (เช่น การนัดหมาย อีเมล และการวิเคราะห์ข้อมูล) ซึ่งอยู่ภายใต้นโยบายความเป็นส่วนตัวของผู้ให้บริการนั้นเอง",
+    "ru": "<strong>Поставщики услуг:</strong> надёжные сторонние инструменты, которые мы используем для ведения деятельности (например, для планирования встреч, электронной почты, аналитики) и которые руководствуются собственными политиками конфиденциальности."
+  },
+  "pv_share_2": {
+    "en": "<strong>Legal requirements:</strong> When required by law or to protect our rights.",
+    "th": "<strong>ข้อกำหนดทางกฎหมาย:</strong> เมื่อกฎหมายกำหนด หรือเพื่อคุ้มครองสิทธิของเรา",
+    "ru": "<strong>Требования закона:</strong> когда этого требует закон или для защиты наших прав."
+  },
+  "pv_share_3": {
+    "en": "<strong>With your consent:</strong> When you have explicitly agreed to the sharing.",
+    "th": "<strong>เมื่อได้รับความยินยอมจากท่าน:</strong> เมื่อท่านได้ให้ความยินยอมอย่างชัดแจ้งต่อการเปิดเผยข้อมูลดังกล่าว",
+    "ru": "<strong>С вашего согласия:</strong> когда вы явно согласились на такую передачу."
+  },
+  "pv_security_h": {
+    "en": "Data Security",
+    "th": "ความปลอดภัยของข้อมูล",
+    "ru": "Безопасность данных"
+  },
+  "pv_security_p": {
+    "en": "We take reasonable measures to protect your information from unauthorised access, alteration, or destruction. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.",
+    "th": "เราใช้มาตรการที่สมเหตุสมผลเพื่อปกป้องข้อมูลของท่านจากการเข้าถึง การเปลี่ยนแปลง หรือการทำลายโดยไม่ได้รับอนุญาต อย่างไรก็ตาม ไม่มีวิธีการส่งข้อมูลผ่านอินเทอร์เน็ตใดที่ปลอดภัย 100% และเราไม่สามารถรับประกันความปลอดภัยได้อย่างสมบูรณ์",
+    "ru": "Мы принимаем разумные меры для защиты вашей информации от несанкционированного доступа, изменения или уничтожения. Однако ни один способ передачи данных через интернет не является на 100% безопасным, и мы не можем гарантировать абсолютную безопасность."
+  },
+  "pv_cookies_h": {
+    "en": "Cookies",
+    "th": "คุกกี้",
+    "ru": "Файлы cookie"
+  },
+  "pv_cookies_p": {
+    "en": "Our website may use cookies and similar tracking technologies to improve your browsing experience and analyse site traffic. You can control cookie settings through your browser preferences. We use:",
+    "th": "เว็บไซต์ของเราอาจใช้คุกกี้และเทคโนโลยีการติดตามที่คล้ายคลึงกัน เพื่อปรับปรุงประสบการณ์การท่องเว็บของท่านและวิเคราะห์การเข้าชมเว็บไซต์ ท่านสามารถควบคุมการตั้งค่าคุกกี้ได้ผ่านการตั้งค่าเบราว์เซอร์ของท่าน เราใช้:",
+    "ru": "Наш веб-сайт может использовать файлы cookie и аналогичные технологии отслеживания, чтобы сделать просмотр удобнее и анализировать посещаемость сайта. Вы можете управлять настройками файлов cookie в параметрах своего браузера. Мы используем:"
+  },
+  "pv_cookies_1": {
+    "en": "<strong>Essential cookies:</strong> Required for the website to function properly.",
+    "th": "<strong>คุกกี้ที่จำเป็น:</strong> จำเป็นต่อการทำงานของเว็บไซต์อย่างถูกต้อง",
+    "ru": "<strong>Необходимые файлы cookie:</strong> требуются для надлежащей работы веб-сайта."
+  },
+  "pv_cookies_2": {
+    "en": "<strong>Analytics cookies:</strong> Help us understand how visitors interact with our site.",
+    "th": "<strong>คุกกี้เพื่อการวิเคราะห์:</strong> ช่วยให้เราเข้าใจว่าผู้เข้าชมใช้งานเว็บไซต์ของเราอย่างไร",
+    "ru": "<strong>Аналитические файлы cookie:</strong> помогают нам понять, как посетители взаимодействуют с нашим сайтом."
+  },
+  "pv_cookies_3": {
+    "en": "<strong>Third-party cookies:</strong> Set by services we integrate, such as our scheduling tool.",
+    "th": "<strong>คุกกี้ของบุคคลภายนอก:</strong> ตั้งค่าโดยบริการที่เราเชื่อมต่อไว้ เช่น เครื่องมือนัดหมายของเรา",
+    "ru": "<strong>Сторонние файлы cookie:</strong> устанавливаются интегрированными нами сервисами, например нашим инструментом для записи на встречи."
+  },
+  "pv_third_h": {
+    "en": "Third-Party Services",
+    "th": "บริการของบุคคลภายนอก",
+    "ru": "Сторонние сервисы"
+  },
+  "pv_third_p": {
+    "en": "Our website integrates with third-party services including GoHighLevel / LeadConnector (scheduling and our CRM), Google Fonts, and analytics providers. These services have their own privacy policies, and we encourage you to review them. We are not responsible for the privacy practices of third-party services.",
+    "th": "เว็บไซต์ของเราเชื่อมต่อกับบริการของบุคคลภายนอก ซึ่งรวมถึง GoHighLevel / LeadConnector (ระบบนัดหมายและระบบ CRM ของเรา) Google Fonts และผู้ให้บริการด้านการวิเคราะห์ข้อมูล บริการเหล่านี้มีนโยบายความเป็นส่วนตัวของตนเอง และเราขอแนะนำให้ท่านศึกษานโยบายดังกล่าว เราไม่รับผิดชอบต่อแนวปฏิบัติด้านความเป็นส่วนตัวของบริการของบุคคลภายนอก",
+    "ru": "Наш веб-сайт интегрирован со сторонними сервисами, в том числе с GoHighLevel / LeadConnector (запись на встречи и наша CRM-система), Google Fonts и поставщиками аналитических услуг. У этих сервисов есть собственные политики конфиденциальности, и мы рекомендуем вам с ними ознакомиться. Мы не несём ответственности за практику обеспечения конфиденциальности сторонних сервисов."
+  },
+  "pv_rights_h": {
+    "en": "Your Rights",
+    "th": "สิทธิของท่าน",
+    "ru": "Ваши права"
+  },
+  "pv_rights_p": {
+    "en": "Depending on your jurisdiction, you may have the right to:",
+    "th": "ท่านอาจมีสิทธิดังต่อไปนี้ ทั้งนี้ขึ้นอยู่กับเขตอำนาจทางกฎหมายที่ใช้บังคับกับท่าน:",
+    "ru": "В зависимости от вашей юрисдикции вы можете иметь право:"
+  },
+  "pv_rights_1": {
+    "en": "Access the personal data we hold about you",
+    "th": "เข้าถึงข้อมูลส่วนบุคคลของท่านที่เราเก็บรักษาไว้",
+    "ru": "Получить доступ к персональным данным о вас, которые мы храним"
+  },
+  "pv_rights_2": {
+    "en": "Request correction of inaccurate data",
+    "th": "ขอให้แก้ไขข้อมูลที่ไม่ถูกต้อง",
+    "ru": "Запросить исправление неточных данных"
+  },
+  "pv_rights_3": {
+    "en": "Request deletion of your data",
+    "th": "ขอให้ลบข้อมูลของท่าน",
+    "ru": "Запросить удаление ваших данных"
+  },
+  "pv_rights_4": {
+    "en": "Withdraw consent for communications at any time",
+    "th": "เพิกถอนความยินยอมในการรับการติดต่อสื่อสารได้ทุกเมื่อ",
+    "ru": "В любое время отозвать согласие на получение сообщений"
+  },
+  "pv_rights_5": {
+    "en": "Lodge a complaint with a relevant data protection authority",
+    "th": "ยื่นข้อร้องเรียนต่อหน่วยงานกำกับดูแลด้านการคุ้มครองข้อมูลที่เกี่ยวข้อง",
+    "ru": "Подать жалобу в соответствующий орган по защите данных"
+  },
+  "pv_rights_p2": {
+    "en": "To exercise any of these rights, please contact us at the address below.",
+    "th": "หากท่านประสงค์จะใช้สิทธิใด ๆ ข้างต้น โปรดติดต่อเราตามที่อยู่ด้านล่าง",
+    "ru": "Чтобы воспользоваться любым из этих прав, свяжитесь с нами по адресу, указанному ниже."
+  },
+  "pv_contact_h": {
+    "en": "Contact Us",
+    "th": "ติดต่อเรา",
+    "ru": "Свяжитесь с нами"
+  },
+  "pv_contact_p": {
+    "en": "If you have any questions about this Privacy Policy or how we handle your data, please contact us:",
+    "th": "หากท่านมีคำถามใด ๆ เกี่ยวกับนโยบายความเป็นส่วนตัวนี้ หรือเกี่ยวกับวิธีที่เราจัดการข้อมูลของท่าน โปรดติดต่อเรา:",
+    "ru": "Если у вас есть вопросы о настоящей Политике конфиденциальности или о том, как мы обращаемся с вашими данными, свяжитесь с нами:"
+  },
+  "pv_contact_block": {
+    "en": "<strong>Rejig Labs</strong><br>Based in Thailand<br>Email: <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>",
+    "th": "<strong>Rejig Labs</strong><br>ตั้งอยู่ในประเทศไทย<br>อีเมล: <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>",
+    "ru": "<strong>Rejig Labs</strong><br>Таиланд<br>Эл. почта: <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>"
+  },
+  "tm_h1": {
+    "en": "Terms & Conditions",
+    "th": "ข้อกำหนดและเงื่อนไข",
+    "ru": "Условия и положения"
+  },
+  "tm_intro": {
+    "en": "These Terms & Conditions (\"Terms\") govern the use of services provided by Rejig Labs, based in Thailand (\"we\", \"us\", \"our\"). By engaging our services, you (\"Client\") agree to be bound by these Terms.",
+    "th": "ข้อกำหนดและเงื่อนไขฉบับนี้ (“ข้อกำหนด”) ใช้บังคับกับการใช้บริการที่ให้โดย Rejig Labs ซึ่งตั้งอยู่ในประเทศไทย (“เรา” หรือ “ของเรา”) เมื่อท่านว่าจ้างให้เราให้บริการ ท่าน (“ลูกค้า”) ตกลงที่จะผูกพันตามข้อกำหนดนี้",
+    "ru": "Настоящие Условия и положения («Условия») регулируют пользование услугами, которые предоставляет компания Rejig Labs, расположенная в Таиланде («мы», «нас», «наш»). Привлекая нас для оказания услуг, вы («Клиент») соглашаетесь соблюдать настоящие Условия."
+  },
+  "tm_s1_h": {
+    "en": "1. Services",
+    "th": "1. บริการ",
+    "ru": "1. Услуги"
+  },
+  "tm_s1_p": {
+    "en": "Rejig Labs provides AI consulting, operational audits, workflow automation, and implementation services for businesses. Our services include, but are not limited to:",
+    "th": "Rejig Labs ให้บริการแก่ธุรกิจด้านการให้คำปรึกษาเกี่ยวกับ AI การตรวจประเมินการดำเนินงาน การทำระบบอัตโนมัติสำหรับกระบวนการทำงาน และการนำระบบไปใช้งาน บริการของเรารวมถึงแต่ไม่จำกัดเพียง:",
+    "ru": "Rejig Labs оказывает компаниям услуги по консалтингу в области ИИ, операционному аудиту, автоматизации рабочих процессов и внедрению. Наши услуги включают, помимо прочего:"
+  },
+  "tm_s1_1": {
+    "en": "AI readiness audits and strategy development",
+    "th": "การตรวจประเมินความพร้อมด้าน AI และการพัฒนากลยุทธ์",
+    "ru": "Аудит готовности к ИИ и разработка стратегии"
+  },
+  "tm_s1_2": {
+    "en": "Workflow analysis and automation design",
+    "th": "การวิเคราะห์กระบวนการทำงานและการออกแบบระบบอัตโนมัติ",
+    "ru": "Анализ рабочих процессов и проектирование автоматизации"
+  },
+  "tm_s1_3": {
+    "en": "AI tool selection, configuration, and implementation",
+    "th": "การคัดเลือก การตั้งค่า และการนำเครื่องมือ AI ไปใช้งาน",
+    "ru": "Подбор, настройка и внедрение инструментов ИИ"
+  },
+  "tm_s1_4": {
+    "en": "Training, documentation, and ongoing advisory",
+    "th": "การฝึกอบรม การจัดทำเอกสาร และการให้คำปรึกษาอย่างต่อเนื่อง",
+    "ru": "Обучение, документация и постоянное консультационное сопровождение"
+  },
+  "tm_s1_p2": {
+    "en": "The specific scope of work for each engagement will be defined in a separate proposal or statement of work agreed upon by both parties.",
+    "th": "ขอบเขตงานโดยเฉพาะของการว่าจ้างแต่ละครั้งจะกำหนดไว้ในข้อเสนอหรือเอกสารกำหนดขอบเขตงานแยกต่างหาก ซึ่งทั้งสองฝ่ายได้ตกลงร่วมกัน",
+    "ru": "Конкретный объём работ по каждому проекту определяется в отдельном коммерческом предложении или техническом задании, согласованном обеими сторонами."
+  },
+  "tm_s2_h": {
+    "en": "2. Engagement Terms",
+    "th": "2. เงื่อนไขการว่าจ้าง",
+    "ru": "2. Условия сотрудничества"
+  },
+  "tm_s2_p1": {
+    "en": "Each engagement begins upon mutual acceptance of a proposal or statement of work. The Client agrees to provide timely access to relevant systems, personnel, and information necessary for us to deliver the agreed services. Delays caused by the Client may result in adjusted timelines or additional fees.",
+    "th": "การว่าจ้างแต่ละครั้งจะเริ่มต้นเมื่อทั้งสองฝ่ายยอมรับข้อเสนอหรือเอกสารกำหนดขอบเขตงานร่วมกัน ลูกค้าตกลงที่จะให้สิทธิ์เข้าถึงระบบ บุคลากร และข้อมูลที่เกี่ยวข้องซึ่งจำเป็นต่อการให้บริการตามที่ตกลงกันไว้อย่างทันท่วงที ความล่าช้าที่เกิดจากลูกค้าอาจส่งผลให้มีการปรับกำหนดเวลาหรือมีค่าธรรมเนียมเพิ่มเติม",
+    "ru": "Каждый проект начинается после взаимного принятия сторонами коммерческого предложения или технического задания. Клиент обязуется своевременно предоставлять доступ к соответствующим системам, сотрудникам и информации, необходимым для оказания нами согласованных услуг. Задержки по вине Клиента могут повлечь корректировку сроков или дополнительную оплату."
+  },
+  "tm_s2_p2": {
+    "en": "We reserve the right to subcontract portions of the work where appropriate, while remaining responsible for the quality of all deliverables.",
+    "th": "เราขอสงวนสิทธิ์ในการจ้างช่วงงานบางส่วนตามความเหมาะสม โดยเรายังคงรับผิดชอบต่อคุณภาพของผลงานที่ส่งมอบทั้งหมด",
+    "ru": "Мы оставляем за собой право при необходимости привлекать субподрядчиков для выполнения части работ, сохраняя ответственность за качество всех результатов."
+  },
+  "tm_s3_h": {
+    "en": "3. Intellectual Property",
+    "th": "3. ทรัพย์สินทางปัญญา",
+    "ru": "3. Интеллектуальная собственность"
+  },
+  "tm_s3_p1": {
+    "en": "Upon full payment, the Client receives ownership of all custom deliverables produced specifically for their engagement, including reports, workflows, and configurations. We retain ownership of our proprietary methodologies, frameworks, tools, and any pre-existing intellectual property used in the delivery of services.",
+    "th": "เมื่อชำระเงินครบถ้วนแล้ว ลูกค้าจะได้รับความเป็นเจ้าของในผลงานทั้งหมดที่จัดทำขึ้นเฉพาะสำหรับการว่าจ้างของลูกค้า รวมถึงรายงาน กระบวนการทำงาน และการตั้งค่าระบบ เรายังคงเป็นเจ้าของระเบียบวิธี กรอบการทำงาน และเครื่องมือที่เป็นกรรมสิทธิ์ของเรา ตลอดจนทรัพย์สินทางปัญญาใด ๆ ที่มีอยู่ก่อนแล้วซึ่งใช้ในการให้บริการ",
+    "ru": "После полной оплаты Клиент получает право собственности на все индивидуальные результаты, созданные специально для его проекта, включая отчёты, рабочие процессы и конфигурации. Мы сохраняем за собой право собственности на наши собственные методологии, фреймворки, инструменты и любую ранее существовавшую интеллектуальную собственность, используемую при оказании услуг."
+  },
+  "tm_s3_p2": {
+    "en": "We reserve the right to use anonymised and generalised learnings from engagements to improve our services, unless otherwise agreed in writing.",
+    "th": "เราขอสงวนสิทธิ์ในการนำองค์ความรู้ที่ได้จากการว่าจ้าง ซึ่งได้รับการทำให้ไม่สามารถระบุตัวตนได้และเป็นการทั่วไปแล้ว มาใช้เพื่อปรับปรุงบริการของเรา เว้นแต่จะได้ตกลงกันไว้เป็นอย่างอื่นเป็นลายลักษณ์อักษร",
+    "ru": "Мы оставляем за собой право использовать обезличенные и обобщённые выводы, полученные в ходе проектов, для совершенствования наших услуг, если иное не согласовано в письменной форме."
+  },
+  "tm_s4_h": {
+    "en": "4. Confidentiality",
+    "th": "4. การรักษาความลับ",
+    "ru": "4. Конфиденциальность"
+  },
+  "tm_s4_p1": {
+    "en": "Both parties agree to keep confidential any proprietary or sensitive information disclosed during the engagement. This includes business data, processes, strategies, and technical information. Confidentiality obligations survive the termination of any engagement for a period of two (2) years.",
+    "th": "ทั้งสองฝ่ายตกลงที่จะเก็บรักษาข้อมูลที่เป็นกรรมสิทธิ์หรือข้อมูลที่มีความอ่อนไหวใด ๆ ซึ่งได้เปิดเผยระหว่างการว่าจ้างไว้เป็นความลับ ซึ่งรวมถึงข้อมูลทางธุรกิจ กระบวนการ กลยุทธ์ และข้อมูลทางเทคนิค หน้าที่ในการรักษาความลับจะยังคงมีผลใช้บังคับต่อไปเป็นระยะเวลาสอง (2) ปีภายหลังการสิ้นสุดของการว่าจ้างใด ๆ",
+    "ru": "Обе стороны обязуются сохранять конфиденциальность любой служебной или чувствительной информации, раскрытой в ходе проекта. Это включает деловые данные, процессы, стратегии и техническую информацию. Обязательства по соблюдению конфиденциальности сохраняют силу в течение двух (2) лет после прекращения любого проекта."
+  },
+  "tm_s4_p2": {
+    "en": "This obligation does not apply to information that is publicly available, independently developed, or required to be disclosed by law.",
+    "th": "หน้าที่นี้ไม่ใช้บังคับกับข้อมูลที่เปิดเผยต่อสาธารณะ ข้อมูลที่ได้รับการพัฒนาขึ้นโดยอิสระ หรือข้อมูลที่กฎหมายกำหนดให้ต้องเปิดเผย",
+    "ru": "Данное обязательство не распространяется на информацию, которая является общедоступной, разработана независимо или подлежит раскрытию в соответствии с законом."
+  },
+  "tm_s5_h": {
+    "en": "5. Payment Terms",
+    "th": "5. เงื่อนไขการชำระเงิน",
+    "ru": "5. Условия оплаты"
+  },
+  "tm_s5_p": {
+    "en": "Payment terms are specified in each proposal or statement of work. Unless otherwise agreed:",
+    "th": "เงื่อนไขการชำระเงินจะระบุไว้ในข้อเสนอหรือเอกสารกำหนดขอบเขตงานแต่ละฉบับ เว้นแต่จะตกลงกันไว้เป็นอย่างอื่น:",
+    "ru": "Условия оплаты указываются в каждом коммерческом предложении или техническом задании. Если не согласовано иное:"
+  },
+  "tm_s5_1": {
+    "en": "A deposit is required before work commences",
+    "th": "ต้องชำระเงินมัดจำก่อนเริ่มดำเนินงาน",
+    "ru": "До начала работ требуется внести депозит"
+  },
+  "tm_s5_2": {
+    "en": "Invoices are due within 14 days of issue",
+    "th": "ใบแจ้งหนี้ต้องชำระภายใน 14 วันนับจากวันที่ออก",
+    "ru": "Счета подлежат оплате в течение 14 дней с даты выставления"
+  },
+  "tm_s5_3": {
+    "en": "Late payments may incur a charge of 1.5% per month on the outstanding balance",
+    "th": "การชำระเงินล่าช้าอาจมีค่าธรรมเนียมในอัตราร้อยละ 1.5 ต่อเดือนของยอดค้างชำระ",
+    "ru": "За просрочку платежа может начисляться плата в размере 1,5% в месяц от суммы задолженности"
+  },
+  "tm_s5_4": {
+    "en": "All fees are quoted in the currency specified in the proposal and are exclusive of applicable taxes",
+    "th": "ค่าธรรมเนียมทั้งหมดเสนอในสกุลเงินที่ระบุไว้ในข้อเสนอ และยังไม่รวมภาษีที่เกี่ยวข้อง",
+    "ru": "Все суммы вознаграждения указываются в валюте, определённой в коммерческом предложении, и не включают применимые налоги"
+  },
+  "tm_s6_h": {
+    "en": "6. Limitation of Liability",
+    "th": "6. การจำกัดความรับผิด",
+    "ru": "6. Ограничение ответственности"
+  },
+  "tm_s6_p1": {
+    "en": "Rejig Labs provides services on a best-efforts basis. While we strive for measurable outcomes, we do not guarantee specific business results, revenue increases, or cost savings. Our recommendations are based on professional judgement and available information at the time of delivery.",
+    "th": "Rejig Labs ให้บริการโดยใช้ความพยายามอย่างดีที่สุด แม้เรามุ่งมั่นที่จะให้เกิดผลลัพธ์ที่วัดผลได้ แต่เราไม่รับประกันผลลัพธ์ทางธุรกิจที่เฉพาะเจาะจง การเพิ่มขึ้นของรายได้ หรือการประหยัดต้นทุน คำแนะนำของเราตั้งอยู่บนดุลยพินิจทางวิชาชีพและข้อมูลที่มีอยู่ ณ เวลาที่ส่งมอบ",
+    "ru": "Rejig Labs оказывает услуги на условиях приложения максимальных усилий. Стремясь к измеримым результатам, мы тем не менее не гарантируем конкретных бизнес-результатов, роста выручки или экономии затрат. Наши рекомендации основаны на профессиональном суждении и информации, доступной на момент их предоставления."
+  },
+  "tm_s6_p2": {
+    "en": "To the maximum extent permitted by law, our total liability for any claim arising from an engagement shall not exceed the total fees paid by the Client for that specific engagement. We shall not be liable for any indirect, incidental, consequential, or punitive damages.",
+    "th": "ภายในขอบเขตสูงสุดที่กฎหมายอนุญาต ความรับผิดรวมทั้งหมดของเราสำหรับข้อเรียกร้องใด ๆ ที่เกิดจากการว่าจ้าง จะไม่เกินค่าธรรมเนียมทั้งหมดที่ลูกค้าได้ชำระสำหรับการว่าจ้างนั้น ๆ เราจะไม่รับผิดต่อความเสียหายทางอ้อม ความเสียหายโดยบังเอิญ ความเสียหายต่อเนื่อง หรือค่าเสียหายเชิงลงโทษใด ๆ",
+    "ru": "В максимальной степени, допускаемой законом, наша совокупная ответственность по любому требованию, вытекающему из проекта, не может превышать общую сумму вознаграждения, уплаченного Клиентом за данный конкретный проект. Мы не несём ответственности за какие-либо косвенные, случайные, последующие или штрафные убытки."
+  },
+  "tm_s7_h": {
+    "en": "7. Termination",
+    "th": "7. การบอกเลิก",
+    "ru": "7. Расторжение"
+  },
+  "tm_s7_p": {
+    "en": "Either party may terminate an engagement with 14 days' written notice. Upon termination:",
+    "th": "คู่สัญญาฝ่ายใดฝ่ายหนึ่งอาจบอกเลิกการว่าจ้างได้โดยแจ้งเป็นลายลักษณ์อักษรล่วงหน้า 14 วัน เมื่อมีการบอกเลิก:",
+    "ru": "Любая из сторон вправе прекратить проект, направив письменное уведомление за 14 дней. При прекращении:"
+  },
+  "tm_s7_1": {
+    "en": "The Client shall pay for all work completed up to the termination date",
+    "th": "ลูกค้าต้องชำระค่างานทั้งหมดที่ดำเนินการแล้วเสร็จจนถึงวันที่บอกเลิก",
+    "ru": "Клиент оплачивает все работы, выполненные до даты прекращения"
+  },
+  "tm_s7_2": {
+    "en": "We will deliver any completed or in-progress deliverables",
+    "th": "เราจะส่งมอบผลงานใด ๆ ที่เสร็จสมบูรณ์แล้วหรืออยู่ระหว่างดำเนินการ",
+    "ru": "Мы передаём все завершённые и находящиеся в работе результаты"
+  },
+  "tm_s7_3": {
+    "en": "Pre-paid fees for undelivered work will be refunded on a pro-rata basis",
+    "th": "ค่าธรรมเนียมที่ชำระล่วงหน้าสำหรับงานที่ยังไม่ได้ส่งมอบจะได้รับคืนตามสัดส่วน",
+    "ru": "Предварительно оплаченное вознаграждение за непереданные работы возвращается пропорционально"
+  },
+  "tm_s7_p2": {
+    "en": "We reserve the right to terminate immediately if the Client breaches these Terms or engages in conduct that is unlawful or harmful to our business.",
+    "th": "เราขอสงวนสิทธิ์ในการบอกเลิกได้ทันที หากลูกค้าฝ่าฝืนข้อกำหนดนี้ หรือกระทำการที่ผิดกฎหมายหรือก่อให้เกิดความเสียหายต่อธุรกิจของเรา",
+    "ru": "Мы оставляем за собой право немедленно прекратить сотрудничество, если Клиент нарушает настоящие Условия или совершает действия, которые являются незаконными или наносят вред нашему бизнесу."
+  },
+  "tm_s8_h": {
+    "en": "8. Governing Law",
+    "th": "8. กฎหมายที่ใช้บังคับ",
+    "ru": "8. Применимое право"
+  },
+  "tm_s8_p": {
+    "en": "These Terms are governed by and construed in accordance with the laws of Thailand. Any disputes arising from or in connection with these Terms shall be resolved through good-faith negotiation. If a resolution cannot be reached, disputes shall be submitted to the competent courts of Thailand.",
+    "th": "ข้อกำหนดนี้อยู่ภายใต้บังคับและให้ตีความตามกฎหมายแห่งราชอาณาจักรไทย ข้อพิพาทใด ๆ ที่เกิดขึ้นจากหรือเกี่ยวเนื่องกับข้อกำหนดนี้จะระงับโดยการเจรจาด้วยความสุจริต หากไม่สามารถตกลงกันได้ ให้นำข้อพิพาทขึ้นสู่ศาลที่มีเขตอำนาจในประเทศไทย",
+    "ru": "Настоящие Условия регулируются и толкуются в соответствии с законодательством Таиланда. Любые споры, возникающие из настоящих Условий или в связи с ними, разрешаются путём добросовестных переговоров. Если урегулировать спор не удаётся, он передаётся на рассмотрение в компетентный суд Таиланда."
+  },
+  "tm_s9_h": {
+    "en": "9. Changes to Terms",
+    "th": "9. การเปลี่ยนแปลงข้อกำหนด",
+    "ru": "9. Изменение Условий"
+  },
+  "tm_s9_p": {
+    "en": "We may update these Terms from time to time. Changes will be posted on this page with an updated revision date. Continued engagement of our services after changes are posted constitutes acceptance of the revised Terms. For active engagements, material changes will be communicated directly to the Client.",
+    "th": "เราอาจปรับปรุงข้อกำหนดนี้เป็นครั้งคราว การเปลี่ยนแปลงจะประกาศไว้บนหน้านี้พร้อมวันที่แก้ไขล่าสุด การใช้บริการของเราต่อไปภายหลังจากที่มีการประกาศการเปลี่ยนแปลงแล้ว ถือเป็นการยอมรับข้อกำหนดฉบับแก้ไข สำหรับการว่าจ้างที่ยังดำเนินอยู่ เราจะแจ้งการเปลี่ยนแปลงที่เป็นสาระสำคัญให้ลูกค้าทราบโดยตรง",
+    "ru": "Мы можем время от времени обновлять настоящие Условия. Изменения публикуются на этой странице с указанием новой даты редакции. Дальнейшее пользование нашими услугами после публикации изменений означает принятие Условий в новой редакции. В рамках действующих проектов о существенных изменениях Клиенту сообщается напрямую."
+  },
+  "tm_s10_h": {
+    "en": "10. Contact",
+    "th": "10. การติดต่อ",
+    "ru": "10. Контакты"
+  },
+  "tm_s10_p": {
+    "en": "If you have questions about these Terms, please contact us:",
+    "th": "หากท่านมีคำถามเกี่ยวกับข้อกำหนดนี้ โปรดติดต่อเรา:",
+    "ru": "Если у вас есть вопросы по настоящим Условиям, свяжитесь с нами:"
+  },
+  "tm_contact_block": {
+    "en": "<strong>Rejig Labs</strong><br>Based in Thailand<br>Email: <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>",
+    "th": "<strong>Rejig Labs</strong><br>ตั้งอยู่ในประเทศไทย<br>อีเมล: <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>",
+    "ru": "<strong>Rejig Labs</strong><br>Таиланд<br>Эл. почта: <a href=\"mailto:rut@rejiglabs.com\">rut@rejiglabs.com</a>"
+  },
+  "clinic_nav_link": {
+    "en": "For Clinics",
+    "th": "สำหรับคลินิก",
+    "ru": "Для клиник"
+  },
+  "hotel_nav_link": {
+    "en": "Hotel Night Desk",
+    "th": "รับสายกะดึกโรงแรม",
+    "ru": "Ночной ресепшн отелей"
+  },
+  "clinic_talk": {
+    "en": "Talk to Rejig Labs:",
+    "th": "คุยกับ Rejig Labs:",
+    "ru": "Свяжитесь с Rejig Labs:"
+  },
+  "hotel_talk": {
+    "en": "Talk to Rejig Labs:",
+    "th": "คุยกับ Rejig Labs:",
+    "ru": "Свяжитесь с Rejig Labs:"
+  },
+  "clinic_hero_eyebrow": {
+    "en": "AI RECEPTIONIST FOR CLINICS · PHUKET & THAILAND",
+    "th": "AI รับสายสำหรับคลินิก · ภูเก็ตและทั่วประเทศไทย",
+    "ru": "AI-СЕКРЕТАРЬ ДЛЯ КЛИНИК · ПХУКЕТ И ТАИЛАНД"
+  },
+  "clinic_hero_h1": {
+    "en": "The clinic phone that <em class=\"accent\">never misses a patient.</em>",
+    "th": "โทรศัพท์คลินิกที่<em class=\"accent\">ไม่พลาดคนไข้สักราย</em>",
+    "ru": "Телефон клиники, который <em class=\"accent\">не упускает ни одного пациента.</em>"
+  },
+  "clinic_hero_sub": {
+    "en": "Rejig Labs builds the AI receptionist for clinics in Phuket and across Thailand. A patient calls at 8pm, it answers in Thai, English or Russian, books the right practitioner, and the appointment is in your calendar before they hang up. Urgent calls go straight to your staff, and it never gives medical advice.",
+    "th": "Rejig Labs สร้างระบบ AI รับสายสำหรับคลินิกในภูเก็ตและทั่วประเทศไทย เมื่อคนไข้โทรมาตอน 20.00 น. ระบบจะรับสายเป็นภาษาไทย อังกฤษ หรือรัสเซีย จองคิวกับแพทย์ที่ใช่ และนัดหมายจะเข้าปฏิทินของคุณก่อนคนไข้วางสาย สายเร่งด่วนจะส่งต่อถึงทีมงานของคุณทันที และระบบจะไม่ให้คำแนะนำทางการแพทย์เด็ดขาด",
+    "ru": "Rejig Labs создаёт AI-секретаря для клиник на Пхукете и по всему Таиланду. Пациент звонит в 20:00 — система отвечает на тайском, английском или русском, записывает к нужному специалисту, и запись появляется в вашем календаре ещё до конца разговора. Срочные звонки сразу переводятся на ваш персонал, а медицинских советов система не даёт никогда."
+  },
+  "clinic_flow_1": {
+    "en": "Patient calls, 8pm",
+    "th": "คนไข้โทรมา 20.00 น.",
+    "ru": "Пациент звонит в 20:00"
+  },
+  "clinic_flow_2": {
+    "en": "Answered",
+    "th": "รับสายทันที",
+    "ru": "Звонок принят"
+  },
+  "clinic_flow_3": {
+    "en": "Right practitioner booked",
+    "th": "จองแพทย์ที่ใช่ได้ทันที",
+    "ru": "Запись к нужному врачу"
+  },
+  "clinic_flow_4": {
+    "en": "Reminded on LINE",
+    "th": "แจ้งเตือนทาง LINE",
+    "ru": "Напоминание в LINE"
+  },
+  "clinic_cap_voice_id": {
+    "en": "LIVE · PHONE",
+    "th": "ใช้งานจริง · โทรศัพท์",
+    "ru": "В РАБОТЕ · ТЕЛЕФОН"
+  },
+  "clinic_cap_voice_h": {
+    "en": "\"Can I see Dr. Nok tomorrow morning?\"",
+    "th": "“ขอนัดหมอนกพรุ่งนี้เช้าได้ไหม”",
+    "ru": "«Можно попасть к доктору Нок завтра утром?»"
+  },
+  "clinic_cap_voice_d": {
+    "en": "The AI checks that doctor's own schedule, books the right slot length for the treatment, and confirms before the caller hangs up.",
+    "th": "AI ตรวจตารางของแพทย์ท่านนั้นโดยตรง จองเวลาให้เหมาะกับการรักษา และยืนยันนัดก่อนผู้โทรวางสาย",
+    "ru": "AI проверяет расписание именно этого врача, бронирует время нужной длительности под процедуру и подтверждает запись до конца звонка."
+  },
+  "clinic_cap_incoming": {
+    "en": "Incoming call",
+    "th": "สายเรียกเข้า",
+    "ru": "Входящий звонок"
+  },
+  "clinic_cap_answered": {
+    "en": "+66 · answered in 1 ring",
+    "th": "+66 · รับสายตั้งแต่เสียงเรียกที่ 1",
+    "ru": "+66 · ответ с 1 гудка"
+  },
+  "clinic_cap_booked": {
+    "en": "Booked with Dr. Nok · Tue 9:30 AM",
+    "th": "จองกับหมอนกแล้ว · อังคาร 9:30 น.",
+    "ru": "Запись к доктору Нок · вт 9:30"
+  },
+  "clinic_cap_chat_id": {
+    "en": "LIVE · LINE",
+    "th": "ใช้งานจริง · LINE",
+    "ru": "В РАБОТЕ · LINE"
+  },
+  "clinic_cap_chat_h": {
+    "en": "Rescheduled without holding the line",
+    "th": "เลื่อนนัดได้โดยไม่ต้องรอสาย",
+    "ru": "Перенос записи без ожидания на линии"
+  },
+  "clinic_cap_chat_d": {
+    "en": "Confirmations, reminders and changes happen on LINE, where Thai patients already are. Fewer forgotten appointments, fewer empty chairs.",
+    "th": "ยืนยันนัด แจ้งเตือน และเปลี่ยนนัดผ่าน LINE ที่คนไข้ชาวไทยใช้อยู่แล้วทุกวัน นัดที่ถูกลืมน้อยลง เก้าอี้ว่างก็น้อยลง",
+    "ru": "Подтверждения, напоминания и переносы — в LINE, где тайские пациенты и так проводят время. Меньше забытых визитов, меньше пустых кресел."
+  },
+  "clinic_cap_tab_web": {
+    "en": "Web",
+    "th": "เว็บ",
+    "ru": "Сайт"
+  },
+  "clinic_cap_msg_in": {
+    "en": "Can I move my cleaning to Friday?",
+    "th": "ขอเลื่อนนัดขูดหินปูนเป็นวันศุกร์ได้ไหม",
+    "ru": "Можно перенести чистку на пятницу?"
+  },
+  "clinic_cap_msg_out": {
+    "en": "Done ✓ Rebooked for Friday, 2:00 PM.",
+    "th": "เรียบร้อย ✓ เลื่อนเป็นวันศุกร์ 14:00 น. แล้ว",
+    "ru": "Готово ✓ Перенесли на пятницу, 14:00."
+  },
+  "clinic_problem_eyebrow": {
+    "en": "THE FRONT DESK CAN'T BE IN TWO PLACES",
+    "th": "เคาน์เตอร์ต้อนรับอยู่สองที่พร้อมกันไม่ได้",
+    "ru": "РЕСЕПШН НЕ МОЖЕТ БЫТЬ В ДВУХ МЕСТАХ СРАЗУ"
+  },
+  "clinic_problem_h2": {
+    "en": "Someone is always checking in, so <em class=\"accent\">the phone keeps ringing.</em>",
+    "th": "มีคนไข้มาเช็กอินตลอดเวลา <em class=\"accent\">โทรศัพท์จึงดังไม่หยุด</em>",
+    "ru": "На ресепшне всегда кто-то регистрируется, <em class=\"accent\">а телефон всё звонит.</em>"
+  },
+  "clinic_problem_p": {
+    "en": "A clinic's front desk juggles arrivals, payments and the practitioner's next patient, and the phone rings through all of it. A caller who reaches nobody does not try again in an hour: they book the next clinic on Google Maps. After closing, the line is dead, which is exactly when working patients finally have time to call. And every no-show that a reminder would have caught is a slot you paid a practitioner to sit through empty.",
+    "th": "เคาน์เตอร์ต้อนรับของคลินิกต้องดูแลทั้งคนไข้ที่มาถึง การชำระเงิน และคนไข้คิวถัดไปของแพทย์ ขณะที่โทรศัพท์ก็ดังไม่หยุด ผู้โทรที่ไม่มีใครรับสายจะไม่โทรกลับมาอีกในอีกชั่วโมง แต่จะไปจองคลินิกถัดไปบน Google Maps แทน หลังปิดทำการสายก็เงียบไป ทั้งที่เป็นช่วงที่คนทำงานเพิ่งมีเวลาโทรมา และทุกครั้งที่คนไข้ไม่มาตามนัดซึ่งการแจ้งเตือนช่วยป้องกันได้ ก็คือช่วงเวลาที่คุณจ่ายค่าตัวแพทย์ไปโดยไม่มีคนไข้",
+    "ru": "Ресепшн клиники одновременно встречает пациентов, принимает оплату и готовит следующего пациента к врачу — и всё это время звонит телефон. Тот, кто не дозвонился, не станет перезванивать через час: он запишется в соседнюю клинику через Google Maps. После закрытия линия молчит — а ведь именно тогда у работающих пациентов наконец появляется время позвонить. И каждая неявка, которую предотвратило бы напоминание, — это время, за которое вы заплатили специалисту, а кресло простояло пустым."
+  },
+  "clinic_does_eyebrow": {
+    "en": "BUILT FOR HOW A CLINIC ACTUALLY RUNS",
+    "th": "ออกแบบตามการทำงานจริงของคลินิก",
+    "ru": "СОЗДАНО ПОД РЕАЛЬНУЮ РАБОТУ КЛИНИКИ"
+  },
+  "clinic_does_h2": {
+    "en": "Not a generic bot. <em class=\"accent\">A clinic front desk.</em>",
+    "th": "ไม่ใช่บอททั่วไป <em class=\"accent\">แต่คือเคาน์เตอร์ต้อนรับของคลินิก</em>",
+    "ru": "Не типовой бот. <em class=\"accent\">Ресепшн клиники.</em>"
+  },
+  "clinic_does_p": {
+    "en": "Booking a clinic is not booking a table. The slot length depends on the treatment, the practitioner matters, and some calls must reach a human immediately.",
+    "th": "การจองคิวคลินิกไม่เหมือนการจองโต๊ะร้านอาหาร ระยะเวลานัดขึ้นอยู่กับการรักษา แพทย์แต่ละท่านไม่เหมือนกัน และบางสายต้องถึงมือคนทันที",
+    "ru": "Запись в клинику — это не бронь столика. Длительность приёма зависит от процедуры, важен конкретный специалист, а некоторые звонки должны сразу попадать к человеку."
+  },
+  "clinic_feat_1_name": {
+    "en": "Books the practitioner they asked for",
+    "th": "จองแพทย์ตามที่คนไข้ระบุ",
+    "ru": "Записывает к тому врачу, о котором просят"
+  },
+  "clinic_feat_1_use": {
+    "en": "Patients name their doctor or dentist. The AI checks that person's own schedule, not the clinic average, so it never promises a slot that practitioner doesn't have.",
+    "th": "คนไข้ระบุชื่อแพทย์หรือทันตแพทย์ที่ต้องการ AI จะตรวจตารางของแพทย์ท่านนั้นโดยตรง ไม่ใช่ตารางรวมของคลินิก จึงไม่รับปากเวลาที่แพทย์ท่านนั้นไม่ว่าง",
+    "ru": "Пациент называет своего врача или стоматолога. AI проверяет расписание именно этого специалиста, а не клиники в целом, поэтому никогда не обещает время, которого у него нет."
+  },
+  "clinic_feat_2_name": {
+    "en": "Knows a cleaning is not a root canal",
+    "th": "รู้ว่าขูดหินปูนกับรักษารากฟันใช้เวลาไม่เท่ากัน",
+    "ru": "Отличает чистку от лечения каналов"
+  },
+  "clinic_feat_2_use": {
+    "en": "Every treatment gets its real duration. The AI books the right amount of time, so the schedule stays honest instead of running 40 minutes late by noon.",
+    "th": "ทุกการรักษามีระยะเวลาจริงของตัวเอง AI จองเวลาให้พอดี ตารางจึงเป็นไปตามจริง ไม่ล่าช้าไป 40 นาทีตั้งแต่ยังไม่เที่ยง",
+    "ru": "У каждой процедуры своя реальная длительность. AI бронирует ровно столько времени, сколько нужно, и расписание не съезжает на 40 минут уже к полудню."
+  },
+  "clinic_feat_3_name": {
+    "en": "Answers the questions that clog your line",
+    "th": "ตอบคำถามที่ทำให้สายไม่ว่าง",
+    "ru": "Отвечает на вопросы, которые занимают линию"
+  },
+  "clinic_feat_3_use": {
+    "en": "Prices, opening hours, directions, parking, and preparation instructions like \"no food before the blood test\". The routine calls stop reaching your staff at all.",
+    "th": "ราคา เวลาทำการ เส้นทาง ที่จอดรถ และคำแนะนำก่อนมาพบแพทย์ เช่น “งดอาหารก่อนเจาะเลือด” สายทั่วไปเหล่านี้จะไม่ต้องถึงทีมงานของคุณอีกเลย",
+    "ru": "Цены, часы работы, как добраться, парковка и инструкции по подготовке вроде «не есть перед анализом крови». Рутинные звонки больше вообще не доходят до персонала."
+  },
+  "clinic_feat_4_name": {
+    "en": "New patients arrive pre-registered",
+    "th": "คนไข้ใหม่ลงทะเบียนไว้ก่อนมาถึง",
+    "ru": "Новые пациенты приходят уже зарегистрированными"
+  },
+  "clinic_feat_4_use": {
+    "en": "Name, phone number and reason for visit are captured on the call and waiting in the calendar note, so the front desk isn't spelling out a surname at check-in.",
+    "th": "ชื่อ เบอร์โทร และเหตุผลที่มาพบแพทย์ถูกบันทึกระหว่างการโทรและรออยู่ในโน้ตของปฏิทิน เคาน์เตอร์จึงไม่ต้องมาสะกดนามสกุลกันตอนเช็กอิน",
+    "ru": "Имя, телефон и причина визита фиксируются во время звонка и уже ждут в заметке календаря — на ресепшне не придётся диктовать фамилию по буквам."
+  },
+  "clinic_feat_5_name": {
+    "en": "Thai, English and Russian on one number",
+    "th": "ไทย อังกฤษ และรัสเซีย ในเบอร์เดียว",
+    "ru": "Тайский, английский и русский на одном номере"
+  },
+  "clinic_feat_5_use": {
+    "en": "It picks the language from the caller's first words. Thai patients, expats and medical tourists all book on the same line, with no language menu.",
+    "th": "ระบบเลือกภาษาจากคำแรกที่ผู้โทรพูด คนไข้ชาวไทย ชาวต่างชาติที่พำนักในไทย และนักท่องเที่ยวเชิงการแพทย์ จองได้ในสายเดียวกันโดยไม่ต้องกดเลือกภาษา",
+    "ru": "Язык определяется по первым словам звонящего. Тайские пациенты, экспаты и медицинские туристы записываются по одной линии, без меню выбора языка."
+  },
+  "clinic_feat_6_name": {
+    "en": "Chases the no-shows before they happen",
+    "th": "ป้องกันการไม่มาตามนัดล่วงหน้า",
+    "ru": "Предотвращает неявки заранее"
+  },
+  "clinic_feat_6_use": {
+    "en": "Confirmations and reminders go out on LINE and SMS, and rescheduling takes one reply. Patients fix their booking instead of silently skipping it.",
+    "th": "ส่งยืนยันและแจ้งเตือนนัดทาง LINE และ SMS การเลื่อนนัดใช้แค่การตอบกลับครั้งเดียว คนไข้จึงแก้นัดเองแทนที่จะหายไปเงียบ ๆ",
+    "ru": "Подтверждения и напоминания уходят в LINE и по SMS, а перенос — это один ответ. Пациенты меняют запись, а не молча пропускают визит."
+  },
+  "clinic_feat_7_name": {
+    "en": "Never plays doctor",
+    "th": "ไม่ทำหน้าที่แทนแพทย์",
+    "ru": "Никогда не изображает врача"
+  },
+  "clinic_feat_7_use": {
+    "en": "It gives no medical advice, ever. When a caller describes symptoms or sounds urgent, it follows your escalation rules: transfer to staff in hours, your emergency instructions after hours.",
+    "th": "ระบบไม่ให้คำแนะนำทางการแพทย์ใด ๆ ทั้งสิ้น เมื่อผู้โทรเล่าอาการหรือฟังดูเร่งด่วน ระบบจะทำตามกฎการส่งต่อที่คุณกำหนด: ในเวลาทำการโอนสายถึงทีมงาน นอกเวลาทำการแจ้งขั้นตอนกรณีฉุกเฉินของคุณ",
+    "ru": "Никаких медицинских советов — никогда. Если звонящий описывает симптомы или дело срочное, система действует по вашим правилам эскалации: в рабочее время переводит звонок на персонал, в нерабочее — сообщает ваши инструкции на экстренный случай."
+  },
+  "clinic_feat_8_name": {
+    "en": "Recognises returning patients",
+    "th": "จำคนไข้เก่าได้",
+    "ru": "Узнаёт постоянных пациентов"
+  },
+  "clinic_feat_8_use": {
+    "en": "A returning patient is recognised by their number on the first ring, greeted by name, and skips straight to the booking.",
+    "th": "คนไข้เก่าจะถูกจดจำจากเบอร์โทรตั้งแต่เสียงเรียกแรก ได้รับการทักทายด้วยชื่อ และเข้าสู่การจองได้ทันที",
+    "ru": "Постоянного пациента система узнаёт по номеру с первого гудка, приветствует по имени и сразу переходит к записи."
+  },
+  "clinic_proof_eyebrow": {
+    "en": "A PROVEN CORE, TUNED FOR YOUR CLINIC",
+    "th": "ระบบหลักที่พิสูจน์แล้ว ปรับให้เข้ากับคลินิกของคุณ",
+    "ru": "ПРОВЕРЕННОЕ ЯДРО, НАСТРОЕННОЕ ПОД ВАШУ КЛИНИКУ"
+  },
+  "clinic_proof_h2": {
+    "en": "The same receptionist is <em class=\"accent\">already on the phones.</em>",
+    "th": "ระบบรับสายตัวเดียวกันนี้<em class=\"accent\">รับสายจริงอยู่แล้ว</em>",
+    "ru": "Этот же секретарь <em class=\"accent\">уже отвечает на звонки.</em>"
+  },
+  "clinic_proof_p": {
+    "en": "This is not a demo waiting for its first caller. The same AI receptionist has answered the phones of a six-branch service business in Phuket since June 2026: <strong>169 calls</strong> at an average of <strong>76 seconds</strong> each, and <strong>105 bookings</strong> made end to end across voice and chat, in three languages. A clinic deployment starts from that proven core, then adds your treatments, practitioners and escalation rules on top.",
+    "th": "นี่ไม่ใช่เดโมที่รอผู้โทรรายแรก AI รับสายตัวเดียวกันนี้รับสายให้ธุรกิจบริการ 6 สาขาในภูเก็ตมาตั้งแต่มิถุนายน 2026: <strong>169 สาย</strong> เฉลี่ยสายละ <strong>76 วินาที</strong> และ <strong>105 การจอง</strong> ที่ทำครบจบทั้งทางโทรศัพท์และแชต ใน 3 ภาษา การติดตั้งให้คลินิกเริ่มจากระบบหลักที่พิสูจน์แล้วนี้ แล้วเพิ่มการรักษา แพทย์ และกฎการส่งต่อของคุณเข้าไป",
+    "ru": "Это не демо, которое ждёт первого звонка. Этот же AI-секретарь с июня 2026 года отвечает на звонки сервисного бизнеса с шестью филиалами на Пхукете: <strong>169 звонков</strong> в среднем по <strong>76 секунд</strong> и <strong>105 записей</strong>, оформленных от начала до конца голосом и в чате, на трёх языках. Внедрение в клинике начинается с этого проверенного ядра, а затем добавляются ваши процедуры, специалисты и правила эскалации."
+  },
+  "clinic_stat_unit_s": {
+    "en": "s",
+    "th": "วิ",
+    "ru": "с"
+  },
+  "clinic_stat_1": {
+    "en": "calls answered since June 2026",
+    "th": "สายที่รับตั้งแต่มิถุนายน 2026",
+    "ru": "звонков принято с июня 2026"
+  },
+  "clinic_stat_2": {
+    "en": "average call, start to booked",
+    "th": "เวลาเฉลี่ยต่อสาย ตั้งแต่รับสายจนจองเสร็จ",
+    "ru": "средний звонок — от ответа до записи"
+  },
+  "clinic_stat_3": {
+    "en": "bookings made by the AI",
+    "th": "การจองที่ AI ทำเอง",
+    "ru": "записей сделал AI"
+  },
+  "clinic_stat_4": {
+    "en": "languages on one number",
+    "th": "ภาษาในเบอร์เดียว",
+    "ru": "языка на одном номере"
+  },
+  "clinic_proof_note": {
+    "en": "Measured 20 June to 7 August 2026 from the business's own calendar and call log. Counts include our own test traffic; call totals exclude 20 June to 2 July, which the phone provider purged before logging began.",
+    "th": "วัดผลระหว่าง 20 มิถุนายน ถึง 7 สิงหาคม 2026 จากปฏิทินและบันทึกการโทรของธุรกิจเอง ตัวเลขรวมสายทดสอบของเราด้วย ส่วนยอดรวมสายไม่นับช่วง 20 มิถุนายน ถึง 2 กรกฎาคม ซึ่งผู้ให้บริการโทรศัพท์ลบข้อมูลไปก่อนเริ่มบันทึก",
+    "ru": "Данные за период с 20 июня по 7 августа 2026 года из собственного календаря и журнала звонков компании. В цифры входит и наш тестовый трафик; из общего числа звонков исключён период с 20 июня по 2 июля — эти данные оператор связи удалил до начала учёта."
+  },
+  "clinic_beem_btn": {
+    "en": "See how Beem answers the phone",
+    "th": "ดูว่า Beem รับสายอย่างไร",
+    "ru": "Посмотреть, как Beem отвечает на звонки"
+  },
+  "clinic_how_eyebrow": {
+    "en": "HOW WE PUT IT IN YOUR CLINIC",
+    "th": "เราติดตั้งในคลินิกของคุณอย่างไร",
+    "ru": "КАК МЫ ВНЕДРЯЕМ ЭТО В ВАШЕЙ КЛИНИКЕ"
+  },
+  "clinic_how_h2": {
+    "en": "Your number, your calendar, <em class=\"accent\">your rules.</em>",
+    "th": "เบอร์ของคุณ ปฏิทินของคุณ <em class=\"accent\">กฎของคุณ</em>",
+    "ru": "Ваш номер, ваш календарь, <em class=\"accent\">ваши правила.</em>"
+  },
+  "clinic_step_1_name": {
+    "en": "We learn your clinic",
+    "th": "เราเรียนรู้คลินิกของคุณ",
+    "ru": "Изучаем вашу клинику"
+  },
+  "clinic_step_1_use": {
+    "en": "Your practitioners, treatments and their durations, prices, opening hours, and the escalation rules for urgent calls. You decide what the AI may handle and what always reaches a human.",
+    "th": "แพทย์ การรักษาและระยะเวลาของแต่ละรายการ ราคา เวลาทำการ และกฎการส่งต่อสายเร่งด่วน คุณเป็นผู้กำหนดว่า AI จัดการเรื่องใดได้ และเรื่องใดต้องถึงมือคนเสมอ",
+    "ru": "Ваши специалисты, процедуры и их длительность, цены, часы работы и правила эскалации срочных звонков. Вы решаете, что AI может делать сам, а что всегда передаётся человеку."
+  },
+  "clinic_step_2_name": {
+    "en": "We connect what you already use",
+    "th": "เราเชื่อมต่อกับระบบที่คุณใช้อยู่แล้ว",
+    "ru": "Подключаем то, чем вы уже пользуетесь"
+  },
+  "clinic_step_2_use": {
+    "en": "Your existing phone number, your existing calendar or booking system, your LINE OA. Patient details land in your systems, not a third-party inbox, set up in line with Thailand's PDPA.",
+    "th": "เบอร์โทรเดิม ปฏิทินหรือระบบจองเดิม และ LINE OA ของคุณ ข้อมูลคนไข้เข้าสู่ระบบของคุณเอง ไม่ใช่กล่องข้อความของบุคคลภายนอก และตั้งค่าตาม พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล (PDPA)",
+    "ru": "Ваш текущий номер, ваш календарь или система записи, ваш LINE OA. Данные пациентов попадают в ваши системы, а не в сторонний почтовый ящик, и всё настроено в соответствии с тайским законом о защите данных (PDPA)."
+  },
+  "clinic_step_3_name": {
+    "en": "We test on real calls, then switch it on",
+    "th": "ทดสอบกับสายจริง แล้วจึงเปิดใช้งาน",
+    "ru": "Тестируем на реальных звонках, затем запускаем"
+  },
+  "clinic_step_3_use": {
+    "en": "We listen to real conversations, fix the edge cases, and keep tuning after launch so it gets better in your clinic, not worse.",
+    "th": "เราฟังบทสนทนาจริง แก้กรณียกเว้น และปรับจูนต่อเนื่องหลังเปิดใช้งาน ระบบจึงดีขึ้นเรื่อย ๆ ในคลินิกของคุณ ไม่ใช่แย่ลง",
+    "ru": "Мы слушаем реальные разговоры, исправляем нестандартные случаи и продолжаем настройку после запуска, чтобы в вашей клинике система становилась лучше, а не хуже."
+  },
+  "clinic_hear_eyebrow": {
+    "en": "HEAR IT WORK",
+    "th": "ฟังการทำงานจริง",
+    "ru": "ПОСЛУШАЙТЕ, КАК ЭТО РАБОТАЕТ"
+  },
+  "clinic_hear_h2": {
+    "en": "A real call, <em class=\"accent\">start to booked.</em>",
+    "th": "สายจริง <em class=\"accent\">ตั้งแต่รับสายจนจองเสร็จ</em>",
+    "ru": "Реальный звонок — <em class=\"accent\">от ответа до записи.</em>"
+  },
+  "clinic_hear_p": {
+    "en": "This is a live recording from Ducky Cutz, the Phuket barbershop we run the phone for — not a clinic, but the same receptionist doing the same job: answer, check the calendar, book, confirm. Press play. We have no recorded clinic call published yet; on a demo call we walk you through it with your own treatments and prices.",
+    "th": "นี่คือเสียงบันทึกจริงจาก Ducky Cutz ร้านตัดผมในภูเก็ตที่เราดูแลการรับสายให้ ไม่ใช่คลินิก แต่เป็นระบบรับสายตัวเดียวกันที่ทำงานแบบเดียวกัน: รับสาย ตรวจปฏิทิน จองคิว และยืนยัน กดเล่นเพื่อฟังได้เลย ตอนนี้เรายังไม่ได้เผยแพร่เสียงสายจริงจากคลินิก แต่ในการนัดคุย เราจะพาคุณดูการทำงานด้วยรายการรักษาและราคาของคลินิกคุณเอง",
+    "ru": "Это живая запись из Ducky Cutz — барбершопа на Пхукете, звонки которого мы ведём. Не клиника, но тот же секретарь делает ту же работу: отвечает, проверяет календарь, записывает, подтверждает. Нажмите «воспроизвести». Записи звонка из клиники мы пока не публиковали; на демо-звонке покажем всё на ваших процедурах и ценах."
+  },
+  "clinic_hear_link": {
+    "en": "Read the Ducky Cutz case study",
+    "th": "อ่านกรณีศึกษา Ducky Cutz",
+    "ru": "Читать кейс Ducky Cutz"
+  },
+  "clinic_faq_h2": {
+    "en": "Clinic owner <em class=\"accent\">questions.</em>",
+    "th": "คำถามจาก<em class=\"accent\">เจ้าของคลินิก</em>",
+    "ru": "Вопросы <em class=\"accent\">владельцев клиник.</em>"
+  },
+  "clinic_faq_q1": {
+    "en": "What happens when a patient calls my Phuket clinic at 8pm?",
+    "th": "ถ้าคนไข้โทรหาคลินิกของฉันในภูเก็ตตอน 20.00 น. จะเกิดอะไรขึ้น",
+    "ru": "Что будет, если пациент позвонит в мою клинику на Пхукете в 20:00?"
+  },
+  "clinic_faq_a1": {
+    "en": "The Rejig Labs AI receptionist answers on the first ring in the caller's language, checks your live calendar, books the appointment, and sends the confirmation on WhatsApp or LINE. Nothing waits for the morning.",
+    "th": "AI รับสายของ Rejig Labs จะรับสายตั้งแต่เสียงเรียกแรกในภาษาของผู้โทร ตรวจปฏิทินแบบเรียลไทม์ จองนัด และส่งการยืนยันทาง WhatsApp หรือ LINE ไม่มีอะไรต้องรอถึงเช้า",
+    "ru": "AI-секретарь Rejig Labs отвечает с первого гудка на языке звонящего, проверяет ваш календарь в реальном времени, записывает на приём и отправляет подтверждение в WhatsApp или LINE. Ничего не откладывается до утра."
+  },
+  "clinic_faq_q2": {
+    "en": "Can it book a specific doctor or dentist, not just any slot?",
+    "th": "จองแพทย์หรือทันตแพทย์ที่ระบุได้ไหม ไม่ใช่แค่เวลาไหนก็ได้",
+    "ru": "Можно ли записать к конкретному врачу или стоматологу, а не просто на свободное время?"
+  },
+  "clinic_faq_a2": {
+    "en": "Yes. Patients ask for their practitioner by name and the AI checks that person's own schedule, not the clinic average. It also knows that a cleaning and a root canal need different slot lengths, so it books the right amount of time for the treatment.",
+    "th": "ได้ คนไข้ขอพบแพทย์ด้วยชื่อ และ AI จะตรวจตารางของแพทย์ท่านนั้นโดยตรง ไม่ใช่ตารางรวมของคลินิก ระบบยังรู้ว่าการขูดหินปูนกับการรักษารากฟันใช้เวลาต่างกัน จึงจองเวลาให้เหมาะกับการรักษา",
+    "ru": "Да. Пациент называет своего специалиста по имени, и AI проверяет расписание именно этого человека, а не клиники в целом. Система также знает, что чистка и лечение каналов занимают разное время, и бронирует нужную длительность под процедуру."
+  },
+  "clinic_faq_q3": {
+    "en": "What happens when a call is urgent?",
+    "th": "ถ้าเป็นสายเร่งด่วนจะทำอย่างไร",
+    "ru": "Что происходит при срочном звонке?"
+  },
+  "clinic_faq_a3": {
+    "en": "It never gives medical advice, ever. When a caller describes symptoms or sounds urgent, it follows the escalation rules you set: during opening hours it transfers to your staff with the conversation attached, and after hours it gives the caller your emergency instructions instead of booking a slot.",
+    "th": "ระบบไม่ให้คำแนะนำทางการแพทย์เด็ดขาด เมื่อผู้โทรเล่าอาการหรือฟังดูเร่งด่วน ระบบจะทำตามกฎการส่งต่อที่คุณกำหนด: ในเวลาทำการจะโอนสายถึงทีมงานพร้อมแนบบทสนทนา และนอกเวลาทำการจะแจ้งขั้นตอนกรณีฉุกเฉินของคุณแทนการจองนัด",
+    "ru": "Система никогда не даёт медицинских советов. Если звонящий описывает симптомы или дело срочное, она действует по заданным вами правилам эскалации: в рабочее время переводит звонок на персонал вместе с записью разговора, а в нерабочее — сообщает ваши инструкции на экстренный случай вместо записи на приём."
+  },
+  "clinic_faq_q4": {
+    "en": "Does it speak Thai?",
+    "th": "พูดภาษาไทยได้ไหม",
+    "ru": "Говорит ли система по-тайски?"
+  },
+  "clinic_faq_a4": {
+    "en": "Yes. It answers in Thai, English or Russian, picking the language from the caller's first words. One number serves your Thai patients, expats and medical tourists without a language menu.",
+    "th": "ได้ ระบบรับสายเป็นภาษาไทย อังกฤษ หรือรัสเซีย โดยเลือกภาษาจากคำแรกที่ผู้โทรพูด เบอร์เดียวรองรับทั้งคนไข้ชาวไทย ชาวต่างชาติที่พำนักในไทย และนักท่องเที่ยวเชิงการแพทย์ โดยไม่ต้องกดเลือกภาษา",
+    "ru": "Да. Она отвечает на тайском, английском или русском, определяя язык по первым словам звонящего. Один номер обслуживает тайских пациентов, экспатов и медицинских туристов без меню выбора языка."
+  },
+  "clinic_faq_q5": {
+    "en": "Is patient information safe?",
+    "th": "ข้อมูลคนไข้ปลอดภัยไหม",
+    "ru": "Защищены ли данные пациентов?"
+  },
+  "clinic_faq_a5": {
+    "en": "Booking details go into your own calendar and booking system, not a third-party inbox. Before launch we agree with you exactly what is stored and for how long, and we set the system up in line with Thailand's PDPA. The AI only collects what a human receptionist would ask for: name, phone number and reason for visit.",
+    "th": "รายละเอียดการจองเข้าสู่ปฏิทินและระบบจองของคุณเอง ไม่ใช่กล่องข้อความของบุคคลภายนอก ก่อนเปิดใช้งาน เราตกลงร่วมกับคุณว่าจะจัดเก็บข้อมูลอะไรและนานเท่าใด และตั้งค่าระบบตาม พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล (PDPA) AI เก็บเฉพาะข้อมูลที่พนักงานต้อนรับจะถามตามปกติ คือ ชื่อ เบอร์โทร และเหตุผลที่มาพบแพทย์",
+    "ru": "Данные о записи попадают в ваш собственный календарь и систему записи, а не в сторонний почтовый ящик. До запуска мы согласуем с вами, что именно хранится и как долго, и настраиваем систему в соответствии с тайским законом о защите данных (PDPA). AI собирает только то, что спросил бы администратор: имя, телефон и причину визита."
+  },
+  "clinic_faq_q6": {
+    "en": "Will it reduce no-shows?",
+    "th": "ช่วยลดการไม่มาตามนัดได้ไหม",
+    "ru": "Сократит ли это количество неявок?"
+  },
+  "clinic_faq_a6": {
+    "en": "Reminders are the main lever: confirmations and reminders go out on LINE and SMS, and rescheduling takes one reply instead of a phone call, so patients fix their booking rather than silently skipping it. We measure your no-show rate before and after launch rather than promising a number upfront.",
+    "th": "การแจ้งเตือนคือกลไกหลัก: ระบบส่งยืนยันและแจ้งเตือนนัดทาง LINE และ SMS และการเลื่อนนัดใช้แค่การตอบกลับครั้งเดียวแทนการโทร คนไข้จึงแก้นัดเองแทนที่จะหายไปเงียบ ๆ เราวัดอัตราการไม่มาตามนัดของคุณทั้งก่อนและหลังเปิดใช้งาน แทนการรับปากตัวเลขล่วงหน้า",
+    "ru": "Главный рычаг — напоминания: подтверждения и напоминания уходят в LINE и по SMS, а перенос занимает один ответ вместо звонка, поэтому пациенты меняют запись, а не молча пропускают визит. Мы измеряем долю неявок до и после запуска, а не обещаем цифру заранее."
+  },
+  "clinic_faq_q7": {
+    "en": "Is this system already running somewhere real?",
+    "th": "ระบบนี้ใช้งานจริงที่ไหนแล้วบ้าง",
+    "ru": "Работает ли эта система где-то на практике?"
+  },
+  "clinic_faq_a7": {
+    "en": "Yes. The same receptionist has answered the phones of a six-branch service business in Phuket since June 2026, taking 169 calls at an average of 76 seconds each and making 105 bookings across voice and chat. A clinic deployment starts from that proven core, then adds your treatments, practitioners and escalation rules on top. Setup usually takes 2 to 4 weeks.",
+    "th": "ใช้แล้ว ระบบรับสายตัวเดียวกันนี้รับสายให้ธุรกิจบริการ 6 สาขาในภูเก็ตมาตั้งแต่มิถุนายน 2026 รับไปแล้ว 169 สาย เฉลี่ยสายละ 76 วินาที และทำการจองได้ 105 รายการ ทั้งทางโทรศัพท์และแชต การติดตั้งให้คลินิกเริ่มจากระบบหลักที่พิสูจน์แล้วนี้ แล้วเพิ่มการรักษา แพทย์ และกฎการส่งต่อของคุณเข้าไป โดยทั่วไปใช้เวลาติดตั้ง 2 ถึง 4 สัปดาห์",
+    "ru": "Да. Этот же секретарь с июня 2026 года отвечает на звонки сервисного бизнеса с шестью филиалами на Пхукете: 169 звонков в среднем по 76 секунд и 105 записей голосом и в чате. Внедрение в клинике начинается с этого проверенного ядра, а затем добавляются ваши процедуры, специалисты и правила эскалации. Настройка обычно занимает от 2 до 4 недель."
+  },
+  "clinic_related_eyebrow": {
+    "en": "RELATED",
+    "th": "บริการที่เกี่ยวข้อง",
+    "ru": "ПО ТЕМЕ"
+  },
+  "clinic_related_h2": {
+    "en": "Same front desk, <em class=\"accent\">different room.</em>",
+    "th": "ระบบรับสายเดียวกัน <em class=\"accent\">ต่างธุรกิจ</em>",
+    "ru": "Тот же ресепшн, <em class=\"accent\">другая сфера.</em>"
+  },
+  "clinic_related_links": {
+    "en": "<a href=\"/hotel-night-desk-ai/\">Hotel night desk that never misses a call</a> &middot; <a href=\"https://heybeem.com/\" target=\"_blank\" rel=\"noopener\">Beem, the AI front desk for shops and salons</a>",
+    "th": "<a href=\"/hotel-night-desk-ai/\">ระบบรับสายกะดึกของโรงแรมที่ไม่พลาดสักสาย</a> &middot; <a href=\"https://heybeem.com/\" target=\"_blank\" rel=\"noopener\">Beem ระบบ AI หน้าร้านสำหรับร้านค้าและซาลอน</a>",
+    "ru": "<a href=\"/hotel-night-desk-ai/\">Ночной ресепшн отеля, который не пропускает звонков</a> &middot; <a href=\"https://heybeem.com/\" target=\"_blank\" rel=\"noopener\">Beem — AI-ресепшн для магазинов и салонов</a>"
+  },
+  "clinic_call_t1": {
+    "en": "Ducky Cutz. For Thai press one, for English press two.",
+    "th": "Ducky Cutz ภาษาไทยกด 1 ภาษาอังกฤษกด 2",
+    "ru": "Ducky Cutz. Для тайского нажмите 1, для английского — 2."
+  },
+  "clinic_call_t2": {
+    "en": "pressed 2 for English",
+    "th": "กด 2 เลือกภาษาอังกฤษ",
+    "ru": "нажата 2 — английский"
+  },
+  "clinic_call_t3": {
+    "en": "Hello. How can we help you today?",
+    "th": "สวัสดี วันนี้ให้เราช่วยอะไรดี",
+    "ru": "Здравствуйте. Чем можем помочь?"
+  },
+  "clinic_call_t4": {
+    "en": "Can I book a haircut?",
+    "th": "ขอจองตัดผมได้ไหม",
+    "ru": "Можно записаться на стрижку?"
+  },
+  "clinic_call_t5": {
+    "en": "looking up the caller",
+    "th": "ค้นหาข้อมูลผู้โทร",
+    "ru": "поиск звонящего в базе"
+  },
+  "clinic_call_t6": {
+    "en": "Of course, Thomas. The same haircut as usual, or did you have a different style in mind?",
+    "th": "ได้เลย คุณโทมัส ตัดทรงเดิมเหมือนทุกครั้ง หรืออยากลองทรงอื่น",
+    "ru": "Конечно, Томас. Стрижка как обычно или хотите что-то другое?"
+  },
+  "clinic_call_t7": {
+    "en": "The same, the same.",
+    "th": "ทรงเดิม ทรงเดิม",
+    "ru": "Как обычно, как обычно."
+  },
+  "clinic_call_t8": {
+    "en": "I can do tomorrow at 10 AM, 11 AM or 12 PM — with your usual style. Would you like one of those times?",
+    "th": "พรุ่งนี้ว่างเวลา 10:00, 11:00 หรือ 12:00 น. ทรงเดิมของคุณ สะดวกเวลาไหน",
+    "ru": "Могу предложить завтра в 10:00, 11:00 или 12:00 — вашу обычную стрижку. Подойдёт одно из этих времён?"
+  },
+  "clinic_call_t9": {
+    "en": "Can you do today? Today at 12:30 or 1?",
+    "th": "วันนี้ได้ไหม วันนี้ 12:30 หรือ 13:00 น.",
+    "ru": "А сегодня можно? Сегодня в 12:30 или в 13:00?"
+  },
+  "clinic_call_t10": {
+    "en": "checking the calendar",
+    "th": "ตรวจปฏิทิน",
+    "ru": "проверка календаря"
+  },
+  "clinic_call_t11": {
+    "en": "You can do today at 1 PM — or you're welcome to walk in now if you want it sooner. Would you like 1 PM?",
+    "th": "วันนี้ได้ตอน 13:00 น. หรือถ้าอยากตัดเร็วกว่านั้นก็แวะมาได้เลยตอนนี้ รับเป็น 13:00 น. ไหม",
+    "ru": "Сегодня можно в 13:00 — или приходите прямо сейчас, если хотите пораньше. Записать на 13:00?"
+  },
+  "clinic_call_t12": {
+    "en": "1 PM.",
+    "th": "13:00 น.",
+    "ru": "На 13:00."
+  },
+  "clinic_call_t13": {
+    "en": "Booking that for you now.",
+    "th": "กำลังจองให้เลย",
+    "ru": "Записываю вас."
+  },
+  "clinic_call_t14": {
+    "en": "All booked. You're set for today at 1 PM. Anything else I can help you with before you come in?",
+    "th": "จองเรียบร้อย นัดของคุณคือวันนี้ 13:00 น. มีอะไรให้ช่วยอีกไหมก่อนมาที่ร้าน",
+    "ru": "Готово. Вы записаны на сегодня, 13:00. Могу ещё чем-то помочь до вашего визита?"
+  },
+  "clinic_call_t15": {
+    "en": "No, thank you. Thank you so much.",
+    "th": "ไม่มีแล้ว ขอบคุณมาก",
+    "ru": "Нет, спасибо. Большое спасибо."
+  },
+  "clinic_call_t16": {
+    "en": "Please arrive about 15 minutes early. Thank you for calling Ducky Cutz.",
+    "th": "กรุณามาก่อนเวลาประมาณ 15 นาที ขอบคุณที่โทรหา Ducky Cutz",
+    "ru": "Пожалуйста, приходите минут за 15. Спасибо, что позвонили в Ducky Cutz."
+  },
+  "clinic_call_f1": {
+    "en": "Answers and routes by language",
+    "th": "รับสายและเลือกภาษาให้อัตโนมัติ",
+    "ru": "Отвечает и выбирает язык"
+  },
+  "clinic_call_f2": {
+    "en": "Recognises the returning caller",
+    "th": "จำลูกค้าเก่าได้",
+    "ru": "Узнаёт постоянного клиента"
+  },
+  "clinic_call_f3": {
+    "en": "Checks the live calendar",
+    "th": "ตรวจปฏิทินแบบเรียลไทม์",
+    "ru": "Проверяет календарь в реальном времени"
+  },
+  "clinic_call_f4": {
+    "en": "Writes the booking",
+    "th": "บันทึกการจอง",
+    "ru": "Оформляет запись"
+  },
+  "clinic_call_f5": {
+    "en": "Confirms the details",
+    "th": "ยืนยันรายละเอียด",
+    "ru": "Подтверждает детали"
+  },
+  "clinic_call_k": {
+    "en": "What the AI did",
+    "th": "สิ่งที่ AI ทำ",
+    "ru": "Что сделал AI"
+  },
+  "clinic_call_agent": {
+    "en": "AI receptionist",
+    "th": "AI รับสาย",
+    "ru": "AI-секретарь"
+  },
+  "clinic_call_caller": {
+    "en": "Caller",
+    "th": "ผู้โทร",
+    "ru": "Звонящий"
+  },
+  "clinic_call_note": {
+    "en": "This is a real recording.",
+    "th": "นี่คือเสียงบันทึกจริง",
+    "ru": "Это реальная запись."
+  },
+  "clinic_call_sub": {
+    "en": "Ducky Cutz, Phuket Town — 9 Aug 2026.",
+    "th": "Ducky Cutz ตัวเมืองภูเก็ต — 9 ส.ค. 2026",
+    "ru": "Ducky Cutz, Пхукет-Таун — 9 авг. 2026."
+  },
+  "hotel_hero_eyebrow": {
+    "en": "AI NIGHT DESK · HOTELS IN THAILAND",
+    "th": "AI รับสายกะดึก · โรงแรมในประเทศไทย",
+    "ru": "AI-НОЧНОЙ РЕСЕПШН · ОТЕЛИ ТАИЛАНДА"
+  },
+  "hotel_hero_h1": {
+    "en": "Hotel night desk that <em class=\"accent\">never misses a call.</em>",
+    "th": "ระบบรับสายกะดึกของโรงแรมที่<em class=\"accent\">ไม่พลาดสักสาย</em>",
+    "ru": "Ночной ресепшн отеля, который <em class=\"accent\">не пропускает ни одного звонка.</em>"
+  },
+  "hotel_hero_sub": {
+    "en": "Rejig Labs runs your hotel phone from 10pm to 7am. Late arrivals get a real answer, urgent calls still reach your duty manager, and the front office starts the shift with one summary.",
+    "th": "Rejig Labs ดูแลโทรศัพท์ของโรงแรมคุณตั้งแต่ 22.00 ถึง 07.00 น. แขกที่มาถึงดึกได้รับคำตอบจริง สายเร่งด่วนยังถึงผู้จัดการเวรเสมอ และฝ่ายต้อนรับเริ่มกะด้วยสรุปเพียงฉบับเดียว",
+    "ru": "Rejig Labs ведёт телефон вашего отеля с 22:00 до 7:00. Гости, прибывающие поздно, получают настоящий ответ, срочные звонки по-прежнему доходят до дежурного менеджера, а служба приёма начинает смену с одной сводки."
+  },
+  "hotel_flow_1": {
+    "en": "Late check-in, 1am",
+    "th": "เช็กอินดึก 01.00 น.",
+    "ru": "Поздний заезд, 1:00"
+  },
+  "hotel_flow_2": {
+    "en": "Answered first ring",
+    "th": "รับสายตั้งแต่เสียงแรก",
+    "ru": "Ответ с первого гудка"
+  },
+  "hotel_flow_3": {
+    "en": "Escalated if urgent",
+    "th": "ส่งต่อทันทีหากเร่งด่วน",
+    "ru": "Эскалация, если срочно"
+  },
+  "hotel_flow_4": {
+    "en": "Morning summary",
+    "th": "สรุปตอนเช้า",
+    "ru": "Утренняя сводка"
+  },
+  "hotel_problem_eyebrow": {
+    "en": "10PM TO 7AM",
+    "th": "22.00 ถึง 07.00 น.",
+    "ru": "С 22:00 ДО 7:00"
+  },
+  "hotel_problem_h2": {
+    "en": "The quietest shift is the one <em class=\"accent\">that costs you.</em>",
+    "th": "กะที่เงียบที่สุด <em class=\"accent\">คือกะที่ทำให้คุณเสียมากที่สุด</em>",
+    "ru": "Самая тихая смена — <em class=\"accent\">та, что обходится дороже всего.</em>"
+  },
+  "hotel_problem_p": {
+    "en": "Overnight the phone rings rarely and matters enormously: the late arrival, the guest who cannot find the gate, the booking someone wants to make right now. Staffing a full desk for that volume is hard to justify, so the calls go to a night porter mid-round, to voicemail, or nowhere. The GM finds out at breakfast, from a guest.",
+    "th": "ช่วงกลางคืนโทรศัพท์ดังไม่บ่อย แต่ทุกสายสำคัญมาก: แขกที่มาถึงดึก แขกที่หาประตูทางเข้าไม่เจอ หรือคนที่อยากจองห้องตอนนี้เลย การจัดพนักงานประจำเคาน์เตอร์เต็มกะสำหรับปริมาณสายเท่านี้คุ้มค่าได้ยาก สายจึงไปตกอยู่กับพนักงานกะดึกที่กำลังเดินตรวจ ไปที่ข้อความเสียง หรือไม่มีใครรับเลย แล้วผู้จัดการทั่วไปก็มารู้ตอนมื้อเช้าจากปากแขกเอง",
+    "ru": "Ночью телефон звонит редко, но каждый звонок очень важен: поздний заезд, гость, который не может найти ворота, бронирование, которое кто-то хочет сделать прямо сейчас. Держать полноценный ресепшн ради такого объёма трудно оправдать, поэтому звонки уходят ночному портье посреди обхода, на автоответчик или в никуда. Генеральный менеджер узнаёт об этом за завтраком — от гостя."
+  },
+  "hotel_process_eyebrow": {
+    "en": "WHAT ACTUALLY HAPPENS",
+    "th": "สิ่งที่เกิดขึ้นจริง",
+    "ru": "ЧТО ПРОИСХОДИТ НА САМОМ ДЕЛЕ"
+  },
+  "hotel_process_h2": {
+    "en": "Answered, handled, <em class=\"accent\">handed over.</em>",
+    "th": "รับสาย จัดการ <em class=\"accent\">และส่งต่อ</em>",
+    "ru": "Ответили, решили, <em class=\"accent\">передали.</em>"
+  },
+  "hotel_step_1_name": {
+    "en": "The late call is answered",
+    "th": "สายดึกได้รับการตอบรับ",
+    "ru": "Поздний звонок принят"
+  },
+  "hotel_step_1_use": {
+    "en": "First ring, in Thai, English or Russian. Late check-in, arrival time, directions, parking, breakfast hours, a room request.",
+    "th": "รับตั้งแต่เสียงแรก เป็นภาษาไทย อังกฤษ หรือรัสเซีย ทั้งเรื่องเช็กอินดึก เวลาที่จะมาถึง เส้นทาง ที่จอดรถ เวลาอาหารเช้า และคำขอเกี่ยวกับห้องพัก",
+    "ru": "С первого гудка, на тайском, английском или русском. Поздний заезд, время прибытия, как добраться, парковка, часы завтрака, просьба по номеру."
+  },
+  "hotel_step_2_name": {
+    "en": "Anything real reaches a person",
+    "th": "เรื่องสำคัญถึงมือคนเสมอ",
+    "ru": "Всё серьёзное попадает к человеку"
+  },
+  "hotel_step_2_use": {
+    "en": "A complaint, a medical issue, anything the AI should not decide goes to your duty manager immediately, with the conversation attached.",
+    "th": "คำร้องเรียน ปัญหาสุขภาพ หรือเรื่องใดก็ตามที่ AI ไม่ควรตัดสินใจเอง จะส่งถึงผู้จัดการเวรทันที พร้อมแนบบทสนทนา",
+    "ru": "Жалоба, проблема со здоровьем, всё, что AI не должен решать сам, сразу уходит дежурному менеджеру вместе с записью разговора."
+  },
+  "hotel_step_3_name": {
+    "en": "The morning summary lands",
+    "th": "สรุปตอนเช้าพร้อมรออยู่",
+    "ru": "Утренняя сводка готова"
+  },
+  "hotel_step_3_use": {
+    "en": "One list at the start of the shift: every call, what was asked, what was promised, what is still open at the top.",
+    "th": "รายการเดียวตอนเริ่มกะ: ทุกสาย สิ่งที่แขกถาม สิ่งที่รับปากไว้ และเรื่องที่ยังค้างอยู่แสดงไว้บนสุด",
+    "ru": "Один список в начале смены: каждый звонок, что спросили, что пообещали, а всё незакрытое — в самом верху."
+  },
+  "hotel_faq_h2": {
+    "en": "Front office <em class=\"accent\">questions.</em>",
+    "th": "คำถามจาก<em class=\"accent\">ฝ่ายต้อนรับ</em>",
+    "ru": "Вопросы <em class=\"accent\">службы приёма.</em>"
+  },
+  "hotel_faq_q1": {
+    "en": "Who answers the hotel phone at 2am?",
+    "th": "ใครรับโทรศัพท์โรงแรมตอน 02.00 น.",
+    "ru": "Кто отвечает на телефон отеля в 2 часа ночи?"
+  },
+  "hotel_faq_a1": {
+    "en": "The Rejig Labs AI night desk. It answers in the caller's language, handles late check-in, arrival times, directions and standard requests, and escalates to your duty manager when the call actually needs a person.",
+    "th": "AI รับสายกะดึกของ Rejig Labs ระบบรับสายในภาษาของผู้โทร จัดการเรื่องเช็กอินดึก เวลาที่จะมาถึง เส้นทาง และคำขอทั่วไป และส่งต่อถึงผู้จัดการเวรเมื่อสายนั้นต้องการคนจริง ๆ",
+    "ru": "Ночной AI-ресепшн от Rejig Labs. Он отвечает на языке звонящего, решает вопросы позднего заезда, времени прибытия, маршрута и стандартных просьб и передаёт звонок дежурному менеджеру, когда действительно нужен человек."
+  },
+  "hotel_faq_q2": {
+    "en": "How does my front office know what happened overnight?",
+    "th": "ฝ่ายต้อนรับจะรู้ได้อย่างไรว่าเมื่อคืนเกิดอะไรขึ้น",
+    "ru": "Как служба приёма узнает, что произошло за ночь?"
+  },
+  "hotel_faq_a2": {
+    "en": "One summary at the start of the shift: every call, who it was, what they asked for and what was promised, with anything still open flagged at the top.",
+    "th": "สรุปฉบับเดียวตอนเริ่มกะ: ทุกสาย ใครโทรมา ขออะไร และรับปากอะไรไว้ โดยเรื่องที่ยังค้างอยู่จะถูกทำเครื่องหมายไว้บนสุด",
+    "ru": "Одна сводка в начале смены: каждый звонок, кто звонил, что просил и что было обещано, а всё незакрытое отмечено в самом верху."
+  },
+  "hotel_faq_q3": {
+    "en": "Does it work with our PMS?",
+    "th": "ใช้งานร่วมกับ PMS ของเราได้ไหม",
+    "ru": "Работает ли это с нашей PMS?"
+  },
+  "hotel_faq_a3": {
+    "en": "It works alongside the systems you already pay for rather than replacing them. Which parts write back automatically depends on what your PMS exposes, so we scope that on the walkthrough before quoting.",
+    "th": "ระบบทำงานร่วมกับระบบที่คุณใช้อยู่แล้ว ไม่ได้เข้ามาแทนที่ ส่วนใดจะบันทึกกลับอัตโนมัติได้ขึ้นอยู่กับสิ่งที่ PMS ของคุณเปิดให้เชื่อมต่อ เราจึงประเมินเรื่องนี้ร่วมกันระหว่างการนัดคุยก่อนเสนอราคา",
+    "ru": "Система работает вместе с решениями, за которые вы уже платите, а не заменяет их. Что именно будет записываться обратно автоматически, зависит от возможностей вашей PMS, поэтому мы определяем это на созвоне до составления предложения."
+  },
+  "hotel_related_eyebrow": {
+    "en": "RELATED",
+    "th": "บริการที่เกี่ยวข้อง",
+    "ru": "ПО ТЕМЕ"
+  },
+  "hotel_related_h2": {
+    "en": "Same front desk, <em class=\"accent\">different room.</em>",
+    "th": "ระบบรับสายเดียวกัน <em class=\"accent\">ต่างธุรกิจ</em>",
+    "ru": "Тот же ресепшн, <em class=\"accent\">другая сфера.</em>"
+  },
+  "hotel_related_links": {
+    "en": "<a href=\"/ai-receptionist-clinic/\">AI receptionist for clinics</a> &middot; <a href=\"https://heybeem.com/\" target=\"_blank\" rel=\"noopener\">Beem, the AI front desk for shops and salons</a>",
+    "th": "<a href=\"/ai-receptionist-clinic/\">AI รับสายสำหรับคลินิก</a> &middot; <a href=\"https://heybeem.com/\" target=\"_blank\" rel=\"noopener\">Beem ระบบ AI หน้าร้านสำหรับร้านค้าและซาลอน</a>",
+    "ru": "<a href=\"/ai-receptionist-clinic/\">AI-секретарь для клиник</a> &middot; <a href=\"https://heybeem.com/\" target=\"_blank\" rel=\"noopener\">Beem — AI-ресепшн для магазинов и салонов</a>"
   }
 }

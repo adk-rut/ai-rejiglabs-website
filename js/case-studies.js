@@ -82,14 +82,25 @@
     if (l !== 'en' && s['label_' + l]) return s['label_' + l];
     return s.label;
   }
+  function tVal(s) {
+    var l = lang();
+    return (l !== 'en' && s['value_' + l]) || s.value;
+  }
   var readText = { en: 'Read Case Study', th: 'ดูรายละเอียด', ru: 'Подробнее' };
+
+  // Card tag leads with what was built, then who it was for.
+  function tag(cs) {
+    var sys = t(cs, 'system');
+    var ind = t(cs, 'industry') || cs.industry;
+    return sys ? sys + ' · ' + ind : ind;
+  }
 
   // ---- Card Grid ----
 
   function renderCard(cs) {
     var l = lang();
     var statsHtml = cs.stats.map(function (s) {
-      return '<div class="cs-card__stat"><span class="cs-card__stat-val">' + s.value + '</span><span class="cs-card__stat-label">' + tStat(s) + '</span></div>';
+      return '<div class="cs-card__stat"><span class="cs-card__stat-val">' + tVal(s) + '</span><span class="cs-card__stat-label">' + tStat(s) + '</span></div>';
     }).join('');
 
     return '<a href="/case-studies/' + cs.slug + '" class="cs-card" data-cs-card>' +
@@ -99,7 +110,7 @@
         '<div class="ev-card__logo"><img src="' + basePath + (cs.logo || 'assets/logo.png') + '" alt="' + cs.client + '"></div>' +
       '</div>' +
       '<div class="cs-card__body">' +
-        '<span class="cs-card__tag">' + (t(cs, 'industry') || cs.industry) + '</span>' +
+        '<span class="cs-card__tag">' + tag(cs) + '</span>' +
         '<h3 class="cs-card__title">' + cs.client + ' <span class="cs-card__sep">|</span> ' + t(cs, 'headline') + '</h3>' +
         '<p class="cs-card__summary">' + t(cs, 'summary') + '</p>' +
         '<div class="cs-card__stats">' + statsHtml + '</div>' +
@@ -224,7 +235,7 @@
 
       var l = lang();
       var statsHtml = cs.stats.map(function (s) {
-        return '<div class="cs-page__stat"><span class="cs-page__stat-val">' + s.value + '</span><span class="cs-page__stat-label">' + tStat(s) + '</span></div>';
+        return '<div class="cs-page__stat"><span class="cs-page__stat-val">' + tVal(s) + '</span><span class="cs-page__stat-label">' + tStat(s) + '</span></div>';
       }).join('');
 
       // i18n labels for section headers
@@ -265,7 +276,7 @@
         '<a href="index.html#case-studies" class="cs-page__back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg> ' + lb('back') + '</a>' +
 
         '<section class="cs-page__hero">' +
-          '<span class="cs-card__tag">' + t(cs, 'industry') + '</span>' +
+          '<span class="cs-card__tag">' + tag(cs) + '</span>' +
           '<h1>' + cs.client + ' <span class="cs-card__sep">|</span> <em class="accent">' + t(cs, 'headline') + '</em></h1>' +
           '<p class="cs-page__hero-summary">' + t(cs, 'summary') + '</p>' +
           (cs.site ? '<a class="cs-page__site" href="' + cs.site + '" target="_blank" rel="noopener">' + lb('site') + ' <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>' : '') +
@@ -304,7 +315,7 @@
           '<p>' + t(cs, 'results') + '</p>' +
         '</section>' +
 
-        (cs.testimonial ? '<section class="cs-page__testimonial"><span class="cs-page__tst-mark">"</span><blockquote>' + (t(cs.testimonial, 'quote') || cs.testimonial.quote) + '</blockquote><cite>' + cs.testimonial.name + ', ' + cs.testimonial.title + '</cite></section>' : '') +
+        (cs.testimonial ? '<section class="cs-page__testimonial"><span class="cs-page__tst-mark">"</span><blockquote>' + (t(cs.testimonial, 'quote') || cs.testimonial.quote) + '</blockquote><cite>' + cs.testimonial.name + ', ' + (t(cs.testimonial, 'title') || cs.testimonial.title) + '</cite></section>' : '') +
 
         '<section class="cs-page__cta">' +
           '<h2>' + lb('cta') + '</h2>' +
@@ -351,12 +362,12 @@
       var featHtml = '';
       if (feat) {
         var featStats = feat.stats.map(function (s) {
-          return '<div class="cs-page__stat"><span class="cs-page__stat-val">' + s.value + '</span><span class="cs-page__stat-label">' + tStat(s) + '</span></div>';
+          return '<div class="cs-page__stat"><span class="cs-page__stat-val">' + tVal(s) + '</span><span class="cs-page__stat-label">' + tStat(s) + '</span></div>';
         }).join('');
         featHtml =
           '<div class="cs-hub__feature">' +
             '<div class="cs-hub__feature-text">' +
-              '<span class="cs-card__tag">' + t(feat, 'industry') + '</span>' +
+              '<span class="cs-card__tag">' + tag(feat) + '</span>' +
               '<h2 class="cs-hub__feature-title"><a href="/case-studies/' + feat.slug + '">' + t(feat, 'headline') + '</a></h2>' +
               '<p class="cs-hub__feature-summary">' + t(feat, 'summary') + '</p>' +
               '<div class="cs-page__stats">' + featStats + '</div>' +

@@ -65,7 +65,7 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Thai:wght@400;500;600&family=Noto+Serif+Thai&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Thai:wght@400;500;600&family=Noto+Serif+Thai&display=swap" rel="stylesheet"></noscript>
 
-  <link rel="stylesheet" href="/css/style.css?v=4">
+  <link rel="stylesheet" href="/css/style.css?v=5">
 
   <!-- Vercel Web Analytics -->
   <script>window.va=window.va||function(){(window.vai=window.vai||[]).push(arguments);};</script>
@@ -150,15 +150,16 @@
         <a href="/#services" class="nav__link" data-i18n="nav_services">Services</a>
         <div class="nav__dropdown-menu">
           <a href="https://heybeem.com/" class="nav__dropdown-item" data-i18n="nav_beem" target="_blank" rel="noopener">Beem &mdash; AI Front Desk</a>
-          <a href="/ai-receptionist-clinic/" class="nav__dropdown-item">For Clinics</a>
-          <a href="/hotel-night-desk-ai/" class="nav__dropdown-item">Hotel Night Desk</a>
+          <a href="/ai-receptionist-clinic/" class="nav__dropdown-item" data-i18n="clinic_nav_link">For Clinics</a>
+          <a href="/hotel-night-desk-ai/" class="nav__dropdown-item" data-i18n="hotel_nav_link">Hotel Night Desk</a>
           <a href="/blockchain/" class="nav__dropdown-item" data-i18n="nav_blockchain">Blockchain</a>
         </div>
       </div>
       <a href="/#process" class="nav__link" data-i18n="nav_process">Process</a>
       <a href="/case-studies/" class="nav__link" data-i18n="nav_case_studies">Case Studies</a>
+      <a href="/about/" class="nav__link" data-i18n="nav_about">About</a>
       <div class="nav__lang"><button data-lang="en" class="active">EN</button><button data-lang="th">TH</button><button data-lang="ru">RU</button></div>
-      <button data-book class="nav__cta">Get In Touch <span>›</span></button>
+      <button data-book class="nav__cta"><span data-i18n="nav_cta">Book a Call</span> <span>›</span></button>
     </div>
     <details class="nav__lang-picker">
       <summary aria-label="Change language">🇬🇧</summary>
@@ -176,12 +177,13 @@
   <div class="mobile-menu" id="mobileMenu">
     <a href="/#services" class="mobile-menu__link" data-i18n="nav_services">Services</a>
     <a href="https://heybeem.com/" class="mobile-menu__link" data-i18n="nav_beem" target="_blank" rel="noopener">Beem &mdash; AI Front Desk</a>
-    <a href="/ai-receptionist-clinic/" class="mobile-menu__link">For Clinics</a>
-    <a href="/hotel-night-desk-ai/" class="mobile-menu__link">Hotel Night Desk</a>
+    <a href="/ai-receptionist-clinic/" class="mobile-menu__link" data-i18n="clinic_nav_link">For Clinics</a>
+    <a href="/hotel-night-desk-ai/" class="mobile-menu__link" data-i18n="hotel_nav_link">Hotel Night Desk</a>
     <a href="/blockchain/" class="mobile-menu__link" data-i18n="nav_blockchain">Blockchain</a>
     <a href="/#process" class="mobile-menu__link" data-i18n="nav_process">Process</a>
     <a href="/case-studies/" class="mobile-menu__link" data-i18n="nav_case_studies">Case Studies</a>
-    <button data-book class="mobile-menu__link mobile-menu__link--cta">Get In Touch</button>
+    <a href="/about/" class="mobile-menu__link" data-i18n="nav_about">About</a>
+    <button data-book class="mobile-menu__link mobile-menu__link--cta" data-i18n="nav_cta">Book a Call</button>
   </div>
 
   <main>
@@ -192,29 +194,29 @@
         <svg id="wavesSvg" xmlns="http://www.w3.org/2000/svg"></svg>
       </div>
       <div class="hero__content">
-        <p class="eyebrow">AI NIGHT DESK &middot; HOTELS IN THAILAND</p>
-        <h1 class="hero__h1">Hotel night desk that <em class="accent">never misses a call.</em></h1>
-        <p class="hero__sub">Rejig Labs runs your hotel phone from 10pm to 7am. Late arrivals get a real answer, urgent calls still reach your duty manager, and the front office starts the shift with one summary.</p>
+        <p class="eyebrow" data-i18n="hotel_hero_eyebrow">AI NIGHT DESK &middot; HOTELS IN THAILAND</p>
+        <h1 class="hero__h1" data-i18n-html="hotel_hero_h1">Hotel night desk that <em class="accent">never misses a call.</em></h1>
+        <p class="hero__sub" data-i18n="hotel_hero_sub">Rejig Labs runs your hotel phone from 10pm to 7am. Late arrivals get a real answer, urgent calls still reach your duty manager, and the front office starts the shift with one summary.</p>
         <div class="flow">
-          <span class="flow__step">Late check-in, 1am</span>
+          <span class="flow__step" data-i18n="hotel_flow_1">Late check-in, 1am</span>
           <span class="flow__arrow">&rarr;</span>
-          <span class="flow__step">Answered first ring</span>
+          <span class="flow__step" data-i18n="hotel_flow_2">Answered first ring</span>
           <span class="flow__arrow">&rarr;</span>
-          <span class="flow__step">Escalated if urgent</span>
+          <span class="flow__step" data-i18n="hotel_flow_3">Escalated if urgent</span>
           <span class="flow__arrow">&rarr;</span>
-          <span class="flow__step flow__step--end">Morning summary</span>
+          <span class="flow__step flow__step--end" data-i18n="hotel_flow_4">Morning summary</span>
         </div>
-        <button data-book class="btn btn--filled"><span class="btn__text">Book a 15-min walkthrough</span><span class="btn__hover">Book a 15-min walkthrough <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
-        <p class="hero__contact"><a href="https://line.me/ti/p/~rutadik">LINE us</a> &middot; <a href="https://wa.me/66991414896">WhatsApp</a> &middot; <a href="mailto:rut@rejiglabs.com">rut@rejiglabs.com</a></p>
+        <button data-book class="btn btn--filled"><span class="btn__text" data-i18n="hero_btn">Book a Call</span><span class="btn__hover"><span data-i18n="hero_btn">Book a Call</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
+        <p class="hero__contact"><a href="https://line.me/ti/p/~rutadik" data-i18n="svc_contact_line">LINE us</a> &middot; <a href="https://wa.me/66991414896">WhatsApp</a> &middot; <a href="mailto:rut@rejiglabs.com">rut@rejiglabs.com</a></p>
       </div>
     </section>
 
     <!-- PROBLEM -->
     <section class="encap encap--alt">
       <div class="sec-head">
-        <p class="eyebrow">10PM TO 7AM</p>
-        <h2>The quietest shift is the one <em class="accent">that costs you.</em></h2>
-        <p>Overnight the phone rings rarely and matters enormously: the late arrival, the guest who cannot find the gate, the booking someone wants to make right now. Staffing a full desk for that volume is hard to justify, so the calls go to a night porter mid-round, to voicemail, or nowhere. The GM finds out at breakfast, from a guest.</p>
+        <p class="eyebrow" data-i18n="hotel_problem_eyebrow">10PM TO 7AM</p>
+        <h2 data-i18n-html="hotel_problem_h2">The quietest shift is the one <em class="accent">that costs you.</em></h2>
+        <p data-i18n="hotel_problem_p">Overnight the phone rings rarely and matters enormously: the late arrival, the guest who cannot find the gate, the booking someone wants to make right now. Staffing a full desk for that volume is hard to justify, so the calls go to a night porter mid-round, to voicemail, or nowhere. The GM finds out at breakfast, from a guest.</p>
         <img src="/assets/blob/blob-never-missed.webp" alt="Sketch of a hotel phone ringing at night and being answered instead of going to voicemail" width="1400" height="791" loading="lazy" style="display:block;max-width:680px;width:100%;height:auto;margin:2.5rem auto 0;mix-blend-mode:multiply">
       </div>
     </section>
@@ -222,14 +224,14 @@
     <!-- PROCESS -->
     <section class="encap">
       <div class="sec-head">
-        <p class="eyebrow">WHAT ACTUALLY HAPPENS</p>
-        <h2>Answered, handled, <em class="accent">handed over.</em></h2>
+        <p class="eyebrow" data-i18n="hotel_process_eyebrow">WHAT ACTUALLY HAPPENS</p>
+        <h2 data-i18n-html="hotel_process_h2">Answered, handled, <em class="accent">handed over.</em></h2>
       </div>
       <div class="wrap">
         <div class="B-rows">
-          <div class="B-row rv"><span class="B-row__n">1</span><span class="B-row__name">The late call is answered</span><span class="B-row__use">First ring, in Thai, English or Russian. Late check-in, arrival time, directions, parking, breakfast hours, a room request.</span></div>
-          <div class="B-row rv"><span class="B-row__n">2</span><span class="B-row__name">Anything real reaches a person</span><span class="B-row__use">A complaint, a medical issue, anything the AI should not decide goes to your duty manager immediately, with the conversation attached.</span></div>
-          <div class="B-row rv"><span class="B-row__n">3</span><span class="B-row__name">The morning summary lands</span><span class="B-row__use">One list at the start of the shift: every call, what was asked, what was promised, what is still open at the top.</span></div>
+          <div class="B-row rv"><span class="B-row__n">1</span><span class="B-row__name" data-i18n="hotel_step_1_name">The late call is answered</span><span class="B-row__use" data-i18n="hotel_step_1_use">First ring, in Thai, English or Russian. Late check-in, arrival time, directions, parking, breakfast hours, a room request.</span></div>
+          <div class="B-row rv"><span class="B-row__n">2</span><span class="B-row__name" data-i18n="hotel_step_2_name">Anything real reaches a person</span><span class="B-row__use" data-i18n="hotel_step_2_use">A complaint, a medical issue, anything the AI should not decide goes to your duty manager immediately, with the conversation attached.</span></div>
+          <div class="B-row rv"><span class="B-row__n">3</span><span class="B-row__name" data-i18n="hotel_step_3_name">The morning summary lands</span><span class="B-row__use" data-i18n="hotel_step_3_use">One list at the start of the shift: every call, what was asked, what was promised, what is still open at the top.</span></div>
         </div>
       </div>
     </section>
@@ -237,30 +239,30 @@
     <!-- FAQ -->
     <section class="faq" id="faq">
       <div class="faq__header">
-        <h2>Front office <em class="accent">questions.</em></h2>
-        <p>You've got questions. We've got answers.</p>
+        <h2 data-i18n-html="hotel_faq_h2">Front office <em class="accent">questions.</em></h2>
+        <p data-i18n="faq_sub">Straight answers before you book a call.</p>
       </div>
       <div class="faq__chat">
         <div class="faq__item in-view" data-faq>
           <button class="faq__q">
-            <span class="faq__bubble faq__bubble--q">Who answers the hotel phone at 2am?</span>
+            <span class="faq__bubble faq__bubble--q" data-i18n="hotel_faq_q1">Who answers the hotel phone at 2am?</span>
             <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq__a"><div class="faq__bubble faq__bubble--a">The Rejig Labs AI night desk. It answers in the caller's language, handles late check-in, arrival times, directions and standard requests, and escalates to your duty manager when the call actually needs a person.</div></div>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a" data-i18n="hotel_faq_a1">The Rejig Labs AI night desk. It answers in the caller's language, handles late check-in, arrival times, directions and standard requests, and escalates to your duty manager when the call actually needs a person.</div></div>
         </div>
         <div class="faq__item in-view" data-faq>
           <button class="faq__q">
-            <span class="faq__bubble faq__bubble--q">How does my front office know what happened overnight?</span>
+            <span class="faq__bubble faq__bubble--q" data-i18n="hotel_faq_q2">How does my front office know what happened overnight?</span>
             <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq__a"><div class="faq__bubble faq__bubble--a">One summary at the start of the shift: every call, who it was, what they asked for and what was promised, with anything still open flagged at the top.</div></div>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a" data-i18n="hotel_faq_a2">One summary at the start of the shift: every call, who it was, what they asked for and what was promised, with anything still open flagged at the top.</div></div>
         </div>
         <div class="faq__item in-view" data-faq>
           <button class="faq__q">
-            <span class="faq__bubble faq__bubble--q">Does it work with our PMS?</span>
+            <span class="faq__bubble faq__bubble--q" data-i18n="hotel_faq_q3">Does it work with our PMS?</span>
             <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq__a"><div class="faq__bubble faq__bubble--a">It works alongside the systems you already pay for rather than replacing them. Which parts write back automatically depends on what your PMS exposes, so we scope that on the walkthrough before quoting.</div></div>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a" data-i18n="hotel_faq_a3">It works alongside the systems you already pay for rather than replacing them. Which parts write back automatically depends on what your PMS exposes, so we scope that on the walkthrough before quoting.</div></div>
         </div>
       </div>
     </section>
@@ -268,10 +270,10 @@
     <!-- CROSS LINKS -->
     <section class="encap">
       <div class="sec-head">
-        <p class="eyebrow">RELATED</p>
-        <h2>Same front desk, <em class="accent">different room.</em></h2>
-        <p><a href="/ai-receptionist-clinic/">AI receptionist for clinics</a> &middot; <a href="https://heybeem.com/" target="_blank" rel="noopener">Beem, the AI front desk for shops and salons</a></p>
-        <p style="margin-top:1.4rem">Talk to Rejig Labs: <a href="https://line.me/ti/p/~rutadik">LINE us</a> &middot; <a href="https://wa.me/66991414896">WhatsApp</a> &middot; <a href="mailto:rut@rejiglabs.com">rut@rejiglabs.com</a></p>
+        <p class="eyebrow" data-i18n="hotel_related_eyebrow">RELATED</p>
+        <h2 data-i18n-html="hotel_related_h2">Same front desk, <em class="accent">different room.</em></h2>
+        <p data-i18n-html="hotel_related_links"><a href="/ai-receptionist-clinic/">AI receptionist for clinics</a> &middot; <a href="https://heybeem.com/" target="_blank" rel="noopener">Beem, the AI front desk for shops and salons</a></p>
+        <p style="margin-top:1.4rem"><span data-i18n="hotel_talk">Talk to Rejig Labs:</span> <a href="https://line.me/ti/p/~rutadik" data-i18n="svc_contact_line">LINE us</a> &middot; <a href="https://wa.me/66991414896">WhatsApp</a> &middot; <a href="mailto:rut@rejiglabs.com">rut@rejiglabs.com</a></p>
       </div>
     </section>
 
@@ -282,12 +284,12 @@
       <div class="footer__glow"></div>
       <div class="closing__content">
         <div class="closing__h2">
-          <span class="closing__line in-view" data-i18n="closing_1">AI is here. Most will react.</span>
-          <span class="closing__line in-view" data-i18n="closing_2">The few with a plan will lead.</span>
-          <span class="closing__line in-view"><em class="accent" data-i18n="closing_3">We build for those few.</em></span>
+          <span class="closing__line in-view" data-i18n="closing_1">Start with one workflow.</span>
+          <span class="closing__line in-view" data-i18n="closing_2">See it running in weeks.</span>
+          <span class="closing__line in-view"><em class="accent" data-i18n="closing_3">Then scale what works.</em></span>
         </div>
         <div class="closing__btn-wrap" id="closingBtnWrap">
-          <button data-book class="btn"><span class="btn__text" data-i18n="hero_btn">Book a Discovery Call</span><span class="btn__hover">Book a Discovery Call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
+          <button data-book class="btn"><span class="btn__text" data-i18n="hero_btn">Book a Call</span><span class="btn__hover"><span data-i18n="hero_btn">Book a Call</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
         </div>
       </div>
       <div class="footer__inner">
@@ -295,7 +297,7 @@
           <img src="/assets/logo.png" alt="Rejig Labs" class="footer__logo" width="40" height="33" loading="lazy">
           <span>Rejig Labs</span>
         </div>
-        <p>© 2026 Rejig Labs · An arm of Rejig Labs · Thailand · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
+        <p><span data-i18n="footer_copy">© 2026 Rejig Labs · Thailand</span> · <a href="/about/" data-i18n="nav_about">About</a> · <a href="/privacy.html" data-i18n="footer_privacy">Privacy</a> · <a href="/terms.html" data-i18n="footer_terms">Terms</a></p>
       <div class="footer__socials">
         <a href="https://x.com/rejiglabs" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="X / Twitter">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>

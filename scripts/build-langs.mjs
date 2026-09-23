@@ -22,6 +22,7 @@ const LANGS = [{ code: 'th', dir: 'th' }, { code: 'ru', dir: 'ru' }];
 const PAGES = [
   { src: 'index.html', seoTitle: 'seo_title', seoDesc: 'seo_desc' },
   { src: 'ai-chatbot/index.html', seoTitle: 'seo_title_chatbot', seoDesc: 'seo_desc_chatbot' },
+  { src: 'about/index.html', seoTitle: 'seo_title_about', seoDesc: 'seo_desc_about' },
 ];
 
 const T = JSON.parse(readFileSync(resolve(ROOT, 'data/translations.json'), 'utf8'));
@@ -64,12 +65,33 @@ function bakeAttr(html, attr, lang, isHtml) {
   return html;
 }
 
+// Structured data follows the visible copy: any JSON-LD string that equals an
+// English translation (tags stripped) becomes that key's text in this language,
+// so a Thai page's FAQPage answers in Thai, as its FAQ does.
+const strip = (h) => h.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').trim();
+export function localizeJsonLd(html, code) {
+  const byEn = new Map();
+  for (const v of Object.values(T)) if (v.en && v[code]) byEn.set(strip(v.en), strip(v[code]));
+  const walk = (x) => Array.isArray(x) ? x.map(walk)
+    : x && typeof x === 'object' ? Object.fromEntries(Object.entries(x).map(([k, v]) => [k, walk(v)]))
+    : typeof x === 'string' && byEn.has(x) ? byEn.get(x) : x;
+  return html.replace(/(<script type="application\/ld\+json"[^>]*>)([\s\S]*?)(<\/script>)/g, (m, open, body, close) => {
+    let data;
+    try { data = JSON.parse(body); } catch { return m; }
+    const out = walk(data);
+    if (out && typeof out === 'object' && !Array.isArray(out) && 'inLanguage' in out) out.inLanguage = code;
+    return open + '\n' + JSON.stringify(out, null, 2).replace(/</g, '\\u003c') + '\n  ' + close;
+  });
+}
+
 function buildPage(page, lang) {
   let html = readFileSync(resolve(ROOT, page.src), 'utf8');
 
   // 1) body text
   html = bakeAttr(html, 'data-i18n-html', lang.code, true);
   html = bakeAttr(html, 'data-i18n', lang.code, false);
+
+  html = localizeJsonLd(html, lang.code);
 
   // 2) head: lang, title, description, canonical, og/twitter, og:url
   const title = T[page.seoTitle][lang.code];
@@ -91,7 +113,12 @@ function buildPage(page, lang) {
   html = html.replace(/((?:src|href)=")((?:css|js|assets|data|images)\/)/g, '$1/$2');
   html = html.replace(/(href=")([\w-]+\.html)(")/g, '$1/$2$3');
 
-  // 4) Beem links: Thai visitors land on the Thai side of heybeem.com
+  // 4) Links to pages that exist in this language stay in this language
+  //    (home, its #anchors, and /about/).
+  html = html.replace(/href="\/(#[\w-]*)?"/g, (_, hash) => `href="/${lang.dir}/${hash || ''}"`);
+  html = html.replace(/href="\/about\/"/g, `href="/${lang.dir}/about/"`);
+
+  // 5) Beem links: Thai visitors land on the Thai side of heybeem.com
   if (lang.code === 'th') html = html.replace(/href="https:\/\/heybeem\.com\/"/g, 'href="https://heybeem.com/th"');
 
   const outFile = resolve(ROOT, lang.dir, page.src);

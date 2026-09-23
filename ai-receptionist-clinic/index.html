@@ -66,7 +66,15 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Thai:wght@400;500;600&family=Noto+Serif+Thai&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Thai:wght@400;500;600&family=Noto+Serif+Thai&display=swap" rel="stylesheet"></noscript>
 
-  <link rel="stylesheet" href="/css/style.css?v=4">
+  <link rel="stylesheet" href="/css/style.css?v=5">
+  <style>
+    /* Clinic bento: one row (voice + chat) on desktop only. css/style.css stacks #capabilities .cap-bento below 761px. */
+    @media (min-width: 761px) { #capabilities .cap-bento--clinic { grid-template-areas: "voice voice chat"; } }
+    @media (max-width: 760px) {
+      #capabilities .cap-bento--clinic .c-voice { flex-direction: column; align-items: stretch; gap: 1.2rem; }
+      #capabilities .cap-bento--clinic .c-voice .cap-cell__txt { flex: none; }
+    }
+  </style>
 
   <!-- Vercel Web Analytics -->
   <script>window.va=window.va||function(){(window.vai=window.vai||[]).push(arguments);};</script>
@@ -126,7 +134,7 @@
           {
             "@type": "Question",
             "name": "Is this system already running somewhere real?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. The same receptionist has answered the phones of a six-branch service business in Phuket since June 2026, taking 169+ calls at an average of 76 seconds each and making 105 bookings across voice and chat. A clinic deployment starts from that proven core, then adds your treatments, practitioners and escalation rules on top. Setup usually takes 2 to 4 weeks." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. The same receptionist has answered the phones of a six-branch service business in Phuket since June 2026, taking 169 calls at an average of 76 seconds each and making 105 bookings across voice and chat. A clinic deployment starts from that proven core, then adds your treatments, practitioners and escalation rules on top. Setup usually takes 2 to 4 weeks." }
           }
         ]
       },
@@ -154,15 +162,16 @@
         <a href="/#services" class="nav__link" data-i18n="nav_services">Services</a>
         <div class="nav__dropdown-menu">
           <a href="https://heybeem.com/" class="nav__dropdown-item" data-i18n="nav_beem" target="_blank" rel="noopener">Beem &mdash; AI Front Desk</a>
-          <a href="/ai-receptionist-clinic/" class="nav__dropdown-item">For Clinics</a>
-          <a href="/hotel-night-desk-ai/" class="nav__dropdown-item">Hotel Night Desk</a>
+          <a href="/ai-receptionist-clinic/" class="nav__dropdown-item" data-i18n="clinic_nav_link">For Clinics</a>
+          <a href="/hotel-night-desk-ai/" class="nav__dropdown-item" data-i18n="hotel_nav_link">Hotel Night Desk</a>
           <a href="/blockchain/" class="nav__dropdown-item" data-i18n="nav_blockchain">Blockchain</a>
         </div>
       </div>
       <a href="/#process" class="nav__link" data-i18n="nav_process">Process</a>
       <a href="/case-studies/" class="nav__link" data-i18n="nav_case_studies">Case Studies</a>
+      <a href="/about/" class="nav__link" data-i18n="nav_about">About</a>
       <div class="nav__lang"><button data-lang="en" class="active">EN</button><button data-lang="th">TH</button><button data-lang="ru">RU</button></div>
-      <button data-book class="nav__cta">Get In Touch <span>›</span></button>
+      <button data-book class="nav__cta"><span data-i18n="nav_cta">Book a Call</span> <span>›</span></button>
     </div>
     <details class="nav__lang-picker">
       <summary aria-label="Change language">🇬🇧</summary>
@@ -180,12 +189,13 @@
   <div class="mobile-menu" id="mobileMenu">
     <a href="/#services" class="mobile-menu__link" data-i18n="nav_services">Services</a>
     <a href="https://heybeem.com/" class="mobile-menu__link" data-i18n="nav_beem" target="_blank" rel="noopener">Beem &mdash; AI Front Desk</a>
-    <a href="/ai-receptionist-clinic/" class="mobile-menu__link">For Clinics</a>
-    <a href="/hotel-night-desk-ai/" class="mobile-menu__link">Hotel Night Desk</a>
+    <a href="/ai-receptionist-clinic/" class="mobile-menu__link" data-i18n="clinic_nav_link">For Clinics</a>
+    <a href="/hotel-night-desk-ai/" class="mobile-menu__link" data-i18n="hotel_nav_link">Hotel Night Desk</a>
     <a href="/blockchain/" class="mobile-menu__link" data-i18n="nav_blockchain">Blockchain</a>
     <a href="/#process" class="mobile-menu__link" data-i18n="nav_process">Process</a>
     <a href="/case-studies/" class="mobile-menu__link" data-i18n="nav_case_studies">Case Studies</a>
-    <button data-book class="mobile-menu__link mobile-menu__link--cta">Get In Touch</button>
+    <a href="/about/" class="mobile-menu__link" data-i18n="nav_about">About</a>
+    <button data-book class="mobile-menu__link mobile-menu__link--cta" data-i18n="nav_cta">Book a Call</button>
   </div>
 
   <main>
@@ -196,42 +206,42 @@
         <svg id="wavesSvg" xmlns="http://www.w3.org/2000/svg"></svg>
       </div>
       <div class="hero__content">
-        <p class="eyebrow">AI RECEPTIONIST FOR CLINICS &middot; PHUKET &amp; THAILAND</p>
-        <h1 class="hero__h1">The clinic phone that <em class="accent">never misses a patient.</em></h1>
-        <p class="hero__sub">Rejig Labs builds the AI receptionist for clinics in Phuket and across Thailand. A patient calls at 8pm, it answers in Thai, English or Russian, books the right practitioner, and the appointment is in your calendar before they hang up. Urgent calls go straight to your staff, and it never gives medical advice.</p>
+        <p class="eyebrow" data-i18n="clinic_hero_eyebrow">AI RECEPTIONIST FOR CLINICS &middot; PHUKET &amp; THAILAND</p>
+        <h1 class="hero__h1" data-i18n-html="clinic_hero_h1">The clinic phone that <em class="accent">never misses a patient.</em></h1>
+        <p class="hero__sub" data-i18n="clinic_hero_sub">Rejig Labs builds the AI receptionist for clinics in Phuket and across Thailand. A patient calls at 8pm, it answers in Thai, English or Russian, books the right practitioner, and the appointment is in your calendar before they hang up. Urgent calls go straight to your staff, and it never gives medical advice.</p>
         <div class="flow">
-          <span class="flow__step">Patient calls, 8pm</span>
+          <span class="flow__step" data-i18n="clinic_flow_1">Patient calls, 8pm</span>
           <span class="flow__arrow">&rarr;</span>
-          <span class="flow__step">Answered</span>
+          <span class="flow__step" data-i18n="clinic_flow_2">Answered</span>
           <span class="flow__arrow">&rarr;</span>
-          <span class="flow__step">Right practitioner booked</span>
+          <span class="flow__step" data-i18n="clinic_flow_3">Right practitioner booked</span>
           <span class="flow__arrow">&rarr;</span>
-          <span class="flow__step flow__step--end">Reminded on LINE</span>
+          <span class="flow__step flow__step--end" data-i18n="clinic_flow_4">Reminded on LINE</span>
         </div>
-        <button data-book class="btn btn--filled"><span class="btn__text">Book a Discovery Call</span><span class="btn__hover">Book a Discovery Call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
-        <p class="hero__contact"><a href="https://line.me/ti/p/~rutadik">LINE us</a> &middot; <a href="https://wa.me/66991414896">WhatsApp</a> &middot; <a href="mailto:rut@rejiglabs.com">rut@rejiglabs.com</a></p>
+        <button data-book class="btn btn--filled"><span class="btn__text" data-i18n="hero_btn">Book a Call</span><span class="btn__hover"><span data-i18n="hero_btn">Book a Call</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
+        <p class="hero__contact"><a href="https://line.me/ti/p/~rutadik" data-i18n="svc_contact_line">LINE us</a> &middot; <a href="https://wa.me/66991414896">WhatsApp</a> &middot; <a href="mailto:rut@rejiglabs.com">rut@rejiglabs.com</a></p>
       </div>
     </section>
 
     <!-- LIVE WIDGETS: reuses the homepage #capabilities bento kit (dark cells, scoped CSS vars) -->
     <section class="encap" id="capabilities" style="padding-top:0">
       <div class="wrap">
-        <div class="cap-bento" style="grid-template-areas:'voice voice chat'">
+        <div class="cap-bento cap-bento--clinic">
 
           <article class="cap-cell c-voice">
             <div class="cap-cell__glow"></div>
             <div class="cap-cell__txt">
-              <div class="cap-cell__id">LIVE · PHONE</div>
-              <h3 class="cap-cell__h">"Can I see Dr. Nok tomorrow morning?"</h3>
-              <p class="cap-cell__d">The AI checks that doctor's own schedule, books the right slot length for the treatment, and confirms before the caller hangs up.</p>
+              <div class="cap-cell__id" data-i18n="clinic_cap_voice_id">LIVE · PHONE</div>
+              <h3 class="cap-cell__h" data-i18n="clinic_cap_voice_h">"Can I see Dr. Nok tomorrow morning?"</h3>
+              <p class="cap-cell__d" data-i18n="clinic_cap_voice_d">The AI checks that doctor's own schedule, books the right slot length for the treatment, and confirms before the caller hangs up.</p>
             </div>
             <div class="cap-cell__viz">
               <div class="cap-vz">
                 <div class="cap-vz__top"><div class="cap-vz__ring"></div>
-                  <div><div class="cap-vz__who">Incoming call</div><div class="cap-vz__sub">+66 &middot; answered in 1 ring</div></div>
+                  <div><div class="cap-vz__who" data-i18n="clinic_cap_incoming">Incoming call</div><div class="cap-vz__sub" data-i18n="clinic_cap_answered">+66 &middot; answered in 1 ring</div></div>
                   <div class="cap-vz__lang"><span>TH</span><span>EN</span><span>RU</span></div></div>
                 <div class="cap-vz__wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-                <div class="cap-vz__done"><span class="cap-vz__check">&#10003;</span> Booked with Dr. Nok &middot; Tue 9:30 AM</div>
+                <div class="cap-vz__done"><span class="cap-vz__check">&#10003;</span> <span data-i18n="clinic_cap_booked">Booked with Dr. Nok &middot; Tue 9:30 AM</span></div>
               </div>
             </div>
           </article>
@@ -239,14 +249,14 @@
           <article class="cap-cell c-chat">
             <div class="cap-cell__glow"></div>
             <div class="cap-cell__txt">
-              <div class="cap-cell__id">LIVE · LINE</div>
-              <h3 class="cap-cell__h">Rescheduled without holding the line</h3>
-              <p class="cap-cell__d">Confirmations, reminders and changes happen on LINE, where Thai patients already are. Fewer forgotten appointments, fewer empty chairs.</p>
+              <div class="cap-cell__id" data-i18n="clinic_cap_chat_id">LIVE · LINE</div>
+              <h3 class="cap-cell__h" data-i18n="clinic_cap_chat_h">Rescheduled without holding the line</h3>
+              <p class="cap-cell__d" data-i18n="clinic_cap_chat_d">Confirmations, reminders and changes happen on LINE, where Thai patients already are. Fewer forgotten appointments, fewer empty chairs.</p>
             </div>
             <div class="cap-cell__viz">
-              <div class="cap-ch__tabs"><span class="cap-ch__tab cap-ch__tab--on">LINE</span><span class="cap-ch__tab">SMS</span><span class="cap-ch__tab">Web</span></div>
-              <div class="cap-ch__bubble cap-ch__bubble--in">Can I move my cleaning to Friday?</div>
-              <div class="cap-ch__bubble cap-ch__bubble--out">Done &#10003; Rebooked for Friday, 2:00 PM.</div>
+              <div class="cap-ch__tabs"><span class="cap-ch__tab cap-ch__tab--on">LINE</span><span class="cap-ch__tab">SMS</span><span class="cap-ch__tab" data-i18n="clinic_cap_tab_web">Web</span></div>
+              <div class="cap-ch__bubble cap-ch__bubble--in" data-i18n="clinic_cap_msg_in">Can I move my cleaning to Friday?</div>
+              <div class="cap-ch__bubble cap-ch__bubble--out" data-i18n="clinic_cap_msg_out">Done &#10003; Rebooked for Friday, 2:00 PM.</div>
               <div class="cap-ch__typing"><i></i><i></i><i></i></div>
             </div>
           </article>
@@ -258,9 +268,9 @@
     <!-- PROBLEM -->
     <section class="encap encap--alt">
       <div class="sec-head">
-        <p class="eyebrow">THE FRONT DESK CAN'T BE IN TWO PLACES</p>
-        <h2>Someone is always checking in, so <em class="accent">the phone keeps ringing.</em></h2>
-        <p>A clinic's front desk juggles arrivals, payments and the practitioner's next patient, and the phone rings through all of it. A caller who reaches nobody does not try again in an hour: they book the next clinic on Google Maps. After closing, the line is dead, which is exactly when working patients finally have time to call. And every no-show that a reminder would have caught is a slot you paid a practitioner to sit through empty.</p>
+        <p class="eyebrow" data-i18n="clinic_problem_eyebrow">THE FRONT DESK CAN'T BE IN TWO PLACES</p>
+        <h2 data-i18n-html="clinic_problem_h2">Someone is always checking in, so <em class="accent">the phone keeps ringing.</em></h2>
+        <p data-i18n="clinic_problem_p">A clinic's front desk juggles arrivals, payments and the practitioner's next patient, and the phone rings through all of it. A caller who reaches nobody does not try again in an hour: they book the next clinic on Google Maps. After closing, the line is dead, which is exactly when working patients finally have time to call. And every no-show that a reminder would have caught is a slot you paid a practitioner to sit through empty.</p>
         <img src="/assets/blob/blob-clinic-phones-busy.webp" alt="Sketch of a clinic where staff are busy with patients behind closed doors while an AI assistant answers the ringing reception phone and writes the appointment into the book" width="1400" height="791" loading="lazy" style="display:block;max-width:680px;width:100%;height:auto;margin:2.5rem auto 0;mix-blend-mode:multiply">
       </div>
     </section>
@@ -268,20 +278,20 @@
     <!-- WHAT IT DOES -->
     <section class="encap">
       <div class="sec-head">
-        <p class="eyebrow">BUILT FOR HOW A CLINIC ACTUALLY RUNS</p>
-        <h2>Not a generic bot. <em class="accent">A clinic front desk.</em></h2>
-        <p>Booking a clinic is not booking a table. The slot length depends on the treatment, the practitioner matters, and some calls must reach a human immediately.</p>
+        <p class="eyebrow" data-i18n="clinic_does_eyebrow">BUILT FOR HOW A CLINIC ACTUALLY RUNS</p>
+        <h2 data-i18n-html="clinic_does_h2">Not a generic bot. <em class="accent">A clinic front desk.</em></h2>
+        <p data-i18n="clinic_does_p">Booking a clinic is not booking a table. The slot length depends on the treatment, the practitioner matters, and some calls must reach a human immediately.</p>
       </div>
       <div class="wrap">
         <div class="B-rows">
-          <div class="B-row rv"><span class="B-row__n">01</span><span class="B-row__name">Books the practitioner they asked for</span><span class="B-row__use">Patients name their doctor or dentist. The AI checks that person's own schedule, not the clinic average, so it never promises a slot that practitioner doesn't have.</span></div>
-          <div class="B-row rv"><span class="B-row__n">02</span><span class="B-row__name">Knows a cleaning is not a root canal</span><span class="B-row__use">Every treatment gets its real duration. The AI books the right amount of time, so the schedule stays honest instead of running 40 minutes late by noon.</span></div>
-          <div class="B-row rv"><span class="B-row__n">03</span><span class="B-row__name">Answers the questions that clog your line</span><span class="B-row__use">Prices, opening hours, directions, parking, and preparation instructions like "no food before the blood test". The routine calls stop reaching your staff at all.</span></div>
-          <div class="B-row rv"><span class="B-row__n">04</span><span class="B-row__name">New patients arrive pre-registered</span><span class="B-row__use">Name, phone number and reason for visit are captured on the call and waiting in the calendar note, so the front desk isn't spelling out a surname at check-in.</span></div>
-          <div class="B-row rv"><span class="B-row__n">05</span><span class="B-row__name">Thai, English and Russian on one number</span><span class="B-row__use">It picks the language from the caller's first words. Thai patients, expats and medical tourists all book on the same line, with no language menu.</span></div>
-          <div class="B-row rv"><span class="B-row__n">06</span><span class="B-row__name">Chases the no-shows before they happen</span><span class="B-row__use">Confirmations and reminders go out on LINE and SMS, and rescheduling takes one reply. Patients fix their booking instead of silently skipping it.</span></div>
-          <div class="B-row rv"><span class="B-row__n">07</span><span class="B-row__name">Never plays doctor</span><span class="B-row__use">It gives no medical advice, ever. When a caller describes symptoms or sounds urgent, it follows your escalation rules: transfer to staff in hours, your emergency instructions after hours.</span></div>
-          <div class="B-row rv"><span class="B-row__n">08</span><span class="B-row__name">Recognises returning patients</span><span class="B-row__use">A returning patient is recognised by their number on the first ring, greeted by name, and skips straight to the booking.</span></div>
+          <div class="B-row rv"><span class="B-row__n">01</span><span class="B-row__name" data-i18n="clinic_feat_1_name">Books the practitioner they asked for</span><span class="B-row__use" data-i18n="clinic_feat_1_use">Patients name their doctor or dentist. The AI checks that person's own schedule, not the clinic average, so it never promises a slot that practitioner doesn't have.</span></div>
+          <div class="B-row rv"><span class="B-row__n">02</span><span class="B-row__name" data-i18n="clinic_feat_2_name">Knows a cleaning is not a root canal</span><span class="B-row__use" data-i18n="clinic_feat_2_use">Every treatment gets its real duration. The AI books the right amount of time, so the schedule stays honest instead of running 40 minutes late by noon.</span></div>
+          <div class="B-row rv"><span class="B-row__n">03</span><span class="B-row__name" data-i18n="clinic_feat_3_name">Answers the questions that clog your line</span><span class="B-row__use" data-i18n="clinic_feat_3_use">Prices, opening hours, directions, parking, and preparation instructions like "no food before the blood test". The routine calls stop reaching your staff at all.</span></div>
+          <div class="B-row rv"><span class="B-row__n">04</span><span class="B-row__name" data-i18n="clinic_feat_4_name">New patients arrive pre-registered</span><span class="B-row__use" data-i18n="clinic_feat_4_use">Name, phone number and reason for visit are captured on the call and waiting in the calendar note, so the front desk isn't spelling out a surname at check-in.</span></div>
+          <div class="B-row rv"><span class="B-row__n">05</span><span class="B-row__name" data-i18n="clinic_feat_5_name">Thai, English and Russian on one number</span><span class="B-row__use" data-i18n="clinic_feat_5_use">It picks the language from the caller's first words. Thai patients, expats and medical tourists all book on the same line, with no language menu.</span></div>
+          <div class="B-row rv"><span class="B-row__n">06</span><span class="B-row__name" data-i18n="clinic_feat_6_name">Chases the no-shows before they happen</span><span class="B-row__use" data-i18n="clinic_feat_6_use">Confirmations and reminders go out on LINE and SMS, and rescheduling takes one reply. Patients fix their booking instead of silently skipping it.</span></div>
+          <div class="B-row rv"><span class="B-row__n">07</span><span class="B-row__name" data-i18n="clinic_feat_7_name">Never plays doctor</span><span class="B-row__use" data-i18n="clinic_feat_7_use">It gives no medical advice, ever. When a caller describes symptoms or sounds urgent, it follows your escalation rules: transfer to staff in hours, your emergency instructions after hours.</span></div>
+          <div class="B-row rv"><span class="B-row__n">08</span><span class="B-row__name" data-i18n="clinic_feat_8_name">Recognises returning patients</span><span class="B-row__use" data-i18n="clinic_feat_8_use">A returning patient is recognised by their number on the first ring, greeted by name, and skips straight to the booking.</span></div>
         </div>
       </div>
     </section>
@@ -289,20 +299,20 @@
     <!-- PROOF -->
     <section class="encap encap--alt">
       <div class="sec-head">
-        <p class="eyebrow">A PROVEN CORE, TUNED FOR YOUR CLINIC</p>
-        <h2>The same receptionist is <em class="accent">already on the phones.</em></h2>
-        <p>This is not a demo waiting for its first caller. The same AI receptionist has answered the phones of a six-branch service business in Phuket since June 2026: <strong>169+ calls</strong> at an average of <strong>76 seconds</strong> each, and <strong>105 bookings</strong> made end to end across voice and chat, in three languages. A clinic deployment starts from that proven core, then adds your treatments, practitioners and escalation rules on top.</p>
+        <p class="eyebrow" data-i18n="clinic_proof_eyebrow">A PROVEN CORE, TUNED FOR YOUR CLINIC</p>
+        <h2 data-i18n-html="clinic_proof_h2">The same receptionist is <em class="accent">already on the phones.</em></h2>
+        <p data-i18n-html="clinic_proof_p">This is not a demo waiting for its first caller. The same AI receptionist has answered the phones of a six-branch service business in Phuket since June 2026: <strong>169 calls</strong> at an average of <strong>76 seconds</strong> each, and <strong>105 bookings</strong> made end to end across voice and chat, in three languages. A clinic deployment starts from that proven core, then adds your treatments, practitioners and escalation rules on top.</p>
       </div>
       <div class="wrap">
         <div class="stats__grid" style="margin-top:1.5rem">
-          <div class="stat in-view"><div class="stat__value">169<span class="stat__unit">+</span></div><div class="stat__label">calls answered since June 2026</div></div>
-          <div class="stat in-view"><div class="stat__value">76<span class="stat__unit">s</span></div><div class="stat__label">average call, start to booked</div></div>
-          <div class="stat in-view"><div class="stat__value">105</div><div class="stat__label">bookings made by the AI</div></div>
-          <div class="stat in-view"><div class="stat__value">3</div><div class="stat__label">languages on one number</div></div>
+          <div class="stat in-view"><div class="stat__value">169</div><div class="stat__label" data-i18n="clinic_stat_1">calls answered since June 2026</div></div>
+          <div class="stat in-view"><div class="stat__value">76<span class="stat__unit" data-i18n="clinic_stat_unit_s">s</span></div><div class="stat__label" data-i18n="clinic_stat_2">average call, start to booked</div></div>
+          <div class="stat in-view"><div class="stat__value">105</div><div class="stat__label" data-i18n="clinic_stat_3">bookings made by the AI</div></div>
+          <div class="stat in-view"><div class="stat__value">3</div><div class="stat__label" data-i18n="clinic_stat_4">languages on one number</div></div>
         </div>
-        <p style="max-width:52rem;margin:2rem auto 0;text-align:center;font-size:.86rem;opacity:.6">Measured 20 June to 7 August 2026 from the business's own calendar and call log. Counts include our own test traffic; call totals exclude 20 June to 2 July, which the phone provider purged before logging began.</p>
+        <p style="max-width:52rem;margin:2rem auto 0;text-align:center;font-size:.86rem;opacity:.6" data-i18n="clinic_proof_note">Measured 20 June to 7 August 2026 from the business's own calendar and call log. Counts include our own test traffic; call totals exclude 20 June to 2 July, which the phone provider purged before logging began.</p>
         <div style="text-align:center; margin-top:2.4rem">
-          <a href="https://heybeem.com/" class="btn" target="_blank" rel="noopener"><span class="btn__text">See how Beem answers the phone</span><span class="btn__hover">See how Beem answers the phone <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></a>
+          <a href="https://heybeem.com/" class="btn" target="_blank" rel="noopener"><span class="btn__text" data-i18n="clinic_beem_btn">See how Beem answers the phone</span><span class="btn__hover"><span data-i18n="clinic_beem_btn">See how Beem answers the phone</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></a>
         </div>
       </div>
     </section>
@@ -310,14 +320,14 @@
     <!-- HOW IT WORKS -->
     <section class="encap">
       <div class="sec-head">
-        <p class="eyebrow">HOW WE PUT IT IN YOUR CLINIC</p>
-        <h2>Your number, your calendar, <em class="accent">your rules.</em></h2>
+        <p class="eyebrow" data-i18n="clinic_how_eyebrow">HOW WE PUT IT IN YOUR CLINIC</p>
+        <h2 data-i18n-html="clinic_how_h2">Your number, your calendar, <em class="accent">your rules.</em></h2>
       </div>
       <div class="wrap">
         <div class="B-rows">
-          <div class="B-row rv"><span class="B-row__n">1</span><span class="B-row__name">We learn your clinic</span><span class="B-row__use">Your practitioners, treatments and their durations, prices, opening hours, and the escalation rules for urgent calls. You decide what the AI may handle and what always reaches a human.</span></div>
-          <div class="B-row rv"><span class="B-row__n">2</span><span class="B-row__name">We connect what you already use</span><span class="B-row__use">Your existing phone number, your existing calendar or booking system, your LINE OA. Patient details land in your systems, not a third-party inbox, set up in line with Thailand's PDPA.</span></div>
-          <div class="B-row rv"><span class="B-row__n">3</span><span class="B-row__name">We test on real calls, then switch it on</span><span class="B-row__use">We listen to real conversations, fix the edge cases, and keep tuning after launch so it gets better in your clinic, not worse.</span></div>
+          <div class="B-row rv"><span class="B-row__n">1</span><span class="B-row__name" data-i18n="clinic_step_1_name">We learn your clinic</span><span class="B-row__use" data-i18n="clinic_step_1_use">Your practitioners, treatments and their durations, prices, opening hours, and the escalation rules for urgent calls. You decide what the AI may handle and what always reaches a human.</span></div>
+          <div class="B-row rv"><span class="B-row__n">2</span><span class="B-row__name" data-i18n="clinic_step_2_name">We connect what you already use</span><span class="B-row__use" data-i18n="clinic_step_2_use">Your existing phone number, your existing calendar or booking system, your LINE OA. Patient details land in your systems, not a third-party inbox, set up in line with Thailand's PDPA.</span></div>
+          <div class="B-row rv"><span class="B-row__n">3</span><span class="B-row__name" data-i18n="clinic_step_3_name">We test on real calls, then switch it on</span><span class="B-row__use" data-i18n="clinic_step_3_use">We listen to real conversations, fix the edge cases, and keep tuning after launch so it gets better in your clinic, not worse.</span></div>
         </div>
         <img src="/assets/blob/blob-clinic-triage.webp" alt="Sketch of incoming clinic calls being sorted by an AI assistant: routine bookings flow into the shared calendar while the urgent call is handed directly to a human doctor" width="1400" height="791" loading="lazy" style="display:block;max-width:680px;width:100%;height:auto;margin:3rem auto 0;mix-blend-mode:multiply">
       </div>
@@ -327,70 +337,70 @@
     <!-- REAL CALL -->
     <section class="encap encap--alt" id="hear-it">
       <div class="sec-head">
-        <p class="eyebrow">HEAR IT WORK</p>
-        <h2>A real call, <em class="accent">start to booked.</em></h2>
-        <p>This is a live recording from Ducky Cutz, the Phuket barbershop we run the phone for &mdash; not a clinic, but the same receptionist doing the same job: answer, check the calendar, book, confirm. Press play. We have no recorded clinic call published yet; on a demo call we walk you through it with your own treatments and prices.</p>
+        <p class="eyebrow" data-i18n="clinic_hear_eyebrow">HEAR IT WORK</p>
+        <h2 data-i18n-html="clinic_hear_h2">A real call, <em class="accent">start to booked.</em></h2>
+        <p data-i18n="clinic_hear_p">This is a live recording from Ducky Cutz, the Phuket barbershop we run the phone for &mdash; not a clinic, but the same receptionist doing the same job: answer, check the calendar, book, confirm. Press play. We have no recorded clinic call published yet; on a demo call we walk you through it with your own treatments and prices.</p>
       </div>
       <div class="wrap">
         <div data-call-player data-src="/assets/call/duckycutz-call.mp3" data-cta=""></div>
-        <p style="text-align:center;margin-top:1.6rem"><a href="/case-studies/duckycutz">Read the Ducky Cutz case study</a></p>
+        <p style="text-align:center;margin-top:1.6rem"><a href="/case-studies/duckycutz" data-i18n="clinic_hear_link">Read the Ducky Cutz case study</a></p>
       </div>
     </section>
 
     <section class="faq" id="faq">
       <div class="faq__header">
-        <h2>Clinic owner <em class="accent">questions.</em></h2>
+        <h2 data-i18n-html="clinic_faq_h2">Clinic owner <em class="accent">questions.</em></h2>
         <p data-i18n="faq_sub">You've got questions. We've got answers.</p>
       </div>
       <div class="faq__chat">
         <div class="faq__item in-view" data-faq>
           <button class="faq__q">
-            <span class="faq__bubble faq__bubble--q">What happens when a patient calls my Phuket clinic at 8pm?</span>
+            <span class="faq__bubble faq__bubble--q"><span data-i18n="clinic_faq_q1">What happens when a patient calls my Phuket clinic at 8pm?</span></span>
             <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq__a"><div class="faq__bubble faq__bubble--a">The Rejig Labs AI receptionist answers on the first ring in the caller's language, checks your live calendar, books the appointment, and sends the confirmation on WhatsApp or LINE. Nothing waits for the morning.</div></div>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a" data-i18n="clinic_faq_a1">The Rejig Labs AI receptionist answers on the first ring in the caller's language, checks your live calendar, books the appointment, and sends the confirmation on WhatsApp or LINE. Nothing waits for the morning.</div></div>
         </div>
         <div class="faq__item in-view" data-faq>
           <button class="faq__q">
-            <span class="faq__bubble faq__bubble--q"><span class="faq__emoji faq__emoji--right">🦷</span>Can it book a specific doctor or dentist, not just any slot?</span>
+            <span class="faq__bubble faq__bubble--q"><span class="faq__emoji faq__emoji--right">🦷</span><span data-i18n="clinic_faq_q2">Can it book a specific doctor or dentist, not just any slot?</span></span>
             <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq__a"><div class="faq__bubble faq__bubble--a">Yes. Patients ask for their practitioner by name and the AI checks that person's own schedule, not the clinic average. It also knows that a cleaning and a root canal need different slot lengths, so it books the right amount of time for the treatment.</div></div>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a" data-i18n="clinic_faq_a2">Yes. Patients ask for their practitioner by name and the AI checks that person's own schedule, not the clinic average. It also knows that a cleaning and a root canal need different slot lengths, so it books the right amount of time for the treatment.</div></div>
         </div>
         <div class="faq__item in-view" data-faq>
           <button class="faq__q">
-            <span class="faq__bubble faq__bubble--q"><span class="faq__emoji faq__emoji--left">🚨</span>What happens when a call is urgent?</span>
+            <span class="faq__bubble faq__bubble--q"><span class="faq__emoji faq__emoji--left">🚨</span><span data-i18n="clinic_faq_q3">What happens when a call is urgent?</span></span>
             <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq__a"><div class="faq__bubble faq__bubble--a">It never gives medical advice, ever. When a caller describes symptoms or sounds urgent, it follows the escalation rules you set: during opening hours it transfers to your staff with the conversation attached, and after hours it gives the caller your emergency instructions instead of booking a slot.</div></div>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a" data-i18n="clinic_faq_a3">It never gives medical advice, ever. When a caller describes symptoms or sounds urgent, it follows the escalation rules you set: during opening hours it transfers to your staff with the conversation attached, and after hours it gives the caller your emergency instructions instead of booking a slot.</div></div>
         </div>
         <div class="faq__item in-view" data-faq>
           <button class="faq__q">
-            <span class="faq__bubble faq__bubble--q"><span class="faq__emoji faq__emoji--right">🇹🇭</span>Does it speak Thai?</span>
+            <span class="faq__bubble faq__bubble--q"><span class="faq__emoji faq__emoji--right">🇹🇭</span><span data-i18n="clinic_faq_q4">Does it speak Thai?</span></span>
             <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq__a"><div class="faq__bubble faq__bubble--a">Yes. It answers in Thai, English or Russian, picking the language from the caller's first words. One number serves your Thai patients, expats and medical tourists without a language menu.</div></div>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a" data-i18n="clinic_faq_a4">Yes. It answers in Thai, English or Russian, picking the language from the caller's first words. One number serves your Thai patients, expats and medical tourists without a language menu.</div></div>
         </div>
         <div class="faq__item in-view" data-faq>
           <button class="faq__q">
-            <span class="faq__bubble faq__bubble--q"><span class="faq__emoji faq__emoji--left">🔒</span>Is patient information safe?</span>
+            <span class="faq__bubble faq__bubble--q"><span class="faq__emoji faq__emoji--left">🔒</span><span data-i18n="clinic_faq_q5">Is patient information safe?</span></span>
             <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq__a"><div class="faq__bubble faq__bubble--a">Booking details go into your own calendar and booking system, not a third-party inbox. Before launch we agree with you exactly what is stored and for how long, and we set the system up in line with Thailand's PDPA. The AI only collects what a human receptionist would ask for: name, phone number and reason for visit.</div></div>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a" data-i18n="clinic_faq_a5">Booking details go into your own calendar and booking system, not a third-party inbox. Before launch we agree with you exactly what is stored and for how long, and we set the system up in line with Thailand's PDPA. The AI only collects what a human receptionist would ask for: name, phone number and reason for visit.</div></div>
         </div>
         <div class="faq__item in-view" data-faq>
           <button class="faq__q">
-            <span class="faq__bubble faq__bubble--q">Will it reduce no-shows?</span>
+            <span class="faq__bubble faq__bubble--q"><span data-i18n="clinic_faq_q6">Will it reduce no-shows?</span></span>
             <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq__a"><div class="faq__bubble faq__bubble--a">Reminders are the main lever: confirmations and reminders go out on LINE and SMS, and rescheduling takes one reply instead of a phone call, so patients fix their booking rather than silently skipping it. We measure your no-show rate before and after launch rather than promising a number upfront.</div></div>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a" data-i18n="clinic_faq_a6">Reminders are the main lever: confirmations and reminders go out on LINE and SMS, and rescheduling takes one reply instead of a phone call, so patients fix their booking rather than silently skipping it. We measure your no-show rate before and after launch rather than promising a number upfront.</div></div>
         </div>
         <div class="faq__item in-view" data-faq>
           <button class="faq__q">
-            <span class="faq__bubble faq__bubble--q"><span class="faq__emoji faq__emoji--right">📞</span>Is this system already running somewhere real?</span>
+            <span class="faq__bubble faq__bubble--q"><span class="faq__emoji faq__emoji--right">📞</span><span data-i18n="clinic_faq_q7">Is this system already running somewhere real?</span></span>
             <span class="faq__toggle"><svg class="faq__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><svg class="faq__minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq__a"><div class="faq__bubble faq__bubble--a">Yes. The same receptionist has answered the phones of a six-branch service business in Phuket since June 2026, taking 169+ calls at an average of 76 seconds each and making 105 bookings across voice and chat. A clinic deployment starts from that proven core, then adds your treatments, practitioners and escalation rules on top. Setup usually takes 2 to 4 weeks.</div></div>
+          <div class="faq__a"><div class="faq__bubble faq__bubble--a" data-i18n="clinic_faq_a7">Yes. The same receptionist has answered the phones of a six-branch service business in Phuket since June 2026, taking 169 calls at an average of 76 seconds each and making 105 bookings across voice and chat. A clinic deployment starts from that proven core, then adds your treatments, practitioners and escalation rules on top. Setup usually takes 2 to 4 weeks.</div></div>
         </div>
       </div>
     </section>
@@ -398,10 +408,10 @@
     <!-- CROSS LINKS -->
     <section class="encap">
       <div class="sec-head">
-        <p class="eyebrow">RELATED</p>
-        <h2>Same front desk, <em class="accent">different room.</em></h2>
-        <p><a href="/hotel-night-desk-ai/">Hotel night desk that never misses a call</a> &middot; <a href="https://heybeem.com/" target="_blank" rel="noopener">Beem, the AI front desk for shops and salons</a></p>
-        <p style="margin-top:1.4rem">Talk to Rejig Labs: <a href="https://line.me/ti/p/~rutadik">LINE us</a> &middot; <a href="https://wa.me/66991414896">WhatsApp</a> &middot; <a href="mailto:rut@rejiglabs.com">rut@rejiglabs.com</a></p>
+        <p class="eyebrow" data-i18n="clinic_related_eyebrow">RELATED</p>
+        <h2 data-i18n-html="clinic_related_h2">Same front desk, <em class="accent">different room.</em></h2>
+        <p data-i18n-html="clinic_related_links"><a href="/hotel-night-desk-ai/">Hotel night desk that never misses a call</a> &middot; <a href="https://heybeem.com/" target="_blank" rel="noopener">Beem, the AI front desk for shops and salons</a></p>
+        <p style="margin-top:1.4rem"><span data-i18n="clinic_talk">Talk to Rejig Labs:</span> <a href="https://line.me/ti/p/~rutadik" data-i18n="svc_contact_line">LINE us</a> &middot; <a href="https://wa.me/66991414896">WhatsApp</a> &middot; <a href="mailto:rut@rejiglabs.com">rut@rejiglabs.com</a></p>
       </div>
     </section>
 
@@ -412,12 +422,12 @@
       <div class="footer__glow"></div>
       <div class="closing__content">
         <div class="closing__h2">
-          <span class="closing__line in-view" data-i18n="closing_1">AI is here. Most will react.</span>
-          <span class="closing__line in-view" data-i18n="closing_2">The few with a plan will lead.</span>
-          <span class="closing__line in-view"><em class="accent" data-i18n="closing_3">We build for those few.</em></span>
+          <span class="closing__line in-view" data-i18n="closing_1">Start with one workflow.</span>
+          <span class="closing__line in-view" data-i18n="closing_2">See it running in weeks.</span>
+          <span class="closing__line in-view"><em class="accent" data-i18n="closing_3">Then scale what works.</em></span>
         </div>
         <div class="closing__btn-wrap" id="closingBtnWrap">
-          <button data-book class="btn"><span class="btn__text" data-i18n="hero_btn">Book a Discovery Call</span><span class="btn__hover">Book a Discovery Call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
+          <button data-book class="btn"><span class="btn__text" data-i18n="hero_btn">Book a Call</span><span class="btn__hover"><span data-i18n="hero_btn">Book a Call</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
         </div>
       </div>
       <div class="footer__inner">
@@ -425,7 +435,7 @@
           <img src="/assets/logo.png" alt="Rejig Labs" class="footer__logo" width="40" height="33" loading="lazy">
           <span>Rejig Labs</span>
         </div>
-        <p>© 2026 Rejig Labs · An arm of Rejig Labs · Thailand · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
+        <p><span data-i18n="footer_copy">© 2026 Rejig Labs · Thailand</span> · <a href="/about/" data-i18n="nav_about">About</a> · <a href="/privacy.html" data-i18n="footer_privacy">Privacy</a> · <a href="/terms.html" data-i18n="footer_terms">Terms</a></p>
       <div class="footer__socials">
         <a href="https://x.com/rejiglabs" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="X / Twitter">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -447,6 +457,42 @@
   <script src="/js/waves.js" defer></script>
   <script src="/js/consent.js" defer></script>
   <script src="/js/call-player.js" defer></script>
+  <!-- Call player i18n: js/call-player.js renders English text; tag its nodes so js/i18n.js translates them (keys clinic_call_*). -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('[data-call-player].rlcp').forEach(function (root) {
+        function set(el, key) { if (el) el.setAttribute('data-i18n', key); }
+        function wrapText(parent, key) {
+          var tn = parent && parent.lastChild;
+          if (!tn || tn.nodeType !== 3) return;
+          var s = document.createElement('span'); set(s, key); s.textContent = tn.textContent;
+          parent.replaceChild(s, tn);
+        }
+        set(root.querySelector('.rlcp__k'), 'clinic_call_k');
+        root.querySelectorAll('.rlcp__feat span').forEach(function (s, i) { set(s, 'clinic_call_f' + (i + 1)); });
+        var foot = root.querySelector('.rlcp__foot p');
+        if (foot) { set(foot.querySelector('b'), 'clinic_call_note'); wrapText(foot, 'clinic_call_sub'); }
+        var script = root.querySelector('.rlcp__script');
+        function tagLines() {
+          var added = false;
+          Array.prototype.forEach.call(script.children, function (line, i) {
+            if (line.hasAttribute('data-i18n-done')) return;
+            line.setAttribute('data-i18n-done', '');
+            set(line.querySelector('.rlcp__txt'), 'clinic_call_t' + (i + 1));
+            wrapText(line.querySelector('.rlcp__who'), line.classList.contains('agent') ? 'clinic_call_agent' : 'clinic_call_caller');
+            added = true;
+          });
+          return added;
+        }
+        if (!script) return;
+        tagLines();
+        if (window.__i18n) window.__i18n.apply();
+        new MutationObserver(function () {
+          if (tagLines() && window.__i18n) window.__i18n.apply();
+        }).observe(script, { childList: true });
+      });
+    });
+  </script>
 
   <!-- Minimal page interactions (nav toggle + FAQ accordion). No GSAP needed here. -->
   <script>

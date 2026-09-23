@@ -69,7 +69,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=5">
 
   <!-- Vercel Web Analytics -->
   <script>window.va=window.va||function(){(window.vai=window.vai||[]).push(arguments);};</script>
@@ -78,6 +78,13 @@
   <!-- Vercel Speed Insights -->
   <script>window.si=window.si||function(){(window.siq=window.siq||[]).push(arguments);};</script>
   <script defer src="/_vercel/speed-insights/script.js"></script>
+  <style>
+    /* Legal pages: comfortable back-link tap target, date and language notice */
+    .legal-page a.legal-page__back { display: inline-flex; align-items: center; min-height: 40px; padding: 0.5rem 0.75rem 0.5rem 0; margin-bottom: 1.5rem; font-size: 0.9rem; }
+    .legal-page p.legal-page__date { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem; }
+    .legal-page p.legal-page__notice { font-size: 0.8rem; line-height: 1.5; color: var(--text-muted); margin-bottom: 2.5rem; }
+    .legal-page { overflow-wrap: break-word; }
+  </style>
 </head>
 <body>
 
@@ -89,10 +96,11 @@
     </a>
     <div class="nav__links">
       <a href="index.html#services" class="nav__link" data-i18n="nav_services">Services</a>
-      <a href="index.html#process" class="nav__link" data-i18n="nav_process">Process</a>
+      <a href="/#process" class="nav__link" data-i18n="nav_process">Process</a>
       <a href="/case-studies/" class="nav__link" data-i18n="nav_case_studies">Case Studies</a>
+      <a href="/about/" class="nav__link" data-i18n="nav_about">About</a>
       <div class="nav__lang"><button data-lang="en" class="active">EN</button><button data-lang="th">TH</button><button data-lang="ru">RU</button></div>
-      <button data-book class="nav__cta">Get In Touch <span>›</span></button>
+      <button data-book class="nav__cta"><span data-i18n="nav_cta">Book a Call</span> <span>›</span></button>
     </div>
     <details class="nav__lang-picker">
       <summary aria-label="Change language">🇬🇧</summary>
@@ -109,74 +117,75 @@
 
   <div class="mobile-menu" id="mobileMenu">
     <a href="index.html#services" class="mobile-menu__link" data-i18n="nav_services">Services</a>
-    <a href="index.html#process" class="mobile-menu__link" data-i18n="nav_process">Process</a>
+    <a href="/#process" class="mobile-menu__link" data-i18n="nav_process">Process</a>
     <a href="/case-studies/" class="mobile-menu__link" data-i18n="nav_case_studies">Case Studies</a>
-    <button data-book class="mobile-menu__link mobile-menu__link--cta">Get In Touch</button>
+    <a href="/about/" class="mobile-menu__link" data-i18n="nav_about">About</a>
+    <button data-book class="mobile-menu__link mobile-menu__link--cta" data-i18n="nav_cta">Book a Call</button>
   </div>
 
   <main class="legal-page">
     <div id="legal-content">
-      <a href="index.html" class="legal-back">&larr; Back to Home</a>
-      <h1>Terms & Conditions</h1>
-      <p class="legal-updated">Last updated: March 21, 2026</p>
+      <a href="index.html" class="legal-back legal-page__back" data-i18n="legal_back">← Back to Home</a>
 
-      <p>These Terms & Conditions ("Terms") govern the use of services provided by Rejig Labs, an arm of Rejig Labs, based in Thailand ("we", "us", "our"). By engaging our services, you ("Client") agree to be bound by these Terms.</p>
+      <h1 data-i18n="tm_h1">Terms &amp; Conditions</h1>
+      <p class="legal-updated legal-page__date" data-i18n="legal_updated">Last updated: March 21, 2026</p>
+      <p class="legal-page__notice" data-i18n="legal_notice">This page is available in English, Thai and Russian. If the versions differ, the English version applies.</p>
 
-      <h2>1. Services</h2>
-      <p>Rejig Labs provides AI consulting, operational audits, workflow automation, and implementation services for businesses. Our services include, but are not limited to:</p>
+      <p data-i18n="tm_intro">These Terms &amp; Conditions ("Terms") govern the use of services provided by Rejig Labs, based in Thailand ("we", "us", "our"). By engaging our services, you ("Client") agree to be bound by these Terms.</p>
+
+      <h2 data-i18n="tm_s1_h">1. Services</h2>
+      <p data-i18n="tm_s1_p">Rejig Labs provides AI consulting, operational audits, workflow automation, and implementation services for businesses. Our services include, but are not limited to:</p>
       <ul>
-        <li>AI readiness audits and strategy development</li>
-        <li>Workflow analysis and automation design</li>
-        <li>AI tool selection, configuration, and implementation</li>
-        <li>Training, documentation, and ongoing advisory</li>
+        <li data-i18n="tm_s1_1">AI readiness audits and strategy development</li>
+        <li data-i18n="tm_s1_2">Workflow analysis and automation design</li>
+        <li data-i18n="tm_s1_3">AI tool selection, configuration, and implementation</li>
+        <li data-i18n="tm_s1_4">Training, documentation, and ongoing advisory</li>
       </ul>
-      <p>The specific scope of work for each engagement will be defined in a separate proposal or statement of work agreed upon by both parties.</p>
+      <p data-i18n="tm_s1_p2">The specific scope of work for each engagement will be defined in a separate proposal or statement of work agreed upon by both parties.</p>
 
-      <h2>2. Engagement Terms</h2>
-      <p>Each engagement begins upon mutual acceptance of a proposal or statement of work. The Client agrees to provide timely access to relevant systems, personnel, and information necessary for us to deliver the agreed services. Delays caused by the Client may result in adjusted timelines or additional fees.</p>
-      <p>We reserve the right to subcontract portions of the work where appropriate, while remaining responsible for the quality of all deliverables.</p>
+      <h2 data-i18n="tm_s2_h">2. Engagement Terms</h2>
+      <p data-i18n="tm_s2_p1">Each engagement begins upon mutual acceptance of a proposal or statement of work. The Client agrees to provide timely access to relevant systems, personnel, and information necessary for us to deliver the agreed services. Delays caused by the Client may result in adjusted timelines or additional fees.</p>
+      <p data-i18n="tm_s2_p2">We reserve the right to subcontract portions of the work where appropriate, while remaining responsible for the quality of all deliverables.</p>
 
-      <h2>3. Intellectual Property</h2>
-      <p>Upon full payment, the Client receives ownership of all custom deliverables produced specifically for their engagement, including reports, workflows, and configurations. We retain ownership of our proprietary methodologies, frameworks, tools, and any pre-existing intellectual property used in the delivery of services.</p>
-      <p>We reserve the right to use anonymised and generalised learnings from engagements to improve our services, unless otherwise agreed in writing.</p>
+      <h2 data-i18n="tm_s3_h">3. Intellectual Property</h2>
+      <p data-i18n="tm_s3_p1">Upon full payment, the Client receives ownership of all custom deliverables produced specifically for their engagement, including reports, workflows, and configurations. We retain ownership of our proprietary methodologies, frameworks, tools, and any pre-existing intellectual property used in the delivery of services.</p>
+      <p data-i18n="tm_s3_p2">We reserve the right to use anonymised and generalised learnings from engagements to improve our services, unless otherwise agreed in writing.</p>
 
-      <h2>4. Confidentiality</h2>
-      <p>Both parties agree to keep confidential any proprietary or sensitive information disclosed during the engagement. This includes business data, processes, strategies, and technical information. Confidentiality obligations survive the termination of any engagement for a period of two (2) years.</p>
-      <p>This obligation does not apply to information that is publicly available, independently developed, or required to be disclosed by law.</p>
+      <h2 data-i18n="tm_s4_h">4. Confidentiality</h2>
+      <p data-i18n="tm_s4_p1">Both parties agree to keep confidential any proprietary or sensitive information disclosed during the engagement. This includes business data, processes, strategies, and technical information. Confidentiality obligations survive the termination of any engagement for a period of two (2) years.</p>
+      <p data-i18n="tm_s4_p2">This obligation does not apply to information that is publicly available, independently developed, or required to be disclosed by law.</p>
 
-      <h2>5. Payment Terms</h2>
-      <p>Payment terms are specified in each proposal or statement of work. Unless otherwise agreed:</p>
+      <h2 data-i18n="tm_s5_h">5. Payment Terms</h2>
+      <p data-i18n="tm_s5_p">Payment terms are specified in each proposal or statement of work. Unless otherwise agreed:</p>
       <ul>
-        <li>A deposit is required before work commences</li>
-        <li>Invoices are due within 14 days of issue</li>
-        <li>Late payments may incur a charge of 1.5% per month on the outstanding balance</li>
-        <li>All fees are quoted in the currency specified in the proposal and are exclusive of applicable taxes</li>
+        <li data-i18n="tm_s5_1">A deposit is required before work commences</li>
+        <li data-i18n="tm_s5_2">Invoices are due within 14 days of issue</li>
+        <li data-i18n="tm_s5_3">Late payments may incur a charge of 1.5% per month on the outstanding balance</li>
+        <li data-i18n="tm_s5_4">All fees are quoted in the currency specified in the proposal and are exclusive of applicable taxes</li>
       </ul>
 
-      <h2>6. Limitation of Liability</h2>
-      <p>Rejig Labs provides services on a best-efforts basis. While we strive for measurable outcomes, we do not guarantee specific business results, revenue increases, or cost savings. Our recommendations are based on professional judgement and available information at the time of delivery.</p>
-      <p>To the maximum extent permitted by law, our total liability for any claim arising from an engagement shall not exceed the total fees paid by the Client for that specific engagement. We shall not be liable for any indirect, incidental, consequential, or punitive damages.</p>
+      <h2 data-i18n="tm_s6_h">6. Limitation of Liability</h2>
+      <p data-i18n="tm_s6_p1">Rejig Labs provides services on a best-efforts basis. While we strive for measurable outcomes, we do not guarantee specific business results, revenue increases, or cost savings. Our recommendations are based on professional judgement and available information at the time of delivery.</p>
+      <p data-i18n="tm_s6_p2">To the maximum extent permitted by law, our total liability for any claim arising from an engagement shall not exceed the total fees paid by the Client for that specific engagement. We shall not be liable for any indirect, incidental, consequential, or punitive damages.</p>
 
-      <h2>7. Termination</h2>
-      <p>Either party may terminate an engagement with 14 days' written notice. Upon termination:</p>
+      <h2 data-i18n="tm_s7_h">7. Termination</h2>
+      <p data-i18n="tm_s7_p">Either party may terminate an engagement with 14 days' written notice. Upon termination:</p>
       <ul>
-        <li>The Client shall pay for all work completed up to the termination date</li>
-        <li>We will deliver any completed or in-progress deliverables</li>
-        <li>Pre-paid fees for undelivered work will be refunded on a pro-rata basis</li>
+        <li data-i18n="tm_s7_1">The Client shall pay for all work completed up to the termination date</li>
+        <li data-i18n="tm_s7_2">We will deliver any completed or in-progress deliverables</li>
+        <li data-i18n="tm_s7_3">Pre-paid fees for undelivered work will be refunded on a pro-rata basis</li>
       </ul>
-      <p>We reserve the right to terminate immediately if the Client breaches these Terms or engages in conduct that is unlawful or harmful to our business.</p>
+      <p data-i18n="tm_s7_p2">We reserve the right to terminate immediately if the Client breaches these Terms or engages in conduct that is unlawful or harmful to our business.</p>
 
-      <h2>8. Governing Law</h2>
-      <p>These Terms are governed by and construed in accordance with the laws of Thailand. Any disputes arising from or in connection with these Terms shall be resolved through good-faith negotiation. If a resolution cannot be reached, disputes shall be submitted to the competent courts of Thailand.</p>
+      <h2 data-i18n="tm_s8_h">8. Governing Law</h2>
+      <p data-i18n="tm_s8_p">These Terms are governed by and construed in accordance with the laws of Thailand. Any disputes arising from or in connection with these Terms shall be resolved through good-faith negotiation. If a resolution cannot be reached, disputes shall be submitted to the competent courts of Thailand.</p>
 
-      <h2>9. Changes to Terms</h2>
-      <p>We may update these Terms from time to time. Changes will be posted on this page with an updated revision date. Continued engagement of our services after changes are posted constitutes acceptance of the revised Terms. For active engagements, material changes will be communicated directly to the Client.</p>
+      <h2 data-i18n="tm_s9_h">9. Changes to Terms</h2>
+      <p data-i18n="tm_s9_p">We may update these Terms from time to time. Changes will be posted on this page with an updated revision date. Continued engagement of our services after changes are posted constitutes acceptance of the revised Terms. For active engagements, material changes will be communicated directly to the Client.</p>
 
-      <h2>10. Contact</h2>
-      <p>If you have questions about these Terms, please contact us:</p>
-      <p><strong>Rejig Labs</strong> (an arm of Rejig Labs)<br>
-      Based in Thailand<br>
-      Email: <a href="mailto:rut@rejiglabs.com">rut@rejiglabs.com</a></p>
+      <h2 data-i18n="tm_s10_h">10. Contact</h2>
+      <p data-i18n="tm_s10_p">If you have questions about these Terms, please contact us:</p>
+      <p data-i18n-html="tm_contact_block"><strong>Rejig Labs</strong><br>Based in Thailand<br>Email: <a href="mailto:rut@rejiglabs.com">rut@rejiglabs.com</a></p>
     </div>
   </main>
 
@@ -184,15 +193,15 @@
     <div class="footer__glow"></div>
     <div class="closing__content">
       <div class="closing__h2">
-        <span class="closing__line in-view">AI is here. Most will react.</span>
-        <span class="closing__line in-view">The few with a plan will lead.</span>
-        <span class="closing__line in-view"><em class="accent">We build for those few.</em></span>
+        <span class="closing__line in-view" data-i18n="closing_1">Start with one workflow.</span>
+        <span class="closing__line in-view" data-i18n="closing_2">See it running in weeks.</span>
+        <span class="closing__line in-view"><em class="accent" data-i18n="closing_3">Then scale what works.</em></span>
       </div>
       <div class="closing__btn-wrap animate" id="closingBtnWrap">
         <svg class="closing__circle" viewBox="0 0 300 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
           <path class="closing__circle-path" d="M 260 18 C 310 40, 298 95, 150 105 C 20 105, -12 70, 8 55 C 30 20, 100 12, 150 12 C 230 12, 280 30, 260 38" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
         </svg>
-        <button data-book class="btn"><span class="btn__text">Book a Discovery Call</span><span class="btn__hover">Book a Discovery Call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
+        <button data-book class="btn"><span class="btn__text" data-i18n="hero_btn">Book a Call</span><span class="btn__hover"><span data-i18n="hero_btn">Book a Call</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
       </div>
     </div>
     <div class="footer__inner">
@@ -200,7 +209,7 @@
         <img src="assets/logo.png" alt="Rejig Labs" class="footer__logo" width="40" height="33" loading="lazy">
         <span>Rejig Labs</span>
       </div>
-      <p>&copy; 2026 Rejig Labs &middot; An arm of Rejig Labs &middot; Thailand &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
+      <p><span data-i18n="footer_copy">© 2026 Rejig Labs · Thailand</span> · <a href="/about/" data-i18n="nav_about">About</a> · <a href="/privacy.html" data-i18n="footer_privacy">Privacy</a> · <a href="/terms.html" data-i18n="footer_terms">Terms</a></p>
       <div class="footer__socials">
         <a href="https://x.com/rejiglabs" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="X / Twitter">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>

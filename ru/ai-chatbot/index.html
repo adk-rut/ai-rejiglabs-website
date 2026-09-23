@@ -81,88 +81,128 @@
 
   <!-- Structured data: Service + FAQ + Breadcrumb -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Service",
-        "@id": "https://rejiglabs.com/ai-chatbot/#service",
-        "name": "AI Chatbot & LINE OA Automation",
-        "url": "https://rejiglabs.com/ai-chatbot/",
-        "serviceType": "AI chatbot development",
-        "provider": { "@id": "https://rejiglabs.com/#organization" },
-        "areaServed": "Thailand",
-        "availableLanguage": ["Thai", "English", "Russian"],
-        "description": "Custom AI chatbots that answer customers 24/7 on LINE OA, website and social channels, in Thai, English and Russian: replying, qualifying leads, and booking appointments automatically."
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://rejiglabs.com/ai-chatbot/#service",
+      "name": "AI Chatbot & LINE OA Automation",
+      "url": "https://rejiglabs.com/ai-chatbot/",
+      "serviceType": "AI chatbot development",
+      "provider": {
+        "@id": "https://rejiglabs.com/#organization"
       },
-      {
-        "@type": "FAQPage",
-        "@id": "https://rejiglabs.com/ai-chatbot/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Does it work with LINE Official Account (LINE OA)?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. LINE OA is our primary channel for Thai businesses. We connect the chatbot directly to your LINE OA so it answers customers in the app they already use every day." }
-          },
-          {
-            "@type": "Question",
-            "name": "Will it sound like a robot?",
-            "acceptedAnswer": { "@type": "Answer", "text": "No. We train it on your real tone, your FAQs and your past chats, so replies feel natural and on-brand. It hands off to a human the moment a conversation needs one." }
-          },
-          {
-            "@type": "Question",
-            "name": "What languages does the chatbot support?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Thai, English and Russian out of the box. It detects the customer's language automatically and replies in it. More languages on request." }
-          },
-          {
-            "@type": "Question",
-            "name": "Can it book appointments and take orders?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. It checks your live calendar, books slots, captures order details and saves everything to your CRM, all inside the chat." }
-          },
-          {
-            "@type": "Question",
-            "name": "How long until the chatbot is live?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Most chatbots go live in 2 to 4 weeks, depending on how many channels and how complex your answers are. You will see a working version early." }
-          },
-          {
-            "@type": "Question",
-            "name": "What happens after a customer's LINE or WhatsApp message goes unanswered?",
-            "acceptedAnswer": { "@type": "Answer", "text": "With Rejig Labs, it does not go unanswered. The message is picked up within minutes, answered in the customer's language, and turned into a booking if that is what they wanted. A person is only pulled in when the conversation actually needs one." }
-          },
-          {
-            "@type": "Question",
-            "name": "Is this LINE or WhatsApp?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Both, plus web chat. This is built for Thailand, where customers message a shop on LINE or WhatsApp. It is not a US-style phone tree." }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I know it would reply the way I would?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Send us a real chat you missed. We show you the reply it would have sent, in your language and your prices, before you commit to anything." }
+      "areaServed": "Thailand",
+      "availableLanguage": [
+        "Thai",
+        "English",
+        "Russian"
+      ],
+      "description": "Custom AI chatbots that answer customers 24/7 on LINE OA, website and social channels, in Thai, English and Russian: replying, qualifying leads, and booking appointments automatically."
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://rejiglabs.com/ai-chatbot/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Работает ли он с LINE Official Account (LINE OA)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. LINE OA — наш основной канал для тайского бизнеса. Мы подключаем чат-бот напрямую к вашему LINE OA, чтобы он отвечал клиентам в приложении, которым они пользуются каждый день."
           }
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rejiglabs.com/" },
-          { "@type": "ListItem", "position": 2, "name": "AI Chatbot & LINE OA", "item": "https://rejiglabs.com/ai-chatbot/" }
-        ]
-      }
-    ]
-  }
+        },
+        {
+          "@type": "Question",
+          "name": "Будет ли он звучать как робот?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We train it on your real tone, your FAQs and your past chats, so replies feel natural and on-brand. It hands off to a human the moment a conversation needs one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие языки поддерживает чат-бот?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Тайский, английский и русский сразу из коробки. Он автоматически определяет язык клиента и отвечает на нём. Другие языки — по запросу."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Может ли он записывать на приём и принимать заказы?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Он проверяет ваш актуальный календарь, бронирует слоты, фиксирует детали заказа и сохраняет всё в вашу CRM — прямо в чате."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько времени до запуска чат-бота?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most chatbots go live in 2 to 4 weeks, depending on how many channels and how complex your answers are. You will see a working version early."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что происходит, если сообщение клиента в LINE или WhatsApp осталось без ответа?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "С Rejig Labs оно не остаётся без ответа. Сообщение подхватывается за минуты, ответ приходит на языке клиента и превращается в запись, если клиент этого хотел. Человек подключается, только когда разговор действительно этого требует."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Это LINE или WhatsApp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "И то, и другое, плюс веб-чат. Это сделано для Таиланда, где клиенты пишут в LINE или WhatsApp. Это не американское голосовое меню."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как понять, что бот ответит так же, как ответил бы я?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Пришлите реальный чат, который вы пропустили. Мы покажем, что бы ответил бот — на вашем языке и с вашими ценами, до любых обязательств."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://rejiglabs.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI Chatbot & LINE OA",
+          "item": "https://rejiglabs.com/ai-chatbot/"
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
 
   <!-- NAV -->
   <nav class="nav" id="nav">
-    <a href="/" class="nav__logo">
+    <a href="/ru/" class="nav__logo">
       <img src="/assets/logo.png" class="nav__logomark" alt="RL" width="32" height="26" fetchpriority="high">
       <span>Rejig Labs</span>
     </a>
     <div class="nav__links">
       <div class="nav__dropdown">
-        <a href="/#services" class="nav__link" data-i18n="nav_services">Услуги</a>
+        <a href="/ru/#services" class="nav__link" data-i18n="nav_services">Услуги</a>
         <div class="nav__dropdown-menu">
           <a href="/ai-receptionist/" class="nav__dropdown-item" data-i18n="nav_ai_receptionist">AI-секретарь</a>
           <a href="/ai-receptionist-clinic/" class="nav__dropdown-item">For Clinics</a>
@@ -172,7 +212,7 @@
           <a href="/blockchain/" class="nav__dropdown-item" data-i18n="nav_blockchain">Блокчейн</a>
         </div>
       </div>
-      <a href="/#process" class="nav__link" data-i18n="nav_process">Процесс</a>
+      <a href="/ru/#process" class="nav__link" data-i18n="nav_process">Процесс</a>
       <a href="/case-studies/" class="nav__link" data-i18n="nav_case_studies">Кейсы</a>
       <div class="nav__lang"><button data-lang="en" class="active">EN</button><button data-lang="th">TH</button><button data-lang="ru">RU</button></div>
       <button data-book class="nav__cta">Get In Touch <span>›</span></button>
@@ -191,14 +231,14 @@
   </nav>
 
   <div class="mobile-menu" id="mobileMenu">
-    <a href="/#services" class="mobile-menu__link" data-i18n="nav_services">Услуги</a>
+    <a href="/ru/#services" class="mobile-menu__link" data-i18n="nav_services">Услуги</a>
     <a href="/ai-receptionist/" class="mobile-menu__link" data-i18n="nav_ai_receptionist">AI-секретарь</a>
     <a href="/ai-receptionist-clinic/" class="mobile-menu__link">For Clinics</a>
     <a href="/ai-receptionist-barbershop/" class="mobile-menu__link">For Barbershops &amp; Salons</a>
     <a href="/hotel-night-desk-ai/" class="mobile-menu__link">Hotel Night Desk</a>
     <a href="/ai-chatbot/" class="mobile-menu__link" data-i18n="nav_ai_chatbot">AI-чат-бот и LINE</a>
     <a href="/blockchain/" class="mobile-menu__link" data-i18n="nav_blockchain">Блокчейн</a>
-    <a href="/#process" class="mobile-menu__link" data-i18n="nav_process">Процесс</a>
+    <a href="/ru/#process" class="mobile-menu__link" data-i18n="nav_process">Процесс</a>
     <a href="/case-studies/" class="mobile-menu__link" data-i18n="nav_case_studies">Кейсы</a>
     <button data-book class="mobile-menu__link mobile-menu__link--cta">Get In Touch</button>
   </div>
@@ -275,7 +315,7 @@
     <section class="faq" id="faq">
       <div class="faq__header">
         <h2 data-i18n-html="svc_faq_h2">Вопросы о <em class="accent">чат-боте.</em></h2>
-        <p data-i18n="faq_sub">У вас вопросы — у нас ответы.</p>
+        <p data-i18n="faq_sub">Прямые ответы до звонка.</p>
       </div>
       <div class="faq__chat">
         <div class="faq__item in-view" data-faq>
@@ -344,12 +384,12 @@
       <div class="footer__glow"></div>
       <div class="closing__content">
         <div class="closing__h2">
-          <span class="closing__line in-view" data-i18n="closing_1">AI уже здесь. Большинство будут догонять.</span>
-          <span class="closing__line in-view" data-i18n="closing_2">Те, у кого есть план, будут впереди.</span>
-          <span class="closing__line in-view"><em class="accent" data-i18n="closing_3">Мы работаем для них.</em></span>
+          <span class="closing__line in-view" data-i18n="closing_1">Начните с одного процесса.</span>
+          <span class="closing__line in-view" data-i18n="closing_2">Увидите его в работе через несколько недель.</span>
+          <span class="closing__line in-view"><em class="accent" data-i18n="closing_3">Затем масштабируйте то, что работает.</em></span>
         </div>
         <div class="closing__btn-wrap" id="closingBtnWrap">
-          <button data-book class="btn"><span class="btn__text" data-i18n="hero_btn">Записаться на консультацию</span><span class="btn__hover">Book a Discovery Call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
+          <button data-book class="btn"><span class="btn__text" data-i18n="hero_btn">Записаться на звонок</span><span class="btn__hover">Book a Discovery Call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span><span class="btn__fill"></span></button>
         </div>
       </div>
       <div class="footer__inner">

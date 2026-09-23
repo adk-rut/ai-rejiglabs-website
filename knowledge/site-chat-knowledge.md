@@ -10,7 +10,7 @@ Rules for the model reading this file: answer only from what is here. Nothing he
 
 ## What Rejig does
 
-Rejig Labs is an AI automation agency in Thailand, based in Phuket, also working in Bangkok and remotely worldwide. We work in English, Thai and Russian. Most consultants hand over a strategy deck and leave; we build the system and stay to run it.
+Rejig Labs is an AI implementation partner in Thailand, based in Phuket, also working in Bangkok and remotely worldwide. We work in English, Thai and Russian. Most consultants hand over a strategy deck and leave; we build the system and stay to run it.
 
 **AI Front Desk is the lead offer.** Rejig runs a business's front desk end to end: the phone, LINE and chat, the staff booking form, reminders and reporting, across every location. It is sold as running the front desk, not as recovering missed calls. That framing comes from our own data: on DuckyCutz the staff-facing booking form is where most bookings land, so the front desk system is the value, not the missed calls.
 
